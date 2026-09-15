@@ -1,0 +1,16 @@
+{
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "max_support": 16,
+  "max_fp_nodes": 20,
+  "input_policy": "free constant parameters encoded by identity; fixed points pooled over all assignments",
+  "source_commit": "314b2fed94689c38d3aaaf8101ed622b3501c7f7",
+  "code_sha256": {
+    "src/ccreduce/__init__.py": "5fc3d62d6d08c519afe44c17c7a5a06113331a785b99b7d4740fc9230ffaad1e",
+    "src/ccreduce/boolean.py": "4f181f044be98b67f5b52991735af61c08a88b840072586b59ac553012062a9b",
+    "src/ccreduce/fixed_points.py": "4db413e956bc92107586c499b373d9977a2e71366278da25f59ede4ec71aca26",
+    "src/ccreduce/metrics.py": "8df7b9e94d8a4a15c7a017298a6ba937d201fbad67c6c45d64a953c14d29f7d6",
+    "src/ccreduce/parser.py": "099e85fb773471461d76100f0a81113518539eda2b14d849b4933a838295efff",
+    "src/ccreduce/reduction.py": "39855e683fd36e8c21b0a99ee6cc74b07a14a29327a5e0d886befe6094a4d1e4"
+  }
+}

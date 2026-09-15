@@ -1,0 +1,518 @@
+{
+  "source": {
+    "id": "029",
+    "repository_directory": "models/[id-029]__[var-9]__[in-2]__[TOLL-PATHWAY-OF-DROSOPHILA]",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-029%5D__%5Bvar-9%5D__%5Bin-2%5D__%5BTOLL-PATHWAY-OF-DROSOPHILA%5D/README.md",
+        "sha256": "43efd701e7166ea0c648a570e515e1116ba4d022f260c9f9d85bbb16e8ebadd2"
+      },
+      {
+        "name": "metadata.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-029%5D__%5Bvar-9%5D__%5Bin-2%5D__%5BTOLL-PATHWAY-OF-DROSOPHILA%5D/metadata.json",
+        "sha256": "82ed8c8b02817defb33b5ff1a5ff4ecb23251407f2f26d4cba6501ec49bdce2b"
+      },
+      {
+        "name": "model.bma.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-029%5D__%5Bvar-9%5D__%5Bin-2%5D__%5BTOLL-PATHWAY-OF-DROSOPHILA%5D/model.bma.json",
+        "sha256": "44d65cbcce6e668522d28e98ace6dd406c0d37d53cffc61ebb4e3ec8d96f641e"
+      },
+      {
+        "name": "model.bnet",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-029%5D__%5Bvar-9%5D__%5Bin-2%5D__%5BTOLL-PATHWAY-OF-DROSOPHILA%5D/model.bnet",
+        "sha256": "6aaa655d81dd0a21aa0f761c5406bc1c39acce4ce27d7ed28c786542ae1a71ad"
+      },
+      {
+        "name": "model.sbml",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-029%5D__%5Bvar-9%5D__%5Bin-2%5D__%5BTOLL-PATHWAY-OF-DROSOPHILA%5D/model.sbml",
+        "sha256": "196cfbbb857e2cd8e4fe7bfde187a8baa1de62dea8951f13bfbe50656fe87a2e"
+      }
+    ]
+  },
+  "metadata": {
+    "id": 29,
+    "name": "TOLL-PATHWAY-OF-DROSOPHILA",
+    "url-publication": "https://doi.org/10.1039/C3MB70187E",
+    "url-model": [
+      "https://research.cellcollective.org/?dashboard=true#module/2668:1/toll-pathway-of-drosophila-signaling-pathway/1",
+      "http://ginsim.org/node/152"
+    ],
+    "keywords": [
+      "cell-collective",
+      "ginsim",
+      "curated",
+      "repaired"
+    ],
+    "variables": 9,
+    "variable-names": [
+      "v_Cactus",
+      "v_Dif",
+      "v_Dorsal",
+      "v_MyD88",
+      "v_Pelle",
+      "v_Spz",
+      "v_Toll",
+      "v_Tube"
+    ],
+    "inputs": 2,
+    "input-names": [
+      "v_Nec",
+      "v_Slmb"
+    ],
+    "output-names": [
+      "v_Targets"
+    ],
+    "regulations": 11,
+    "notes": "### Modifications\n\nThe following regulations were modified to ensure that update functions are consistent with the regulatory graph:\n\n - Regulation `Slmb (S_4) -> Cactus (S_8)` sign set to `unknown`.",
+    "bib": "@article{bbm-029,\n  title={Logical modelling of Drosophila signalling pathways},\n  author={Mbodj, Abibatou and Junion, Guillaume and Brun, Christine and Furlong, Eileen EM and Thieffry, Denis},\n  journal={Molecular BioSystems},\n  volume={9},\n  number={9},\n  pages={2248--2258},\n  year={2013},\n  publisher={Royal Society of Chemistry}\n}"
+  },
+  "summary": {
+    "model_id": "029",
+    "name": "TOLL-PATHWAY-OF-DROSOPHILA",
+    "policy": "min_degree",
+    "seed": 42,
+    "reduction_fraction": 0.8181818181818181,
+    "internal_reduction_fraction": 1.0,
+    "fixed_points_before": 4,
+    "fixed_points_after": 4,
+    "bijection_verified": true,
+    "reduction_seconds": 0.0005209000082686543,
+    "fp_before_seconds": 0.0050617000088095665,
+    "fp_after_seconds": 1.8599967006593943e-05,
+    "before_nodes": 11,
+    "before_internal_nodes": 9,
+    "before_inputs": 2,
+    "before_edges": 13,
+    "before_edges_without_input_identity": 11,
+    "before_self_loops": 2,
+    "before_scc": 11,
+    "before_weak_components": 1,
+    "before_max_indegree": 2,
+    "before_table_entries": 26,
+    "before_canonical_dnf_literals": 21,
+    "before_function_classes": "{\"COPY\": 4, \"NAND\": 1, \"NOT\": 3, \"OR\": 1}",
+    "before_network_class": "MIXED_OR_OTHER",
+    "after_nodes": 2,
+    "after_internal_nodes": 0,
+    "after_inputs": 2,
+    "after_edges": 2,
+    "after_edges_without_input_identity": 0,
+    "after_self_loops": 2,
+    "after_scc": 2,
+    "after_weak_components": 2,
+    "after_max_indegree": 1,
+    "after_table_entries": 4,
+    "after_canonical_dnf_literals": 2,
+    "after_function_classes": "{}",
+    "after_network_class": "NO_INTERNAL_NODES"
+  },
+  "original": {
+    "inputs": [
+      "v_Nec",
+      "v_Slmb"
+    ],
+    "functions": {
+      "v_Cactus": {
+        "support": [
+          "v_Pelle",
+          "v_Slmb"
+        ],
+        "values": [
+          1,
+          1,
+          1,
+          0
+        ]
+      },
+      "v_Dif": {
+        "support": [
+          "v_Cactus"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      },
+      "v_Dorsal": {
+        "support": [
+          "v_Cactus"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      },
+      "v_MyD88": {
+        "support": [
+          "v_Toll"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Pelle": {
+        "support": [
+          "v_Tube"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Spz": {
+        "support": [
+          "v_Nec"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      },
+      "v_Targets": {
+        "support": [
+          "v_Dif",
+          "v_Dorsal"
+        ],
+        "values": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "v_Toll": {
+        "support": [
+          "v_Spz"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Tube": {
+        "support": [
+          "v_MyD88"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Nec": {
+        "support": [
+          "v_Nec"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Slmb": {
+        "support": [
+          "v_Slmb"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "reduced": {
+    "inputs": [
+      "v_Nec",
+      "v_Slmb"
+    ],
+    "functions": {
+      "v_Nec": {
+        "support": [
+          "v_Nec"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Slmb": {
+        "support": [
+          "v_Slmb"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "node": "v_Dif",
+      "function": {
+        "support": [
+          "v_Cactus"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Dorsal",
+      "function": {
+        "support": [
+          "v_Cactus"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Targets",
+      "function": {
+        "support": [
+          "v_Cactus"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Cactus",
+      "function": {
+        "support": [
+          "v_Pelle",
+          "v_Slmb"
+        ],
+        "values": [
+          1,
+          1,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Pelle",
+      "function": {
+        "support": [
+          "v_Tube"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_Tube",
+      "function": {
+        "support": [
+          "v_MyD88"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_MyD88",
+      "function": {
+        "support": [
+          "v_Toll"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_Toll",
+      "function": {
+        "support": [
+          "v_Spz"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_Spz",
+      "function": {
+        "support": [
+          "v_Nec"
+        ],
+        "values": [
+          1,
+          0
+        ]
+      }
+    }
+  ],
+  "original_fixed_points": [
+    {
+      "v_Cactus": 0,
+      "v_Dif": 1,
+      "v_Dorsal": 1,
+      "v_MyD88": 1,
+      "v_Nec": 0,
+      "v_Pelle": 1,
+      "v_Slmb": 1,
+      "v_Spz": 1,
+      "v_Targets": 1,
+      "v_Toll": 1,
+      "v_Tube": 1
+    },
+    {
+      "v_Cactus": 1,
+      "v_Dif": 0,
+      "v_Dorsal": 0,
+      "v_MyD88": 0,
+      "v_Nec": 1,
+      "v_Pelle": 0,
+      "v_Slmb": 0,
+      "v_Spz": 0,
+      "v_Targets": 0,
+      "v_Toll": 0,
+      "v_Tube": 0
+    },
+    {
+      "v_Cactus": 1,
+      "v_Dif": 0,
+      "v_Dorsal": 0,
+      "v_MyD88": 0,
+      "v_Nec": 1,
+      "v_Pelle": 0,
+      "v_Slmb": 1,
+      "v_Spz": 0,
+      "v_Targets": 0,
+      "v_Toll": 0,
+      "v_Tube": 0
+    },
+    {
+      "v_Cactus": 1,
+      "v_Dif": 0,
+      "v_Dorsal": 0,
+      "v_MyD88": 1,
+      "v_Nec": 0,
+      "v_Pelle": 1,
+      "v_Slmb": 0,
+      "v_Spz": 1,
+      "v_Targets": 0,
+      "v_Toll": 1,
+      "v_Tube": 1
+    }
+  ],
+  "reduced_fixed_points": [
+    {
+      "v_Nec": 0,
+      "v_Slmb": 0
+    },
+    {
+      "v_Nec": 0,
+      "v_Slmb": 1
+    },
+    {
+      "v_Nec": 1,
+      "v_Slmb": 0
+    },
+    {
+      "v_Nec": 1,
+      "v_Slmb": 1
+    }
+  ],
+  "lifted_fixed_points": [
+    {
+      "v_Nec": 0,
+      "v_Slmb": 0,
+      "v_Spz": 1,
+      "v_Toll": 1,
+      "v_MyD88": 1,
+      "v_Tube": 1,
+      "v_Pelle": 1,
+      "v_Cactus": 1,
+      "v_Targets": 0,
+      "v_Dorsal": 0,
+      "v_Dif": 0
+    },
+    {
+      "v_Nec": 0,
+      "v_Slmb": 1,
+      "v_Spz": 1,
+      "v_Toll": 1,
+      "v_MyD88": 1,
+      "v_Tube": 1,
+      "v_Pelle": 1,
+      "v_Cactus": 0,
+      "v_Targets": 1,
+      "v_Dorsal": 1,
+      "v_Dif": 1
+    },
+    {
+      "v_Nec": 1,
+      "v_Slmb": 0,
+      "v_Spz": 0,
+      "v_Toll": 0,
+      "v_MyD88": 0,
+      "v_Tube": 0,
+      "v_Pelle": 0,
+      "v_Cactus": 1,
+      "v_Targets": 0,
+      "v_Dorsal": 0,
+      "v_Dif": 0
+    },
+    {
+      "v_Nec": 1,
+      "v_Slmb": 1,
+      "v_Spz": 0,
+      "v_Toll": 0,
+      "v_MyD88": 0,
+      "v_Tube": 0,
+      "v_Pelle": 0,
+      "v_Cactus": 1,
+      "v_Targets": 0,
+      "v_Dorsal": 0,
+      "v_Dif": 0
+    }
+  ],
+  "fixed_points_by_input": [
+    {
+      "input": {
+        "v_Nec": 0,
+        "v_Slmb": 0
+      },
+      "count": 1
+    },
+    {
+      "input": {
+        "v_Nec": 0,
+        "v_Slmb": 1
+      },
+      "count": 1
+    },
+    {
+      "input": {
+        "v_Nec": 1,
+        "v_Slmb": 0
+      },
+      "count": 1
+    },
+    {
+      "input": {
+        "v_Nec": 1,
+        "v_Slmb": 1
+      },
+      "count": 1
+    }
+  ]
+}

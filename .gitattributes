@@ -1,0 +1,9 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+*.bnet text eol=lf
+*.sbml text eol=lf
+# Preserve downloaded source bytes for the recorded SHA-256 checksums.
+data/raw/** -text -whitespace

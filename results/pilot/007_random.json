@@ -1,0 +1,307 @@
+{
+  "source": {
+    "id": "007",
+    "repository_directory": "models/[id-007]__[var-5]__[in-0]__[CORTICAL-AREA-DEVELOPMENT]",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-007%5D__%5Bvar-5%5D__%5Bin-0%5D__%5BCORTICAL-AREA-DEVELOPMENT%5D/README.md",
+        "sha256": "e0a6456d9d48d3acc53240195aaa24bb289ae2661d9af3e8b74f1c078482d60c"
+      },
+      {
+        "name": "metadata.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-007%5D__%5Bvar-5%5D__%5Bin-0%5D__%5BCORTICAL-AREA-DEVELOPMENT%5D/metadata.json",
+        "sha256": "48f4908bdfde5c61834f59f0032b005434376c667ae74d7d43dbbd53909634d9"
+      },
+      {
+        "name": "model.bma.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-007%5D__%5Bvar-5%5D__%5Bin-0%5D__%5BCORTICAL-AREA-DEVELOPMENT%5D/model.bma.json",
+        "sha256": "212bfb26259f864edc934d39ee363d9cbe5a0d6f1d0ec0a0900b0144cd93ba57"
+      },
+      {
+        "name": "model.bnet",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-007%5D__%5Bvar-5%5D__%5Bin-0%5D__%5BCORTICAL-AREA-DEVELOPMENT%5D/model.bnet",
+        "sha256": "442c02d59749f0b61c2e24c5a5ed1e1ada3314bb10758cd5d04dd2ca3fc94c97"
+      },
+      {
+        "name": "model.sbml",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-007%5D__%5Bvar-5%5D__%5Bin-0%5D__%5BCORTICAL-AREA-DEVELOPMENT%5D/model.sbml",
+        "sha256": "0f2c33de2cd0349d2b5340ce8772f64886ecfba172524cda06b316a9c9817037"
+      }
+    ]
+  },
+  "metadata": {
+    "id": 7,
+    "name": "CORTICAL-AREA-DEVELOPMENT",
+    "url-publication": "https://doi.org/10.1371/journal.pcbi.1000936",
+    "url-model": "https://research.cellcollective.org/?dashboard=true#module/2035:1/cortical-area-development/1",
+    "keywords": [
+      "cell-collective",
+      "curated"
+    ],
+    "variables": 5,
+    "variable-names": [
+      "v_Coup_fti",
+      "v_Emx2",
+      "v_Fgf8",
+      "v_Pax6",
+      "v_Sp8"
+    ],
+    "inputs": 0,
+    "input-names": [],
+    "output-names": [],
+    "regulations": 14,
+    "notes": "### Modifications\n\nThe model is given without modifications.",
+    "bib": "@article{bbm-007,\n  title={A Boolean model of the gene regulatory network underlying Mammalian cortical area development},\n  author={Giacomantonio, Clare E and Goodhill, Geoffrey J},\n  journal={PLoS Comput Biol},\n  volume={6},\n  number={9},\n  pages={e1000936},\n  year={2010},\n  publisher={Public Library of Science}\n}"
+  },
+  "summary": {
+    "model_id": "007",
+    "name": "CORTICAL-AREA-DEVELOPMENT",
+    "policy": "random",
+    "seed": 42,
+    "reduction_fraction": 0.8,
+    "internal_reduction_fraction": 0.8,
+    "fixed_points_before": 2,
+    "fixed_points_after": 2,
+    "bijection_verified": true,
+    "reduction_seconds": 0.0003527000080794096,
+    "fp_before_seconds": 8.240004535764456e-05,
+    "fp_after_seconds": 7.499998901039362e-06,
+    "before_nodes": 5,
+    "before_internal_nodes": 5,
+    "before_inputs": 0,
+    "before_edges": 14,
+    "before_edges_without_input_identity": 14,
+    "before_self_loops": 1,
+    "before_scc": 1,
+    "before_weak_components": 1,
+    "before_max_indegree": 4,
+    "before_table_entries": 40,
+    "before_canonical_dnf_literals": 14,
+    "before_function_classes": "{\"NOR\": 1, \"SIGNED_AND\": 4}",
+    "before_network_class": "MIXED_OR_OTHER",
+    "after_nodes": 1,
+    "after_internal_nodes": 1,
+    "after_inputs": 0,
+    "after_edges": 1,
+    "after_edges_without_input_identity": 1,
+    "after_self_loops": 1,
+    "after_scc": 1,
+    "after_weak_components": 1,
+    "after_max_indegree": 1,
+    "after_table_entries": 2,
+    "after_canonical_dnf_literals": 1,
+    "after_function_classes": "{\"COPY\": 1}",
+    "after_network_class": "COPY_ONLY"
+  },
+  "original": {
+    "inputs": [],
+    "functions": {
+      "v_Coup_fti": {
+        "support": [
+          "v_Fgf8",
+          "v_Sp8"
+        ],
+        "values": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Emx2": {
+        "support": [
+          "v_Coup_fti",
+          "v_Fgf8",
+          "v_Pax6",
+          "v_Sp8"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Fgf8": {
+        "support": [
+          "v_Emx2",
+          "v_Fgf8",
+          "v_Sp8"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Pax6": {
+        "support": [
+          "v_Coup_fti",
+          "v_Emx2",
+          "v_Sp8"
+        ],
+        "values": [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Sp8": {
+        "support": [
+          "v_Emx2",
+          "v_Fgf8"
+        ],
+        "values": [
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "reduced": {
+    "inputs": [],
+    "functions": {
+      "v_Fgf8": {
+        "support": [
+          "v_Fgf8"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "node": "v_Coup_fti",
+      "function": {
+        "support": [
+          "v_Fgf8",
+          "v_Sp8"
+        ],
+        "values": [
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Emx2",
+      "function": {
+        "support": [
+          "v_Fgf8",
+          "v_Pax6",
+          "v_Sp8"
+        ],
+        "values": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_Sp8",
+      "function": {
+        "support": [
+          "v_Fgf8"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_Pax6",
+      "function": {
+        "support": [
+          "v_Fgf8"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "original_fixed_points": [
+    {
+      "v_Coup_fti": 0,
+      "v_Emx2": 0,
+      "v_Fgf8": 1,
+      "v_Pax6": 1,
+      "v_Sp8": 1
+    },
+    {
+      "v_Coup_fti": 1,
+      "v_Emx2": 1,
+      "v_Fgf8": 0,
+      "v_Pax6": 0,
+      "v_Sp8": 0
+    }
+  ],
+  "reduced_fixed_points": [
+    {
+      "v_Fgf8": 0
+    },
+    {
+      "v_Fgf8": 1
+    }
+  ],
+  "lifted_fixed_points": [
+    {
+      "v_Fgf8": 0,
+      "v_Pax6": 0,
+      "v_Sp8": 0,
+      "v_Emx2": 1,
+      "v_Coup_fti": 1
+    },
+    {
+      "v_Fgf8": 1,
+      "v_Pax6": 1,
+      "v_Sp8": 1,
+      "v_Emx2": 0,
+      "v_Coup_fti": 0
+    }
+  ],
+  "fixed_points_by_input": [
+    {
+      "input": {},
+      "count": 2
+    }
+  ]
+}

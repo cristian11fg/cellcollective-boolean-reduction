@@ -1,0 +1,460 @@
+{
+  "source": {
+    "id": "031",
+    "repository_directory": "models/[id-031]__[var-9]__[in-0]__[CELL-CYCLE-TRANSCRIPTION]",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-031%5D__%5Bvar-9%5D__%5Bin-0%5D__%5BCELL-CYCLE-TRANSCRIPTION%5D/README.md",
+        "sha256": "4d57b2ec25da39418e1c1323602584df9e653b23513163de89a4d5acfbc00b0d"
+      },
+      {
+        "name": "metadata.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-031%5D__%5Bvar-9%5D__%5Bin-0%5D__%5BCELL-CYCLE-TRANSCRIPTION%5D/metadata.json",
+        "sha256": "100a81d95f43c4ef4a5341c34feb458d8acc79cfc7f16651785b33ee85c36306"
+      },
+      {
+        "name": "model.bma.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-031%5D__%5Bvar-9%5D__%5Bin-0%5D__%5BCELL-CYCLE-TRANSCRIPTION%5D/model.bma.json",
+        "sha256": "3cc3f47369bdac293d97c51e4ed64f1ff958449e319eb427de5845cc5058f0c9"
+      },
+      {
+        "name": "model.bnet",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-031%5D__%5Bvar-9%5D__%5Bin-0%5D__%5BCELL-CYCLE-TRANSCRIPTION%5D/model.bnet",
+        "sha256": "1abceec7b588a9aabded11c9761cf942ae61c44407f4f811014e92790a70cff6"
+      },
+      {
+        "name": "model.sbml",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-031%5D__%5Bvar-9%5D__%5Bin-0%5D__%5BCELL-CYCLE-TRANSCRIPTION%5D/model.sbml",
+        "sha256": "6955c3bd3e1a3ab8a449438672ce5ea196e5d5e449a24800fdda3802fef09464"
+      }
+    ]
+  },
+  "metadata": {
+    "id": 31,
+    "name": "CELL-CYCLE-TRANSCRIPTION",
+    "url-publication": "https://doi.org/10.1038/nature06955",
+    "url-model": [
+      "https://research.cellcollective.org/?dashboard=true#module/2681:1/cell-cycle-transcription-by-coupled-cdk-and-network-oscillators/1",
+      "http://ginsim.org/node/33"
+    ],
+    "keywords": [
+      "cell-collective",
+      "ginsim",
+      "curated"
+    ],
+    "variables": 9,
+    "variable-names": [
+      "v_ACE2",
+      "v_CLN3",
+      "v_HCM1",
+      "v_MBF",
+      "v_SBF",
+      "v_SFF",
+      "v_SWI5",
+      "v_YHP1",
+      "v_YOX1"
+    ],
+    "inputs": 0,
+    "input-names": [],
+    "output-names": [],
+    "regulations": 19,
+    "notes": "### Modifications\n\nNetwork is presented without modifications.",
+    "bib": "@article{bbm-031,\n  title={Global control of cell-cycle transcription by coupled {CDK} and network oscillators},\n  author={Orlando, David A and Lin, Charles Y and Bernard, Allister and Wang, Jean Y and Socolar, Joshua ES and Iversen, Edwin S and Hartemink, Alexander J and Haase, Steven B},\n  journal={Nature},\n  volume={453},\n  number={7197},\n  pages={944--947},\n  year={2008},\n  publisher={Nature Publishing Group}\n}"
+  },
+  "summary": {
+    "model_id": "031",
+    "name": "CELL-CYCLE-TRANSCRIPTION",
+    "policy": "first",
+    "seed": 42,
+    "reduction_fraction": 0.6666666666666667,
+    "internal_reduction_fraction": 0.6666666666666667,
+    "fixed_points_before": 1,
+    "fixed_points_after": 1,
+    "bijection_verified": true,
+    "reduction_seconds": 0.0006871999939903617,
+    "fp_before_seconds": 0.0011608999921008945,
+    "fp_after_seconds": 1.9000028260052204e-05,
+    "before_nodes": 9,
+    "before_internal_nodes": 9,
+    "before_inputs": 0,
+    "before_edges": 19,
+    "before_edges_without_input_identity": 19,
+    "before_self_loops": 0,
+    "before_scc": 1,
+    "before_weak_components": 1,
+    "before_max_indegree": 4,
+    "before_table_entries": 54,
+    "before_canonical_dnf_literals": 31,
+    "before_function_classes": "{\"AND\": 3, \"COPY\": 3, \"GENERAL\": 1, \"OR\": 1, \"SIGNED_AND\": 1}",
+    "before_network_class": "MIXED_OR_OTHER",
+    "after_nodes": 3,
+    "after_internal_nodes": 3,
+    "after_inputs": 0,
+    "after_edges": 9,
+    "after_edges_without_input_identity": 9,
+    "after_self_loops": 3,
+    "after_scc": 1,
+    "after_weak_components": 1,
+    "after_max_indegree": 3,
+    "after_table_entries": 24,
+    "after_canonical_dnf_literals": 9,
+    "after_function_classes": "{\"SIGNED_AND\": 3}",
+    "after_network_class": "MIXED_OR_OTHER"
+  },
+  "original": {
+    "inputs": [],
+    "functions": {
+      "v_ACE2": {
+        "support": [
+          "v_SFF"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_CLN3": {
+        "support": [
+          "v_ACE2",
+          "v_SWI5",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_HCM1": {
+        "support": [
+          "v_MBF",
+          "v_SBF"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "v_MBF": {
+        "support": [
+          "v_CLN3"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_SBF": {
+        "support": [
+          "v_CLN3",
+          "v_MBF",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_SFF": {
+        "support": [
+          "v_HCM1",
+          "v_SBF"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "v_SWI5": {
+        "support": [
+          "v_SFF"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_YHP1": {
+        "support": [
+          "v_MBF",
+          "v_SBF"
+        ],
+        "values": [
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      "v_YOX1": {
+        "support": [
+          "v_MBF",
+          "v_SBF"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "reduced": {
+    "inputs": [],
+    "functions": {
+      "v_SFF": {
+        "support": [
+          "v_SFF",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_YHP1": {
+        "support": [
+          "v_SFF",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_YOX1": {
+        "support": [
+          "v_SFF",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "node": "v_ACE2",
+      "function": {
+        "support": [
+          "v_SFF"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_CLN3",
+      "function": {
+        "support": [
+          "v_SFF",
+          "v_SWI5",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_HCM1",
+      "function": {
+        "support": [
+          "v_MBF",
+          "v_SBF"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_MBF",
+      "function": {
+        "support": [
+          "v_SFF",
+          "v_SWI5",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_SBF",
+      "function": {
+        "support": [
+          "v_SFF",
+          "v_SWI5",
+          "v_YHP1",
+          "v_YOX1"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_SWI5",
+      "function": {
+        "support": [
+          "v_SFF"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "original_fixed_points": [
+    {
+      "v_ACE2": 0,
+      "v_CLN3": 0,
+      "v_HCM1": 0,
+      "v_MBF": 0,
+      "v_SBF": 0,
+      "v_SFF": 0,
+      "v_SWI5": 0,
+      "v_YHP1": 0,
+      "v_YOX1": 0
+    }
+  ],
+  "reduced_fixed_points": [
+    {
+      "v_SFF": 0,
+      "v_YHP1": 0,
+      "v_YOX1": 0
+    }
+  ],
+  "lifted_fixed_points": [
+    {
+      "v_SFF": 0,
+      "v_YHP1": 0,
+      "v_YOX1": 0,
+      "v_SWI5": 0,
+      "v_SBF": 0,
+      "v_MBF": 0,
+      "v_HCM1": 0,
+      "v_CLN3": 0,
+      "v_ACE2": 0
+    }
+  ],
+  "fixed_points_by_input": [
+    {
+      "input": {},
+      "count": 1
+    }
+  ]
+}

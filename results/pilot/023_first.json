@@ -1,0 +1,732 @@
+{
+  "source": {
+    "id": "023",
+    "repository_directory": "models/[id-023]__[var-9]__[in-1]__[MAMMALIAN-CELL-CYCLE-2006]",
+    "files": [
+      {
+        "name": "README.md",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-023%5D__%5Bvar-9%5D__%5Bin-1%5D__%5BMAMMALIAN-CELL-CYCLE-2006%5D/README.md",
+        "sha256": "230e81823b44cb469e40786f41b5a82ba60824ccfea5be3e6bce85f7e43dec2f"
+      },
+      {
+        "name": "metadata.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-023%5D__%5Bvar-9%5D__%5Bin-1%5D__%5BMAMMALIAN-CELL-CYCLE-2006%5D/metadata.json",
+        "sha256": "1512cf9f5e43eac168aa97d5f24019668645b6de1ae644fe5ac0f0080ed0bfae"
+      },
+      {
+        "name": "model.bma.json",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-023%5D__%5Bvar-9%5D__%5Bin-1%5D__%5BMAMMALIAN-CELL-CYCLE-2006%5D/model.bma.json",
+        "sha256": "4654590c4cf4e436f852976f38e91639bb4ff99cd257c52341cbe125688cf86c"
+      },
+      {
+        "name": "model.bnet",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-023%5D__%5Bvar-9%5D__%5Bin-1%5D__%5BMAMMALIAN-CELL-CYCLE-2006%5D/model.bnet",
+        "sha256": "8b7964a6f16367183e5d2d2506c472a2b3609668e3cbc8693145d7f44191d7c0"
+      },
+      {
+        "name": "model.sbml",
+        "url": "https://raw.githubusercontent.com/sybila/biodivine-boolean-models/314b2fed94689c38d3aaaf8101ed622b3501c7f7/models/%5Bid-023%5D__%5Bvar-9%5D__%5Bin-1%5D__%5BMAMMALIAN-CELL-CYCLE-2006%5D/model.sbml",
+        "sha256": "083e093d5dcfaf073a292858e20b4b9ea87d28730030e89c1af97c7f774319ef"
+      }
+    ]
+  },
+  "metadata": {
+    "id": 23,
+    "name": "MAMMALIAN-CELL-CYCLE-2006",
+    "url-publication": "https://doi.org/10.1093/bioinformatics/btl210",
+    "url-model": [
+      "https://research.cellcollective.org/?dashboard=true#module/2396:1/mammalian-cell-cycle-2006/1",
+      "http://ginsim.org/node/4"
+    ],
+    "keywords": [
+      "cell-collective",
+      "ginsim",
+      "curated",
+      "repaired"
+    ],
+    "variables": 9,
+    "variable-names": [
+      "v_Cdc20",
+      "v_Cdh1",
+      "v_CycA",
+      "v_CycB",
+      "v_CycE",
+      "v_E2F",
+      "v_Rb",
+      "v_UbcH10",
+      "v_p27"
+    ],
+    "inputs": 1,
+    "input-names": [
+      "v_CycD"
+    ],
+    "output-names": [],
+    "regulations": 34,
+    "notes": "### Modifications\n\nTo ensure network inputs are canonically represented, the auto-regulated identity update function of `CycD (S_5)` has been removed.\n\nAdditionally, the following regulations were modified to ensure consistency of update functions with the regulatory graph:\n\n - Regulation `UbcH10 (S_10) -> CycA (S_7)` sign set to `unknown`.\n - Regulation `CycE (S_2) -> p27 (S_9)` sign set to `unknown`.",
+    "bib": "@article{bbm-023,\n  title={Dynamical analysis of a generic {Boolean} model for the control of the mammalian cell cycle},\n  author={Faur{\\'e}, Adrien and Naldi, Aur{\\'e}lien and Chaouiya, Claudine and Thieffry, Denis},\n  journal={Bioinformatics},\n  volume={22},\n  number={14},\n  pages={e124--e131},\n  year={2006},\n  publisher={Oxford University Press}\n}"
+  },
+  "summary": {
+    "model_id": "023",
+    "name": "MAMMALIAN-CELL-CYCLE-2006",
+    "policy": "first",
+    "seed": 42,
+    "reduction_fraction": 0.4,
+    "internal_reduction_fraction": 0.4444444444444444,
+    "fixed_points_before": 1,
+    "fixed_points_after": 1,
+    "bijection_verified": true,
+    "reduction_seconds": 0.000980100012384355,
+    "fp_before_seconds": 0.002493700012564659,
+    "fp_after_seconds": 0.00016070000128820539,
+    "before_nodes": 10,
+    "before_internal_nodes": 9,
+    "before_inputs": 1,
+    "before_edges": 35,
+    "before_edges_without_input_identity": 34,
+    "before_self_loops": 4,
+    "before_scc": 2,
+    "before_weak_components": 1,
+    "before_max_indegree": 6,
+    "before_table_entries": 204,
+    "before_canonical_dnf_literals": 276,
+    "before_function_classes": "{\"COPY\": 1, \"GENERAL\": 6, \"NOR\": 1, \"SIGNED_AND\": 1}",
+    "before_network_class": "MIXED_OR_OTHER",
+    "after_nodes": 6,
+    "after_internal_nodes": 5,
+    "after_inputs": 1,
+    "after_edges": 23,
+    "after_edges_without_input_identity": 22,
+    "after_self_loops": 6,
+    "after_scc": 2,
+    "after_weak_components": 1,
+    "after_max_indegree": 5,
+    "after_table_entries": 122,
+    "after_canonical_dnf_literals": 102,
+    "after_function_classes": "{\"GENERAL\": 4, \"SIGNED_AND\": 1}",
+    "after_network_class": "MIXED_OR_OTHER"
+  },
+  "original": {
+    "inputs": [
+      "v_CycD"
+    ],
+    "functions": {
+      "v_Cdc20": {
+        "support": [
+          "v_CycB"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      },
+      "v_Cdh1": {
+        "support": [
+          "v_Cdc20",
+          "v_CycA",
+          "v_CycB",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "v_CycA": {
+        "support": [
+          "v_Cdc20",
+          "v_Cdh1",
+          "v_CycA",
+          "v_E2F",
+          "v_Rb",
+          "v_UbcH10"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_CycB": {
+        "support": [
+          "v_Cdc20",
+          "v_Cdh1"
+        ],
+        "values": [
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_CycE": {
+        "support": [
+          "v_E2F",
+          "v_Rb"
+        ],
+        "values": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      "v_E2F": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_Rb",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Rb": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_CycD",
+          "v_CycE",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_UbcH10": {
+        "support": [
+          "v_Cdc20",
+          "v_Cdh1",
+          "v_CycA",
+          "v_CycB",
+          "v_UbcH10"
+        ],
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ]
+      },
+      "v_p27": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_CycD",
+          "v_CycE",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_CycD": {
+        "support": [
+          "v_CycD"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "reduced": {
+    "inputs": [
+      "v_CycD"
+    ],
+    "functions": {
+      "v_CycA": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_Rb",
+          "v_UbcH10",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_CycB": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_p27"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_Rb": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_CycD",
+          "v_Rb",
+          "v_p27"
+        ],
+        "values": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_UbcH10": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_UbcH10",
+          "v_p27"
+        ],
+        "values": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      "v_p27": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_CycD",
+          "v_Rb",
+          "v_p27"
+        ],
+        "values": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "v_CycD": {
+        "support": [
+          "v_CycD"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "steps": [
+    {
+      "node": "v_Cdc20",
+      "function": {
+        "support": [
+          "v_CycB"
+        ],
+        "values": [
+          0,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_Cdh1",
+      "function": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "node": "v_CycE",
+      "function": {
+        "support": [
+          "v_E2F",
+          "v_Rb"
+        ],
+        "values": [
+          0,
+          0,
+          1,
+          0
+        ]
+      }
+    },
+    {
+      "node": "v_E2F",
+      "function": {
+        "support": [
+          "v_CycA",
+          "v_CycB",
+          "v_Rb",
+          "v_p27"
+        ],
+        "values": [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  ],
+  "original_fixed_points": [
+    {
+      "v_Cdc20": 0,
+      "v_Cdh1": 1,
+      "v_CycA": 0,
+      "v_CycB": 0,
+      "v_CycD": 0,
+      "v_CycE": 0,
+      "v_E2F": 0,
+      "v_Rb": 1,
+      "v_UbcH10": 0,
+      "v_p27": 1
+    }
+  ],
+  "reduced_fixed_points": [
+    {
+      "v_CycA": 0,
+      "v_CycB": 0,
+      "v_CycD": 0,
+      "v_Rb": 1,
+      "v_UbcH10": 0,
+      "v_p27": 1
+    }
+  ],
+  "lifted_fixed_points": [
+    {
+      "v_CycA": 0,
+      "v_CycB": 0,
+      "v_CycD": 0,
+      "v_Rb": 1,
+      "v_UbcH10": 0,
+      "v_p27": 1,
+      "v_E2F": 0,
+      "v_CycE": 0,
+      "v_Cdh1": 1,
+      "v_Cdc20": 0
+    }
+  ],
+  "fixed_points_by_input": [
+    {
+      "input": {
+        "v_CycD": 0
+      },
+      "count": 1
+    },
+    {
+      "input": {
+        "v_CycD": 1
+      },
+      "count": 0
+    }
+  ]
+}

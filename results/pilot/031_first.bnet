@@ -1,0 +1,4 @@
+targets,factors
+v_SFF, (v_SFF & !v_YHP1 & !v_YOX1)
+v_YHP1, (v_SFF & !v_YHP1 & !v_YOX1)
+v_YOX1, (v_SFF & !v_YHP1 & !v_YOX1)
