@@ -1,3 +1,6 @@
+# cellcollective-boolean-reduction
+Reproducible analysis of Boolean network reduction on biological models from Cell Collective, with structural characterization and fixed-point analysis.
+
 # Reducción de redes booleanas de Cell Collective
 
 Primera versión experimental en Python de los pasos S/R de Veliz-Cuba,
@@ -99,3 +102,9 @@ políticas. Se compara el conjunto completo reconstruido, no solo su cardinalida
 Las métricas lógicas se refieren a la **función**, no al texto de la regla.
 No se interpreta una reducción como preservación de ciclos, cuencas de atracción
 o tiempos de respuesta. La garantía implementada se refiere a puntos fijos.
+
+## Licencia
+
+El código propio se distribuye bajo la [licencia MIT](LICENSE). Los modelos
+importados de terceros conservan sus condiciones y atribuciones de origen;
+la licencia del código no modifica las de esos datos.
