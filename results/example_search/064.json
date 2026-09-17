@@ -1,0 +1,4486 @@
+{
+  "id": "064",
+  "name": "METABOLIC-INTERACTIONS-IN-GUT-MICROBIOME",
+  "publication": "https://doi.org/10.1371/journal.pcbi.1004338",
+  "model_sha256": "1fa4fe409a0b7ca754348b488d156bf116a8f9fdfbffc401d6e9736303b6262a",
+  "original_dynamic_nodes": 8,
+  "external_inputs": [
+    "v_Clindamycin_",
+    "v_Coprobacillus",
+    "v_Enterobacteriaceae",
+    "v_Mollicutes"
+  ],
+  "input_assignments_planned": 17,
+  "attempted": 60,
+  "errors": [],
+  "candidates": [
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Mollicutes": 0
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 6,
+        "constant_rules": 2,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 5,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-",
+          "v_Blautia": "+",
+          "v_Enterococcus": "+"
+        },
+        "positive_edges": 15,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 16,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 2,
+          "MAX": 5,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {
+              "v_Blautia": "+",
+              "v_Enterococcus": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 16,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Enterococcus",
+        "v_Blautia"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "0",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Enterococcus": "1",
+        "v_Blautia": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Mollicutes": 1
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 6,
+        "constant_rules": 2,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 5,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-",
+          "v_Blautia": "+",
+          "v_Enterococcus": "+"
+        },
+        "positive_edges": 15,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 16,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 2,
+          "MAX": 5,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {
+              "v_Blautia": "+",
+              "v_Enterococcus": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 16,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Enterococcus",
+        "v_Blautia"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "0",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Enterococcus": "1",
+        "v_Blautia": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 1,
+        "v_Mollicutes": 0
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 6,
+        "constant_rules": 2,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 5,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-",
+          "v_Blautia": "+",
+          "v_Enterococcus": "+"
+        },
+        "positive_edges": 15,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 16,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 2,
+          "MAX": 5,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {
+              "v_Blautia": "+",
+              "v_Enterococcus": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 16,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Enterococcus",
+        "v_Blautia"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "0",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Enterococcus": "1",
+        "v_Blautia": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 1,
+        "v_Mollicutes": 1
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 6,
+        "constant_rules": 2,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 5,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-",
+          "v_Blautia": "+",
+          "v_Enterococcus": "+"
+        },
+        "positive_edges": 15,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 16,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 2,
+          "MAX": 5,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {
+              "v_Blautia": "+",
+              "v_Enterococcus": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 16,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Enterococcus",
+        "v_Blautia"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "0",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Enterococcus": "1",
+        "v_Blautia": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Blautia": 1,
+          "v_Enterococcus": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 0,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 0,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Mollicutes": 0
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 6,
+        "constant_rules": 2,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-",
+          "v_Enterococcus": "-",
+          "v_Blautia": "-"
+        },
+        "positive_edges": 15,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 16,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 2,
+          "MAX": 5,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {
+              "v_Blautia": "+",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 16,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Blautia",
+        "v_Enterococcus"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "1",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Blautia": "1",
+        "v_Enterococcus": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 0
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Mollicutes": 1
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 5,
+        "constant_rules": 3,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-"
+        },
+        "positive_edges": 13,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 14,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 3,
+          "MAX": 4,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 14,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Blautia",
+        "v_Enterococcus"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "1",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Blautia": "1",
+        "v_Enterococcus": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 0,
+          "v_Mollicutes": 1
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 1,
+        "v_Mollicutes": 0
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 5,
+        "constant_rules": 3,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-"
+        },
+        "positive_edges": 13,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 14,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 3,
+          "MAX": 4,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 14,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Blautia",
+        "v_Enterococcus"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "1",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Blautia": "1",
+        "v_Enterococcus": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 0
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    },
+    {
+      "scope": "input_conditioned_reduced",
+      "assignment": {
+        "v_Clindamycin_": 0,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 1,
+        "v_Mollicutes": 1
+      },
+      "policy": "first",
+      "seed": 42,
+      "before": {
+        "nodes": 8,
+        "n_nodes": 8,
+        "inputs": 0,
+        "internal_nodes": 8,
+        "nonconstant_rules": 5,
+        "constant_rules": 3,
+        "vacuous": false,
+        "out_uniform": true,
+        "out_uniform_nonvacuous": true,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": false,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": true,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": false,
+        "all_self_loop": false,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Lachnospiraceae": "+",
+          "v_Barnesiella": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+",
+          "v_Clostridium_difficile": "-"
+        },
+        "positive_edges": 13,
+        "negative_edges": 1,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 14,
+        "max_indegree": 3,
+        "local_family_counts": {
+          "CONST": 3,
+          "MAX": 4,
+          "MIN": 1
+        },
+        "conflicts": {},
+        "local": {
+          "v_Akkermansia_": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Barnesiella": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Blautia": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Barnesiella": "-",
+              "v_Clostridium_difficile": "+"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Enterococcus": {
+            "signs": {},
+            "constant": true,
+            "MIN": false,
+            "MAX": false,
+            "unate": true,
+            "gates": [
+              "CONST"
+            ],
+            "affine": true
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 8,
+          "n_edges": 14,
+          "SCCs": [
+            [
+              "v_Akkermansia_"
+            ],
+            [
+              "v_Barnesiella"
+            ],
+            [
+              "v_Blautia"
+            ],
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Enterococcus"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 6,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": false
+        }
+      },
+      "after": {
+        "nodes": 4,
+        "n_nodes": 4,
+        "inputs": 0,
+        "internal_nodes": 4,
+        "nonconstant_rules": 4,
+        "constant_rules": 0,
+        "vacuous": false,
+        "out_uniform": false,
+        "out_uniform_nonvacuous": false,
+        "locally_unate": true,
+        "MIN": false,
+        "MAX": false,
+        "MIN_MAX": true,
+        "is_conjunctive": false,
+        "is_disjunctive": false,
+        "is_AND_NOT": false,
+        "is_OR_NOT": false,
+        "is_AND_OR_NOT": true,
+        "is_AND_OR": false,
+        "is_AND_OR_NAND_NOR": false,
+        "AND_OR_NOT_out_uniform": false,
+        "AND_OR_NAND_NOR": false,
+        "AND_OR_NAND_NOR_out_uniform": false,
+        "homogeneous_MIN": false,
+        "homogeneous_MAX": false,
+        "signed_operator_homogeneous_AND": false,
+        "signed_operator_homogeneous_OR": false,
+        "signed_operator_homogeneous": null,
+        "homogeneous_gate": false,
+        "common_gates": [],
+        "positive_AND": false,
+        "positive_OR": false,
+        "affine": false,
+        "reciprocal_support": false,
+        "all_internal_self_regulated": true,
+        "all_self_loop": true,
+        "self_loop_count": 4,
+        "is_monotone": false,
+        "switchable_to_monotone": true,
+        "switching_witness": {
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "positive_edges": 10,
+        "negative_edges": 3,
+        "non_unate_edges": 0,
+        "has_multi_input_rule": true,
+        "edges": 13,
+        "max_indegree": 4,
+        "local_family_counts": {
+          "MIN": 1,
+          "MAX": 3
+        },
+        "conflicts": {
+          "v_Lachnospiraceae": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Lachnospiraceae_other_": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          },
+          "v_Other": {
+            "v_Clostridium_difficile": "-",
+            "v_Lachnospiraceae": "+",
+            "v_Lachnospiraceae_other_": "+",
+            "v_Other": "+"
+          }
+        },
+        "local": {
+          "v_Clostridium_difficile": {
+            "signs": {
+              "v_Clostridium_difficile": "+",
+              "v_Lachnospiraceae": "-",
+              "v_Lachnospiraceae_other_": "-",
+              "v_Other": "-"
+            },
+            "constant": false,
+            "MIN": true,
+            "MAX": false,
+            "unate": true,
+            "gates": [],
+            "affine": false,
+            "AND": false,
+            "OR": false,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": true,
+            "OR_NOT": false,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Lachnospiraceae_other_": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          },
+          "v_Other": {
+            "signs": {
+              "v_Lachnospiraceae": "+",
+              "v_Lachnospiraceae_other_": "+",
+              "v_Other": "+"
+            },
+            "constant": false,
+            "MIN": false,
+            "MAX": true,
+            "unate": true,
+            "gates": [
+              "OR"
+            ],
+            "affine": false,
+            "AND": false,
+            "OR": true,
+            "NAND": false,
+            "NOR": false,
+            "AND_NOT": false,
+            "OR_NOT": true,
+            "XOR": false,
+            "XNOR": false,
+            "COPY": false,
+            "NOT": false
+          }
+        },
+        "dynamic_topology": {
+          "n_nodes": 4,
+          "n_edges": 13,
+          "SCCs": [
+            [
+              "v_Clostridium_difficile"
+            ],
+            [
+              "v_Lachnospiraceae",
+              "v_Lachnospiraceae_other_",
+              "v_Other"
+            ]
+          ],
+          "n_SCC": 2,
+          "strongly_connected": false,
+          "symmetric_interaction_graph": false,
+          "all_self_loop": true
+        }
+      },
+      "rules": {
+        "v_Clostridium_difficile": "v_Clostridium_difficile & !v_Lachnospiraceae & !v_Lachnospiraceae_other_ & !v_Other",
+        "v_Lachnospiraceae": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Lachnospiraceae_other_": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Other": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other"
+      },
+      "elimination_sequence": [
+        "v_Akkermansia_",
+        "v_Barnesiella",
+        "v_Blautia",
+        "v_Enterococcus"
+      ],
+      "reconstruction_functions": {
+        "v_Akkermansia_": "1",
+        "v_Barnesiella": "v_Lachnospiraceae | v_Lachnospiraceae_other_ | v_Other",
+        "v_Blautia": "1",
+        "v_Enterococcus": "1"
+      },
+      "certificate": {
+        "status": "unsat",
+        "bijection_verified": true,
+        "method": "independent original AST vs BDD reduced equations and triangular reconstruction, under input assignment"
+      },
+      "fixed_points": {
+        "exact": true,
+        "count": 3,
+        "examples": [
+          {
+            "v_Clostridium_difficile": 1,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 0,
+            "v_Lachnospiraceae_other_": 0,
+            "v_Other": 0
+          },
+          {
+            "v_Clostridium_difficile": 0,
+            "v_Lachnospiraceae": 1,
+            "v_Lachnospiraceae_other_": 1,
+            "v_Other": 1
+          }
+        ]
+      },
+      "reconstructed_examples": [
+        {
+          "v_Clostridium_difficile": 1,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 0,
+          "v_Lachnospiraceae_other_": 0,
+          "v_Other": 0,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 0,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        },
+        {
+          "v_Clostridium_difficile": 0,
+          "v_Lachnospiraceae": 1,
+          "v_Lachnospiraceae_other_": 1,
+          "v_Other": 1,
+          "v_Enterococcus": 1,
+          "v_Blautia": 1,
+          "v_Barnesiella": 1,
+          "v_Akkermansia_": 1,
+          "v_Clindamycin_": 0,
+          "v_Coprobacillus": 1,
+          "v_Enterobacteriaceae": 1,
+          "v_Mollicutes": 1
+        }
+      ],
+      "theorem_applicability": {
+        "status": "not_assessed",
+        "reason": "Family membership alone is insufficient."
+      }
+    }
+  ],
+  "status": "complete"
+}

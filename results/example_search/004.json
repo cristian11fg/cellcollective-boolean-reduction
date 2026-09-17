@@ -1,0 +1,103 @@
+{
+  "id": "004",
+  "name": "ERBB-RECEPTOR-SIGNALING",
+  "publication": "https://doi.org/10.1371/journal.pone.0061757",
+  "model_sha256": "7cd91acb5da507b9825d8f78ff41d1428891b09ecc6715a996ad2227712cd73a",
+  "original_dynamic_nodes": 225,
+  "external_inputs": [
+    "v_AG",
+    "v_ECM",
+    "v_EGF",
+    "v_EGFR_Contr",
+    "v_ErbB2Deg_Contr",
+    "v_ErbB2_Contr",
+    "v_ErbB3_Contr",
+    "v_ErbB4_Contr",
+    "v_ExtE_cadherin",
+    "v_ExtPump",
+    "v_IL1_TNF",
+    "v_NRG",
+    "v_PI3K_I",
+    "v_PTEN_I",
+    "v_Pertuzumab",
+    "v_Stress",
+    "v_TGFa",
+    "v_Trastuzumab",
+    "v_alpha_1213L",
+    "v_alpha_iL",
+    "v_alpha_qL",
+    "v_alpha_sL"
+  ],
+  "input_assignments_planned": 1,
+  "attempted": 12,
+  "errors": [
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 11,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 12,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 13,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 14,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 15,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 16,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 17,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 18,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 19,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 20,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 21,
+      "error": "MemoryError('BDD node budget exceeded: 203704')"
+    }
+  ],
+  "candidates": [],
+  "status": "complete"
+}

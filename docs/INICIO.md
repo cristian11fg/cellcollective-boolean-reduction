@@ -129,6 +129,9 @@ de `results/pilot`; sus tiempos cambiarán ligeramente en cada ejecución.
 La taxonomía normativa está en [`taxonomia.md`](taxonomia.md), y el método y la
 procedencia del censo en [`metodo_censo.md`](metodo_censo.md).
 
+Los [nuevos ejemplos y sus ecuaciones reducidas](busqueda_ejemplos_2026-09-17.md)
+incluyen IL-6, desarrollo cardíaco y la revisión bibliográfica de Aurora.
+
 No necesitas aprender todos los comandos para empezar. Puedes pedir las acciones
 con lenguaje normal; conviene distinguir «guardar los archivos», «guardar una
 versión» y «subir esa versión a GitHub».

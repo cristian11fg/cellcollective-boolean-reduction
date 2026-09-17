@@ -1,0 +1,88 @@
+{
+  "id": "078",
+  "name": "IMMUNE-SYSTEM",
+  "publication": "https://doi.org/10.1186/1752-0509-6-96",
+  "model_sha256": "e669728c3e0137219ab59eadd798765898da130c89bcda0f07c4e7da858eac0e",
+  "original_dynamic_nodes": 151,
+  "external_inputs": [
+    "v_Bacterium_Mtb",
+    "v_Fungi_CandidaAlbicans",
+    "v_HealthyState",
+    "v_Larvae_Helminth",
+    "v_Promastigotes_Leishmania",
+    "v_Sporozoites_PF",
+    "v_Virus_EBOV",
+    "v_Virus_HIV",
+    "v_Virus_HPV",
+    "v_Virus_IAV",
+    "v_epithelial_set",
+    "v_erythrocyte_set",
+    "v_paramPV"
+  ],
+  "input_assignments_planned": 1,
+  "attempted": 12,
+  "errors": [
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 12,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 13,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 14,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 15,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 16,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 17,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 18,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 19,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 20,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 21,
+      "error": "MemoryError('BDD node budget exceeded: 200214')"
+    }
+  ],
+  "candidates": [],
+  "status": "complete"
+}

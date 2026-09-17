@@ -11,6 +11,7 @@ El motor del piloto usa tablas de verdad sin dependencias; el motor del censo us
 
 ## Censo y ejemplos para el artículo
 
+- [Nuevos ejemplos: IL-6, desarrollo cardíaco y revisión de Aurora (17/09/2026)](docs/busqueda_ejemplos_2026-09-17.md).
 - [Catálogo público directo de Cell Collective](docs/censo_live.md).
 - [78 instancias archivadas en BBM](docs/censo_catalogue.md).
 - [Definiciones, fuentes y límites del censo](docs/metodo_censo.md).
@@ -123,7 +124,7 @@ ni de «red irreducible». No es todavía un motor para el catálogo completo.
 
 ## Validación
 
-Diez pruebas: ejemplos del preprint, constantes, red vacía, autorregulación,
+29 tests: ejemplos del preprint, constantes, red vacía, autorregulación,
 entradas, dependencias aparentes, clasificación, componentes del grafo y límites.
 Se comprueba la biyección en las 256 redes booleanas posibles de dos nodos,
 100 redes aleatorias de cuatro nodos y los cinco modelos reales, con las cuatro

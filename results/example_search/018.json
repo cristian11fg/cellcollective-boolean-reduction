@@ -1,0 +1,61 @@
+{
+  "id": "018",
+  "name": "EGFR-ERBB-SIGNALING",
+  "publication": "https://doi.org/10.1371/journal.pcbi.1000438",
+  "model_sha256": "b1edd299cd026f995eabd5ad35f4a0d1eec8a0b71c68d54da469899c82a33b58",
+  "original_dynamic_nodes": 76,
+  "external_inputs": [
+    "v_ar",
+    "v_bir",
+    "v_btc",
+    "v_csrc",
+    "v_egf",
+    "v_epr",
+    "v_erbb1",
+    "v_erbb2",
+    "v_erbb3",
+    "v_erbb4",
+    "v_esp8r",
+    "v_hbegf",
+    "v_mkp",
+    "v_mtorr",
+    "v_nrg1a",
+    "v_nrg1b",
+    "v_nrg2a",
+    "v_nrg2b",
+    "v_nrg3",
+    "v_nrg4",
+    "v_pdk1",
+    "v_pi3kr",
+    "v_pp2a",
+    "v_pp2b",
+    "v_pten",
+    "v_ship2",
+    "v_sos1r",
+    "v_tgfa"
+  ],
+  "input_assignments_planned": 1,
+  "attempted": 12,
+  "errors": [
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 19,
+      "error": "MemoryError('BDD node budget exceeded: 221944')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 20,
+      "error": "MemoryError('BDD node budget exceeded: 221944')"
+    },
+    {
+      "assignment": {},
+      "policy": "random",
+      "seed": 21,
+      "error": "MemoryError('BDD node budget exceeded: 221944')"
+    }
+  ],
+  "candidates": [],
+  "status": "complete"
+}

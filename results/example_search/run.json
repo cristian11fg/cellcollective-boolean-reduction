@@ -1,0 +1,483 @@
+{
+  "strategy": "12 random orders, seeds 10..21; all assignments for 1..4 inputs with first/min_growth/random(seed10)",
+  "candidate_filter": "2..12 dynamic survivors, at least one multiargument rule; signed AND_OR_NOT or affine or monotone or switchable AND_OR_NOT",
+  "timeout_per_model_seconds": 45,
+  "outcomes": [
+    {
+      "id": "001",
+      "status": "complete",
+      "output": "001 12 0\n",
+      "seconds": 2.47
+    },
+    {
+      "id": "002",
+      "status": "complete",
+      "output": "002 12 0\n",
+      "seconds": 3.43
+    },
+    {
+      "id": "003",
+      "status": "complete",
+      "output": "003 18 2\n",
+      "seconds": 0.7
+    },
+    {
+      "id": "004",
+      "status": "complete",
+      "output": "004 12 0\n",
+      "seconds": 4.53
+    },
+    {
+      "id": "005",
+      "status": "complete",
+      "output": "005 12 0\n",
+      "seconds": 0.58
+    },
+    {
+      "id": "006",
+      "status": "complete",
+      "output": "006 12 0\n",
+      "seconds": 0.8
+    },
+    {
+      "id": "007",
+      "status": "complete",
+      "output": "007 12 0\n",
+      "seconds": 0.52
+    },
+    {
+      "id": "008",
+      "status": "complete",
+      "output": "008 36 9\n",
+      "seconds": 1.21
+    },
+    {
+      "id": "009",
+      "status": "complete_after_retry",
+      "output": "Traceback (most recent call last):\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 197, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 172, in main\n    worker(args.worker)\n    ~~~~~~^^^^^^^^^^^^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 159, in worker\n    write(OUT / f'{ident}.json', result)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 24, in write\n    path.write_text(json.dumps(data, indent=2), encoding='utf-8')\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 814, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 776, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: [Errno 22] Invalid argument: 'C:\\\\Users\\\\34654\\\\OneDrive - UNIR\\\\Documents\\\\ChatGPT\\\\Reduction CellCollective\\\\results\\\\example_search\\\\009.json'\n",
+      "seconds": 5.91,
+      "initial_attempt": {
+        "id": "009",
+        "status": "error",
+        "output": "Traceback (most recent call last):\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 197, in <module>\n    main()\n    ~~~~^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 172, in main\n    worker(args.worker)\n    ~~~~~~^^^^^^^^^^^^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 159, in worker\n    write(OUT / f'{ident}.json', result)\n    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\34654\\OneDrive - UNIR\\Documents\\ChatGPT\\Reduction CellCollective\\experiments\\search_examples.py\", line 24, in write\n    path.write_text(json.dumps(data, indent=2), encoding='utf-8')\n    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 814, in write_text\n    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:\n         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Python314\\Lib\\pathlib\\__init__.py\", line 776, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nOSError: [Errno 22] Invalid argument: 'C:\\\\Users\\\\34654\\\\OneDrive - UNIR\\\\Documents\\\\ChatGPT\\\\Reduction CellCollective\\\\results\\\\example_search\\\\009.json'\n",
+        "seconds": 5.91
+      },
+      "retry_command": "python experiments/search_examples.py --worker 009",
+      "retry_output": "009 12 6"
+    },
+    {
+      "id": "010",
+      "status": "complete",
+      "output": "010 24 2\n",
+      "seconds": 1.1
+    },
+    {
+      "id": "011",
+      "status": "complete",
+      "output": "011 60 0\n",
+      "seconds": 2.23
+    },
+    {
+      "id": "012",
+      "status": "complete",
+      "output": "012 12 0\n",
+      "seconds": 1.83
+    },
+    {
+      "id": "013",
+      "status": "complete",
+      "output": "013 24 0\n",
+      "seconds": 0.89
+    },
+    {
+      "id": "014",
+      "status": "complete",
+      "output": "014 12 0\n",
+      "seconds": 1.7
+    },
+    {
+      "id": "015",
+      "status": "complete",
+      "output": "015 24 0\n",
+      "seconds": 0.82
+    },
+    {
+      "id": "016",
+      "status": "complete",
+      "output": "016 12 0\n",
+      "seconds": 1.29
+    },
+    {
+      "id": "017",
+      "status": "complete",
+      "output": "017 12 0\n",
+      "seconds": 0.92
+    },
+    {
+      "id": "018",
+      "status": "complete",
+      "output": "018 12 0\n",
+      "seconds": 5.89
+    },
+    {
+      "id": "019",
+      "status": "complete",
+      "output": "019 12 1\n",
+      "seconds": 2.09
+    },
+    {
+      "id": "020",
+      "status": "complete",
+      "output": "020 24 0\n",
+      "seconds": 1.29
+    },
+    {
+      "id": "021",
+      "status": "complete",
+      "output": "021 36 0\n",
+      "seconds": 1.01
+    },
+    {
+      "id": "022",
+      "status": "complete",
+      "output": "022 12 0\n",
+      "seconds": 0.73
+    },
+    {
+      "id": "023",
+      "status": "complete",
+      "output": "023 18 0\n",
+      "seconds": 0.64
+    },
+    {
+      "id": "024",
+      "status": "complete",
+      "output": "024 60 0\n",
+      "seconds": 0.84
+    },
+    {
+      "id": "025",
+      "status": "complete",
+      "output": "025 12 0\n",
+      "seconds": 1.28
+    },
+    {
+      "id": "026",
+      "status": "complete",
+      "output": "026 12 0\n",
+      "seconds": 0.63
+    },
+    {
+      "id": "027",
+      "status": "complete",
+      "output": "027 12 0\n",
+      "seconds": 0.8
+    },
+    {
+      "id": "028",
+      "status": "complete",
+      "output": "028 12 0\n",
+      "seconds": 0.75
+    },
+    {
+      "id": "029",
+      "status": "complete",
+      "output": "029 24 0\n",
+      "seconds": 0.66
+    },
+    {
+      "id": "030",
+      "status": "complete",
+      "output": "030 12 0\n",
+      "seconds": 0.65
+    },
+    {
+      "id": "031",
+      "status": "complete",
+      "output": "031 12 2\n",
+      "seconds": 0.7
+    },
+    {
+      "id": "032",
+      "status": "complete",
+      "output": "032 36 3\n",
+      "seconds": 0.94
+    },
+    {
+      "id": "033",
+      "status": "complete",
+      "output": "033 12 0\n",
+      "seconds": 0.66
+    },
+    {
+      "id": "034",
+      "status": "complete",
+      "output": "034 60 0\n",
+      "seconds": 0.83
+    },
+    {
+      "id": "035",
+      "status": "complete",
+      "output": "035 12 0\n",
+      "seconds": 0.63
+    },
+    {
+      "id": "036",
+      "status": "complete",
+      "output": "036 12 0\n",
+      "seconds": 0.63
+    },
+    {
+      "id": "037",
+      "status": "complete",
+      "output": "037 12 0\n",
+      "seconds": 0.62
+    },
+    {
+      "id": "038",
+      "status": "complete",
+      "output": "038 60 0\n",
+      "seconds": 0.85
+    },
+    {
+      "id": "039",
+      "status": "complete",
+      "output": "039 12 1\n",
+      "seconds": 3.49
+    },
+    {
+      "id": "040",
+      "status": "complete",
+      "output": "040 60 1\n",
+      "seconds": 0.94
+    },
+    {
+      "id": "041",
+      "status": "complete",
+      "output": "041 12 0\n",
+      "seconds": 2.1
+    },
+    {
+      "id": "042",
+      "status": "complete",
+      "output": "042 12 0\n",
+      "seconds": 0.75
+    },
+    {
+      "id": "043",
+      "status": "complete",
+      "output": "043 12 0\n",
+      "seconds": 0.77
+    },
+    {
+      "id": "044",
+      "status": "complete",
+      "output": "044 18 0\n",
+      "seconds": 0.78
+    },
+    {
+      "id": "045",
+      "status": "complete",
+      "output": "045 12 0\n",
+      "seconds": 0.64
+    },
+    {
+      "id": "046",
+      "status": "complete",
+      "output": "046 18 0\n",
+      "seconds": 1.16
+    },
+    {
+      "id": "047",
+      "status": "complete",
+      "output": "047 12 0\n",
+      "seconds": 0.57
+    },
+    {
+      "id": "048",
+      "status": "complete",
+      "output": "048 12 0\n",
+      "seconds": 0.81
+    },
+    {
+      "id": "049",
+      "status": "complete",
+      "output": "049 18 0\n",
+      "seconds": 0.55
+    },
+    {
+      "id": "050",
+      "status": "complete",
+      "output": "050 12 0\n",
+      "seconds": 3.54
+    },
+    {
+      "id": "051",
+      "status": "complete",
+      "output": "051 18 0\n",
+      "seconds": 1.66
+    },
+    {
+      "id": "052",
+      "status": "complete",
+      "output": "052 12 2\n",
+      "seconds": 1.4
+    },
+    {
+      "id": "053",
+      "status": "complete",
+      "output": "053 24 2\n",
+      "seconds": 0.66
+    },
+    {
+      "id": "054",
+      "status": "complete",
+      "output": "054 18 9\n",
+      "seconds": 1.17
+    },
+    {
+      "id": "055",
+      "status": "complete",
+      "output": "055 12 0\n",
+      "seconds": 0.64
+    },
+    {
+      "id": "056",
+      "status": "complete",
+      "output": "056 12 0\n",
+      "seconds": 0.73
+    },
+    {
+      "id": "057",
+      "status": "complete",
+      "output": "057 12 0\n",
+      "seconds": 0.67
+    },
+    {
+      "id": "058",
+      "status": "complete",
+      "output": "058 12 0\n",
+      "seconds": 0.63
+    },
+    {
+      "id": "059",
+      "status": "complete",
+      "output": "059 12 0\n",
+      "seconds": 0.86
+    },
+    {
+      "id": "060",
+      "status": "complete",
+      "output": "060 12 0\n",
+      "seconds": 1.66
+    },
+    {
+      "id": "061",
+      "status": "complete",
+      "output": "061 24 0\n",
+      "seconds": 0.73
+    },
+    {
+      "id": "062",
+      "status": "complete",
+      "output": "062 12 0\n",
+      "seconds": 0.63
+    },
+    {
+      "id": "063",
+      "status": "complete",
+      "output": "063 36 1\n",
+      "seconds": 0.68
+    },
+    {
+      "id": "064",
+      "status": "complete",
+      "output": "064 60 8\n",
+      "seconds": 0.88
+    },
+    {
+      "id": "065",
+      "status": "complete",
+      "output": "065 24 2\n",
+      "seconds": 1.23
+    },
+    {
+      "id": "066",
+      "status": "complete",
+      "output": "066 12 0\n",
+      "seconds": 1.02
+    },
+    {
+      "id": "067",
+      "status": "complete",
+      "output": "067 60 0\n",
+      "seconds": 0.57
+    },
+    {
+      "id": "068",
+      "status": "complete",
+      "output": "068 60 21\n",
+      "seconds": 1.5
+    },
+    {
+      "id": "069",
+      "status": "complete",
+      "output": "069 24 3\n",
+      "seconds": 1.02
+    },
+    {
+      "id": "070",
+      "status": "complete",
+      "output": "070 60 1\n",
+      "seconds": 1.85
+    },
+    {
+      "id": "071",
+      "status": "complete",
+      "output": "071 12 0\n",
+      "seconds": 0.69
+    },
+    {
+      "id": "072",
+      "status": "complete",
+      "output": "072 12 0\n",
+      "seconds": 1.38
+    },
+    {
+      "id": "073",
+      "status": "complete",
+      "output": "073 36 4\n",
+      "seconds": 1.21
+    },
+    {
+      "id": "074",
+      "status": "complete",
+      "output": "074 12 0\n",
+      "seconds": 0.51
+    },
+    {
+      "id": "075",
+      "status": "complete",
+      "output": "075 12 0\n",
+      "seconds": 1.36
+    },
+    {
+      "id": "076",
+      "status": "complete",
+      "output": "076 24 0\n",
+      "seconds": 0.76
+    },
+    {
+      "id": "077",
+      "status": "complete",
+      "output": "077 12 0\n",
+      "seconds": 0.73
+    },
+    {
+      "id": "078",
+      "status": "complete",
+      "output": "078 12 0\n",
+      "seconds": 3.02
+    }
+  ]
+}

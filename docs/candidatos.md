@@ -1,5 +1,8 @@
 # Funciones locales de los dos candidatos
 
+La selección ampliada, con IL-6, desarrollo cardíaco, especificación linfoide y
+la verificación de Aurora, está en [la búsqueda del 17/09/2026](busqueda_ejemplos_2026-09-17.md).
+
 Este documento recoge las dos redes del piloto que resultaron **out-uniformes en signo**: `Toll Pathway of Drosophila` (BBM 029) y `Cell Cycle Transcription` (BBM 031). Las expresiones usan `¬` para NOT, `∧` para AND y `∨` para OR.
 
 La comprobación debe hacerse con el mismo orden `first` usado por el experimento. En cada paso se elimina un nodo sin dependencia propia y se sustituye su función en las funciones que todavía lo utilizan.
