@@ -1,0 +1,3497 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "3481_1",
+  "name": "Influenza A Virus Replication Cycle",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 131,
+  "after": {
+    "nodes": 30,
+    "n_nodes": 30,
+    "inputs": 11,
+    "internal_nodes": 19,
+    "nonconstant_rules": 19,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 19,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bisindolylmaleimide_I": "+",
+      "v_PB1_PA_cyto": "-",
+      "v_pro_vRNP_NP_M1_nuc": "+",
+      "v_cRNA_PA": "-",
+      "v_pro_vRNP_HA_M1_cyto": "-",
+      "v_temp_vRNP_PB2_nuc": "-",
+      "v_pro_vRNP_M_M1_cyto": "-",
+      "v_pro_vRNP_PA_M1_cyto": "-",
+      "v_pro_vRNP_PB1_M1_cyto": "-",
+      "v_pro_vRNP_PB2_M1_nuc": "+",
+      "v_temp_vRNP_M_nuc": "-",
+      "v_cRNA_PB1": "-",
+      "v_temp_vRNP_NP_nuc": "-",
+      "v_pro_vRNP_NA_M1_nuc": "+",
+      "v_temp_vRNP_NS_nuc": "-",
+      "v_cRNA_HA": "-",
+      "v_cRNA_NA": "-",
+      "v_pro_vRNP_NS_M1_cyto": "-",
+      "v_HA_SialicAcid_Affinity": "-",
+      "v_Methyl_Beta_Cyclodextrin": "+",
+      "v_Viral_Dose": "-",
+      "v_Wortmannin": "+",
+      "v_U0126": "+",
+      "v_M2_inhibitor": "+",
+      "v_RTK_Inhibitor": "+",
+      "v_cRNP_NS": "-",
+      "v_cRNP_M": "-",
+      "v_PB1_Inhibitor": "+",
+      "v_PB1_PA_Interface_Inhibitor": "+"
+    },
+    "positive_edges": 139,
+    "negative_edges": 87,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 226,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 19
+    },
+    "conflicts": {
+      "v_Bisindolylmaleimide_I": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-"
+      },
+      "v_HA_SialicAcid_Affinity": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      },
+      "v_Methyl_Beta_Cyclodextrin": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-"
+      },
+      "v_Viral_Dose": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      },
+      "v_Wortmannin": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-"
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNP_NS": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      },
+      "v_U0126": {
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_pro_vRNP_NS_M1_cyto": "-"
+      },
+      "v_cRNA_HA": {
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_cRNA_HA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      }
+    },
+    "local": {
+      "v_PB1_PA_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_Inhibitor": "-",
+          "v_PB1_PA_Interface_Inhibitor": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PA": "+",
+          "v_cRNA_PB1": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_pro_vRNP_NP_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_HA_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB2_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_M_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_cRNA_PA": "+",
+          "v_pro_vRNP_PA_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_M": {
+        "signs": {
+          "v_PB1_PA_cyto": "+",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_cRNA_PB1": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_pro_vRNP_PB2_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_M_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PB1": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PB1": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NP_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_cRNA_NA": "+",
+          "v_pro_vRNP_NA_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NS": {
+        "signs": {
+          "v_PB1_PA_cyto": "+",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_HA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_NA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_NS_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 30,
+    "n_nodes": 30,
+    "inputs": 11,
+    "internal_nodes": 19,
+    "nonconstant_rules": 30,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 30,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bisindolylmaleimide_I": "+",
+      "v_PB1_PA_cyto": "-",
+      "v_pro_vRNP_NP_M1_nuc": "+",
+      "v_cRNA_PA": "-",
+      "v_pro_vRNP_HA_M1_cyto": "-",
+      "v_temp_vRNP_PB2_nuc": "-",
+      "v_pro_vRNP_M_M1_cyto": "-",
+      "v_pro_vRNP_PA_M1_cyto": "-",
+      "v_pro_vRNP_PB1_M1_cyto": "-",
+      "v_pro_vRNP_PB2_M1_nuc": "+",
+      "v_temp_vRNP_M_nuc": "-",
+      "v_cRNA_PB1": "-",
+      "v_temp_vRNP_NP_nuc": "-",
+      "v_pro_vRNP_NA_M1_nuc": "+",
+      "v_temp_vRNP_NS_nuc": "-",
+      "v_cRNA_HA": "-",
+      "v_cRNA_NA": "-",
+      "v_pro_vRNP_NS_M1_cyto": "-",
+      "v_HA_SialicAcid_Affinity": "-",
+      "v_Methyl_Beta_Cyclodextrin": "+",
+      "v_Viral_Dose": "-",
+      "v_Wortmannin": "+",
+      "v_U0126": "+",
+      "v_M2_inhibitor": "+",
+      "v_RTK_Inhibitor": "+",
+      "v_cRNP_NS": "-",
+      "v_cRNP_M": "-",
+      "v_PB1_Inhibitor": "+",
+      "v_PB1_PA_Interface_Inhibitor": "+",
+      "v_Neuraminidase_inhibitor": "+"
+    },
+    "positive_edges": 150,
+    "negative_edges": 87,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 237,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 19,
+      "MIN_MAX": 11
+    },
+    "conflicts": {
+      "v_Bisindolylmaleimide_I": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-",
+        "v_Bisindolylmaleimide_I": "+"
+      },
+      "v_HA_SialicAcid_Affinity": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+",
+        "v_HA_SialicAcid_Affinity": "+"
+      },
+      "v_M2_inhibitor": {
+        "v_PB1_PA_cyto": "-",
+        "v_cRNA_PA": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_M2_inhibitor": "+"
+      },
+      "v_Methyl_Beta_Cyclodextrin": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-",
+        "v_Methyl_Beta_Cyclodextrin": "+"
+      },
+      "v_PB1_Inhibitor": {
+        "v_PB1_PA_cyto": "-",
+        "v_PB1_Inhibitor": "+"
+      },
+      "v_PB1_PA_Interface_Inhibitor": {
+        "v_PB1_PA_cyto": "-",
+        "v_PB1_PA_Interface_Inhibitor": "+"
+      },
+      "v_RTK_Inhibitor": {
+        "v_PB1_PA_cyto": "-",
+        "v_cRNA_PA": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_RTK_Inhibitor": "+"
+      },
+      "v_Viral_Dose": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+",
+        "v_Viral_Dose": "+"
+      },
+      "v_Wortmannin": {
+        "v_PB1_PA_cyto": "-",
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_cRNA_PA": "-",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_temp_vRNP_PB2_nuc": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_temp_vRNP_M_nuc": "-",
+        "v_cRNA_PB1": "-",
+        "v_temp_vRNP_NP_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_temp_vRNP_NS_nuc": "-",
+        "v_cRNA_HA": "-",
+        "v_cRNA_NA": "-",
+        "v_pro_vRNP_NS_M1_cyto": "-",
+        "v_Wortmannin": "+"
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "v_PB1_PA_cyto": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_cRNA_PA": "+",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_temp_vRNP_PB2_nuc": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_temp_vRNP_M_nuc": "+",
+        "v_cRNA_PB1": "+",
+        "v_temp_vRNP_NP_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_temp_vRNP_NS_nuc": "+",
+        "v_cRNP_NS": "+",
+        "v_cRNA_HA": "+",
+        "v_cRNA_NA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      },
+      "v_U0126": {
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_pro_vRNP_HA_M1_cyto": "-",
+        "v_pro_vRNP_M_M1_cyto": "-",
+        "v_pro_vRNP_PA_M1_cyto": "-",
+        "v_pro_vRNP_PB1_M1_cyto": "-",
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_pro_vRNP_NS_M1_cyto": "-",
+        "v_U0126": "+"
+      },
+      "v_cRNA_HA": {
+        "v_pro_vRNP_NP_M1_nuc": "-",
+        "v_pro_vRNP_HA_M1_cyto": "+",
+        "v_pro_vRNP_M_M1_cyto": "+",
+        "v_pro_vRNP_PA_M1_cyto": "+",
+        "v_pro_vRNP_PB1_M1_cyto": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-",
+        "v_pro_vRNP_NA_M1_nuc": "-",
+        "v_cRNA_HA": "+",
+        "v_pro_vRNP_NS_M1_cyto": "+"
+      }
+    },
+    "local": {
+      "v_PB1_PA_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_Inhibitor": "-",
+          "v_PB1_PA_Interface_Inhibitor": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PA": "+",
+          "v_cRNA_PB1": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_pro_vRNP_NP_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_HA_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB2_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_M_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_cRNA_PA": "+",
+          "v_pro_vRNP_PA_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_M": {
+        "signs": {
+          "v_PB1_PA_cyto": "+",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_cRNA_PB1": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_pro_vRNP_PB2_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_M_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PB1": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_PB1": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NP_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+",
+          "v_HA_SialicAcid_Affinity": "-",
+          "v_Methyl_Beta_Cyclodextrin": "+",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "+",
+          "v_Viral_Dose": "-",
+          "v_Wortmannin": "+",
+          "v_cRNA_HA": "-",
+          "v_cRNA_NA": "+",
+          "v_pro_vRNP_NA_M1_nuc": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "-",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NS": {
+        "signs": {
+          "v_PB1_PA_cyto": "+",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_HA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NA": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_M2_inhibitor": "-",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_RTK_Inhibitor": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_NA": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_PB1_PA_cyto": "+",
+          "v_U0126": "-",
+          "v_Viral_Dose": "+",
+          "v_Wortmannin": "-",
+          "v_cRNA_HA": "+",
+          "v_pro_vRNP_NS_M1_cyto": "-",
+          "v_temp_vRNP_M_nuc": "+",
+          "v_temp_vRNP_NP_nuc": "+",
+          "v_temp_vRNP_NS_nuc": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RTK_Inhibitor": {
+        "signs": {
+          "v_RTK_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_U0126": {
+        "signs": {
+          "v_U0126": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Bisindolylmaleimide_I": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_PA_Interface_Inhibitor": {
+        "signs": {
+          "v_PB1_PA_Interface_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Wortmannin": {
+        "signs": {
+          "v_Wortmannin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Methyl_Beta_Cyclodextrin": {
+        "signs": {
+          "v_Methyl_Beta_Cyclodextrin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Neuraminidase_inhibitor": {
+        "signs": {
+          "v_Neuraminidase_inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M2_inhibitor": {
+        "signs": {
+          "v_M2_inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Viral_Dose": {
+        "signs": {
+          "v_Viral_Dose": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HA_SialicAcid_Affinity": {
+        "signs": {
+          "v_HA_SialicAcid_Affinity": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_Inhibitor": {
+        "signs": {
+          "v_PB1_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 1,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 1,
+        "v_U0126": 0,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 1,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 0,
+        "v_cRNP_NS": 0,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 0,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 0,
+        "v_temp_vRNP_M_nuc": 0,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 0,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 1,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 1,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 1,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 1,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 1,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 1,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 1,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 0,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 0,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 1,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      },
+      {
+        "v_Bisindolylmaleimide_I": 0,
+        "v_HA_SialicAcid_Affinity": 0,
+        "v_M2_inhibitor": 1,
+        "v_Methyl_Beta_Cyclodextrin": 0,
+        "v_Neuraminidase_inhibitor": 1,
+        "v_PB1_Inhibitor": 0,
+        "v_PB1_PA_Interface_Inhibitor": 0,
+        "v_PB1_PA_cyto": 1,
+        "v_RTK_Inhibitor": 0,
+        "v_U0126": 0,
+        "v_Viral_Dose": 0,
+        "v_Wortmannin": 0,
+        "v_cRNA_HA": 0,
+        "v_cRNA_NA": 0,
+        "v_cRNA_PA": 1,
+        "v_cRNA_PB1": 1,
+        "v_cRNP_M": 1,
+        "v_cRNP_NS": 1,
+        "v_pro_vRNP_HA_M1_cyto": 0,
+        "v_pro_vRNP_M_M1_cyto": 0,
+        "v_pro_vRNP_NA_M1_nuc": 0,
+        "v_pro_vRNP_NP_M1_nuc": 1,
+        "v_pro_vRNP_NS_M1_cyto": 0,
+        "v_pro_vRNP_PA_M1_cyto": 0,
+        "v_pro_vRNP_PB1_M1_cyto": 0,
+        "v_pro_vRNP_PB2_M1_nuc": 1,
+        "v_temp_vRNP_M_nuc": 1,
+        "v_temp_vRNP_NP_nuc": 1,
+        "v_temp_vRNP_NS_nuc": 1,
+        "v_temp_vRNP_PB2_nuc": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_PB1_PA_cyto": "!(((v_Bisindolylmaleimide_I & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & ((v_PB1_PA_Interface_Inhibitor & 1) | (!v_PB1_PA_Interface_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0)))))))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & ((v_PB1_PA_Interface_Inhibitor & 1) | (!v_PB1_PA_Interface_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0)))))))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & ((v_PB1_PA_Interface_Inhibitor & 1) | (!v_PB1_PA_Interface_Inhibitor & !(((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PA & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))))))))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & ((v_PB1_PA_Interface_Inhibitor & 1) | (!v_PB1_PA_Interface_Inhibitor & !(((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PA & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1))))))))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & ((v_PB1_PA_Interface_Inhibitor & 1) | (!v_PB1_PA_Interface_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0))))))))))))",
+    "v_pro_vRNP_NP_M1_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_Wortmannin & !(((v_cRNA_HA & ((v_pro_vRNP_NP_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_NP_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))))) | (!v_Viral_Dose & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_U0126 & !(((v_Viral_Dose & ((v_cRNA_HA & ((v_pro_vRNP_NP_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_NP_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_Viral_Dose & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))))) | (!v_PB1_PA_cyto & 0))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_cRNA_PA": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))))))) | (!v_PB1_PA_cyto & 0))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_PA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PA & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_pro_vRNP_HA_M1_cyto": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & ((v_cRNA_HA & ((v_pro_vRNP_HA_M1_cyto & 1) | (!v_pro_vRNP_HA_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_cRNA_HA & ((v_pro_vRNP_HA_M1_cyto & 1) | (!v_pro_vRNP_HA_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))))) | (!v_HA_SialicAcid_Affinity & 1)))))",
+    "v_temp_vRNP_PB2_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_Wortmannin & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))))) | (!v_Viral_Dose & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1)))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_Wortmannin & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))))) | (!v_Viral_Dose & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_pro_vRNP_M_M1_cyto": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & ((v_cRNA_HA & ((v_pro_vRNP_M_M1_cyto & 1) | (!v_pro_vRNP_M_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_cRNA_HA & ((v_pro_vRNP_M_M1_cyto & 1) | (!v_pro_vRNP_M_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))))) | (!v_HA_SialicAcid_Affinity & 1)))))",
+    "v_pro_vRNP_PA_M1_cyto": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & ((v_cRNA_HA & ((v_cRNA_PA & ((v_pro_vRNP_PA_M1_cyto & 1) | (!v_pro_vRNP_PA_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_PA & 1))) | (!v_cRNA_HA & 1))))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_cRNA_HA & ((v_cRNA_PA & ((v_pro_vRNP_PA_M1_cyto & 1) | (!v_pro_vRNP_PA_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_PA & 1))) | (!v_cRNA_HA & 1))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))))) | (!v_HA_SialicAcid_Affinity & 1)))))",
+    "v_cRNP_M": "((v_PB1_PA_cyto & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB1_PA_cyto & 0))",
+    "v_pro_vRNP_PB1_M1_cyto": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & ((v_cRNA_HA & ((v_cRNA_PB1 & ((v_pro_vRNP_PB1_M1_cyto & 1) | (!v_pro_vRNP_PB1_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_PB1 & 1))) | (!v_cRNA_HA & 1))))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_cRNA_HA & ((v_cRNA_PB1 & ((v_pro_vRNP_PB1_M1_cyto & 1) | (!v_pro_vRNP_PB1_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_PB1 & 1))) | (!v_cRNA_HA & 1))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))))) | (!v_HA_SialicAcid_Affinity & 1)))))",
+    "v_pro_vRNP_PB2_M1_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_Wortmannin & !(((v_cRNA_HA & ((v_pro_vRNP_PB2_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_PB2_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))))) | (!v_Viral_Dose & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_U0126 & !(((v_Viral_Dose & ((v_cRNA_HA & ((v_pro_vRNP_PB2_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_PB2_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_Viral_Dose & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))))) | (!v_PB1_PA_cyto & 0))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_temp_vRNP_M_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_Wortmannin & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_temp_vRNP_M_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))))) | (!v_Viral_Dose & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1)))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_Wortmannin & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_temp_vRNP_M_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))))) | (!v_Viral_Dose & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNP_M & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_cRNA_PB1": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))))) | (!v_PB1_PA_cyto & 0))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_temp_vRNP_NP_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_Wortmannin & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1)))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_Wortmannin & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_pro_vRNP_NA_M1_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & !(((v_cRNA_HA & ((v_cRNA_NA & ((v_pro_vRNP_NA_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_NA_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_NA & 1))) | (!v_cRNA_HA & !(((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))))))))) | (!v_Viral_Dose & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_U0126 & !(((v_Viral_Dose & ((v_cRNA_HA & ((v_cRNA_NA & ((v_pro_vRNP_NA_M1_nuc & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & !(((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0)))))) | (!v_temp_vRNP_NP_nuc & 1))) | (!v_temp_vRNP_M_nuc & 1))) | (!v_pro_vRNP_NA_M1_nuc & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_NA & 1))) | (!v_cRNA_HA & !(((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0)))))) | (!v_Viral_Dose & !(((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))))))))) | (!v_PB1_PA_cyto & 0))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_NA & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_temp_vRNP_NS_nuc": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_Wortmannin & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNP_NS & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1)))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_Wortmannin & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNP_NS & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_cRNP_NS": "((v_PB1_PA_cyto & ((v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB1_PA_cyto & 0))",
+    "v_cRNA_HA": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_HA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_HA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))))) | (!v_PB1_PA_cyto & 0))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_cRNA_NA": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_NA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))))) | (!v_PB1_PA_cyto & 0))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_NA & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_Viral_Dose & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))))))) | (!v_PB1_PA_cyto & 0))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_NA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_NA & 0))) | (!v_PB1_PA_cyto & 0))))))",
+    "v_pro_vRNP_NS_M1_cyto": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & ((v_cRNA_HA & ((v_pro_vRNP_NS_M1_cyto & 1) | (!v_pro_vRNP_NS_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_U0126 & 1) | (!v_U0126 & ((v_Viral_Dose & ((v_cRNA_HA & ((v_pro_vRNP_NS_M1_cyto & 1) | (!v_pro_vRNP_NS_M1_cyto & !(((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0)))))) | (!v_cRNA_HA & 1))) | (!v_Viral_Dose & 1))))) | (!v_PB1_PA_cyto & 1))))) | (!v_HA_SialicAcid_Affinity & 1)))))",
+    "v_RTK_Inhibitor": "v_RTK_Inhibitor",
+    "v_U0126": "v_U0126",
+    "v_Bisindolylmaleimide_I": "v_Bisindolylmaleimide_I",
+    "v_PB1_PA_Interface_Inhibitor": "v_PB1_PA_Interface_Inhibitor",
+    "v_Wortmannin": "v_Wortmannin",
+    "v_Methyl_Beta_Cyclodextrin": "v_Methyl_Beta_Cyclodextrin",
+    "v_Neuraminidase_inhibitor": "v_Neuraminidase_inhibitor",
+    "v_M2_inhibitor": "v_M2_inhibitor",
+    "v_Viral_Dose": "v_Viral_Dose",
+    "v_HA_SialicAcid_Affinity": "v_HA_SialicAcid_Affinity",
+    "v_PB1_Inhibitor": "v_PB1_Inhibitor"
+  },
+  "steps": [
+    {
+      "node": "v_pro_vRNP_HA_M1_nuc",
+      "support": [
+        "v_NP_nuc",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_pro_vRNP_HA_M1_cyto",
+        "v_vRNA_HA_M1"
+      ],
+      "function": "v_NP_nuc & v_PB1_PA_nuc & v_PB2_nuc & !v_pro_vRNP_HA_M1_cyto & v_vRNA_HA_M1"
+    },
+    {
+      "node": "v_M2_cyto",
+      "support": [
+        "v_mRNA_M2_cyto"
+      ],
+      "function": "v_mRNA_M2_cyto"
+    },
+    {
+      "node": "v_IVA_EE",
+      "support": [
+        "v_IVA_SialicAcid_CCV",
+        "v_PIP3"
+      ],
+      "function": "v_IVA_SialicAcid_CCV & v_PIP3"
+    },
+    {
+      "node": "v_temp_vRNP_NA_nuc",
+      "support": [
+        "v_NP_nuc",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_par_vRNP_NA_cyto",
+        "v_vRNA_NA"
+      ],
+      "function": "((v_NP_nuc & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_par_vRNP_NA_cyto & 1) | (!v_par_vRNP_NA_cyto & ((v_vRNA_NA & 1) | (!v_vRNA_NA & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_NA_cyto & 1) | (!v_par_vRNP_NA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_NA_cyto & 1) | (!v_par_vRNP_NA_cyto & 0))))) | (!v_NP_nuc & ((v_par_vRNP_NA_cyto & 1) | (!v_par_vRNP_NA_cyto & 0))))"
+    },
+    {
+      "node": "v_cRNA_M",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_M",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_M & 1) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & 1) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_Progeny_Virion",
+      "support": [
+        "v_HA_LipidRafts",
+        "v_NA_LipidRafts",
+        "v_mRNA_M2_cyto",
+        "v_pro_vRNP_HA_M1_cyto",
+        "v_pro_vRNP_M_M1_cyto",
+        "v_pro_vRNP_NA_M1_cyto",
+        "v_pro_vRNP_NP_M1_cyto",
+        "v_pro_vRNP_NS_M1_cyto",
+        "v_pro_vRNP_PA_M1_cyto",
+        "v_pro_vRNP_PB1_M1_cyto",
+        "v_pro_vRNP_PB2_M1_cyto"
+      ],
+      "function": "v_HA_LipidRafts & v_NA_LipidRafts & v_mRNA_M2_cyto & v_pro_vRNP_HA_M1_cyto & v_pro_vRNP_M_M1_cyto & v_pro_vRNP_NA_M1_cyto & v_pro_vRNP_NP_M1_cyto & v_pro_vRNP_NS_M1_cyto & v_pro_vRNP_PA_M1_cyto & v_pro_vRNP_PB1_M1_cyto & v_pro_vRNP_PB2_M1_cyto"
+    },
+    {
+      "node": "v_PIP2",
+      "support": [
+        "v_PI3K"
+      ],
+      "function": "v_PI3K"
+    },
+    {
+      "node": "v_NP_nuc",
+      "support": [
+        "v_NP_cyto"
+      ],
+      "function": "v_NP_cyto"
+    },
+    {
+      "node": "v_vRNA_HA",
+      "support": [
+        "v_cRNA_HA"
+      ],
+      "function": "v_cRNA_HA"
+    },
+    {
+      "node": "v_MEK",
+      "support": [
+        "v_Raf",
+        "v_U0126"
+      ],
+      "function": "v_Raf & !v_U0126"
+    },
+    {
+      "node": "v_temp_vRNP_HA_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_HA",
+        "v_par_vRNP_HA_cyto"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNA_HA & 1) | (!v_cRNA_HA & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))"
+    },
+    {
+      "node": "v_vRNA_NA",
+      "support": [
+        "v_cRNA_NA"
+      ],
+      "function": "v_cRNA_NA"
+    },
+    {
+      "node": "v_par_vRNP_PB2_cyto",
+      "support": [
+        "v_IVA_LE"
+      ],
+      "function": "v_IVA_LE"
+    },
+    {
+      "node": "v_M1_cyto",
+      "support": [
+        "v_mRNA_M1_cyto"
+      ],
+      "function": "v_mRNA_M1_cyto"
+    },
+    {
+      "node": "v_pro_vRNP_NS_M1_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_pro_vRNP_NS_M1_cyto",
+        "v_vRNA_NS_M1"
+      ],
+      "function": "v_NP_cyto & v_PB1_PA_nuc & v_PB2_nuc & !v_pro_vRNP_NS_M1_cyto & v_vRNA_NS_M1"
+    },
+    {
+      "node": "v_mRNA_NS2_nuc",
+      "support": [
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "v_temp_vRNP_NS_nuc"
+    },
+    {
+      "node": "v_IVA_LE",
+      "support": [
+        "v_IVA_ME",
+        "v_M2_inhibitor",
+        "v_PKC"
+      ],
+      "function": "v_IVA_ME & !v_M2_inhibitor & v_PKC"
+    },
+    {
+      "node": "v_IVA_HA1_HA2",
+      "support": [
+        "v_Viral_Dose"
+      ],
+      "function": "v_Viral_Dose"
+    },
+    {
+      "node": "v_NA_cyto",
+      "support": [
+        "v_mRNA_NA_cyto"
+      ],
+      "function": "v_mRNA_NA_cyto"
+    },
+    {
+      "node": "v_cRNA_NS",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_NS",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_NS & 1) | (!v_cRNP_NS & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_cRNA_PB2",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_PB2",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_PB2 & 1) | (!v_cRNP_PB2 & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_pro_vRNP_NP_M1_cyto",
+      "support": [
+        "v_NS2_CellularFactor",
+        "v_NS2_cyto",
+        "v_pro_vRNP_NP_M1_nuc"
+      ],
+      "function": "v_NS2_CellularFactor & v_NS2_cyto & v_pro_vRNP_NP_M1_nuc"
+    },
+    {
+      "node": "v_vRNA_M",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_M",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_M & 1) | (!v_cRNP_M & ((v_temp_vRNP_M_nuc & 1) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_IVA_ME",
+      "support": [
+        "v_IVA_SialicAcid_CCV",
+        "v_PIP3"
+      ],
+      "function": "v_IVA_SialicAcid_CCV & v_PIP3"
+    },
+    {
+      "node": "v_temp_vRNP_PA_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_par_vRNP_PA_cyto",
+        "v_vRNA_PA"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & ((v_vRNA_PA & 1) | (!v_vRNA_PA & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))"
+    },
+    {
+      "node": "v_cRNA_NP",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_NP",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_NP & 1) | (!v_cRNP_NP & ((v_temp_vRNP_NP_nuc & 1) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_vRNA_PB2_M1",
+      "support": [
+        "v_M1_nuc",
+        "v_vRNA_PB2"
+      ],
+      "function": "v_M1_nuc & v_vRNA_PB2"
+    },
+    {
+      "node": "v_temp_vRNP_PB1_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_par_vRNP_PB1_cyto",
+        "v_vRNA_PB1"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & ((v_vRNA_PB1 & 1) | (!v_vRNA_PB1 & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))"
+    },
+    {
+      "node": "v_par_vRNP_NP_cyto",
+      "support": [
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_PIP3",
+        "v_PKC"
+      ],
+      "function": "v_IVA_SialicAcid_CCV & !v_M2_inhibitor & v_PIP3 & v_PKC"
+    },
+    {
+      "node": "v_cRNP_NA",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_NA"
+      ],
+      "function": "v_NP_cyto & v_PB1_PA_nuc & v_PB2_nuc & v_cRNA_NA"
+    },
+    {
+      "node": "v_pro_vRNP_NA_M1_cyto",
+      "support": [
+        "v_NS2_CellularFactor",
+        "v_NS2_cyto",
+        "v_pro_vRNP_NA_M1_nuc"
+      ],
+      "function": "v_NS2_CellularFactor & v_NS2_cyto & v_pro_vRNP_NA_M1_nuc"
+    },
+    {
+      "node": "v_vRNA_PB1",
+      "support": [
+        "v_cRNA_PB1"
+      ],
+      "function": "v_cRNA_PB1"
+    },
+    {
+      "node": "v_mRNA_NA_cyto",
+      "support": [
+        "v_mRNA_NA_nuc"
+      ],
+      "function": "v_mRNA_NA_nuc"
+    },
+    {
+      "node": "v_ERK",
+      "support": [
+        "v_Raf",
+        "v_U0126"
+      ],
+      "function": "v_Raf & !v_U0126"
+    },
+    {
+      "node": "v_PIP3",
+      "support": [
+        "v_PI3K"
+      ],
+      "function": "v_PI3K"
+    },
+    {
+      "node": "v_pro_vRNP_PA_M1_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_pro_vRNP_PA_M1_cyto",
+        "v_vRNA_PA_M1"
+      ],
+      "function": "v_NP_cyto & v_PB1_PA_nuc & v_PB2_nuc & !v_pro_vRNP_PA_M1_cyto & v_vRNA_PA_M1"
+    },
+    {
+      "node": "v_mRNA_PB2_cyto",
+      "support": [
+        "v_mRNA_PB2_nuc"
+      ],
+      "function": "v_mRNA_PB2_nuc"
+    },
+    {
+      "node": "v_mRNA_NP_nuc",
+      "support": [
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "v_temp_vRNP_NP_nuc"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_NS1_cyto",
+        "v_RTK",
+        "v_Wortmannin"
+      ],
+      "function": "!(((v_NS1_cyto & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_NS1_cyto & ((v_RTK & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_RTK & 1)))))"
+    },
+    {
+      "node": "v_mRNA_HA_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_HA",
+        "v_par_vRNP_HA_cyto"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNA_HA & 1) | (!v_cRNA_HA & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))"
+    },
+    {
+      "node": "v_par_vRNP_NA_cyto",
+      "support": [
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_NS1_cyto",
+        "v_PKC",
+        "v_RTK",
+        "v_Wortmannin"
+      ],
+      "function": "!(((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_NS1_cyto & ((v_PKC & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_PKC & 1))) | (!v_NS1_cyto & ((v_PKC & ((v_RTK & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_RTK & 1))) | (!v_PKC & 1))))))) | (!v_IVA_SialicAcid_CCV & 1)))"
+    },
+    {
+      "node": "v_PA_cyto",
+      "support": [
+        "v_mRNA_PA_cyto"
+      ],
+      "function": "v_mRNA_PA_cyto"
+    },
+    {
+      "node": "v_NS2_CellularFactor",
+      "support": [
+        "v_Raf",
+        "v_U0126"
+      ],
+      "function": "v_Raf & !v_U0126"
+    },
+    {
+      "node": "v_pro_vRNP_PB2_M1_cyto",
+      "support": [
+        "v_NS2_cyto",
+        "v_Raf",
+        "v_U0126",
+        "v_pro_vRNP_PB2_M1_nuc"
+      ],
+      "function": "v_NS2_cyto & v_Raf & !v_U0126 & v_pro_vRNP_PB2_M1_nuc"
+    },
+    {
+      "node": "v_M1_M1",
+      "support": [
+        "v_M1_nuc",
+        "v_mRNA_M1_cyto",
+        "v_vRNA_HA_M1",
+        "v_vRNA_M_M1",
+        "v_vRNA_NA_M1",
+        "v_vRNA_NP_M1",
+        "v_vRNA_NS_M1",
+        "v_vRNA_PA_M1",
+        "v_vRNA_PB1_M1",
+        "v_vRNA_PB2"
+      ],
+      "function": "!(((v_M1_nuc & ((v_mRNA_M1_cyto & ((v_vRNA_HA_M1 & 1) | (!v_vRNA_HA_M1 & ((v_vRNA_M_M1 & 1) | (!v_vRNA_M_M1 & ((v_vRNA_NA_M1 & 1) | (!v_vRNA_NA_M1 & ((v_vRNA_NP_M1 & 1) | (!v_vRNA_NP_M1 & ((v_vRNA_NS_M1 & 1) | (!v_vRNA_NS_M1 & ((v_vRNA_PA_M1 & 1) | (!v_vRNA_PA_M1 & ((v_vRNA_PB1_M1 & 1) | (!v_vRNA_PB1_M1 & ((v_vRNA_PB2 & 1) | (!v_vRNA_PB2 & 0))))))))))))))))) | (!v_mRNA_M1_cyto & 1))) | (!v_M1_nuc & ((v_mRNA_M1_cyto & ((v_vRNA_HA_M1 & 1) | (!v_vRNA_HA_M1 & ((v_vRNA_M_M1 & 1) | (!v_vRNA_M_M1 & ((v_vRNA_NA_M1 & 1) | (!v_vRNA_NA_M1 & ((v_vRNA_NP_M1 & 1) | (!v_vRNA_NP_M1 & ((v_vRNA_NS_M1 & 1) | (!v_vRNA_NS_M1 & ((v_vRNA_PA_M1 & 1) | (!v_vRNA_PA_M1 & ((v_vRNA_PB1_M1 & 1) | (!v_vRNA_PB1_M1 & 0))))))))))))))) | (!v_mRNA_M1_cyto & 1)))))"
+    },
+    {
+      "node": "v_cRNP_PB1",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_PB1"
+      ],
+      "function": "v_NP_cyto & v_PB1_PA_nuc & v_PB2_nuc & v_cRNA_PB1"
+    },
+    {
+      "node": "v_vRNA_NS",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_NS",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_NS & 1) | (!v_cRNP_NS & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_mRNA_HA_cyto",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_HA",
+        "v_par_vRNP_HA_cyto"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNA_HA & 1) | (!v_cRNA_HA & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_HA_cyto & 1) | (!v_par_vRNP_HA_cyto & 0))))"
+    },
+    {
+      "node": "v_par_vRNP_NS_cyto",
+      "support": [
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_NS1_cyto",
+        "v_PKC",
+        "v_RTK",
+        "v_Wortmannin"
+      ],
+      "function": "!(((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_NS1_cyto & ((v_PKC & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_PKC & 1))) | (!v_NS1_cyto & ((v_PKC & ((v_RTK & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_RTK & 1))) | (!v_PKC & 1))))))) | (!v_IVA_SialicAcid_CCV & 1)))"
+    },
+    {
+      "node": "v_PKC",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_LipidRafts",
+        "v_NS1_cyto",
+        "v_RTK",
+        "v_Wortmannin"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & !(((v_HA_LipidRafts & 1) | (!v_HA_LipidRafts & !(((v_NS1_cyto & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_NS1_cyto & ((v_RTK & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_RTK & 1)))))))))))"
+    },
+    {
+      "node": "v_vRNA_PA",
+      "support": [
+        "v_cRNA_PA"
+      ],
+      "function": "v_cRNA_PA"
+    },
+    {
+      "node": "v_IVA_SialicAcid",
+      "support": [
+        "v_HA_SialicAcid_Affinity",
+        "v_Viral_Dose"
+      ],
+      "function": "v_HA_SialicAcid_Affinity & v_Viral_Dose"
+    },
+    {
+      "node": "v_vRNA_NP",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_NP",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_NP & 1) | (!v_cRNP_NP & ((v_temp_vRNP_NP_nuc & 1) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_mRNA_PA_nuc",
+      "support": [
+        "v_NP_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNA_PA",
+        "v_par_vRNP_PA_cyto"
+      ],
+      "function": "((v_NP_cyto & ((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNA_PA & 1) | (!v_cRNA_PA & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))) | (!v_PB2_nuc & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))) | (!v_PB1_PA_nuc & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))) | (!v_NP_cyto & ((v_par_vRNP_PA_cyto & 1) | (!v_par_vRNP_PA_cyto & 0))))"
+    },
+    {
+      "node": "v_par_vRNP_PA_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_NS1_cyto",
+        "v_RTK",
+        "v_Wortmannin"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_NS1_cyto & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_NS1_cyto & ((v_RTK & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_RTK & 1))))))) | (!v_IVA_SialicAcid_CCV & 1)))))"
+    },
+    {
+      "node": "v_NP_cyto",
+      "support": [
+        "v_mRNA_NP_cyto"
+      ],
+      "function": "v_mRNA_NP_cyto"
+    },
+    {
+      "node": "v_mRNA_NS1_cyto",
+      "support": [
+        "v_mRNA_NS1_nuc"
+      ],
+      "function": "v_mRNA_NS1_nuc"
+    },
+    {
+      "node": "v_M1_nuc",
+      "support": [
+        "v_mRNA_M1_cyto"
+      ],
+      "function": "v_mRNA_M1_cyto"
+    },
+    {
+      "node": "v_pro_vRNP_PB1_M1_nuc",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_mRNA_NP_cyto",
+        "v_pro_vRNP_PB1_M1_cyto",
+        "v_vRNA_PB1_M1"
+      ],
+      "function": "v_PB1_PA_nuc & v_PB2_nuc & v_mRNA_NP_cyto & !v_pro_vRNP_PB1_M1_cyto & v_vRNA_PB1_M1"
+    },
+    {
+      "node": "v_mRNA_M1_nuc",
+      "support": [
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_vRNA_PB1_M1",
+      "support": [
+        "v_cRNA_PB1",
+        "v_mRNA_M1_cyto"
+      ],
+      "function": "v_cRNA_PB1 & v_mRNA_M1_cyto"
+    },
+    {
+      "node": "v_vRNA_PA_M1",
+      "support": [
+        "v_cRNA_PA",
+        "v_mRNA_M1_cyto"
+      ],
+      "function": "v_cRNA_PA & v_mRNA_M1_cyto"
+    },
+    {
+      "node": "v_mRNA_NS2_cyto",
+      "support": [
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "v_temp_vRNP_NS_nuc"
+    },
+    {
+      "node": "v_vRNA_NP_M1",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_nuc",
+        "v_cRNP_NP",
+        "v_mRNA_M1_cyto",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "((v_PB1_PA_nuc & ((v_PB2_nuc & ((v_cRNP_NP & ((v_mRNA_M1_cyto & 1) | (!v_mRNA_M1_cyto & 0))) | (!v_cRNP_NP & ((v_mRNA_M1_cyto & ((v_temp_vRNP_NP_nuc & 1) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_mRNA_M1_cyto & 0))))) | (!v_PB2_nuc & 0))) | (!v_PB1_PA_nuc & 0))"
+    },
+    {
+      "node": "v_PB2_nuc",
+      "support": [
+        "v_PB2_cyto"
+      ],
+      "function": "v_PB2_cyto"
+    },
+    {
+      "node": "v_Infected",
+      "support": [
+        "v_HA_SialicAcid_Affinity",
+        "v_Viral_Dose",
+        "v_cRNP_HA"
+      ],
+      "function": "v_HA_SialicAcid_Affinity & v_Viral_Dose & v_cRNP_HA"
+    },
+    {
+      "node": "v_IVA_SialicAcid_CCP",
+      "support": [
+        "v_HA_SialicAcid_Affinity",
+        "v_Viral_Dose"
+      ],
+      "function": "v_HA_SialicAcid_Affinity & v_Viral_Dose"
+    },
+    {
+      "node": "v_mRNA_M1_cyto",
+      "support": [
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_mRNA_NS1_nuc",
+      "support": [
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "v_temp_vRNP_NS_nuc"
+    },
+    {
+      "node": "v_NS2_cyto",
+      "support": [
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "v_temp_vRNP_NS_nuc"
+    },
+    {
+      "node": "v_mRNA_M2_nuc",
+      "support": [
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_vRNA_M_M1",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_cyto",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_PB1_PA_nuc & v_PB2_cyto & v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_NA_LipidRafts",
+      "support": [
+        "v_HA_LipidRafts",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_Neuraminidase_inhibitor",
+        "v_mRNA_NA_nuc"
+      ],
+      "function": "v_HA_LipidRafts & !v_Methyl_Beta_Cyclodextrin & !v_Neuraminidase_inhibitor & v_mRNA_NA_nuc"
+    },
+    {
+      "node": "v_mRNA_M2_cyto",
+      "support": [
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_RTK",
+      "support": [
+        "v_HA_SialicAcid_Affinity",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose"
+      ],
+      "function": "v_HA_SialicAcid_Affinity & !v_Methyl_Beta_Cyclodextrin & !v_RTK_Inhibitor & v_Viral_Dose"
+    },
+    {
+      "node": "v_mRNA_PB1_cyto",
+      "support": [
+        "v_mRNA_PB1_nuc"
+      ],
+      "function": "v_mRNA_PB1_nuc"
+    },
+    {
+      "node": "v_pro_vRNP_M_M1_nuc",
+      "support": [
+        "v_PB1_PA_nuc",
+        "v_PB2_cyto",
+        "v_mRNA_NP_cyto",
+        "v_pro_vRNP_M_M1_cyto",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_PB1_PA_nuc & v_PB2_cyto & v_mRNA_NP_cyto & !v_pro_vRNP_M_M1_cyto & v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_mRNA_NA_nuc",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_NS1_cyto",
+        "v_PB1_PA_nuc",
+        "v_PB2_cyto",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_cRNA_NA",
+        "v_mRNA_NP_cyto"
+      ],
+      "function": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_nuc & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_nuc & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_RTK_Inhibitor & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))))))) | (!v_PB2_cyto & !(((v_RTK_Inhibitor & 1) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))) | (!v_PB1_PA_nuc & !(((v_RTK_Inhibitor & 1) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))))) | (!v_IVA_SialicAcid_CCV & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))))) | (!v_HA_SialicAcid_Affinity & ((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))) | (!v_M2_inhibitor & ((v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_nuc & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))))))) | (!v_IVA_SialicAcid_CCV & ((v_PB1_PA_nuc & ((v_PB2_cyto & ((v_cRNA_NA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_NA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_nuc & 0))))))))"
+    },
+    {
+      "node": "v_PB1_PA_nuc",
+      "support": [
+        "v_PB1_PA_cyto"
+      ],
+      "function": "v_PB1_PA_cyto"
+    },
+    {
+      "node": "v_mRNA_PA_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_IVA_SialicAcid_CCV",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_NS1_cyto",
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_cRNA_PA",
+        "v_mRNA_NP_cyto"
+      ],
+      "function": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_RTK_Inhibitor & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))))))) | (!v_PB2_cyto & !(((v_RTK_Inhibitor & 1) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & 1) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))))) | (!v_IVA_SialicAcid_CCV & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))))) | (!v_HA_SialicAcid_Affinity & ((v_IVA_SialicAcid_CCV & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_Wortmannin & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_Wortmannin & 1))) | (!v_PB2_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_PB1_PA_cyto & !(((v_Wortmannin & 1) | (!v_Wortmannin & 0)))))) | (!v_NS1_cyto & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))))))) | (!v_IVA_SialicAcid_CCV & ((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PA & ((v_mRNA_NP_cyto & 1) | (!v_mRNA_NP_cyto & 0))) | (!v_cRNA_PA & 0))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))))))))"
+    },
+    {
+      "node": "v_mRNA_PB2_nuc",
+      "support": [
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "v_temp_vRNP_PB2_nuc"
+    },
+    {
+      "node": "v_Raf",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_LipidRafts",
+        "v_HA_SialicAcid_Affinity",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_NS1_cyto",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_cRNP_HA"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & !(((v_HA_LipidRafts & ((v_HA_SialicAcid_Affinity & ((v_Viral_Dose & ((v_cRNP_HA & 1) | (!v_cRNP_HA & 0))) | (!v_Viral_Dose & 0))) | (!v_HA_SialicAcid_Affinity & 0))) | (!v_HA_LipidRafts & !(((v_HA_SialicAcid_Affinity & ((v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_cRNP_HA & 1) | (!v_cRNP_HA & 0)))))) | (!v_Viral_Dose & 1))) | (!v_NS1_cyto & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_NS1_cyto & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_cRNP_HA & 1) | (!v_cRNP_HA & 0)))))) | (!v_Viral_Dose & 1))) | (!v_NS1_cyto & ((v_RTK_Inhibitor & 1) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_cRNP_HA & 1) | (!v_cRNP_HA & 0)))))) | (!v_Viral_Dose & 1))))))))) | (!v_HA_SialicAcid_Affinity & 1)))))))))"
+    },
+    {
+      "node": "v_mRNA_NP_cyto",
+      "support": [
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "v_temp_vRNP_NP_nuc"
+    },
+    {
+      "node": "v_IVA_SialicAcid_CCV",
+      "support": [
+        "v_HA_SialicAcid_Affinity",
+        "v_Viral_Dose"
+      ],
+      "function": "v_HA_SialicAcid_Affinity & v_Viral_Dose"
+    },
+    {
+      "node": "v_cRNP_HA",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_cRNA_HA",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "v_PB1_PA_cyto & v_PB2_cyto & v_cRNA_HA & v_temp_vRNP_NP_nuc"
+    },
+    {
+      "node": "v_mRNA_PB1_nuc",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_cRNA_PB1",
+        "v_par_vRNP_PB1_cyto",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNA_PB1 & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & ((v_temp_vRNP_NP_nuc & 1) | (!v_temp_vRNP_NP_nuc & 0))))) | (!v_cRNA_PB1 & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))) | (!v_PB2_cyto & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))) | (!v_PB1_PA_cyto & ((v_par_vRNP_PB1_cyto & 1) | (!v_par_vRNP_PB1_cyto & 0))))"
+    },
+    {
+      "node": "v_NS1_cyto",
+      "support": [
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "v_temp_vRNP_NS_nuc"
+    },
+    {
+      "node": "v_par_vRNP_M_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1))))))))) | (!v_HA_SialicAcid_Affinity & 1)))))"
+    },
+    {
+      "node": "v_par_vRNP_HA_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1))))))))) | (!v_HA_SialicAcid_Affinity & 1)))))"
+    },
+    {
+      "node": "v_cRNP_NP",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_temp_vRNP_NP_nuc"
+      ],
+      "function": "v_PB1_PA_cyto & v_PB2_cyto & v_temp_vRNP_NP_nuc"
+    },
+    {
+      "node": "v_vRNA_PB2",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_cRNP_PB2",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNP_PB2 & 1) | (!v_cRNP_PB2 & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))"
+    },
+    {
+      "node": "v_vRNA_NS_M1",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_PB2_cyto",
+        "v_cRNP_NS",
+        "v_temp_vRNP_M_nuc",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "((v_PB1_PA_cyto & ((v_PB2_cyto & ((v_cRNP_NS & ((v_temp_vRNP_M_nuc & 1) | (!v_temp_vRNP_M_nuc & 0))) | (!v_cRNP_NS & ((v_temp_vRNP_M_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))) | (!v_temp_vRNP_M_nuc & 0))))) | (!v_PB2_cyto & 0))) | (!v_PB1_PA_cyto & 0))"
+    },
+    {
+      "node": "v_PB2_cyto",
+      "support": [
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "v_temp_vRNP_PB2_nuc"
+    },
+    {
+      "node": "v_par_vRNP_PB1_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_temp_vRNP_NS_nuc"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & 1) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & 1) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_Methyl_Beta_Cyclodextrin & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1))))))))) | (!v_HA_SialicAcid_Affinity & 1)))))"
+    },
+    {
+      "node": "v_vRNA_NA_M1",
+      "support": [
+        "v_cRNA_NA",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_cRNA_NA & v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_HA_LipidRafts",
+      "support": [
+        "v_HA_cyto",
+        "v_Methyl_Beta_Cyclodextrin"
+      ],
+      "function": "v_HA_cyto & !v_Methyl_Beta_Cyclodextrin"
+    },
+    {
+      "node": "v_PB1_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_PB1_Inhibitor",
+        "v_PB1_PA_cyto",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_cRNA_PB1",
+        "v_temp_vRNP_NP_nuc",
+        "v_temp_vRNP_NS_nuc",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "!(((v_Bisindolylmaleimide_I & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0)))))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0)))))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & !(((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))))))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & !(((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_PB1 & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1))))))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_Inhibitor & 1) | (!v_PB1_Inhibitor & !(((v_PB1_PA_cyto & ((v_cRNA_PB1 & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_PB1 & 0))) | (!v_PB1_PA_cyto & 0))))))))))"
+    },
+    {
+      "node": "v_HA_cyto",
+      "support": [
+        "v_Bisindolylmaleimide_I",
+        "v_HA_SialicAcid_Affinity",
+        "v_M2_inhibitor",
+        "v_Methyl_Beta_Cyclodextrin",
+        "v_PB1_PA_cyto",
+        "v_RTK_Inhibitor",
+        "v_Viral_Dose",
+        "v_Wortmannin",
+        "v_cRNA_HA",
+        "v_temp_vRNP_NP_nuc",
+        "v_temp_vRNP_NS_nuc",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "((v_Bisindolylmaleimide_I & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_Bisindolylmaleimide_I & ((v_HA_SialicAcid_Affinity & ((v_M2_inhibitor & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))) | (!v_M2_inhibitor & ((v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_HA & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))) | (!v_PB1_PA_cyto & !(((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1)))))) | (!v_Methyl_Beta_Cyclodextrin & ((v_PB1_PA_cyto & ((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))))) | (!v_temp_vRNP_NP_nuc & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))) | (!v_cRNA_HA & ((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0))))))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_Wortmannin & 1))) | (!v_Viral_Dose & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))))))) | (!v_PB1_PA_cyto & !(((v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & !(((v_temp_vRNP_NS_nuc & 1) | (!v_temp_vRNP_NS_nuc & 0)))))) | (!v_Viral_Dose & 1))) | (!v_RTK_Inhibitor & ((v_Viral_Dose & ((v_Wortmannin & 1) | (!v_Wortmannin & 0))) | (!v_Viral_Dose & 1)))))))))))) | (!v_HA_SialicAcid_Affinity & ((v_PB1_PA_cyto & ((v_cRNA_HA & ((v_temp_vRNP_NP_nuc & ((v_temp_vRNP_PB2_nuc & 1) | (!v_temp_vRNP_PB2_nuc & 0))) | (!v_temp_vRNP_NP_nuc & 0))) | (!v_cRNA_HA & 0))) | (!v_PB1_PA_cyto & 0))))))"
+    },
+    {
+      "node": "v_cRNP_PB2",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_temp_vRNP_NP_nuc",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "v_PB1_PA_cyto & v_temp_vRNP_NP_nuc & v_temp_vRNP_PB2_nuc"
+    },
+    {
+      "node": "v_vRNA_HA_M1",
+      "support": [
+        "v_cRNA_HA",
+        "v_temp_vRNP_M_nuc"
+      ],
+      "function": "v_cRNA_HA & v_temp_vRNP_M_nuc"
+    },
+    {
+      "node": "v_cRNP_PA",
+      "support": [
+        "v_PB1_PA_cyto",
+        "v_cRNA_PA",
+        "v_temp_vRNP_NP_nuc",
+        "v_temp_vRNP_PB2_nuc"
+      ],
+      "function": "v_PB1_PA_cyto & v_cRNA_PA & v_temp_vRNP_NP_nuc & v_temp_vRNP_PB2_nuc"
+    }
+  ],
+  "seconds": 2.4519702999386936
+}

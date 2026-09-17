@@ -1,0 +1,1135 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "1969_1",
+  "name": "HGF Signaling in Keratinocytes",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 68,
+  "after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 6,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_EGF": "+",
+      "v_EGFR": "+",
+      "v_Fak": "+",
+      "v_HGF": "+",
+      "v_PTEN": "-",
+      "v_PAI_1": "+"
+    },
+    "positive_edges": 8,
+    "negative_edges": 2,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 10,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_EGFR": {
+        "signs": {
+          "v_EGF": "+",
+          "v_EGFR": "+",
+          "v_Fak": "+",
+          "v_HGF": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Fak": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_Fak": "+",
+          "v_HGF": "+",
+          "v_PAI_1": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 6,
+    "internal_nodes": 2,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_EGF": "+",
+      "v_EGFR": "+",
+      "v_Fak": "+",
+      "v_HGF": "+",
+      "v_PTEN": "-",
+      "v_PAI_1": "+",
+      "v_DUSP1": "+",
+      "v_AKAP12": "+"
+    },
+    "positive_edges": 14,
+    "negative_edges": 2,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 16,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MIN_MAX": 6
+    },
+    "conflicts": {
+      "v_PTEN": {
+        "v_EGFR": "-",
+        "v_Fak": "-",
+        "v_PTEN": "+"
+      }
+    },
+    "local": {
+      "v_EGFR": {
+        "signs": {
+          "v_EGF": "+",
+          "v_EGFR": "+",
+          "v_Fak": "+",
+          "v_HGF": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Fak": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_Fak": "+",
+          "v_HGF": "+",
+          "v_PAI_1": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DUSP1": {
+        "signs": {
+          "v_DUSP1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PAI_1": {
+        "signs": {
+          "v_PAI_1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PTEN": {
+        "signs": {
+          "v_PTEN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HGF": {
+        "signs": {
+          "v_HGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_EGF": {
+        "signs": {
+          "v_EGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AKAP12": {
+        "signs": {
+          "v_AKAP12": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 72,
+    "examples": [
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 0,
+        "v_EGF": 0,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 1,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 0,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 0,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 1,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 1,
+        "v_EGF": 0,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 1,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 1,
+        "v_EGF": 0,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 0,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 1,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 0,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 0,
+        "v_PAI_1": 0,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 0,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 1,
+        "v_PAI_1": 0,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 0,
+        "v_PAI_1": 0,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 0,
+        "v_PAI_1": 0,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 1,
+        "v_PAI_1": 0,
+        "v_PTEN": 0
+      },
+      {
+        "v_AKAP12": 1,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 1,
+        "v_PAI_1": 0,
+        "v_PTEN": 1
+      },
+      {
+        "v_AKAP12": 0,
+        "v_DUSP1": 1,
+        "v_EGF": 1,
+        "v_EGFR": 1,
+        "v_Fak": 0,
+        "v_HGF": 0,
+        "v_PAI_1": 1,
+        "v_PTEN": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_EGFR": "((v_EGF & 1) | (!v_EGF & !(((v_EGFR & ((v_Fak & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_Fak & ((v_HGF & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_HGF & 1))))) | (!v_EGFR & ((v_HGF & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_HGF & 1)))))))",
+    "v_Fak": "!(((v_EGFR & ((v_Fak & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_Fak & ((v_HGF & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_HGF & 1))))) | (!v_EGFR & ((v_HGF & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_HGF & 1)))))",
+    "v_DUSP1": "v_DUSP1",
+    "v_PAI_1": "v_PAI_1",
+    "v_PTEN": "v_PTEN",
+    "v_HGF": "v_HGF",
+    "v_EGF": "v_EGF",
+    "v_AKAP12": "v_AKAP12"
+  },
+  "steps": [
+    {
+      "node": "v_PAK1",
+      "support": [
+        "v_Cdc42_Rac1"
+      ],
+      "function": "v_Cdc42_Rac1"
+    },
+    {
+      "node": "v_CDKN2A",
+      "support": [
+        "v_ETS",
+        "v_Elk1"
+      ],
+      "function": "v_ETS | v_Elk1"
+    },
+    {
+      "node": "v_ATF2",
+      "support": [
+        "v_JNK",
+        "v_p38"
+      ],
+      "function": "v_JNK & v_p38"
+    },
+    {
+      "node": "v_Raf",
+      "support": [
+        "v_PAK3",
+        "v_PKC",
+        "v_Ras"
+      ],
+      "function": "v_PAK3 & v_PKC & v_Ras"
+    },
+    {
+      "node": "v_EGR1",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_ECM",
+      "support": [
+        "v_MMP1_10"
+      ],
+      "function": "v_MMP1_10"
+    },
+    {
+      "node": "v_DOCK180",
+      "support": [
+        "v_CRKL"
+      ],
+      "function": "v_CRKL"
+    },
+    {
+      "node": "v_CTGF",
+      "support": [
+        "v_Erk",
+        "v_p38"
+      ],
+      "function": "v_Erk | v_p38"
+    },
+    {
+      "node": "v_Shc",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_Fak | v_MET"
+    },
+    {
+      "node": "v_CREB",
+      "support": [
+        "v_RSK"
+      ],
+      "function": "v_RSK"
+    },
+    {
+      "node": "v_Ras",
+      "support": [
+        "v_SOS"
+      ],
+      "function": "v_SOS"
+    },
+    {
+      "node": "v_cMYC",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_PAK3",
+      "support": [
+        "v_Cdc42_Rac1"
+      ],
+      "function": "v_Cdc42_Rac1"
+    },
+    {
+      "node": "v_CDKN1A",
+      "support": [
+        "v_STAT3"
+      ],
+      "function": "v_STAT3"
+    },
+    {
+      "node": "v_Plasmin",
+      "support": [
+        "v_PAI_1",
+        "v_uPA"
+      ],
+      "function": "v_PAI_1 & v_uPA"
+    },
+    {
+      "node": "v_Mekk4",
+      "support": [
+        "v_Cdc42_Rac1"
+      ],
+      "function": "v_Cdc42_Rac1"
+    },
+    {
+      "node": "v_C3G",
+      "support": [
+        "v_CRKL"
+      ],
+      "function": "v_CRKL"
+    },
+    {
+      "node": "v_Akt",
+      "support": [
+        "v_PI3K",
+        "v_PTEN"
+      ],
+      "function": "v_PI3K & !v_PTEN"
+    },
+    {
+      "node": "v_Cdc42_Rac1",
+      "support": [
+        "v_CRKL",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "v_CRKL & v_PI3K & !v_PTEN & v_SOS"
+    },
+    {
+      "node": "v_Grb2",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_Fak | v_MET"
+    },
+    {
+      "node": "v_IL8",
+      "support": [
+        "v_Erk",
+        "v_p38"
+      ],
+      "function": "v_Erk | v_p38"
+    },
+    {
+      "node": "v_RSK",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_uPA",
+      "support": [
+        "v_uPAR"
+      ],
+      "function": "v_uPAR"
+    },
+    {
+      "node": "v_CCL20",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_cJUN",
+      "support": [
+        "v_JNK",
+        "v_p38"
+      ],
+      "function": "v_JNK & v_p38"
+    },
+    {
+      "node": "v_HBEGF",
+      "support": [
+        "v_Erk",
+        "v_p38"
+      ],
+      "function": "v_Erk | v_p38"
+    },
+    {
+      "node": "v_p38",
+      "support": [
+        "v_CRKL",
+        "v_DUSP1",
+        "v_Mkk3",
+        "v_Mkk6",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_CRKL & ((v_DUSP1 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_DUSP1 & !(((v_Mkk3 & ((v_Mkk6 & 1) | (!v_Mkk6 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_Mkk3 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))))))))) | (!v_CRKL & ((v_DUSP1 & 1) | (!v_DUSP1 & !(((v_Mkk3 & ((v_Mkk6 & 1) | (!v_Mkk6 & 0))) | (!v_Mkk3 & 0))))))))"
+    },
+    {
+      "node": "v_PKC",
+      "support": [
+        "v_AKAP12",
+        "v_Ca",
+        "v_DAG"
+      ],
+      "function": "!v_AKAP12 & v_Ca & v_DAG"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_Mekk7",
+        "v_Mkk4",
+        "v_PAK2"
+      ],
+      "function": "((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))"
+    },
+    {
+      "node": "v_Rap1",
+      "support": [
+        "v_CRKL"
+      ],
+      "function": "v_CRKL"
+    },
+    {
+      "node": "v_Mek",
+      "support": [
+        "v_AKAP12",
+        "v_CRKL",
+        "v_Ca",
+        "v_DAG",
+        "v_Mekk1",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "((v_AKAP12 & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))) | (!v_AKAP12 & ((v_CRKL & ((v_Ca & ((v_DAG & ((v_Mekk1 & 1) | (!v_Mekk1 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_DAG & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))) | (!v_Ca & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))) | (!v_CRKL & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))))"
+    },
+    {
+      "node": "v_PTGS2",
+      "support": [
+        "v_CRKL",
+        "v_DUSP1",
+        "v_Mekk7",
+        "v_Mkk3",
+        "v_Mkk4",
+        "v_Mkk6",
+        "v_PAK2",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_CRKL & ((v_DUSP1 & ((v_Mekk7 & ((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_Mekk7 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_DUSP1 & !(((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & 1) | (!v_Mkk6 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mkk3 & !(((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))) | (!v_Mkk3 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))))))))) | (!v_CRKL & ((v_DUSP1 & 1) | (!v_DUSP1 & !(((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & 1) | (!v_Mkk6 & 0))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))))) | (!v_Mkk3 & 0))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))) | (!v_Mkk3 & 0))))))))))"
+    },
+    {
+      "node": "v_STAT3",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_AP1",
+      "support": [
+        "v_CRKL",
+        "v_DUSP1",
+        "v_Mekk7",
+        "v_Mkk3",
+        "v_Mkk4",
+        "v_Mkk6",
+        "v_PAK2",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS",
+        "v_cFOS"
+      ],
+      "function": "!(((v_CRKL & ((v_DUSP1 & ((v_Mekk7 & ((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_Mekk7 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_DUSP1 & !(((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_Mkk6 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mkk3 & !(((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))) | (!v_Mkk3 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))))))))) | (!v_CRKL & ((v_DUSP1 & 1) | (!v_DUSP1 & !(((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_Mkk6 & 0))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))))) | (!v_Mkk3 & 0))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & ((v_cFOS & 1) | (!v_cFOS & 0))) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))) | (!v_Mkk3 & 0))))))))))"
+    },
+    {
+      "node": "v_Proliferation",
+      "support": [
+        "v_CDK2",
+        "v_CyclinD"
+      ],
+      "function": "v_CDK2 & v_CyclinD"
+    },
+    {
+      "node": "v_cFOS",
+      "support": [
+        "v_Erk"
+      ],
+      "function": "v_Erk"
+    },
+    {
+      "node": "v_DAG",
+      "support": [
+        "v_PLC_g"
+      ],
+      "function": "v_PLC_g"
+    },
+    {
+      "node": "v_PLC_g",
+      "support": [
+        "v_EGFR",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_MET"
+    },
+    {
+      "node": "v_MLK3",
+      "support": [
+        "v_CRKL",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "v_CRKL & v_PI3K & !v_PTEN & v_SOS"
+    },
+    {
+      "node": "v_IP3",
+      "support": [
+        "v_EGFR",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_MET"
+    },
+    {
+      "node": "v_Erk",
+      "support": [
+        "v_AKAP12",
+        "v_CRKL",
+        "v_Ca",
+        "v_EGFR",
+        "v_MET",
+        "v_Mekk1",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "((v_AKAP12 & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))) | (!v_AKAP12 & ((v_CRKL & ((v_Ca & ((v_EGFR & ((v_Mekk1 & 1) | (!v_Mekk1 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_EGFR & ((v_MET & ((v_Mekk1 & 1) | (!v_Mekk1 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_MET & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))))) | (!v_Ca & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))) | (!v_CRKL & ((v_Mekk1 & 1) | (!v_Mekk1 & 0))))))"
+    },
+    {
+      "node": "v_CyclinD",
+      "support": [
+        "v_CRKL",
+        "v_DUSP1",
+        "v_Elk1",
+        "v_Mekk7",
+        "v_Mkk3",
+        "v_Mkk4",
+        "v_Mkk6",
+        "v_PAK2",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "((v_CRKL & ((v_DUSP1 & ((v_Elk1 & 1) | (!v_Elk1 & !(((v_Mekk7 & ((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_Mekk7 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_DUSP1 & ((v_Elk1 & 1) | (!v_Elk1 & ((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & 1) | (!v_Mkk6 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mkk3 & !(((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))) | (!v_Mkk3 & !(((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1)))))))))))) | (!v_CRKL & ((v_DUSP1 & ((v_Elk1 & 1) | (!v_Elk1 & 0))) | (!v_DUSP1 & ((v_Elk1 & 1) | (!v_Elk1 & ((v_Mekk7 & ((v_Mkk3 & ((v_Mkk4 & ((v_Mkk6 & 1) | (!v_Mkk6 & 0))) | (!v_Mkk4 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))))) | (!v_Mkk3 & 0))) | (!v_Mekk7 & ((v_Mkk3 & ((v_Mkk6 & ((v_PAK2 & 1) | (!v_PAK2 & 0))) | (!v_Mkk6 & 0))) | (!v_Mkk3 & 0))))))))))"
+    },
+    {
+      "node": "v_Elk1",
+      "support": [
+        "v_AKAP12",
+        "v_CRKL",
+        "v_Ca",
+        "v_EGFR",
+        "v_MET",
+        "v_Mekk1",
+        "v_Mekk7",
+        "v_Mkk4",
+        "v_PAK2",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "((v_AKAP12 & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))))) | (!v_AKAP12 & ((v_CRKL & ((v_Ca & ((v_EGFR & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))))))) | (!v_EGFR & ((v_MET & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1)))))))))) | (!v_MET & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))))))))) | (!v_Ca & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))))))) | (!v_CRKL & ((v_Mekk1 & 1) | (!v_Mekk1 & ((v_Mekk7 & ((v_Mkk4 & 1) | (!v_Mkk4 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))) | (!v_Mekk7 & ((v_PAK2 & 1) | (!v_PAK2 & 0))))))))))"
+    },
+    {
+      "node": "v_Mekk1",
+      "support": [
+        "v_CRKL",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "v_CRKL & v_PI3K & !v_PTEN & v_SOS"
+    },
+    {
+      "node": "v_CellMigration",
+      "support": [
+        "v_CRKL",
+        "v_Mekk7",
+        "v_Mkk4",
+        "v_PAK2",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_CRKL & ((v_Mekk7 & ((v_Mkk4 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Mkk4 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_Mekk7 & ((v_PAK2 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAK2 & 1))))) | (!v_CRKL & 1)))"
+    },
+    {
+      "node": "v_Ca",
+      "support": [
+        "v_EGFR",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_MET"
+    },
+    {
+      "node": "v_PAK2",
+      "support": [
+        "v_CRKL",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "v_CRKL & v_PI3K & !v_PTEN & v_SOS"
+    },
+    {
+      "node": "v_CRKL",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_Fak | v_MET"
+    },
+    {
+      "node": "v_Mekk7",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_EGFR & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_EGFR & ((v_Fak & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Fak & ((v_MET & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_MET & 1)))))))"
+    },
+    {
+      "node": "v_Mkk3",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_EGFR & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_EGFR & ((v_Fak & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Fak & ((v_MET & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_MET & 1)))))))"
+    },
+    {
+      "node": "v_uPAR",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_EGFR & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_EGFR & ((v_Fak & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_Fak & ((v_MET & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_MET & 1)))))))"
+    },
+    {
+      "node": "v_MMP1_10",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PAI_1",
+        "v_PI3K",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_EGFR & ((v_PAI_1 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAI_1 & 1))) | (!v_EGFR & ((v_Fak & ((v_PAI_1 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAI_1 & 1))) | (!v_Fak & ((v_MET & ((v_PAI_1 & ((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_PI3K & 1))) | (!v_PAI_1 & 1))) | (!v_MET & 1)))))))"
+    },
+    {
+      "node": "v_CDK2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET"
+      ],
+      "function": "((v_EGFR & ((v_Fak & 1) | (!v_Fak & ((v_MET & 1) | (!v_MET & 0))))) | (!v_EGFR & ((v_MET & 1) | (!v_MET & 0))))"
+    },
+    {
+      "node": "v_Mkk4",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PTEN",
+        "v_SOS"
+      ],
+      "function": "!(((v_EGFR & ((v_Fak & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_Fak & ((v_MET & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_MET & 1))))) | (!v_EGFR & ((v_MET & ((v_PTEN & 1) | (!v_PTEN & !(((v_SOS & 1) | (!v_SOS & 0)))))) | (!v_MET & 1)))))"
+    },
+    {
+      "node": "v_SOS",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET"
+      ],
+      "function": "v_EGFR | v_Fak | v_MET"
+    },
+    {
+      "node": "v_ETS",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_MET",
+        "v_PTEN"
+      ],
+      "function": "!(((v_EGFR & ((v_Fak & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_Fak & ((v_MET & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_MET & 1))))) | (!v_EGFR & ((v_MET & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_MET & 1)))))"
+    },
+    {
+      "node": "v_MET",
+      "support": [
+        "v_HGF"
+      ],
+      "function": "v_HGF"
+    },
+    {
+      "node": "v_Integrins",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_HGF",
+        "v_PAI_1",
+        "v_PTEN"
+      ],
+      "function": "!(((v_EGFR & ((v_Fak & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_Fak & ((v_HGF & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_HGF & 1))))) | (!v_EGFR & ((v_HGF & ((v_PAI_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PAI_1 & 1))) | (!v_HGF & 1)))))"
+    },
+    {
+      "node": "v_Mkk6",
+      "support": [
+        "v_EGFR",
+        "v_Fak",
+        "v_HGF",
+        "v_PTEN"
+      ],
+      "function": "!(((v_EGFR & ((v_Fak & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_Fak & ((v_HGF & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_HGF & 1))))) | (!v_EGFR & ((v_HGF & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_HGF & 1)))))"
+    }
+  ],
+  "seconds": 0.305233099963516
+}

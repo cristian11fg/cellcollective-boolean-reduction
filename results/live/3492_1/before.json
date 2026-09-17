@@ -1,0 +1,1865 @@
+{
+  "id": "3492_1",
+  "name": "Bordetella bronchiseptica",
+  "source": {
+    "id": "3492_1",
+    "cellcollective_id": 3492,
+    "version": "1",
+    "name": "Bordetella bronchiseptica",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/#module/3492:1"
+    ],
+    "export_url": "https://research.cellcollective.org/web/_api/model/export/3492?version=1&type=EXPR",
+    "status": "downloaded",
+    "files": [
+      {
+        "name": "export.zip",
+        "sha256": "062427f9e49816b65736e381f3fb9c36bc52c5fee5eca2c2bdf7060308272761"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "458a42b3918c175f6b749fcbf43c4631484a2eb99001da9911d70d810e3e2643"
+      },
+      {
+        "name": "metadata.json",
+        "sha256": "bd36622d3b0e271f09d865a0300af1e70c0f6837f4a17be73c5ff93a5453e431"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 33,
+    "n_nodes": 33,
+    "inputs": 0,
+    "internal_nodes": 33,
+    "nonconstant_rules": 33,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bb": "+",
+      "v_DCI": "+",
+      "v_AP": "+",
+      "v_AgAb": "+",
+      "v_PH": "+",
+      "v_EC": "+",
+      "v_IgA": "+",
+      "v_MPI": "+",
+      "v_C": "+",
+      "v_TTSSI": "+",
+      "v_Oag": "+",
+      "v_IgG": "-",
+      "v_DP": "+",
+      "v_IL10I": "+",
+      "v_TTSSII": "+",
+      "v_PIC": "-",
+      "v_IL10II": "+",
+      "v_IFNgI": "-",
+      "v_Th2I": "+",
+      "v_TrI": "+",
+      "v_TrII": "+",
+      "v_DCII": "+",
+      "v_T0": "+",
+      "v_IL12I": "+",
+      "v_BC": "+",
+      "v_IL4II": "+",
+      "v_Th2II": "+",
+      "v_Th1II": "+",
+      "v_IL12II": "+",
+      "v_Th1I": "+",
+      "v_IL4I": "+",
+      "v_IFNgII": "-",
+      "v_NE": "-"
+    },
+    "positive_edges": 67,
+    "negative_edges": 12,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 79,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 10,
+      "MIN": 9,
+      "MIN_MAX": 12,
+      "MAX": 2
+    },
+    "conflicts": {
+      "v_IgG": {
+        "v_AP": "+",
+        "v_AgAb": "+",
+        "v_IgG": "+",
+        "v_C": "+",
+        "v_TTSSI": "-"
+      },
+      "v_IL4II": {
+        "v_IL12I": "-",
+        "v_IL4I": "+",
+        "v_IL12II": "-"
+      },
+      "v_IL12II": {
+        "v_IL4II": "-",
+        "v_Th2II": "-",
+        "v_Th1II": "+"
+      },
+      "v_IL10I": {
+        "v_PIC": "-",
+        "v_IL10II": "+",
+        "v_IFNgI": "-"
+      },
+      "v_IgA": {
+        "v_AgAb": "+",
+        "v_IgA": "+",
+        "v_TTSSI": "-"
+      }
+    },
+    "local": {
+      "v_DCI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNgI": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_PH": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2I": {
+        "signs": {
+          "v_Th2II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AP": {
+        "signs": {
+          "v_AgAb": "+",
+          "v_Bb": "+",
+          "v_C": "+",
+          "v_IgG": "+",
+          "v_MPI": "+",
+          "v_Th1I": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12I": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC": {
+        "signs": {
+          "v_BC": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IFNgII": "-",
+          "v_IL12II": "-",
+          "v_T0": "+",
+          "v_Th2II": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AP": "+",
+          "v_DP": "+",
+          "v_EC": "+",
+          "v_IL10I": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DP": {
+        "signs": {
+          "v_NE": "+",
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AgAb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PH": {
+        "signs": {
+          "v_AP": "+",
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCII": {
+        "signs": {
+          "v_DCI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NE": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4I": {
+        "signs": {
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrI": {
+        "signs": {
+          "v_TrII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EC": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_T0": {
+        "signs": {
+          "v_DCII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL10II": {
+        "signs": {
+          "v_IL10I": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNgI": {
+        "signs": {
+          "v_DCI": "+",
+          "v_IL10I": "-",
+          "v_IL4I": "-",
+          "v_MPI": "+",
+          "v_Th1I": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA": {
+        "signs": {
+          "v_BC": "+",
+          "v_Bb": "+",
+          "v_IgA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgII": {
+        "signs": {
+          "v_IFNgI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MPI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNgI": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_C": {
+        "signs": {
+          "v_AgAb": "+",
+          "v_Bb": "+",
+          "v_IgG": "+",
+          "v_Oag": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA": "-",
+          "v_IgG": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I": {
+        "signs": {
+          "v_MPI": "+",
+          "v_TTSSI": "+",
+          "v_Th2I": "+",
+          "v_TrI": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1I": {
+        "signs": {
+          "v_Th1II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL12II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrII": {
+        "signs": {
+          "v_DCII": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSII": {
+        "signs": {
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Oag": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 33,
+    "n_nodes": 33,
+    "inputs": 0,
+    "internal_nodes": 33,
+    "nonconstant_rules": 33,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bb": "+",
+      "v_DCI": "+",
+      "v_AP": "+",
+      "v_AgAb": "+",
+      "v_PH": "+",
+      "v_EC": "+",
+      "v_IgA": "+",
+      "v_MPI": "+",
+      "v_C": "+",
+      "v_TTSSI": "+",
+      "v_Oag": "+",
+      "v_IgG": "-",
+      "v_DP": "+",
+      "v_IL10I": "+",
+      "v_TTSSII": "+",
+      "v_PIC": "-",
+      "v_IL10II": "+",
+      "v_IFNgI": "-",
+      "v_Th2I": "+",
+      "v_TrI": "+",
+      "v_TrII": "+",
+      "v_DCII": "+",
+      "v_T0": "+",
+      "v_IL12I": "+",
+      "v_BC": "+",
+      "v_IL4II": "+",
+      "v_Th2II": "+",
+      "v_Th1II": "+",
+      "v_IL12II": "+",
+      "v_Th1I": "+",
+      "v_IL4I": "+",
+      "v_IFNgII": "-",
+      "v_NE": "-"
+    },
+    "positive_edges": 67,
+    "negative_edges": 12,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 79,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 10,
+      "MIN": 9,
+      "MIN_MAX": 12,
+      "MAX": 2
+    },
+    "conflicts": {
+      "v_IgG": {
+        "v_AP": "+",
+        "v_AgAb": "+",
+        "v_IgG": "+",
+        "v_C": "+",
+        "v_TTSSI": "-"
+      },
+      "v_IL4II": {
+        "v_IL12I": "-",
+        "v_IL4I": "+",
+        "v_IL12II": "-"
+      },
+      "v_IL12II": {
+        "v_IL4II": "-",
+        "v_Th2II": "-",
+        "v_Th1II": "+"
+      },
+      "v_IL10I": {
+        "v_PIC": "-",
+        "v_IL10II": "+",
+        "v_IFNgI": "-"
+      },
+      "v_IgA": {
+        "v_AgAb": "+",
+        "v_IgA": "+",
+        "v_TTSSI": "-"
+      }
+    },
+    "local": {
+      "v_DCI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNgI": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_PH": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2I": {
+        "signs": {
+          "v_Th2II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AP": {
+        "signs": {
+          "v_AgAb": "+",
+          "v_Bb": "+",
+          "v_C": "+",
+          "v_IgG": "+",
+          "v_MPI": "+",
+          "v_Th1I": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12I": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC": {
+        "signs": {
+          "v_BC": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IFNgII": "-",
+          "v_IL12II": "-",
+          "v_T0": "+",
+          "v_Th2II": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AP": "+",
+          "v_DP": "+",
+          "v_EC": "+",
+          "v_IL10I": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DP": {
+        "signs": {
+          "v_NE": "+",
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AgAb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PH": {
+        "signs": {
+          "v_AP": "+",
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCII": {
+        "signs": {
+          "v_DCI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NE": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4I": {
+        "signs": {
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrI": {
+        "signs": {
+          "v_TrII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EC": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_T0": {
+        "signs": {
+          "v_DCII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL10II": {
+        "signs": {
+          "v_IL10I": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNgI": {
+        "signs": {
+          "v_DCI": "+",
+          "v_IL10I": "-",
+          "v_IL4I": "-",
+          "v_MPI": "+",
+          "v_Th1I": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA": {
+        "signs": {
+          "v_BC": "+",
+          "v_Bb": "+",
+          "v_IgA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgII": {
+        "signs": {
+          "v_IFNgI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MPI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNgI": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_C": {
+        "signs": {
+          "v_AgAb": "+",
+          "v_Bb": "+",
+          "v_IgG": "+",
+          "v_Oag": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA": "-",
+          "v_IgG": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I": {
+        "signs": {
+          "v_MPI": "+",
+          "v_TTSSI": "+",
+          "v_Th2I": "+",
+          "v_TrI": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1I": {
+        "signs": {
+          "v_Th1II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL12II": {
+        "signs": {
+          "v_DCII": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrII": {
+        "signs": {
+          "v_DCII": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSII": {
+        "signs": {
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Oag": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  }
+}

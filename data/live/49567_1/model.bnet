@@ -1,0 +1,61 @@
+targets,factors
+v_p38, ! ( ( v_d_EF1 ) )
+v_ERK1_2, ( v_Mef2C )
+v_Mef2C, ( v_Runx2 )
+v_Hif_2a, ( v_NFkB )
+v_PP2A, ! ( ( v_B_catenin ) )
+v_Dlx5, ( v_Smad_Complex ) | ( v_Mef2C )
+v_Fgfr1, ( v_Runx2 )
+v_MMP13, ( v_Smad_Complex ) | ( v_Hif_2a ) | ( v_p38 & ( ( ( v_Hif_2a ) ) | ( ( v_Runx2 ) ) ) ) | ( v_NFkB ) | ( v_ATF2 & ( ( ( v_JNK ) ) | ( ( v_Elk1 ) ) ) ) | ( v_Runx2 ) | ( v_Elk1 ) | ( v_Gli2 )
+v_Wnt, ( v_Msx2 ) | ( v_Gli2 )
+v_PPR, ( v_Gli2 ) | ( v_Sox9 ) | ( v_Smad_Complex )
+v_Fgfr3, ( v_Sox9 )
+v_Alk5, ( ( v_Sox9 ) & ! ( v_NFkB ) ) | ( v_Smad3 )
+v_Sox9, ( v_Sox9 ) | ( v_Nkx3_2 ) | ( v_PKA ) | ( v_p38 )
+v_FGF, ( v_B_catenin ) | ( v_Runx2 )
+v_CCND1, ( v_PKA ) | ( v_ATF2 ) | ( v_Gli2 ) | ( v_FOXO & ( ( ( v_Smad3 ) ) ) )
+v_Gli2, ! ( ( v_Fgfr3 ) )
+v_DKK1, ( ( v_Smad_Complex ) & ! ( v_B_catenin ) ) | ( ( v_Sox9 ) & ! ( v_B_catenin ) )
+v_Col_II, ( v_Nkx3_2 ) | ( v_Sox9 ) | ( v_FOXO )
+v_IGF_IR, ( v_NFkB ) | ( v_Smad3 ) | ( v_Stat1 )
+v_Akt, ( v_Runx2 )
+v_R_inflam, ! ( ( v_FOXO ) )
+v_SOCS, ( v_Fgfr3 ) | ( v_IGF_IR )
+v_FOXO, ( v_Smad3 )
+v_d_EF1, ( v_NFkB ) | ( ( v_R_Smad ) & ! ( v_Smad_Complex ) ) | ( ( v_Smad3 ) & ! ( v_Smad_Complex ) ) | ( v_Elk1 )
+v_IkBa, ( v_NFkB )
+v_PTHrP, ( v_Smad3 ) | ( v_Sox9 ) | ( v_Gli2 & ( ( ( v_Sox9 ) ) ) )
+v_Runx2, ( ( ( ( v_Runx2 ) & ! ( v_Msx2 ) ) & ! ( v_PKA ) ) & ! ( v_Nkx3_2 & ( ( ( v_Smad_Complex ) ) ) ) ) | ( ( ( v_Gli2 ) & ! ( v_Msx2 ) ) & ! ( v_Nkx3_2 & ( ( ( v_Smad_Complex ) ) ) ) ) | ( v_Mef2C ) | ( ( ( ( v_Elk1 ) & ! ( v_Msx2 ) ) & ! ( v_PKA ) ) & ! ( v_Nkx3_2 & ( ( ( v_Smad_Complex ) ) ) ) ) | ( v_Dlx5 ) | ( v_Hif_2a ) | ( ( v_Lef_tcf ) & ! ( v_Nkx3_2 & ( ( ( v_Smad_Complex ) ) ) ) )
+v_R_Smad, ( ( v_d_EF1 ) & ! ( v_ATF4 ) )
+v_BMP, ( v_NFkB ) | ( v_Gli2 )
+v_Infl__cytokines, ( v_ATF2 & ( ( ( v_JNK ) ) | ( ( v_Elk1 ) ) ) ) | ( v_NFkB )
+v_Grem1, ( ( v_Sox9 ) & ! ( v_B_catenin ) )
+v_IGFI, ( v_PKA ) | ( v_NFkB )
+v_Proteoglycans, ( ( v_FOXO ) & ! ( v_NFkB ) ) | ( ( v_Sox9 ) & ! ( v_NFkB ) )
+v_Alk1, ( ( v_Runx2 ) & ! ( v_Smad3 ) ) | ( ( v_ATF2 & ( ( ( v_JNK ) ) ) ) & ! ( v_Smad3 ) ) | ( v_Lef_tcf )
+v_Smad7, ( v_NFkB ) | ( v_Smad3 ) | ( v_Smad_Complex ) | ( v_Stat1 )
+v_PI3K, ( v_Runx2 )
+v_Ihh, ( ( ( v_Ihh ) & ! ( v_Fgfr3 ) ) & ! ( v_d_EF1 ) ) | ( v_Smad_Complex ) | ( v_Runx2 ) | ( ( v_ATF4 ) & ! ( v_d_EF1 ) ) | ( v_NFkB )
+v_Msx2, ( v_Msx2 ) | ( v_Smad_Complex ) | ( v_Smad3 )
+v_FRZB, ( ( v_Smad_Complex ) & ! ( v_B_catenin ) ) | ( ( v_Sox9 ) & ! ( v_B_catenin ) )
+v_Nkx3_2, ( v_Sox9 ) | ( v_PKA )
+v_Col_X, ( ( v_B_catenin ) & ! ( v_PKA ) ) | ( v_Runx2 ) | ( v_Hif_2a ) | ( v_Mef2C ) | ( v_R_Smad )
+v_Lef_tcf, ( v_B_catenin ) | ( v_Runx2 )
+v_TGF_beta, ( ( v_Smad3 ) & ! ( v_Elk1 ) ) | ( v_Gli2 )
+v_Frizzled_LRP5_6, 0
+v_PKA, 0
+v_NFkB, 0
+v_Smad_Complex, 0
+v_ATF4, 0
+v_HDAC4, 0
+v_Ras, 0
+v_GSK3beta, 0
+v_Stat1, 0
+v_JNK, 0
+v_B_catenin, 0
+v_ATF2, 0
+v_Destruction_complex, 0
+v_Elk1, 0
+v_Smad3, 0
+v_TAK1, 0
+v_Dsh, 0

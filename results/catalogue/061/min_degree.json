@@ -1,0 +1,560 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "061",
+  "name": "TUMOR-MICROENVIRONMENT-IN-LYMPHOBLASTIC-LEUKEAMIA",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 26,
+  "after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 2,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Gfi1_H": "+",
+      "v_PI3KAkt_H": "-",
+      "v_ROS_H": "+",
+      "v_lTLR": "+",
+      "v_Cx43_M": "-"
+    },
+    "positive_edges": 6,
+    "negative_edges": 5,
+    "non_unate_edges": 1,
+    "has_multi_input_rule": true,
+    "edges": 12,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 1,
+      "NON_UNATE": 1,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_PI3KAkt_H": {
+        "v_Gfi1_H": "-",
+        "v_PI3KAkt_H": "+",
+        "v_ROS_H": "-"
+      },
+      "v_ROS_H": {
+        "v_Gfi1_H": "+",
+        "v_PI3KAkt_H": "mixed",
+        "v_ROS_H": "-"
+      }
+    },
+    "local": {
+      "v_Gfi1_H": {
+        "signs": {
+          "v_Gfi1_H": "-",
+          "v_PI3KAkt_H": "-",
+          "v_ROS_H": "+",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3KAkt_H": {
+        "signs": {
+          "v_Cx43_M": "+",
+          "v_Gfi1_H": "-",
+          "v_PI3KAkt_H": "+",
+          "v_ROS_H": "mixed",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ROS_H": {
+        "signs": {
+          "v_PI3KAkt_H": "-",
+          "v_ROS_H": "-",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 2,
+    "internal_nodes": 3,
+    "nonconstant_rules": 5,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 5,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Gfi1_H": "+",
+      "v_PI3KAkt_H": "-",
+      "v_ROS_H": "+",
+      "v_lTLR": "+",
+      "v_Cx43_M": "-"
+    },
+    "positive_edges": 8,
+    "negative_edges": 5,
+    "non_unate_edges": 1,
+    "has_multi_input_rule": true,
+    "edges": 14,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 1,
+      "NON_UNATE": 1,
+      "MIN": 1,
+      "MIN_MAX": 2
+    },
+    "conflicts": {
+      "v_PI3KAkt_H": {
+        "v_Gfi1_H": "-",
+        "v_PI3KAkt_H": "+",
+        "v_ROS_H": "-"
+      },
+      "v_ROS_H": {
+        "v_Gfi1_H": "+",
+        "v_PI3KAkt_H": "mixed",
+        "v_ROS_H": "-"
+      }
+    },
+    "local": {
+      "v_Gfi1_H": {
+        "signs": {
+          "v_Gfi1_H": "-",
+          "v_PI3KAkt_H": "-",
+          "v_ROS_H": "+",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3KAkt_H": {
+        "signs": {
+          "v_Cx43_M": "+",
+          "v_Gfi1_H": "-",
+          "v_PI3KAkt_H": "+",
+          "v_ROS_H": "mixed",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ROS_H": {
+        "signs": {
+          "v_PI3KAkt_H": "-",
+          "v_ROS_H": "-",
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cx43_M": {
+        "signs": {
+          "v_Cx43_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_lTLR": {
+        "signs": {
+          "v_lTLR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 2,
+    "examples": [
+      {
+        "v_Cx43_M": 0,
+        "v_Gfi1_H": 0,
+        "v_PI3KAkt_H": 0,
+        "v_ROS_H": 0,
+        "v_lTLR": 0
+      },
+      {
+        "v_Cx43_M": 1,
+        "v_Gfi1_H": 0,
+        "v_PI3KAkt_H": 1,
+        "v_ROS_H": 0,
+        "v_lTLR": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Gfi1_H": "!(((v_Gfi1_H & 1) | (!v_Gfi1_H & !(((v_PI3KAkt_H & ((v_lTLR & 1) | (!v_lTLR & 0))) | (!v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))))))))",
+    "v_PI3KAkt_H": "((v_Cx43_M & ((v_Gfi1_H & ((v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & !(((v_lTLR & 1) | (!v_lTLR & 0))))))))) | (!v_Gfi1_H & ((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & 0)))))))) | (!v_Cx43_M & ((v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & !(((v_lTLR & 1) | (!v_lTLR & 0))))))))))",
+    "v_ROS_H": "!v_PI3KAkt_H & !v_ROS_H & v_lTLR",
+    "v_Cx43_M": "v_Cx43_M",
+    "v_lTLR": "v_lTLR"
+  },
+  "steps": [
+    {
+      "node": "v_Bcatenin_H",
+      "support": [
+        "v_GSK3B_H"
+      ],
+      "function": "!v_GSK3B_H"
+    },
+    {
+      "node": "v_GSK3B_M",
+      "support": [
+        "v_PI3KAkt_M"
+      ],
+      "function": "!v_PI3KAkt_M"
+    },
+    {
+      "node": "v_GSK3B_H",
+      "support": [
+        "v_PI3KAkt_H"
+      ],
+      "function": "!v_PI3KAkt_H"
+    },
+    {
+      "node": "v_VCAM1_M",
+      "support": [
+        "v_Bcatenin_M",
+        "v_NfkB_M",
+        "v_PI3KAkt_M"
+      ],
+      "function": "!v_Bcatenin_M | v_NfkB_M | v_PI3KAkt_M"
+    },
+    {
+      "node": "v_CXCR7_H",
+      "support": [
+        "v_CXCL12_M",
+        "v_NfkB_H"
+      ],
+      "function": "v_CXCL12_M & v_NfkB_H"
+    },
+    {
+      "node": "v_ERK_M",
+      "support": [
+        "v_GCSF",
+        "v_ROS_M",
+        "v_TLR_M"
+      ],
+      "function": "v_GCSF | v_ROS_M | v_TLR_M"
+    },
+    {
+      "node": "v_TLR_H",
+      "support": [
+        "v_lTLR"
+      ],
+      "function": "v_lTLR"
+    },
+    {
+      "node": "v_TLR_M",
+      "support": [
+        "v_lTLR"
+      ],
+      "function": "v_lTLR"
+    },
+    {
+      "node": "v_Bcatenin_M",
+      "support": [
+        "v_FoxO3a_M",
+        "v_NfkB_M",
+        "v_PI3KAkt_M"
+      ],
+      "function": "!v_FoxO3a_M & !v_NfkB_M & v_PI3KAkt_M"
+    },
+    {
+      "node": "v_FoxO3a_M",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_VLA4_H",
+      "support": [
+        "v_CXCR4_H"
+      ],
+      "function": "v_CXCR4_H"
+    },
+    {
+      "node": "v_ROS_M",
+      "support": [
+        "v_IL1",
+        "v_lTLR"
+      ],
+      "function": "v_IL1 & v_lTLR"
+    },
+    {
+      "node": "v_NfkB_M",
+      "support": [
+        "v_IL1",
+        "v_PI3KAkt_M",
+        "v_lTLR"
+      ],
+      "function": "((v_IL1 & ((v_PI3KAkt_M & 1) | (!v_PI3KAkt_M & ((v_lTLR & 1) | (!v_lTLR & 0))))) | (!v_IL1 & ((v_lTLR & 1) | (!v_lTLR & 0))))"
+    },
+    {
+      "node": "v_PI3KAkt_M",
+      "support": [
+        "v_GCSF",
+        "v_lTLR"
+      ],
+      "function": "v_GCSF | v_lTLR"
+    },
+    {
+      "node": "v_CXCL12_M",
+      "support": [
+        "v_Cx43_M",
+        "v_GCSF",
+        "v_lTLR"
+      ],
+      "function": "v_Cx43_M & !v_GCSF & !v_lTLR"
+    },
+    {
+      "node": "v_GCSF",
+      "support": [
+        "v_IL1"
+      ],
+      "function": "v_IL1"
+    },
+    {
+      "node": "v_CXCR4_H",
+      "support": [
+        "v_Cx43_M",
+        "v_Gfi1_H",
+        "v_IL1",
+        "v_NfkB_H",
+        "v_lTLR"
+      ],
+      "function": "v_Cx43_M & !v_Gfi1_H & !v_IL1 & !v_NfkB_H & !v_lTLR"
+    },
+    {
+      "node": "v_FoxO3a_H",
+      "support": [
+        "v_ERK_H",
+        "v_PI3KAkt_H",
+        "v_ROS_H"
+      ],
+      "function": "!v_ERK_H & !v_PI3KAkt_H & v_ROS_H"
+    },
+    {
+      "node": "v_NfkB_H",
+      "support": [
+        "v_ERK_H",
+        "v_IL1",
+        "v_PI3KAkt_H",
+        "v_ROS_H",
+        "v_lTLR"
+      ],
+      "function": "((v_ERK_H & ((v_IL1 & ((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))))) | (!v_IL1 & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))))) | (!v_ERK_H & ((v_IL1 & ((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & !(((v_lTLR & 1) | (!v_lTLR & 0))))))))) | (!v_IL1 & ((v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & !(((v_lTLR & 1) | (!v_lTLR & 0))))))))))))"
+    },
+    {
+      "node": "v_IL1",
+      "support": [
+        "v_PI3KAkt_H",
+        "v_ROS_H",
+        "v_lTLR"
+      ],
+      "function": "!(((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & !(((v_ROS_H & 1) | (!v_ROS_H & ((v_lTLR & 1) | (!v_lTLR & 0))))))))"
+    },
+    {
+      "node": "v_ERK_H",
+      "support": [
+        "v_Cx43_M",
+        "v_Gfi1_H",
+        "v_PI3KAkt_H",
+        "v_ROS_H",
+        "v_lTLR"
+      ],
+      "function": "((v_Cx43_M & ((v_Gfi1_H & ((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & 0))) | (!v_Gfi1_H & ((v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & !(((v_lTLR & 1) | (!v_lTLR & 0)))))) | (!v_PI3KAkt_H & 0))))) | (!v_Cx43_M & ((v_Gfi1_H & ((v_PI3KAkt_H & 1) | (!v_PI3KAkt_H & 0))) | (!v_Gfi1_H & ((v_PI3KAkt_H & ((v_ROS_H & 1) | (!v_ROS_H & 0))) | (!v_PI3KAkt_H & 0))))))"
+    }
+  ],
+  "seconds": 0.07712180004455149
+}

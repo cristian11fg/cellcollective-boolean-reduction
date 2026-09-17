@@ -1,0 +1,20 @@
+{
+"level_of_var": {"v_AJUBA": 0, "v_AURKAActive": 1, "v_AURKAPresent": 2, "v_BORA": 3, "v_CDC25B": 4, "v_CDK1CCNBComplex": 5, "v_CentrosomeMat": 6, "v_Cytokinesis": 7, "v_ENSA": 8, "v_GSK3B": 9, "v_GWL_MASTL": 10, "v_MT": 11, "v_MTCanAct": 12, "v_NEDD9": 13, "v_PLK1": 14, "v_PP1": 15, "v_PP2A": 16, "v_STMN": 17, "v_STMNCanAct": 18, "v_SpindleAssembly": 19, "v_TPX2": 20, "v_WEE1": 21, "v_hCPEB": 22},
+"roots": {"final:v_AURKAActive": 6, "final:v_CentrosomeMat": -110, "final:v_AJUBA": 11, "final:v_GSK3B": 33, "final:v_MTCanAct": 69, "final:v_STMNCanAct": 65, "step:0:v_MT": -64, "step:1:v_NEDD9": 6, "step:2:v_STMN": -6, "step:3:v_PLK1": 6, "step:4:v_TPX2": 6, "step:5:v_AURKAPresent": -32, "step:6:v_CDC25B": -40, "step:7:v_WEE1": -6, "step:8:v_hCPEB": 6, "step:9:v_ENSA": 62, "step:10:v_BORA": -88, "step:11:v_CDK1CCNBComplex": -40, "step:12:v_SpindleAssembly": -79, "step:13:v_Cytokinesis": -1, "step:14:v_PP1": -6, "step:15:v_GWL_MASTL": -111, "step:16:v_PP2A": -6},
+"6": [1, "F", "T"],
+"60": [6, "F", "T"],
+"110": [1, "T", 60],
+"11": [0, "F", "T"],
+"33": [9, "F", "T"],
+"69": [12, "F", "T"],
+"65": [18, "F", "T"],
+"64": [17, "F", "T"],
+"32": [16, "F", "T"],
+"35": [7, "F", "T"],
+"40": [1, "T", 35],
+"62": [10, "F", "T"],
+"87": [7, -33, "T"],
+"88": [1, -33, 87],
+"79": [6, "T", 35],
+"111": [1, "T", 32]
+}

@@ -1,0 +1,393 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2202_1",
+  "name": "Neurotransmitter Signaling Pathway",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 16,
+  "after": {
+    "nodes": 3,
+    "n_nodes": 3,
+    "inputs": 0,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": false,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": true,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Dopamine": "+",
+      "v_Tryosine_hydroxylase": "+",
+      "v_Glutamate": "+"
+    },
+    "positive_edges": 3,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 4,
+    "max_indegree": 2,
+    "local_family_counts": {
+      "MIN": 1,
+      "MIN_MAX": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_Dopamine": {
+        "signs": {
+          "v_Dopamine": "-",
+          "v_Tryosine_hydroxylase": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Tryosine_hydroxylase": {
+        "signs": {
+          "v_Tryosine_hydroxylase": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Glutamate": {
+        "signs": {
+          "v_Glutamate": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 3,
+    "n_nodes": 3,
+    "inputs": 0,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": false,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": true,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Dopamine": "+",
+      "v_Tryosine_hydroxylase": "+",
+      "v_Glutamate": "+"
+    },
+    "positive_edges": 3,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 4,
+    "max_indegree": 2,
+    "local_family_counts": {
+      "MIN": 1,
+      "MIN_MAX": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_Dopamine": {
+        "signs": {
+          "v_Dopamine": "-",
+          "v_Tryosine_hydroxylase": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Tryosine_hydroxylase": {
+        "signs": {
+          "v_Tryosine_hydroxylase": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Glutamate": {
+        "signs": {
+          "v_Glutamate": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 2,
+    "examples": [
+      {
+        "v_Dopamine": 0,
+        "v_Glutamate": 0,
+        "v_Tryosine_hydroxylase": 0
+      },
+      {
+        "v_Dopamine": 0,
+        "v_Glutamate": 1,
+        "v_Tryosine_hydroxylase": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Dopamine": "!v_Dopamine & v_Tryosine_hydroxylase",
+    "v_Tryosine_hydroxylase": "v_Tryosine_hydroxylase",
+    "v_Glutamate": "v_Glutamate"
+  },
+  "steps": [
+    {
+      "node": "v_Packaging_Proteins",
+      "support": [
+        "v_Glutamate_Receptor"
+      ],
+      "function": "v_Glutamate_Receptor"
+    },
+    {
+      "node": "v_COMT",
+      "support": [
+        "v_Dopamine"
+      ],
+      "function": "v_Dopamine"
+    },
+    {
+      "node": "v_Adenylate_cyclase",
+      "support": [
+        "v_Dopamine_Receptor_1",
+        "v_Dopamine_Receptor_2"
+      ],
+      "function": "v_Dopamine_Receptor_1 & !v_Dopamine_Receptor_2"
+    },
+    {
+      "node": "v_Dopamine_Receptor_2",
+      "support": [
+        "v_Dopamine"
+      ],
+      "function": "v_Dopamine"
+    },
+    {
+      "node": "v_Dopamine_Receptor_1",
+      "support": [
+        "v_Dopamine"
+      ],
+      "function": "v_Dopamine"
+    },
+    {
+      "node": "v_Exocytosis",
+      "support": [
+        "v_Glutamate_Receptor"
+      ],
+      "function": "v_Glutamate_Receptor"
+    },
+    {
+      "node": "v_Calcium",
+      "support": [
+        "v_Glutamate_Receptor",
+        "v_Phospholipase_C"
+      ],
+      "function": "v_Glutamate_Receptor | v_Phospholipase_C"
+    },
+    {
+      "node": "v_Protein_Phosphatase_1",
+      "support": [
+        "v_DARPP32"
+      ],
+      "function": "!v_DARPP32"
+    },
+    {
+      "node": "v_Calcineurin",
+      "support": [
+        "v_Glutamate_Receptor",
+        "v_Phospholipase_C"
+      ],
+      "function": "v_Glutamate_Receptor | v_Phospholipase_C"
+    },
+    {
+      "node": "v_DARPP32",
+      "support": [
+        "v_Glutamate_Receptor",
+        "v_Phospholipase_C",
+        "v_Protein_Kinase_A"
+      ],
+      "function": "!v_Glutamate_Receptor & !v_Phospholipase_C & v_Protein_Kinase_A"
+    },
+    {
+      "node": "v_Protein_Kinase_A",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_Glutamate_Receptor",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_Phospholipase_C",
+      "support": [
+        "v_Dopamine"
+      ],
+      "function": "v_Dopamine"
+    }
+  ],
+  "seconds": 0.03650799999013543
+}

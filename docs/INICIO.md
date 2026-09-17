@@ -126,6 +126,9 @@ de `results/pilot`; sus tiempos cambiarán ligeramente en cada ejecución.
 3. Revisamos el cambio y sus resultados.
 4. Guardamos una versión con un commit y la enviamos a GitHub cuando corresponda.
 
+La taxonomía normativa está en [`taxonomia.md`](taxonomia.md), y el método y la
+procedencia del censo en [`metodo_censo.md`](metodo_censo.md).
+
 No necesitas aprender todos los comandos para empezar. Puedes pedir las acciones
 con lenguaje normal; conviene distinguir «guardar los archivos», «guardar una
 versión» y «subir esa versión a GitHub».

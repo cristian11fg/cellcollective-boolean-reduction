@@ -1,0 +1,1461 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "077",
+  "name": "SIGNALLING-PATHWAY-FOR-BUTANOL-PRODUCTION",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 66,
+  "after": {
+    "nodes": 16,
+    "n_nodes": 16,
+    "inputs": 13,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_PTS": "+",
+      "v_butyrate": "+",
+      "v_cell_membrane": "+",
+      "v_glucose": "+",
+      "v_sigA": "-",
+      "v_spo0A_p": "-",
+      "v_phosphorylation": "-",
+      "v_spoIIE": "-"
+    },
+    "positive_edges": 10,
+    "negative_edges": 4,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 16,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "NON_UNATE": 1
+    },
+    "conflicts": {
+      "v_butyrate": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+"
+      },
+      "v_cell_membrane": {
+        "v_butyrate": "+",
+        "v_cell_membrane": "-",
+        "v_spo0A_p": "+"
+      },
+      "v_sigA": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+",
+        "v_spo0A_p": "mixed"
+      },
+      "v_spo0A_p": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+",
+        "v_spo0A_p": "mixed"
+      }
+    },
+    "local": {
+      "v_butyrate": {
+        "signs": {
+          "v_PTS": "+",
+          "v_butyrate": "-",
+          "v_cell_membrane": "+",
+          "v_glucose": "+",
+          "v_sigA": "-",
+          "v_spo0A_p": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cell_membrane": {
+        "signs": {
+          "v_butyrate": "+",
+          "v_cell_membrane": "-",
+          "v_glucose": "+",
+          "v_sigA": "+",
+          "v_spo0A_p": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_spo0A_p": {
+        "signs": {
+          "v_cell_membrane": "+",
+          "v_phosphorylation": "+",
+          "v_sigA": "mixed",
+          "v_spo0A_p": "mixed",
+          "v_spoIIE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 16,
+    "n_nodes": 16,
+    "inputs": 13,
+    "internal_nodes": 3,
+    "nonconstant_rules": 16,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 16,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_PTS": "+",
+      "v_butyrate": "+",
+      "v_cell_membrane": "+",
+      "v_glucose": "+",
+      "v_sigA": "-",
+      "v_spo0A_p": "-",
+      "v_phosphorylation": "-",
+      "v_spoIIE": "-",
+      "v_NADH": "+",
+      "v_NAD_P_H": "+",
+      "v_Rnf": "+",
+      "v_fba": "+",
+      "v_gap_pgk_tpi_pgm__X276_23705_eno": "+",
+      "v_pfk": "+",
+      "v_pfo": "+",
+      "v_pgi": "+"
+    },
+    "positive_edges": 23,
+    "negative_edges": 4,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 29,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "NON_UNATE": 1,
+      "MIN_MAX": 13
+    },
+    "conflicts": {
+      "v_butyrate": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+"
+      },
+      "v_cell_membrane": {
+        "v_butyrate": "+",
+        "v_cell_membrane": "-",
+        "v_spo0A_p": "+"
+      },
+      "v_sigA": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+",
+        "v_spo0A_p": "mixed",
+        "v_sigA": "+"
+      },
+      "v_spo0A_p": {
+        "v_butyrate": "-",
+        "v_cell_membrane": "+",
+        "v_spo0A_p": "mixed"
+      }
+    },
+    "local": {
+      "v_butyrate": {
+        "signs": {
+          "v_PTS": "+",
+          "v_butyrate": "-",
+          "v_cell_membrane": "+",
+          "v_glucose": "+",
+          "v_sigA": "-",
+          "v_spo0A_p": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cell_membrane": {
+        "signs": {
+          "v_butyrate": "+",
+          "v_cell_membrane": "-",
+          "v_glucose": "+",
+          "v_sigA": "+",
+          "v_spo0A_p": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_spo0A_p": {
+        "signs": {
+          "v_cell_membrane": "+",
+          "v_phosphorylation": "+",
+          "v_sigA": "mixed",
+          "v_spo0A_p": "mixed",
+          "v_spoIIE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NADH": {
+        "signs": {
+          "v_NADH": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NAD_P_H": {
+        "signs": {
+          "v_NAD_P_H": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PTS": {
+        "signs": {
+          "v_PTS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Rnf": {
+        "signs": {
+          "v_Rnf": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_fba": {
+        "signs": {
+          "v_fba": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_gap_pgk_tpi_pgm__X276_23705_eno": {
+        "signs": {
+          "v_gap_pgk_tpi_pgm__X276_23705_eno": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_glucose": {
+        "signs": {
+          "v_glucose": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pfk": {
+        "signs": {
+          "v_pfk": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pfo": {
+        "signs": {
+          "v_pfo": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pgi": {
+        "signs": {
+          "v_pgi": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_phosphorylation": {
+        "signs": {
+          "v_phosphorylation": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_sigA": {
+        "signs": {
+          "v_sigA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_spoIIE": {
+        "signs": {
+          "v_spoIIE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 0,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 0
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 0,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 0,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 0,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 0,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 0,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 1,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 1,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      },
+      {
+        "v_NADH": 0,
+        "v_NAD_P_H": 0,
+        "v_PTS": 1,
+        "v_Rnf": 1,
+        "v_butyrate": 0,
+        "v_cell_membrane": 0,
+        "v_fba": 0,
+        "v_gap_pgk_tpi_pgm__X276_23705_eno": 0,
+        "v_glucose": 0,
+        "v_pfk": 1,
+        "v_pfo": 0,
+        "v_pgi": 0,
+        "v_phosphorylation": 1,
+        "v_sigA": 1,
+        "v_spo0A_p": 0,
+        "v_spoIIE": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_butyrate": "!(((v_PTS & ((v_butyrate & 1) | (!v_butyrate & !(((v_cell_membrane & ((v_glucose & 1) | (!v_glucose & !(((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))) | (!v_cell_membrane & !(((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))))))) | (!v_PTS & ((v_butyrate & 1) | (!v_butyrate & ((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))))",
+    "v_cell_membrane": "!(((v_butyrate & ((v_cell_membrane & 1) | (!v_cell_membrane & !(((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))) | (!v_butyrate & ((v_cell_membrane & 1) | (!v_cell_membrane & !(((v_glucose & ((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))) | (!v_glucose & 0))))))))",
+    "v_spo0A_p": "((v_cell_membrane & ((v_phosphorylation & ((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & ((v_spoIIE & 1) | (!v_spoIIE & 0))))))) | (!v_phosphorylation & 0))) | (!v_cell_membrane & !(((v_phosphorylation & ((v_sigA & 1) | (!v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & !(((v_spoIIE & 1) | (!v_spoIIE & 0)))))))) | (!v_phosphorylation & 1)))))",
+    "v_NADH": "v_NADH",
+    "v_NAD_P_H": "v_NAD_P_H",
+    "v_PTS": "v_PTS",
+    "v_Rnf": "v_Rnf",
+    "v_fba": "v_fba",
+    "v_gap_pgk_tpi_pgm__X276_23705_eno": "v_gap_pgk_tpi_pgm__X276_23705_eno",
+    "v_glucose": "v_glucose",
+    "v_pfk": "v_pfk",
+    "v_pfo": "v_pfo",
+    "v_pgi": "v_pgi",
+    "v_phosphorylation": "v_phosphorylation",
+    "v_sigA": "v_sigA",
+    "v_spoIIE": "v_spoIIE"
+  },
+  "steps": [
+    {
+      "node": "v_sigF",
+      "support": [
+        "v_sigH",
+        "v_spoIIAB",
+        "v_spoIIE"
+      ],
+      "function": "((v_sigH & ((v_spoIIAB & ((v_spoIIE & 1) | (!v_spoIIE & 0))) | (!v_spoIIAB & 1))) | (!v_sigH & ((v_spoIIE & 1) | (!v_spoIIE & 0))))"
+    },
+    {
+      "node": "v_acetoacetyl_CoA",
+      "support": [
+        "v_acetyl_CoA",
+        "v_ctfB",
+        "v_hbd",
+        "v_thlA"
+      ],
+      "function": "v_acetyl_CoA | v_ctfB | v_hbd | v_thlA"
+    },
+    {
+      "node": "v_AbrB",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "!v_spo0A_p"
+    },
+    {
+      "node": "v_thlA",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_butanol",
+      "support": [
+        "v_NAD_P_H",
+        "v_adhA",
+        "v_adhB",
+        "v_bdhAB",
+        "v_butanal",
+        "v_sporulation"
+      ],
+      "function": "!(((v_NAD_P_H & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_NAD_P_H & ((v_adhA & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_adhA & ((v_adhB & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_adhB & ((v_bdhAB & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_bdhAB & ((v_butanal & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_butanal & 1)))))))))))"
+    },
+    {
+      "node": "v_buk1",
+      "support": [
+        "v_spo0A_p",
+        "v_sporulation"
+      ],
+      "function": "!v_spo0A_p & !v_sporulation"
+    },
+    {
+      "node": "v_bdhAB",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_ack",
+      "support": [
+        "v_spo0A_p",
+        "v_sporulation"
+      ],
+      "function": "!v_spo0A_p & !v_sporulation"
+    },
+    {
+      "node": "v_acetone",
+      "support": [
+        "v_acetoacetate",
+        "v_adc",
+        "v_sporulation"
+      ],
+      "function": "!(((v_acetoacetate & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_acetoacetate & ((v_adc & ((v_sporulation & 1) | (!v_sporulation & 0))) | (!v_adc & 1)))))"
+    },
+    {
+      "node": "v_sigK",
+      "support": [
+        "v_sigG"
+      ],
+      "function": "v_sigG"
+    },
+    {
+      "node": "v_acetoacetate",
+      "support": [
+        "v_acetyl_CoA",
+        "v_ctfA",
+        "v_ctfB",
+        "v_hbd",
+        "v_spo0A_p"
+      ],
+      "function": "v_acetyl_CoA | v_ctfA | v_ctfB | v_hbd | v_spo0A_p"
+    },
+    {
+      "node": "v_spoIIAB_p",
+      "support": [
+        "v_phosphorylation",
+        "v_spoIIAB"
+      ],
+      "function": "v_phosphorylation & v_spoIIAB"
+    },
+    {
+      "node": "v_ptb",
+      "support": [
+        "v_spo0A_p",
+        "v_sporulation"
+      ],
+      "function": "!v_spo0A_p & !v_sporulation"
+    },
+    {
+      "node": "v_acetaldehyde",
+      "support": [
+        "v_acetyl_CoA",
+        "v_ald"
+      ],
+      "function": "v_acetyl_CoA | v_ald"
+    },
+    {
+      "node": "v_EtfAB",
+      "support": [
+        "v_NADH"
+      ],
+      "function": "v_NADH"
+    },
+    {
+      "node": "v_adhA",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_crotonoyl_CoA",
+      "support": [
+        "v_3_hydroxybutyryl_CoA",
+        "v_crt",
+        "v_ferredoxin"
+      ],
+      "function": "v_3_hydroxybutyryl_CoA | v_crt | v_ferredoxin"
+    },
+    {
+      "node": "v_ctfA",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_sporulation",
+      "support": [
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigG",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "!(((v_cell_membrane & 1) | (!v_cell_membrane & !(((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigG & 1) | (!v_sigG & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))))))"
+    },
+    {
+      "node": "v_lactic_acid",
+      "support": [
+        "v_cell_membrane",
+        "v_lactate",
+        "v_sigA",
+        "v_sigE",
+        "v_sigG",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_cell_membrane & ((v_lactate & 1) | (!v_lactate & 0))) | (!v_cell_membrane & !(((v_lactate & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigG & 1) | (!v_sigG & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_lactate & 1)))))"
+    },
+    {
+      "node": "v_3_hydroxybutyryl_CoA",
+      "support": [
+        "v_acetyl_CoA",
+        "v_crt",
+        "v_ctfB",
+        "v_hbd",
+        "v_spo0A_p"
+      ],
+      "function": "v_acetyl_CoA | v_crt | v_ctfB | v_hbd | v_spo0A_p"
+    },
+    {
+      "node": "v_lactate",
+      "support": [
+        "v_ferredoxin",
+        "v_pyruvate"
+      ],
+      "function": "!v_ferredoxin & v_pyruvate"
+    },
+    {
+      "node": "v_bcd",
+      "support": [
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigG",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "!(((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigG & 1) | (!v_sigG & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))"
+    },
+    {
+      "node": "v_spo0A",
+      "support": [
+        "v_sigG",
+        "v_spo0A_p"
+      ],
+      "function": "v_sigG | v_spo0A_p"
+    },
+    {
+      "node": "v_sigG",
+      "support": [
+        "v_sigE"
+      ],
+      "function": "v_sigE"
+    },
+    {
+      "node": "v_spoIIAB",
+      "support": [
+        "v_sigH",
+        "v_spo0A_p",
+        "v_spoIIAA",
+        "v_spoIIE"
+      ],
+      "function": "!(((v_sigH & ((v_spo0A_p & ((v_spoIIAA & ((v_spoIIE & 1) | (!v_spoIIE & 0))) | (!v_spoIIAA & 0))) | (!v_spo0A_p & 1))) | (!v_sigH & 1)))"
+    },
+    {
+      "node": "v_pyk",
+      "support": [
+        "v_pfk"
+      ],
+      "function": "v_pfk"
+    },
+    {
+      "node": "v_ferredoxin",
+      "support": [
+        "v_Rnf"
+      ],
+      "function": "v_Rnf"
+    },
+    {
+      "node": "v_butyric_acid",
+      "support": [
+        "v_butyrate",
+        "v_butyryl_p",
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_butyrate & ((v_butyryl_p & ((v_cell_membrane & 1) | (!v_cell_membrane & !(((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))) | (!v_butyryl_p & 0))) | (!v_butyrate & 0))"
+    },
+    {
+      "node": "v_pta",
+      "support": [
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "!(((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))"
+    },
+    {
+      "node": "v_spoIIA_p",
+      "support": [
+        "v_sigH",
+        "v_spo0A_p",
+        "v_spoIIAA",
+        "v_spoIIE"
+      ],
+      "function": "v_sigH & v_spo0A_p & v_spoIIAA & !v_spoIIE"
+    },
+    {
+      "node": "v_butyryl_p",
+      "support": [
+        "v_butyryl_CoA"
+      ],
+      "function": "v_butyryl_CoA"
+    },
+    {
+      "node": "v_acetate",
+      "support": [
+        "v_cell_membrane",
+        "v_glucose___PTS",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_cell_membrane & ((v_glucose___PTS & 1) | (!v_glucose___PTS & !(((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))) | (!v_cell_membrane & !(((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))"
+    },
+    {
+      "node": "v_butanal",
+      "support": [
+        "v_ald",
+        "v_butyryl_CoA",
+        "v_spo0A_p"
+      ],
+      "function": "v_ald | v_butyryl_CoA | v_spo0A_p"
+    },
+    {
+      "node": "v_pyruvate",
+      "support": [
+        "v_fba",
+        "v_gap_pgk_tpi_pgm__X276_23705_eno",
+        "v_glucose___PTS",
+        "v_pfk",
+        "v_pgi"
+      ],
+      "function": "v_fba | v_gap_pgk_tpi_pgm__X276_23705_eno | v_glucose___PTS | v_pfk | v_pgi"
+    },
+    {
+      "node": "v_crt",
+      "support": [
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "!(((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))"
+    },
+    {
+      "node": "v_butyryl_CoA",
+      "support": [
+        "v_NADH",
+        "v_Rnf",
+        "v_acetyl_CoA",
+        "v_ald",
+        "v_cell_membrane",
+        "v_ctfB",
+        "v_hbd",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_NADH & 1) | (!v_NADH & ((v_Rnf & 1) | (!v_Rnf & ((v_acetyl_CoA & 1) | (!v_acetyl_CoA & ((v_ald & 1) | (!v_ald & ((v_cell_membrane & 1) | (!v_cell_membrane & ((v_ctfB & 1) | (!v_ctfB & ((v_hbd & 1) | (!v_hbd & ((v_sigA & ((v_sigE & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigE & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))) | (!v_sigA & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))))))))))))))))"
+    },
+    {
+      "node": "v_ald",
+      "support": [
+        "v_sigE",
+        "v_spo0A_p"
+      ],
+      "function": "v_sigE | v_spo0A_p"
+    },
+    {
+      "node": "v_adc",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_ctfB",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    },
+    {
+      "node": "v_hbd",
+      "support": [
+        "v_cell_membrane",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "!(((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))"
+    },
+    {
+      "node": "v_acetyl_CoA",
+      "support": [
+        "v_cell_membrane",
+        "v_fba",
+        "v_gap_pgk_tpi_pgm__X276_23705_eno",
+        "v_glucose___PTS",
+        "v_pfk",
+        "v_pfo",
+        "v_pgi",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_cell_membrane & 1) | (!v_cell_membrane & ((v_fba & 1) | (!v_fba & ((v_gap_pgk_tpi_pgm__X276_23705_eno & 1) | (!v_gap_pgk_tpi_pgm__X276_23705_eno & ((v_glucose___PTS & 1) | (!v_glucose___PTS & ((v_pfk & 1) | (!v_pfk & ((v_pfo & 1) | (!v_pfo & ((v_pgi & 1) | (!v_pgi & ((v_sigA & ((v_sigE & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigE & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))) | (!v_sigA & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))))))))))))))))"
+    },
+    {
+      "node": "v_acetyl_p",
+      "support": [
+        "v_cell_membrane",
+        "v_fba",
+        "v_gap_pgk_tpi_pgm__X276_23705_eno",
+        "v_glucose___PTS",
+        "v_pfk",
+        "v_pfo",
+        "v_pgi",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_cell_membrane & 1) | (!v_cell_membrane & ((v_fba & 1) | (!v_fba & ((v_gap_pgk_tpi_pgm__X276_23705_eno & 1) | (!v_gap_pgk_tpi_pgm__X276_23705_eno & ((v_glucose___PTS & 1) | (!v_glucose___PTS & ((v_pfk & 1) | (!v_pfk & ((v_pfo & 1) | (!v_pfo & ((v_pgi & 1) | (!v_pgi & ((v_sigA & ((v_sigE & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigE & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))) | (!v_sigA & ((v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_sigH & 1))))))))))))))))))"
+    },
+    {
+      "node": "v_glucose___PTS",
+      "support": [
+        "v_PTS",
+        "v_cell_membrane",
+        "v_glucose"
+      ],
+      "function": "v_PTS & v_cell_membrane & v_glucose"
+    },
+    {
+      "node": "v_acetic_acid",
+      "support": [
+        "v_PTS",
+        "v_cell_membrane",
+        "v_glucose",
+        "v_sigA",
+        "v_sigE",
+        "v_sigH",
+        "v_spo0A_p"
+      ],
+      "function": "((v_PTS & ((v_cell_membrane & ((v_glucose & 1) | (!v_glucose & !(((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))) | (!v_cell_membrane & !(((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))) | (!v_PTS & !(((v_cell_membrane & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))) | (!v_cell_membrane & ((v_sigA & ((v_sigE & 1) | (!v_sigE & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0))))))) | (!v_sigA & ((v_sigH & 1) | (!v_sigH & ((v_spo0A_p & 1) | (!v_spo0A_p & 0)))))))))))"
+    },
+    {
+      "node": "v_sigE",
+      "support": [
+        "v_sigH",
+        "v_spo0A_p",
+        "v_spoIIE"
+      ],
+      "function": "v_sigH | v_spo0A_p | v_spoIIE"
+    },
+    {
+      "node": "v_sigH",
+      "support": [
+        "v_sigA"
+      ],
+      "function": "v_sigA"
+    },
+    {
+      "node": "v_spoIIAA",
+      "support": [
+        "v_sigA",
+        "v_spo0A_p",
+        "v_spoIIE"
+      ],
+      "function": "((v_sigA & ((v_spo0A_p & 1) | (!v_spo0A_p & ((v_spoIIE & 1) | (!v_spoIIE & 0))))) | (!v_sigA & ((v_spoIIE & 1) | (!v_spoIIE & 0))))"
+    },
+    {
+      "node": "v_ethanol",
+      "support": [
+        "v_sigA",
+        "v_spo0A_p",
+        "v_spoIIE"
+      ],
+      "function": "!v_sigA & !v_spo0A_p & !v_spoIIE"
+    },
+    {
+      "node": "v_adhB",
+      "support": [
+        "v_spo0A_p"
+      ],
+      "function": "v_spo0A_p"
+    }
+  ],
+  "seconds": 1.2319103999761865
+}

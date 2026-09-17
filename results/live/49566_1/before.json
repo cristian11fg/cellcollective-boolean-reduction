@@ -1,0 +1,2877 @@
+{
+  "id": "49566_1",
+  "name": "Virtual chondrocyte - PPI layer",
+  "source": {
+    "id": "49566_1",
+    "cellcollective_id": 49566,
+    "version": "1",
+    "name": "Virtual chondrocyte - PPI layer",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/#module/49566:1"
+    ],
+    "export_url": "https://research.cellcollective.org/web/_api/model/export/49566?version=1&type=EXPR",
+    "status": "downloaded",
+    "files": [
+      {
+        "name": "export.zip",
+        "sha256": "be7be1811dfabeaa8bd41273e648f7605287fa04f7ff6f1ee1b9d6e10b44899a"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "5a978b0697810143718f538e651d22ff793251adc2367effc755c4f8db82891a"
+      },
+      {
+        "name": "metadata.json",
+        "sha256": "951ca3e6e7efb9b9ff27c598ca1a05b6ef62928f8eb1592f086aa250f4b08cd1"
+      },
+      {
+        "name": "source.sbml",
+        "sha256": "6066563ba32532d0c9bde6116dce0980d034e4fdb2bafa27307781550e5d69c5"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 60,
+    "n_nodes": 60,
+    "inputs": 0,
+    "internal_nodes": 60,
+    "nonconstant_rules": 44,
+    "constant_rules": 16,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FGF": "+",
+      "v_FGFR3": "+",
+      "v_FGFR1": "+",
+      "v_NFkB": "+",
+      "v_STAT1": "+",
+      "v_RAS": "+",
+      "v_BMP": "+",
+      "v_PI3K": "+",
+      "v_ERK1_2": "+",
+      "v_WNT": "+",
+      "v_DKK1": "-",
+      "v_FRZB": "-",
+      "v_Frizzled_LRP5_6": "+",
+      "v_DSH": "+",
+      "v_Destruction_complex": "-",
+      "v_PP2A": "-",
+      "v_B_catenin": "+",
+      "v_LEF_TCF": "+",
+      "v_SOX9": "-",
+      "v_PKA": "-",
+      "v_SMAD3": "-",
+      "v_RUNX2": "+",
+      "v_AKT": "+",
+      "v_DLX5": "+",
+      "v_HDAC4": "-",
+      "v_MSX2": "-",
+      "v_MEF2C": "+",
+      "v_P38": "+",
+      "v_SMAD_complex": "+",
+      "v_R_Smad": "+",
+      "v_SMAD7": "-",
+      "v_ALK1": "+",
+      "v_TGF_beta": "+",
+      "v_ALK5": "+",
+      "v_TAK1": "+",
+      "v_ATF2": "+",
+      "v_JNK": "+",
+      "v_IkBa": "-",
+      "v_R_inflam": "+",
+      "v_Infl__cytokines": "+",
+      "v_FOXO": "+",
+      "v_ELK_1": "+",
+      "v_GSK3beta": "-",
+      "v_CCND1": "+",
+      "v_ATF4": "-",
+      "v_IGFI": "-",
+      "v_PPR": "-",
+      "v_PTHrP": "-",
+      "v_IGF_IR": "-",
+      "v_GREM1": "-",
+      "v_MMP13": "+",
+      "v_Proteoglycans": "-",
+      "v_COL_II": "-",
+      "v_IHH": "+",
+      "v_GLI2": "+"
+    },
+    "positive_edges": 57,
+    "negative_edges": 28,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 85,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "MIN_MAX": 23,
+      "UNATE_OTHER": 4,
+      "MAX": 10,
+      "MIN": 7,
+      "CONST": 16
+    },
+    "conflicts": {
+      "v_PP2A": {
+        "v_HDAC4": "+",
+        "v_GSK3beta": "-",
+        "v_AKT": "-",
+        "v_Destruction_complex": "+"
+      },
+      "v_AKT": {
+        "v_RUNX2": "+",
+        "v_NFkB": "+",
+        "v_GSK3beta": "-"
+      },
+      "v_DLX5": {
+        "v_RUNX2": "+",
+        "v_MSX2": "-"
+      },
+      "v_ERK1_2": {
+        "v_RUNX2": "+",
+        "v_Destruction_complex": "-",
+        "v_ATF4": "+",
+        "v_SMAD3": "-",
+        "v_ELK_1": "+"
+      },
+      "v_PKA": {
+        "v_RUNX2": "-",
+        "v_ATF4": "+",
+        "v_PP2A": "+",
+        "v_SOX9": "+"
+      },
+      "v_SMAD3": {
+        "v_RUNX2": "-",
+        "v_SOX9": "+"
+      },
+      "v_TAK1": {
+        "v_NFkB": "+",
+        "v_JNK": "+",
+        "v_ERK1_2": "+",
+        "v_P38": "+",
+        "v_IkBa": "-"
+      },
+      "v_SMAD_complex": {
+        "v_STAT1": "-",
+        "v_DLX5": "+",
+        "v_MEF2C": "+"
+      },
+      "v_B_catenin": {
+        "v_LEF_TCF": "+",
+        "v_SOX9": "-"
+      }
+    },
+    "local": {
+      "v_FGFR3": {
+        "signs": {
+          "v_FGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HDAC4": {
+        "signs": {
+          "v_PP2A": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PPR": {
+        "signs": {
+          "v_PTHrP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RUNX2": {
+        "signs": {
+          "v_AKT": "+",
+          "v_DLX5": "+",
+          "v_ERK1_2": "+",
+          "v_HDAC4": "-",
+          "v_MSX2": "-",
+          "v_PKA": "-",
+          "v_SMAD3": "-",
+          "v_SOX9": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Proteoglycans": {
+        "signs": {
+          "v_MMP13": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_NFkB": {
+        "signs": {
+          "v_AKT": "+",
+          "v_FGFR1": "+",
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_WNT": {
+        "signs": {
+          "v_DKK1": "-",
+          "v_FRZB": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ALK1": {
+        "signs": {
+          "v_BMP": "+",
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GSK3beta": {
+        "signs": {
+          "v_AKT": "-",
+          "v_PP2A": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_JNK": {
+        "signs": {
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FOXO": {
+        "signs": {
+          "v_JNK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IGF_IR": {
+        "signs": {
+          "v_IGFI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GLI2": {
+        "signs": {
+          "v_IHH": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ALK5": {
+        "signs": {
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AKT": {
+        "signs": {
+          "v_PI3K": "+",
+          "v_PP2A": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TAK1": {
+        "signs": {
+          "v_R_inflam": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FGFR1": {
+        "signs": {
+          "v_FGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Destruction_complex": {
+        "signs": {
+          "v_DSH": "-",
+          "v_ERK1_2": "-",
+          "v_PP2A": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ATF2": {
+        "signs": {
+          "v_P38": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_STAT1": {
+        "signs": {
+          "v_FGFR1": "+",
+          "v_FGFR3": "+",
+          "v_IGF_IR": "+",
+          "v_R_inflam": "+",
+          "v_SMAD_complex": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_IGF_IR": "+",
+          "v_RAS": "+",
+          "v_R_inflam": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK1_2": {
+        "signs": {
+          "v_RAS": "+",
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RAS": {
+        "signs": {
+          "v_BMP": "+",
+          "v_FGFR1": "+",
+          "v_FGFR3": "+",
+          "v_WNT": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P38": {
+        "signs": {
+          "v_BMP": "+",
+          "v_TAK1": "+",
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKA": {
+        "signs": {
+          "v_IGFI": "+",
+          "v_PPR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ATF4": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_PKA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_LEF_TCF": {
+        "signs": {
+          "v_B_catenin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SMAD3": {
+        "signs": {
+          "v_ALK5": "+",
+          "v_CCND1": "-",
+          "v_ERK1_2": "-",
+          "v_SMAD7": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ELK_1": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_JNK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Frizzled_LRP5_6": {
+        "signs": {
+          "v_WNT": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DLX5": {
+        "signs": {
+          "v_P38": "+",
+          "v_SMAD_complex": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BMP": {
+        "signs": {
+          "v_GREM1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_DSH": {
+        "signs": {
+          "v_Frizzled_LRP5_6": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MSX2": {
+        "signs": {
+          "v_DLX5": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_R_Smad": {
+        "signs": {
+          "v_ALK1": "+",
+          "v_SMAD7": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PP2A": {
+        "signs": {
+          "v_PKA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SOX9": {
+        "signs": {
+          "v_B_catenin": "-",
+          "v_PKA": "+",
+          "v_RUNX2": "-",
+          "v_SMAD3": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_R_inflam": {
+        "signs": {
+          "v_Infl__cytokines": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SMAD_complex": {
+        "signs": {
+          "v_R_Smad": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_B_catenin": {
+        "signs": {
+          "v_Destruction_complex": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_COL_II": {
+        "signs": {
+          "v_MMP13": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_IkBa": {
+        "signs": {
+          "v_TAK1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_CCND1": {
+        "signs": {
+          "v_GSK3beta": "-",
+          "v_STAT1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MEF2C": {
+        "signs": {
+          "v_HDAC4": "-",
+          "v_P38": "+",
+          "v_SMAD_complex": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FRZB": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_DKK1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_COL_X": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_PTHrP": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_Infl__cytokines": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_SMAD7": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_IGFI": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_FGF": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_SOCS": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_MMP13": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_GREM1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_HIF_2a": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_IHH": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_d_EF1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_NKX3_2": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_TGF_beta": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 60,
+    "n_nodes": 60,
+    "inputs": 0,
+    "internal_nodes": 60,
+    "nonconstant_rules": 44,
+    "constant_rules": 16,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FGF": "+",
+      "v_FGFR3": "+",
+      "v_FGFR1": "+",
+      "v_NFkB": "+",
+      "v_STAT1": "+",
+      "v_RAS": "+",
+      "v_BMP": "+",
+      "v_PI3K": "+",
+      "v_ERK1_2": "+",
+      "v_WNT": "+",
+      "v_DKK1": "-",
+      "v_FRZB": "-",
+      "v_Frizzled_LRP5_6": "+",
+      "v_DSH": "+",
+      "v_Destruction_complex": "-",
+      "v_PP2A": "-",
+      "v_B_catenin": "+",
+      "v_LEF_TCF": "+",
+      "v_SOX9": "-",
+      "v_PKA": "-",
+      "v_SMAD3": "-",
+      "v_RUNX2": "+",
+      "v_AKT": "+",
+      "v_DLX5": "+",
+      "v_HDAC4": "-",
+      "v_MSX2": "-",
+      "v_MEF2C": "+",
+      "v_P38": "+",
+      "v_SMAD_complex": "+",
+      "v_R_Smad": "+",
+      "v_SMAD7": "-",
+      "v_ALK1": "+",
+      "v_TGF_beta": "+",
+      "v_ALK5": "+",
+      "v_TAK1": "+",
+      "v_ATF2": "+",
+      "v_JNK": "+",
+      "v_IkBa": "-",
+      "v_R_inflam": "+",
+      "v_Infl__cytokines": "+",
+      "v_FOXO": "+",
+      "v_ELK_1": "+",
+      "v_GSK3beta": "-",
+      "v_CCND1": "+",
+      "v_ATF4": "-",
+      "v_IGFI": "-",
+      "v_PPR": "-",
+      "v_PTHrP": "-",
+      "v_IGF_IR": "-",
+      "v_GREM1": "-",
+      "v_MMP13": "+",
+      "v_Proteoglycans": "-",
+      "v_COL_II": "-",
+      "v_IHH": "+",
+      "v_GLI2": "+"
+    },
+    "positive_edges": 57,
+    "negative_edges": 28,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 85,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "MIN_MAX": 23,
+      "UNATE_OTHER": 4,
+      "MAX": 10,
+      "MIN": 7,
+      "CONST": 16
+    },
+    "conflicts": {
+      "v_PP2A": {
+        "v_HDAC4": "+",
+        "v_GSK3beta": "-",
+        "v_AKT": "-",
+        "v_Destruction_complex": "+"
+      },
+      "v_AKT": {
+        "v_RUNX2": "+",
+        "v_NFkB": "+",
+        "v_GSK3beta": "-"
+      },
+      "v_DLX5": {
+        "v_RUNX2": "+",
+        "v_MSX2": "-"
+      },
+      "v_ERK1_2": {
+        "v_RUNX2": "+",
+        "v_Destruction_complex": "-",
+        "v_ATF4": "+",
+        "v_SMAD3": "-",
+        "v_ELK_1": "+"
+      },
+      "v_PKA": {
+        "v_RUNX2": "-",
+        "v_ATF4": "+",
+        "v_PP2A": "+",
+        "v_SOX9": "+"
+      },
+      "v_SMAD3": {
+        "v_RUNX2": "-",
+        "v_SOX9": "+"
+      },
+      "v_TAK1": {
+        "v_NFkB": "+",
+        "v_JNK": "+",
+        "v_ERK1_2": "+",
+        "v_P38": "+",
+        "v_IkBa": "-"
+      },
+      "v_SMAD_complex": {
+        "v_STAT1": "-",
+        "v_DLX5": "+",
+        "v_MEF2C": "+"
+      },
+      "v_B_catenin": {
+        "v_LEF_TCF": "+",
+        "v_SOX9": "-"
+      }
+    },
+    "local": {
+      "v_FGFR3": {
+        "signs": {
+          "v_FGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HDAC4": {
+        "signs": {
+          "v_PP2A": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PPR": {
+        "signs": {
+          "v_PTHrP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RUNX2": {
+        "signs": {
+          "v_AKT": "+",
+          "v_DLX5": "+",
+          "v_ERK1_2": "+",
+          "v_HDAC4": "-",
+          "v_MSX2": "-",
+          "v_PKA": "-",
+          "v_SMAD3": "-",
+          "v_SOX9": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Proteoglycans": {
+        "signs": {
+          "v_MMP13": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_NFkB": {
+        "signs": {
+          "v_AKT": "+",
+          "v_FGFR1": "+",
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_WNT": {
+        "signs": {
+          "v_DKK1": "-",
+          "v_FRZB": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ALK1": {
+        "signs": {
+          "v_BMP": "+",
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GSK3beta": {
+        "signs": {
+          "v_AKT": "-",
+          "v_PP2A": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_JNK": {
+        "signs": {
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FOXO": {
+        "signs": {
+          "v_JNK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IGF_IR": {
+        "signs": {
+          "v_IGFI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GLI2": {
+        "signs": {
+          "v_IHH": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ALK5": {
+        "signs": {
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AKT": {
+        "signs": {
+          "v_PI3K": "+",
+          "v_PP2A": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TAK1": {
+        "signs": {
+          "v_R_inflam": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FGFR1": {
+        "signs": {
+          "v_FGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Destruction_complex": {
+        "signs": {
+          "v_DSH": "-",
+          "v_ERK1_2": "-",
+          "v_PP2A": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ATF2": {
+        "signs": {
+          "v_P38": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_STAT1": {
+        "signs": {
+          "v_FGFR1": "+",
+          "v_FGFR3": "+",
+          "v_IGF_IR": "+",
+          "v_R_inflam": "+",
+          "v_SMAD_complex": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_IGF_IR": "+",
+          "v_RAS": "+",
+          "v_R_inflam": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK1_2": {
+        "signs": {
+          "v_RAS": "+",
+          "v_TAK1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RAS": {
+        "signs": {
+          "v_BMP": "+",
+          "v_FGFR1": "+",
+          "v_FGFR3": "+",
+          "v_WNT": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P38": {
+        "signs": {
+          "v_BMP": "+",
+          "v_TAK1": "+",
+          "v_TGF_beta": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKA": {
+        "signs": {
+          "v_IGFI": "+",
+          "v_PPR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ATF4": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_PKA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_LEF_TCF": {
+        "signs": {
+          "v_B_catenin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SMAD3": {
+        "signs": {
+          "v_ALK5": "+",
+          "v_CCND1": "-",
+          "v_ERK1_2": "-",
+          "v_SMAD7": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ELK_1": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_JNK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Frizzled_LRP5_6": {
+        "signs": {
+          "v_WNT": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DLX5": {
+        "signs": {
+          "v_P38": "+",
+          "v_SMAD_complex": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BMP": {
+        "signs": {
+          "v_GREM1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_DSH": {
+        "signs": {
+          "v_Frizzled_LRP5_6": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MSX2": {
+        "signs": {
+          "v_DLX5": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_R_Smad": {
+        "signs": {
+          "v_ALK1": "+",
+          "v_SMAD7": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PP2A": {
+        "signs": {
+          "v_PKA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SOX9": {
+        "signs": {
+          "v_B_catenin": "-",
+          "v_PKA": "+",
+          "v_RUNX2": "-",
+          "v_SMAD3": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_R_inflam": {
+        "signs": {
+          "v_Infl__cytokines": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SMAD_complex": {
+        "signs": {
+          "v_R_Smad": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_B_catenin": {
+        "signs": {
+          "v_Destruction_complex": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_COL_II": {
+        "signs": {
+          "v_MMP13": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_IkBa": {
+        "signs": {
+          "v_TAK1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "NAND",
+          "NOR",
+          "NOT"
+        ],
+        "affine": true,
+        "AND": false,
+        "OR": false,
+        "NAND": true,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": true,
+        "COPY": false,
+        "NOT": true
+      },
+      "v_CCND1": {
+        "signs": {
+          "v_GSK3beta": "-",
+          "v_STAT1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MEF2C": {
+        "signs": {
+          "v_HDAC4": "-",
+          "v_P38": "+",
+          "v_SMAD_complex": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FRZB": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_DKK1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_COL_X": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_PTHrP": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_Infl__cytokines": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_SMAD7": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_IGFI": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_FGF": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_SOCS": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_MMP13": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_GREM1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_HIF_2a": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_IHH": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_d_EF1": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_NKX3_2": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      },
+      "v_TGF_beta": {
+        "signs": {},
+        "constant": true,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "CONST"
+        ],
+        "affine": true
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+"level_of_var": {"v_Akt1": 0, "v_CDK2": 1, "v_CDK4": 2, "v_CDK6": 3, "v_CycD1": 4, "v_CycE1": 5, "v_EGF": 6, "v_ERa": 7, "v_ErbB1": 8, "v_ErbB1_2": 9, "v_ErbB1_3": 10, "v_ErbB2": 11, "v_ErbB2_3": 12, "v_ErbB3": 13, "v_IGF1R": 14, "v_MEK1": 15, "v_cMYC": 16, "v_p21": 17, "v_p27": 18, "v_pRB": 19},
+"roots": {"final:v_IGF1R": -77, "final:v_EGF": 29, "step:0:v_ERa": 28, "step:1:v_cMYC": 28, "step:2:v_p21": -1, "step:3:v_p27": -1, "step:4:v_CDK2": 12, "step:5:v_CDK4": 17, "step:6:v_CDK6": 17, "step:7:v_CycE1": 28, "step:8:v_ErbB1": 29, "step:9:v_ErbB2": 29, "step:10:v_ErbB1_2": 29, "step:11:v_ErbB3": 29, "step:12:v_ErbB1_3": 29, "step:13:v_ErbB2_3": 29, "step:14:v_pRB": 17, "step:15:v_CycD1": 28, "step:16:v_Akt1": 72, "step:17:v_MEK1": 72},
+"3": [14, "F", "T"],
+"77": [6, -3, "T"],
+"29": [6, "F", "T"],
+"24": [15, "F", "T"],
+"28": [0, 24, "T"],
+"12": [5, "F", "T"],
+"17": [4, "F", "T"],
+"72": [6, 3, "T"]
+}

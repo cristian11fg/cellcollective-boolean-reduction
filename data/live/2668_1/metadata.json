@@ -1,0 +1,78 @@
+{
+  "id": "2668_1",
+  "name": "Toll Pathway of Drosophila Signaling Pathway",
+  "input-names": [
+    "v_Nec",
+    "v_Slmb"
+  ],
+  "variable-names": [
+    "v_Spz",
+    "v_Cactus",
+    "v_Pelle",
+    "v_Dorsal",
+    "v_Toll",
+    "v_Dif",
+    "v_MyD88",
+    "v_Tube",
+    "v_Targets"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "Tube": "v_Tube",
+    "Targets": "v_Targets",
+    "Nec": "v_Nec",
+    "Spz": "v_Spz",
+    "Pelle": "v_Pelle",
+    "Toll": "v_Toll",
+    "Slmb": "v_Slmb",
+    "Cactus": "v_Cactus",
+    "Dorsal": "v_Dorsal",
+    "MyD88": "v_MyD88",
+    "Dif": "v_Dif"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 11,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 2668,
+    "name": "Toll Pathway of Drosophila Signaling Pathway",
+    "description": "A limited number of signalling pathways are involved in the specification of cell fate during the development of all animals. Several of these pathways were originally identified in Drosophila. To clarify their roles, and possible cross-talk, we have built a logical model for the nine key signalling pathways recurrently used in metazoan development. In each case, we considered the associated ligands, receptors, signal transducers, modulators, and transcription factors reported in the literature. Implemented using the logical modelling software GINsim, the resulting models qualitatively recapitulate the main characteristics of each pathway, in wild type as well as in various mutant situations (e.g. loss-of-function or gain-of-function). These models constitute pluggable modules that can be used to assemble comprehensive models of complex developmental processes. Moreover, these models of Drosophila pathways could serve as scaffolds for more complicated models of orthologous mammalian pathways. Comprehensive model annotations and GINsim files are provided for each of the nine considered pathways.",
+    "tags": "",
+    "userId": 686,
+    "author": "A Mbodj et. al.",
+    "creationDate": "Wed, 28 Jan 2015 19:24:15 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": null,
+    "components": 11,
+    "interactions": 11,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": 3,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 686,
+        "creationDate": "Wed, 28 Jan 2015 19:24:15 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "-1567055409",
+  "version": "1"
+}

@@ -1,0 +1,7 @@
+targets,factors
+v_AntigenPresentingCell, ( v_Pathogen )
+v_Th1, ( ( ( ( ( v_Th1 ) & ! ( v_Th17 ) ) & ! ( v_Th2 ) ) & ! ( v_Treg ) ) & ! ( v_Th1_Inhibitor ) ) | ( ( ( ( ( v_IL12 & ( ( ( v_NaiveCD4TCell ) ) ) ) & ! ( v_Th17 ) ) & ! ( v_Th2 ) ) & ! ( v_Treg ) ) & ! ( v_Th1_Inhibitor ) ) | ( ( ( ( ( v_IFNg & ( ( ( v_NaiveCD4TCell ) ) ) ) & ! ( v_Th17 ) ) & ! ( v_Th2 ) ) & ! ( v_Treg ) ) & ! ( v_Th1_Inhibitor ) )
+v_Th2, ( ( ( ( ( v_IL4 & ( ( ( v_NaiveCD4TCell ) ) ) ) & ! ( v_Th2_Inhibitor ) ) & ! ( v_Th1 ) ) & ! ( v_Treg ) ) & ! ( v_Th17 ) ) | ( ( ( ( ( v_Th2 ) & ! ( v_Th2_Inhibitor ) ) & ! ( v_Th1 ) ) & ! ( v_Treg ) ) & ! ( v_Th17 ) )
+v_Treg, ( ( ( v_TGFb & ( ( ( v_NaiveCD4TCell ) ) ) ) & ! ( v_IL6 ) ) & ! ( v_Treg_Inhibitor ) ) | ( ( ( v_Treg ) & ! ( v_IL6 ) ) & ! ( v_Treg_Inhibitor ) )
+v_NaiveCD4TCell, ( v_AntigenPresentingCell )
+v_Th17, ( ( ( ( ( v_TGFb & ( ( ( v_IL6 ) ) & ( ( v_NaiveCD4TCell ) ) ) ) & ! ( v_Th17_Inhibitor ) ) & ! ( v_Th2 ) ) & ! ( v_Th1 ) ) & ! ( v_Treg ) ) | ( ( ( ( ( v_Th17 ) & ! ( v_Th17_Inhibitor ) ) & ! ( v_Th2 ) ) & ! ( v_Th1 ) ) & ! ( v_Treg ) )

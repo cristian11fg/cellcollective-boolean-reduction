@@ -1,0 +1,65 @@
+{
+  "id": "2035_1",
+  "name": "Cortical Area Development",
+  "input-names": [],
+  "variable-names": [
+    "v_Emx2",
+    "v_Pax6",
+    "v_Fgf8",
+    "v_Sp8",
+    "v_Coup_fti"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "Emx2": "v_Emx2",
+    "Pax6": "v_Pax6",
+    "Sp8": "v_Sp8",
+    "Coup_fti": "v_Coup_fti",
+    "Fgf8": "v_Fgf8"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 5,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 2035,
+    "name": "Cortical Area Development",
+    "description": "The cerebral cortex is divided into many functionally distinct areas. The emergence of these areas during neural development is dependent on the expression patterns of several genes. Along the anterior-posterior axis, gradients of Fgf8, Emx2, Pax6, Coup-tfi, and Sp8 play a particularly strong role in specifying areal identity. However, our understanding of the regulatory interactions between these genes that lead to their confinement to particular spatial patterns is currently qualitative and incomplete. We therefore used a computational model of the interactions between these five genes to determine which interactions, and combinations of interactions, occur in networks that reproduce the anterior-posterior expression patterns observed experimentally. The model treats expression levels as Boolean, reflecting the qualitative nature of the expression data currently available. We simulated gene expression patterns created by all possible networks containing the five genes of interest. We found that only of these networks were able to reproduce the experimentally observed expression patterns. These networks all lacked certain interactions and combinations of interactions including auto-regulation and inductive loops. Many higher order combinations of interactions also never appeared in networks that satisfied our criteria for good performance. While there was remarkable diversity in the structure of the networks that perform well, an analysis of the probability of each interaction gave an indication of which interactions are most likely to be present in the gene network regulating cortical area development. We found that in general, repressive interactions are much more likely than inductive ones, but that mutually repressive loops are not critical for correct network functioning. Overall, our model illuminates the design principles of the gene network regulating cortical area development, and makes novel predictions that can be tested experimentally.",
+    "tags": "Cortical Area, Development, Cerebral cortex, anterior-posterior axis",
+    "userId": 686,
+    "author": "CE Giacomantonio",
+    "creationDate": "Sun, 17 Mar 2013 12:46:02 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": null,
+    "components": 5,
+    "interactions": 14,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": 43,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 686,
+        "creationDate": "Sun, 17 Mar 2013 12:46:02 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "-1567055409",
+  "version": "1"
+}

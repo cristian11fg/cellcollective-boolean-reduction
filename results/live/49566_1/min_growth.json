@@ -1,0 +1,430 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "49566_1",
+  "name": "Virtual chondrocyte - PPI layer",
+  "policy": "min_growth",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 60,
+  "after": {
+    "nodes": 0,
+    "n_nodes": 0,
+    "inputs": 0,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "all_rules_after": {
+    "nodes": 0,
+    "n_nodes": 0,
+    "inputs": 0,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 1,
+    "examples": [
+      {}
+    ]
+  },
+  "rules": {},
+  "steps": [
+    {
+      "node": "v_TGF_beta",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_FGF",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_FGFR1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_FGFR3",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_IGFI",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_IGF_IR",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_MMP13",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_SMAD7",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_ALK5",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_SMAD3",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_DKK1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_FRZB",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_WNT",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_RAS",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_ERK1_2",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_Destruction_complex",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_B_catenin",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_Frizzled_LRP5_6",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_GREM1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_BMP",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_P38",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_DLX5",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_ALK1",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_IHH",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_Infl__cytokines",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_R_inflam",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_TAK1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_JNK",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_PP2A"
+      ],
+      "function": "!v_PP2A"
+    },
+    {
+      "node": "v_GSK3beta",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PTHrP",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PPR",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PKA",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_PP2A",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_HDAC4",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_R_Smad",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_STAT1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_ATF2",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_ATF4",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_CCND1",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_COL_II",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_COL_X",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_DSH",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_ELK_1",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_FOXO",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_GLI2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_HIF_2a",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_IkBa",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_LEF_TCF",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_MEF2C",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_MSX2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_NFkB",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_NKX3_2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_Proteoglycans",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_RUNX2",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_SMAD_complex",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_SOCS",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_SOX9",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_d_EF1",
+      "support": [],
+      "function": "0"
+    }
+  ],
+  "seconds": 0.04793860006611794
+}

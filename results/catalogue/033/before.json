@@ -1,0 +1,1345 @@
+{
+  "id": "033",
+  "name": "BT474-BREAST-CELL-LINE-LONG-TERM",
+  "source": {
+    "id": "033",
+    "name": "BT474-BREAST-CELL-LINE-LONG-TERM",
+    "repository_directory": "models/[id-033]__[var-19]__[in-5]__[BT474-BREAST-CELL-LINE-LONG-TERM]",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/?dashboard=true#module/2697:1/bt474-breast-cell-line-longterm-erbb-network/1"
+    ],
+    "files": [
+      {
+        "name": "metadata.json",
+        "sha256": "cdeebdca98df8a98fcff3731df5d83431de53bd424e98d5c19370e47add7e85d"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "cd76719f7e7970db1caa31077491e5d9aa235bbae855dacd458848dcc6106ece"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 24,
+    "n_nodes": 24,
+    "inputs": 5,
+    "internal_nodes": 19,
+    "nonconstant_rules": 19,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 19,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AKT": "+",
+      "v_CyclinD1": "+",
+      "v_FoxO1_3a": "-",
+      "v_PRAS": "-",
+      "v_TSC2": "-",
+      "v_p38": "+",
+      "v_ERBB1": "+",
+      "v_ERBB2": "+",
+      "v_ERBB3": "+",
+      "v_PTEN": "-",
+      "v_p53": "-",
+      "v_GSK3a_b": "+",
+      "v_cJUN": "-",
+      "v_CyclinB1": "-",
+      "v_stimulus": "-",
+      "v_RB": "-",
+      "v_Nfkb": "-",
+      "v_p70S6K": "+",
+      "v_ERK1_2": "+",
+      "v_RPS6": "+",
+      "v_cRAF": "-",
+      "v_erlotinib": "-",
+      "v_pertuzumab": "-",
+      "v_trastuzumab": "-"
+    },
+    "positive_edges": 45,
+    "negative_edges": 23,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 68,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 9,
+      "MAX": 5,
+      "MIN": 5
+    },
+    "conflicts": {
+      "v_AKT": {
+        "v_AKT": "+",
+        "v_CyclinD1": "+",
+        "v_FoxO1_3a": "-",
+        "v_PRAS": "-",
+        "v_TSC2": "-",
+        "v_p38": "+"
+      },
+      "v_PTEN": {
+        "v_AKT": "-",
+        "v_ERBB3": "-",
+        "v_PTEN": "+",
+        "v_p53": "+"
+      },
+      "v_p53": {
+        "v_CyclinB1": "-",
+        "v_GSK3a_b": "+",
+        "v_p53": "+"
+      },
+      "v_CyclinD1": {
+        "v_CyclinD1": "+",
+        "v_GSK3a_b": "+",
+        "v_RB": "-"
+      },
+      "v_ERK1_2": {
+        "v_CyclinD1": "+",
+        "v_ERK1_2": "+",
+        "v_TSC2": "-",
+        "v_cRAF": "-",
+        "v_p70S6K": "+"
+      },
+      "v_GSK3a_b": {
+        "v_CyclinD1": "-",
+        "v_GSK3a_b": "+",
+        "v_PTEN": "-",
+        "v_TSC2": "-",
+        "v_cJUN": "-"
+      },
+      "v_PRAS": {
+        "v_PRAS": "+",
+        "v_p70S6K": "-"
+      },
+      "v_Nfkb": {
+        "v_RB": "+",
+        "v_p70S6K": "-"
+      },
+      "v_TSC2": {
+        "v_TSC2": "+",
+        "v_p70S6K": "-"
+      }
+    },
+    "local": {
+      "v_AKT": {
+        "signs": {
+          "v_AKT": "+",
+          "v_ERBB1": "+",
+          "v_ERBB2": "+",
+          "v_ERBB3": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CyclinB1": {
+        "signs": {
+          "v_CyclinB1": "+",
+          "v_ERBB1": "+",
+          "v_ERBB3": "+",
+          "v_p53": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CyclinD1": {
+        "signs": {
+          "v_AKT": "+",
+          "v_CyclinD1": "+",
+          "v_ERK1_2": "+",
+          "v_GSK3a_b": "-",
+          "v_RPS6": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB1": {
+        "signs": {
+          "v_ERBB1": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB2": {
+        "signs": {
+          "v_ERBB2": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+",
+          "v_trastuzumab": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB3": {
+        "signs": {
+          "v_ERBB3": "+",
+          "v_PTEN": "-",
+          "v_RPS6": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK1_2": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_cRAF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FoxO1_3a": {
+        "signs": {
+          "v_AKT": "-",
+          "v_FoxO1_3a": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GSK3a_b": {
+        "signs": {
+          "v_CyclinD1": "+",
+          "v_GSK3a_b": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PRAS": {
+        "signs": {
+          "v_AKT": "-",
+          "v_PRAS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PTEN": {
+        "signs": {
+          "v_GSK3a_b": "-",
+          "v_PTEN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RB": {
+        "signs": {
+          "v_CyclinD1": "-",
+          "v_Nfkb": "+",
+          "v_RB": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RPS6": {
+        "signs": {
+          "v_RPS6": "+",
+          "v_p70S6K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TSC2": {
+        "signs": {
+          "v_AKT": "-",
+          "v_ERK1_2": "-",
+          "v_GSK3a_b": "-",
+          "v_TSC2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cJUN": {
+        "signs": {
+          "v_GSK3a_b": "-",
+          "v_cJUN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRAF": {
+        "signs": {
+          "v_ERBB1": "+",
+          "v_ERBB2": "+",
+          "v_ERK1_2": "-",
+          "v_cRAF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p38": {
+        "signs": {
+          "v_AKT": "+",
+          "v_p38": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p53": {
+        "signs": {
+          "v_CyclinB1": "+",
+          "v_PTEN": "+",
+          "v_RB": "+",
+          "v_p38": "+",
+          "v_p53": "+",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p70S6K": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_Nfkb": "-",
+          "v_PRAS": "-",
+          "v_TSC2": "-",
+          "v_p70S6K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 24,
+    "n_nodes": 24,
+    "inputs": 5,
+    "internal_nodes": 19,
+    "nonconstant_rules": 24,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 24,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AKT": "+",
+      "v_CyclinD1": "+",
+      "v_FoxO1_3a": "-",
+      "v_PRAS": "-",
+      "v_TSC2": "-",
+      "v_p38": "+",
+      "v_ERBB1": "+",
+      "v_ERBB2": "+",
+      "v_ERBB3": "+",
+      "v_PTEN": "-",
+      "v_p53": "-",
+      "v_GSK3a_b": "+",
+      "v_cJUN": "-",
+      "v_CyclinB1": "-",
+      "v_stimulus": "-",
+      "v_RB": "-",
+      "v_Nfkb": "-",
+      "v_p70S6K": "+",
+      "v_ERK1_2": "+",
+      "v_RPS6": "+",
+      "v_cRAF": "-",
+      "v_erlotinib": "-",
+      "v_pertuzumab": "-",
+      "v_trastuzumab": "-"
+    },
+    "positive_edges": 50,
+    "negative_edges": 23,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 73,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 9,
+      "MAX": 5,
+      "MIN": 5,
+      "MIN_MAX": 5
+    },
+    "conflicts": {
+      "v_AKT": {
+        "v_AKT": "+",
+        "v_CyclinD1": "+",
+        "v_FoxO1_3a": "-",
+        "v_PRAS": "-",
+        "v_TSC2": "-",
+        "v_p38": "+"
+      },
+      "v_PTEN": {
+        "v_AKT": "-",
+        "v_ERBB3": "-",
+        "v_PTEN": "+",
+        "v_p53": "+"
+      },
+      "v_p53": {
+        "v_CyclinB1": "-",
+        "v_GSK3a_b": "+",
+        "v_p53": "+"
+      },
+      "v_CyclinD1": {
+        "v_CyclinD1": "+",
+        "v_GSK3a_b": "+",
+        "v_RB": "-"
+      },
+      "v_ERK1_2": {
+        "v_CyclinD1": "+",
+        "v_ERK1_2": "+",
+        "v_TSC2": "-",
+        "v_cRAF": "-",
+        "v_p70S6K": "+"
+      },
+      "v_GSK3a_b": {
+        "v_CyclinD1": "-",
+        "v_GSK3a_b": "+",
+        "v_PTEN": "-",
+        "v_TSC2": "-",
+        "v_cJUN": "-"
+      },
+      "v_erlotinib": {
+        "v_ERBB1": "-",
+        "v_ERBB2": "-",
+        "v_ERBB3": "-",
+        "v_erlotinib": "+"
+      },
+      "v_pertuzumab": {
+        "v_ERBB1": "-",
+        "v_ERBB2": "-",
+        "v_ERBB3": "-",
+        "v_pertuzumab": "+"
+      },
+      "v_trastuzumab": {
+        "v_ERBB2": "-",
+        "v_trastuzumab": "+"
+      },
+      "v_PRAS": {
+        "v_PRAS": "+",
+        "v_p70S6K": "-"
+      },
+      "v_Nfkb": {
+        "v_RB": "+",
+        "v_p70S6K": "-",
+        "v_Nfkb": "+"
+      },
+      "v_TSC2": {
+        "v_TSC2": "+",
+        "v_p70S6K": "-"
+      }
+    },
+    "local": {
+      "v_AKT": {
+        "signs": {
+          "v_AKT": "+",
+          "v_ERBB1": "+",
+          "v_ERBB2": "+",
+          "v_ERBB3": "+",
+          "v_PTEN": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CyclinB1": {
+        "signs": {
+          "v_CyclinB1": "+",
+          "v_ERBB1": "+",
+          "v_ERBB3": "+",
+          "v_p53": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CyclinD1": {
+        "signs": {
+          "v_AKT": "+",
+          "v_CyclinD1": "+",
+          "v_ERK1_2": "+",
+          "v_GSK3a_b": "-",
+          "v_RPS6": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB1": {
+        "signs": {
+          "v_ERBB1": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB2": {
+        "signs": {
+          "v_ERBB2": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+",
+          "v_trastuzumab": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERBB3": {
+        "signs": {
+          "v_ERBB3": "+",
+          "v_PTEN": "-",
+          "v_RPS6": "+",
+          "v_erlotinib": "-",
+          "v_pertuzumab": "-",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK1_2": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_cRAF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FoxO1_3a": {
+        "signs": {
+          "v_AKT": "-",
+          "v_FoxO1_3a": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GSK3a_b": {
+        "signs": {
+          "v_CyclinD1": "+",
+          "v_GSK3a_b": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PRAS": {
+        "signs": {
+          "v_AKT": "-",
+          "v_PRAS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PTEN": {
+        "signs": {
+          "v_GSK3a_b": "-",
+          "v_PTEN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RB": {
+        "signs": {
+          "v_CyclinD1": "-",
+          "v_Nfkb": "+",
+          "v_RB": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RPS6": {
+        "signs": {
+          "v_RPS6": "+",
+          "v_p70S6K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TSC2": {
+        "signs": {
+          "v_AKT": "-",
+          "v_ERK1_2": "-",
+          "v_GSK3a_b": "-",
+          "v_TSC2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cJUN": {
+        "signs": {
+          "v_GSK3a_b": "-",
+          "v_cJUN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRAF": {
+        "signs": {
+          "v_ERBB1": "+",
+          "v_ERBB2": "+",
+          "v_ERK1_2": "-",
+          "v_cRAF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p38": {
+        "signs": {
+          "v_AKT": "+",
+          "v_p38": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p53": {
+        "signs": {
+          "v_CyclinB1": "+",
+          "v_PTEN": "+",
+          "v_RB": "+",
+          "v_p38": "+",
+          "v_p53": "+",
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p70S6K": {
+        "signs": {
+          "v_ERK1_2": "+",
+          "v_Nfkb": "-",
+          "v_PRAS": "-",
+          "v_TSC2": "-",
+          "v_p70S6K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Nfkb": {
+        "signs": {
+          "v_Nfkb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_erlotinib": {
+        "signs": {
+          "v_erlotinib": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pertuzumab": {
+        "signs": {
+          "v_pertuzumab": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_stimulus": {
+        "signs": {
+          "v_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_trastuzumab": {
+        "signs": {
+          "v_trastuzumab": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  }
+}

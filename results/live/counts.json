@@ -1,0 +1,133 @@
+{
+  "source": "live",
+  "instances": 84,
+  "classified_before": 83,
+  "complete_runs": 332,
+  "expected_runs": 336,
+  "first_complete": 83,
+  "instances_any_complete": 83,
+  "counts": {
+    "out_uniform": {
+      "before": 8,
+      "after_first": 24,
+      "after_any_policy": 28,
+      "models_any_before": 8,
+      "models_any_after": 28
+    },
+    "out_uniform_nonvacuous": {
+      "before": 8,
+      "after_first": 15,
+      "after_any_policy": 19,
+      "models_any_before": 8,
+      "models_any_after": 19
+    },
+    "AND_OR_NOT_out_uniform": {
+      "before": 3,
+      "after_first": 9,
+      "after_any_policy": 13,
+      "models_any_before": 3,
+      "models_any_after": 13
+    },
+    "AND_OR_NAND_NOR_out_uniform": {
+      "before": 2,
+      "after_first": 3,
+      "after_any_policy": 5,
+      "models_any_before": 2,
+      "models_any_after": 5
+    },
+    "homogeneous_MIN": {
+      "before": 0,
+      "after_first": 7,
+      "after_any_policy": 10,
+      "models_any_before": 0,
+      "models_any_after": 10
+    },
+    "homogeneous_MAX": {
+      "before": 2,
+      "after_first": 4,
+      "after_any_policy": 7,
+      "models_any_before": 2,
+      "models_any_after": 7
+    },
+    "homogeneous_gate": {
+      "before": 1,
+      "after_first": 3,
+      "after_any_policy": 5,
+      "models_any_before": 1,
+      "models_any_after": 5
+    },
+    "positive_AND": {
+      "before": 0,
+      "after_first": 2,
+      "after_any_policy": 2,
+      "models_any_before": 0,
+      "models_any_after": 2
+    },
+    "positive_OR": {
+      "before": 1,
+      "after_first": 3,
+      "after_any_policy": 4,
+      "models_any_before": 1,
+      "models_any_after": 4
+    },
+    "affine": {
+      "before": 0,
+      "after_first": 2,
+      "after_any_policy": 3,
+      "models_any_before": 0,
+      "models_any_after": 3
+    },
+    "MIN_MAX": {
+      "before": 8,
+      "after_first": 10,
+      "after_any_policy": 14,
+      "models_any_before": 8,
+      "models_any_after": 14
+    },
+    "locally_unate": {
+      "before": 76,
+      "after_first": 51,
+      "after_any_policy": 58,
+      "models_any_before": 75,
+      "models_any_after": 58
+    },
+    "vacuous": {
+      "before": 0,
+      "after_first": 9,
+      "after_any_policy": 10,
+      "models_any_before": 0,
+      "models_any_after": 10
+    }
+  },
+  "certified_runs": 332,
+  "failures": [
+    {
+      "id": "8558_1",
+      "name": "Inflammatory Bowel Disease (IBD) Model",
+      "policy": "first",
+      "status": "missing",
+      "error": "No completed result"
+    },
+    {
+      "id": "8558_1",
+      "name": "Inflammatory Bowel Disease (IBD) Model",
+      "policy": "min_degree",
+      "status": "missing",
+      "error": "No completed result"
+    },
+    {
+      "id": "8558_1",
+      "name": "Inflammatory Bowel Disease (IBD) Model",
+      "policy": "min_growth",
+      "status": "missing",
+      "error": "No completed result"
+    },
+    {
+      "id": "8558_1",
+      "name": "Inflammatory Bowel Disease (IBD) Model",
+      "policy": "random",
+      "status": "missing",
+      "error": "No completed result"
+    }
+  ]
+}

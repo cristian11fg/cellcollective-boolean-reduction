@@ -1,0 +1,104 @@
+{
+  "source": "cellcollective",
+  "instances": 78,
+  "classified_before": 78,
+  "complete_runs": 312,
+  "expected_runs": 312,
+  "first_complete": 78,
+  "instances_any_complete": 78,
+  "counts": {
+    "out_uniform": {
+      "before": 9,
+      "after_first": 24,
+      "after_any_policy": 28,
+      "models_any_before": 9,
+      "models_any_after": 28
+    },
+    "out_uniform_nonvacuous": {
+      "before": 9,
+      "after_first": 15,
+      "after_any_policy": 19,
+      "models_any_before": 9,
+      "models_any_after": 19
+    },
+    "AND_OR_NOT_out_uniform": {
+      "before": 4,
+      "after_first": 8,
+      "after_any_policy": 12,
+      "models_any_before": 4,
+      "models_any_after": 12
+    },
+    "AND_OR_NAND_NOR_out_uniform": {
+      "before": 2,
+      "after_first": 2,
+      "after_any_policy": 4,
+      "models_any_before": 2,
+      "models_any_after": 4
+    },
+    "homogeneous_MIN": {
+      "before": 0,
+      "after_first": 6,
+      "after_any_policy": 9,
+      "models_any_before": 0,
+      "models_any_after": 9
+    },
+    "homogeneous_MAX": {
+      "before": 2,
+      "after_first": 3,
+      "after_any_policy": 6,
+      "models_any_before": 2,
+      "models_any_after": 6
+    },
+    "homogeneous_gate": {
+      "before": 1,
+      "after_first": 2,
+      "after_any_policy": 4,
+      "models_any_before": 1,
+      "models_any_after": 4
+    },
+    "positive_AND": {
+      "before": 0,
+      "after_first": 1,
+      "after_any_policy": 1,
+      "models_any_before": 0,
+      "models_any_after": 1
+    },
+    "positive_OR": {
+      "before": 1,
+      "after_first": 2,
+      "after_any_policy": 3,
+      "models_any_before": 1,
+      "models_any_after": 3
+    },
+    "affine": {
+      "before": 0,
+      "after_first": 1,
+      "after_any_policy": 2,
+      "models_any_before": 0,
+      "models_any_after": 2
+    },
+    "MIN_MAX": {
+      "before": 8,
+      "after_first": 9,
+      "after_any_policy": 13,
+      "models_any_before": 8,
+      "models_any_after": 13
+    },
+    "locally_unate": {
+      "before": 68,
+      "after_first": 49,
+      "after_any_policy": 56,
+      "models_any_before": 68,
+      "models_any_after": 56
+    },
+    "vacuous": {
+      "before": 0,
+      "after_first": 9,
+      "after_any_policy": 10,
+      "models_any_before": 0,
+      "models_any_after": 10
+    }
+  },
+  "certified_runs": 312,
+  "failures": []
+}

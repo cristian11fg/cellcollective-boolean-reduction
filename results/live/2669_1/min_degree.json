@@ -1,0 +1,561 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2669_1",
+  "name": "Processing of Spz Network from the Drosophila Signaling Pathway",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 24,
+  "after": {
+    "nodes": 6,
+    "n_nodes": 6,
+    "inputs": 6,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "all_rules_after": {
+    "nodes": 6,
+    "n_nodes": 6,
+    "inputs": 6,
+    "internal_nodes": 0,
+    "nonconstant_rules": 6,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 6,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Fungi": "+",
+      "v_DV_patterning": "+",
+      "v_GramP_Bact": "+",
+      "v_Pipe": "+",
+      "v_Nec": "+",
+      "v_GramN_Bact": "+"
+    },
+    "positive_edges": 6,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 6,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 6
+    },
+    "conflicts": {},
+    "local": {
+      "v_Fungi": {
+        "signs": {
+          "v_Fungi": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DV_patterning": {
+        "signs": {
+          "v_DV_patterning": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GramP_Bact": {
+        "signs": {
+          "v_GramP_Bact": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Pipe": {
+        "signs": {
+          "v_Pipe": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Nec": {
+        "signs": {
+          "v_Nec": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GramN_Bact": {
+        "signs": {
+          "v_GramN_Bact": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 64,
+    "examples": [
+      {
+        "v_DV_patterning": 0,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 0,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 0,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 0,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 1,
+        "v_Pipe": 1
+      },
+      {
+        "v_DV_patterning": 0,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 0,
+        "v_GramP_Bact": 0,
+        "v_Nec": 1,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 0,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 1,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 0,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 1,
+        "v_Pipe": 0
+      },
+      {
+        "v_DV_patterning": 1,
+        "v_Fungi": 1,
+        "v_GramN_Bact": 1,
+        "v_GramP_Bact": 0,
+        "v_Nec": 1,
+        "v_Pipe": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Fungi": "v_Fungi",
+    "v_DV_patterning": "v_DV_patterning",
+    "v_GramP_Bact": "v_GramP_Bact",
+    "v_Pipe": "v_Pipe",
+    "v_Nec": "v_Nec",
+    "v_GramN_Bact": "v_GramN_Bact"
+  },
+  "steps": [
+    {
+      "node": "v_Spz",
+      "support": [
+        "v_SPE"
+      ],
+      "function": "v_SPE"
+    },
+    {
+      "node": "v_DAP",
+      "support": [
+        "v_GramN_Bact"
+      ],
+      "function": "v_GramN_Bact"
+    },
+    {
+      "node": "v_GNBP1",
+      "support": [
+        "v_GramP_Bact"
+      ],
+      "function": "v_GramP_Bact"
+    },
+    {
+      "node": "v_GNBP3",
+      "support": [
+        "v_Fungi"
+      ],
+      "function": "v_Fungi"
+    },
+    {
+      "node": "v_Gd",
+      "support": [
+        "v_Ndl"
+      ],
+      "function": "v_Ndl"
+    },
+    {
+      "node": "v_Ndl",
+      "support": [
+        "v_DV_patterning"
+      ],
+      "function": "v_DV_patterning"
+    },
+    {
+      "node": "v_PGRP_SA",
+      "support": [
+        "v_GramP_Bact"
+      ],
+      "function": "v_GramP_Bact"
+    },
+    {
+      "node": "v_PGRP_SD",
+      "support": [
+        "v_GramN_Bact"
+      ],
+      "function": "v_GramN_Bact"
+    },
+    {
+      "node": "v_Snk",
+      "support": [
+        "v_DV_patterning"
+      ],
+      "function": "v_DV_patterning"
+    },
+    {
+      "node": "v_Spd",
+      "support": [
+        "v_Grass"
+      ],
+      "function": "v_Grass"
+    },
+    {
+      "node": "v_Sphinx",
+      "support": [
+        "v_Grass"
+      ],
+      "function": "v_Grass"
+    },
+    {
+      "node": "v_Spirit",
+      "support": [
+        "v_Grass"
+      ],
+      "function": "v_Grass"
+    },
+    {
+      "node": "v_Grass",
+      "support": [
+        "v_ModSP"
+      ],
+      "function": "v_ModSP"
+    },
+    {
+      "node": "v_Easter",
+      "support": [
+        "v_DV_patterning",
+        "v_Pipe"
+      ],
+      "function": "v_DV_patterning & v_Pipe"
+    },
+    {
+      "node": "v_Psh",
+      "support": [
+        "v_Nec",
+        "v_Viru_Fact"
+      ],
+      "function": "!v_Nec & v_Viru_Fact"
+    },
+    {
+      "node": "v_Viru_Fact",
+      "support": [
+        "v_Fungi",
+        "v_GramP_Bact"
+      ],
+      "function": "v_Fungi | v_GramP_Bact"
+    },
+    {
+      "node": "v_ModSP",
+      "support": [
+        "v_Fungi",
+        "v_GramN_Bact",
+        "v_GramP_Bact"
+      ],
+      "function": "v_Fungi | v_GramN_Bact | v_GramP_Bact"
+    },
+    {
+      "node": "v_SPE",
+      "support": [
+        "v_DV_patterning",
+        "v_Fungi",
+        "v_GramN_Bact",
+        "v_GramP_Bact",
+        "v_Pipe"
+      ],
+      "function": "((v_DV_patterning & ((v_Fungi & 1) | (!v_Fungi & ((v_GramN_Bact & 1) | (!v_GramN_Bact & ((v_GramP_Bact & 1) | (!v_GramP_Bact & ((v_Pipe & 1) | (!v_Pipe & 0))))))))) | (!v_DV_patterning & ((v_Fungi & 1) | (!v_Fungi & ((v_GramN_Bact & 1) | (!v_GramN_Bact & ((v_GramP_Bact & 1) | (!v_GramP_Bact & 0))))))))"
+    }
+  ],
+  "seconds": 0.12122010008897632
+}

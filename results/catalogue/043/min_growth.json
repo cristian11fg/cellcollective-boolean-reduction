@@ -1,0 +1,774 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "043",
+  "name": "BORDETELLA-BRONCHISEPTICA",
+  "policy": "min_growth",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 33,
+  "after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 0,
+    "internal_nodes": 7,
+    "nonconstant_rules": 7,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_BC": "+",
+      "v_IgA": "+",
+      "v_IgG": "+",
+      "v_DCI": "+",
+      "v_Bb": "-",
+      "v_IL4II": "+",
+      "v_MPI": "-"
+    },
+    "positive_edges": 13,
+    "negative_edges": 10,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 23,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MAX": 2,
+      "UNATE_OTHER": 4,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_DCI": {
+        "v_BC": "+",
+        "v_Bb": "-",
+        "v_DCI": "-",
+        "v_IL4II": "+",
+        "v_MPI": "-"
+      },
+      "v_IL4II": {
+        "v_Bb": "+",
+        "v_DCI": "-",
+        "v_IL4II": "+",
+        "v_MPI": "-"
+      },
+      "v_IgA": {
+        "v_Bb": "-",
+        "v_IgA": "+"
+      },
+      "v_IgG": {
+        "v_Bb": "-",
+        "v_IgG": "+"
+      }
+    },
+    "local": {
+      "v_BC": {
+        "signs": {
+          "v_BC": "+",
+          "v_DCI": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "+",
+          "v_IgA": "-",
+          "v_IgG": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCI": "+",
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA": {
+        "signs": {
+          "v_BC": "+",
+          "v_Bb": "+",
+          "v_IgA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MPI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 0,
+    "internal_nodes": 7,
+    "nonconstant_rules": 7,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_BC": "+",
+      "v_IgA": "+",
+      "v_IgG": "+",
+      "v_DCI": "+",
+      "v_Bb": "-",
+      "v_IL4II": "+",
+      "v_MPI": "-"
+    },
+    "positive_edges": 13,
+    "negative_edges": 10,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 23,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MAX": 2,
+      "UNATE_OTHER": 4,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_DCI": {
+        "v_BC": "+",
+        "v_Bb": "-",
+        "v_DCI": "-",
+        "v_IL4II": "+",
+        "v_MPI": "-"
+      },
+      "v_IL4II": {
+        "v_Bb": "+",
+        "v_DCI": "-",
+        "v_IL4II": "+",
+        "v_MPI": "-"
+      },
+      "v_IgA": {
+        "v_Bb": "-",
+        "v_IgA": "+"
+      },
+      "v_IgG": {
+        "v_Bb": "-",
+        "v_IgG": "+"
+      }
+    },
+    "local": {
+      "v_BC": {
+        "signs": {
+          "v_BC": "+",
+          "v_DCI": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "+",
+          "v_IgA": "-",
+          "v_IgG": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCI": "+",
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA": {
+        "signs": {
+          "v_BC": "+",
+          "v_Bb": "+",
+          "v_IgA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC": "+",
+          "v_IgG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MPI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_DCI": "-",
+          "v_IL4II": "-",
+          "v_MPI": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 3,
+    "examples": [
+      {
+        "v_BC": 0,
+        "v_Bb": 0,
+        "v_DCI": 0,
+        "v_IL4II": 0,
+        "v_IgA": 0,
+        "v_IgG": 0,
+        "v_MPI": 0
+      },
+      {
+        "v_BC": 0,
+        "v_Bb": 0,
+        "v_DCI": 0,
+        "v_IL4II": 0,
+        "v_IgA": 0,
+        "v_IgG": 1,
+        "v_MPI": 0
+      },
+      {
+        "v_BC": 1,
+        "v_Bb": 0,
+        "v_DCI": 0,
+        "v_IL4II": 0,
+        "v_IgA": 0,
+        "v_IgG": 1,
+        "v_MPI": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_BC": "v_BC | v_DCI",
+    "v_Bb": "((v_Bb & ((v_DCI & ((v_IL4II & 1) | (!v_IL4II & !(((v_IgA & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IgA & ((v_IgG & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IgG & 0)))))))) | (!v_DCI & 1))) | (!v_Bb & 0))",
+    "v_DCI": "!(((v_Bb & ((v_DCI & ((v_IL4II & 1) | (!v_IL4II & 0))) | (!v_DCI & ((v_IL4II & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IL4II & 0))))) | (!v_Bb & 1)))",
+    "v_IL4II": "v_DCI & v_IL4II",
+    "v_IgA": "((v_BC & ((v_Bb & 1) | (!v_Bb & 0))) | (!v_BC & ((v_Bb & ((v_IgA & 1) | (!v_IgA & 0))) | (!v_Bb & 0))))",
+    "v_IgG": "v_BC | v_IgG",
+    "v_MPI": "!(((v_Bb & ((v_DCI & ((v_IL4II & 1) | (!v_IL4II & 0))) | (!v_DCI & ((v_IL4II & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IL4II & 0))))) | (!v_Bb & 1)))"
+  },
+  "steps": [
+    {
+      "node": "v_T0",
+      "support": [
+        "v_DCII"
+      ],
+      "function": "v_DCII"
+    },
+    {
+      "node": "v_Oag",
+      "support": [
+        "v_Bb"
+      ],
+      "function": "v_Bb"
+    },
+    {
+      "node": "v_C",
+      "support": [
+        "v_AgAb",
+        "v_IgG"
+      ],
+      "function": "v_AgAb & v_IgG"
+    },
+    {
+      "node": "v_DCII",
+      "support": [
+        "v_DCI"
+      ],
+      "function": "v_DCI"
+    },
+    {
+      "node": "v_EC",
+      "support": [
+        "v_Bb"
+      ],
+      "function": "v_Bb"
+    },
+    {
+      "node": "v_IFNgII",
+      "support": [
+        "v_IFNgI"
+      ],
+      "function": "v_IFNgI"
+    },
+    {
+      "node": "v_IL10II",
+      "support": [
+        "v_IL10I"
+      ],
+      "function": "v_IL10I"
+    },
+    {
+      "node": "v_IL12I",
+      "support": [
+        "v_DCI",
+        "v_IL4II"
+      ],
+      "function": "v_DCI & !v_IL4II"
+    },
+    {
+      "node": "v_IL12II",
+      "support": [
+        "v_DCI",
+        "v_IL4II"
+      ],
+      "function": "v_DCI & !v_IL4II"
+    },
+    {
+      "node": "v_IL4I",
+      "support": [
+        "v_IL4II"
+      ],
+      "function": "v_IL4II"
+    },
+    {
+      "node": "v_NE",
+      "support": [
+        "v_PIC"
+      ],
+      "function": "v_PIC"
+    },
+    {
+      "node": "v_PH",
+      "support": [
+        "v_AP",
+        "v_Bb"
+      ],
+      "function": "v_AP & v_Bb"
+    },
+    {
+      "node": "v_TTSSII",
+      "support": [
+        "v_TTSSI"
+      ],
+      "function": "v_TTSSI"
+    },
+    {
+      "node": "v_Th1I",
+      "support": [
+        "v_Th1II"
+      ],
+      "function": "v_Th1II"
+    },
+    {
+      "node": "v_Th1II",
+      "support": [
+        "v_DCI",
+        "v_IL4II"
+      ],
+      "function": "v_DCI & !v_IL4II"
+    },
+    {
+      "node": "v_Th2I",
+      "support": [
+        "v_Th2II"
+      ],
+      "function": "v_Th2II"
+    },
+    {
+      "node": "v_Th2II",
+      "support": [
+        "v_DCI",
+        "v_IL4II"
+      ],
+      "function": "v_DCI & v_IL4II"
+    },
+    {
+      "node": "v_TrI",
+      "support": [
+        "v_TrII"
+      ],
+      "function": "v_TrII"
+    },
+    {
+      "node": "v_TrII",
+      "support": [
+        "v_DCI"
+      ],
+      "function": "v_DCI"
+    },
+    {
+      "node": "v_AgAb",
+      "support": [
+        "v_Bb",
+        "v_IgA",
+        "v_IgG"
+      ],
+      "function": "((v_Bb & ((v_IgA & 1) | (!v_IgA & ((v_IgG & 1) | (!v_IgG & 0))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_DP",
+      "support": [
+        "v_PIC",
+        "v_TTSSI"
+      ],
+      "function": "v_PIC & v_TTSSI"
+    },
+    {
+      "node": "v_IL10I",
+      "support": [
+        "v_DCI",
+        "v_MPI"
+      ],
+      "function": "v_DCI | v_MPI"
+    },
+    {
+      "node": "v_TTSSI",
+      "support": [
+        "v_Bb",
+        "v_IgA",
+        "v_IgG"
+      ],
+      "function": "v_Bb & !v_IgA & !v_IgG"
+    },
+    {
+      "node": "v_IFNgI",
+      "support": [
+        "v_DCI",
+        "v_IL4II",
+        "v_MPI"
+      ],
+      "function": "!(((v_DCI & ((v_IL4II & 1) | (!v_IL4II & 0))) | (!v_DCI & ((v_IL4II & 1) | (!v_IL4II & !(((v_MPI & 1) | (!v_MPI & 0))))))))"
+    },
+    {
+      "node": "v_PIC",
+      "support": [
+        "v_AP",
+        "v_Bb",
+        "v_DCI",
+        "v_MPI"
+      ],
+      "function": "!(((v_AP & ((v_DCI & 1) | (!v_DCI & ((v_MPI & 1) | (!v_MPI & 0))))) | (!v_AP & ((v_Bb & ((v_DCI & 1) | (!v_DCI & ((v_MPI & 1) | (!v_MPI & 0))))) | (!v_Bb & 1)))))"
+    },
+    {
+      "node": "v_AP",
+      "support": [
+        "v_Bb",
+        "v_DCI",
+        "v_IL4II",
+        "v_IgA",
+        "v_IgG",
+        "v_MPI"
+      ],
+      "function": "!(((v_Bb & ((v_DCI & ((v_IL4II & 1) | (!v_IL4II & !(((v_IgA & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IgA & ((v_IgG & ((v_MPI & 1) | (!v_MPI & 0))) | (!v_IgG & 0)))))))) | (!v_DCI & 1))) | (!v_Bb & 1)))"
+    }
+  ],
+  "seconds": 0.06587729998864233
+}

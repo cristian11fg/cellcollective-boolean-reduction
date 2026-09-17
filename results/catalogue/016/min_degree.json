@@ -1,0 +1,1520 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "016",
+  "name": "IL-1-SIGNALING",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 118,
+  "after": {
+    "nodes": 14,
+    "n_nodes": 14,
+    "inputs": 14,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "all_rules_after": {
+    "nodes": 14,
+    "n_nodes": 14,
+    "inputs": 14,
+    "internal_nodes": 0,
+    "nonconstant_rules": 14,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 14,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_abin2": "+",
+      "v_ck2": "+",
+      "v_ikka": "+",
+      "v_ikkb": "+",
+      "v_irakm": "+",
+      "v_mtorc2": "+",
+      "v_pdk1": "+",
+      "v_pten": "+",
+      "v_sil1r12": "+",
+      "v_smyd88": "+",
+      "v_socs1": "+",
+      "v_socs3": "+",
+      "v_src": "+",
+      "v_trika1": "+"
+    },
+    "positive_edges": 14,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 14,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 14
+    },
+    "conflicts": {},
+    "local": {
+      "v_abin2": {
+        "signs": {
+          "v_abin2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ck2": {
+        "signs": {
+          "v_ck2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ikka": {
+        "signs": {
+          "v_ikka": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ikkb": {
+        "signs": {
+          "v_ikkb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_irakm": {
+        "signs": {
+          "v_irakm": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mtorc2": {
+        "signs": {
+          "v_mtorc2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pdk1": {
+        "signs": {
+          "v_pdk1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pten": {
+        "signs": {
+          "v_pten": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_sil1r12": {
+        "signs": {
+          "v_sil1r12": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_smyd88": {
+        "signs": {
+          "v_smyd88": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_socs1": {
+        "signs": {
+          "v_socs1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_socs3": {
+        "signs": {
+          "v_socs3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_src": {
+        "signs": {
+          "v_src": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_trika1": {
+        "signs": {
+          "v_trika1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 1,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 0,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 1,
+        "v_ikka": 1,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 1,
+        "v_pdk1": 0,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 1
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 1,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 1
+      },
+      {
+        "v_abin2": 0,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 1,
+        "v_pten": 1,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      },
+      {
+        "v_abin2": 1,
+        "v_ck2": 0,
+        "v_ikka": 0,
+        "v_ikkb": 0,
+        "v_irakm": 0,
+        "v_mtorc2": 0,
+        "v_pdk1": 1,
+        "v_pten": 0,
+        "v_sil1r12": 0,
+        "v_smyd88": 0,
+        "v_socs1": 0,
+        "v_socs3": 0,
+        "v_src": 0,
+        "v_trika1": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_abin2": "v_abin2",
+    "v_ck2": "v_ck2",
+    "v_ikka": "v_ikka",
+    "v_ikkb": "v_ikkb",
+    "v_irakm": "v_irakm",
+    "v_mtorc2": "v_mtorc2",
+    "v_pdk1": "v_pdk1",
+    "v_pten": "v_pten",
+    "v_sil1r12": "v_sil1r12",
+    "v_smyd88": "v_smyd88",
+    "v_socs1": "v_socs1",
+    "v_socs3": "v_socs3",
+    "v_src": "v_src",
+    "v_trika1": "v_trika1"
+  },
+  "steps": [
+    {
+      "node": "v_sil1r_ap",
+      "support": [
+        "v_sil1r12"
+      ],
+      "function": "v_sil1r12"
+    },
+    {
+      "node": "v_tdum_a20_traf6_ub",
+      "support": [
+        "v_a20"
+      ],
+      "function": "v_a20"
+    },
+    {
+      "node": "v_tdum_cyt_p38_tak1_tab",
+      "support": [
+        "v_cyt_p38"
+      ],
+      "function": "v_cyt_p38"
+    },
+    {
+      "node": "v_tdum_hsp27_ps_traf6_ub",
+      "support": [
+        "v_hsp27_ps"
+      ],
+      "function": "v_hsp27_ps"
+    },
+    {
+      "node": "v_tdum_il1r2_il1rc",
+      "support": [
+        "v_il1r2"
+      ],
+      "function": "v_il1r2"
+    },
+    {
+      "node": "v_tdum_il1ra_ilr12",
+      "support": [
+        "v_il1ra"
+      ],
+      "function": "v_il1ra"
+    },
+    {
+      "node": "v_tdum_irak1c_irak12",
+      "support": [
+        "v_irak1c"
+      ],
+      "function": "v_irak1c"
+    },
+    {
+      "node": "v_tdum_mkp1_p38_jnk_erk12",
+      "support": [
+        "v_mkp1"
+      ],
+      "function": "v_mkp1"
+    },
+    {
+      "node": "v_tdum_tpl2_degr_tp2",
+      "support": [
+        "v_tpl2_degr"
+      ],
+      "function": "v_tpl2_degr"
+    },
+    {
+      "node": "v_cjun_gene",
+      "support": [
+        "v_msk1"
+      ],
+      "function": "v_msk1"
+    },
+    {
+      "node": "v_hgf",
+      "support": [
+        "v_pro_hgf",
+        "v_upa"
+      ],
+      "function": "v_pro_hgf & v_upa"
+    },
+    {
+      "node": "v_hsp27_ps",
+      "support": [
+        "v_mk2"
+      ],
+      "function": "v_mk2"
+    },
+    {
+      "node": "v_ikba_diss",
+      "support": [
+        "v_ikka_a"
+      ],
+      "function": "v_ikka_a"
+    },
+    {
+      "node": "v_il1b_new",
+      "support": [
+        "v_nalp_infl",
+        "v_pro_il1b"
+      ],
+      "function": "v_nalp_infl & v_pro_il1b"
+    },
+    {
+      "node": "v_nalp_infl",
+      "support": [
+        "v_erk12"
+      ],
+      "function": "!v_erk12"
+    },
+    {
+      "node": "v_lbp",
+      "support": [
+        "v_ap1",
+        "v_cebpb"
+      ],
+      "function": "v_ap1 & v_cebpb"
+    },
+    {
+      "node": "v_mek1",
+      "support": [
+        "v_tpl2"
+      ],
+      "function": "v_tpl2"
+    },
+    {
+      "node": "v_nc_nfkb_pathway",
+      "support": [
+        "v_ikkaa",
+        "v_nik"
+      ],
+      "function": "v_ikkaa & v_nik"
+    },
+    {
+      "node": "v_ikkaa",
+      "support": [
+        "v_ikka"
+      ],
+      "function": "v_ikka"
+    },
+    {
+      "node": "v_nik",
+      "support": [
+        "v_tak1_tab"
+      ],
+      "function": "v_tak1_tab"
+    },
+    {
+      "node": "v_p105",
+      "support": [
+        "v_p105_degr"
+      ],
+      "function": "!v_p105_degr"
+    },
+    {
+      "node": "v_p50",
+      "support": [
+        "v_p105_degr"
+      ],
+      "function": "v_p105_degr"
+    },
+    {
+      "node": "v_pro_hgf",
+      "support": [
+        "v_cebpb",
+        "v_cebpd"
+      ],
+      "function": "v_cebpb | v_cebpd"
+    },
+    {
+      "node": "v_saa",
+      "support": [
+        "v_dum_cebp_saa",
+        "v_nfkb"
+      ],
+      "function": "v_dum_cebp_saa & v_nfkb"
+    },
+    {
+      "node": "v_dum_cebp_saa",
+      "support": [
+        "v_cebpb",
+        "v_cebpd"
+      ],
+      "function": "v_cebpb | v_cebpd"
+    },
+    {
+      "node": "v_tpl2_degr",
+      "support": [
+        "v_tpl2"
+      ],
+      "function": "v_tpl2"
+    },
+    {
+      "node": "v_traf6",
+      "support": [
+        "v_irak1"
+      ],
+      "function": "v_irak1"
+    },
+    {
+      "node": "v_upa",
+      "support": [
+        "v_ap1",
+        "v_atf2"
+      ],
+      "function": "v_ap1 & v_atf2"
+    },
+    {
+      "node": "v_a20",
+      "support": [
+        "v_abin2"
+      ],
+      "function": "v_abin2"
+    },
+    {
+      "node": "v_dum_cebp_cox2",
+      "support": [
+        "v_cebpb",
+        "v_cebpd"
+      ],
+      "function": "v_cebpb | v_cebpd"
+    },
+    {
+      "node": "v_dum_cebp_il1ra",
+      "support": [
+        "v_cebpb",
+        "v_cebpd"
+      ],
+      "function": "v_cebpb | v_cebpd"
+    },
+    {
+      "node": "v_dum_cebp_pro_il1b",
+      "support": [
+        "v_cebpb",
+        "v_cebpd"
+      ],
+      "function": "v_cebpb | v_cebpd"
+    },
+    {
+      "node": "v_dum_ikkab_or_ikkbb_nemo_ikkb_a",
+      "support": [
+        "v_ikkab_nemo",
+        "v_ikkbb_nemo"
+      ],
+      "function": "v_ikkab_nemo | v_ikkbb_nemo"
+    },
+    {
+      "node": "v_dum_il1_r1",
+      "support": [
+        "v_il1a",
+        "v_il1b"
+      ],
+      "function": "v_il1a | v_il1b"
+    },
+    {
+      "node": "v_dum_il1_r2",
+      "support": [
+        "v_il1a",
+        "v_il1b"
+      ],
+      "function": "v_il1a | v_il1b"
+    },
+    {
+      "node": "v_dum_irak1_or_2_traf6_ub",
+      "support": [
+        "v_irak1",
+        "v_irak2"
+      ],
+      "function": "v_irak1 | v_irak2"
+    },
+    {
+      "node": "v_dum_mek4_or_7_jnk",
+      "support": [
+        "v_mek4",
+        "v_mek7"
+      ],
+      "function": "v_mek4 | v_mek7"
+    },
+    {
+      "node": "v_dum_sap1_or_elk_cfos",
+      "support": [
+        "v_elk1",
+        "v_sap1"
+      ],
+      "function": "v_elk1 | v_sap1"
+    },
+    {
+      "node": "v_gsk3",
+      "support": [
+        "v_akt"
+      ],
+      "function": "!v_akt"
+    },
+    {
+      "node": "v_hnf4a",
+      "support": [
+        "v_nuc_p38",
+        "v_ros"
+      ],
+      "function": "v_nuc_p38 & v_ros"
+    },
+    {
+      "node": "v_ikka_a",
+      "support": [
+        "v_ikkaa_nemo",
+        "v_mekk3"
+      ],
+      "function": "v_ikkaa_nemo & v_mekk3"
+    },
+    {
+      "node": "v_ikkaa_nemo",
+      "support": [
+        "v_ikka",
+        "v_nemo"
+      ],
+      "function": "v_ikka & v_nemo"
+    },
+    {
+      "node": "v_ikkbb_nemo",
+      "support": [
+        "v_ikkb",
+        "v_nemo"
+      ],
+      "function": "v_ikkb & v_nemo"
+    },
+    {
+      "node": "v_il1a",
+      "support": [
+        "v_sil1r12"
+      ],
+      "function": "v_sil1r12"
+    },
+    {
+      "node": "v_il1b",
+      "support": [
+        "v_sil1r12"
+      ],
+      "function": "v_sil1r12"
+    },
+    {
+      "node": "v_il1r1",
+      "support": [
+        "v_il1ra",
+        "v_sil1r12"
+      ],
+      "function": "!v_il1ra & v_sil1r12"
+    },
+    {
+      "node": "v_il1r2",
+      "support": [
+        "v_il1ra",
+        "v_sil1r12"
+      ],
+      "function": "!v_il1ra & v_sil1r12"
+    },
+    {
+      "node": "v_il1rc",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_pi3k",
+      "support": [
+        "v_myd88"
+      ],
+      "function": "v_myd88"
+    },
+    {
+      "node": "v_irak1_ub",
+      "support": [
+        "v_pellino",
+        "v_trika1"
+      ],
+      "function": "v_pellino & v_trika1"
+    },
+    {
+      "node": "v_irs1_ps",
+      "support": [
+        "v_erk12",
+        "v_ikkb_a",
+        "v_jnk"
+      ],
+      "function": "v_erk12 | v_ikkb_a | v_jnk"
+    },
+    {
+      "node": "v_ksrp",
+      "support": [
+        "v_cyt_p38"
+      ],
+      "function": "!v_cyt_p38"
+    },
+    {
+      "node": "v_mek3",
+      "support": [
+        "v_mekk3",
+        "v_tak1_tab"
+      ],
+      "function": "v_mekk3 | v_tak1_tab"
+    },
+    {
+      "node": "v_mek6",
+      "support": [
+        "v_mekk3",
+        "v_tak1_tab"
+      ],
+      "function": "v_mekk3 | v_tak1_tab"
+    },
+    {
+      "node": "v_mek7",
+      "support": [
+        "v_mekk3",
+        "v_tak1_tab"
+      ],
+      "function": "v_mekk3 | v_tak1_tab"
+    },
+    {
+      "node": "v_p105_degr",
+      "support": [
+        "v_ikkb_a"
+      ],
+      "function": "v_ikkb_a"
+    },
+    {
+      "node": "v_p65",
+      "support": [
+        "v_dum_ikkab_nemo_akt_or_ck2_p65",
+        "v_socs1"
+      ],
+      "function": "v_dum_ikkab_nemo_akt_or_ck2_p65 & !v_socs1"
+    },
+    {
+      "node": "v_pellino",
+      "support": [
+        "v_irak1",
+        "v_irak4"
+      ],
+      "function": "v_irak1 | v_irak4"
+    },
+    {
+      "node": "v_pip3",
+      "support": [
+        "v_myd88",
+        "v_pten"
+      ],
+      "function": "v_myd88 & !v_pten"
+    },
+    {
+      "node": "v_ros",
+      "support": [
+        "v_inos",
+        "v_nfkb"
+      ],
+      "function": "!v_inos & !v_nfkb"
+    },
+    {
+      "node": "v_tollip",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_irak1c",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_irak2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_myd88",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_irak4",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_akt",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_dum_ikkab_nemo_akt_or_ck2_p65",
+      "support": [
+        "v_ck2"
+      ],
+      "function": "v_ck2"
+    },
+    {
+      "node": "v_ccl2",
+      "support": [
+        "v_ap1",
+        "v_cjun",
+        "v_nfkb"
+      ],
+      "function": "v_ap1 & v_cjun & v_nfkb"
+    },
+    {
+      "node": "v_irak1",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_dum_tak1_tab_or_mekk3_ikkb_a",
+      "support": [
+        "v_mekk3"
+      ],
+      "function": "v_mekk3"
+    },
+    {
+      "node": "v_traf6_ub",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_mk2",
+      "support": [
+        "v_nuc_p38"
+      ],
+      "function": "v_nuc_p38"
+    },
+    {
+      "node": "v_cyt_p38",
+      "support": [
+        "v_nuc_p38"
+      ],
+      "function": "v_nuc_p38"
+    },
+    {
+      "node": "v_ttp",
+      "support": [
+        "v_nuc_p38"
+      ],
+      "function": "!v_nuc_p38"
+    },
+    {
+      "node": "v_atf2",
+      "support": [
+        "v_erk12",
+        "v_jnk",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_jnk | v_nuc_p38"
+    },
+    {
+      "node": "v_dum_mek3_or_4_or_6_nuc_p38",
+      "support": [
+        "v_mek4",
+        "v_mekk3",
+        "v_tak1_tab"
+      ],
+      "function": "v_mek4 | v_mekk3 | v_tak1_tab"
+    },
+    {
+      "node": "v_elk1",
+      "support": [
+        "v_erk12",
+        "v_jnk",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_jnk | v_nuc_p38"
+    },
+    {
+      "node": "v_ikkab_nemo",
+      "support": [
+        "v_ikka",
+        "v_ikkb",
+        "v_nemo"
+      ],
+      "function": "v_ikka & v_ikkb & v_nemo"
+    },
+    {
+      "node": "v_nemo",
+      "support": [
+        "v_abin2"
+      ],
+      "function": "!v_abin2"
+    },
+    {
+      "node": "v_il1ra",
+      "support": [
+        "v_cebpb",
+        "v_cebpd",
+        "v_nfkb",
+        "v_sil1r12"
+      ],
+      "function": "((v_cebpb & ((v_nfkb & 1) | (!v_nfkb & ((v_sil1r12 & 1) | (!v_sil1r12 & 0))))) | (!v_cebpb & ((v_cebpd & ((v_nfkb & 1) | (!v_nfkb & ((v_sil1r12 & 1) | (!v_sil1r12 & 0))))) | (!v_cebpd & ((v_sil1r12 & 1) | (!v_sil1r12 & 0))))))"
+    },
+    {
+      "node": "v_il6",
+      "support": [
+        "v_ap1",
+        "v_cebpb",
+        "v_nfkb",
+        "v_nuc_p38"
+      ],
+      "function": "v_ap1 & v_cebpb & v_nfkb & v_nuc_p38"
+    },
+    {
+      "node": "v_cebpb",
+      "support": [
+        "v_erk12",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_nuc_p38"
+    },
+    {
+      "node": "v_il8",
+      "support": [
+        "v_ap1",
+        "v_cfos",
+        "v_nfkb",
+        "v_nuc_p38"
+      ],
+      "function": "v_ap1 & v_cfos & v_nfkb & v_nuc_p38"
+    },
+    {
+      "node": "v_mek4",
+      "support": [
+        "v_mekk3",
+        "v_tak1_tab"
+      ],
+      "function": "v_mekk3 | v_tak1_tab"
+    },
+    {
+      "node": "v_tak1_tab",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_ikba_degr",
+      "support": [
+        "v_ck2",
+        "v_ikkb_a"
+      ],
+      "function": "v_ck2 | v_ikkb_a"
+    },
+    {
+      "node": "v_mekk3",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_mkp1",
+      "support": [
+        "v_ap1"
+      ],
+      "function": "v_ap1"
+    },
+    {
+      "node": "v_ikkb_a",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_tpl2",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_ikba",
+      "support": [
+        "v_ck2",
+        "v_nfkb"
+      ],
+      "function": "!v_ck2 | v_nfkb"
+    },
+    {
+      "node": "v_msk1",
+      "support": [
+        "v_erk12",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_nuc_p38"
+    },
+    {
+      "node": "v_cfos",
+      "support": [
+        "v_erk12",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_nuc_p38"
+    },
+    {
+      "node": "v_sap1",
+      "support": [
+        "v_erk12",
+        "v_jnk",
+        "v_nuc_p38"
+      ],
+      "function": "v_erk12 | v_jnk | v_nuc_p38"
+    },
+    {
+      "node": "v_jnk",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_cebpd",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_nfkb",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_pro_il1b",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_erk12",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_ap1",
+      "support": [
+        "v_cjun",
+        "v_nuc_p38"
+      ],
+      "function": "v_cjun | v_nuc_p38"
+    },
+    {
+      "node": "v_cjun",
+      "support": [
+        "v_nuc_p38"
+      ],
+      "function": "v_nuc_p38"
+    },
+    {
+      "node": "v_cox2",
+      "support": [
+        "v_nuc_p38"
+      ],
+      "function": "v_nuc_p38"
+    },
+    {
+      "node": "v_nuc_p38",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_inos",
+      "support": [],
+      "function": "0"
+    }
+  ],
+  "seconds": 1.004849800025113
+}

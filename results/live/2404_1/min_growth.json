@@ -1,0 +1,701 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2404_1",
+  "name": "Budding Yeast Cell Cycle",
+  "policy": "min_growth",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 20,
+  "after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 4,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Clb2": "+",
+      "v_Whi5": "+",
+      "v_Sic1": "-",
+      "v_SpindleCP": "-",
+      "v_BuddingCP": "+",
+      "v_Start": "+",
+      "v_Size": "-"
+    },
+    "positive_edges": 6,
+    "negative_edges": 6,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 14,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {
+      "v_Clb2": {
+        "v_Sic1": "mixed",
+        "v_Whi5": "+",
+        "v_Clb2": "mixed"
+      },
+      "v_Sic1": {
+        "v_Sic1": "+",
+        "v_Clb2": "-"
+      },
+      "v_SpindleCP": {
+        "v_Sic1": "+",
+        "v_Clb2": "-"
+      },
+      "v_Whi5": {
+        "v_Sic1": "+",
+        "v_Whi5": "+",
+        "v_Clb2": "-"
+      }
+    },
+    "local": {
+      "v_Sic1": {
+        "signs": {
+          "v_Clb2": "mixed",
+          "v_Sic1": "+",
+          "v_SpindleCP": "+",
+          "v_Start": "-",
+          "v_Whi5": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Whi5": {
+        "signs": {
+          "v_Clb2": "+",
+          "v_Size": "-",
+          "v_Start": "-",
+          "v_Whi5": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Clb2": {
+        "signs": {
+          "v_BuddingCP": "+",
+          "v_Clb2": "mixed",
+          "v_Sic1": "-",
+          "v_SpindleCP": "-",
+          "v_Whi5": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 4,
+    "internal_nodes": 3,
+    "nonconstant_rules": 7,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Clb2": "+",
+      "v_Whi5": "+",
+      "v_Sic1": "-",
+      "v_SpindleCP": "-",
+      "v_BuddingCP": "+",
+      "v_Start": "+",
+      "v_Size": "-"
+    },
+    "positive_edges": 10,
+    "negative_edges": 6,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 18,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 1,
+      "MIN_MAX": 4
+    },
+    "conflicts": {
+      "v_Clb2": {
+        "v_Sic1": "mixed",
+        "v_Whi5": "+",
+        "v_Clb2": "mixed"
+      },
+      "v_Sic1": {
+        "v_Sic1": "+",
+        "v_Clb2": "-"
+      },
+      "v_SpindleCP": {
+        "v_Sic1": "+",
+        "v_Clb2": "-",
+        "v_SpindleCP": "+"
+      },
+      "v_Start": {
+        "v_Sic1": "-",
+        "v_Whi5": "-",
+        "v_Start": "+"
+      },
+      "v_Whi5": {
+        "v_Sic1": "+",
+        "v_Whi5": "+",
+        "v_Clb2": "-"
+      },
+      "v_Size": {
+        "v_Whi5": "-",
+        "v_Size": "+"
+      }
+    },
+    "local": {
+      "v_Sic1": {
+        "signs": {
+          "v_Clb2": "mixed",
+          "v_Sic1": "+",
+          "v_SpindleCP": "+",
+          "v_Start": "-",
+          "v_Whi5": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Whi5": {
+        "signs": {
+          "v_Clb2": "+",
+          "v_Size": "-",
+          "v_Start": "-",
+          "v_Whi5": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Clb2": {
+        "signs": {
+          "v_BuddingCP": "+",
+          "v_Clb2": "mixed",
+          "v_Sic1": "-",
+          "v_SpindleCP": "-",
+          "v_Whi5": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_SpindleCP": {
+        "signs": {
+          "v_SpindleCP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Start": {
+        "signs": {
+          "v_Start": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_BuddingCP": {
+        "signs": {
+          "v_BuddingCP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Size": {
+        "signs": {
+          "v_Size": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 20,
+    "examples": [
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 1,
+        "v_Sic1": 0,
+        "v_Size": 1,
+        "v_SpindleCP": 0,
+        "v_Start": 1,
+        "v_Whi5": 0
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 1,
+        "v_Sic1": 0,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 1,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 1,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 1,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 1,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 1,
+        "v_Start": 1,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 0,
+        "v_SpindleCP": 1,
+        "v_Start": 1,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 1,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 1,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 0,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 1,
+        "v_SpindleCP": 1,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 0,
+        "v_Sic1": 1,
+        "v_Size": 1,
+        "v_SpindleCP": 1,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 1,
+        "v_Sic1": 0,
+        "v_Size": 1,
+        "v_SpindleCP": 0,
+        "v_Start": 0,
+        "v_Whi5": 1
+      },
+      {
+        "v_BuddingCP": 1,
+        "v_Clb2": 1,
+        "v_Sic1": 0,
+        "v_Size": 0,
+        "v_SpindleCP": 0,
+        "v_Start": 1,
+        "v_Whi5": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_Sic1": "((v_Clb2 & ((v_Sic1 & ((v_SpindleCP & 1) | (!v_SpindleCP & 0))) | (!v_Sic1 & 0))) | (!v_Clb2 & ((v_Sic1 & ((v_Start & ((v_Whi5 & 1) | (!v_Whi5 & 0))) | (!v_Start & 1))) | (!v_Sic1 & ((v_Whi5 & 1) | (!v_Whi5 & 0))))))",
+    "v_Whi5": "!(((v_Clb2 & ((v_Size & ((v_Start & 1) | (!v_Start & 0))) | (!v_Size & 0))) | (!v_Clb2 & ((v_Size & ((v_Start & 1) | (!v_Start & 0))) | (!v_Size & !(((v_Start & ((v_Whi5 & 1) | (!v_Whi5 & 0))) | (!v_Start & 1))))))))",
+    "v_Clb2": "!(((v_BuddingCP & ((v_Clb2 & ((v_SpindleCP & 1) | (!v_SpindleCP & 0))) | (!v_Clb2 & ((v_Sic1 & 1) | (!v_Sic1 & ((v_Whi5 & 1) | (!v_Whi5 & 0))))))) | (!v_BuddingCP & 1)))",
+    "v_SpindleCP": "v_SpindleCP",
+    "v_Start": "v_Start",
+    "v_BuddingCP": "v_BuddingCP",
+    "v_Size": "v_Size"
+  },
+  "steps": [
+    {
+      "node": "v_SFF",
+      "support": [
+        "v_Clb2"
+      ],
+      "function": "v_Clb2"
+    },
+    {
+      "node": "v_Swi5",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_FEAR",
+      "support": [
+        "v_Cdc20"
+      ],
+      "function": "v_Cdc20"
+    },
+    {
+      "node": "v_MEN",
+      "support": [
+        "v_Cdc20",
+        "v_Clb2"
+      ],
+      "function": "v_Cdc20 & v_Clb2"
+    },
+    {
+      "node": "v_Cdc14",
+      "support": [
+        "v_Cdc20",
+        "v_Clb2"
+      ],
+      "function": "v_Cdc20 & v_Clb2"
+    },
+    {
+      "node": "v_Swe1",
+      "support": [
+        "v_BuddingCP"
+      ],
+      "function": "!v_BuddingCP"
+    },
+    {
+      "node": "v_Yhp1",
+      "support": [
+        "v_SMBF"
+      ],
+      "function": "v_SMBF"
+    },
+    {
+      "node": "v_Cdc20",
+      "support": [
+        "v_Clb2",
+        "v_SpindleCP"
+      ],
+      "function": "v_Clb2 & v_SpindleCP"
+    },
+    {
+      "node": "v_Cdh1",
+      "support": [
+        "v_Clb2",
+        "v_Clb5",
+        "v_Cln2",
+        "v_SpindleCP"
+      ],
+      "function": "((v_Clb2 & ((v_SpindleCP & 1) | (!v_SpindleCP & 0))) | (!v_Clb2 & !(((v_Clb5 & 1) | (!v_Clb5 & ((v_Cln2 & 1) | (!v_Cln2 & 0)))))))"
+    },
+    {
+      "node": "v_Clb5",
+      "support": [
+        "v_Clb2",
+        "v_SMBF",
+        "v_Sic1",
+        "v_SpindleCP"
+      ],
+      "function": "!(((v_Clb2 & ((v_SMBF & ((v_Sic1 & 1) | (!v_Sic1 & ((v_SpindleCP & 1) | (!v_SpindleCP & 0))))) | (!v_SMBF & 1))) | (!v_Clb2 & ((v_SMBF & ((v_Sic1 & 1) | (!v_Sic1 & 0))) | (!v_SMBF & 1)))))"
+    },
+    {
+      "node": "v_Cln2",
+      "support": [
+        "v_SMBF",
+        "v_Start"
+      ],
+      "function": "v_SMBF & v_Start"
+    },
+    {
+      "node": "v_Cln3",
+      "support": [
+        "v_SMBF",
+        "v_Size"
+      ],
+      "function": "!v_SMBF & v_Size"
+    },
+    {
+      "node": "v_SMBF",
+      "support": [
+        "v_Clb2",
+        "v_Whi5"
+      ],
+      "function": "!v_Clb2 & !v_Whi5"
+    }
+  ],
+  "seconds": 0.08113289996981621
+}

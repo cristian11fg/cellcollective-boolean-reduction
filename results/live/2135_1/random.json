@@ -1,0 +1,1320 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2135_1",
+  "name": "Yeast Apoptosis",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 73,
+  "after": {
+    "nodes": 15,
+    "n_nodes": 15,
+    "inputs": 13,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "OR",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_H2O2": "+",
+      "v_MT_Frag": "+",
+      "v_HK": "+",
+      "v_Heat": "+",
+      "v_RedActinDyn": "+",
+      "v_Stress": "+",
+      "v_HOG1": "+"
+    },
+    "positive_edges": 7,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 8,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MAX": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_MT_Frag": {
+        "signs": {
+          "v_H2O2": "+",
+          "v_HK": "+",
+          "v_Heat": "+",
+          "v_MT_Frag": "+",
+          "v_RedActinDyn": "+",
+          "v_Stress": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HOG1": {
+        "signs": {
+          "v_HOG1": "-",
+          "v_Stress": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 15,
+    "n_nodes": 15,
+    "inputs": 13,
+    "internal_nodes": 2,
+    "nonconstant_rules": 15,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "OR",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 15,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_H2O2": "+",
+      "v_MT_Frag": "+",
+      "v_HK": "+",
+      "v_Heat": "+",
+      "v_RedActinDyn": "+",
+      "v_Stress": "+",
+      "v_HOG1": "+",
+      "v_CU2": "+",
+      "v_Adozelesin": "+",
+      "v_CPR3": "+",
+      "v_MG2": "+",
+      "v_AbnormalTelomer": "+",
+      "v_Salt": "+",
+      "v_AceticAcid": "+",
+      "v_Mating": "+"
+    },
+    "positive_edges": 20,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 21,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MAX": 2,
+      "MIN_MAX": 13
+    },
+    "conflicts": {},
+    "local": {
+      "v_MT_Frag": {
+        "signs": {
+          "v_H2O2": "+",
+          "v_HK": "+",
+          "v_Heat": "+",
+          "v_MT_Frag": "+",
+          "v_RedActinDyn": "+",
+          "v_Stress": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HOG1": {
+        "signs": {
+          "v_HOG1": "-",
+          "v_Stress": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CU2": {
+        "signs": {
+          "v_CU2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Stress": {
+        "signs": {
+          "v_Stress": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Adozelesin": {
+        "signs": {
+          "v_Adozelesin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CPR3": {
+        "signs": {
+          "v_CPR3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MG2": {
+        "signs": {
+          "v_MG2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Heat": {
+        "signs": {
+          "v_Heat": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AbnormalTelomer": {
+        "signs": {
+          "v_AbnormalTelomer": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Salt": {
+        "signs": {
+          "v_Salt": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AceticAcid": {
+        "signs": {
+          "v_AceticAcid": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RedActinDyn": {
+        "signs": {
+          "v_RedActinDyn": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_H2O2": {
+        "signs": {
+          "v_H2O2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HK": {
+        "signs": {
+          "v_HK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Mating": {
+        "signs": {
+          "v_Mating": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 1,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 1,
+        "v_AceticAcid": 0,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 1,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 1,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 0,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 1,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 0,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 0,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      },
+      {
+        "v_AbnormalTelomer": 0,
+        "v_AceticAcid": 1,
+        "v_Adozelesin": 0,
+        "v_CPR3": 0,
+        "v_CU2": 0,
+        "v_H2O2": 1,
+        "v_HK": 1,
+        "v_HOG1": 1,
+        "v_Heat": 0,
+        "v_MG2": 1,
+        "v_MT_Frag": 1,
+        "v_Mating": 0,
+        "v_RedActinDyn": 0,
+        "v_Salt": 0,
+        "v_Stress": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_MT_Frag": "v_H2O2 | v_HK | v_Heat | v_MT_Frag | v_RedActinDyn | v_Stress",
+    "v_HOG1": "!v_HOG1 | v_Stress",
+    "v_CU2": "v_CU2",
+    "v_Stress": "v_Stress",
+    "v_Adozelesin": "v_Adozelesin",
+    "v_CPR3": "v_CPR3",
+    "v_MG2": "v_MG2",
+    "v_Heat": "v_Heat",
+    "v_AbnormalTelomer": "v_AbnormalTelomer",
+    "v_Salt": "v_Salt",
+    "v_AceticAcid": "v_AceticAcid",
+    "v_RedActinDyn": "v_RedActinDyn",
+    "v_H2O2": "v_H2O2",
+    "v_HK": "v_HK",
+    "v_Mating": "v_Mating"
+  },
+  "steps": [
+    {
+      "node": "v_Protosom",
+      "support": [
+        "v_CDC6"
+      ],
+      "function": "v_CDC6"
+    },
+    {
+      "node": "v_CDC6",
+      "support": [
+        "v_Adozelesin"
+      ],
+      "function": "v_Adozelesin"
+    },
+    {
+      "node": "v_AIF1_NUC",
+      "support": [
+        "v_AIF1_MT"
+      ],
+      "function": "v_AIF1_MT"
+    },
+    {
+      "node": "v_SOD2",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_HOG1_Dep",
+      "support": [
+        "v_HOG1"
+      ],
+      "function": "v_HOG1"
+    },
+    {
+      "node": "v_H2B",
+      "support": [
+        "v_AIF1_MT",
+        "v_HOS3",
+        "v_NUC1_NUC",
+        "v_RPD3",
+        "v_STE20_NUC"
+      ],
+      "function": "v_AIF1_MT | v_HOS3 | v_NUC1_NUC | v_RPD3 | v_STE20_NUC"
+    },
+    {
+      "node": "v_FVY10",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_DNA_Frag",
+      "support": [
+        "v_STM1_NUC",
+        "v_Tat_D"
+      ],
+      "function": "!v_STM1_NUC | v_Tat_D"
+    },
+    {
+      "node": "v_STM1_NUC",
+      "support": [
+        "v_Adozelesin",
+        "v_STM1_CYT"
+      ],
+      "function": "!v_Adozelesin & v_STM1_CYT"
+    },
+    {
+      "node": "v_CytC_CYT",
+      "support": [
+        "v_CDC48",
+        "v_CytC_MT"
+      ],
+      "function": "v_CDC48 | v_CytC_MT"
+    },
+    {
+      "node": "v_STE20_CYT",
+      "support": [
+        "v_MAPK"
+      ],
+      "function": "v_MAPK"
+    },
+    {
+      "node": "v_Tat_D",
+      "support": [
+        "v_MG2"
+      ],
+      "function": "v_MG2"
+    },
+    {
+      "node": "v_RLM1",
+      "support": [
+        "v_HOG1",
+        "v_SLT2"
+      ],
+      "function": "v_HOG1 | v_SLT2"
+    },
+    {
+      "node": "v_CDC48",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_SNO1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_NUC1_NUC",
+      "support": [
+        "v_KAP123"
+      ],
+      "function": "v_KAP123"
+    },
+    {
+      "node": "v_Apoptosis",
+      "support": [
+        "v_AceticAcid",
+        "v_Adozelesin",
+        "v_BIR1",
+        "v_CPR3",
+        "v_CU2",
+        "v_H2O2",
+        "v_HK",
+        "v_MG2",
+        "v_POR1_2",
+        "v_ROS_CYT",
+        "v_STM1_CYT",
+        "v_YCA1"
+      ],
+      "function": "((v_AceticAcid & ((v_Adozelesin & 1) | (!v_Adozelesin & ((v_BIR1 & ((v_CPR3 & ((v_CU2 & 1) | (!v_CU2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))))) | (!v_CPR3 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))))) | (!v_BIR1 & ((v_CPR3 & ((v_CU2 & 1) | (!v_CU2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))))) | (!v_CPR3 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))))))))) | (!v_AceticAcid & ((v_Adozelesin & 1) | (!v_Adozelesin & ((v_BIR1 & ((v_CPR3 & ((v_CU2 & 1) | (!v_CU2 & ((v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))) | (!v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))))) | (!v_HK & 1))))))) | (!v_CPR3 & ((v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))) | (!v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & !(((v_STM1_CYT & 1) | (!v_STM1_CYT & 0)))))))) | (!v_HK & 1))))))) | (!v_BIR1 & ((v_CPR3 & ((v_CU2 & 1) | (!v_CU2 & ((v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))) | (!v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))))) | (!v_HK & 1))))))) | (!v_CPR3 & ((v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_POR1_2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))) | (!v_POR1_2 & 1))))) | (!v_HK & 1))) | (!v_H2O2 & ((v_HK & ((v_MG2 & 1) | (!v_MG2 & ((v_ROS_CYT & 1) | (!v_ROS_CYT & ((v_STM1_CYT & ((v_YCA1 & 1) | (!v_YCA1 & 0))) | (!v_STM1_CYT & 1))))))) | (!v_HK & 1))))))))))))"
+    },
+    {
+      "node": "v_AdenylateCyclase",
+      "support": [
+        "v_RAS2",
+        "v_Stress"
+      ],
+      "function": "v_RAS2 | v_Stress"
+    },
+    {
+      "node": "v_DesCyclinCCDK8",
+      "support": [
+        "v_SLT2"
+      ],
+      "function": "!v_SLT2"
+    },
+    {
+      "node": "v_MCD1_NUC",
+      "support": [
+        "v_ESP1"
+      ],
+      "function": "v_ESP1"
+    },
+    {
+      "node": "v_MEC1",
+      "support": [
+        "v_AbnormalTelomer"
+      ],
+      "function": "v_AbnormalTelomer"
+    },
+    {
+      "node": "v_SRO7",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_BIR1",
+      "support": [
+        "v_NMA111_NUC"
+      ],
+      "function": "!v_NMA111_NUC"
+    },
+    {
+      "node": "v_YCA1",
+      "support": [
+        "v_AbnormalTelomer",
+        "v_CytC_MT",
+        "v_HK",
+        "v_MT_Frag",
+        "v_ROS_CYT",
+        "v_RedActinDyn",
+        "v_Salt"
+      ],
+      "function": "v_AbnormalTelomer | v_CytC_MT | v_HK | v_MT_Frag | v_ROS_CYT | v_RedActinDyn | v_Salt"
+    },
+    {
+      "node": "v_MDV1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_ROS_MT",
+      "support": [
+        "v_HK",
+        "v_NDI1"
+      ],
+      "function": "!v_HK & v_NDI1"
+    },
+    {
+      "node": "v_MT_ALT",
+      "support": [
+        "v_MMI1",
+        "v_MT_Frag",
+        "v_PKA",
+        "v_RAS2"
+      ],
+      "function": "v_MMI1 | v_MT_Frag | v_PKA | v_RAS2"
+    },
+    {
+      "node": "v_NDI1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_POR1_2",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_HOS3",
+      "support": [
+        "v_H2O2"
+      ],
+      "function": "v_H2O2"
+    },
+    {
+      "node": "v_STM1_CYT",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_AIF1_MT",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_SVF1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_FIS1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_STE20_NUC",
+      "support": [
+        "v_MAPK"
+      ],
+      "function": "v_MAPK"
+    },
+    {
+      "node": "v_NUC1_MT",
+      "support": [
+        "v_H2O2"
+      ],
+      "function": "v_H2O2"
+    },
+    {
+      "node": "v_MSN2_4",
+      "support": [
+        "v_PKA"
+      ],
+      "function": "v_PKA"
+    },
+    {
+      "node": "v_MCD1_MT",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_ESP1",
+      "support": [
+        "v_H2O2"
+      ],
+      "function": "v_H2O2"
+    },
+    {
+      "node": "v_MAPK",
+      "support": [
+        "v_Mating"
+      ],
+      "function": "v_Mating"
+    },
+    {
+      "node": "v_PTP2",
+      "support": [
+        "v_HOG1",
+        "v_SLT2"
+      ],
+      "function": "v_HOG1 | v_SLT2"
+    },
+    {
+      "node": "v_EMC4",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_DRE2_TAH18",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_PKA",
+      "support": [
+        "v_Heat",
+        "v_RAS2"
+      ],
+      "function": "v_Heat | v_RAS2"
+    },
+    {
+      "node": "v_CytC_MT",
+      "support": [
+        "v_AceticAcid",
+        "v_HK"
+      ],
+      "function": "v_AceticAcid | v_HK"
+    },
+    {
+      "node": "v_PTP3",
+      "support": [
+        "v_HOG1"
+      ],
+      "function": "v_HOG1"
+    },
+    {
+      "node": "v_RAS2",
+      "support": [
+        "v_RedActinDyn",
+        "v_TOR1"
+      ],
+      "function": "v_RedActinDyn | v_TOR1"
+    },
+    {
+      "node": "v_SOD1",
+      "support": [
+        "v_Heat"
+      ],
+      "function": "v_Heat"
+    },
+    {
+      "node": "v_NMA111_NUC",
+      "support": [
+        "v_NMA111_CYT"
+      ],
+      "function": "v_NMA111_CYT"
+    },
+    {
+      "node": "v_CAMP",
+      "support": [
+        "v_RedActinDyn",
+        "v_Stress",
+        "v_TOR1"
+      ],
+      "function": "v_RedActinDyn | v_Stress | v_TOR1"
+    },
+    {
+      "node": "v_TOR1",
+      "support": [
+        "v_Stress"
+      ],
+      "function": "v_Stress"
+    },
+    {
+      "node": "v_RPD3",
+      "support": [
+        "v_Stress"
+      ],
+      "function": "v_Stress"
+    },
+    {
+      "node": "v_KAP123",
+      "support": [
+        "v_H2O2"
+      ],
+      "function": "v_H2O2"
+    },
+    {
+      "node": "v_SDP1",
+      "support": [
+        "v_Heat",
+        "v_RedActinDyn",
+        "v_Stress"
+      ],
+      "function": "v_Heat | v_RedActinDyn | v_Stress"
+    },
+    {
+      "node": "v_MMI1",
+      "support": [
+        "v_HK"
+      ],
+      "function": "v_HK"
+    },
+    {
+      "node": "v_SLT2",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_ROS_CYT",
+      "support": [
+        "v_AceticAcid",
+        "v_H2O2",
+        "v_HK",
+        "v_Heat",
+        "v_RedActinDyn",
+        "v_Salt",
+        "v_Stress"
+      ],
+      "function": "v_AceticAcid | v_H2O2 | v_HK | v_Heat | v_RedActinDyn | v_Salt | v_Stress"
+    },
+    {
+      "node": "v_NMA111_CYT",
+      "support": [
+        "v_Heat"
+      ],
+      "function": "v_Heat"
+    }
+  ],
+  "seconds": 0.5130088999867439
+}

@@ -5,7 +5,37 @@ Reproducible analysis of Boolean network reduction on biological models from Cel
 
 Primera versión experimental en Python de los pasos S/R de Veliz-Cuba,
 con caracterización antes/después y reconstrucción de puntos fijos.
-El núcleo está implementado aquí, sin utilizar BNReduction ni dependencias externas.
+El algoritmo de eliminación está implementado aquí, sin utilizar BNReduction.
+El motor del piloto usa tablas de verdad sin dependencias; el motor del censo usa
+`dd` para representar funciones y `z3-solver` para comprobar la conservación de puntos fijos.
+
+## Censo y ejemplos para el artículo
+
+- [Catálogo público directo de Cell Collective](docs/censo_live.md).
+- [78 instancias archivadas en BBM](docs/censo_catalogue.md).
+- [Definiciones, fuentes y límites del censo](docs/metodo_censo.md).
+- [Funciones de los dos candidatos iniciales](docs/candidatos.md).
+
+Cada informe enlaza la tabla completa, la clasificación local de cada función,
+los conflictos de signo, las funciones reducidas y la traza de reconstrucción.
+
+Para reproducir el censo (Python 3.11 o superior):
+
+```powershell
+python -m pip install -e ".[research]"
+python scripts/fetch_catalogue.py
+python scripts/probe_cellcollective.py
+python scripts/fetch_live.py
+python experiments/run_catalogue.py --dataset cellcollective --timeout 240
+python experiments/run_catalogue.py --dataset live --timeout 240
+python experiments/report_catalogue.py --dataset cellcollective
+python experiments/report_catalogue.py --dataset live
+python -m unittest discover -s tests -v
+```
+
+Los archivos ya descargados se reutilizan. Los resultados completos también se
+reutilizan al reanudar; para un experimento nuevo con cambios del algoritmo hay
+que guardar los resultados anteriores en otra carpeta antes de ejecutar de nuevo.
 
 **Si es tu primera vez en este proyecto:** empieza por
 [la guía de inicio y resumen](docs/INICIO.md). Explica qué hay hecho, dónde está

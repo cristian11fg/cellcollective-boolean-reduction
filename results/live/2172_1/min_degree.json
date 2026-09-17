@@ -1,0 +1,496 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2172_1",
+  "name": "Cholesterol Regulatory Pathway",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 34,
+  "after": {
+    "nodes": 2,
+    "n_nodes": 2,
+    "inputs": 0,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Statins": "+",
+      "v_Acetyl_CoA": "+"
+    },
+    "positive_edges": 2,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 2,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_Statins": {
+        "signs": {
+          "v_Statins": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Acetyl_CoA": {
+        "signs": {
+          "v_Acetyl_CoA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 2,
+    "n_nodes": 2,
+    "inputs": 0,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Statins": "+",
+      "v_Acetyl_CoA": "+"
+    },
+    "positive_edges": 2,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 2,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_Statins": {
+        "signs": {
+          "v_Statins": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Acetyl_CoA": {
+        "signs": {
+          "v_Acetyl_CoA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 4,
+    "examples": [
+      {
+        "v_Acetyl_CoA": 0,
+        "v_Statins": 0
+      },
+      {
+        "v_Acetyl_CoA": 1,
+        "v_Statins": 0
+      },
+      {
+        "v_Acetyl_CoA": 1,
+        "v_Statins": 1
+      },
+      {
+        "v_Acetyl_CoA": 0,
+        "v_Statins": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_Statins": "v_Statins",
+    "v_Acetyl_CoA": "v_Acetyl_CoA"
+  },
+  "steps": [
+    {
+      "node": "v_Cyp51",
+      "support": [
+        "v_Cyp51_RNA"
+      ],
+      "function": "v_Cyp51_RNA"
+    },
+    {
+      "node": "v_Cyp51_RNA",
+      "support": [
+        "v_Cyp51_gene"
+      ],
+      "function": "v_Cyp51_gene"
+    },
+    {
+      "node": "v_Cyp51_gene",
+      "support": [
+        "v_mSREBP"
+      ],
+      "function": "v_mSREBP"
+    },
+    {
+      "node": "v_Acetyl_CoA_acetyltransferase",
+      "support": [
+        "v_Acetyl_CoA_acetyltransferase_RNA"
+      ],
+      "function": "v_Acetyl_CoA_acetyltransferase_RNA"
+    },
+    {
+      "node": "v_Acetyl_CoA_acetyltransferase_RNA",
+      "support": [
+        "v_Acetyl_CoA_acetyltransferase_gene"
+      ],
+      "function": "v_Acetyl_CoA_acetyltransferase_gene"
+    },
+    {
+      "node": "v_Acetyl_CoA_acetyltransferase_gene",
+      "support": [
+        "v_mSREBP"
+      ],
+      "function": "v_mSREBP"
+    },
+    {
+      "node": "v_Desmosterol",
+      "support": [
+        "v_Lanosterol"
+      ],
+      "function": "v_Lanosterol"
+    },
+    {
+      "node": "v_Dimethyl_allyl_pyrophosphate",
+      "support": [
+        "v_Isopentenyl_pyrophosphate"
+      ],
+      "function": "v_Isopentenyl_pyrophosphate"
+    },
+    {
+      "node": "v_FPP_Synthase",
+      "support": [
+        "v_FPP_Synthase_RNA"
+      ],
+      "function": "v_FPP_Synthase_RNA"
+    },
+    {
+      "node": "v_FPP_Synthase_RNA",
+      "support": [
+        "v_FPP_Synthase_gene"
+      ],
+      "function": "v_FPP_Synthase_gene"
+    },
+    {
+      "node": "v_FPP_Synthase_gene",
+      "support": [
+        "v_mSREBP"
+      ],
+      "function": "v_mSREBP"
+    },
+    {
+      "node": "v_Geranyl_pyrophosphate",
+      "support": [
+        "v_Isopentenyl_pyrophosphate"
+      ],
+      "function": "v_Isopentenyl_pyrophosphate"
+    },
+    {
+      "node": "v_HMG_CoA_Reductase_RNA",
+      "support": [
+        "v_HMG_CoA_Reductase_gene"
+      ],
+      "function": "v_HMG_CoA_Reductase_gene"
+    },
+    {
+      "node": "v_HMG_CoA_Reductase_gene",
+      "support": [
+        "v_mSREBP"
+      ],
+      "function": "v_mSREBP"
+    },
+    {
+      "node": "v_HMG_CoA_Synthase",
+      "support": [
+        "v_HMG_CoA_Synthase_RNA"
+      ],
+      "function": "v_HMG_CoA_Synthase_RNA"
+    },
+    {
+      "node": "v_HMG_CoA_Synthase_RNA",
+      "support": [
+        "v_HMG_CoA_Synthase_gene"
+      ],
+      "function": "v_HMG_CoA_Synthase_gene"
+    },
+    {
+      "node": "v_HMG_CoA_Synthase_gene",
+      "support": [
+        "v_mSREBP"
+      ],
+      "function": "v_mSREBP"
+    },
+    {
+      "node": "v_Insig_SREBP_SCAP",
+      "support": [
+        "v_Cholesterol"
+      ],
+      "function": "!v_Cholesterol"
+    },
+    {
+      "node": "v_Isopentenyl_pyrophosphate",
+      "support": [
+        "v_Mevalonyl_pyrophosphate"
+      ],
+      "function": "v_Mevalonyl_pyrophosphate"
+    },
+    {
+      "node": "v_Mevalonyl_pyrophosphate",
+      "support": [
+        "v_Mevalonic_Acid"
+      ],
+      "function": "v_Mevalonic_Acid"
+    },
+    {
+      "node": "v_Septdehydrocholesterol",
+      "support": [
+        "v_Lanosterol"
+      ],
+      "function": "v_Lanosterol"
+    },
+    {
+      "node": "v_Cholesterol",
+      "support": [
+        "v_Lanosterol"
+      ],
+      "function": "v_Lanosterol"
+    },
+    {
+      "node": "v_Lanosterol",
+      "support": [
+        "v_Squaline"
+      ],
+      "function": "v_Squaline"
+    },
+    {
+      "node": "v_Squaline",
+      "support": [
+        "v_Farnesyl_pyrophosphate"
+      ],
+      "function": "v_Farnesyl_pyrophosphate"
+    },
+    {
+      "node": "v_pSREBP",
+      "support": [
+        "v_SREBP_SCAP"
+      ],
+      "function": "v_SREBP_SCAP"
+    },
+    {
+      "node": "v_Acetoacetyl_CoA",
+      "support": [
+        "v_Acetyl_CoA",
+        "v_mSREBP"
+      ],
+      "function": "v_Acetyl_CoA & v_mSREBP"
+    },
+    {
+      "node": "v_Farnesyl_pyrophosphate",
+      "support": [
+        "v_Mevalonic_Acid",
+        "v_mSREBP"
+      ],
+      "function": "v_Mevalonic_Acid & !v_mSREBP"
+    },
+    {
+      "node": "v_HMG_CoA",
+      "support": [
+        "v_Acetyl_CoA",
+        "v_mSREBP"
+      ],
+      "function": "v_Acetyl_CoA & v_mSREBP"
+    },
+    {
+      "node": "v_HMG_CoA_Reductase",
+      "support": [
+        "v_Statins",
+        "v_mSREBP"
+      ],
+      "function": "!v_Statins & v_mSREBP"
+    },
+    {
+      "node": "v_mSREBP",
+      "support": [
+        "v_SREBP_SCAP"
+      ],
+      "function": "v_SREBP_SCAP"
+    },
+    {
+      "node": "v_Mevalonic_Acid",
+      "support": [
+        "v_Acetyl_CoA",
+        "v_SREBP_SCAP",
+        "v_Statins"
+      ],
+      "function": "v_Acetyl_CoA & v_SREBP_SCAP & !v_Statins"
+    },
+    {
+      "node": "v_SREBP_SCAP",
+      "support": [
+        "v_Statins"
+      ],
+      "function": "!v_Statins"
+    }
+  ],
+  "seconds": 0.04782650002744049
+}

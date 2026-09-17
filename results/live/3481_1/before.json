@@ -1,0 +1,6808 @@
+{
+  "id": "3481_1",
+  "name": "Influenza A Virus Replication Cycle",
+  "source": {
+    "id": "3481_1",
+    "cellcollective_id": 3481,
+    "version": "1",
+    "name": "Influenza A Virus Replication Cycle",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/#module/3481:1"
+    ],
+    "export_url": "https://research.cellcollective.org/web/_api/model/export/3481?version=1&type=EXPR",
+    "status": "downloaded",
+    "files": [
+      {
+        "name": "export.zip",
+        "sha256": "8814ea20f802600e80de49ef08dc541904e72494972d306f572ac1c34cf4e0e9"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "54c13438e69237da69fc844beda43cfeec8e25c9cecc4abfe848a8aa1d0c7d81"
+      },
+      {
+        "name": "metadata.json",
+        "sha256": "78b21d3433f8189f3797f7368014d98bf5ba8ea3f6a3a15b1c36447c29f2f590"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 131,
+    "n_nodes": 131,
+    "inputs": 11,
+    "internal_nodes": 120,
+    "nonconstant_rules": 120,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_mRNA_PB1_nuc": "+",
+      "v_mRNA_PB1_cyto": "+",
+      "v_temp_vRNP_PB1_nuc": "+",
+      "v_NP_nuc": "+",
+      "v_PB1_PA_nuc": "+",
+      "v_PB2_nuc": "+",
+      "v_cRNA_PB1": "+",
+      "v_par_vRNP_PB1_cyto": "+",
+      "v_vRNA_PB1": "+",
+      "v_vRNA_PB1_M1": "+",
+      "v_M1_nuc": "+",
+      "v_pro_vRNP_PB1_M1_nuc": "+",
+      "v_M1_M1": "-",
+      "v_vRNA_NP_M1": "+",
+      "v_vRNA_PB2_M1": "+",
+      "v_M1_cyto": "-",
+      "v_vRNA_NA_M1": "+",
+      "v_vRNA_HA_M1": "+",
+      "v_vRNA_NS_M1": "+",
+      "v_vRNA_PA_M1": "+",
+      "v_vRNA_M_M1": "+",
+      "v_vRNA_M": "+",
+      "v_pro_vRNP_M_M1_nuc": "+",
+      "v_pro_vRNP_M_M1_cyto": "-",
+      "v_Progeny_Virion": "-",
+      "v_NS2_CellularFactor": "-",
+      "v_NS2_cyto": "-",
+      "v_pro_vRNP_PB2_M1_cyto": "-",
+      "v_pro_vRNP_HA_M1_cyto": "-",
+      "v_pro_vRNP_PA_M1_cyto": "-",
+      "v_pro_vRNP_PB1_M1_cyto": "-",
+      "v_pro_vRNP_NP_M1_cyto": "-",
+      "v_pro_vRNP_NA_M1_cyto": "-",
+      "v_pro_vRNP_NS_M1_cyto": "-",
+      "v_mRNA_NS2_cyto": "-",
+      "v_mRNA_NS2_nuc": "-",
+      "v_temp_vRNP_NS_nuc": "-",
+      "v_cRNA_NS": "-",
+      "v_mRNA_NS1_nuc": "-",
+      "v_par_vRNP_NS_cyto": "-",
+      "v_vRNA_NS": "-",
+      "v_IVA_LE": "-",
+      "v_IVA_ME": "-",
+      "v_M2_inhibitor": "+",
+      "v_PKC": "-",
+      "v_par_vRNP_PA_cyto": "-",
+      "v_par_vRNP_HA_cyto": "-",
+      "v_par_vRNP_NA_cyto": "-",
+      "v_par_vRNP_PB2_cyto": "-",
+      "v_par_vRNP_NP_cyto": "-",
+      "v_par_vRNP_M_cyto": "-",
+      "v_temp_vRNP_M_nuc": "-",
+      "v_mRNA_M1_nuc": "-",
+      "v_mRNA_M2_nuc": "-",
+      "v_cRNA_M": "-",
+      "v_cRNP_M": "-",
+      "v_mRNA_M2_cyto": "-",
+      "v_M2_cyto": "-",
+      "v_mRNA_M1_cyto": "-",
+      "v_temp_vRNP_NP_nuc": "-",
+      "v_vRNA_NP": "-",
+      "v_mRNA_NP_nuc": "-",
+      "v_cRNA_NP": "-",
+      "v_cRNP_NP": "-",
+      "v_mRNA_NP_cyto": "-",
+      "v_NP_cyto": "-",
+      "v_temp_vRNP_PB2_nuc": "-",
+      "v_cRNA_PB2": "-",
+      "v_mRNA_PB2_nuc": "-",
+      "v_vRNA_PB2": "-",
+      "v_mRNA_PB2_cyto": "-",
+      "v_PB2_cyto": "-",
+      "v_cRNP_PB2": "-",
+      "v_temp_vRNP_NA_nuc": "-",
+      "v_mRNA_NA_nuc": "-",
+      "v_cRNA_NA": "-",
+      "v_vRNA_NA": "-",
+      "v_cRNP_NA": "-",
+      "v_mRNA_NA_cyto": "-",
+      "v_NA_cyto": "-",
+      "v_NA_LipidRafts": "-",
+      "v_HA_LipidRafts": "-",
+      "v_Methyl_Beta_Cyclodextrin": "+",
+      "v_Neuraminidase_inhibitor": "+",
+      "v_RTK": "-",
+      "v_IVA_SialicAcid": "-",
+      "v_PI3K": "-",
+      "v_RTK_Inhibitor": "+",
+      "v_NS1_cyto": "-",
+      "v_Wortmannin": "+",
+      "v_PIP2": "-",
+      "v_PIP3": "-",
+      "v_IVA_EE": "-",
+      "v_IVA_SialicAcid_CCV": "-",
+      "v_IVA_SialicAcid_CCP": "-",
+      "v_mRNA_NS1_cyto": "-",
+      "v_HA_SialicAcid_Affinity": "-",
+      "v_IVA_HA1_HA2": "-",
+      "v_Infected": "-",
+      "v_Raf": "-",
+      "v_cRNP_HA": "-",
+      "v_cRNA_HA": "-",
+      "v_vRNA_HA": "-",
+      "v_temp_vRNP_HA_nuc": "-",
+      "v_mRNA_HA_nuc": "-",
+      "v_mRNA_HA_cyto": "-",
+      "v_HA_cyto": "-",
+      "v_MEK": "-",
+      "v_U0126": "+",
+      "v_ERK": "-",
+      "v_Viral_Dose": "-",
+      "v_temp_vRNP_PA_nuc": "-",
+      "v_vRNA_PA": "-",
+      "v_cRNA_PA": "-",
+      "v_mRNA_PA_nuc": "-",
+      "v_mRNA_PA_cyto": "-",
+      "v_PA_cyto": "-",
+      "v_PB1_PA_cyto": "-",
+      "v_PB1_PA_Interface_Inhibitor": "+",
+      "v_PB1_cyto": "-",
+      "v_PB1_Inhibitor": "+",
+      "v_cRNP_PA": "-",
+      "v_Bisindolylmaleimide_I": "+",
+      "v_cRNP_NS": "-",
+      "v_pro_vRNP_NS_M1_nuc": "+",
+      "v_pro_vRNP_NA_M1_nuc": "+",
+      "v_pro_vRNP_NP_M1_nuc": "+",
+      "v_pro_vRNP_PA_M1_nuc": "+",
+      "v_pro_vRNP_HA_M1_nuc": "+",
+      "v_pro_vRNP_PB2_M1_nuc": "+",
+      "v_cRNP_PB1": "+"
+    },
+    "positive_edges": 267,
+    "negative_edges": 27,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 294,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "MIN_MAX": 57,
+      "MIN": 45,
+      "UNATE_OTHER": 18
+    },
+    "conflicts": {
+      "v_pro_vRNP_HA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_HA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_M_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NP_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NS_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PB1_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PB2_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-"
+      },
+      "v_vRNA_NP_M1": {
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_PB1_M1": {
+        "v_pro_vRNP_PB1_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_PB2_M1": {
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_NA_M1": {
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_HA_M1": {
+        "v_pro_vRNP_HA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_NS_M1": {
+        "v_pro_vRNP_NS_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_PA_M1": {
+        "v_pro_vRNP_PA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_M_M1": {
+        "v_M1_M1": "-",
+        "v_pro_vRNP_M_M1_nuc": "+"
+      }
+    },
+    "local": {
+      "v_mRNA_PB1_cyto": {
+        "signs": {
+          "v_mRNA_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Progeny_Virion": {
+        "signs": {
+          "v_HA_LipidRafts": "+",
+          "v_M2_cyto": "+",
+          "v_NA_LipidRafts": "+",
+          "v_pro_vRNP_HA_M1_cyto": "+",
+          "v_pro_vRNP_M_M1_cyto": "+",
+          "v_pro_vRNP_NA_M1_cyto": "+",
+          "v_pro_vRNP_NP_M1_cyto": "+",
+          "v_pro_vRNP_NS_M1_cyto": "+",
+          "v_pro_vRNP_PA_M1_cyto": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "+",
+          "v_pro_vRNP_PB2_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PA_cyto": "+",
+          "v_vRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PB2": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PB2": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_PB1": {
+        "signs": {
+          "v_cRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NP_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_PB1": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB1_PA_cyto": {
+        "signs": {
+          "v_PA_cyto": "+",
+          "v_PB1_PA_Interface_Inhibitor": "-",
+          "v_PB1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_LE": {
+        "signs": {
+          "v_IVA_ME": "+",
+          "v_M2_inhibitor": "-",
+          "v_PKC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_NP": {
+        "signs": {
+          "v_cRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PB2_cyto": {
+        "signs": {
+          "v_mRNA_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NP_nuc": {
+        "signs": {
+          "v_NP_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NP_M1_cyto": "-",
+          "v_vRNA_NP_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NS2_cyto": {
+        "signs": {
+          "v_mRNA_NS2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid": {
+        "signs": {
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_IVA_HA1_HA2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PA": "+",
+          "v_temp_vRNP_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_PA": {
+        "signs": {
+          "v_cRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NP_nuc": {
+        "signs": {
+          "v_temp_vRNP_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PB2_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_HA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NS": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB2_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PB2_cyto": "+",
+          "v_vRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_M1_nuc": {
+        "signs": {
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid_CCP": {
+        "signs": {
+          "v_IVA_SialicAcid": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_NS1_cyto": "+",
+          "v_RTK": "+",
+          "v_Wortmannin": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_M_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PA_cyto": {
+        "signs": {
+          "v_mRNA_PA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NP_cyto": {
+        "signs": {
+          "v_mRNA_NP_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_HA": {
+        "signs": {
+          "v_cRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_HA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_HA_cyto": "+",
+          "v_vRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_PA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PB1_nuc": {
+        "signs": {
+          "v_temp_vRNP_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M1_cyto": {
+        "signs": {
+          "v_mRNA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_PB1_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB2_nuc": {
+        "signs": {
+          "v_PB2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_HA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M2_nuc": {
+        "signs": {
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_PA_nuc": {
+        "signs": {
+          "v_PB1_PA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PB1_cyto": "+",
+          "v_vRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HA_LipidRafts": {
+        "signs": {
+          "v_HA_cyto": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_HA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NP": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB1_cyto": {
+        "signs": {
+          "v_PB1_Inhibitor": "-",
+          "v_mRNA_PB1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_NA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M1_cyto": {
+        "signs": {
+          "v_mRNA_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M2_cyto": {
+        "signs": {
+          "v_mRNA_M2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB1_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_PB2_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_ME": {
+        "signs": {
+          "v_IVA_EE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "-",
+          "v_vRNA_PB1_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NS1_nuc": {
+        "signs": {
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_M": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MEK": {
+        "signs": {
+          "v_Raf": "+",
+          "v_U0126": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_M_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_M": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK": {
+        "signs": {
+          "v_MEK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB2": {
+        "signs": {
+          "v_cRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PB1_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NP_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP2": {
+        "signs": {
+          "v_PI3K": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Raf": {
+        "signs": {
+          "v_Infected": "+",
+          "v_PKC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_HA1_HA2": {
+        "signs": {
+          "v_Viral_Dose": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PB2_M1_cyto": "-",
+          "v_vRNA_PB2_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_M": {
+        "signs": {
+          "v_cRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NS2_nuc": {
+        "signs": {
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_M_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_M_cyto": "+",
+          "v_vRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NA_nuc": {
+        "signs": {
+          "v_temp_vRNP_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NS1_cyto": {
+        "signs": {
+          "v_mRNA_NS1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RTK": {
+        "signs": {
+          "v_IVA_SialicAcid": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_RTK_Inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_HA_cyto": {
+        "signs": {
+          "v_mRNA_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_PB1": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PB1": "+",
+          "v_temp_vRNP_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NS1_cyto": {
+        "signs": {
+          "v_mRNA_NS1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_NP_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_PB2": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_M1_nuc": {
+        "signs": {
+          "v_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PA_nuc": {
+        "signs": {
+          "v_temp_vRNP_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_PB2_nuc": {
+        "signs": {
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_NP_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NP_cyto": "+",
+          "v_vRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_HA_nuc": {
+        "signs": {
+          "v_temp_vRNP_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_NP": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NP": "+",
+          "v_temp_vRNP_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NS2_CellularFactor": {
+        "signs": {
+          "v_ERK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_EE": {
+        "signs": {
+          "v_IVA_SialicAcid_CCV": "+",
+          "v_PIP3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB2_cyto": {
+        "signs": {
+          "v_mRNA_PB2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB2_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NA_M1_cyto": "-",
+          "v_vRNA_NA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Infected": {
+        "signs": {
+          "v_IVA_SialicAcid": "+",
+          "v_cRNP_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKC": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_LipidRafts": "+",
+          "v_PI3K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_HA_M1_cyto": "-",
+          "v_vRNA_HA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NS_cyto": "+",
+          "v_vRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_PA_cyto": {
+        "signs": {
+          "v_mRNA_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_PA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_M_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NA": {
+        "signs": {
+          "v_cRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_NA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NA_cyto": "+",
+          "v_vRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NS_M1_cyto": "-",
+          "v_vRNA_NS_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PA_M1_cyto": "-",
+          "v_vRNA_PA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NS": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NA_cyto": {
+        "signs": {
+          "v_mRNA_NA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NS_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HA_cyto": {
+        "signs": {
+          "v_mRNA_HA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_PIP2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M2_cyto": {
+        "signs": {
+          "v_mRNA_M2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NP_cyto": {
+        "signs": {
+          "v_mRNA_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_HA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_HA": "+",
+          "v_temp_vRNP_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_NS_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NA_LipidRafts": {
+        "signs": {
+          "v_HA_LipidRafts": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_NA_cyto": "+",
+          "v_Neuraminidase_inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_HA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NA": "+",
+          "v_temp_vRNP_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid_CCV": {
+        "signs": {
+          "v_IVA_SialicAcid_CCP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NS2_cyto": {
+        "signs": {
+          "v_mRNA_NS2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NS": {
+        "signs": {
+          "v_cRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NA_cyto": {
+        "signs": {
+          "v_mRNA_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M1_M1": {
+        "signs": {
+          "v_M1_cyto": "+",
+          "v_vRNA_HA_M1": "-",
+          "v_vRNA_M_M1": "-",
+          "v_vRNA_NA_M1": "-",
+          "v_vRNA_NP_M1": "-",
+          "v_vRNA_NS_M1": "-",
+          "v_vRNA_PA_M1": "-",
+          "v_vRNA_PB1_M1": "-",
+          "v_vRNA_PB2_M1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_M_M1_cyto": "-",
+          "v_vRNA_M_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NS_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 131,
+    "n_nodes": 131,
+    "inputs": 11,
+    "internal_nodes": 120,
+    "nonconstant_rules": 131,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 11,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_mRNA_PB1_nuc": "+",
+      "v_mRNA_PB1_cyto": "+",
+      "v_temp_vRNP_PB1_nuc": "+",
+      "v_NP_nuc": "+",
+      "v_PB1_PA_nuc": "+",
+      "v_PB2_nuc": "+",
+      "v_cRNA_PB1": "+",
+      "v_par_vRNP_PB1_cyto": "+",
+      "v_vRNA_PB1": "+",
+      "v_vRNA_PB1_M1": "+",
+      "v_M1_nuc": "+",
+      "v_pro_vRNP_PB1_M1_nuc": "+",
+      "v_M1_M1": "-",
+      "v_vRNA_NP_M1": "+",
+      "v_vRNA_PB2_M1": "+",
+      "v_M1_cyto": "-",
+      "v_vRNA_NA_M1": "+",
+      "v_vRNA_HA_M1": "+",
+      "v_vRNA_NS_M1": "+",
+      "v_vRNA_PA_M1": "+",
+      "v_vRNA_M_M1": "+",
+      "v_vRNA_M": "+",
+      "v_pro_vRNP_M_M1_nuc": "+",
+      "v_pro_vRNP_M_M1_cyto": "-",
+      "v_Progeny_Virion": "-",
+      "v_NS2_CellularFactor": "-",
+      "v_NS2_cyto": "-",
+      "v_pro_vRNP_PB2_M1_cyto": "-",
+      "v_pro_vRNP_HA_M1_cyto": "-",
+      "v_pro_vRNP_PA_M1_cyto": "-",
+      "v_pro_vRNP_PB1_M1_cyto": "-",
+      "v_pro_vRNP_NP_M1_cyto": "-",
+      "v_pro_vRNP_NA_M1_cyto": "-",
+      "v_pro_vRNP_NS_M1_cyto": "-",
+      "v_mRNA_NS2_cyto": "-",
+      "v_mRNA_NS2_nuc": "-",
+      "v_temp_vRNP_NS_nuc": "-",
+      "v_cRNA_NS": "-",
+      "v_mRNA_NS1_nuc": "-",
+      "v_par_vRNP_NS_cyto": "-",
+      "v_vRNA_NS": "-",
+      "v_IVA_LE": "-",
+      "v_IVA_ME": "-",
+      "v_M2_inhibitor": "+",
+      "v_PKC": "-",
+      "v_par_vRNP_PA_cyto": "-",
+      "v_par_vRNP_HA_cyto": "-",
+      "v_par_vRNP_NA_cyto": "-",
+      "v_par_vRNP_PB2_cyto": "-",
+      "v_par_vRNP_NP_cyto": "-",
+      "v_par_vRNP_M_cyto": "-",
+      "v_temp_vRNP_M_nuc": "-",
+      "v_mRNA_M1_nuc": "-",
+      "v_mRNA_M2_nuc": "-",
+      "v_cRNA_M": "-",
+      "v_cRNP_M": "-",
+      "v_mRNA_M2_cyto": "-",
+      "v_M2_cyto": "-",
+      "v_mRNA_M1_cyto": "-",
+      "v_temp_vRNP_NP_nuc": "-",
+      "v_vRNA_NP": "-",
+      "v_mRNA_NP_nuc": "-",
+      "v_cRNA_NP": "-",
+      "v_cRNP_NP": "-",
+      "v_mRNA_NP_cyto": "-",
+      "v_NP_cyto": "-",
+      "v_temp_vRNP_PB2_nuc": "-",
+      "v_cRNA_PB2": "-",
+      "v_mRNA_PB2_nuc": "-",
+      "v_vRNA_PB2": "-",
+      "v_mRNA_PB2_cyto": "-",
+      "v_PB2_cyto": "-",
+      "v_cRNP_PB2": "-",
+      "v_temp_vRNP_NA_nuc": "-",
+      "v_mRNA_NA_nuc": "-",
+      "v_cRNA_NA": "-",
+      "v_vRNA_NA": "-",
+      "v_cRNP_NA": "-",
+      "v_mRNA_NA_cyto": "-",
+      "v_NA_cyto": "-",
+      "v_NA_LipidRafts": "-",
+      "v_HA_LipidRafts": "-",
+      "v_Methyl_Beta_Cyclodextrin": "+",
+      "v_Neuraminidase_inhibitor": "+",
+      "v_RTK": "-",
+      "v_IVA_SialicAcid": "-",
+      "v_PI3K": "-",
+      "v_RTK_Inhibitor": "+",
+      "v_NS1_cyto": "-",
+      "v_Wortmannin": "+",
+      "v_PIP2": "-",
+      "v_PIP3": "-",
+      "v_IVA_EE": "-",
+      "v_IVA_SialicAcid_CCV": "-",
+      "v_IVA_SialicAcid_CCP": "-",
+      "v_mRNA_NS1_cyto": "-",
+      "v_HA_SialicAcid_Affinity": "-",
+      "v_IVA_HA1_HA2": "-",
+      "v_Infected": "-",
+      "v_Raf": "-",
+      "v_cRNP_HA": "-",
+      "v_cRNA_HA": "-",
+      "v_vRNA_HA": "-",
+      "v_temp_vRNP_HA_nuc": "-",
+      "v_mRNA_HA_nuc": "-",
+      "v_mRNA_HA_cyto": "-",
+      "v_HA_cyto": "-",
+      "v_MEK": "-",
+      "v_U0126": "+",
+      "v_ERK": "-",
+      "v_Viral_Dose": "-",
+      "v_temp_vRNP_PA_nuc": "-",
+      "v_vRNA_PA": "-",
+      "v_cRNA_PA": "-",
+      "v_mRNA_PA_nuc": "-",
+      "v_mRNA_PA_cyto": "-",
+      "v_PA_cyto": "-",
+      "v_PB1_PA_cyto": "-",
+      "v_PB1_PA_Interface_Inhibitor": "+",
+      "v_PB1_cyto": "-",
+      "v_PB1_Inhibitor": "+",
+      "v_cRNP_PA": "-",
+      "v_Bisindolylmaleimide_I": "+",
+      "v_cRNP_NS": "-",
+      "v_pro_vRNP_NS_M1_nuc": "+",
+      "v_pro_vRNP_NA_M1_nuc": "+",
+      "v_pro_vRNP_NP_M1_nuc": "+",
+      "v_pro_vRNP_PA_M1_nuc": "+",
+      "v_pro_vRNP_HA_M1_nuc": "+",
+      "v_pro_vRNP_PB2_M1_nuc": "+",
+      "v_cRNP_PB1": "+"
+    },
+    "positive_edges": 278,
+    "negative_edges": 27,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 305,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "MIN_MAX": 68,
+      "MIN": 45,
+      "UNATE_OTHER": 18
+    },
+    "conflicts": {
+      "v_pro_vRNP_HA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_HA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_M_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NP_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NP_M1_nuc": "-"
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_NS_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PA_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PB1_M1_nuc": "-"
+      },
+      "v_pro_vRNP_PB2_M1_cyto": {
+        "v_Progeny_Virion": "+",
+        "v_pro_vRNP_PB2_M1_nuc": "-"
+      },
+      "v_PB1_PA_Interface_Inhibitor": {
+        "v_PB1_PA_cyto": "-",
+        "v_PB1_PA_Interface_Inhibitor": "+"
+      },
+      "v_M2_inhibitor": {
+        "v_IVA_LE": "-",
+        "v_M2_inhibitor": "+"
+      },
+      "v_vRNA_NP_M1": {
+        "v_pro_vRNP_NP_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_Wortmannin": {
+        "v_PI3K": "-",
+        "v_Wortmannin": "+"
+      },
+      "v_Methyl_Beta_Cyclodextrin": {
+        "v_HA_LipidRafts": "-",
+        "v_RTK": "-",
+        "v_NA_LipidRafts": "-",
+        "v_Methyl_Beta_Cyclodextrin": "+"
+      },
+      "v_PB1_Inhibitor": {
+        "v_PB1_cyto": "-",
+        "v_PB1_Inhibitor": "+"
+      },
+      "v_vRNA_PB1_M1": {
+        "v_pro_vRNP_PB1_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_U0126": {
+        "v_MEK": "-",
+        "v_U0126": "+"
+      },
+      "v_vRNA_PB2_M1": {
+        "v_pro_vRNP_PB2_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_RTK_Inhibitor": {
+        "v_RTK": "-",
+        "v_RTK_Inhibitor": "+"
+      },
+      "v_vRNA_NA_M1": {
+        "v_pro_vRNP_NA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_Bisindolylmaleimide_I": {
+        "v_PKC": "-",
+        "v_Bisindolylmaleimide_I": "+"
+      },
+      "v_vRNA_HA_M1": {
+        "v_pro_vRNP_HA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_NS_M1": {
+        "v_pro_vRNP_NS_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_vRNA_PA_M1": {
+        "v_pro_vRNP_PA_M1_nuc": "+",
+        "v_M1_M1": "-"
+      },
+      "v_Neuraminidase_inhibitor": {
+        "v_NA_LipidRafts": "-",
+        "v_Neuraminidase_inhibitor": "+"
+      },
+      "v_vRNA_M_M1": {
+        "v_M1_M1": "-",
+        "v_pro_vRNP_M_M1_nuc": "+"
+      }
+    },
+    "local": {
+      "v_mRNA_PB1_cyto": {
+        "signs": {
+          "v_mRNA_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Progeny_Virion": {
+        "signs": {
+          "v_HA_LipidRafts": "+",
+          "v_M2_cyto": "+",
+          "v_NA_LipidRafts": "+",
+          "v_pro_vRNP_HA_M1_cyto": "+",
+          "v_pro_vRNP_M_M1_cyto": "+",
+          "v_pro_vRNP_NA_M1_cyto": "+",
+          "v_pro_vRNP_NP_M1_cyto": "+",
+          "v_pro_vRNP_NS_M1_cyto": "+",
+          "v_pro_vRNP_PA_M1_cyto": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "+",
+          "v_pro_vRNP_PB2_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PA_cyto": "+",
+          "v_vRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PB2": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PB2": "+",
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_PB1": {
+        "signs": {
+          "v_cRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NP_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_PB1": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB1_PA_cyto": {
+        "signs": {
+          "v_PA_cyto": "+",
+          "v_PB1_PA_Interface_Inhibitor": "-",
+          "v_PB1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_LE": {
+        "signs": {
+          "v_IVA_ME": "+",
+          "v_M2_inhibitor": "-",
+          "v_PKC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_NP": {
+        "signs": {
+          "v_cRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PB2_cyto": {
+        "signs": {
+          "v_mRNA_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NP_nuc": {
+        "signs": {
+          "v_NP_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NP_M1_cyto": "-",
+          "v_vRNA_NP_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NS2_cyto": {
+        "signs": {
+          "v_mRNA_NS2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid": {
+        "signs": {
+          "v_HA_SialicAcid_Affinity": "+",
+          "v_IVA_HA1_HA2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_PA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PA": "+",
+          "v_temp_vRNP_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_PA": {
+        "signs": {
+          "v_cRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NP_nuc": {
+        "signs": {
+          "v_temp_vRNP_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PB2_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_HA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NS": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NS": "+",
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB2_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PB2_cyto": "+",
+          "v_vRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_M1_nuc": {
+        "signs": {
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid_CCP": {
+        "signs": {
+          "v_IVA_SialicAcid": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_NS1_cyto": "+",
+          "v_RTK": "+",
+          "v_Wortmannin": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_M_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PA_cyto": {
+        "signs": {
+          "v_mRNA_PA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NP_cyto": {
+        "signs": {
+          "v_mRNA_NP_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_HA": {
+        "signs": {
+          "v_cRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_HA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_HA_cyto": "+",
+          "v_vRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_PA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PB1_nuc": {
+        "signs": {
+          "v_temp_vRNP_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M1_cyto": {
+        "signs": {
+          "v_mRNA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_PB1_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB2_nuc": {
+        "signs": {
+          "v_PB2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_HA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M2_nuc": {
+        "signs": {
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_PA_nuc": {
+        "signs": {
+          "v_PB1_PA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_PB1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_PB1_cyto": "+",
+          "v_vRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HA_LipidRafts": {
+        "signs": {
+          "v_HA_cyto": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_HA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NP": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB1_cyto": {
+        "signs": {
+          "v_PB1_Inhibitor": "-",
+          "v_mRNA_PB1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_NA_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M1_cyto": {
+        "signs": {
+          "v_mRNA_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_M2_cyto": {
+        "signs": {
+          "v_mRNA_M2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB1_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_PB2_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_ME": {
+        "signs": {
+          "v_IVA_EE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PB1_M1_cyto": "-",
+          "v_vRNA_PB1_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NS1_nuc": {
+        "signs": {
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_M": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MEK": {
+        "signs": {
+          "v_Raf": "+",
+          "v_U0126": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_M_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_M": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_M": "+",
+          "v_temp_vRNP_M_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK": {
+        "signs": {
+          "v_MEK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB2": {
+        "signs": {
+          "v_cRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB1_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_PB1_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NP_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NP_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP2": {
+        "signs": {
+          "v_PI3K": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Raf": {
+        "signs": {
+          "v_Infected": "+",
+          "v_PKC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_HA1_HA2": {
+        "signs": {
+          "v_Viral_Dose": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pro_vRNP_PB2_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PB2_M1_cyto": "-",
+          "v_vRNA_PB2_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_M": {
+        "signs": {
+          "v_cRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NS2_nuc": {
+        "signs": {
+          "v_temp_vRNP_NS_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_M_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_M_cyto": "+",
+          "v_vRNA_M": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_NA_nuc": {
+        "signs": {
+          "v_temp_vRNP_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NS1_cyto": {
+        "signs": {
+          "v_mRNA_NS1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RTK": {
+        "signs": {
+          "v_IVA_SialicAcid": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_RTK_Inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_HA_cyto": {
+        "signs": {
+          "v_mRNA_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_PB1": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_PB1": "+",
+          "v_temp_vRNP_PB1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NS1_cyto": {
+        "signs": {
+          "v_mRNA_NS1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_par_vRNP_NP_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_PB2": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_M1_nuc": {
+        "signs": {
+          "v_M1_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_PA_nuc": {
+        "signs": {
+          "v_temp_vRNP_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_PB2_nuc": {
+        "signs": {
+          "v_temp_vRNP_PB2_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_NP_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NP_cyto": "+",
+          "v_vRNA_NP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_HA_nuc": {
+        "signs": {
+          "v_temp_vRNP_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_NP": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NP": "+",
+          "v_temp_vRNP_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NS2_CellularFactor": {
+        "signs": {
+          "v_ERK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IVA_EE": {
+        "signs": {
+          "v_IVA_SialicAcid_CCV": "+",
+          "v_PIP3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PB2_cyto": {
+        "signs": {
+          "v_mRNA_PB2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_PB2_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_PB2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NA_M1_cyto": "-",
+          "v_vRNA_NA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Infected": {
+        "signs": {
+          "v_IVA_SialicAcid": "+",
+          "v_cRNP_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKC": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "-",
+          "v_HA_LipidRafts": "+",
+          "v_PI3K": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_HA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_HA_M1_cyto": "-",
+          "v_vRNA_HA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NA_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NA_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_temp_vRNP_NS_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NS_cyto": "+",
+          "v_vRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_mRNA_PA_cyto": {
+        "signs": {
+          "v_mRNA_PA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNP_PA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_PA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_M_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NA": {
+        "signs": {
+          "v_cRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_temp_vRNP_NA_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_par_vRNP_NA_cyto": "+",
+          "v_vRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_NS_M1_cyto": "-",
+          "v_vRNA_NS_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_PA_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_PA_M1_cyto": "-",
+          "v_vRNA_PA_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NS": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NA_cyto": {
+        "signs": {
+          "v_mRNA_NA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NS_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_HA_cyto": {
+        "signs": {
+          "v_mRNA_HA_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_PIP2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M2_cyto": {
+        "signs": {
+          "v_mRNA_M2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NP_cyto": {
+        "signs": {
+          "v_mRNA_NP_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cRNA_HA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_HA": "+",
+          "v_temp_vRNP_HA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_par_vRNP_NS_cyto": {
+        "signs": {
+          "v_IVA_LE": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NA_LipidRafts": {
+        "signs": {
+          "v_HA_LipidRafts": "+",
+          "v_Methyl_Beta_Cyclodextrin": "-",
+          "v_NA_cyto": "+",
+          "v_Neuraminidase_inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNP_NA": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNA_NA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vRNA_HA_M1": {
+        "signs": {
+          "v_M1_nuc": "+",
+          "v_vRNA_HA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cRNA_NA": {
+        "signs": {
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_cRNP_NA": "+",
+          "v_temp_vRNP_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IVA_SialicAcid_CCV": {
+        "signs": {
+          "v_IVA_SialicAcid_CCP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NS2_cyto": {
+        "signs": {
+          "v_mRNA_NS2_cyto": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vRNA_NS": {
+        "signs": {
+          "v_cRNA_NS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mRNA_NA_cyto": {
+        "signs": {
+          "v_mRNA_NA_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M1_M1": {
+        "signs": {
+          "v_M1_cyto": "+",
+          "v_vRNA_HA_M1": "-",
+          "v_vRNA_M_M1": "-",
+          "v_vRNA_NA_M1": "-",
+          "v_vRNA_NP_M1": "-",
+          "v_vRNA_NS_M1": "-",
+          "v_vRNA_PA_M1": "-",
+          "v_vRNA_PB1_M1": "-",
+          "v_vRNA_PB2_M1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_M_M1_nuc": {
+        "signs": {
+          "v_NP_nuc": "+",
+          "v_PB1_PA_nuc": "+",
+          "v_PB2_nuc": "+",
+          "v_pro_vRNP_M_M1_cyto": "-",
+          "v_vRNA_M_M1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pro_vRNP_NS_M1_cyto": {
+        "signs": {
+          "v_NS2_CellularFactor": "+",
+          "v_NS2_cyto": "+",
+          "v_pro_vRNP_NS_M1_nuc": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RTK_Inhibitor": {
+        "signs": {
+          "v_RTK_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_U0126": {
+        "signs": {
+          "v_U0126": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Bisindolylmaleimide_I": {
+        "signs": {
+          "v_Bisindolylmaleimide_I": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_PA_Interface_Inhibitor": {
+        "signs": {
+          "v_PB1_PA_Interface_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Wortmannin": {
+        "signs": {
+          "v_Wortmannin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Methyl_Beta_Cyclodextrin": {
+        "signs": {
+          "v_Methyl_Beta_Cyclodextrin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Neuraminidase_inhibitor": {
+        "signs": {
+          "v_Neuraminidase_inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_M2_inhibitor": {
+        "signs": {
+          "v_M2_inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Viral_Dose": {
+        "signs": {
+          "v_Viral_Dose": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HA_SialicAcid_Affinity": {
+        "signs": {
+          "v_HA_SialicAcid_Affinity": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PB1_Inhibitor": {
+        "signs": {
+          "v_PB1_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  }
+}

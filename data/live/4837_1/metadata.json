@@ -1,0 +1,132 @@
+{
+  "id": "4837_1",
+  "name": "Arabidopsis thaliana Cell Cycle",
+  "input-names": [],
+  "variable-names": [
+    "v_CYCB1_1",
+    "v_E2Fc",
+    "v_APC_C",
+    "v_CYCD3_1",
+    "v_CYCA2_3",
+    "v_E2Fe",
+    "v_CDKB1_1",
+    "v_E2Fa",
+    "v_MYB3R1_4",
+    "v_E2Fb",
+    "v_MYB77",
+    "v_RBR",
+    "v_KRP1",
+    "v_SCF"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "SCF": "v_SCF",
+    "MYB77": "v_MYB77",
+    "APC/C": "v_APC_C",
+    "E2Fa": "v_E2Fa",
+    "CYCB1;1": "v_CYCB1_1",
+    "MYB3R1/4": "v_MYB3R1_4",
+    "CDKB1;1": "v_CDKB1_1",
+    "KRP1": "v_KRP1",
+    "E2Fe": "v_E2Fe",
+    "E2Fc": "v_E2Fc",
+    "CYCA2;3": "v_CYCA2_3",
+    "RBR": "v_RBR",
+    "E2Fb": "v_E2Fb",
+    "CYCD3;1": "v_CYCD3_1"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 14,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 4837,
+    "name": "Arabidopsis thaliana Cell Cycle",
+    "description": "Cell cycle control is fundamental in eukaryotic development. Several modeling efforts have been used to integrate the complex network of interacting molecular components involved in cell cycle dynamics. In this paper, we aimed at recovering the regulatory logic upstream of previously known components of cell cycle control, with the aim of understanding the mechanisms underlying the emergence of the cyclic behavior of such components. We focus on Arabidopsis thaliana, but given that many components of cell cycle regulation are conserved among eukaryotes, when experimental data for this system was not available, we considered experimental results from yeast and animal systems. We are proposing a Boolean gene regulatory network (GRN) that converges into only one robust limit cycle attractor that closely resembles the cyclic behavior of the key cell-cycle molecular components and other regulators considered here. We validate the model by comparing our in silico configurations with data from loss- and gain-of-function mutants, where the endocyclic behavior also was recovered. Additionally, we approximate a continuous model and recovered the temporal periodic expression profiles of the cell-cycle molecular components involved, thus suggesting that the single limit cycle attractor recovered with the Boolean model is not an artifact of its discrete and synchronous nature, but rather an emergent consequence of the inherent characteristics of the regulatory logic proposed here. This dynamical model, hence provides a novel theoretical framework to address cell cycle regulation in plants, and it can also be used to propose novel predictions regarding cell cycle regulation in other eukaryotes.",
+    "tags": "Arabidopsis thaliana, cell cycle regulation, gene regulatory network",
+    "userId": 1822,
+    "author": "E Ortiz-Guti\u00e9rrez et al.",
+    "creationDate": "Mon, 12 Sep 2016 08:51:56 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Fri, 13 Oct 2017 13:09:34 GMT",
+    "components": 14,
+    "interactions": 66,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 1822,
+        "creationDate": "Mon, 12 Sep 2016 08:51:56 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": {
+      "[model]VERSION[0021].application.model": {
+        "favorites": [
+          "Model",
+          "Simulation",
+          "Analysis",
+          "Network Analysis",
+          "Knowledge Base",
+          "Description"
+        ],
+        "section": [
+          "Published Models"
+        ],
+        "layout": "Model",
+        "layouts": {
+          "": {
+            "Model": [
+              "ModelGraphView",
+              "InternalComponentsView",
+              "ExternalComponentsView",
+              "RegulationCenterView(Biologic)",
+              "PageView",
+              "RegulationExpressionView"
+            ]
+          }
+        }
+      },
+      "[model]VERSION[0021].Layout[Model].model": {
+        "views": {
+          "ModelGraphView": 0,
+          "ExternalComponentsView": 1,
+          "PageView": 2,
+          "RegulationExpressionView": 3,
+          "RegulationCenterView(Biologic)": 4,
+          "InternalComponentsView": 5
+        }
+      },
+      "[model]VERSION[0021].Layout[Model]RegulationExpressionView.model": {
+        "left": 0.018990775908844293,
+        "top": 0.49944812362030905,
+        "width": 0.5402061855670103,
+        "height": 0.5
+      },
+      "[model]VERSION[0021].Layout[Model]RegulationCenterView(Biologic).model": {
+        "left": 0.65,
+        "top": 0,
+        "width": 0.35000000000000003,
+        "height": 0.5011037527593819
+      }
+    },
+    "initialStateId": 2328,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "1597048413",
+  "version": "1"
+}

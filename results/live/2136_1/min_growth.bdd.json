@@ -1,0 +1,22 @@
+{
+"level_of_var": {"v_Bmp2": 0, "v_Dkk1": 1, "v_Fgf8": 2, "v_Foxc1_2": 3, "v_GATAs": 4, "v_Isl1": 5, "v_Mesp1": 6, "v_Nkx2_5": 7, "v_Tbx1": 8, "v_Tbx5": 9, "v_canWnt": 10, "v_exogen_BMP2_I": 11, "v_exogen_BMP2_II": 12, "v_exogen_CanWnt_I": 13, "v_exogen_canWnt_II": 14},
+"roots": {"final:v_Tbx5": -129, "final:v_exogen_CanWnt_I": 33, "final:v_Nkx2_5": 133, "final:v_exogen_BMP2_I": 37, "step:0:v_canWnt": 31, "step:1:v_Tbx1": 5, "step:2:v_Foxc1_2": 31, "step:3:v_Fgf8": -101, "step:4:v_Isl1": 87, "step:5:v_Bmp2": -69, "step:6:v_Dkk1": 80, "step:7:v_GATAs": 68, "step:8:v_Mesp1": -77, "step:9:v_exogen_BMP2_II": 37, "step:10:v_exogen_canWnt_II": 33},
+"33": [13, "F", "T"],
+"128": [9, "T", 33],
+"129": [7, 128, 33],
+"130": [9, 33, "T"],
+"131": [11, 33, "T"],
+"132": [9, 131, "T"],
+"133": [7, 130, 132],
+"37": [11, "F", "T"],
+"31": [14, "F", "T"],
+"5": [3, "F", "T"],
+"101": [6, -31, "T"],
+"87": [6, 31, "T"],
+"69": [12, "T", 31],
+"77": [12, -31, "T"],
+"80": [6, -77, "T"],
+"9": [9, "F", "T"],
+"67": [7, 9, "T"],
+"68": [6, 67, "T"]
+}

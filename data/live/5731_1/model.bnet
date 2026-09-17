@@ -1,0 +1,12 @@
+targets,factors
+v_Enterobacteriaceae, ( v_Enterobacteriaceae )
+v_Akkermansia_, ( v_Coprobacillus )
+v_Clostridium_difficile, ( ( v_Clostridium_difficile ) & ! ( v_Barnesiella ) )
+v_Lachnospiraceae_other_, ( ( v_Lachnospiraceae_other_ ) & ! ( v_Clindamycin_ ) ) | ( ( v_Lachnospiraceae ) & ! ( v_Clindamycin_ ) ) | ( ( v_Other ) & ! ( v_Clindamycin_ ) )
+v_Other, ( ( v_Other ) & ! ( v_Clindamycin_ ) ) | ( ( v_Lachnospiraceae ) & ! ( v_Clindamycin_ ) ) | ( ( v_Lachnospiraceae_other_ ) & ! ( v_Clindamycin_ ) )
+v_Clindamycin_, ( v_Clindamycin_ )
+v_Mollicutes, ( v_Mollicutes )
+v_Blautia, ( v_Blautia & ( ( ( ! v_Coprobacillus ) ) ) ) | ( v_Enterococcus ) | ( v_Blautia ) | ( v_Coprobacillus & ( ( ( ! v_Blautia ) ) ) )
+v_Barnesiella, ( ( v_Lachnospiraceae_other_ ) & ! ( v_Clindamycin_ ) ) | ( ( v_Lachnospiraceae ) & ! ( v_Clindamycin_ ) ) | ( ( v_Other ) & ! ( v_Clindamycin_ ) )
+v_Lachnospiraceae, ( ( v_Lachnospiraceae_other_ ) & ! ( v_Clindamycin_ ) ) | ( ( v_Other ) & ! ( v_Clindamycin_ ) ) | ( ( v_Lachnospiraceae ) & ! ( v_Clindamycin_ ) )
+v_Enterococcus, ( ( v_Clostridium_difficile ) | ( v_Mollicutes ) | ( v_Enterobacteriaceae ) | ( v_Blautia ) ) | ! ( v_Enterobacteriaceae | v_Blautia | v_Clostridium_difficile | v_Coprobacillus | v_Mollicutes )

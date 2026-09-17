@@ -1,0 +1,1870 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "019",
+  "name": "IL-6-SIGNALING",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 86,
+  "after": {
+    "nodes": 19,
+    "n_nodes": 19,
+    "inputs": 15,
+    "internal_nodes": 4,
+    "nonconstant_rules": 4,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_dum_mtorc1_or_pkcd_stat3_ta": "+",
+      "v_p38": "-",
+      "v_shp2": "-",
+      "v_stat3_py": "-",
+      "v_gp130m": "+",
+      "v_il6": "+",
+      "v_mtor": "+",
+      "v_nfkb": "-",
+      "v_pias3": "+",
+      "v_slim": "+",
+      "v_cyt_ptpe": "+",
+      "v_ros": "+",
+      "v_sirp1a": "+"
+    },
+    "positive_edges": 18,
+    "negative_edges": 22,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 40,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "UNATE_OTHER": 4
+    },
+    "conflicts": {
+      "v_shp2": {
+        "v_dum_mtorc1_or_pkcd_stat3_ta": "+",
+        "v_p38": "-",
+        "v_shp2": "-",
+        "v_stat3_py": "-"
+      }
+    },
+    "local": {
+      "v_dum_mtorc1_or_pkcd_stat3_ta": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_mtor": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "+",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p38": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_shp2": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_ros": "-",
+          "v_shp2": "-",
+          "v_sirp1a": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_stat3_py": {
+        "signs": {
+          "v_cyt_ptpe": "-",
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 19,
+    "n_nodes": 19,
+    "inputs": 15,
+    "internal_nodes": 4,
+    "nonconstant_rules": 19,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 19,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_dum_mtorc1_or_pkcd_stat3_ta": "+",
+      "v_p38": "-",
+      "v_shp2": "-",
+      "v_stat3_py": "-",
+      "v_gp130m": "+",
+      "v_il6": "+",
+      "v_mtor": "+",
+      "v_nfkb": "-",
+      "v_pias3": "+",
+      "v_slim": "+",
+      "v_cyt_ptpe": "+",
+      "v_ros": "+",
+      "v_sirp1a": "+",
+      "v_gab1_kin": "+",
+      "v_pdk1": "+",
+      "v_phlpp": "+",
+      "v_pias1": "+",
+      "v_pten": "+",
+      "v_ship": "+"
+    },
+    "positive_edges": 33,
+    "negative_edges": 22,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 55,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "UNATE_OTHER": 4,
+      "MIN_MAX": 15
+    },
+    "conflicts": {
+      "v_nfkb": {
+        "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+        "v_p38": "-",
+        "v_shp2": "-",
+        "v_stat3_py": "-",
+        "v_nfkb": "+"
+      },
+      "v_shp2": {
+        "v_dum_mtorc1_or_pkcd_stat3_ta": "+",
+        "v_p38": "-",
+        "v_shp2": "-",
+        "v_stat3_py": "-"
+      },
+      "v_ros": {
+        "v_shp2": "-",
+        "v_ros": "+"
+      },
+      "v_sirp1a": {
+        "v_shp2": "-",
+        "v_sirp1a": "+"
+      },
+      "v_cyt_ptpe": {
+        "v_stat3_py": "-",
+        "v_cyt_ptpe": "+"
+      }
+    },
+    "local": {
+      "v_dum_mtorc1_or_pkcd_stat3_ta": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_mtor": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "+",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_p38": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_shp2": {
+        "signs": {
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_ros": "-",
+          "v_shp2": "-",
+          "v_sirp1a": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_stat3_py": {
+        "signs": {
+          "v_cyt_ptpe": "-",
+          "v_dum_mtorc1_or_pkcd_stat3_ta": "-",
+          "v_gp130m": "+",
+          "v_il6": "+",
+          "v_nfkb": "-",
+          "v_p38": "-",
+          "v_pias3": "+",
+          "v_shp2": "-",
+          "v_slim": "+",
+          "v_stat3_py": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cyt_ptpe": {
+        "signs": {
+          "v_cyt_ptpe": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_gab1_kin": {
+        "signs": {
+          "v_gab1_kin": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_gp130m": {
+        "signs": {
+          "v_gp130m": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_il6": {
+        "signs": {
+          "v_il6": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_mtor": {
+        "signs": {
+          "v_mtor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_nfkb": {
+        "signs": {
+          "v_nfkb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pdk1": {
+        "signs": {
+          "v_pdk1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_phlpp": {
+        "signs": {
+          "v_phlpp": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pias1": {
+        "signs": {
+          "v_pias1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pias3": {
+        "signs": {
+          "v_pias3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_pten": {
+        "signs": {
+          "v_pten": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ros": {
+        "signs": {
+          "v_ros": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ship": {
+        "signs": {
+          "v_ship": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_sirp1a": {
+        "signs": {
+          "v_sirp1a": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_slim": {
+        "signs": {
+          "v_slim": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 1,
+        "v_il6": 1,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 0,
+        "v_ros": 1,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 0,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 1,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 0,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 1,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 0,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 0,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 1,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 1,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 1,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 1,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 0,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      },
+      {
+        "v_cyt_ptpe": 1,
+        "v_dum_mtorc1_or_pkcd_stat3_ta": 0,
+        "v_gab1_kin": 1,
+        "v_gp130m": 0,
+        "v_il6": 0,
+        "v_mtor": 0,
+        "v_nfkb": 1,
+        "v_p38": 0,
+        "v_pdk1": 1,
+        "v_phlpp": 0,
+        "v_pias1": 0,
+        "v_pias3": 1,
+        "v_pten": 0,
+        "v_ros": 0,
+        "v_ship": 0,
+        "v_shp2": 0,
+        "v_sirp1a": 0,
+        "v_slim": 0,
+        "v_stat3_py": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_dum_mtorc1_or_pkcd_stat3_ta": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_mtor & 1) | (!v_mtor & ((v_nfkb & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))))) | (!v_nfkb & ((v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))))) | (!v_p38 & ((v_pias3 & 1) | (!v_pias3 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))))))))))) | (!v_il6 & ((v_mtor & 1) | (!v_mtor & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))))))))) | (!v_gp130m & ((v_mtor & 1) | (!v_mtor & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_mtor & 1) | (!v_mtor & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & 1))))))) | (!v_il6 & ((v_mtor & 1) | (!v_mtor & ((v_shp2 & 1) | (!v_shp2 & 0))))))) | (!v_gp130m & ((v_mtor & 1) | (!v_mtor & ((v_shp2 & 1) | (!v_shp2 & 0))))))))",
+    "v_p38": "!(((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_il6 & 1))) | (!v_gp130m & 1))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))))))) | (!v_il6 & 1))) | (!v_gp130m & 1)))))",
+    "v_shp2": "!(((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_ros & 1) | (!v_ros & ((v_shp2 & 1) | (!v_shp2 & ((v_sirp1a & 1) | (!v_sirp1a & 0))))))) | (!v_pias3 & ((v_ros & 1) | (!v_ros & ((v_shp2 & 1) | (!v_shp2 & ((v_sirp1a & 1) | (!v_sirp1a & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))))) | (!v_il6 & 1))) | (!v_gp130m & 1))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_ros & 1) | (!v_ros & ((v_shp2 & 1) | (!v_shp2 & ((v_sirp1a & 1) | (!v_sirp1a & 0))))))))))) | (!v_il6 & 1))) | (!v_gp130m & 1)))))",
+    "v_stat3_py": "!(((v_cyt_ptpe & 1) | (!v_cyt_ptpe & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_il6 & 1))) | (!v_gp130m & 1))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))))))) | (!v_il6 & 1))) | (!v_gp130m & 1)))))))",
+    "v_cyt_ptpe": "v_cyt_ptpe",
+    "v_gab1_kin": "v_gab1_kin",
+    "v_gp130m": "v_gp130m",
+    "v_il6": "v_il6",
+    "v_mtor": "v_mtor",
+    "v_nfkb": "v_nfkb",
+    "v_pdk1": "v_pdk1",
+    "v_phlpp": "v_phlpp",
+    "v_pias1": "v_pias1",
+    "v_pias3": "v_pias3",
+    "v_pten": "v_pten",
+    "v_ros": "v_ros",
+    "v_ship": "v_ship",
+    "v_sirp1a": "v_sirp1a",
+    "v_slim": "v_slim"
+  },
+  "steps": [
+    {
+      "node": "v_dum_gab1_kin_or_jak1_gab1_mem_p",
+      "support": [
+        "v_gab1_kin",
+        "v_jak1"
+      ],
+      "function": "v_gab1_kin | v_jak1"
+    },
+    {
+      "node": "v_bad",
+      "support": [
+        "v_akt"
+      ],
+      "function": "!v_akt"
+    },
+    {
+      "node": "v_mek4",
+      "support": [
+        "v_mekk1"
+      ],
+      "function": "v_mekk1"
+    },
+    {
+      "node": "v_irs1_py",
+      "support": [
+        "v_irs1_ps",
+        "v_shp2",
+        "v_shp2_a"
+      ],
+      "function": "!v_irs1_ps & !v_shp2 & !v_shp2_a"
+    },
+    {
+      "node": "v_ip3",
+      "support": [
+        "v_plcg"
+      ],
+      "function": "v_plcg"
+    },
+    {
+      "node": "v_erk12",
+      "support": [
+        "v_mek1"
+      ],
+      "function": "v_mek1"
+    },
+    {
+      "node": "v_dum_gp80_a_il6rc",
+      "support": [
+        "v_gp80m_a",
+        "v_gp80s_a"
+      ],
+      "function": "v_gp80m_a | v_gp80s_a"
+    },
+    {
+      "node": "v_crp",
+      "support": [
+        "v_cfos",
+        "v_nfkb",
+        "v_stat3_ta"
+      ],
+      "function": "v_cfos & !v_nfkb & v_stat3_ta"
+    },
+    {
+      "node": "v_pi3k",
+      "support": [
+        "v_gab1_mem_p",
+        "v_ras",
+        "v_shp2_a"
+      ],
+      "function": "((v_gab1_mem_p & ((v_ras & 1) | (!v_ras & !(((v_shp2_a & 1) | (!v_shp2_a & 0)))))) | (!v_gab1_mem_p & ((v_ras & 1) | (!v_ras & 0))))"
+    },
+    {
+      "node": "v_jak1",
+      "support": [
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "!v_shp2 & !v_shp2_a & !v_socs1 & !v_socs3"
+    },
+    {
+      "node": "v_anti_apoptotic",
+      "support": [
+        "v_akt",
+        "v_casp9",
+        "v_gsk3",
+        "v_stat3_ta"
+      ],
+      "function": "v_akt & !v_casp9 & !v_gsk3 & v_stat3_ta"
+    },
+    {
+      "node": "v_akt",
+      "support": [
+        "v_mtorc2",
+        "v_pdk1",
+        "v_phlpp",
+        "v_pip3",
+        "v_ship"
+      ],
+      "function": "v_mtorc2 & v_pdk1 & !v_phlpp & v_pip3 & !v_ship"
+    },
+    {
+      "node": "v_cebpb",
+      "support": [
+        "v_p38",
+        "v_stat3_ta"
+      ],
+      "function": "v_p38 | v_stat3_ta"
+    },
+    {
+      "node": "v_gab1_mem",
+      "support": [
+        "v_grb2_sos",
+        "v_mek1",
+        "v_pip3"
+      ],
+      "function": "((v_grb2_sos & 1) | (!v_grb2_sos & ((v_mek1 & ((v_pip3 & 1) | (!v_pip3 & 0))) | (!v_mek1 & 0))))"
+    },
+    {
+      "node": "v_gp130s",
+      "support": [
+        "v_camk24",
+        "v_mk2"
+      ],
+      "function": "!v_camk24 & !v_mk2"
+    },
+    {
+      "node": "v_pkcd",
+      "support": [
+        "v_mekk1"
+      ],
+      "function": "v_mekk1"
+    },
+    {
+      "node": "v_ras_gap",
+      "support": [
+        "v_gab1_mem_p",
+        "v_shp2_a"
+      ],
+      "function": "v_gab1_mem_p & !v_shp2_a"
+    },
+    {
+      "node": "v_ca",
+      "support": [
+        "v_plcg"
+      ],
+      "function": "v_plcg"
+    },
+    {
+      "node": "v_raf1",
+      "support": [
+        "v_ras"
+      ],
+      "function": "v_ras"
+    },
+    {
+      "node": "v_gab1_mem_p",
+      "support": [
+        "v_gab1_kin",
+        "v_grb2_sos",
+        "v_mek1",
+        "v_pip3",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "((v_gab1_kin & ((v_grb2_sos & 1) | (!v_grb2_sos & ((v_mek1 & ((v_pip3 & 1) | (!v_pip3 & 0))) | (!v_mek1 & 0))))) | (!v_gab1_kin & !(((v_grb2_sos & ((v_shp2 & 1) | (!v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0))))))))) | (!v_grb2_sos & ((v_mek1 & ((v_pip3 & ((v_shp2 & 1) | (!v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0))))))))) | (!v_pip3 & 1))) | (!v_mek1 & 1)))))))"
+    },
+    {
+      "node": "v_tdum_socs1_vav",
+      "support": [
+        "v_socs1"
+      ],
+      "function": "v_socs1"
+    },
+    {
+      "node": "v_stat3_ta",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_tdum_socs3_shp2",
+      "support": [
+        "v_socs3"
+      ],
+      "function": "v_socs3"
+    },
+    {
+      "node": "v_saa",
+      "support": [
+        "v_dum_cebp_saa",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_nfkb",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_cebp_saa & v_dum_mtorc1_or_pkcd_stat3_ta & v_nfkb & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_mtorc2",
+      "support": [
+        "v_mtor"
+      ],
+      "function": "v_mtor"
+    },
+    {
+      "node": "v_grb2_sos",
+      "support": [
+        "v_il6rc_p",
+        "v_shp2"
+      ],
+      "function": "v_il6rc_p | v_shp2"
+    },
+    {
+      "node": "v_pro_hgf",
+      "support": [
+        "v_cebpd",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_p38",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_cebpd & 1) | (!v_cebpd & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & !(((v_pias3 & 1) | (!v_pias3 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & 0))))))"
+    },
+    {
+      "node": "v_tdum_shp2_il6rc_p",
+      "support": [
+        "v_shp2",
+        "v_shp2_a"
+      ],
+      "function": "v_shp2 | v_shp2_a"
+    },
+    {
+      "node": "v_ir",
+      "support": [
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "!v_socs1 & !v_socs3"
+    },
+    {
+      "node": "v_a2m_gfbg",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_nfkb",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_nfkb & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_fkhr",
+      "support": [
+        "v_mtor",
+        "v_pdk1",
+        "v_phlpp",
+        "v_pip3",
+        "v_ship"
+      ],
+      "function": "!v_mtor | !v_pdk1 | v_phlpp | !v_pip3 | v_ship"
+    },
+    {
+      "node": "v_ras",
+      "support": [
+        "v_gab1_kin",
+        "v_il6rc_p",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "((v_gab1_kin & ((v_il6rc_p & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_il6rc_p & ((v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_shp2 & 0))))) | (!v_gab1_kin & ((v_il6rc_p & ((v_shp2 & 1) | (!v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0))))))))) | (!v_il6rc_p & ((v_shp2 & 1) | (!v_shp2 & 0))))))"
+    },
+    {
+      "node": "v_mtorc1",
+      "support": [
+        "v_mtor"
+      ],
+      "function": "v_mtor"
+    },
+    {
+      "node": "v_mek1",
+      "support": [
+        "v_gab1_kin",
+        "v_il6rc_p",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "((v_gab1_kin & ((v_il6rc_p & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_il6rc_p & ((v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_shp2 & 0))))) | (!v_gab1_kin & ((v_il6rc_p & ((v_shp2 & 1) | (!v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0))))))))) | (!v_il6rc_p & ((v_shp2 & 1) | (!v_shp2 & 0))))))"
+    },
+    {
+      "node": "v_dum_pkcd_camk24_stat1_ta",
+      "support": [
+        "v_camk24",
+        "v_mekk1"
+      ],
+      "function": "v_camk24 | v_mekk1"
+    },
+    {
+      "node": "v_il6rc_p",
+      "support": [
+        "v_il6rc",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "v_il6rc & !v_shp2 & !v_shp2_a & !v_socs1 & !v_socs3"
+    },
+    {
+      "node": "v_plcg",
+      "support": [
+        "v_gab1_kin",
+        "v_il6rc",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "((v_gab1_kin & ((v_il6rc & ((v_shp2 & 1) | (!v_shp2 & !(((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0)))))))))) | (!v_il6rc & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gab1_kin & !(((v_il6rc & ((v_shp2 & 1) | (!v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & ((v_socs1 & 1) | (!v_socs1 & ((v_socs3 & 1) | (!v_socs3 & 0))))))))) | (!v_il6rc & 1)))))"
+    },
+    {
+      "node": "v_dum_cebp_saa",
+      "support": [
+        "v_cebpd",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_p38",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_cebpd & 1) | (!v_cebpd & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & !(((v_pias3 & 1) | (!v_pias3 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & 0))))))"
+    },
+    {
+      "node": "v_cmyc",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_junb",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_cebpd",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_mek6",
+      "support": [
+        "v_il6rc",
+        "v_shp2",
+        "v_shp2_a",
+        "v_socs1",
+        "v_socs3"
+      ],
+      "function": "v_il6rc & !v_shp2 & !v_shp2_a & !v_socs1 & !v_socs3"
+    },
+    {
+      "node": "v_vav",
+      "support": [
+        "v_dum_il6rc_p_or_grb2_vav",
+        "v_socs1"
+      ],
+      "function": "v_dum_il6rc_p_or_grb2_vav & !v_socs1"
+    },
+    {
+      "node": "v_mekk1",
+      "support": [
+        "v_rac1"
+      ],
+      "function": "v_rac1"
+    },
+    {
+      "node": "v_socs3",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gab1_kin",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_shp2",
+        "v_shp2_a",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gab1_kin & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))) | (!v_shp2 & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_gab1_kin & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gab1_kin & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & ((v_shp2_a & 1) | (!v_shp2_a & 0))) | (!v_shp2 & 0))))))) | (!v_gab1_kin & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))))))))))"
+    },
+    {
+      "node": "v_gsk3",
+      "support": [
+        "v_mtor",
+        "v_pdk1",
+        "v_phlpp",
+        "v_pip3",
+        "v_ship"
+      ],
+      "function": "!v_mtor | !v_pdk1 | v_phlpp | !v_pip3 | v_ship"
+    },
+    {
+      "node": "v_camk24",
+      "support": [
+        "v_cam_ca"
+      ],
+      "function": "v_cam_ca"
+    },
+    {
+      "node": "v_shp2_a",
+      "support": [
+        "v_gab1_kin",
+        "v_ros",
+        "v_shp2",
+        "v_sirp1a"
+      ],
+      "function": "v_gab1_kin & !v_ros & v_shp2 & !v_sirp1a"
+    },
+    {
+      "node": "v_tdum_shp2_stat1_py",
+      "support": [
+        "v_shp2"
+      ],
+      "function": "v_shp2"
+    },
+    {
+      "node": "v_dum_il6rc_p_or_grb2_vav",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_il6rc",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_shp2",
+        "v_slim",
+        "v_socs1",
+        "v_stat3_py"
+      ],
+      "function": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_socs1 & 1) | (!v_socs1 & 0)))))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_slim & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat3_py & 1) | (!v_stat3_py & 0)))))))))))))))) | (!v_il6rc & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & !(((v_socs1 & 1) | (!v_socs1 & 0)))))))))) | (!v_il6rc & ((v_shp2 & 1) | (!v_shp2 & 0))))))"
+    },
+    {
+      "node": "v_rac1",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_il6rc",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_shp2",
+        "v_slim",
+        "v_socs1",
+        "v_stat3_py"
+      ],
+      "function": "!(((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1))) | (!v_nfkb & ((v_p38 & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1))) | (!v_p38 & ((v_pias3 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_pias3 & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & ((v_slim & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_il6rc & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1))) | (!v_nfkb & ((v_p38 & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1))) | (!v_p38 & ((v_socs1 & 1) | (!v_socs1 & 0))))))) | (!v_il6rc & ((v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_shp2 & 1)))))))"
+    },
+    {
+      "node": "v_cfos",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_pip3",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_il6rc",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_pten",
+        "v_shp2",
+        "v_slim",
+        "v_socs1",
+        "v_stat3_py"
+      ],
+      "function": "!(((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0)))))) | (!v_nfkb & ((v_p38 & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0)))))) | (!v_p38 & ((v_pias3 & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & !(((v_socs1 & 1) | (!v_socs1 & 0))))))))) | (!v_pias3 & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & !(((v_slim & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))))) | (!v_il6rc & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_il6rc & ((v_nfkb & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0)))))) | (!v_nfkb & ((v_p38 & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0)))))) | (!v_p38 & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & !(((v_socs1 & 1) | (!v_socs1 & 0))))))))))))) | (!v_il6rc & ((v_pten & 1) | (!v_pten & !(((v_shp2 & 1) | (!v_shp2 & 0))))))))))"
+    },
+    {
+      "node": "v_il6rc",
+      "support": [
+        "v_gp130m",
+        "v_gp80m_a",
+        "v_gp80s_a"
+      ],
+      "function": "((v_gp130m & ((v_gp80m_a & 1) | (!v_gp80m_a & ((v_gp80s_a & 1) | (!v_gp80s_a & 0))))) | (!v_gp130m & 0))"
+    },
+    {
+      "node": "v_stat1_ta",
+      "support": [
+        "v_cam_ca",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gp130m",
+        "v_gp80m_a",
+        "v_gp80s_a",
+        "v_nfkb",
+        "v_p38",
+        "v_pias1",
+        "v_pias3",
+        "v_shp2",
+        "v_slim",
+        "v_socs1",
+        "v_stat1_py",
+        "v_stat3_py"
+      ],
+      "function": "!(((v_cam_ca & ((v_pias1 & 1) | (!v_pias1 & ((v_slim & 1) | (!v_slim & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_cam_ca & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_nfkb & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_nfkb & ((v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_pias3 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat1_py & ((v_stat3_py & 1) | (!v_stat3_py & 0))) | (!v_stat1_py & 1))))))))))))))))) | (!v_gp80m_a & ((v_gp80s_a & ((v_nfkb & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_nfkb & ((v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_pias3 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_pias3 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat1_py & ((v_stat3_py & 1) | (!v_stat3_py & 0))) | (!v_stat1_py & 1))))))))))))))))) | (!v_gp80s_a & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))))))) | (!v_gp130m & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_nfkb & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_nfkb & ((v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))))))))) | (!v_gp80m_a & ((v_gp80s_a & ((v_nfkb & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_nfkb & ((v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))) | (!v_p38 & ((v_pias1 & 1) | (!v_pias1 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))))))))) | (!v_gp80s_a & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1))))))))) | (!v_gp130m & ((v_pias1 & 1) | (!v_pias1 & ((v_shp2 & ((v_slim & 1) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & !(((v_stat1_py & 1) | (!v_stat1_py & 0)))))))) | (!v_shp2 & 1)))))))))))"
+    },
+    {
+      "node": "v_stat1_py",
+      "support": [
+        "v_cyt_ptpe",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gp130m",
+        "v_gp80m_a",
+        "v_gp80s_a",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_shp2",
+        "v_slim",
+        "v_socs1",
+        "v_stat3_py"
+      ],
+      "function": "!(((v_cyt_ptpe & 1) | (!v_cyt_ptpe & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_slim & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_gp80m_a & ((v_gp80s_a & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_slim & ((v_socs1 & 1) | (!v_socs1 & 0))) | (!v_slim & ((v_socs1 & 1) | (!v_socs1 & ((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_gp80s_a & 1))))) | (!v_gp130m & 1))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))))))))) | (!v_gp80m_a & ((v_gp80s_a & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & ((v_socs1 & 1) | (!v_socs1 & 0))))))))) | (!v_gp80s_a & 1))))) | (!v_gp130m & 1)))))))"
+    },
+    {
+      "node": "v_mk2",
+      "support": [
+        "v_p38"
+      ],
+      "function": "v_p38"
+    },
+    {
+      "node": "v_var_app",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_p38",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & !(((v_pias3 & 1) | (!v_pias3 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_p38 & 1) | (!v_p38 & 0))))"
+    },
+    {
+      "node": "v_gp80s_a",
+      "support": [
+        "v_cam_ca",
+        "v_il6",
+        "v_p38"
+      ],
+      "function": "((v_cam_ca & ((v_il6 & 1) | (!v_il6 & 0))) | (!v_cam_ca & ((v_il6 & ((v_p38 & 1) | (!v_p38 & 0))) | (!v_il6 & 0))))"
+    },
+    {
+      "node": "v_socs1",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_pias3",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "v_dum_mtorc1_or_pkcd_stat3_ta & !v_pias3 & !v_slim & v_stat3_py"
+    },
+    {
+      "node": "v_casp9",
+      "support": [
+        "v_cam_ca",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gp130m",
+        "v_gp80m_a",
+        "v_il6",
+        "v_mtor",
+        "v_nfkb",
+        "v_p38",
+        "v_pdk1",
+        "v_phlpp",
+        "v_pias3",
+        "v_pten",
+        "v_ship",
+        "v_shp2",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_cam_ca & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))) | (!v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_gp80m_a & ((v_il6 & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))) | (!v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_il6 & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))))) | (!v_gp130m & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_gp80m_a & ((v_il6 & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_il6 & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))))) | (!v_gp130m & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))))) | (!v_cam_ca & ((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))) | (!v_pias3 & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_gp80m_a & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))) | (!v_gp130m & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_gp80m_a & ((v_mtor & ((v_nfkb & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_nfkb & ((v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_p38 & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & 0))))))) | (!v_pdk1 & 1))))))) | (!v_mtor & 1))) | (!v_gp80m_a & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))) | (!v_gp130m & ((v_mtor & ((v_pdk1 & ((v_phlpp & 1) | (!v_phlpp & ((v_pten & 1) | (!v_pten & ((v_ship & 1) | (!v_ship & !(((v_shp2 & 1) | (!v_shp2 & 0)))))))))) | (!v_pdk1 & 1))) | (!v_mtor & 1))))))))"
+    },
+    {
+      "node": "v_gp80m_a",
+      "support": [
+        "v_il6"
+      ],
+      "function": "v_il6"
+    },
+    {
+      "node": "v_irs1_ps",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gab1_kin",
+        "v_gp130m",
+        "v_il6",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_ros",
+        "v_shp2",
+        "v_sirp1a",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gab1_kin & ((v_gp130m & ((v_il6 & ((v_nfkb & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_ros & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))) | (!v_ros & ((v_shp2 & ((v_sirp1a & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_sirp1a & 1))) | (!v_shp2 & 0))))))) | (!v_nfkb & ((v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_ros & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))) | (!v_ros & ((v_shp2 & ((v_sirp1a & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_sirp1a & 1))) | (!v_shp2 & 0))))))) | (!v_p38 & ((v_pias3 & 1) | (!v_pias3 & ((v_ros & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_ros & ((v_shp2 & ((v_sirp1a & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_sirp1a & 1))) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))))))))))))) | (!v_il6 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_ros & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))) | (!v_ros & ((v_shp2 & ((v_sirp1a & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_sirp1a & 1))) | (!v_shp2 & 0))))))))) | (!v_gp130m & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_ros & ((v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_shp2 & 0))) | (!v_ros & ((v_shp2 & ((v_sirp1a & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))) | (!v_sirp1a & 1))) | (!v_shp2 & 0))))))))) | (!v_gab1_kin & ((v_gp130m & ((v_il6 & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & ((v_pias3 & 1) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))))))))))) | (!v_il6 & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gp130m & ((v_shp2 & 1) | (!v_shp2 & 0))))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gp130m & ((v_il6 & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & 1))))) | (!v_il6 & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gp130m & ((v_shp2 & 1) | (!v_shp2 & 0))))))"
+    },
+    {
+      "node": "v_pro_proliferative",
+      "support": [
+        "v_cam_ca",
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gab1_kin",
+        "v_gp130m",
+        "v_il6",
+        "v_mtor",
+        "v_nfkb",
+        "v_p38",
+        "v_p70s6k",
+        "v_pdk1",
+        "v_phlpp",
+        "v_pias3",
+        "v_pten",
+        "v_ros",
+        "v_ship",
+        "v_shp2",
+        "v_sirp1a",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_cam_ca",
+      "support": [
+        "v_dum_mtorc1_or_pkcd_stat3_ta",
+        "v_gab1_kin",
+        "v_gp130m",
+        "v_il6",
+        "v_nfkb",
+        "v_p38",
+        "v_pias3",
+        "v_shp2",
+        "v_slim",
+        "v_stat3_py"
+      ],
+      "function": "((v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gab1_kin & ((v_gp130m & ((v_il6 & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & ((v_pias3 & 1) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & ((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0)))))))))))))) | (!v_il6 & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gp130m & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gab1_kin & !(((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_pias3 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_pias3 & ((v_shp2 & 1) | (!v_shp2 & !(((v_slim & 1) | (!v_slim & !(((v_stat3_py & 1) | (!v_stat3_py & 0))))))))))))))) | (!v_il6 & 1))) | (!v_gp130m & 1)))))) | (!v_dum_mtorc1_or_pkcd_stat3_ta & ((v_gab1_kin & ((v_gp130m & ((v_il6 & ((v_nfkb & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_nfkb & ((v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))) | (!v_p38 & 1))))) | (!v_il6 & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gp130m & ((v_shp2 & 1) | (!v_shp2 & 0))))) | (!v_gab1_kin & !(((v_gp130m & ((v_il6 & ((v_nfkb & 1) | (!v_nfkb & ((v_p38 & 1) | (!v_p38 & ((v_shp2 & 1) | (!v_shp2 & 0))))))) | (!v_il6 & 1))) | (!v_gp130m & 1)))))))"
+    },
+    {
+      "node": "v_p70s6k",
+      "support": [
+        "v_gab1_kin",
+        "v_mtor",
+        "v_ros",
+        "v_shp2",
+        "v_sirp1a"
+      ],
+      "function": "((v_gab1_kin & ((v_mtor & 1) | (!v_mtor & !(((v_ros & 1) | (!v_ros & ((v_shp2 & ((v_sirp1a & 1) | (!v_sirp1a & 0))) | (!v_shp2 & 1)))))))) | (!v_gab1_kin & ((v_mtor & 1) | (!v_mtor & ((v_shp2 & 1) | (!v_shp2 & 0))))))"
+    },
+    {
+      "node": "v_tdum_shp2_stat3_py",
+      "support": [
+        "v_shp2"
+      ],
+      "function": "v_shp2"
+    }
+  ],
+  "seconds": 1.287620099959895
+}

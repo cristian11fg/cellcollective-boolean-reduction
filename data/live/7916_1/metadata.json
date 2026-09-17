@@ -1,0 +1,172 @@
+{
+  "id": "7916_1",
+  "name": "Aurora Kinase A in Neuroblastoma",
+  "input-names": [
+    "v_AJUBA",
+    "v_STMNCanAct",
+    "v_MTCanAct",
+    "v_GSK3B"
+  ],
+  "variable-names": [
+    "v_MT",
+    "v_BORA",
+    "v_CDK1CCNBComplex",
+    "v_PP1",
+    "v_AURKAPresent",
+    "v_NEDD9",
+    "v_TPX2",
+    "v_GWL_MASTL",
+    "v_ENSA",
+    "v_Cytokinesis",
+    "v_CentrosomeMat",
+    "v_SpindleAssembly",
+    "v_AURKAActive",
+    "v_PP2A",
+    "v_STMN",
+    "v_PLK1",
+    "v_hCPEB",
+    "v_WEE1",
+    "v_CDC25B"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "MT": "v_MT",
+    "NEDD9": "v_NEDD9",
+    "SpindleAssembly": "v_SpindleAssembly",
+    "GSK3B": "v_GSK3B",
+    "STMNCanAct": "v_STMNCanAct",
+    "BORA": "v_BORA",
+    "CentrosomeMat": "v_CentrosomeMat",
+    "PP2A": "v_PP2A",
+    "PLK1": "v_PLK1",
+    "Cytokinesis": "v_Cytokinesis",
+    "WEE1": "v_WEE1",
+    "STMN": "v_STMN",
+    "AJUBA": "v_AJUBA",
+    "AURKAPresent": "v_AURKAPresent",
+    "CDC25B": "v_CDC25B",
+    "CDK1CCNBComplex": "v_CDK1CCNBComplex",
+    "GWL_MASTL": "v_GWL_MASTL",
+    "TPX2": "v_TPX2",
+    "ENSA": "v_ENSA",
+    "PP1": "v_PP1",
+    "AURKAActive": "v_AURKAActive",
+    "MTCanAct": "v_MTCanAct",
+    "hCPEB": "v_hCPEB"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 23,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 7916,
+    "name": "Aurora Kinase A in Neuroblastoma",
+    "description": "Aurora Kinase A (AURKA) is often overexpressed in neuroblastoma (NB) with poor outcome. The causes of AURKA overexpression in NB are unknown. Here, we describe a gene regulatory network consisting of core regulators of AURKA protein expression and activation during mitosis to identify potential causes. This network was transformed to a dynamic Boolean model. Simulated activation of the serine/threonine protein kinase Greatwall (GWL, encoded by MASTL) that attenuates the pivotal AURKA inhibitor PP2A, predicted stabilization of AURKA. Consistent with this notion, gene set enrichment analysis showed enrichment of mitotic spindle assembly genes and MYCN target genes in NB with high GWL/MASTL expression. In line with the prediction of GWL/MASTL enhancing AURKA, elevated expression of GWL/MASTL was associated with NB risk factors and poor survival of patients. These results establish Boolean network modeling of oncogenic pathways in NB as a useful means for guided discovery in this enigmatic cancer.",
+    "tags": "Boolean network, Gene regulatory network, AURKA, Neuroblastoma, GWL/MASTL",
+    "userId": 70,
+    "author": "M Dahlhaus et. al.",
+    "creationDate": "Thu, 20 Apr 2017 16:52:20 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Fri, 23 Mar 2018 11:35:29 GMT",
+    "components": 23,
+    "interactions": 43,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 70,
+        "creationDate": "Thu, 20 Apr 2017 16:52:20 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": {
+      "[model]VERSION[0021].application.model": {
+        "favorites": [
+          "Model",
+          "Simulation",
+          "Analysis",
+          "Network Analysis",
+          "Knowledge Base",
+          "Description"
+        ],
+        "section": [
+          "Shared with Me"
+        ],
+        "layout": "Analysis",
+        "layouts": {
+          "": {}
+        }
+      },
+      "[model]VERSION[0021].Layout[Model].model": {
+        "views": {
+          "ModelGraphView": 0,
+          "InternalComponentsView": 1,
+          "ExternalComponentsView": 2,
+          "RegulationCenterView(Biologic)": 3,
+          "PageView": 4
+        }
+      },
+      "[model]VERSION[0021].Layout[Analysis].model": {
+        "views": {
+          "ExperimentView": 0,
+          "ExperimentExternalComponentsView": 1,
+          "ExperimentInternalComponentsView": 2,
+          "AnalysisComponentsView": 3,
+          "AnalysisGraphView": 4,
+          "ExperimentsView": 5
+        }
+      },
+      "[model]VERSION[0021].Layout[Simulation].model": {
+        "views": {
+          "SimulationControlView": 0,
+          "SimulationExternalComponentsView": 1,
+          "SimulationInternalComponentsView": 2,
+          "SimulationGraphView": 3,
+          "SimulationNetAbsoluteView": 4
+        }
+      },
+      "[model]VERSION[0021].Layout[Analysis]AnalysisGraphView.model": {
+        "left": 0.33266247379454933,
+        "top": 0,
+        "width": 0.5373375262054507,
+        "height": 1
+      },
+      "[model]VERSION[0021].undefined.model": {
+        "favorites": [
+          "Model",
+          "Simulation",
+          "Analysis",
+          "Network Analysis",
+          "Knowledge Base",
+          "Description"
+        ],
+        "section": [
+          "Shared with Me"
+        ],
+        "layout": "Model",
+        "layouts": {
+          "": {}
+        }
+      },
+      "_genWidth": 1920
+    },
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "-204220243",
+  "version": "1"
+}

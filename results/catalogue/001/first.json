@@ -1,0 +1,3660 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "001",
+  "name": "SIGNALING-IN-MACROPHAGE-ACTIVATION",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 321,
+  "after": {
+    "nodes": 21,
+    "n_nodes": 21,
+    "inputs": 19,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bacteria": "+",
+      "v_TLR9_MYD88_TRAF6_IRF5": "+",
+      "v_External_Activator": "+",
+      "v_Virus": "-",
+      "v_tBID": "+",
+      "v_CASP3_Activator": "+",
+      "v_FASLG": "+",
+      "v_Mitochondrial_Activator": "+",
+      "v_TNFSF10": "+"
+    },
+    "positive_edges": 8,
+    "negative_edges": 2,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 10,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MIN": 1,
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {},
+    "local": {
+      "v_TLR9_MYD88_TRAF6_IRF5": {
+        "signs": {
+          "v_Bacteria": "+",
+          "v_External_Activator": "+",
+          "v_TLR9_MYD88_TRAF6_IRF5": "-",
+          "v_Virus": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_tBID": {
+        "signs": {
+          "v_CASP3_Activator": "+",
+          "v_External_Activator": "+",
+          "v_FASLG": "+",
+          "v_Mitochondrial_Activator": "+",
+          "v_TNFSF10": "+",
+          "v_tBID": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 21,
+    "n_nodes": 21,
+    "inputs": 19,
+    "internal_nodes": 2,
+    "nonconstant_rules": 21,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 21,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Bacteria": "+",
+      "v_TLR9_MYD88_TRAF6_IRF5": "+",
+      "v_External_Activator": "+",
+      "v_Virus": "-",
+      "v_tBID": "+",
+      "v_CASP3_Activator": "+",
+      "v_FASLG": "+",
+      "v_Mitochondrial_Activator": "+",
+      "v_TNFSF10": "+",
+      "v_CASP6_Activator": "+",
+      "v_CASP7_Activator": "+",
+      "v_CD40LG": "+",
+      "v_IFNA": "+",
+      "v_IFNB1": "+",
+      "v_IFNG": "+",
+      "v_ILIB": "+",
+      "v_IRF1_IRF1_Activator": "+",
+      "v_IRF2_Activator": "+",
+      "v_RELA_NFKB1_Activator": "+",
+      "v_TNF": "+",
+      "v_TNFSF13B": "+"
+    },
+    "positive_edges": 27,
+    "negative_edges": 2,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 29,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "MIN": 1,
+      "UNATE_OTHER": 1,
+      "MIN_MAX": 19
+    },
+    "conflicts": {
+      "v_Virus": {
+        "v_TLR9_MYD88_TRAF6_IRF5": "-",
+        "v_Virus": "+"
+      }
+    },
+    "local": {
+      "v_TLR9_MYD88_TRAF6_IRF5": {
+        "signs": {
+          "v_Bacteria": "+",
+          "v_External_Activator": "+",
+          "v_TLR9_MYD88_TRAF6_IRF5": "-",
+          "v_Virus": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_tBID": {
+        "signs": {
+          "v_CASP3_Activator": "+",
+          "v_External_Activator": "+",
+          "v_FASLG": "+",
+          "v_Mitochondrial_Activator": "+",
+          "v_TNFSF10": "+",
+          "v_tBID": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bacteria": {
+        "signs": {
+          "v_Bacteria": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CASP3_Activator": {
+        "signs": {
+          "v_CASP3_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CASP6_Activator": {
+        "signs": {
+          "v_CASP6_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CASP7_Activator": {
+        "signs": {
+          "v_CASP7_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CD40LG": {
+        "signs": {
+          "v_CD40LG": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_External_Activator": {
+        "signs": {
+          "v_External_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FASLG": {
+        "signs": {
+          "v_FASLG": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNA": {
+        "signs": {
+          "v_IFNA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNB1": {
+        "signs": {
+          "v_IFNB1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNG": {
+        "signs": {
+          "v_IFNG": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ILIB": {
+        "signs": {
+          "v_ILIB": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IRF1_IRF1_Activator": {
+        "signs": {
+          "v_IRF1_IRF1_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IRF2_Activator": {
+        "signs": {
+          "v_IRF2_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Mitochondrial_Activator": {
+        "signs": {
+          "v_Mitochondrial_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RELA_NFKB1_Activator": {
+        "signs": {
+          "v_RELA_NFKB1_Activator": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNF": {
+        "signs": {
+          "v_TNF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNFSF10": {
+        "signs": {
+          "v_TNFSF10": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNFSF13B": {
+        "signs": {
+          "v_TNFSF13B": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Virus": {
+        "signs": {
+          "v_Virus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 1,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 1,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 0,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 0,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 1,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 0,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 0,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 0,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      },
+      {
+        "v_Bacteria": 1,
+        "v_CASP3_Activator": 0,
+        "v_CASP6_Activator": 0,
+        "v_CASP7_Activator": 1,
+        "v_CD40LG": 0,
+        "v_External_Activator": 0,
+        "v_FASLG": 0,
+        "v_IFNA": 1,
+        "v_IFNB1": 0,
+        "v_IFNG": 0,
+        "v_ILIB": 0,
+        "v_IRF1_IRF1_Activator": 0,
+        "v_IRF2_Activator": 0,
+        "v_Mitochondrial_Activator": 1,
+        "v_RELA_NFKB1_Activator": 0,
+        "v_TLR9_MYD88_TRAF6_IRF5": 0,
+        "v_TNF": 1,
+        "v_TNFSF10": 0,
+        "v_TNFSF13B": 0,
+        "v_Virus": 0,
+        "v_tBID": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_TLR9_MYD88_TRAF6_IRF5": "v_Bacteria & v_External_Activator & !v_TLR9_MYD88_TRAF6_IRF5 & !v_Virus",
+    "v_tBID": "((v_CASP3_Activator & ((v_External_Activator & 1) | (!v_External_Activator & 0))) | (!v_CASP3_Activator & ((v_External_Activator & ((v_FASLG & 1) | (!v_FASLG & ((v_Mitochondrial_Activator & ((v_TNFSF10 & 1) | (!v_TNFSF10 & ((v_tBID & 1) | (!v_tBID & 0))))) | (!v_Mitochondrial_Activator & ((v_TNFSF10 & 1) | (!v_TNFSF10 & 0))))))) | (!v_External_Activator & 0))))",
+    "v_Bacteria": "v_Bacteria",
+    "v_CASP3_Activator": "v_CASP3_Activator",
+    "v_CASP6_Activator": "v_CASP6_Activator",
+    "v_CASP7_Activator": "v_CASP7_Activator",
+    "v_CD40LG": "v_CD40LG",
+    "v_External_Activator": "v_External_Activator",
+    "v_FASLG": "v_FASLG",
+    "v_IFNA": "v_IFNA",
+    "v_IFNB1": "v_IFNB1",
+    "v_IFNG": "v_IFNG",
+    "v_ILIB": "v_ILIB",
+    "v_IRF1_IRF1_Activator": "v_IRF1_IRF1_Activator",
+    "v_IRF2_Activator": "v_IRF2_Activator",
+    "v_Mitochondrial_Activator": "v_Mitochondrial_Activator",
+    "v_RELA_NFKB1_Activator": "v_RELA_NFKB1_Activator",
+    "v_TNF": "v_TNF",
+    "v_TNFSF10": "v_TNFSF10",
+    "v_TNFSF13B": "v_TNFSF13B",
+    "v_Virus": "v_Virus"
+  },
+  "steps": [
+    {
+      "node": "v_APAF1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_APAF1_CYCS",
+      "support": [
+        "v_CYCScytoplasm",
+        "v_External_Activator"
+      ],
+      "function": "v_CYCScytoplasm & v_External_Activator"
+    },
+    {
+      "node": "v_APAF1gene",
+      "support": [
+        "v_TP53nucleus"
+      ],
+      "function": "v_TP53nucleus"
+    },
+    {
+      "node": "v_ATF2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_Apoptosis",
+      "support": [
+        "v_Cell_Shrinkage",
+        "v_DNA_Fragmentation",
+        "v_Inactivation_of_Protein_Synthesis",
+        "v_Inactive_DNA_Repair"
+      ],
+      "function": "v_Cell_Shrinkage | v_DNA_Fragmentation | v_Inactivation_of_Protein_Synthesis | v_Inactive_DNA_Repair"
+    },
+    {
+      "node": "v_Apoptosome",
+      "support": [
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator"
+      ],
+      "function": "v_CASP9 & v_CYCScytoplasm & v_External_Activator"
+    },
+    {
+      "node": "v_BAD",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BAG4",
+      "support": [
+        "v_External_Activator",
+        "v_TNF_BAG4_TNFRSF1A"
+      ],
+      "function": "v_External_Activator | v_TNF_BAG4_TNFRSF1A"
+    },
+    {
+      "node": "v_BAG4_TNFRSF1A",
+      "support": [
+        "v_External_Activator",
+        "v_TNFRSF1A",
+        "v_TNF_BAG4_TNFRSF1A"
+      ],
+      "function": "((v_External_Activator & ((v_TNFRSF1A & 1) | (!v_TNFRSF1A & 0))) | (!v_External_Activator & ((v_TNFRSF1A & ((v_TNF_BAG4_TNFRSF1A & 1) | (!v_TNF_BAG4_TNFRSF1A & 0))) | (!v_TNFRSF1A & 0))))"
+    },
+    {
+      "node": "v_BAK1",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BAK1gene",
+      "support": [
+        "v_IRF5_IRF5nucleus"
+      ],
+      "function": "v_IRF5_IRF5nucleus"
+    },
+    {
+      "node": "v_BAX",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BBC3gene",
+      "support": [
+        "v_TP53nucleus"
+      ],
+      "function": "v_TP53nucleus"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BCL2A1",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_BCL2A1gene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_BCL2L1_BAD",
+      "support": [
+        "v_BCL2L1mitochondria",
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_BCL2L1mitochondria & v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BCL2L1gene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_BCL2L1mitochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BCL2_BAX",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_BCL3",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_BCL3_NFKB2p52_NFKB2p52",
+      "support": [
+        "v_External_Activator",
+        "v_NFKB2p52_NFKB2p52nucleus"
+      ],
+      "function": "v_External_Activator & v_NFKB2p52_NFKB2p52nucleus"
+    },
+    {
+      "node": "v_BID",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_BIRC2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_BIRC3gene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_BIRC4cytoplasm",
+      "support": [
+        "v_DIABLOcytoplasm",
+        "v_HTRA2cytoplasm"
+      ],
+      "function": "!v_DIABLOcytoplasm & !v_HTRA2cytoplasm"
+    },
+    {
+      "node": "v_BIRC4gene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_CASP1",
+      "support": [
+        "v_CASP4",
+        "v_ProCASP1"
+      ],
+      "function": "v_CASP4 & v_ProCASP1"
+    },
+    {
+      "node": "v_CASP10",
+      "support": [
+        "v_ProCASP10",
+        "v_TNF_TNFRSF1A_FADD_TRADD"
+      ],
+      "function": "v_ProCASP10 & v_TNF_TNFRSF1A_FADD_TRADD"
+    },
+    {
+      "node": "v_CASP2",
+      "support": [
+        "v_Fragmented_DNAcytoplasm",
+        "v_ProCASP2"
+      ],
+      "function": "v_Fragmented_DNAcytoplasm & v_ProCASP2"
+    },
+    {
+      "node": "v_CASP3cytoplasm",
+      "support": [
+        "v_CASP4",
+        "v_CASP8",
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator",
+        "v_ProCASP3"
+      ],
+      "function": "((v_CASP4 & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_CASP4 & ((v_CASP8 & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_CASP8 & ((v_CASP9 & ((v_CYCScytoplasm & ((v_External_Activator & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_External_Activator & 0))) | (!v_CYCScytoplasm & 0))) | (!v_CASP9 & 0))))))"
+    },
+    {
+      "node": "v_CASP3gene",
+      "support": [
+        "v_CASP4",
+        "v_CASP8",
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator",
+        "v_IRF5_IRF5nucleus",
+        "v_ProCASP3"
+      ],
+      "function": "((v_CASP4 & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))))) | (!v_CASP4 & ((v_CASP8 & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))))) | (!v_CASP8 & ((v_CASP9 & ((v_CYCScytoplasm & ((v_External_Activator & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))))) | (!v_External_Activator & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & 0))))) | (!v_CYCScytoplasm & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & 0))))) | (!v_CASP9 & ((v_IRF5_IRF5nucleus & 1) | (!v_IRF5_IRF5nucleus & 0))))))))"
+    },
+    {
+      "node": "v_CASP3nucleus",
+      "support": [
+        "v_CASP4",
+        "v_CASP8",
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator",
+        "v_ProCASP3"
+      ],
+      "function": "((v_CASP4 & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_CASP4 & ((v_CASP8 & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_CASP8 & ((v_CASP9 & ((v_CYCScytoplasm & ((v_External_Activator & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_External_Activator & 0))) | (!v_CYCScytoplasm & 0))) | (!v_CASP9 & 0))))))"
+    },
+    {
+      "node": "v_CASP4",
+      "support": [
+        "v_ProCASP4"
+      ],
+      "function": "v_ProCASP4"
+    },
+    {
+      "node": "v_CASP6cytoplasm",
+      "support": [
+        "v_CASP9",
+        "v_ProCASP6"
+      ],
+      "function": "v_CASP9 & v_ProCASP6"
+    },
+    {
+      "node": "v_CASP6nucleus",
+      "support": [
+        "v_CASP9",
+        "v_ProCASP6"
+      ],
+      "function": "v_CASP9 & v_ProCASP6"
+    },
+    {
+      "node": "v_CASP7cytoplasm",
+      "support": [
+        "v_CASP8",
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator",
+        "v_ProCASP10",
+        "v_ProCASP7",
+        "v_TNF_TNFRSF1A_FADD_TRADD"
+      ],
+      "function": "((v_CASP8 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))) | (!v_CASP8 & ((v_CASP9 & ((v_CYCScytoplasm & ((v_External_Activator & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))) | (!v_External_Activator & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))) | (!v_CYCScytoplasm & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))) | (!v_CASP9 & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))))"
+    },
+    {
+      "node": "v_CASP7nucleus",
+      "support": [
+        "v_CASP8",
+        "v_CASP9",
+        "v_CYCScytoplasm",
+        "v_External_Activator",
+        "v_ProCASP10",
+        "v_ProCASP7",
+        "v_TNF_TNFRSF1A_FADD_TRADD"
+      ],
+      "function": "((v_CASP8 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))) | (!v_CASP8 & ((v_CASP9 & ((v_CYCScytoplasm & ((v_External_Activator & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))) | (!v_External_Activator & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))) | (!v_CYCScytoplasm & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))) | (!v_CASP9 & ((v_ProCASP10 & ((v_ProCASP7 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))) | (!v_ProCASP7 & 0))) | (!v_ProCASP10 & 0))))))"
+    },
+    {
+      "node": "v_CASP8",
+      "support": [
+        "v_FASLG_FAS_FADD_FAF1_DAXX",
+        "v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR",
+        "v_ProCASP8",
+        "v_TNFSF10_TNFRSF10A_FADD",
+        "v_TNFSF10_TNFSF10B_FADD"
+      ],
+      "function": "((v_FASLG_FAS_FADD_FAF1_DAXX & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_FASLG_FAS_FADD_FAF1_DAXX & ((v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))"
+    },
+    {
+      "node": "v_CASP9",
+      "support": [
+        "v_CASP6_Activator"
+      ],
+      "function": "v_CASP6_Activator"
+    },
+    {
+      "node": "v_CBP",
+      "support": [
+        "v_CREBBP",
+        "v_EP300"
+      ],
+      "function": "v_CREBBP & v_EP300"
+    },
+    {
+      "node": "v_CCL5gene",
+      "support": [
+        "v_IRF1_IRF1nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus"
+    },
+    {
+      "node": "v_CD40",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_CD40_CD40LG",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator"
+      ],
+      "function": "v_CD40LG & v_External_Activator"
+    },
+    {
+      "node": "v_CD40_CD40LG_TRAF3",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator",
+        "v_TRAF3"
+      ],
+      "function": "v_CD40LG & v_External_Activator & v_TRAF3"
+    },
+    {
+      "node": "v_CFLAR",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_CFLARgene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_CHUK",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_CHUK_CHUK",
+      "support": [
+        "v_External_Activator",
+        "v_MAP3K14"
+      ],
+      "function": "v_External_Activator & v_MAP3K14"
+    },
+    {
+      "node": "v_CIITAgene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_IRF2"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_IRF2"
+    },
+    {
+      "node": "v_CKII",
+      "support": [
+        "v_IRF1_IRF1_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator"
+    },
+    {
+      "node": "v_CREBBP",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_CXCL10gene",
+      "support": [
+        "v_EP300",
+        "v_External_Activator",
+        "v_IRF3_IRF3nucleus",
+        "v_IRF3_IRF7nucleus",
+        "v_ISGF3nucleus"
+      ],
+      "function": "((v_EP300 & ((v_External_Activator & ((v_IRF3_IRF3nucleus & 1) | (!v_IRF3_IRF3nucleus & ((v_IRF3_IRF7nucleus & 1) | (!v_IRF3_IRF7nucleus & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))) | (!v_External_Activator & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_EP300 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))"
+    },
+    {
+      "node": "v_CXCL11gene",
+      "support": [
+        "v_IRF5_IRF5nucleus"
+      ],
+      "function": "v_IRF5_IRF5nucleus"
+    },
+    {
+      "node": "v_CXCL9gene",
+      "support": [
+        "v_STAT1_STAT1nucleus_p2"
+      ],
+      "function": "v_STAT1_STAT1nucleus_p2"
+    },
+    {
+      "node": "v_CYBBgene",
+      "support": [
+        "v_IRF8",
+        "v_SPI1"
+      ],
+      "function": "v_IRF8 & v_SPI1"
+    },
+    {
+      "node": "v_CYCScytoplasm",
+      "support": [
+        "v_CYCSmytochondria",
+        "v_Mitochondrial_Activator",
+        "v_tBID"
+      ],
+      "function": "((v_CYCSmytochondria & ((v_Mitochondrial_Activator & 1) | (!v_Mitochondrial_Activator & ((v_tBID & 1) | (!v_tBID & 0))))) | (!v_CYCSmytochondria & 0))"
+    },
+    {
+      "node": "v_CYCSmytochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_Cell_Shrinkage",
+      "support": [
+        "v_cGAS2",
+        "v_cLMNA"
+      ],
+      "function": "v_cGAS2 | v_cLMNA"
+    },
+    {
+      "node": "v_DAXX",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_DFFA",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_DIABLOcytoplasm",
+      "support": [
+        "v_DIABLOmitochondria",
+        "v_Mitochondrial_Activator",
+        "v_tBID"
+      ],
+      "function": "((v_DIABLOmitochondria & ((v_Mitochondrial_Activator & 1) | (!v_Mitochondrial_Activator & ((v_tBID & 1) | (!v_tBID & 0))))) | (!v_DIABLOmitochondria & 0))"
+    },
+    {
+      "node": "v_DIABLOmitochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_DNA",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_DNA_Fragmentation",
+      "support": [
+        "v_Fragmented_DNAnucleus",
+        "v_IDFFA"
+      ],
+      "function": "v_Fragmented_DNAnucleus | v_IDFFA"
+    },
+    {
+      "node": "v_Diacyl_Lipopeptides",
+      "support": [
+        "v_Bacteria"
+      ],
+      "function": "v_Bacteria"
+    },
+    {
+      "node": "v_EIF2AK2_PRKRA",
+      "support": [
+        "v_EIF2AK2cytoplasm",
+        "v_PRKRA"
+      ],
+      "function": "v_EIF2AK2cytoplasm & v_PRKRA"
+    },
+    {
+      "node": "v_EIF2AK2cytoplasm",
+      "support": [
+        "v_dsRNA"
+      ],
+      "function": "v_dsRNA"
+    },
+    {
+      "node": "v_EIF2AK2gene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_ISGF3nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_ISGF3nucleus"
+    },
+    {
+      "node": "v_EIF2S1",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_ISGF3nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_ISGF3nucleus"
+    },
+    {
+      "node": "v_ENDOGcytoplasm",
+      "support": [
+        "v_ENDOGmitochondria",
+        "v_tBID"
+      ],
+      "function": "v_ENDOGmitochondria & v_tBID"
+    },
+    {
+      "node": "v_ENDOGmitochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_ENDOGnucleus",
+      "support": [
+        "v_Mitochondrial_Activator",
+        "v_tBID"
+      ],
+      "function": "v_Mitochondrial_Activator & v_tBID"
+    },
+    {
+      "node": "v_EP300",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_FADD",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_FAF1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_FAS",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_FASLG_FAS",
+      "support": [
+        "v_External_Activator",
+        "v_FASLG"
+      ],
+      "function": "v_External_Activator & v_FASLG"
+    },
+    {
+      "node": "v_FASLG_FAS_FADD_FAF1_DAXX",
+      "support": [
+        "v_External_Activator",
+        "v_FASLG"
+      ],
+      "function": "v_External_Activator & v_FASLG"
+    },
+    {
+      "node": "v_FASLG_FAS_FADD_FAF1_DAXX_CFLAR",
+      "support": [
+        "v_External_Activator",
+        "v_FASLG"
+      ],
+      "function": "v_External_Activator & v_FASLG"
+    },
+    {
+      "node": "v_FASLGgene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_TP53nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_TP53nucleus"
+    },
+    {
+      "node": "v_FASgene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_Flagellin",
+      "support": [
+        "v_Bacteria"
+      ],
+      "function": "v_Bacteria"
+    },
+    {
+      "node": "v_Fragmented_DNAcytoplasm",
+      "support": [
+        "v_Fragmented_DNAnucleus",
+        "v_IDFFA"
+      ],
+      "function": "v_Fragmented_DNAnucleus | v_IDFFA"
+    },
+    {
+      "node": "v_Fragmented_DNAnucleus",
+      "support": [
+        "v_External_Activator",
+        "v_Mitochondrial_Activator",
+        "v_PDCD8nucleus",
+        "v_tBID"
+      ],
+      "function": "((v_External_Activator & ((v_Mitochondrial_Activator & ((v_PDCD8nucleus & 1) | (!v_PDCD8nucleus & ((v_tBID & 1) | (!v_tBID & 0))))) | (!v_Mitochondrial_Activator & ((v_PDCD8nucleus & 1) | (!v_PDCD8nucleus & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_G1P2gene",
+      "support": [
+        "v_External_Activator",
+        "v_IRF1_IRF1nucleus",
+        "v_IRF2",
+        "v_IRF3_IRF3nucleus",
+        "v_IRF3_IRF7nucleus",
+        "v_IRF4",
+        "v_IRF8",
+        "v_ISGF3nucleus",
+        "v_SPI1"
+      ],
+      "function": "((v_External_Activator & ((v_IRF1_IRF1nucleus & ((v_IRF3_IRF3nucleus & 1) | (!v_IRF3_IRF3nucleus & ((v_IRF3_IRF7nucleus & 1) | (!v_IRF3_IRF7nucleus & ((v_IRF4 & ((v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & ((v_SPI1 & 1) | (!v_SPI1 & 0))))) | (!v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF4 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))))) | (!v_IRF1_IRF1nucleus & ((v_IRF2 & ((v_IRF3_IRF3nucleus & 1) | (!v_IRF3_IRF3nucleus & ((v_IRF3_IRF7nucleus & 1) | (!v_IRF3_IRF7nucleus & ((v_IRF4 & ((v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & ((v_SPI1 & 1) | (!v_SPI1 & 0))))) | (!v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF4 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))))) | (!v_IRF2 & ((v_IRF3_IRF3nucleus & 1) | (!v_IRF3_IRF3nucleus & ((v_IRF3_IRF7nucleus & 1) | (!v_IRF3_IRF7nucleus & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))))))) | (!v_External_Activator & ((v_IRF1_IRF1nucleus & ((v_IRF4 & ((v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & ((v_SPI1 & 1) | (!v_SPI1 & 0))))) | (!v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF4 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF1_IRF1nucleus & ((v_IRF2 & ((v_IRF4 & ((v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & ((v_SPI1 & 1) | (!v_SPI1 & 0))))) | (!v_IRF8 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF4 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))) | (!v_IRF2 & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))))"
+    },
+    {
+      "node": "v_G1P3gene",
+      "support": [
+        "v_IRF8"
+      ],
+      "function": "v_IRF8"
+    },
+    {
+      "node": "v_GAS2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_GBP1gene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_IRF2"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_IRF2"
+    },
+    {
+      "node": "v_HIST2H4gene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_IRF2"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_IRF2"
+    },
+    {
+      "node": "v_HLA_Bgene",
+      "support": [
+        "v_IRF8"
+      ],
+      "function": "v_IRF8"
+    },
+    {
+      "node": "v_HSPA1A",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_HTRA2cytoplasm",
+      "support": [
+        "v_HTRA2mitochondria",
+        "v_tBID"
+      ],
+      "function": "v_HTRA2mitochondria & v_tBID"
+    },
+    {
+      "node": "v_HTRA2mitochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_ICAM1gene",
+      "support": [
+        "v_STAT1_STAT1nucleus_p2"
+      ],
+      "function": "v_STAT1_STAT1nucleus_p2"
+    },
+    {
+      "node": "v_IDFFA",
+      "support": [
+        "v_CASP6_Activator",
+        "v_External_Activator",
+        "v_FASLG",
+        "v_Mitochondrial_Activator",
+        "v_ProCASP3",
+        "v_ProCASP4",
+        "v_ProCASP8",
+        "v_TNFSF10_TNFRSF10A_FADD",
+        "v_TNFSF10_TNFSF10B_FADD"
+      ],
+      "function": "((v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_Mitochondrial_Activator & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_Mitochondrial_Activator & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & 0))))) | (!v_FASLG & ((v_Mitochondrial_Activator & ((v_ProCASP3 & 1) | (!v_ProCASP3 & 0))) | (!v_Mitochondrial_Activator & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & 0))))))) | (!v_External_Activator & 0))) | (!v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & 0))) | (!v_FASLG & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & 0))))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_IER3gene",
+      "support": [
+        "v_RELAp65_NFBK1p50nucleus"
+      ],
+      "function": "v_RELAp65_NFBK1p50nucleus"
+    },
+    {
+      "node": "v_IFIT1gene",
+      "support": [
+        "v_IRF5_IRF5nucleus"
+      ],
+      "function": "v_IRF5_IRF5nucleus"
+    },
+    {
+      "node": "v_IFIT2gene",
+      "support": [
+        "v_External_Activator",
+        "v_IRF3_IRF3nucleus",
+        "v_IRF3_IRF7nucleus",
+        "v_ISGF3nucleus"
+      ],
+      "function": "((v_External_Activator & ((v_IRF3_IRF3nucleus & 1) | (!v_IRF3_IRF3nucleus & ((v_IRF3_IRF7nucleus & 1) | (!v_IRF3_IRF7nucleus & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))))) | (!v_External_Activator & ((v_ISGF3nucleus & 1) | (!v_ISGF3nucleus & 0))))"
+    },
+    {
+      "node": "v_IFNAR",
+      "support": [
+        "v_IFNA",
+        "v_IFNAR1",
+        "v_IFNAR2",
+        "v_IFNB1",
+        "v_JAK1",
+        "v_TYK2"
+      ],
+      "function": "((v_IFNA & ((v_IFNAR1 & ((v_IFNAR2 & ((v_JAK1 & ((v_TYK2 & 1) | (!v_TYK2 & 0))) | (!v_JAK1 & 0))) | (!v_IFNAR2 & 0))) | (!v_IFNAR1 & 0))) | (!v_IFNA & ((v_IFNAR1 & ((v_IFNAR2 & ((v_IFNB1 & ((v_JAK1 & ((v_TYK2 & 1) | (!v_TYK2 & 0))) | (!v_JAK1 & 0))) | (!v_IFNB1 & 0))) | (!v_IFNAR2 & 0))) | (!v_IFNAR1 & 0))))"
+    },
+    {
+      "node": "v_IFNAR1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IFNAR2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IFNA_IFNA",
+      "support": [
+        "v_IFNA"
+      ],
+      "function": "v_IFNA"
+    },
+    {
+      "node": "v_IFNAgene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_IRF3_IRF3nucleus",
+        "v_IRF3_IRF5nucleus",
+        "v_IRF3_IRF7nucleus",
+        "v_IRF5_IRF5nucleus",
+        "v_IRF7_IRF7nucleus",
+        "v_ISGF3nucleus",
+        "v_STAT1_STAT1_IRF9nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_IRF3_IRF3nucleus | v_IRF3_IRF5nucleus | v_IRF3_IRF7nucleus | v_IRF5_IRF5nucleus | v_IRF7_IRF7nucleus | v_ISGF3nucleus | v_STAT1_STAT1_IRF9nucleus"
+    },
+    {
+      "node": "v_IFNB1_IFNB1",
+      "support": [
+        "v_IFNB1"
+      ],
+      "function": "v_IFNB1"
+    },
+    {
+      "node": "v_IFNB1gene",
+      "support": [
+        "v_IRF1_IRF1nucleus",
+        "v_IRF3_IRF3nucleus",
+        "v_IRF5_IRF5nucleus",
+        "v_ISGF3nucleus",
+        "v_STAT1_STAT1nucleus_p2"
+      ],
+      "function": "v_IRF1_IRF1nucleus | v_IRF3_IRF3nucleus | v_IRF5_IRF5nucleus | v_ISGF3nucleus | v_STAT1_STAT1nucleus_p2"
+    },
+    {
+      "node": "v_IFNGR",
+      "support": [
+        "v_IFNG",
+        "v_IFNGR1",
+        "v_IFNGR2",
+        "v_JAK2"
+      ],
+      "function": "v_IFNG & v_IFNGR1 & v_IFNGR2 & v_JAK2"
+    },
+    {
+      "node": "v_IFNGR1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IFNGR2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IFR5gene",
+      "support": [
+        "v_STAT1_STAT1_IRF9nucleus",
+        "v_TP53nucleus"
+      ],
+      "function": "v_STAT1_STAT1_IRF9nucleus | v_TP53nucleus"
+    },
+    {
+      "node": "v_IKBKB",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IKBKE",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IKBKE_TBK1",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "v_External_Activator & v_TBK1 & v_TLR4_TICAM1_TICAM2"
+    },
+    {
+      "node": "v_IKBKG",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IKBKG_CHUK_IKBKB",
+      "support": [
+        "v_External_Activator",
+        "v_MAP3K7IP1_MAP3K7IP2_MAP3K7",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3"
+      ],
+      "function": "((v_External_Activator & ((v_MAP3K7IP1_MAP3K7IP2_MAP3K7 & 1) | (!v_MAP3K7IP1_MAP3K7IP2_MAP3K7 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_IL12Bgene",
+      "support": [
+        "v_IRF1_IRF1nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus"
+    },
+    {
+      "node": "v_IL15gene",
+      "support": [
+        "v_IRF1_IRF1nucleus"
+      ],
+      "function": "v_IRF1_IRF1nucleus"
+    },
+    {
+      "node": "v_IL1Bgene",
+      "support": [
+        "v_IRF8",
+        "v_SPI1"
+      ],
+      "function": "v_IRF8 & v_SPI1"
+    },
+    {
+      "node": "v_IL1R1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ILIB_IL1R1",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB"
+      ],
+      "function": "v_External_Activator & v_ILIB"
+    },
+    {
+      "node": "v_ILIB_IL1R1_MYD88_IRAK1_IRAK4",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_IRAK1",
+        "v_IRAK4",
+        "v_MYD88"
+      ],
+      "function": "v_External_Activator & v_ILIB & v_IRAK1 & v_IRAK4 & v_MYD88"
+    },
+    {
+      "node": "v_ILIB_IL1R1_MYD88_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_IRAK1",
+        "v_IRAK4",
+        "v_MYD88",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_ILIB & v_IRAK1 & v_IRAK4 & v_MYD88 & v_TRAF6"
+    },
+    {
+      "node": "v_IPARP",
+      "support": [
+        "v_CASP6_Activator",
+        "v_External_Activator",
+        "v_FASLG",
+        "v_Mitochondrial_Activator",
+        "v_PARP",
+        "v_ProCASP10",
+        "v_ProCASP3",
+        "v_ProCASP4",
+        "v_ProCASP7",
+        "v_ProCASP8",
+        "v_TNFSF10_TNFRSF10A_FADD",
+        "v_TNFSF10_TNFSF10B_FADD",
+        "v_TNF_TNFRSF1A_FADD_TRADD"
+      ],
+      "function": "((v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP3 & 1) | (!v_ProCASP3 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))))) | (!v_PARP & 0))) | (!v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_FASLG & ((v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP3 & 1) | (!v_ProCASP3 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))))) | (!v_PARP & 0))) | (!v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))))) | (!v_External_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))) | (!v_FASLG & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_External_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))))"
+    },
+    {
+      "node": "v_IRAK1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IRAK2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IRAK4",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IRF1_IRF1cytoplasm",
+      "support": [
+        "v_IRF1cytoplasm"
+      ],
+      "function": "v_IRF1cytoplasm"
+    },
+    {
+      "node": "v_IRF1_IRF1nucleus",
+      "support": [
+        "v_IRF1cytoplasm"
+      ],
+      "function": "v_IRF1cytoplasm"
+    },
+    {
+      "node": "v_IRF1cytoplasm",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_PKA",
+        "v_PKC"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_PKA | v_PKC"
+    },
+    {
+      "node": "v_IRF1gene",
+      "support": [
+        "v_STAT1_STAT1nucleus_p2"
+      ],
+      "function": "v_STAT1_STAT1nucleus_p2"
+    },
+    {
+      "node": "v_IRF2",
+      "support": [
+        "v_IRF2_Activator"
+      ],
+      "function": "v_IRF2_Activator"
+    },
+    {
+      "node": "v_IRF2gene",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_PKA",
+        "v_PKC"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_PKA | v_PKC"
+    },
+    {
+      "node": "v_IRF3",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR3_TICAM1_TICAM2_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "((v_External_Activator & ((v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & ((v_TLR4_TICAM1_TICAM2 & 1) | (!v_TLR4_TICAM1_TICAM2 & 0))))) | (!v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))) | (!v_External_Activator & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))"
+    },
+    {
+      "node": "v_IRF3_IRF3cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR3_TICAM1_TICAM2_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "((v_External_Activator & ((v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & ((v_TLR4_TICAM1_TICAM2 & 1) | (!v_TLR4_TICAM1_TICAM2 & 0))))) | (!v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))) | (!v_External_Activator & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))"
+    },
+    {
+      "node": "v_IRF3_IRF3nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR3_TICAM1_TICAM2_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "((v_External_Activator & ((v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & ((v_TLR4_TICAM1_TICAM2 & 1) | (!v_TLR4_TICAM1_TICAM2 & 0))))) | (!v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))) | (!v_External_Activator & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))"
+    },
+    {
+      "node": "v_IRF3_IRF5cytoplasm",
+      "support": [
+        "v_IRF5"
+      ],
+      "function": "v_IRF5"
+    },
+    {
+      "node": "v_IRF3_IRF5nucleus",
+      "support": [
+        "v_IRF5"
+      ],
+      "function": "v_IRF5"
+    },
+    {
+      "node": "v_IRF3_IRF7cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_IRF7",
+        "v_TBK1",
+        "v_TLR3_TICAM1_TICAM2_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "((v_External_Activator & ((v_IRF7 & ((v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & ((v_TLR4_TICAM1_TICAM2 & 1) | (!v_TLR4_TICAM1_TICAM2 & 0))))) | (!v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))) | (!v_IRF7 & 0))) | (!v_External_Activator & ((v_IRF7 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))) | (!v_IRF7 & 0))))"
+    },
+    {
+      "node": "v_IRF3_IRF7nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_IRF7",
+        "v_TBK1",
+        "v_TLR3_TICAM1_TICAM2_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "((v_External_Activator & ((v_IRF7 & ((v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & ((v_TLR4_TICAM1_TICAM2 & 1) | (!v_TLR4_TICAM1_TICAM2 & 0))))) | (!v_TBK1 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))))) | (!v_IRF7 & 0))) | (!v_External_Activator & ((v_IRF7 & ((v_TLR3_TICAM1_TICAM2_TBK1 & 1) | (!v_TLR3_TICAM1_TICAM2_TBK1 & 0))) | (!v_IRF7 & 0))))"
+    },
+    {
+      "node": "v_IRF4",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_IRF5",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_IRF5_IRF5cytoplasm",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_IRF5_IRF5nucleus",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_IRF5_IRF7cytoplasm",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_IRF5_IRF7nucleus",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_IRF7",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "v_External_Activator & v_TBK1 & v_TLR4_TICAM1_TICAM2"
+    },
+    {
+      "node": "v_IRF7_IRF7cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "v_External_Activator & v_TBK1 & v_TLR4_TICAM1_TICAM2"
+    },
+    {
+      "node": "v_IRF7_IRF7nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_TBK1",
+        "v_TLR4_TICAM1_TICAM2"
+      ],
+      "function": "v_External_Activator & v_TBK1 & v_TLR4_TICAM1_TICAM2"
+    },
+    {
+      "node": "v_IRF8",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_IRF2_Activator",
+        "v_PKA",
+        "v_PKC"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_IRF2_Activator | v_PKA | v_PKC"
+    },
+    {
+      "node": "v_IRF9",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ISGF3cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_STAT1_STAT2"
+      ],
+      "function": "v_External_Activator & v_STAT1_STAT2"
+    },
+    {
+      "node": "v_ISGF3nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_STAT1_STAT2"
+      ],
+      "function": "v_External_Activator & v_STAT1_STAT2"
+    },
+    {
+      "node": "v_Inactivation_of_Protein_Synthesis",
+      "support": [
+        "v_External_Activator",
+        "v_IRF1_IRF1_Activator",
+        "v_PKA",
+        "v_PKC",
+        "v_STAT1_STAT2"
+      ],
+      "function": "((v_External_Activator & ((v_IRF1_IRF1_Activator & 1) | (!v_IRF1_IRF1_Activator & ((v_PKA & 1) | (!v_PKA & ((v_PKC & 1) | (!v_PKC & ((v_STAT1_STAT2 & 1) | (!v_STAT1_STAT2 & 0))))))))) | (!v_External_Activator & ((v_IRF1_IRF1_Activator & 1) | (!v_IRF1_IRF1_Activator & ((v_PKA & 1) | (!v_PKA & ((v_PKC & 1) | (!v_PKC & 0))))))))"
+    },
+    {
+      "node": "v_Inactive_DNA_Repair",
+      "support": [
+        "v_CASP6_Activator",
+        "v_External_Activator",
+        "v_FASLG",
+        "v_Mitochondrial_Activator",
+        "v_PARP",
+        "v_ProCASP10",
+        "v_ProCASP3",
+        "v_ProCASP4",
+        "v_ProCASP7",
+        "v_ProCASP8",
+        "v_TNFSF10_TNFRSF10A_FADD",
+        "v_TNFSF10_TNFSF10B_FADD",
+        "v_TNF_TNFRSF1A_FADD_TRADD"
+      ],
+      "function": "((v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP3 & 1) | (!v_ProCASP3 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))))) | (!v_PARP & 0))) | (!v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_FASLG & ((v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP3 & 1) | (!v_ProCASP3 & ((v_ProCASP7 & 1) | (!v_ProCASP7 & 0))))) | (!v_PARP & 0))) | (!v_Mitochondrial_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))))) | (!v_External_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_CASP6_Activator & ((v_External_Activator & ((v_FASLG & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & 1) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))) | (!v_FASLG & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))) | (!v_External_Activator & ((v_PARP & ((v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))))) | (!v_ProCASP8 & ((v_TNF_TNFRSF1A_FADD_TRADD & 1) | (!v_TNF_TNFRSF1A_FADD_TRADD & 0))))) | (!v_ProCASP7 & 0))))) | (!v_ProCASP10 & ((v_ProCASP3 & ((v_ProCASP4 & 1) | (!v_ProCASP4 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))))) | (!v_ProCASP3 & ((v_ProCASP7 & ((v_ProCASP8 & ((v_TNFSF10_TNFRSF10A_FADD & 1) | (!v_TNFSF10_TNFRSF10A_FADD & ((v_TNFSF10_TNFSF10B_FADD & 1) | (!v_TNFSF10_TNFSF10B_FADD & 0))))) | (!v_ProCASP8 & 0))) | (!v_ProCASP7 & 0))))))) | (!v_PARP & 0))))))"
+    },
+    {
+      "node": "v_JAK1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_JAK2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_LMNA",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_LPS",
+      "support": [
+        "v_Bacteria"
+      ],
+      "function": "v_Bacteria"
+    },
+    {
+      "node": "v_MAP3K14",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator",
+        "v_TNFSF13B_TNFRSF17_TRAF5",
+        "v_TNF_TNFRSF1B_TRAF2",
+        "v_TRAF3"
+      ],
+      "function": "((v_CD40LG & ((v_External_Activator & ((v_TNFSF13B_TNFRSF17_TRAF5 & 1) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & 1) | (!v_TNF_TNFRSF1B_TRAF2 & ((v_TRAF3 & 1) | (!v_TRAF3 & 0))))))) | (!v_External_Activator & ((v_TNFSF13B_TNFRSF17_TRAF5 & 1) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & 1) | (!v_TNF_TNFRSF1B_TRAF2 & 0))))))) | (!v_CD40LG & ((v_TNFSF13B_TNFRSF17_TRAF5 & 1) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & 1) | (!v_TNF_TNFRSF1B_TRAF2 & 0))))))"
+    },
+    {
+      "node": "v_MAP3K7",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_MAP3K7IP1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_MAP3K7IP1_MAP3K7IP2_MAP3K7",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_MAP3K7IP2",
+        "v_MYD88",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TRAF6"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_MAP3K7IP2 & ((v_MYD88 & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TRAF6 & 1) | (!v_TRAF6 & 0))))))))))))))) | (!v_MYD88 & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 0))))))))))))))) | (!v_MAP3K7IP2 & 0))) | (!v_ILIB & ((v_MAP3K7IP2 & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 0))))))))))))) | (!v_MAP3K7IP2 & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_MAP3K7IP2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_MDM2gene",
+      "support": [
+        "v_TP53nucleus"
+      ],
+      "function": "v_TP53nucleus"
+    },
+    {
+      "node": "v_MYD88",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_NFKB1_p50",
+      "support": [
+        "v_RELA_NFKB1_Activator"
+      ],
+      "function": "v_RELA_NFKB1_Activator"
+    },
+    {
+      "node": "v_NFKB2p100",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_NFKB2p100_NFKB2p100_Ub",
+      "support": [
+        "v_NFKB2p100_NFKB2p100cytoplasm",
+        "v_Ub"
+      ],
+      "function": "v_NFKB2p100_NFKB2p100cytoplasm & v_Ub"
+    },
+    {
+      "node": "v_NFKB2p100_NFKB2p100cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TRAF6"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TRAF6 & 1) | (!v_TRAF6 & 0))))))))))))))))) | (!v_ILIB & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 0))))))))))))))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_NFKB2p100_RELB_Ub",
+      "support": [
+        "v_NFKB2p100_RELBcytoplasm",
+        "v_Ub"
+      ],
+      "function": "v_NFKB2p100_RELBcytoplasm & v_Ub"
+    },
+    {
+      "node": "v_NFKB2p100_RELBcytoplasm",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator",
+        "v_RELB",
+        "v_TNFSF13B_TNFRSF17_TRAF5",
+        "v_TNF_TNFRSF1B_TRAF2",
+        "v_TRAF3"
+      ],
+      "function": "((v_CD40LG & ((v_External_Activator & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & 1) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & 1) | (!v_TNF_TNFRSF1B_TRAF2 & ((v_TRAF3 & 1) | (!v_TRAF3 & 0))))))) | (!v_RELB & 0))) | (!v_External_Activator & 0))) | (!v_CD40LG & ((v_External_Activator & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & 1) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & 1) | (!v_TNF_TNFRSF1B_TRAF2 & 0))))) | (!v_RELB & 0))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_NFKB2p52_NFKB2p52cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_Proteasome",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TRAF6",
+        "v_Ub"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_Proteasome & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TRAF6 & 0))))))))))))))))) | (!v_Proteasome & 0))) | (!v_ILIB & ((v_Proteasome & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 0))))))))))))))) | (!v_Proteasome & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_NFKB2p52_NFKB2p52nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_Proteasome",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TRAF6",
+        "v_Ub"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_Proteasome & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TRAF6 & 0))))))))))))))))) | (!v_Proteasome & 0))) | (!v_ILIB & ((v_Proteasome & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 0))))))))))))))) | (!v_Proteasome & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_NFKB2p52_RELBcytoplasm",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator",
+        "v_Proteasome",
+        "v_RELB",
+        "v_TNFSF13B_TNFRSF17_TRAF5",
+        "v_TNF_TNFRSF1B_TRAF2",
+        "v_TRAF3",
+        "v_Ub"
+      ],
+      "function": "((v_CD40LG & ((v_External_Activator & ((v_Proteasome & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNF_TNFRSF1B_TRAF2 & ((v_TRAF3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TRAF3 & 0))))))) | (!v_RELB & 0))) | (!v_Proteasome & 0))) | (!v_External_Activator & 0))) | (!v_CD40LG & ((v_External_Activator & ((v_Proteasome & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNF_TNFRSF1B_TRAF2 & 0))))) | (!v_RELB & 0))) | (!v_Proteasome & 0))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_NFKB2p52_RELBnucleus",
+      "support": [
+        "v_CD40LG",
+        "v_External_Activator",
+        "v_Proteasome",
+        "v_RELB",
+        "v_TNFSF13B_TNFRSF17_TRAF5",
+        "v_TNF_TNFRSF1B_TRAF2",
+        "v_TRAF3",
+        "v_Ub"
+      ],
+      "function": "((v_CD40LG & ((v_External_Activator & ((v_Proteasome & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNF_TNFRSF1B_TRAF2 & ((v_TRAF3 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TRAF3 & 0))))))) | (!v_RELB & 0))) | (!v_Proteasome & 0))) | (!v_External_Activator & 0))) | (!v_CD40LG & ((v_External_Activator & ((v_Proteasome & ((v_RELB & ((v_TNFSF13B_TNFRSF17_TRAF5 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNFSF13B_TNFRSF17_TRAF5 & ((v_TNF_TNFRSF1B_TRAF2 & ((v_Ub & 1) | (!v_Ub & 0))) | (!v_TNF_TNFRSF1B_TRAF2 & 0))))) | (!v_RELB & 0))) | (!v_Proteasome & 0))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_NFKBIA",
+      "support": [
+        "v_NFKBIA_RELAp65_NFKB1p50",
+        "v_RELA_NFKB1_Activator"
+      ],
+      "function": "v_NFKBIA_RELAp65_NFKB1p50 | v_RELA_NFKB1_Activator"
+    },
+    {
+      "node": "v_NFKBIA_RELAp65_NFKB1p50",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_RELA_NFKB1_Activator",
+        "v_RELA_p65",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TNF_IKBKG_Complex",
+        "v_TRAF6"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_RELA_NFKB1_Activator & ((v_RELA_p65 & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & ((v_TRAF6 & 1) | (!v_TRAF6 & 0))))))))))))))))))) | (!v_RELA_p65 & 0))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_ILIB & ((v_RELA_NFKB1_Activator & ((v_RELA_p65 & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))))))))))))))))) | (!v_RELA_p65 & 0))) | (!v_RELA_NFKB1_Activator & 0))))) | (!v_External_Activator & ((v_RELA_NFKB1_Activator & ((v_RELA_p65 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))) | (!v_RELA_p65 & 0))) | (!v_RELA_NFKB1_Activator & 0))))"
+    },
+    {
+      "node": "v_NOS2Agene",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_OAS1gene",
+      "support": [
+        "v_External_Activator",
+        "v_IRF1_IRF1_Activator",
+        "v_IRF2_Activator",
+        "v_PKA",
+        "v_PKC",
+        "v_STAT1_STAT2",
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "((v_External_Activator & ((v_IRF1_IRF1_Activator & 1) | (!v_IRF1_IRF1_Activator & ((v_IRF2_Activator & 1) | (!v_IRF2_Activator & ((v_PKA & 1) | (!v_PKA & ((v_PKC & 1) | (!v_PKC & ((v_STAT1_STAT2 & 1) | (!v_STAT1_STAT2 & ((v_TLR7_MYD88_TRAF6_IRF5 & 1) | (!v_TLR7_MYD88_TRAF6_IRF5 & ((v_TLR9_MYD88_TRAF6_IRF5 & 1) | (!v_TLR9_MYD88_TRAF6_IRF5 & ((v_Virus & 1) | (!v_Virus & 0))))))))))))))))) | (!v_External_Activator & ((v_IRF1_IRF1_Activator & 1) | (!v_IRF1_IRF1_Activator & ((v_IRF2_Activator & 1) | (!v_IRF2_Activator & ((v_PKA & 1) | (!v_PKA & ((v_PKC & 1) | (!v_PKC & ((v_TLR7_MYD88_TRAF6_IRF5 & 1) | (!v_TLR7_MYD88_TRAF6_IRF5 & ((v_TLR9_MYD88_TRAF6_IRF5 & 1) | (!v_TLR9_MYD88_TRAF6_IRF5 & ((v_Virus & 1) | (!v_Virus & 0))))))))))))))))"
+    },
+    {
+      "node": "v_PARP",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_PDCD8_HSPA1A",
+      "support": [
+        "v_External_Activator",
+        "v_PDCD8cytoplasm"
+      ],
+      "function": "v_External_Activator & v_PDCD8cytoplasm"
+    },
+    {
+      "node": "v_PDCD8cytoplasm",
+      "support": [
+        "v_PDCD8mitochondria",
+        "v_tBID"
+      ],
+      "function": "v_PDCD8mitochondria & v_tBID"
+    },
+    {
+      "node": "v_PDCD8mitochondria",
+      "support": [
+        "v_Mitochondrial_Activator"
+      ],
+      "function": "v_Mitochondrial_Activator"
+    },
+    {
+      "node": "v_PDCD8nucleus",
+      "support": [
+        "v_Mitochondrial_Activator",
+        "v_tBID"
+      ],
+      "function": "v_Mitochondrial_Activator & v_tBID"
+    },
+    {
+      "node": "v_PKA",
+      "support": [
+        "v_IRF1_IRF1_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator"
+    },
+    {
+      "node": "v_PKC",
+      "support": [
+        "v_IRF1_IRF1_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator"
+    },
+    {
+      "node": "v_PLSCR1gene",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_PMAIPgene",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_PRKCD",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_PRKCZ",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_PRKRA",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_PRKRAgene",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_PSMB9gene",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_IRF2_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_IRF2_Activator"
+    },
+    {
+      "node": "v_PTP",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_PTPN2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ProCASP1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ProCASP10",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ProCASP2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ProCASP3",
+      "support": [
+        "v_CASP3_Activator"
+      ],
+      "function": "v_CASP3_Activator"
+    },
+    {
+      "node": "v_ProCASP4",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_ProCASP6",
+      "support": [
+        "v_CASP6_Activator"
+      ],
+      "function": "v_CASP6_Activator"
+    },
+    {
+      "node": "v_ProCASP7",
+      "support": [
+        "v_CASP7_Activator"
+      ],
+      "function": "v_CASP7_Activator"
+    },
+    {
+      "node": "v_ProCASP8",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_Proteasome",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_RELA_p65",
+      "support": [
+        "v_RELA_NFKB1_Activator"
+      ],
+      "function": "v_RELA_NFKB1_Activator"
+    },
+    {
+      "node": "v_RELAp65_NFBK1p50nucleus",
+      "support": [
+        "v_RELAp65_NFKB1p50cytoplasm"
+      ],
+      "function": "v_RELAp65_NFKB1p50cytoplasm"
+    },
+    {
+      "node": "v_RELAp65_NFKB1p50cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_RELA_NFKB1_Activator",
+        "v_RPS6KA5",
+        "v_TBK1",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TNF_IKBKG_Complex",
+        "v_TRAF6"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & ((v_TRAF6 & 1) | (!v_TRAF6 & 0))))))))))))))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))))))))))))))))) | (!v_RELA_NFKB1_Activator & 0))))) | (!v_External_Activator & ((v_RELA_NFKB1_Activator & ((v_RPS6KA5 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))) | (!v_RPS6KA5 & ((v_TBK1 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))) | (!v_TBK1 & 0))))) | (!v_RELA_NFKB1_Activator & 0))))"
+    },
+    {
+      "node": "v_RELB",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_RIPK1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_RIPK1gene",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_RIPK3",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_RPS6KA5",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_SOCS1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_SOCS3",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_SOD2gene",
+      "support": [
+        "v_External_Activator",
+        "v_ILIB",
+        "v_RELA_NFKB1_Activator",
+        "v_TBK1",
+        "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+        "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+        "v_TLR3_TICAM1_TICAM2_TRAF6",
+        "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+        "v_TNF_IKBKG_Complex",
+        "v_TRAF6"
+      ],
+      "function": "((v_External_Activator & ((v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & ((v_TRAF6 & 1) | (!v_TRAF6 & 0))))))))))))))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6 & ((v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & 1) | (!v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3 & ((v_TLR3_TICAM1_TICAM2_TRAF6 & 1) | (!v_TLR3_TICAM1_TICAM2_TRAF6 & ((v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR5_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR7_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & 1) | (!v_TLR9_MYD88_IRAK1_IRAK4_TRAF6 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))))))))))))))))) | (!v_RELA_NFKB1_Activator & 0))))) | (!v_External_Activator & ((v_RELA_NFKB1_Activator & ((v_TBK1 & ((v_TNF_IKBKG_Complex & 1) | (!v_TNF_IKBKG_Complex & 0))) | (!v_TBK1 & 0))) | (!v_RELA_NFKB1_Activator & 0))))"
+    },
+    {
+      "node": "v_SP100gene",
+      "support": [
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_SPI1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_STAT1",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT1_IRF9cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT1_IRF9nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT1cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT1nucleus_p1",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT1nucleus_p2",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG"
+      ],
+      "function": "v_External_Activator & v_IFNG"
+    },
+    {
+      "node": "v_STAT1_STAT2",
+      "support": [
+        "v_External_Activator",
+        "v_IFNG",
+        "v_STAT2"
+      ],
+      "function": "v_External_Activator & v_IFNG & v_STAT2"
+    },
+    {
+      "node": "v_STAT1gene",
+      "support": [
+        "v_IRF1_IRF1_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator"
+    },
+    {
+      "node": "v_STAT2",
+      "support": [
+        "v_External_Activator",
+        "v_IFNA",
+        "v_IFNB1",
+        "v_TYK2"
+      ],
+      "function": "((v_External_Activator & ((v_IFNA & ((v_TYK2 & 1) | (!v_TYK2 & 0))) | (!v_IFNA & ((v_IFNB1 & ((v_TYK2 & 1) | (!v_TYK2 & 0))) | (!v_IFNB1 & 0))))) | (!v_External_Activator & 0))"
+    },
+    {
+      "node": "v_TAP1gene",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_IRF2_Activator"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_IRF2_Activator"
+    },
+    {
+      "node": "v_TBK1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TICAM1",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TICAM2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TIRAP",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR1_TLR2",
+      "support": [
+        "v_Triacyl_Lipopeptides"
+      ],
+      "function": "v_Triacyl_Lipopeptides"
+    },
+    {
+      "node": "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4",
+      "support": [
+        "v_External_Activator",
+        "v_Triacyl_Lipopeptides"
+      ],
+      "function": "v_External_Activator & v_Triacyl_Lipopeptides"
+    },
+    {
+      "node": "v_TLR1_TLR2_TIRAP_MYD88_IRAK2_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TRAF6",
+        "v_Triacyl_Lipopeptides"
+      ],
+      "function": "v_External_Activator & v_TRAF6 & v_Triacyl_Lipopeptides"
+    },
+    {
+      "node": "v_TLR2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR2_TLR6",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator",
+        "v_TLR6"
+      ],
+      "function": "v_Bacteria & v_External_Activator & v_TLR6"
+    },
+    {
+      "node": "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator",
+        "v_TLR6",
+        "v_TOLLIP"
+      ],
+      "function": "v_Bacteria & v_External_Activator & v_TLR6 & v_TOLLIP"
+    },
+    {
+      "node": "v_TLR2_TLR6_TOLLIP_MYD88_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator",
+        "v_TLR6",
+        "v_TOLLIP",
+        "v_TRAF6"
+      ],
+      "function": "v_Bacteria & v_External_Activator & v_TLR6 & v_TOLLIP & v_TRAF6"
+    },
+    {
+      "node": "v_TLR3",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR3_TICAM1_TICAM2",
+      "support": [
+        "v_External_Activator",
+        "v_TLR3_TLR3"
+      ],
+      "function": "v_External_Activator & v_TLR3_TLR3"
+    },
+    {
+      "node": "v_TLR3_TICAM1_TICAM2_RIPK1",
+      "support": [
+        "v_External_Activator",
+        "v_TLR3_TLR3"
+      ],
+      "function": "v_External_Activator & v_TLR3_TLR3"
+    },
+    {
+      "node": "v_TLR3_TICAM1_TICAM2_RIPK1_RIPK3",
+      "support": [
+        "v_External_Activator",
+        "v_TLR3_TLR3"
+      ],
+      "function": "v_External_Activator & v_TLR3_TLR3"
+    },
+    {
+      "node": "v_TLR3_TICAM1_TICAM2_TBK1",
+      "support": [
+        "v_External_Activator",
+        "v_TLR3_TLR3"
+      ],
+      "function": "v_External_Activator & v_TLR3_TLR3"
+    },
+    {
+      "node": "v_TLR3_TICAM1_TICAM2_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TLR3_TLR3",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_TLR3_TLR3 & v_TRAF6"
+    },
+    {
+      "node": "v_TLR3_TLR3",
+      "support": [
+        "v_External_Activator",
+        "v_dsRNA"
+      ],
+      "function": "v_External_Activator & v_dsRNA"
+    },
+    {
+      "node": "v_TLR4",
+      "support": [
+        "v_Bacteria"
+      ],
+      "function": "v_Bacteria"
+    },
+    {
+      "node": "v_TLR4_TICAM1_TICAM2",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator"
+      ],
+      "function": "v_Bacteria & v_External_Activator"
+    },
+    {
+      "node": "v_TLR5",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR5_MYD88_IRAK1_IRAK4",
+      "support": [
+        "v_External_Activator",
+        "v_TLR5_TLR5"
+      ],
+      "function": "v_External_Activator & v_TLR5_TLR5"
+    },
+    {
+      "node": "v_TLR5_MYD88_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TLR5_TLR5",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_TLR5_TLR5 & v_TRAF6"
+    },
+    {
+      "node": "v_TLR5_TLR5",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator"
+      ],
+      "function": "v_Bacteria & v_External_Activator"
+    },
+    {
+      "node": "v_TLR6",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR7",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR7_MYD88_IRAK1_IRAK4",
+      "support": [
+        "v_External_Activator",
+        "v_TLR7_TLR7"
+      ],
+      "function": "v_External_Activator & v_TLR7_TLR7"
+    },
+    {
+      "node": "v_TLR7_MYD88_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TLR7_TLR7",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_TLR7_TLR7 & v_TRAF6"
+    },
+    {
+      "node": "v_TLR7_TLR7",
+      "support": [
+        "v_External_Activator",
+        "v_ssRNA"
+      ],
+      "function": "v_External_Activator & v_ssRNA"
+    },
+    {
+      "node": "v_TLR9",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TLR9_MYD88_IRAK1_IRAK4",
+      "support": [
+        "v_External_Activator",
+        "v_TLR9_TLR9"
+      ],
+      "function": "v_External_Activator & v_TLR9_TLR9"
+    },
+    {
+      "node": "v_TLR9_MYD88_IRAK1_IRAK4_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TLR9_TLR9",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_TLR9_TLR9 & v_TRAF6"
+    },
+    {
+      "node": "v_TLR9_MYD88_TRAF6",
+      "support": [
+        "v_External_Activator",
+        "v_TLR9_TLR9",
+        "v_TRAF6"
+      ],
+      "function": "v_External_Activator & v_TLR9_TLR9 & v_TRAF6"
+    },
+    {
+      "node": "v_TLR9_TLR9",
+      "support": [
+        "v_External_Activator",
+        "v_Viral_Bacterial_CpG"
+      ],
+      "function": "v_External_Activator & v_Viral_Bacterial_CpG"
+    },
+    {
+      "node": "v_TNFRSF10A",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TNFRSF10B",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TNFRSF10Bgene",
+      "support": [
+        "v_TP53nucleus"
+      ],
+      "function": "v_TP53nucleus"
+    },
+    {
+      "node": "v_TNFRSF17",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TNFRSF1A",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TNFRSF1B",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TNFSF10_TNFRSF10A",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF10"
+      ],
+      "function": "v_External_Activator & v_TNFSF10"
+    },
+    {
+      "node": "v_TNFSF10_TNFRSF10A_FADD",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF10"
+      ],
+      "function": "v_External_Activator & v_TNFSF10"
+    },
+    {
+      "node": "v_TNFSF10_TNFSF10B",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF10"
+      ],
+      "function": "v_External_Activator & v_TNFSF10"
+    },
+    {
+      "node": "v_TNFSF10_TNFSF10B_FADD",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF10"
+      ],
+      "function": "v_External_Activator & v_TNFSF10"
+    },
+    {
+      "node": "v_TNFSF10gene",
+      "support": [
+        "v_IRF1_IRF1_Activator",
+        "v_TLR7_MYD88_TRAF6_IRF5",
+        "v_TLR9_MYD88_TRAF6_IRF5",
+        "v_Virus"
+      ],
+      "function": "v_IRF1_IRF1_Activator | v_TLR7_MYD88_TRAF6_IRF5 | v_TLR9_MYD88_TRAF6_IRF5 | v_Virus"
+    },
+    {
+      "node": "v_TNFSF13B_TNFRSF17",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF13B"
+      ],
+      "function": "v_External_Activator & v_TNFSF13B"
+    },
+    {
+      "node": "v_TNFSF13B_TNFRSF17_TRAF5",
+      "support": [
+        "v_External_Activator",
+        "v_TNFSF13B",
+        "v_TRAF5"
+      ],
+      "function": "v_External_Activator & v_TNFSF13B & v_TRAF5"
+    },
+    {
+      "node": "v_TNF_BAG4_TNFRSF1A",
+      "support": [
+        "v_External_Activator",
+        "v_TNF"
+      ],
+      "function": "v_External_Activator & v_TNF"
+    },
+    {
+      "node": "v_TNF_IKBKG_Complex",
+      "support": [
+        "v_External_Activator",
+        "v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1"
+      ],
+      "function": "v_External_Activator & v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1"
+    },
+    {
+      "node": "v_TNF_TNFRSF1A",
+      "support": [
+        "v_External_Activator",
+        "v_TNF"
+      ],
+      "function": "v_External_Activator & v_TNF"
+    },
+    {
+      "node": "v_TNF_TNFRSF1A_FADD_TRADD",
+      "support": [
+        "v_External_Activator",
+        "v_TNF",
+        "v_TRADD"
+      ],
+      "function": "v_External_Activator & v_TNF & v_TRADD"
+    },
+    {
+      "node": "v_TNF_TNFRSF1A_FADD_TRADD_TRAF2_RIPK1",
+      "support": [
+        "v_External_Activator",
+        "v_TNF",
+        "v_TRADD",
+        "v_TRAF2cytoplasm"
+      ],
+      "function": "v_External_Activator & v_TNF & v_TRADD & v_TRAF2cytoplasm"
+    },
+    {
+      "node": "v_TNF_TNFRSF1B",
+      "support": [
+        "v_External_Activator",
+        "v_TNF"
+      ],
+      "function": "v_External_Activator & v_TNF"
+    },
+    {
+      "node": "v_TNF_TNFRSF1B_TRAF2",
+      "support": [
+        "v_External_Activator",
+        "v_TNF",
+        "v_TRAF2cytoplasm"
+      ],
+      "function": "v_External_Activator & v_TNF & v_TRAF2cytoplasm"
+    },
+    {
+      "node": "v_TOLLIP",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TP53cytoplasm",
+      "support": [
+        "v_External_Activator",
+        "v_dsRNA"
+      ],
+      "function": "v_External_Activator & v_dsRNA"
+    },
+    {
+      "node": "v_TP53nucleus",
+      "support": [
+        "v_External_Activator",
+        "v_dsRNA"
+      ],
+      "function": "v_External_Activator & v_dsRNA"
+    },
+    {
+      "node": "v_TRADD",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TRAF1gene",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator",
+        "v_ILIB",
+        "v_RELA_NFKB1_Activator",
+        "v_TNF",
+        "v_TRAF2cytoplasm",
+        "v_TRAF6",
+        "v_Triacyl_Lipopeptides",
+        "v_Viral_Bacterial_CpG",
+        "v_dsRNA",
+        "v_ssRNA"
+      ],
+      "function": "((v_Bacteria & ((v_External_Activator & ((v_RELA_NFKB1_Activator & ((v_TNF & ((v_TRAF2cytoplasm & 1) | (!v_TRAF2cytoplasm & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_TNF & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_External_Activator & 0))) | (!v_Bacteria & ((v_External_Activator & ((v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TNF & ((v_TRAF2cytoplasm & 1) | (!v_TRAF2cytoplasm & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_TNF & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TNF & ((v_TRAF2cytoplasm & 1) | (!v_TRAF2cytoplasm & ((v_TRAF6 & ((v_Triacyl_Lipopeptides & 1) | (!v_Triacyl_Lipopeptides & ((v_Viral_Bacterial_CpG & 1) | (!v_Viral_Bacterial_CpG & ((v_dsRNA & 1) | (!v_dsRNA & ((v_ssRNA & 1) | (!v_ssRNA & 0))))))))) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_TNF & ((v_TRAF6 & ((v_Triacyl_Lipopeptides & 1) | (!v_Triacyl_Lipopeptides & ((v_Viral_Bacterial_CpG & 1) | (!v_Viral_Bacterial_CpG & ((v_dsRNA & 1) | (!v_dsRNA & ((v_ssRNA & 1) | (!v_ssRNA & 0))))))))) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_TRAF2cytoplasm",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TRAF2gene",
+      "support": [
+        "v_Bacteria",
+        "v_External_Activator",
+        "v_ILIB",
+        "v_RELA_NFKB1_Activator",
+        "v_TNF",
+        "v_TRAF6",
+        "v_Triacyl_Lipopeptides",
+        "v_Viral_Bacterial_CpG",
+        "v_dsRNA",
+        "v_ssRNA"
+      ],
+      "function": "((v_Bacteria & ((v_External_Activator & ((v_RELA_NFKB1_Activator & ((v_TNF & 1) | (!v_TNF & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_External_Activator & 0))) | (!v_Bacteria & ((v_External_Activator & ((v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TNF & 1) | (!v_TNF & ((v_TRAF6 & 1) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))) | (!v_ILIB & ((v_RELA_NFKB1_Activator & ((v_TNF & 1) | (!v_TNF & ((v_TRAF6 & ((v_Triacyl_Lipopeptides & 1) | (!v_Triacyl_Lipopeptides & ((v_Viral_Bacterial_CpG & 1) | (!v_Viral_Bacterial_CpG & ((v_dsRNA & 1) | (!v_dsRNA & ((v_ssRNA & 1) | (!v_ssRNA & 0))))))))) | (!v_TRAF6 & ((v_dsRNA & 1) | (!v_dsRNA & 0))))))) | (!v_RELA_NFKB1_Activator & 0))))) | (!v_External_Activator & 0))))"
+    },
+    {
+      "node": "v_TRAF3",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TRAF5",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TRAF6",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_TYK2",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_Triacyl_Lipopeptides",
+      "support": [
+        "v_Bacteria"
+      ],
+      "function": "v_Bacteria"
+    },
+    {
+      "node": "v_Ub",
+      "support": [
+        "v_External_Activator"
+      ],
+      "function": "v_External_Activator"
+    },
+    {
+      "node": "v_Viral_Bacterial_CpG",
+      "support": [
+        "v_Bacteria",
+        "v_Virus"
+      ],
+      "function": "v_Bacteria | v_Virus"
+    },
+    {
+      "node": "v_cGAS2",
+      "support": [
+        "v_CASP3_Activator",
+        "v_External_Activator"
+      ],
+      "function": "v_CASP3_Activator & v_External_Activator"
+    },
+    {
+      "node": "v_cLMNA",
+      "support": [
+        "v_CASP6_Activator",
+        "v_External_Activator"
+      ],
+      "function": "v_CASP6_Activator & v_External_Activator"
+    },
+    {
+      "node": "v_dsRNA",
+      "support": [
+        "v_Virus"
+      ],
+      "function": "v_Virus"
+    },
+    {
+      "node": "v_ssRNA",
+      "support": [
+        "v_Virus"
+      ],
+      "function": "v_Virus"
+    },
+    {
+      "node": "v_TLR7_MYD88_TRAF6_IRF5",
+      "support": [],
+      "function": "0"
+    }
+  ],
+  "seconds": 1.5352909000357613
+}

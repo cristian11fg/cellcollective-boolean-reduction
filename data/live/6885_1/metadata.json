@@ -1,0 +1,82 @@
+{
+  "id": "6885_1",
+  "name": "Regulation of the L-arabinose operon of Escherichia coli.",
+  "input-names": [
+    "v_0008",
+    "v_0002",
+    "v_0005",
+    "v_0001"
+  ],
+  "variable-names": [
+    "v_0003",
+    "v_0000",
+    "v_0011",
+    "v_0012",
+    "v_0009",
+    "v_0006",
+    "v_0007",
+    "v_0010",
+    "v_0004"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "A": "v_0000",
+    "Ae": "v_0001",
+    "Aem": "v_0002",
+    "Am": "v_0003",
+    "Ara+": "v_0004",
+    "Ara-": "v_0005",
+    "C": "v_0006",
+    "E": "v_0007",
+    "Ge": "v_0008",
+    "L": "v_0009",
+    "MS": "v_0010",
+    "MT": "v_0011",
+    "T": "v_0012"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 13,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 6885,
+    "name": "Regulation of the L-arabinose operon of Escherichia coli.",
+    "description": "The lactose operon in Escherichia coli was the first known gene regulatory network, and it is frequently used as a prototype for new modeling paradigms. Historically, many of these modeling frameworks use differential equations. More recently, Stigler and Veliz-Cuba proposed a Boolean network model that captures the bistability of the system and all of the biological steady states. In this paper, we model the wellknown arabinose operon in E. coli with a Boolean network. This has several complex features not found in the lac operon, such as a protein that is both an activator and repressor, a DNA looping mechanism for gene repression, and the lack of inducer exclusion by glucose. For 11 out of 12 choices of initial conditions, we use computational algebra and Sage to verify that the state space contains a single fixed point that correctly matches the biology. The final initial condition, medium levels of arabinose and no glucose, successfully predicts the system\u2019s bistability. Finally, we compare the state space under synchronous and asynchronous update, and see that the former has several artificial cycles that go away under a general asynchronous update.",
+    "tags": "arabinose operon, E coli, gene regulation",
+    "userId": 70,
+    "author": "A Jenkins and M MAcauley",
+    "creationDate": "Sun, 12 Mar 2017 11:02:47 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Thu, 30 Mar 2017 15:23:18 GMT",
+    "components": 13,
+    "interactions": 18,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 70,
+        "creationDate": "Sun, 12 Mar 2017 11:02:47 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "-323396113",
+  "version": "1"
+}

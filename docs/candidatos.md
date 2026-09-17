@@ -112,10 +112,10 @@ Para abreviar, sea `t = ¬YHP1 ∧ ¬YOX1`, que es equivalente a `¬(YOX1 ∨ YH
    MBF = SWI5 ∧ SFF ∧ t
    ```
 
-   En `SBF`, ambas ramas coinciden:
+   En este paso `MBF` sigue siendo un nodo de la red. La regla de `SBF` es:
 
    ```text
-   SBF = (MBF ∧ t) ∨ (CLN3 ∧ t) = SWI5 ∧ SFF ∧ t
+   SBF = (MBF ∧ t) ∨ (SWI5 ∧ SFF ∧ t)
    ```
 
 3. Eliminar `HCM1`:
@@ -124,7 +124,9 @@ Para abreviar, sea `t = ¬YHP1 ∧ ¬YOX1`, que es equivalente a `¬(YOX1 ∨ YH
    SFF = SBF ∧ (MBF ∧ SBF)
    ```
 
-4. Eliminar `MBF` y después `SBF`. Al sustituir las expresiones del paso anterior, la función que queda para cada uno de los tres nodos supervivientes es:
+4. Eliminar `MBF`: ahora sí coinciden las dos ramas de `SBF`, pues
+   `MBF=SWI5 ∧ SFF ∧ t`, y por idempotencia `SBF=SWI5 ∧ SFF ∧ t`.
+   Después se elimina `SBF`. La función que queda para cada uno de los tres nodos supervivientes es:
 
    ```text
    q = SWI5 ∧ SFF ∧ ¬YHP1 ∧ ¬YOX1

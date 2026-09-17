@@ -1,0 +1,18 @@
+{
+"level_of_var": {"v_ARE": 0, "v_ATM": 1, "v_Akt": 2, "v_Bach1": 3, "v_Bad": 4, "v_Bcl2": 5, "v_GSK3b": 6, "v_Keap1": 7, "v_Mdm2": 8, "v_Nrf2": 9, "v_PI3K": 10, "v_PIP2": 11, "v_PIP3": 12, "v_PKC": 13, "v_PTEN": 14, "v_ROS": 15, "v_Ras": 16, "v_Stress": 17, "v_p53": 18},
+"roots": {"final:v_ARE": -36, "final:v_Stress": 35, "step:0:v_ATM": 5, "step:1:v_Akt": 39, "step:2:v_Bach1": -5, "step:3:v_Bad": -39, "step:4:v_Bcl2": -54, "step:5:v_GSK3b": -39, "step:6:v_Mdm2": -49, "step:7:v_Nrf2": 48, "step:8:v_Keap1": 5, "step:9:v_PI3K": 18, "step:10:v_PIP2": 18, "step:11:v_PIP3": -59, "step:12:v_PKC": -38, "step:13:v_PTEN": -5, "step:14:v_ROS": -36, "step:15:v_Ras": -36, "step:16:v_p53": -36},
+"35": [17, "F", "T"],
+"36": [0, -35, "T"],
+"5": [15, "F", "T"],
+"39": [12, "F", "T"],
+"3": [18, "F", "T"],
+"54": [12, "T", 3],
+"45": [15, -3, "T"],
+"49": [12, 45, 5],
+"6": [13, "F", "T"],
+"47": [12, 6, "T"],
+"48": [7, "T", 47],
+"18": [16, "F", "T"],
+"59": [14, -18, "T"],
+"38": [0, -5, "T"]
+}

@@ -1,0 +1,696 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "064",
+  "name": "METABOLIC-INTERACTIONS-IN-GUT-MICROBIOME",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 12,
+  "after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 4,
+    "internal_nodes": 4,
+    "nonconstant_rules": 4,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Clindamycin_": "+",
+      "v_Clostridium_difficile": "+",
+      "v_Lachnospiraceae": "-",
+      "v_Lachnospiraceae_other_": "-",
+      "v_Other": "-"
+    },
+    "positive_edges": 11,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 17,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 4
+    },
+    "conflicts": {
+      "v_Clindamycin_": {
+        "v_Clostridium_difficile": "+",
+        "v_Lachnospiraceae": "-",
+        "v_Lachnospiraceae_other_": "-",
+        "v_Other": "-"
+      },
+      "v_Lachnospiraceae": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      },
+      "v_Lachnospiraceae_other_": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      },
+      "v_Other": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      }
+    },
+    "local": {
+      "v_Clostridium_difficile": {
+        "signs": {
+          "v_Clindamycin_": "+",
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Lachnospiraceae": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Lachnospiraceae_other_": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Other": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 4,
+    "internal_nodes": 4,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Clindamycin_": "+",
+      "v_Clostridium_difficile": "+",
+      "v_Lachnospiraceae": "-",
+      "v_Lachnospiraceae_other_": "-",
+      "v_Other": "-",
+      "v_Coprobacillus": "+",
+      "v_Enterobacteriaceae": "+",
+      "v_Mollicutes": "+"
+    },
+    "positive_edges": 15,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 21,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 4,
+      "MIN_MAX": 4
+    },
+    "conflicts": {
+      "v_Clindamycin_": {
+        "v_Clostridium_difficile": "+",
+        "v_Lachnospiraceae": "-",
+        "v_Lachnospiraceae_other_": "-",
+        "v_Other": "-",
+        "v_Clindamycin_": "+"
+      },
+      "v_Lachnospiraceae": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      },
+      "v_Lachnospiraceae_other_": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      },
+      "v_Other": {
+        "v_Clostridium_difficile": "-",
+        "v_Lachnospiraceae": "+",
+        "v_Lachnospiraceae_other_": "+",
+        "v_Other": "+"
+      }
+    },
+    "local": {
+      "v_Clostridium_difficile": {
+        "signs": {
+          "v_Clindamycin_": "+",
+          "v_Clostridium_difficile": "+",
+          "v_Lachnospiraceae": "-",
+          "v_Lachnospiraceae_other_": "-",
+          "v_Other": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Lachnospiraceae": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Lachnospiraceae_other_": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Other": {
+        "signs": {
+          "v_Clindamycin_": "-",
+          "v_Lachnospiraceae": "+",
+          "v_Lachnospiraceae_other_": "+",
+          "v_Other": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Clindamycin_": {
+        "signs": {
+          "v_Clindamycin_": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Coprobacillus": {
+        "signs": {
+          "v_Coprobacillus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Enterobacteriaceae": {
+        "signs": {
+          "v_Enterobacteriaceae": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Mollicutes": {
+        "signs": {
+          "v_Mollicutes": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 40,
+    "examples": [
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 1,
+        "v_Lachnospiraceae_other_": 1,
+        "v_Mollicutes": 0,
+        "v_Other": 1
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 0,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 0,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 1,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 1,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 1,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 1,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 1,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 1,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 1,
+        "v_Enterobacteriaceae": 1,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 0,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 1,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 1,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 0,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      },
+      {
+        "v_Clindamycin_": 1,
+        "v_Clostridium_difficile": 1,
+        "v_Coprobacillus": 0,
+        "v_Enterobacteriaceae": 1,
+        "v_Lachnospiraceae": 0,
+        "v_Lachnospiraceae_other_": 0,
+        "v_Mollicutes": 0,
+        "v_Other": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Clostridium_difficile": "((v_Clindamycin_ & ((v_Clostridium_difficile & 1) | (!v_Clostridium_difficile & 0))) | (!v_Clindamycin_ & !(((v_Clostridium_difficile & ((v_Lachnospiraceae & 1) | (!v_Lachnospiraceae & ((v_Lachnospiraceae_other_ & 1) | (!v_Lachnospiraceae_other_ & ((v_Other & 1) | (!v_Other & 0))))))) | (!v_Clostridium_difficile & 1)))))",
+    "v_Lachnospiraceae": "!(((v_Clindamycin_ & 1) | (!v_Clindamycin_ & !(((v_Lachnospiraceae & 1) | (!v_Lachnospiraceae & ((v_Lachnospiraceae_other_ & 1) | (!v_Lachnospiraceae_other_ & ((v_Other & 1) | (!v_Other & 0))))))))))",
+    "v_Lachnospiraceae_other_": "!(((v_Clindamycin_ & 1) | (!v_Clindamycin_ & !(((v_Lachnospiraceae & 1) | (!v_Lachnospiraceae & ((v_Lachnospiraceae_other_ & 1) | (!v_Lachnospiraceae_other_ & ((v_Other & 1) | (!v_Other & 0))))))))))",
+    "v_Other": "!(((v_Clindamycin_ & 1) | (!v_Clindamycin_ & !(((v_Lachnospiraceae & 1) | (!v_Lachnospiraceae & ((v_Lachnospiraceae_other_ & 1) | (!v_Lachnospiraceae_other_ & ((v_Other & 1) | (!v_Other & 0))))))))))",
+    "v_Clindamycin_": "v_Clindamycin_",
+    "v_Coprobacillus": "v_Coprobacillus",
+    "v_Enterobacteriaceae": "v_Enterobacteriaceae",
+    "v_Mollicutes": "v_Mollicutes"
+  },
+  "steps": [
+    {
+      "node": "v_Enterococcus",
+      "support": [
+        "v_Blautia",
+        "v_Clostridium_difficile",
+        "v_Coprobacillus",
+        "v_Enterobacteriaceae",
+        "v_Mollicutes"
+      ],
+      "function": "v_Blautia | v_Clostridium_difficile | !v_Coprobacillus | v_Enterobacteriaceae | v_Mollicutes"
+    },
+    {
+      "node": "v_Akkermansia_",
+      "support": [
+        "v_Coprobacillus"
+      ],
+      "function": "v_Coprobacillus"
+    },
+    {
+      "node": "v_Barnesiella",
+      "support": [
+        "v_Clindamycin_",
+        "v_Lachnospiraceae",
+        "v_Lachnospiraceae_other_",
+        "v_Other"
+      ],
+      "function": "!(((v_Clindamycin_ & 1) | (!v_Clindamycin_ & !(((v_Lachnospiraceae & 1) | (!v_Lachnospiraceae & ((v_Lachnospiraceae_other_ & 1) | (!v_Lachnospiraceae_other_ & ((v_Other & 1) | (!v_Other & 0))))))))))"
+    },
+    {
+      "node": "v_Blautia",
+      "support": [],
+      "function": "1"
+    }
+  ],
+  "seconds": 0.09063049999531358
+}

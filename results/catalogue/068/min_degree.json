@@ -1,0 +1,613 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "068",
+  "name": "AURORA-KINASE-A-IN-NEUROBLASTOMA",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 23,
+  "after": {
+    "nodes": 6,
+    "n_nodes": 6,
+    "inputs": 4,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AJUBA": "+",
+      "v_AURKAActive": "+",
+      "v_SpindleAssembly": "+",
+      "v_GSK3B": "+"
+    },
+    "positive_edges": 5,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 6,
+    "max_indegree": 4,
+    "local_family_counts": {
+      "UNATE_OTHER": 1,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_SpindleAssembly": {
+        "v_AURKAActive": "+",
+        "v_SpindleAssembly": "-"
+      }
+    },
+    "local": {
+      "v_AURKAActive": {
+        "signs": {
+          "v_AJUBA": "+",
+          "v_AURKAActive": "+",
+          "v_GSK3B": "+",
+          "v_SpindleAssembly": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_SpindleAssembly": {
+        "signs": {
+          "v_AURKAActive": "+",
+          "v_SpindleAssembly": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 6,
+    "n_nodes": 6,
+    "inputs": 4,
+    "internal_nodes": 2,
+    "nonconstant_rules": 6,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 6,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AJUBA": "+",
+      "v_AURKAActive": "+",
+      "v_SpindleAssembly": "+",
+      "v_GSK3B": "+",
+      "v_MTCanAct": "+",
+      "v_STMNCanAct": "+"
+    },
+    "positive_edges": 9,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 10,
+    "max_indegree": 4,
+    "local_family_counts": {
+      "UNATE_OTHER": 1,
+      "MIN": 1,
+      "MIN_MAX": 4
+    },
+    "conflicts": {
+      "v_SpindleAssembly": {
+        "v_AURKAActive": "+",
+        "v_SpindleAssembly": "-"
+      }
+    },
+    "local": {
+      "v_AURKAActive": {
+        "signs": {
+          "v_AJUBA": "+",
+          "v_AURKAActive": "+",
+          "v_GSK3B": "+",
+          "v_SpindleAssembly": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_SpindleAssembly": {
+        "signs": {
+          "v_AURKAActive": "+",
+          "v_SpindleAssembly": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AJUBA": {
+        "signs": {
+          "v_AJUBA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GSK3B": {
+        "signs": {
+          "v_GSK3B": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MTCanAct": {
+        "signs": {
+          "v_MTCanAct": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_STMNCanAct": {
+        "signs": {
+          "v_STMNCanAct": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 16,
+    "examples": [
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 0,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 1,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 0,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 0,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      },
+      {
+        "v_AJUBA": 0,
+        "v_AURKAActive": 0,
+        "v_GSK3B": 1,
+        "v_MTCanAct": 1,
+        "v_STMNCanAct": 1,
+        "v_SpindleAssembly": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_AURKAActive": "((v_AJUBA & ((v_AURKAActive & 1) | (!v_AURKAActive & ((v_GSK3B & ((v_SpindleAssembly & 1) | (!v_SpindleAssembly & 0))) | (!v_GSK3B & 0))))) | (!v_AJUBA & ((v_AURKAActive & 1) | (!v_AURKAActive & 0))))",
+    "v_SpindleAssembly": "v_AURKAActive & !v_SpindleAssembly",
+    "v_AJUBA": "v_AJUBA",
+    "v_GSK3B": "v_GSK3B",
+    "v_MTCanAct": "v_MTCanAct",
+    "v_STMNCanAct": "v_STMNCanAct"
+  },
+  "steps": [
+    {
+      "node": "v_AURKAPresent",
+      "support": [
+        "v_PP2A"
+      ],
+      "function": "!v_PP2A"
+    },
+    {
+      "node": "v_ENSA",
+      "support": [
+        "v_GWL_MASTL"
+      ],
+      "function": "v_GWL_MASTL"
+    },
+    {
+      "node": "v_MT",
+      "support": [
+        "v_STMN"
+      ],
+      "function": "!v_STMN"
+    },
+    {
+      "node": "v_NEDD9",
+      "support": [
+        "v_AURKAActive"
+      ],
+      "function": "v_AURKAActive"
+    },
+    {
+      "node": "v_STMN",
+      "support": [
+        "v_AURKAActive"
+      ],
+      "function": "!v_AURKAActive"
+    },
+    {
+      "node": "v_TPX2",
+      "support": [
+        "v_PLK1"
+      ],
+      "function": "v_PLK1"
+    },
+    {
+      "node": "v_WEE1",
+      "support": [
+        "v_PLK1"
+      ],
+      "function": "!v_PLK1"
+    },
+    {
+      "node": "v_hCPEB",
+      "support": [
+        "v_AURKAActive"
+      ],
+      "function": "v_AURKAActive"
+    },
+    {
+      "node": "v_GWL_MASTL",
+      "support": [
+        "v_CDK1CCNBComplex",
+        "v_PP2A"
+      ],
+      "function": "v_CDK1CCNBComplex & !v_PP2A"
+    },
+    {
+      "node": "v_BORA",
+      "support": [
+        "v_Cytokinesis",
+        "v_GSK3B",
+        "v_PLK1"
+      ],
+      "function": "!(((v_Cytokinesis & ((v_GSK3B & ((v_PLK1 & 1) | (!v_PLK1 & 0))) | (!v_GSK3B & 1))) | (!v_Cytokinesis & !(((v_GSK3B & 1) | (!v_GSK3B & 0))))))"
+    },
+    {
+      "node": "v_CDC25B",
+      "support": [
+        "v_AURKAActive",
+        "v_Cytokinesis",
+        "v_PLK1"
+      ],
+      "function": "!(((v_AURKAActive & ((v_Cytokinesis & 1) | (!v_Cytokinesis & 0))) | (!v_AURKAActive & ((v_Cytokinesis & 1) | (!v_Cytokinesis & !(((v_PLK1 & 1) | (!v_PLK1 & 0))))))))"
+    },
+    {
+      "node": "v_PLK1",
+      "support": [
+        "v_AURKAActive"
+      ],
+      "function": "v_AURKAActive"
+    },
+    {
+      "node": "v_CentrosomeMat",
+      "support": [
+        "v_CDK1CCNBComplex",
+        "v_SpindleAssembly"
+      ],
+      "function": "v_CDK1CCNBComplex & !v_SpindleAssembly"
+    },
+    {
+      "node": "v_Cytokinesis",
+      "support": [
+        "v_SpindleAssembly"
+      ],
+      "function": "v_SpindleAssembly"
+    },
+    {
+      "node": "v_CDK1CCNBComplex",
+      "support": [
+        "v_AURKAActive",
+        "v_SpindleAssembly"
+      ],
+      "function": "v_AURKAActive & !v_SpindleAssembly"
+    },
+    {
+      "node": "v_PP1",
+      "support": [
+        "v_AURKAActive",
+        "v_SpindleAssembly"
+      ],
+      "function": "!v_AURKAActive & !v_SpindleAssembly"
+    },
+    {
+      "node": "v_PP2A",
+      "support": [
+        "v_AURKAActive",
+        "v_SpindleAssembly"
+      ],
+      "function": "!v_AURKAActive & !v_SpindleAssembly"
+    }
+  ],
+  "seconds": 0.0779268000042066
+}

@@ -396,9 +396,16 @@ no constantes; `nonconstant_rules` permite separar redes vacías, solo constante
 o solo entradas. `reciprocal_support` no es por sí solo un certificado de un
 teorema. Las fórmulas generales de dominación todavía no están implementadas.
 
-Próximas fases: inventario completo; importación y entradas auditadas; motor
-simbólico exacto para redes grandes; evaluación de redes intermedias; certificados
-de teoremas; y redacción del ejemplo con grafo, secuencia y estados reconstruidos.
+Actualización del 16 de septiembre de 2026: el [método del censo](metodo_censo.md)
+amplía el piloto con importación directa de Cell Collective, representación BDD
+y certificados independientes de biyección mediante Z3. Los límites de 16
+reguladores y 20 nodos de esta sección describen exclusivamente el motor inicial
+de tablas de verdad. Los resultados ampliados están en el
+[censo directo](censo_live.md) y el [censo BBM](censo_catalogue.md).
+
+Quedan como extensiones: explorar sistemáticamente redes intermedias y otros
+órdenes, implementar las fórmulas de los teoremas pertinentes y preparar la
+versión final del ejemplo con grafo y reconstrucción.
 
 ## 10. Bibliografía comentada
 

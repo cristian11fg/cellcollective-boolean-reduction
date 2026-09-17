@@ -1,0 +1,468 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "5128_1",
+  "name": "Lac Operon",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 13,
+  "after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 3,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Ge": "+",
+      "v_R": "+",
+      "v_Rm": "+",
+      "v_Le": "-",
+      "v_Lem": "-"
+    },
+    "positive_edges": 6,
+    "negative_edges": 4,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 10,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2
+    },
+    "conflicts": {},
+    "local": {
+      "v_R": {
+        "signs": {
+          "v_Ge": "+",
+          "v_Le": "-",
+          "v_Lem": "-",
+          "v_R": "+",
+          "v_Rm": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Rm": {
+        "signs": {
+          "v_Ge": "+",
+          "v_Le": "-",
+          "v_Lem": "-",
+          "v_R": "+",
+          "v_Rm": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 3,
+    "internal_nodes": 2,
+    "nonconstant_rules": 5,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 5,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Ge": "+",
+      "v_R": "+",
+      "v_Rm": "+",
+      "v_Le": "-",
+      "v_Lem": "-"
+    },
+    "positive_edges": 9,
+    "negative_edges": 4,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 13,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MIN_MAX": 3
+    },
+    "conflicts": {
+      "v_Le": {
+        "v_R": "-",
+        "v_Rm": "-",
+        "v_Le": "+"
+      },
+      "v_Lem": {
+        "v_R": "-",
+        "v_Rm": "-",
+        "v_Lem": "+"
+      }
+    },
+    "local": {
+      "v_R": {
+        "signs": {
+          "v_Ge": "+",
+          "v_Le": "-",
+          "v_Lem": "-",
+          "v_R": "+",
+          "v_Rm": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Rm": {
+        "signs": {
+          "v_Ge": "+",
+          "v_Le": "-",
+          "v_Lem": "-",
+          "v_R": "+",
+          "v_Rm": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Le": {
+        "signs": {
+          "v_Le": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Ge": {
+        "signs": {
+          "v_Ge": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Lem": {
+        "signs": {
+          "v_Lem": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 9,
+    "examples": [
+      {
+        "v_Ge": 0,
+        "v_Le": 0,
+        "v_Lem": 1,
+        "v_R": 0,
+        "v_Rm": 0
+      },
+      {
+        "v_Ge": 0,
+        "v_Le": 1,
+        "v_Lem": 0,
+        "v_R": 0,
+        "v_Rm": 0
+      },
+      {
+        "v_Ge": 0,
+        "v_Le": 1,
+        "v_Lem": 1,
+        "v_R": 0,
+        "v_Rm": 0
+      },
+      {
+        "v_Ge": 0,
+        "v_Le": 0,
+        "v_Lem": 0,
+        "v_R": 1,
+        "v_Rm": 1
+      },
+      {
+        "v_Ge": 0,
+        "v_Le": 0,
+        "v_Lem": 1,
+        "v_R": 1,
+        "v_Rm": 1
+      },
+      {
+        "v_Ge": 1,
+        "v_Le": 0,
+        "v_Lem": 1,
+        "v_R": 1,
+        "v_Rm": 1
+      },
+      {
+        "v_Ge": 1,
+        "v_Le": 0,
+        "v_Lem": 0,
+        "v_R": 1,
+        "v_Rm": 1
+      },
+      {
+        "v_Ge": 1,
+        "v_Le": 1,
+        "v_Lem": 0,
+        "v_R": 1,
+        "v_Rm": 1
+      },
+      {
+        "v_Ge": 1,
+        "v_Le": 1,
+        "v_Lem": 1,
+        "v_R": 1,
+        "v_Rm": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_R": "((v_Ge & 1) | (!v_Ge & !(((v_Le & 1) | (!v_Le & !(((v_Lem & ((v_R & 1) | (!v_R & ((v_Rm & 1) | (!v_Rm & 0))))) | (!v_Lem & 1))))))))",
+    "v_Rm": "((v_Ge & 1) | (!v_Ge & ((v_Le & ((v_R & 1) | (!v_R & 0))) | (!v_Le & ((v_Lem & ((v_R & 1) | (!v_R & ((v_Rm & 1) | (!v_Rm & 0))))) | (!v_Lem & 1))))))",
+    "v_Le": "v_Le",
+    "v_Ge": "v_Ge",
+    "v_Lem": "v_Lem"
+  },
+  "steps": [
+    {
+      "node": "v_A",
+      "support": [
+        "v_B",
+        "v_L"
+      ],
+      "function": "v_B & v_L"
+    },
+    {
+      "node": "v_Am",
+      "support": [
+        "v_L",
+        "v_Lm"
+      ],
+      "function": "v_L | v_Lm"
+    },
+    {
+      "node": "v_B",
+      "support": [
+        "v_M"
+      ],
+      "function": "v_M"
+    },
+    {
+      "node": "v_C",
+      "support": [
+        "v_Ge"
+      ],
+      "function": "!v_Ge"
+    },
+    {
+      "node": "v_L",
+      "support": [
+        "v_Ge",
+        "v_Le",
+        "v_P"
+      ],
+      "function": "!v_Ge & v_Le & v_P"
+    },
+    {
+      "node": "v_Lm",
+      "support": [
+        "v_Ge",
+        "v_Le",
+        "v_Lem",
+        "v_P"
+      ],
+      "function": "!(((v_Ge & 1) | (!v_Ge & !(((v_Le & 1) | (!v_Le & ((v_Lem & ((v_P & 1) | (!v_P & 0))) | (!v_Lem & 0))))))))"
+    },
+    {
+      "node": "v_M",
+      "support": [
+        "v_Ge",
+        "v_R",
+        "v_Rm"
+      ],
+      "function": "!v_Ge & !v_R & !v_Rm"
+    },
+    {
+      "node": "v_P",
+      "support": [
+        "v_Ge",
+        "v_R",
+        "v_Rm"
+      ],
+      "function": "!v_Ge & !v_R & !v_Rm"
+    }
+  ],
+  "seconds": 0.19221510004717857
+}

@@ -1,0 +1,808 @@
+{
+  "id": "241389_1",
+  "name": "CD4 T cell dynamics - Workshop v2",
+  "source": {
+    "id": "241389_1",
+    "cellcollective_id": 241389,
+    "version": "1",
+    "name": "CD4 T cell dynamics - Workshop v2",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/#module/241389:1"
+    ],
+    "export_url": "https://research.cellcollective.org/web/_api/model/export/241389?version=1&type=EXPR",
+    "status": "downloaded",
+    "files": [
+      {
+        "name": "export.zip",
+        "sha256": "037141623a674e84f033b40d7189577f35e3a71a1fb6255f85a6fcaf39476727"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "fb01cb978cf14971171a1d6aa403203d7f3ecf6817153030755c1057bd512436"
+      },
+      {
+        "name": "metadata.json",
+        "sha256": "cb68fb536ac084179d293e117ce003b7e1b3916ee60d398906eef192f8d0a30e"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 16,
+    "n_nodes": 16,
+    "inputs": 10,
+    "internal_nodes": 6,
+    "nonconstant_rules": 6,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Pathogen": "+",
+      "v_AntigenPresentingCell": "+",
+      "v_NaiveCD4TCell": "+",
+      "v_Th1": "+",
+      "v_Th2": "+",
+      "v_Treg": "+",
+      "v_Th17": "+",
+      "v_IL6": "+",
+      "v_TGFb": "+",
+      "v_Th17_Inhibitor": "-",
+      "v_Treg_Inhibitor": "-",
+      "v_IL4": "+",
+      "v_Th2_Inhibitor": "-",
+      "v_IFNg": "+",
+      "v_IL12": "+",
+      "v_Th1_Inhibitor": "-"
+    },
+    "positive_edges": 16,
+    "negative_edges": 14,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 30,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "MIN_MAX": 2,
+      "UNATE_OTHER": 4
+    },
+    "conflicts": {
+      "v_Th1": {
+        "v_Th1": "+",
+        "v_Th2": "-",
+        "v_Th17": "-"
+      },
+      "v_Th17": {
+        "v_Th1": "-",
+        "v_Th2": "-",
+        "v_Th17": "+"
+      },
+      "v_Th2": {
+        "v_Th1": "-",
+        "v_Th2": "+",
+        "v_Th17": "-"
+      },
+      "v_Treg": {
+        "v_Th1": "-",
+        "v_Th2": "-",
+        "v_Treg": "+",
+        "v_Th17": "-"
+      },
+      "v_IL6": {
+        "v_Treg": "-",
+        "v_Th17": "+"
+      }
+    },
+    "local": {
+      "v_AntigenPresentingCell": {
+        "signs": {
+          "v_Pathogen": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1": {
+        "signs": {
+          "v_IFNg": "+",
+          "v_IL12": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_Th1": "+",
+          "v_Th17": "-",
+          "v_Th1_Inhibitor": "-",
+          "v_Th2": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2": {
+        "signs": {
+          "v_IL4": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_Th1": "-",
+          "v_Th17": "-",
+          "v_Th2": "+",
+          "v_Th2_Inhibitor": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Treg": {
+        "signs": {
+          "v_IL6": "-",
+          "v_NaiveCD4TCell": "+",
+          "v_TGFb": "+",
+          "v_Treg": "+",
+          "v_Treg_Inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NaiveCD4TCell": {
+        "signs": {
+          "v_AntigenPresentingCell": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th17": {
+        "signs": {
+          "v_IL6": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_TGFb": "+",
+          "v_Th1": "-",
+          "v_Th17": "+",
+          "v_Th17_Inhibitor": "-",
+          "v_Th2": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 16,
+    "n_nodes": 16,
+    "inputs": 10,
+    "internal_nodes": 6,
+    "nonconstant_rules": 16,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 14,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Pathogen": "+",
+      "v_AntigenPresentingCell": "+",
+      "v_NaiveCD4TCell": "+",
+      "v_Th1": "+",
+      "v_Th2": "+",
+      "v_Treg": "+",
+      "v_Th17": "+",
+      "v_IL6": "+",
+      "v_TGFb": "+",
+      "v_Th17_Inhibitor": "-",
+      "v_Treg_Inhibitor": "-",
+      "v_IL4": "+",
+      "v_Th2_Inhibitor": "-",
+      "v_IFNg": "+",
+      "v_IL12": "+",
+      "v_Th1_Inhibitor": "-"
+    },
+    "positive_edges": 26,
+    "negative_edges": 14,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 40,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "MIN_MAX": 12,
+      "UNATE_OTHER": 4
+    },
+    "conflicts": {
+      "v_Th1": {
+        "v_Th1": "+",
+        "v_Th2": "-",
+        "v_Th17": "-"
+      },
+      "v_Th17": {
+        "v_Th1": "-",
+        "v_Th2": "-",
+        "v_Th17": "+"
+      },
+      "v_Th1_Inhibitor": {
+        "v_Th1": "-",
+        "v_Th1_Inhibitor": "+"
+      },
+      "v_Th2": {
+        "v_Th1": "-",
+        "v_Th2": "+",
+        "v_Th17": "-"
+      },
+      "v_Treg": {
+        "v_Th1": "-",
+        "v_Th2": "-",
+        "v_Treg": "+",
+        "v_Th17": "-"
+      },
+      "v_Th2_Inhibitor": {
+        "v_Th2": "-",
+        "v_Th2_Inhibitor": "+"
+      },
+      "v_IL6": {
+        "v_Treg": "-",
+        "v_Th17": "+",
+        "v_IL6": "+"
+      },
+      "v_Treg_Inhibitor": {
+        "v_Treg": "-",
+        "v_Treg_Inhibitor": "+"
+      },
+      "v_Th17_Inhibitor": {
+        "v_Th17": "-",
+        "v_Th17_Inhibitor": "+"
+      }
+    },
+    "local": {
+      "v_AntigenPresentingCell": {
+        "signs": {
+          "v_Pathogen": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1": {
+        "signs": {
+          "v_IFNg": "+",
+          "v_IL12": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_Th1": "+",
+          "v_Th17": "-",
+          "v_Th1_Inhibitor": "-",
+          "v_Th2": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2": {
+        "signs": {
+          "v_IL4": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_Th1": "-",
+          "v_Th17": "-",
+          "v_Th2": "+",
+          "v_Th2_Inhibitor": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Treg": {
+        "signs": {
+          "v_IL6": "-",
+          "v_NaiveCD4TCell": "+",
+          "v_TGFb": "+",
+          "v_Treg": "+",
+          "v_Treg_Inhibitor": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NaiveCD4TCell": {
+        "signs": {
+          "v_AntigenPresentingCell": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th17": {
+        "signs": {
+          "v_IL6": "+",
+          "v_NaiveCD4TCell": "+",
+          "v_TGFb": "+",
+          "v_Th1": "-",
+          "v_Th17": "+",
+          "v_Th17_Inhibitor": "-",
+          "v_Th2": "-",
+          "v_Treg": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Pathogen": {
+        "signs": {
+          "v_Pathogen": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th17_Inhibitor": {
+        "signs": {
+          "v_Th17_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TGFb": {
+        "signs": {
+          "v_TGFb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2_Inhibitor": {
+        "signs": {
+          "v_Th2_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1_Inhibitor": {
+        "signs": {
+          "v_Th1_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4": {
+        "signs": {
+          "v_IL4": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL6": {
+        "signs": {
+          "v_IL6": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL12": {
+        "signs": {
+          "v_IL12": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNg": {
+        "signs": {
+          "v_IFNg": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Treg_Inhibitor": {
+        "signs": {
+          "v_Treg_Inhibitor": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  }
+}

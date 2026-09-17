@@ -1,0 +1,1523 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "046",
+  "name": "B-BRONCHISEPTICA-AND-T-RETORTAEFORMIS",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 53,
+  "after": {
+    "nodes": 12,
+    "n_nodes": 12,
+    "inputs": 1,
+    "internal_nodes": 11,
+    "nonconstant_rules": 11,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 11,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AD": "+",
+      "v_PIC": "+",
+      "v_BC_TRetortaeformis": "+",
+      "v_Bb": "-",
+      "v_IFNg_Bacterium": "-",
+      "v_IL13": "+",
+      "v_IL5": "+",
+      "v_IS": "+",
+      "v_IgE": "+",
+      "v_BC_Bacterium": "-",
+      "v_IgA_Bacterium": "-",
+      "v_IgG_Bacterium": "-"
+    },
+    "positive_edges": 37,
+    "negative_edges": 13,
+    "non_unate_edges": 3,
+    "has_multi_input_rule": true,
+    "edges": 53,
+    "max_indegree": 9,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 8,
+      "MAX": 1
+    },
+    "conflicts": {
+      "v_AD": {
+        "v_AD": "mixed",
+        "v_PIC": "+"
+      },
+      "v_BC_TRetortaeformis": {
+        "v_AD": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_Bb": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "+",
+        "v_IFNg_Bacterium": "+",
+        "v_IgA_Bacterium": "+",
+        "v_PIC": "mixed"
+      },
+      "v_IFNg_Bacterium": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "-",
+        "v_IFNg_Bacterium": "+",
+        "v_PIC": "-"
+      },
+      "v_IL13": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_IL5": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_IS": {
+        "v_AD": "+",
+        "v_IL13": "+",
+        "v_PIC": "mixed"
+      },
+      "v_IgE": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_PIC": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "-",
+        "v_IFNg_Bacterium": "+",
+        "v_PIC": "-"
+      },
+      "v_IgA_Bacterium": {
+        "v_Bb": "-",
+        "v_IgA_Bacterium": "+"
+      },
+      "v_IgG_Bacterium": {
+        "v_Bb": "-",
+        "v_IgG_Bacterium": "+"
+      }
+    },
+    "local": {
+      "v_AD": {
+        "signs": {
+          "v_AD": "mixed",
+          "v_BC_TRetortaeformis": "+",
+          "v_Bb": "-",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IS": "+",
+          "v_IgE": "+",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgA_Bacterium": "-",
+          "v_IgE": "+",
+          "v_IgG_Bacterium": "-",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNg_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL13": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IS": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL5": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgE": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AD": "+",
+          "v_BC_TRetortaeformis": "-",
+          "v_Bb": "mixed",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "-",
+          "v_IL5": "-",
+          "v_IS": "mixed",
+          "v_IgE": "-",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 12,
+    "n_nodes": 12,
+    "inputs": 1,
+    "internal_nodes": 11,
+    "nonconstant_rules": 12,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 12,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AD": "+",
+      "v_PIC": "+",
+      "v_BC_TRetortaeformis": "+",
+      "v_Bb": "-",
+      "v_IFNg_Bacterium": "-",
+      "v_IL13": "+",
+      "v_IL5": "+",
+      "v_IS": "+",
+      "v_IgE": "+",
+      "v_BC_Bacterium": "-",
+      "v_IgA_Bacterium": "-",
+      "v_IgG_Bacterium": "-"
+    },
+    "positive_edges": 38,
+    "negative_edges": 13,
+    "non_unate_edges": 3,
+    "has_multi_input_rule": true,
+    "edges": 54,
+    "max_indegree": 9,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 8,
+      "MAX": 1,
+      "MIN_MAX": 1
+    },
+    "conflicts": {
+      "v_AD": {
+        "v_AD": "mixed",
+        "v_PIC": "+"
+      },
+      "v_BC_TRetortaeformis": {
+        "v_AD": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_Bb": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "+",
+        "v_IFNg_Bacterium": "+",
+        "v_IgA_Bacterium": "+",
+        "v_PIC": "mixed"
+      },
+      "v_IFNg_Bacterium": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "-",
+        "v_IFNg_Bacterium": "+",
+        "v_PIC": "-"
+      },
+      "v_IL13": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_IL5": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_IS": {
+        "v_AD": "+",
+        "v_IL13": "+",
+        "v_PIC": "mixed",
+        "v_IS": "+"
+      },
+      "v_IgE": {
+        "v_AD": "+",
+        "v_Bb": "+",
+        "v_IL13": "+",
+        "v_IL5": "+",
+        "v_IgE": "+",
+        "v_PIC": "-"
+      },
+      "v_PIC": {
+        "v_AD": "-",
+        "v_BC_Bacterium": "+",
+        "v_BC_TRetortaeformis": "+",
+        "v_Bb": "-",
+        "v_IFNg_Bacterium": "+",
+        "v_PIC": "-"
+      },
+      "v_IgA_Bacterium": {
+        "v_Bb": "-",
+        "v_IgA_Bacterium": "+"
+      },
+      "v_IgG_Bacterium": {
+        "v_Bb": "-",
+        "v_IgG_Bacterium": "+"
+      }
+    },
+    "local": {
+      "v_AD": {
+        "signs": {
+          "v_AD": "mixed",
+          "v_BC_TRetortaeformis": "+",
+          "v_Bb": "-",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IS": "+",
+          "v_IgE": "+",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgA_Bacterium": "-",
+          "v_IgE": "+",
+          "v_IgG_Bacterium": "-",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNg_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL13": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IS": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL5": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgE": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AD": "+",
+          "v_BC_TRetortaeformis": "-",
+          "v_Bb": "mixed",
+          "v_IFNg_Bacterium": "-",
+          "v_IL13": "-",
+          "v_IL5": "-",
+          "v_IS": "mixed",
+          "v_IgE": "-",
+          "v_PIC": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IS": {
+        "signs": {
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 30,
+    "examples": [
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 1,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 0,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 0,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 1,
+        "v_BC_TRetortaeformis": 0,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 0,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 0,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 1,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 0,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 1,
+        "v_BC_Bacterium": 1,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 1,
+        "v_IL5": 1,
+        "v_IS": 1,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 1,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 0,
+        "v_IL5": 0,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 0,
+        "v_IL5": 0,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 1,
+        "v_BC_TRetortaeformis": 1,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 0,
+        "v_IL5": 0,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 1,
+        "v_PIC": 0
+      },
+      {
+        "v_AD": 0,
+        "v_BC_Bacterium": 0,
+        "v_BC_TRetortaeformis": 0,
+        "v_Bb": 0,
+        "v_IFNg_Bacterium": 0,
+        "v_IL13": 0,
+        "v_IL5": 0,
+        "v_IS": 0,
+        "v_IgA_Bacterium": 0,
+        "v_IgE": 0,
+        "v_IgG_Bacterium": 0,
+        "v_PIC": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_AD": "!(((v_AD & ((v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 1))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 1))) | (!v_IL5 & 1))))) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))))) | (!v_BC_TRetortaeformis & 1))) | (!v_AD & ((v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_IS & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IS & 1))))) | (!v_Bb & !(((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IS & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IS & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & 0))) | (!v_IL5 & !(((v_IS & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IS & 1)))))) | (!v_IL13 & ((v_IL5 & ((v_IS & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IS & 0))) | (!v_IL5 & !(((v_IS & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IS & 1))))))))))))) | (!v_BC_TRetortaeformis & 1)))))",
+    "v_BC_Bacterium": "((v_BC_Bacterium & 1) | (!v_BC_Bacterium & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_PIC & 1) | (!v_PIC & 0))))))",
+    "v_BC_TRetortaeformis": "((v_BC_TRetortaeformis & 1) | (!v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_PIC & 1) | (!v_PIC & 0))))))",
+    "v_Bb": "((v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0)))))))) | (!v_IL13 & ((v_IL5 & ((v_IgA_Bacterium & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IgA_Bacterium & ((v_IgE & 1) | (!v_IgE & !(((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0)))))))) | (!v_IL5 & !(((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0)))))))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_IgA_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgG_Bacterium & 0)))))))) | (!v_IL13 & ((v_IL5 & ((v_IgA_Bacterium & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IgA_Bacterium & ((v_IgE & 1) | (!v_IgE & !(((v_IgG_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgG_Bacterium & 0)))))))) | (!v_IL5 & !(((v_IgA_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgG_Bacterium & 0)))))))))))) | (!v_Bb & 0))",
+    "v_IFNg_Bacterium": "((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & 0))",
+    "v_IL13": "((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))) | (!v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & ((v_IgE & 1) | (!v_IgE & 0))))) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))))",
+    "v_IL5": "((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))",
+    "v_IgA_Bacterium": "((v_BC_Bacterium & ((v_Bb & 1) | (!v_Bb & 0))) | (!v_BC_Bacterium & ((v_Bb & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & 0))) | (!v_Bb & 0))))",
+    "v_IgE": "((v_BC_TRetortaeformis & ((v_IL13 & 1) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_BC_TRetortaeformis & 0))",
+    "v_IgG_Bacterium": "v_BC_Bacterium | v_IgG_Bacterium",
+    "v_PIC": "!(((v_AD & ((v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_IS & 1) | (!v_IS & ((v_PIC & 1) | (!v_PIC & 0))))))) | (!v_Bb & ((v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))) | (!v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))))) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))))))) | (!v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IL5 & 0))))))))) | (!v_AD & ((v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_IS & 1) | (!v_IS & ((v_PIC & 1) | (!v_PIC & 0))))))) | (!v_Bb & 1))) | (!v_BC_TRetortaeformis & ((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_IL13 & ((v_IL5 & ((v_IS & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IS & 1))) | (!v_IL5 & !(((v_IS & 1) | (!v_IS & 0)))))) | (!v_IL13 & ((v_IL5 & ((v_IS & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IS & 1))) | (!v_IL5 & !(((v_IS & 1) | (!v_IS & 0))))))))))))))",
+    "v_IS": "v_IS"
+  },
+  "steps": [
+    {
+      "node": "v_AP",
+      "support": [
+        "v_AgAb_Bacterium",
+        "v_Bb",
+        "v_Cb",
+        "v_IgG_Bacterium",
+        "v_MPI_Bacterium",
+        "v_Th1I_Bacterium"
+      ],
+      "function": "((v_AgAb_Bacterium & ((v_Bb & ((v_MPI_Bacterium & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_MPI_Bacterium & 0))) | (!v_Bb & 0))) | (!v_AgAb_Bacterium & ((v_Bb & ((v_Cb & ((v_IgG_Bacterium & ((v_MPI_Bacterium & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_MPI_Bacterium & 0))) | (!v_IgG_Bacterium & 0))) | (!v_Cb & 0))) | (!v_Bb & 0))))"
+    },
+    {
+      "node": "v_AgAb_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium"
+      ],
+      "function": "((v_Bb & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_Cb",
+      "support": [
+        "v_Bb",
+        "v_IgG_Bacterium",
+        "v_Oag"
+      ],
+      "function": "((v_Bb & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & !(((v_Oag & 1) | (!v_Oag & 0)))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_DCII_Bacterium",
+      "support": [
+        "v_DCI_Bacterium"
+      ],
+      "function": "v_DCI_Bacterium"
+    },
+    {
+      "node": "v_DCII_TRetortaeformis",
+      "support": [
+        "v_DCI_TRetortaeformis"
+      ],
+      "function": "v_DCI_TRetortaeformis"
+    },
+    {
+      "node": "v_DCI_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_PIC"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_DCI_TRetortaeformis",
+      "support": [
+        "v_PIC"
+      ],
+      "function": "v_PIC"
+    },
+    {
+      "node": "v_DP",
+      "support": [
+        "v_NE_Bacterium",
+        "v_TTSSI"
+      ],
+      "function": "v_NE_Bacterium & v_TTSSI"
+    },
+    {
+      "node": "v_EC_Bacterium",
+      "support": [
+        "v_Bb"
+      ],
+      "function": "v_Bb"
+    },
+    {
+      "node": "v_EC_TRetortaeformis",
+      "support": [
+        "v_AD",
+        "v_IS"
+      ],
+      "function": "v_AD | v_IS"
+    },
+    {
+      "node": "v_EL",
+      "support": [
+        "v_EL2",
+        "v_IS"
+      ],
+      "function": "!v_EL2 & v_IS"
+    },
+    {
+      "node": "v_EL2",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IgE"
+      ],
+      "function": "((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))"
+    },
+    {
+      "node": "v_IFNgI",
+      "support": [
+        "v_IFNg_Bacterium",
+        "v_PIC",
+        "v_Th1I_TRetortaeformis"
+      ],
+      "function": "v_IFNg_Bacterium | v_PIC | v_Th1I_TRetortaeformis"
+    },
+    {
+      "node": "v_IFNgII",
+      "support": [
+        "v_IFNg_Bacterium",
+        "v_PIC",
+        "v_Th1I_TRetortaeformis"
+      ],
+      "function": "v_IFNg_Bacterium | v_PIC | v_Th1I_TRetortaeformis"
+    },
+    {
+      "node": "v_IL10I",
+      "support": [
+        "v_IL10I_Bacterium",
+        "v_Th2I_TRetortaeformis"
+      ],
+      "function": "v_IL10I_Bacterium | v_Th2I_TRetortaeformis"
+    },
+    {
+      "node": "v_IL10I_Bacterium",
+      "support": [
+        "v_MPI_Bacterium",
+        "v_TTSSI",
+        "v_Th2I_Bacterium",
+        "v_TrI_Bacterium"
+      ],
+      "function": "((v_MPI_Bacterium & 1) | (!v_MPI_Bacterium & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_TTSSI & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))"
+    },
+    {
+      "node": "v_IL12II",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL4II",
+        "v_PIC",
+        "v_T0"
+      ],
+      "function": "!(((v_Bb & ((v_IFNg_Bacterium & ((v_IL4II & 1) | (!v_IL4II & !(((v_T0 & 1) | (!v_T0 & 0)))))) | (!v_IFNg_Bacterium & ((v_IL4II & 1) | (!v_IL4II & !(((v_PIC & ((v_T0 & 1) | (!v_T0 & 0))) | (!v_PIC & 0)))))))) | (!v_Bb & ((v_IL4II & 1) | (!v_IL4II & !(((v_PIC & ((v_T0 & 1) | (!v_T0 & 0))) | (!v_PIC & 0))))))))"
+    },
+    {
+      "node": "v_IL4I",
+      "support": [
+        "v_IL4II"
+      ],
+      "function": "v_IL4II"
+    },
+    {
+      "node": "v_IL4II",
+      "support": [
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC",
+        "v_Th1I_TRetortaeformis",
+        "v_Th2II_Bacterium",
+        "v_Th2II_TRetortaeformis"
+      ],
+      "function": "((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & ((v_Th1I_TRetortaeformis & 1) | (!v_Th1I_TRetortaeformis & !(((v_Th2II_Bacterium & 1) | (!v_Th2II_Bacterium & ((v_Th2II_TRetortaeformis & 1) | (!v_Th2II_TRetortaeformis & 0))))))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & ((v_Th1I_TRetortaeformis & 1) | (!v_Th1I_TRetortaeformis & !(((v_Th2II_Bacterium & 1) | (!v_Th2II_Bacterium & ((v_Th2II_TRetortaeformis & 1) | (!v_Th2II_TRetortaeformis & 0))))))))))))) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & ((v_Th1I_TRetortaeformis & 1) | (!v_Th1I_TRetortaeformis & !(((v_Th2II_Bacterium & 1) | (!v_Th2II_Bacterium & ((v_Th2II_TRetortaeformis & 1) | (!v_Th2II_TRetortaeformis & 0))))))))))))))))"
+    },
+    {
+      "node": "v_IgA_TRetortaeformis",
+      "support": [
+        "v_BC_TRetortaeformis",
+        "v_IS"
+      ],
+      "function": "v_BC_TRetortaeformis & v_IS"
+    },
+    {
+      "node": "v_IgG",
+      "support": [
+        "v_BC_TRetortaeformis"
+      ],
+      "function": "v_BC_TRetortaeformis"
+    },
+    {
+      "node": "v_MPI_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_PIC"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_NE_Bacterium",
+      "support": [
+        "v_PIC"
+      ],
+      "function": "v_PIC"
+    },
+    {
+      "node": "v_NE_TRetortaeformis",
+      "support": [
+        "v_AD",
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC",
+        "v_TTSSI",
+        "v_Th1I_TRetortaeformis",
+        "v_Th2I_Bacterium",
+        "v_Th2I_TRetortaeformis",
+        "v_TrI_Bacterium"
+      ],
+      "function": "((v_AD & ((v_Bb & ((v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))))))) | (!v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))))))))) | (!v_AD & !(((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1))))))))))))) | (!v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))))) | (!v_IL5 & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & ((v_PIC & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & ((v_PIC & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1))))))))) | (!v_IL5 & ((v_PIC & ((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_PIC & ((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))))))))))"
+    },
+    {
+      "node": "v_Oag",
+      "support": [
+        "v_Bb"
+      ],
+      "function": "v_Bb"
+    },
+    {
+      "node": "v_PH",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium",
+        "v_PIC",
+        "v_Th1I_Bacterium"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & ((v_IgA_Bacterium & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_IgG_Bacterium & 0))))) | (!v_IFNg_Bacterium & ((v_IgA_Bacterium & ((v_PIC & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_PIC & 0))) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & ((v_PIC & ((v_Th1I_Bacterium & 1) | (!v_Th1I_Bacterium & 0))) | (!v_PIC & 0))) | (!v_IgG_Bacterium & 0))))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_T0",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_PIC"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & 1) | (!v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))))) | (!v_Bb & ((v_PIC & 1) | (!v_PIC & 0))))"
+    },
+    {
+      "node": "v_TEL",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IS",
+        "v_IgE"
+      ],
+      "function": "((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))) | (!v_IL13 & ((v_IL5 & ((v_IS & 1) | (!v_IS & ((v_IgE & 1) | (!v_IgE & 0))))) | (!v_IL5 & ((v_IS & 1) | (!v_IS & 0))))))"
+    },
+    {
+      "node": "v_TNE",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC",
+        "v_TTSSI",
+        "v_Th1I_TRetortaeformis",
+        "v_Th2I_Bacterium",
+        "v_Th2I_TRetortaeformis",
+        "v_TrI_Bacterium"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))))))) | (!v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_TTSSI & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0)))))))))))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))) | (!v_IL5 & ((v_PIC & 1) | (!v_PIC & !(((v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_Bacterium & 1) | (!v_Th2I_Bacterium & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))))) | (!v_Th1I_TRetortaeformis & 1))) | (!v_TTSSI & ((v_Th1I_TRetortaeformis & ((v_Th2I_TRetortaeformis & 1) | (!v_Th2I_TRetortaeformis & ((v_TrI_Bacterium & 1) | (!v_TrI_Bacterium & 0))))) | (!v_Th1I_TRetortaeformis & 1)))))))))))))))"
+    },
+    {
+      "node": "v_TTSSI",
+      "support": [
+        "v_Bb",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium"
+      ],
+      "function": "v_Bb & !v_IgA_Bacterium & !v_IgG_Bacterium"
+    },
+    {
+      "node": "v_TTSSII",
+      "support": [
+        "v_Bb",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium"
+      ],
+      "function": "v_Bb & !v_IgA_Bacterium & !v_IgG_Bacterium"
+    },
+    {
+      "node": "v_Th1II_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "!(((v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))))))) | (!v_Bb & 1)))"
+    },
+    {
+      "node": "v_Th1II_TRetortaeformis",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "!(((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0))))))))"
+    },
+    {
+      "node": "v_Th1I_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "!(((v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))))))) | (!v_Bb & 1)))"
+    },
+    {
+      "node": "v_Th1I_TRetortaeformis",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "!(((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & !(((v_PIC & 1) | (!v_PIC & 0)))))) | (!v_IL5 & !(((v_PIC & 1) | (!v_PIC & 0))))))))"
+    },
+    {
+      "node": "v_Th2II_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IL5 & 0))))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_Th2II_TRetortaeformis",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IL5 & 0))))"
+    },
+    {
+      "node": "v_Th2I_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "((v_Bb & ((v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & 1) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & 1) | (!v_IgE & 0))) | (!v_IL5 & 0))))) | (!v_IFNg_Bacterium & ((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IL5 & 0))))))) | (!v_Bb & 0))"
+    },
+    {
+      "node": "v_Th2I_TRetortaeformis",
+      "support": [
+        "v_IL13",
+        "v_IL5",
+        "v_IgE",
+        "v_PIC"
+      ],
+      "function": "((v_IL13 & ((v_IL5 & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IL5 & 0))) | (!v_IL13 & ((v_IL5 & ((v_IgE & ((v_PIC & 1) | (!v_PIC & 0))) | (!v_IgE & 0))) | (!v_IL5 & 0))))"
+    },
+    {
+      "node": "v_TrII",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium",
+        "v_PIC"
+      ],
+      "function": "!(((v_Bb & ((v_IFNg_Bacterium & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0))))) | (!v_IFNg_Bacterium & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & !(((v_PIC & 1) | (!v_PIC & 0)))))))))) | (!v_Bb & 1)))"
+    },
+    {
+      "node": "v_TrI_Bacterium",
+      "support": [
+        "v_Bb",
+        "v_IFNg_Bacterium",
+        "v_IgA_Bacterium",
+        "v_IgG_Bacterium",
+        "v_PIC"
+      ],
+      "function": "!(((v_Bb & ((v_IFNg_Bacterium & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & 0))))) | (!v_IFNg_Bacterium & ((v_IgA_Bacterium & 1) | (!v_IgA_Bacterium & ((v_IgG_Bacterium & 1) | (!v_IgG_Bacterium & !(((v_PIC & 1) | (!v_PIC & 0)))))))))) | (!v_Bb & 1)))"
+    }
+  ],
+  "seconds": 0.511398599948734
+}

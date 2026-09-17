@@ -1,0 +1,480 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "074",
+  "name": "T-LGL-SURVIVAL-NETWORK-2011-REDUCED",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 18,
+  "after": {
+    "nodes": 4,
+    "n_nodes": 4,
+    "inputs": 0,
+    "internal_nodes": 4,
+    "nonconstant_rules": 4,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Apoptosis_": "+",
+      "v_CTLA4_": "-",
+      "v_P2": "-",
+      "v_S1P": "-"
+    },
+    "positive_edges": 3,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 9,
+    "max_indegree": 3,
+    "local_family_counts": {
+      "MAX": 1,
+      "MIN": 2,
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {
+      "v_Apoptosis_": {
+        "v_Apoptosis_": "+",
+        "v_CTLA4_": "-",
+        "v_P2": "-",
+        "v_S1P": "-"
+      },
+      "v_S1P": {
+        "v_Apoptosis_": "-",
+        "v_P2": "-",
+        "v_S1P": "+"
+      }
+    },
+    "local": {
+      "v_Apoptosis_": {
+        "signs": {
+          "v_Apoptosis_": "+",
+          "v_S1P": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CTLA4_": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_CTLA4_": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P2": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_P2": "+",
+          "v_S1P": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_S1P": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_S1P": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 4,
+    "n_nodes": 4,
+    "inputs": 0,
+    "internal_nodes": 4,
+    "nonconstant_rules": 4,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Apoptosis_": "+",
+      "v_CTLA4_": "-",
+      "v_P2": "-",
+      "v_S1P": "-"
+    },
+    "positive_edges": 3,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 9,
+    "max_indegree": 3,
+    "local_family_counts": {
+      "MAX": 1,
+      "MIN": 2,
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {
+      "v_Apoptosis_": {
+        "v_Apoptosis_": "+",
+        "v_CTLA4_": "-",
+        "v_P2": "-",
+        "v_S1P": "-"
+      },
+      "v_S1P": {
+        "v_Apoptosis_": "-",
+        "v_P2": "-",
+        "v_S1P": "+"
+      }
+    },
+    "local": {
+      "v_Apoptosis_": {
+        "signs": {
+          "v_Apoptosis_": "+",
+          "v_S1P": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CTLA4_": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_CTLA4_": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "NOR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": true,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P2": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_P2": "+",
+          "v_S1P": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_S1P": {
+        "signs": {
+          "v_Apoptosis_": "-",
+          "v_S1P": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 1,
+    "examples": [
+      {
+        "v_Apoptosis_": 1,
+        "v_CTLA4_": 0,
+        "v_P2": 0,
+        "v_S1P": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Apoptosis_": "v_Apoptosis_ | !v_S1P",
+    "v_CTLA4_": "!v_Apoptosis_ & !v_CTLA4_",
+    "v_P2": "!(((v_Apoptosis_ & 1) | (!v_Apoptosis_ & !(((v_P2 & 1) | (!v_P2 & !(((v_S1P & 1) | (!v_S1P & 0)))))))))",
+    "v_S1P": "!v_Apoptosis_ & v_S1P"
+  },
+  "steps": [
+    {
+      "node": "v_Caspase",
+      "support": [
+        "v_Apoptosis_",
+        "v_BID_",
+        "v_DISC_",
+        "v_IAP_"
+      ],
+      "function": "!(((v_Apoptosis_ & 1) | (!v_Apoptosis_ & !(((v_BID_ & ((v_DISC_ & 1) | (!v_DISC_ & !(((v_IAP_ & 1) | (!v_IAP_ & 0)))))) | (!v_BID_ & ((v_DISC_ & 1) | (!v_DISC_ & 0))))))))"
+    },
+    {
+      "node": "v_BID_",
+      "support": [
+        "v_Apoptosis_",
+        "v_MCL1"
+      ],
+      "function": "!v_Apoptosis_ & !v_MCL1"
+    },
+    {
+      "node": "v_SMAD_",
+      "support": [
+        "v_Apoptosis_",
+        "v_GPCR_"
+      ],
+      "function": "!v_Apoptosis_ & v_GPCR_"
+    },
+    {
+      "node": "v_FLIP_",
+      "support": [
+        "v_Apoptosis_",
+        "v_DISC_"
+      ],
+      "function": "!v_Apoptosis_ & !v_DISC_"
+    },
+    {
+      "node": "v_Fas",
+      "support": [
+        "v_Apoptosis_",
+        "v_sFas"
+      ],
+      "function": "!v_Apoptosis_ & !v_sFas"
+    },
+    {
+      "node": "v_GPCR_",
+      "support": [
+        "v_Apoptosis_",
+        "v_S1P"
+      ],
+      "function": "!v_Apoptosis_ & v_S1P"
+    },
+    {
+      "node": "v_Ceramide_",
+      "support": [
+        "v_Apoptosis_",
+        "v_S1P",
+        "v_sFas"
+      ],
+      "function": "!v_Apoptosis_ & !v_S1P & !v_sFas"
+    },
+    {
+      "node": "v_TCR",
+      "support": [
+        "v_Apoptosis_",
+        "v_CTLA4_"
+      ],
+      "function": "!v_Apoptosis_ & !v_CTLA4_"
+    },
+    {
+      "node": "v_CREB",
+      "support": [
+        "v_Apoptosis_",
+        "v_IFNG_"
+      ],
+      "function": "!v_Apoptosis_ & v_IFNG_"
+    },
+    {
+      "node": "v_IAP_",
+      "support": [
+        "v_Apoptosis_",
+        "v_MCL1"
+      ],
+      "function": "!v_Apoptosis_ & v_MCL1"
+    },
+    {
+      "node": "v_sFas",
+      "support": [
+        "v_Apoptosis_",
+        "v_S1P"
+      ],
+      "function": "!v_Apoptosis_ & v_S1P"
+    },
+    {
+      "node": "v_IFNG_",
+      "support": [
+        "v_Apoptosis_",
+        "v_P2",
+        "v_S1P"
+      ],
+      "function": "!v_Apoptosis_ & !v_P2 & !v_S1P"
+    },
+    {
+      "node": "v_DISC_",
+      "support": [
+        "v_Apoptosis_",
+        "v_S1P"
+      ],
+      "function": "!v_Apoptosis_ & !v_S1P"
+    },
+    {
+      "node": "v_MCL1",
+      "support": [
+        "v_Apoptosis_",
+        "v_S1P"
+      ],
+      "function": "!v_Apoptosis_ & v_S1P"
+    }
+  ],
+  "seconds": 0.05136120005045086
+}

@@ -1,0 +1,514 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "021",
+  "name": "BODY-SEGMENTATION-IN-DROSOPHILA-2013",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 17,
+  "after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 3,
+    "internal_nodes": 2,
+    "nonconstant_rules": 2,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 2,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_PTC_protein": "+",
+      "v_wg": "-",
+      "v_SLP": "+",
+      "v_WG_external": "-",
+      "v_hh_external": "-"
+    },
+    "positive_edges": 5,
+    "negative_edges": 4,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 9,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2
+    },
+    "conflicts": {
+      "v_PTC_protein": {
+        "v_PTC_protein": "+",
+        "v_wg": "-"
+      },
+      "v_hh_external": {
+        "v_PTC_protein": "-",
+        "v_wg": "+"
+      }
+    },
+    "local": {
+      "v_PTC_protein": {
+        "signs": {
+          "v_PTC_protein": "+",
+          "v_SLP": "+",
+          "v_WG_external": "-",
+          "v_hh_external": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_wg": {
+        "signs": {
+          "v_PTC_protein": "-",
+          "v_SLP": "+",
+          "v_WG_external": "-",
+          "v_hh_external": "+",
+          "v_wg": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 5,
+    "n_nodes": 5,
+    "inputs": 3,
+    "internal_nodes": 2,
+    "nonconstant_rules": 5,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 5,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_PTC_protein": "+",
+      "v_wg": "-",
+      "v_SLP": "+",
+      "v_WG_external": "-",
+      "v_hh_external": "-"
+    },
+    "positive_edges": 8,
+    "negative_edges": 4,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 12,
+    "max_indegree": 5,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MIN_MAX": 3
+    },
+    "conflicts": {
+      "v_PTC_protein": {
+        "v_PTC_protein": "+",
+        "v_wg": "-"
+      },
+      "v_WG_external": {
+        "v_PTC_protein": "-",
+        "v_wg": "-",
+        "v_WG_external": "+"
+      },
+      "v_hh_external": {
+        "v_PTC_protein": "-",
+        "v_wg": "+",
+        "v_hh_external": "+"
+      }
+    },
+    "local": {
+      "v_PTC_protein": {
+        "signs": {
+          "v_PTC_protein": "+",
+          "v_SLP": "+",
+          "v_WG_external": "-",
+          "v_hh_external": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_wg": {
+        "signs": {
+          "v_PTC_protein": "-",
+          "v_SLP": "+",
+          "v_WG_external": "-",
+          "v_hh_external": "+",
+          "v_wg": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_SLP": {
+        "signs": {
+          "v_SLP": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_WG_external": {
+        "signs": {
+          "v_WG_external": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_hh_external": {
+        "signs": {
+          "v_hh_external": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 10,
+    "examples": [
+      {
+        "v_PTC_protein": 0,
+        "v_SLP": 0,
+        "v_WG_external": 1,
+        "v_hh_external": 1,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 0,
+        "v_SLP": 0,
+        "v_WG_external": 1,
+        "v_hh_external": 0,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 0,
+        "v_WG_external": 0,
+        "v_hh_external": 1,
+        "v_wg": 1
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 0,
+        "v_WG_external": 0,
+        "v_hh_external": 0,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 0,
+        "v_WG_external": 0,
+        "v_hh_external": 1,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 1,
+        "v_WG_external": 0,
+        "v_hh_external": 1,
+        "v_wg": 1
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 1,
+        "v_WG_external": 1,
+        "v_hh_external": 1,
+        "v_wg": 1
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 0,
+        "v_WG_external": 1,
+        "v_hh_external": 0,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 1,
+        "v_WG_external": 0,
+        "v_hh_external": 0,
+        "v_wg": 0
+      },
+      {
+        "v_PTC_protein": 1,
+        "v_SLP": 1,
+        "v_WG_external": 1,
+        "v_hh_external": 0,
+        "v_wg": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_PTC_protein": "((v_PTC_protein & ((v_SLP & 1) | (!v_SLP & !(((v_WG_external & ((v_hh_external & 1) | (!v_hh_external & 0))) | (!v_WG_external & 0)))))) | (!v_PTC_protein & ((v_SLP & 1) | (!v_SLP & !(((v_WG_external & 1) | (!v_WG_external & 0)))))))",
+    "v_wg": "((v_PTC_protein & ((v_SLP & ((v_hh_external & 1) | (!v_hh_external & 0))) | (!v_SLP & !(((v_WG_external & 1) | (!v_WG_external & !(((v_hh_external & ((v_wg & 1) | (!v_wg & 0))) | (!v_hh_external & 0))))))))) | (!v_PTC_protein & ((v_SLP & 1) | (!v_SLP & !(((v_WG_external & 1) | (!v_WG_external & !(((v_wg & 1) | (!v_wg & 0))))))))))",
+    "v_SLP": "v_SLP",
+    "v_WG_external": "v_WG_external",
+    "v_hh_external": "v_hh_external"
+  },
+  "steps": [
+    {
+      "node": "v_CIA",
+      "support": [
+        "v_CI_protein",
+        "v_PTC_protein",
+        "v_hh_external"
+      ],
+      "function": "((v_CI_protein & ((v_PTC_protein & ((v_hh_external & 1) | (!v_hh_external & 0))) | (!v_PTC_protein & 1))) | (!v_CI_protein & 0))"
+    },
+    {
+      "node": "v_CIR",
+      "support": [
+        "v_CI_protein",
+        "v_PTC_protein",
+        "v_hh_external"
+      ],
+      "function": "v_CI_protein & v_PTC_protein & !v_hh_external"
+    },
+    {
+      "node": "v_CI_protein",
+      "support": [
+        "v_ci"
+      ],
+      "function": "v_ci"
+    },
+    {
+      "node": "v_EN_protein",
+      "support": [
+        "v_en"
+      ],
+      "function": "v_en"
+    },
+    {
+      "node": "v_HH_protein",
+      "support": [
+        "v_hh"
+      ],
+      "function": "v_hh"
+    },
+    {
+      "node": "v_PH",
+      "support": [
+        "v_PTC_protein",
+        "v_hh_external"
+      ],
+      "function": "v_PTC_protein & v_hh_external"
+    },
+    {
+      "node": "v_SMO",
+      "support": [
+        "v_PTC_protein",
+        "v_hh_external"
+      ],
+      "function": "!v_PTC_protein | v_hh_external"
+    },
+    {
+      "node": "v_WG_protein",
+      "support": [
+        "v_wg"
+      ],
+      "function": "v_wg"
+    },
+    {
+      "node": "v_ci",
+      "support": [
+        "v_en"
+      ],
+      "function": "!v_en"
+    },
+    {
+      "node": "v_en",
+      "support": [
+        "v_SLP",
+        "v_WG_external"
+      ],
+      "function": "!v_SLP & v_WG_external"
+    },
+    {
+      "node": "v_hh",
+      "support": [
+        "v_SLP",
+        "v_WG_external"
+      ],
+      "function": "!v_SLP & v_WG_external"
+    },
+    {
+      "node": "v_ptc",
+      "support": [
+        "v_PTC_protein",
+        "v_SLP",
+        "v_WG_external",
+        "v_hh_external"
+      ],
+      "function": "((v_PTC_protein & ((v_SLP & ((v_hh_external & 1) | (!v_hh_external & 0))) | (!v_SLP & !(((v_WG_external & 1) | (!v_WG_external & !(((v_hh_external & 1) | (!v_hh_external & 0))))))))) | (!v_PTC_protein & ((v_SLP & 1) | (!v_SLP & !(((v_WG_external & 1) | (!v_WG_external & 0)))))))"
+    }
+  ],
+  "seconds": 0.23356160009279847
+}

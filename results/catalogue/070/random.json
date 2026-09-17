@@ -1,0 +1,1477 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "070",
+  "name": "MAPK-CANCER-CELL-FATE",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 53,
+  "after": {
+    "nodes": 12,
+    "n_nodes": 12,
+    "inputs": 4,
+    "internal_nodes": 8,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_EGFR": "+",
+      "v_FRS2": "-",
+      "v_GADD45": "+",
+      "v_MSK": "+",
+      "v_PI3K": "+",
+      "v_PKC": "+",
+      "v_EGFR_stimulus": "+",
+      "v_ERK": "+",
+      "v_TGFBR_stimulus": "-",
+      "v_FGFR3_stimulus": "+",
+      "v_MDM2": "-",
+      "v_DNA_damage": "-"
+    },
+    "positive_edges": 25,
+    "negative_edges": 25,
+    "non_unate_edges": 12,
+    "has_multi_input_rule": true,
+    "edges": 62,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "UNATE_OTHER": 3,
+      "NON_UNATE": 3,
+      "MIN": 1,
+      "MAX": 1
+    },
+    "conflicts": {
+      "v_EGFR": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "+"
+      },
+      "v_ERK": {
+        "v_EGFR": "+",
+        "v_ERK": "-",
+        "v_FRS2": "-",
+        "v_GADD45": "-",
+        "v_MDM2": "mixed",
+        "v_MSK": "+"
+      },
+      "v_FRS2": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "mixed",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "-"
+      },
+      "v_PKC": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "-",
+        "v_MDM2": "mixed",
+        "v_MSK": "-",
+        "v_PKC": "-"
+      },
+      "v_TGFBR_stimulus": {
+        "v_EGFR": "-",
+        "v_ERK": "-",
+        "v_FRS2": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "-"
+      },
+      "v_DNA_damage": {
+        "v_ERK": "mixed",
+        "v_GADD45": "+",
+        "v_MDM2": "+",
+        "v_MSK": "+"
+      },
+      "v_FGFR3_stimulus": {
+        "v_ERK": "+",
+        "v_FRS2": "+",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PKC": "+"
+      },
+      "v_GADD45": {
+        "v_ERK": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+"
+      },
+      "v_MSK": {
+        "v_ERK": "+",
+        "v_GADD45": "-",
+        "v_MDM2": "-",
+        "v_MSK": "-"
+      },
+      "v_PI3K": {
+        "v_ERK": "-",
+        "v_MDM2": "+",
+        "v_PI3K": "+"
+      }
+    },
+    "local": {
+      "v_EGFR": {
+        "signs": {
+          "v_EGFR": "-",
+          "v_EGFR_stimulus": "+",
+          "v_ERK": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK": {
+        "signs": {
+          "v_DNA_damage": "mixed",
+          "v_EGFR": "mixed",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "mixed",
+          "v_GADD45": "-",
+          "v_MDM2": "-",
+          "v_MSK": "+",
+          "v_PI3K": "-",
+          "v_PKC": "mixed",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FRS2": {
+        "signs": {
+          "v_EGFR": "-",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GADD45": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "+",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "mixed",
+          "v_GADD45": "+",
+          "v_MDM2": "-",
+          "v_MSK": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MDM2": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "mixed",
+          "v_ERK": "mixed",
+          "v_FGFR3_stimulus": "mixed",
+          "v_FRS2": "mixed",
+          "v_GADD45": "mixed",
+          "v_MDM2": "-",
+          "v_MSK": "-",
+          "v_PI3K": "+",
+          "v_PKC": "mixed",
+          "v_TGFBR_stimulus": "mixed"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MSK": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "+",
+          "v_ERK": "+",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "+",
+          "v_GADD45": "+",
+          "v_MSK": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_FRS2": "+",
+          "v_PI3K": "+",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKC": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 12,
+    "n_nodes": 12,
+    "inputs": 4,
+    "internal_nodes": 8,
+    "nonconstant_rules": 12,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 12,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_EGFR": "+",
+      "v_FRS2": "-",
+      "v_GADD45": "+",
+      "v_MSK": "+",
+      "v_PI3K": "+",
+      "v_PKC": "+",
+      "v_EGFR_stimulus": "+",
+      "v_ERK": "+",
+      "v_TGFBR_stimulus": "-",
+      "v_FGFR3_stimulus": "+",
+      "v_MDM2": "-",
+      "v_DNA_damage": "-"
+    },
+    "positive_edges": 29,
+    "negative_edges": 25,
+    "non_unate_edges": 12,
+    "has_multi_input_rule": true,
+    "edges": 66,
+    "max_indegree": 11,
+    "local_family_counts": {
+      "UNATE_OTHER": 3,
+      "NON_UNATE": 3,
+      "MIN": 1,
+      "MAX": 1,
+      "MIN_MAX": 4
+    },
+    "conflicts": {
+      "v_EGFR": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "+"
+      },
+      "v_ERK": {
+        "v_EGFR": "+",
+        "v_ERK": "-",
+        "v_FRS2": "-",
+        "v_GADD45": "-",
+        "v_MDM2": "mixed",
+        "v_MSK": "+"
+      },
+      "v_FRS2": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "mixed",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "-"
+      },
+      "v_PKC": {
+        "v_EGFR": "-",
+        "v_ERK": "mixed",
+        "v_FRS2": "-",
+        "v_GADD45": "-",
+        "v_MDM2": "mixed",
+        "v_MSK": "-",
+        "v_PKC": "-"
+      },
+      "v_TGFBR_stimulus": {
+        "v_EGFR": "-",
+        "v_ERK": "-",
+        "v_FRS2": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PI3K": "+",
+        "v_PKC": "-",
+        "v_TGFBR_stimulus": "+"
+      },
+      "v_DNA_damage": {
+        "v_ERK": "mixed",
+        "v_GADD45": "+",
+        "v_MDM2": "+",
+        "v_MSK": "+",
+        "v_DNA_damage": "+"
+      },
+      "v_FGFR3_stimulus": {
+        "v_ERK": "+",
+        "v_FRS2": "+",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+",
+        "v_PKC": "+",
+        "v_FGFR3_stimulus": "+"
+      },
+      "v_GADD45": {
+        "v_ERK": "-",
+        "v_GADD45": "+",
+        "v_MDM2": "mixed",
+        "v_MSK": "+"
+      },
+      "v_MSK": {
+        "v_ERK": "+",
+        "v_GADD45": "-",
+        "v_MDM2": "-",
+        "v_MSK": "-"
+      },
+      "v_PI3K": {
+        "v_ERK": "-",
+        "v_MDM2": "+",
+        "v_PI3K": "+"
+      }
+    },
+    "local": {
+      "v_EGFR": {
+        "signs": {
+          "v_EGFR": "-",
+          "v_EGFR_stimulus": "+",
+          "v_ERK": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ERK": {
+        "signs": {
+          "v_DNA_damage": "mixed",
+          "v_EGFR": "mixed",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "mixed",
+          "v_GADD45": "-",
+          "v_MDM2": "-",
+          "v_MSK": "+",
+          "v_PI3K": "-",
+          "v_PKC": "mixed",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FRS2": {
+        "signs": {
+          "v_EGFR": "-",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GADD45": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "+",
+          "v_ERK": "-",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "mixed",
+          "v_GADD45": "+",
+          "v_MDM2": "-",
+          "v_MSK": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MDM2": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "mixed",
+          "v_ERK": "mixed",
+          "v_FGFR3_stimulus": "mixed",
+          "v_FRS2": "mixed",
+          "v_GADD45": "mixed",
+          "v_MDM2": "-",
+          "v_MSK": "-",
+          "v_PI3K": "+",
+          "v_PKC": "mixed",
+          "v_TGFBR_stimulus": "mixed"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MSK": {
+        "signs": {
+          "v_DNA_damage": "+",
+          "v_EGFR": "+",
+          "v_ERK": "+",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "+",
+          "v_GADD45": "+",
+          "v_MSK": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PI3K": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_FRS2": "+",
+          "v_PI3K": "+",
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PKC": {
+        "signs": {
+          "v_EGFR": "+",
+          "v_FGFR3_stimulus": "+",
+          "v_FRS2": "-",
+          "v_PKC": "-",
+          "v_TGFBR_stimulus": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DNA_damage": {
+        "signs": {
+          "v_DNA_damage": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_EGFR_stimulus": {
+        "signs": {
+          "v_EGFR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FGFR3_stimulus": {
+        "signs": {
+          "v_FGFR3_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TGFBR_stimulus": {
+        "signs": {
+          "v_TGFBR_stimulus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 12,
+    "examples": [
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 0,
+        "v_MDM2": 1,
+        "v_MSK": 0,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 0
+      },
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 0,
+        "v_MDM2": 0,
+        "v_MSK": 0,
+        "v_PI3K": 0,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 0
+      },
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 1,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 0,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 0
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 0
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 1,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 0,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 1,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 0,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 1,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 1,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 0,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 1,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      },
+      {
+        "v_DNA_damage": 1,
+        "v_EGFR": 0,
+        "v_EGFR_stimulus": 1,
+        "v_ERK": 0,
+        "v_FGFR3_stimulus": 1,
+        "v_FRS2": 0,
+        "v_GADD45": 1,
+        "v_MDM2": 0,
+        "v_MSK": 1,
+        "v_PI3K": 1,
+        "v_PKC": 0,
+        "v_TGFBR_stimulus": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_EGFR": "!(((v_EGFR & 1) | (!v_EGFR & ((v_EGFR_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_EGFR_stimulus & ((v_ERK & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_ERK & 1)))))))",
+    "v_ERK": "!(((v_DNA_damage & ((v_EGFR & 1) | (!v_EGFR & ((v_ERK & 1) | (!v_ERK & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))) | (!v_MSK & 1))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 1))))))) | (!v_FGFR3_stimulus & 1))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1)))))))))))))))))",
+    "v_FRS2": "!v_EGFR & !v_ERK & v_FGFR3_stimulus & !v_FRS2 & !v_PKC & !v_TGFBR_stimulus",
+    "v_GADD45": "((v_DNA_damage & ((v_EGFR & 1) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & 1))) | (!v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & 1))) | (!v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & 1))) | (!v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))))",
+    "v_MDM2": "!(((v_DNA_damage & ((v_EGFR & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 0))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 0))))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 0))))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 0))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 0))))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0)))))))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1)))))))))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0)))))))))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1)))))))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & 0)))))) | (!v_MDM2 & ((v_MSK & 1) | (!v_MSK & !(((v_PI3K & 1) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))))))))))))",
+    "v_MSK": "((v_DNA_damage & ((v_EGFR & 1) | (!v_EGFR & ((v_ERK & 1) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_ERK & 1) | (!v_ERK & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))) | (!v_EGFR & ((v_ERK & 1) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))))",
+    "v_PI3K": "v_EGFR | v_FRS2 | v_PI3K | v_TGFBR_stimulus",
+    "v_PKC": "((v_EGFR & 1) | (!v_EGFR & !(((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_FGFR3_stimulus & 1)))))",
+    "v_DNA_damage": "v_DNA_damage",
+    "v_EGFR_stimulus": "v_EGFR_stimulus",
+    "v_FGFR3_stimulus": "v_FGFR3_stimulus",
+    "v_TGFBR_stimulus": "v_TGFBR_stimulus"
+  },
+  "steps": [
+    {
+      "node": "v_SPRY",
+      "support": [
+        "v_ERK"
+      ],
+      "function": "v_ERK"
+    },
+    {
+      "node": "v_DUSP1",
+      "support": [
+        "v_CREB"
+      ],
+      "function": "v_CREB"
+    },
+    {
+      "node": "v_AP1",
+      "support": [
+        "v_ATF2",
+        "v_FOS",
+        "v_JUN"
+      ],
+      "function": "((v_ATF2 & ((v_JUN & 1) | (!v_JUN & 0))) | (!v_ATF2 & ((v_FOS & ((v_JUN & 1) | (!v_JUN & 0))) | (!v_FOS & 0))))"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_CREB",
+        "v_MAP3K1_3",
+        "v_MTK1",
+        "v_TAK1",
+        "v_TAOK"
+      ],
+      "function": "((v_CREB & ((v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))) | (!v_MAP3K1_3 & ((v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MTK1 & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))) | (!v_TAK1 & 0))))))) | (!v_CREB & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))))))"
+    },
+    {
+      "node": "v_GRB2",
+      "support": [
+        "v_EGFR",
+        "v_FRS2",
+        "v_TGFBR"
+      ],
+      "function": "v_EGFR | v_FRS2 | v_TGFBR"
+    },
+    {
+      "node": "v_JUN",
+      "support": [
+        "v_CREB",
+        "v_MAP3K1_3",
+        "v_MTK1",
+        "v_TAK1",
+        "v_TAOK"
+      ],
+      "function": "((v_CREB & ((v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))) | (!v_MAP3K1_3 & ((v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MTK1 & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))) | (!v_TAK1 & 0))))))) | (!v_CREB & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))))))"
+    },
+    {
+      "node": "v_FGFR3",
+      "support": [
+        "v_EGFR",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_PKC",
+        "v_TGFBR"
+      ],
+      "function": "!v_EGFR & v_FGFR3_stimulus & !v_FRS2 & !v_PKC & !v_TGFBR"
+    },
+    {
+      "node": "v_ELK1",
+      "support": [
+        "v_CREB",
+        "v_ERK",
+        "v_MAP3K1_3",
+        "v_MTK1",
+        "v_TAK1",
+        "v_TAOK",
+        "v_p38"
+      ],
+      "function": "((v_CREB & ((v_ERK & 1) | (!v_ERK & ((v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))))) | (!v_MAP3K1_3 & ((v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))) | (!v_MTK1 & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))) | (!v_TAK1 & ((v_p38 & 1) | (!v_p38 & 0))))))))))) | (!v_CREB & ((v_ERK & 1) | (!v_ERK & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))))))))))"
+    },
+    {
+      "node": "v_p14",
+      "support": [
+        "v_MYC"
+      ],
+      "function": "v_MYC"
+    },
+    {
+      "node": "v_CREB",
+      "support": [
+        "v_MSK"
+      ],
+      "function": "v_MSK"
+    },
+    {
+      "node": "v_RSK",
+      "support": [
+        "v_ERK"
+      ],
+      "function": "v_ERK"
+    },
+    {
+      "node": "v_ATM",
+      "support": [
+        "v_DNA_damage"
+      ],
+      "function": "v_DNA_damage"
+    },
+    {
+      "node": "v_ATF2",
+      "support": [
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_MTK1",
+        "v_TAK1",
+        "v_TAOK",
+        "v_p38"
+      ],
+      "function": "((v_MAP3K1_3 & ((v_MSK & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))) | (!v_MTK1 & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))) | (!v_TAK1 & ((v_p38 & 1) | (!v_p38 & 0))))))) | (!v_MSK & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & ((v_p38 & 1) | (!v_p38 & 0))))))))))))"
+    },
+    {
+      "node": "v_FOXO3",
+      "support": [
+        "v_AKT",
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_MTK1",
+        "v_TAK1",
+        "v_TAOK"
+      ],
+      "function": "!(((v_AKT & 1) | (!v_AKT & !(((v_MAP3K1_3 & ((v_MSK & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MTK1 & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))) | (!v_TAK1 & 0))))) | (!v_MSK & ((v_MTK1 & 1) | (!v_MTK1 & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))))))))))"
+    },
+    {
+      "node": "v_MTK1",
+      "support": [
+        "v_GADD45"
+      ],
+      "function": "v_GADD45"
+    },
+    {
+      "node": "v_PDK1",
+      "support": [
+        "v_PI3K"
+      ],
+      "function": "v_PI3K"
+    },
+    {
+      "node": "v_PLCG",
+      "support": [
+        "v_EGFR",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_PKC",
+        "v_TGFBR"
+      ],
+      "function": "((v_EGFR & 1) | (!v_EGFR & !(((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_FGFR3_stimulus & 1)))))"
+    },
+    {
+      "node": "v_RAS",
+      "support": [
+        "v_EGFR",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_PKC",
+        "v_SOS",
+        "v_TGFBR"
+      ],
+      "function": "((v_EGFR & 1) | (!v_EGFR & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_SOS & 1) | (!v_SOS & 0))) | (!v_FRS2 & ((v_PKC & ((v_SOS & 1) | (!v_SOS & 0))) | (!v_PKC & ((v_SOS & 1) | (!v_SOS & !(((v_TGFBR & 1) | (!v_TGFBR & 0)))))))))) | (!v_FGFR3_stimulus & ((v_SOS & 1) | (!v_SOS & 0))))))"
+    },
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_PI3K",
+        "v_PTEN"
+      ],
+      "function": "v_PI3K & !v_PTEN"
+    },
+    {
+      "node": "v_RAF",
+      "support": [
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_PI3K",
+        "v_PKC",
+        "v_PTEN",
+        "v_SOS",
+        "v_TGFBR"
+      ],
+      "function": "!(((v_EGFR & ((v_ERK & 1) | (!v_ERK & !(((v_PI3K & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PI3K & 1)))))) | (!v_EGFR & ((v_ERK & 1) | (!v_ERK & !(((v_FGFR3_stimulus & ((v_FRS2 & ((v_PI3K & ((v_PKC & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PKC & ((v_PTEN & ((v_SOS & 1) | (!v_SOS & 0))) | (!v_PTEN & 0))))) | (!v_PI3K & ((v_PKC & 1) | (!v_PKC & ((v_SOS & 1) | (!v_SOS & 0))))))) | (!v_FRS2 & ((v_PI3K & ((v_PKC & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PKC & ((v_PTEN & ((v_SOS & 1) | (!v_SOS & !(((v_TGFBR & 1) | (!v_TGFBR & 0)))))) | (!v_PTEN & 0))))) | (!v_PI3K & ((v_PKC & 1) | (!v_PKC & ((v_SOS & 1) | (!v_SOS & !(((v_TGFBR & 1) | (!v_TGFBR & 0)))))))))))) | (!v_FGFR3_stimulus & ((v_PI3K & ((v_PKC & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_PKC & ((v_PTEN & ((v_SOS & 1) | (!v_SOS & 0))) | (!v_PTEN & 0))))) | (!v_PI3K & ((v_PKC & 1) | (!v_PKC & ((v_SOS & 1) | (!v_SOS & 0))))))))))))))"
+    },
+    {
+      "node": "v_Growth_Arrest",
+      "support": [
+        "v_p21"
+      ],
+      "function": "v_p21"
+    },
+    {
+      "node": "v_p38",
+      "support": [
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_TAK1",
+        "v_TAOK"
+      ],
+      "function": "((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))) | (!v_TAK1 & 0))) | (!v_MSK & ((v_TAK1 & 1) | (!v_TAK1 & ((v_TAOK & 1) | (!v_TAOK & 0))))))))))"
+    },
+    {
+      "node": "v_p21",
+      "support": [
+        "v_PI3K",
+        "v_PTEN",
+        "v_p53"
+      ],
+      "function": "((v_PI3K & ((v_PTEN & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_PTEN & 0))) | (!v_PI3K & ((v_p53 & 1) | (!v_p53 & 0))))"
+    },
+    {
+      "node": "v_TAK1",
+      "support": [
+        "v_TGFBR"
+      ],
+      "function": "v_TGFBR"
+    },
+    {
+      "node": "v_PTEN",
+      "support": [
+        "v_p53"
+      ],
+      "function": "v_p53"
+    },
+    {
+      "node": "v_MAX",
+      "support": [
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_TAOK",
+        "v_TGFBR"
+      ],
+      "function": "((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))) | (!v_TAOK & 0))) | (!v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))))"
+    },
+    {
+      "node": "v_SOS",
+      "support": [
+        "v_EGFR",
+        "v_ERK",
+        "v_FRS2",
+        "v_TGFBR"
+      ],
+      "function": "!(((v_EGFR & ((v_ERK & 1) | (!v_ERK & 0))) | (!v_EGFR & ((v_ERK & 1) | (!v_ERK & !(((v_FRS2 & 1) | (!v_FRS2 & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))))"
+    },
+    {
+      "node": "v_MEK1_2",
+      "support": [
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_PI3K",
+        "v_PKC",
+        "v_PPP2CA",
+        "v_TAOK",
+        "v_TGFBR",
+        "v_p53"
+      ],
+      "function": "!(((v_EGFR & ((v_ERK & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & 1))))) | (!v_ERK & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))) | (!v_TAOK & !(((v_p53 & 1) | (!v_p53 & 0)))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))) | (!v_TAOK & 0))))))) | (!v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))))))))))) | (!v_EGFR & ((v_ERK & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & 1))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))) | (!v_TAOK & !(((v_p53 & 1) | (!v_p53 & 0)))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))) | (!v_TAOK & 0))))))) | (!v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))) | (!v_TAOK & !(((v_p53 & 1) | (!v_p53 & 0)))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))) | (!v_TAOK & 0))))))) | (!v_MSK & ((v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PI3K & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))))))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PKC & 1))) | (!v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_PKC & 1))))) | (!v_MSK & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_MSK & 1))) | (!v_MAP3K1_3 & ((v_MSK & ((v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))) | (!v_TAOK & !(((v_p53 & 1) | (!v_p53 & 0)))))))) | (!v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & !(((v_TGFBR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TGFBR & 0)))))))))) | (!v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))) | (!v_TAOK & 0))))) | (!v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & !(((v_TGFBR & 1) | (!v_TGFBR & 0)))))))))))) | (!v_MSK & ((v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & !(((v_p53 & 1) | (!v_p53 & 0)))))))))) | (!v_PKC & 1))) | (!v_PI3K & ((v_PKC & ((v_PPP2CA & 1) | (!v_PPP2CA & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR & 1) | (!v_TGFBR & 0))))))) | (!v_PKC & 1)))))))))))))))))))"
+    },
+    {
+      "node": "v_Apoptosis",
+      "support": [
+        "v_BCL2",
+        "v_ERK",
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MSK",
+        "v_TAOK",
+        "v_TGFBR",
+        "v_p53"
+      ],
+      "function": "!(((v_BCL2 & 1) | (!v_BCL2 & ((v_ERK & 1) | (!v_ERK & !(((v_GADD45 & ((v_MAP3K1_3 & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAOK & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TAOK & ((v_TGFBR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TGFBR & 0))))) | (!v_MSK & ((v_p53 & 1) | (!v_p53 & 0))))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MSK & ((v_TAOK & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TAOK & ((v_TGFBR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TGFBR & 0))))) | (!v_MSK & ((v_p53 & 1) | (!v_p53 & 0))))) | (!v_MAP3K1_3 & ((v_MSK & ((v_TAOK & ((v_TGFBR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TGFBR & 0))) | (!v_TAOK & 0))) | (!v_MSK & ((v_TAOK & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TAOK & ((v_TGFBR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TGFBR & 0))))))))))))))))"
+    },
+    {
+      "node": "v_TGFBR",
+      "support": [
+        "v_TGFBR_stimulus"
+      ],
+      "function": "v_TGFBR_stimulus"
+    },
+    {
+      "node": "v_p53",
+      "support": [
+        "v_DNA_damage",
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MDM2",
+        "v_MSK",
+        "v_TAOK",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "((v_DNA_damage & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 1))) | (!v_MDM2 & 1))) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MDM2 & 1))))))) | (!v_DNA_damage & !(((v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & 1) | (!v_MDM2 & 0))) | (!v_MAP3K1_3 & ((v_MDM2 & 1) | (!v_MDM2 & !(((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 1)))))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & 1) | (!v_MDM2 & !(((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 1)))))) | (!v_MAP3K1_3 & ((v_MDM2 & 1) | (!v_MDM2 & !(((v_MSK & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))))))"
+    },
+    {
+      "node": "v_GAB1",
+      "support": [
+        "v_EGFR",
+        "v_FRS2",
+        "v_PI3K",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "v_EGFR | v_FRS2 | v_PI3K | v_TGFBR_stimulus"
+    },
+    {
+      "node": "v_SMAD",
+      "support": [
+        "v_TGFBR_stimulus"
+      ],
+      "function": "v_TGFBR_stimulus"
+    },
+    {
+      "node": "v_Proliferation",
+      "support": [
+        "v_DNA_damage",
+        "v_GADD45",
+        "v_MAP3K1_3",
+        "v_MDM2",
+        "v_MSK",
+        "v_MYC",
+        "v_TAOK",
+        "v_TGFBR_stimulus",
+        "v_p70"
+      ],
+      "function": "!(((v_DNA_damage & ((v_GADD45 & ((v_MAP3K1_3 & 1) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MSK & ((v_MYC & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))) | (!v_TAOK & !(((v_p70 & 1) | (!v_p70 & 0)))))) | (!v_MYC & 1))) | (!v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1))))) | (!v_MDM2 & 1))))))) | (!v_DNA_damage & !(((v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & ((v_MYC & ((v_p70 & 1) | (!v_p70 & 0))) | (!v_MYC & 0))) | (!v_MDM2 & 0))) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MYC & ((v_p70 & 1) | (!v_p70 & 0))) | (!v_MYC & 0))) | (!v_MDM2 & !(((v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1))) | (!v_MSK & 1)))))))) | (!v_GADD45 & ((v_MAP3K1_3 & ((v_MDM2 & ((v_MYC & ((v_p70 & 1) | (!v_p70 & 0))) | (!v_MYC & 0))) | (!v_MDM2 & !(((v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1))) | (!v_MSK & 1)))))) | (!v_MAP3K1_3 & ((v_MDM2 & ((v_MYC & ((v_p70 & 1) | (!v_p70 & 0))) | (!v_MYC & 0))) | (!v_MDM2 & !(((v_MSK & ((v_MYC & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))) | (!v_TAOK & !(((v_p70 & 1) | (!v_p70 & 0)))))) | (!v_MYC & 1))) | (!v_MSK & ((v_MYC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & !(((v_p70 & 1) | (!v_p70 & 0)))))))) | (!v_MYC & 1)))))))))))))))"
+    },
+    {
+      "node": "v_MAP3K1_3",
+      "support": [
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_PKC",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "((v_EGFR & 1) | (!v_EGFR & !(((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & 1) | (!v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_FGFR3_stimulus & 1))) | (!v_ERK & !(((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))) | (!v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))"
+    },
+    {
+      "node": "v_FOS",
+      "support": [
+        "v_ERK"
+      ],
+      "function": "v_ERK"
+    },
+    {
+      "node": "v_MYC",
+      "support": [
+        "v_DNA_damage",
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_GADD45",
+        "v_MDM2",
+        "v_MSK",
+        "v_PI3K",
+        "v_PKC",
+        "v_TAOK",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "((v_DNA_damage & ((v_EGFR & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_MSK & 0))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & 0))))) | (!v_MSK & 0))))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_MSK & 0))))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))) | (!v_MDM2 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 0))))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))))) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))))) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & 0))))))) | (!v_MSK & 0))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_TAOK & 0))))) | (!v_MSK & 0))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_PKC & 1))))) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))) | (!v_MSK & 0))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & 1) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TAOK & 1) | (!v_TAOK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))) | (!v_MSK & 0))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))) | (!v_MSK & 0))))))))))))))"
+    },
+    {
+      "node": "v_TAOK",
+      "support": [
+        "v_DNA_damage"
+      ],
+      "function": "v_DNA_damage"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_DNA_damage",
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_GADD45",
+        "v_MDM2",
+        "v_MSK",
+        "v_PI3K",
+        "v_PKC",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "!(((v_DNA_damage & ((v_EGFR & 1) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_PI3K & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_PI3K & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1))) | (!v_MDM2 & 1))))))))))))) | (!v_DNA_damage & !(((v_EGFR & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))) | (!v_GADD45 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & 0))) | (!v_GADD45 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))))) | (!v_FRS2 & ((v_MDM2 & ((v_MSK & ((v_PI3K & 1) | (!v_PI3K & 0))) | (!v_MSK & 0))) | (!v_MDM2 & !(((v_MSK & ((v_PI3K & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PI3K & 1))) | (!v_MSK & 1)))))))))))))))))"
+    },
+    {
+      "node": "v_PPP2CA",
+      "support": [
+        "v_DNA_damage",
+        "v_EGFR",
+        "v_ERK",
+        "v_FGFR3_stimulus",
+        "v_FRS2",
+        "v_GADD45",
+        "v_MSK",
+        "v_PKC",
+        "v_TGFBR_stimulus"
+      ],
+      "function": "((v_DNA_damage & ((v_EGFR & 1) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & 1) | (!v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))))))))))) | (!v_DNA_damage & ((v_EGFR & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_EGFR & ((v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_GADD45 & !(((v_MSK & 1) | (!v_MSK & !(((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))) | (!v_GADD45 & !(((v_MSK & 1) | (!v_MSK & !(((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))))) | (!v_FGFR3_stimulus & ((v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_GADD45 & !(((v_MSK & 1) | (!v_MSK & !(((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))) | (!v_ERK & ((v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & ((v_PKC & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_PKC & 1))))))))) | (!v_FGFR3_stimulus & ((v_FRS2 & ((v_GADD45 & 1) | (!v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))))) | (!v_FRS2 & ((v_GADD45 & ((v_MSK & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))) | (!v_MSK & 1))) | (!v_GADD45 & ((v_TGFBR_stimulus & 1) | (!v_TGFBR_stimulus & 0))))))))))))))"
+    },
+    {
+      "node": "v_p70",
+      "support": [
+        "v_ERK",
+        "v_PI3K"
+      ],
+      "function": "v_ERK & v_PI3K"
+    }
+  ],
+  "seconds": 0.5132022999459878
+}

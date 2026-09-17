@@ -1,0 +1,1590 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "017",
+  "name": "DIFFERENTIATION-OF-T-LYMPHOCYTES",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 50,
+  "after": {
+    "nodes": 17,
+    "n_nodes": 17,
+    "inputs": 9,
+    "internal_nodes": 8,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD4": "+",
+      "v_Runx3": "-",
+      "v_ThPOK": "+",
+      "v_Dll1": "+",
+      "v_CD8": "+",
+      "v_TCR": "-",
+      "v_Foxp3": "+",
+      "v_GATA3": "+",
+      "v_RORgt": "+",
+      "v_Tbet": "+",
+      "v_IL23": "-",
+      "v_IFNB": "+",
+      "v_IL12": "+",
+      "v_IL18": "+",
+      "v_IL27": "+",
+      "v_IL2": "-",
+      "v_IL7": "-"
+    },
+    "positive_edges": 30,
+    "negative_edges": 25,
+    "non_unate_edges": 1,
+    "has_multi_input_rule": true,
+    "edges": 56,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 5,
+      "MIN": 2,
+      "NON_UNATE": 1
+    },
+    "conflicts": {
+      "v_CD4": {
+        "v_CD4": "+",
+        "v_Runx3": "-",
+        "v_ThPOK": "+"
+      },
+      "v_Runx3": {
+        "v_CD4": "-",
+        "v_CD8": "+",
+        "v_Runx3": "+",
+        "v_ThPOK": "-"
+      },
+      "v_ThPOK": {
+        "v_CD4": "+",
+        "v_CD8": "-",
+        "v_Runx3": "-",
+        "v_ThPOK": "+"
+      },
+      "v_CD8": {
+        "v_CD8": "+",
+        "v_Runx3": "+",
+        "v_ThPOK": "-"
+      },
+      "v_TCR": {
+        "v_CD8": "-",
+        "v_Runx3": "-",
+        "v_ThPOK": "+"
+      },
+      "v_Foxp3": {
+        "v_Foxp3": "+",
+        "v_GATA3": "-",
+        "v_RORgt": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_GATA3": {
+        "v_Foxp3": "-",
+        "v_GATA3": "+",
+        "v_RORgt": "mixed",
+        "v_Runx3": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_IL23": {
+        "v_Foxp3": "-",
+        "v_RORgt": "+",
+        "v_Runx3": "+",
+        "v_Tbet": "-"
+      },
+      "v_RORgt": {
+        "v_Foxp3": "-",
+        "v_GATA3": "-",
+        "v_RORgt": "+",
+        "v_Runx3": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_Tbet": {
+        "v_Foxp3": "-",
+        "v_GATA3": "-",
+        "v_RORgt": "-",
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_ThPOK": "+"
+      },
+      "v_IFNB": {
+        "v_Runx3": "-",
+        "v_Tbet": "+"
+      },
+      "v_IL12": {
+        "v_Runx3": "-",
+        "v_Tbet": "+"
+      },
+      "v_IL18": {
+        "v_Runx3": "-",
+        "v_Tbet": "+"
+      },
+      "v_IL27": {
+        "v_Runx3": "-",
+        "v_Tbet": "+"
+      }
+    },
+    "local": {
+      "v_CD4": {
+        "signs": {
+          "v_CD4": "+",
+          "v_Dll1": "+",
+          "v_Runx3": "-",
+          "v_ThPOK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CD8": {
+        "signs": {
+          "v_CD8": "+",
+          "v_Dll1": "+",
+          "v_Runx3": "+",
+          "v_TCR": "-",
+          "v_ThPOK": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Foxp3": {
+        "signs": {
+          "v_Foxp3": "+",
+          "v_GATA3": "-",
+          "v_IL23": "-",
+          "v_RORgt": "-",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GATA3": {
+        "signs": {
+          "v_Foxp3": "-",
+          "v_GATA3": "+",
+          "v_RORgt": "-",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RORgt": {
+        "signs": {
+          "v_Foxp3": "+",
+          "v_GATA3": "mixed",
+          "v_IL23": "+",
+          "v_RORgt": "+",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Runx3": {
+        "signs": {
+          "v_CD4": "-",
+          "v_CD8": "+",
+          "v_GATA3": "+",
+          "v_IFNB": "-",
+          "v_IL12": "-",
+          "v_IL18": "-",
+          "v_IL2": "+",
+          "v_IL23": "+",
+          "v_IL27": "-",
+          "v_IL7": "+",
+          "v_RORgt": "+",
+          "v_Runx3": "+",
+          "v_TCR": "-",
+          "v_Tbet": "-",
+          "v_ThPOK": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Tbet": {
+        "signs": {
+          "v_Foxp3": "-",
+          "v_GATA3": "-",
+          "v_IFNB": "+",
+          "v_IL12": "+",
+          "v_IL18": "+",
+          "v_IL23": "-",
+          "v_IL27": "+",
+          "v_RORgt": "-",
+          "v_Tbet": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ThPOK": {
+        "signs": {
+          "v_CD4": "+",
+          "v_CD8": "-",
+          "v_Foxp3": "+",
+          "v_GATA3": "+",
+          "v_RORgt": "+",
+          "v_Runx3": "-",
+          "v_TCR": "+",
+          "v_Tbet": "+",
+          "v_ThPOK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 17,
+    "n_nodes": 17,
+    "inputs": 9,
+    "internal_nodes": 8,
+    "nonconstant_rules": 17,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 17,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD4": "+",
+      "v_Runx3": "-",
+      "v_ThPOK": "+",
+      "v_Dll1": "+",
+      "v_CD8": "+",
+      "v_TCR": "-",
+      "v_Foxp3": "+",
+      "v_GATA3": "+",
+      "v_RORgt": "+",
+      "v_Tbet": "+",
+      "v_IL23": "-",
+      "v_IFNB": "+",
+      "v_IL12": "+",
+      "v_IL18": "+",
+      "v_IL27": "+",
+      "v_IL2": "-",
+      "v_IL7": "-"
+    },
+    "positive_edges": 39,
+    "negative_edges": 25,
+    "non_unate_edges": 1,
+    "has_multi_input_rule": true,
+    "edges": 65,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 5,
+      "MIN": 2,
+      "NON_UNATE": 1,
+      "MIN_MAX": 9
+    },
+    "conflicts": {
+      "v_CD4": {
+        "v_CD4": "+",
+        "v_Runx3": "-",
+        "v_ThPOK": "+"
+      },
+      "v_Runx3": {
+        "v_CD4": "-",
+        "v_CD8": "+",
+        "v_Runx3": "+",
+        "v_ThPOK": "-"
+      },
+      "v_ThPOK": {
+        "v_CD4": "+",
+        "v_CD8": "-",
+        "v_Runx3": "-",
+        "v_ThPOK": "+"
+      },
+      "v_CD8": {
+        "v_CD8": "+",
+        "v_Runx3": "+",
+        "v_ThPOK": "-"
+      },
+      "v_TCR": {
+        "v_CD8": "-",
+        "v_Runx3": "-",
+        "v_ThPOK": "+",
+        "v_TCR": "+"
+      },
+      "v_Foxp3": {
+        "v_Foxp3": "+",
+        "v_GATA3": "-",
+        "v_RORgt": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_GATA3": {
+        "v_Foxp3": "-",
+        "v_GATA3": "+",
+        "v_RORgt": "mixed",
+        "v_Runx3": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_IL23": {
+        "v_Foxp3": "-",
+        "v_RORgt": "+",
+        "v_Runx3": "+",
+        "v_Tbet": "-",
+        "v_IL23": "+"
+      },
+      "v_RORgt": {
+        "v_Foxp3": "-",
+        "v_GATA3": "-",
+        "v_RORgt": "+",
+        "v_Runx3": "+",
+        "v_Tbet": "-",
+        "v_ThPOK": "+"
+      },
+      "v_Tbet": {
+        "v_Foxp3": "-",
+        "v_GATA3": "-",
+        "v_RORgt": "-",
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_ThPOK": "+"
+      },
+      "v_IFNB": {
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_IFNB": "+"
+      },
+      "v_IL12": {
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_IL12": "+"
+      },
+      "v_IL18": {
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_IL18": "+"
+      },
+      "v_IL27": {
+        "v_Runx3": "-",
+        "v_Tbet": "+",
+        "v_IL27": "+"
+      }
+    },
+    "local": {
+      "v_CD4": {
+        "signs": {
+          "v_CD4": "+",
+          "v_Dll1": "+",
+          "v_Runx3": "-",
+          "v_ThPOK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CD8": {
+        "signs": {
+          "v_CD8": "+",
+          "v_Dll1": "+",
+          "v_Runx3": "+",
+          "v_TCR": "-",
+          "v_ThPOK": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Foxp3": {
+        "signs": {
+          "v_Foxp3": "+",
+          "v_GATA3": "-",
+          "v_IL23": "-",
+          "v_RORgt": "-",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GATA3": {
+        "signs": {
+          "v_Foxp3": "-",
+          "v_GATA3": "+",
+          "v_RORgt": "-",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RORgt": {
+        "signs": {
+          "v_Foxp3": "+",
+          "v_GATA3": "mixed",
+          "v_IL23": "+",
+          "v_RORgt": "+",
+          "v_Tbet": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Runx3": {
+        "signs": {
+          "v_CD4": "-",
+          "v_CD8": "+",
+          "v_GATA3": "+",
+          "v_IFNB": "-",
+          "v_IL12": "-",
+          "v_IL18": "-",
+          "v_IL2": "+",
+          "v_IL23": "+",
+          "v_IL27": "-",
+          "v_IL7": "+",
+          "v_RORgt": "+",
+          "v_Runx3": "+",
+          "v_TCR": "-",
+          "v_Tbet": "-",
+          "v_ThPOK": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Tbet": {
+        "signs": {
+          "v_Foxp3": "-",
+          "v_GATA3": "-",
+          "v_IFNB": "+",
+          "v_IL12": "+",
+          "v_IL18": "+",
+          "v_IL23": "-",
+          "v_IL27": "+",
+          "v_RORgt": "-",
+          "v_Tbet": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ThPOK": {
+        "signs": {
+          "v_CD4": "+",
+          "v_CD8": "-",
+          "v_Foxp3": "+",
+          "v_GATA3": "+",
+          "v_RORgt": "+",
+          "v_Runx3": "-",
+          "v_TCR": "+",
+          "v_Tbet": "+",
+          "v_ThPOK": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Dll1": {
+        "signs": {
+          "v_Dll1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNB": {
+        "signs": {
+          "v_IFNB": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL12": {
+        "signs": {
+          "v_IL12": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL18": {
+        "signs": {
+          "v_IL18": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL2": {
+        "signs": {
+          "v_IL2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL23": {
+        "signs": {
+          "v_IL23": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL27": {
+        "signs": {
+          "v_IL27": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL7": {
+        "signs": {
+          "v_IL7": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TCR": {
+        "signs": {
+          "v_TCR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 1,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 1,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 0,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 0,
+        "v_IL27": 0,
+        "v_IL7": 1,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 1,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 1,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 1,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 1,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 1,
+        "v_IL18": 1,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 1,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 1,
+        "v_IL2": 1,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 0,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 0,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 0,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 0,
+        "v_IL12": 1,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 1,
+        "v_IL12": 1,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 0,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      },
+      {
+        "v_CD4": 0,
+        "v_CD8": 1,
+        "v_Dll1": 0,
+        "v_Foxp3": 0,
+        "v_GATA3": 0,
+        "v_IFNB": 1,
+        "v_IL12": 0,
+        "v_IL18": 0,
+        "v_IL2": 1,
+        "v_IL23": 1,
+        "v_IL27": 0,
+        "v_IL7": 0,
+        "v_RORgt": 0,
+        "v_Runx3": 1,
+        "v_TCR": 0,
+        "v_Tbet": 1,
+        "v_ThPOK": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_CD4": "((v_CD4 & ((v_Dll1 & 1) | (!v_Dll1 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))) | (!v_CD4 & ((v_Dll1 & 1) | (!v_Dll1 & ((v_ThPOK & 1) | (!v_ThPOK & 0))))))",
+    "v_CD8": "!(((v_CD8 & ((v_TCR & 1) | (!v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))))) | (!v_CD8 & ((v_Dll1 & ((v_TCR & 1) | (!v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))))) | (!v_Dll1 & ((v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))))) | (!v_Runx3 & 1)))))))",
+    "v_Foxp3": "v_Foxp3 & !v_GATA3 & !v_IL23 & !v_RORgt & !v_Tbet",
+    "v_GATA3": "!v_Foxp3 & v_GATA3 & !v_RORgt & !v_Tbet",
+    "v_RORgt": "((v_Foxp3 & ((v_GATA3 & 1) | (!v_GATA3 & ((v_IL23 & 1) | (!v_IL23 & ((v_RORgt & 1) | (!v_RORgt & 0))))))) | (!v_Foxp3 & !(((v_GATA3 & 1) | (!v_GATA3 & ((v_RORgt & ((v_Tbet & 1) | (!v_Tbet & 0))) | (!v_RORgt & 1)))))))",
+    "v_Runx3": "!(((v_CD4 & ((v_GATA3 & ((v_IFNB & 1) | (!v_IFNB & ((v_IL2 & ((v_IL27 & 1) | (!v_IL27 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL2 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL7 & 1))))))))) | (!v_GATA3 & ((v_IFNB & 1) | (!v_IFNB & ((v_IL12 & ((v_IL2 & ((v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_RORgt & ((v_Tbet & 1) | (!v_Tbet & 0))) | (!v_RORgt & 1))))))) | (!v_IL2 & ((v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL7 & 1))))) | (!v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_RORgt & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_RORgt & 1))) | (!v_IL7 & 1))))))))) | (!v_IL12 & ((v_IL18 & ((v_IL2 & ((v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_RORgt & ((v_Tbet & 1) | (!v_Tbet & 0))) | (!v_RORgt & 1))))))) | (!v_IL2 & ((v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL7 & 1))))) | (!v_IL23 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_RORgt & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_RORgt & 1))) | (!v_IL7 & 1))))))))) | (!v_IL18 & ((v_IL2 & ((v_IL27 & 1) | (!v_IL27 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL2 & ((v_IL27 & 1) | (!v_IL27 & ((v_IL7 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL7 & 1))))))))))))))) | (!v_CD4 & !(((v_CD8 & 1) | (!v_CD8 & !(((v_GATA3 & ((v_IFNB & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IFNB & ((v_IL2 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL2 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))))))) | (!v_GATA3 & ((v_IFNB & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IFNB & ((v_IL12 & ((v_IL2 & ((v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_RORgt & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_RORgt & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))))) | (!v_IL2 & ((v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))) | (!v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_RORgt & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_RORgt & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))))))) | (!v_IL12 & ((v_IL18 & ((v_IL2 & ((v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_RORgt & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_RORgt & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))))) | (!v_IL2 & ((v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))) | (!v_IL23 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_RORgt & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_RORgt & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))))))))))) | (!v_IL18 & ((v_IL2 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL2 & ((v_IL27 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1))) | (!v_IL27 & ((v_IL7 & ((v_Runx3 & ((v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_TCR & ((v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Tbet & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & 0))))))) | (!v_IL7 & ((v_Runx3 & ((v_ThPOK & 1) | (!v_ThPOK & 0))) | (!v_Runx3 & 1)))))))))))))))))))))))",
+    "v_Tbet": "!(((v_Foxp3 & 1) | (!v_Foxp3 & ((v_GATA3 & 1) | (!v_GATA3 & ((v_IFNB & ((v_RORgt & 1) | (!v_RORgt & 0))) | (!v_IFNB & ((v_IL12 & ((v_IL23 & ((v_IL27 & ((v_RORgt & 1) | (!v_RORgt & 0))) | (!v_IL27 & ((v_RORgt & 1) | (!v_RORgt & !(((v_Tbet & 1) | (!v_Tbet & 0)))))))) | (!v_IL23 & ((v_RORgt & 1) | (!v_RORgt & 0))))) | (!v_IL12 & ((v_IL18 & ((v_IL23 & ((v_IL27 & ((v_RORgt & 1) | (!v_RORgt & 0))) | (!v_IL27 & ((v_RORgt & 1) | (!v_RORgt & !(((v_Tbet & 1) | (!v_Tbet & 0)))))))) | (!v_IL23 & ((v_RORgt & 1) | (!v_RORgt & 0))))) | (!v_IL18 & ((v_IL27 & ((v_RORgt & 1) | (!v_RORgt & 0))) | (!v_IL27 & ((v_RORgt & 1) | (!v_RORgt & !(((v_Tbet & 1) | (!v_Tbet & 0))))))))))))))))))",
+    "v_ThPOK": "((v_CD4 & ((v_CD8 & ((v_Foxp3 & 1) | (!v_Foxp3 & ((v_GATA3 & 1) | (!v_GATA3 & ((v_RORgt & 1) | (!v_RORgt & ((v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))))))))))))))) | (!v_CD8 & 1))) | (!v_CD4 & ((v_Foxp3 & 1) | (!v_Foxp3 & ((v_GATA3 & 1) | (!v_GATA3 & ((v_RORgt & 1) | (!v_RORgt & ((v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_ThPOK & 1) | (!v_ThPOK & 0))))) | (!v_Runx3 & ((v_TCR & 1) | (!v_TCR & ((v_Tbet & 1) | (!v_Tbet & ((v_ThPOK & 1) | (!v_ThPOK & 0))))))))))))))))",
+    "v_Dll1": "v_Dll1",
+    "v_IFNB": "v_IFNB",
+    "v_IL12": "v_IL12",
+    "v_IL18": "v_IL18",
+    "v_IL2": "v_IL2",
+    "v_IL23": "v_IL23",
+    "v_IL27": "v_IL27",
+    "v_IL7": "v_IL7",
+    "v_TCR": "v_TCR"
+  },
+  "steps": [
+    {
+      "node": "v_IL12R",
+      "support": [
+        "v_IL12",
+        "v_STAT6"
+      ],
+      "function": "v_IL12 & !v_STAT6"
+    },
+    {
+      "node": "v_Gzmb",
+      "support": [
+        "v_Eomes"
+      ],
+      "function": "v_Eomes"
+    },
+    {
+      "node": "v_SOCS",
+      "support": [
+        "v_STAT1",
+        "v_Tbet"
+      ],
+      "function": "v_STAT1 | v_Tbet"
+    },
+    {
+      "node": "v_IL23R",
+      "support": [
+        "v_IL23"
+      ],
+      "function": "v_IL23"
+    },
+    {
+      "node": "v_IL18R",
+      "support": [
+        "v_IL18",
+        "v_STAT6"
+      ],
+      "function": "v_IL18 & !v_STAT6"
+    },
+    {
+      "node": "v_IL27R",
+      "support": [
+        "v_IL27"
+      ],
+      "function": "v_IL27"
+    },
+    {
+      "node": "v_IL10",
+      "support": [
+        "v_GATA3"
+      ],
+      "function": "v_GATA3"
+    },
+    {
+      "node": "v_STAT6",
+      "support": [
+        "v_IL4R"
+      ],
+      "function": "v_IL4R"
+    },
+    {
+      "node": "v_IFNgR",
+      "support": [
+        "v_IFNg"
+      ],
+      "function": "v_IFNg"
+    },
+    {
+      "node": "v_STAT5",
+      "support": [
+        "v_IL2R",
+        "v_IL7R",
+        "v_STAT1",
+        "v_Tbet"
+      ],
+      "function": "!(((v_IL2R & ((v_STAT1 & 1) | (!v_STAT1 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL2R & ((v_IL7R & ((v_STAT1 & 1) | (!v_STAT1 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL7R & 1)))))"
+    },
+    {
+      "node": "v_SMAD2",
+      "support": [
+        "v_TGFBR"
+      ],
+      "function": "v_TGFBR"
+    },
+    {
+      "node": "v_IFNg",
+      "support": [
+        "v_Eomes",
+        "v_IRAK",
+        "v_STAT3",
+        "v_STAT4",
+        "v_Tbet"
+      ],
+      "function": "!(((v_Eomes & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_Eomes & ((v_IRAK & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IRAK & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT4 & 1) | (!v_STAT4 & ((v_Tbet & 1) | (!v_Tbet & 0))))))))))))"
+    },
+    {
+      "node": "v_STAT4",
+      "support": [
+        "v_GATA3",
+        "v_IL12",
+        "v_IL4R"
+      ],
+      "function": "!v_GATA3 & v_IL12 & !v_IL4R"
+    },
+    {
+      "node": "v_NFAT",
+      "support": [
+        "v_TCR"
+      ],
+      "function": "v_TCR"
+    },
+    {
+      "node": "v_IFNBR",
+      "support": [
+        "v_IFNB"
+      ],
+      "function": "v_IFNB"
+    },
+    {
+      "node": "v_Eomes",
+      "support": [
+        "v_IL27",
+        "v_Runx3",
+        "v_Tbet"
+      ],
+      "function": "((v_IL27 & ((v_Runx3 & 1) | (!v_Runx3 & 0))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))) | (!v_Runx3 & 0))))"
+    },
+    {
+      "node": "v_IL2R",
+      "support": [
+        "v_IL2"
+      ],
+      "function": "v_IL2"
+    },
+    {
+      "node": "v_IL7R",
+      "support": [
+        "v_IL7",
+        "v_TCR"
+      ],
+      "function": "v_IL7 & !v_TCR"
+    },
+    {
+      "node": "v_IL4R",
+      "support": [
+        "v_IL4",
+        "v_STAT1",
+        "v_Tbet"
+      ],
+      "function": "v_IL4 & !v_STAT1 & !v_Tbet"
+    },
+    {
+      "node": "v_Notch1",
+      "support": [
+        "v_Dll1"
+      ],
+      "function": "v_Dll1"
+    },
+    {
+      "node": "v_STAT1",
+      "support": [
+        "v_IFNB",
+        "v_IL27",
+        "v_JAK1"
+      ],
+      "function": "v_IFNB | v_IL27 | v_JAK1"
+    },
+    {
+      "node": "v_IL10R",
+      "support": [
+        "v_GATA3"
+      ],
+      "function": "v_GATA3"
+    },
+    {
+      "node": "v_TGFB",
+      "support": [
+        "v_Foxp3"
+      ],
+      "function": "v_Foxp3"
+    },
+    {
+      "node": "v_IL6R",
+      "support": [
+        "v_IL6"
+      ],
+      "function": "v_IL6"
+    },
+    {
+      "node": "v_STAT3",
+      "support": [
+        "v_GATA3",
+        "v_IL23",
+        "v_JAK3"
+      ],
+      "function": "v_GATA3 | v_IL23 | v_JAK3"
+    },
+    {
+      "node": "v_IL4",
+      "support": [
+        "v_GATA3",
+        "v_IFNB",
+        "v_IL27",
+        "v_JAK1"
+      ],
+      "function": "v_GATA3 & !v_IFNB & !v_IL27 & !v_JAK1"
+    },
+    {
+      "node": "v_JAK1",
+      "support": [
+        "v_GATA3",
+        "v_IL12",
+        "v_IL23",
+        "v_IL27",
+        "v_IRAK",
+        "v_JAK3",
+        "v_Runx3",
+        "v_Tbet"
+      ],
+      "function": "!(((v_GATA3 & 1) | (!v_GATA3 & ((v_IL12 & ((v_IL23 & 1) | (!v_IL23 & ((v_JAK3 & 1) | (!v_JAK3 & 0))))) | (!v_IL12 & ((v_IL23 & 1) | (!v_IL23 & ((v_IL27 & ((v_IRAK & ((v_JAK3 & 1) | (!v_JAK3 & 0))) | (!v_IRAK & ((v_JAK3 & 1) | (!v_JAK3 & !(((v_Runx3 & 1) | (!v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0)))))))))) | (!v_IL27 & ((v_IRAK & ((v_JAK3 & 1) | (!v_JAK3 & 0))) | (!v_IRAK & ((v_JAK3 & 1) | (!v_JAK3 & !(((v_Tbet & 1) | (!v_Tbet & 0))))))))))))))))"
+    },
+    {
+      "node": "v_Prf1",
+      "support": [
+        "v_IL27",
+        "v_Runx3",
+        "v_Tbet"
+      ],
+      "function": "((v_IL27 & ((v_Runx3 & 1) | (!v_Runx3 & 0))) | (!v_IL27 & ((v_Runx3 & ((v_Tbet & 1) | (!v_Tbet & 0))) | (!v_Runx3 & 0))))"
+    },
+    {
+      "node": "v_IRAK",
+      "support": [
+        "v_GATA3",
+        "v_IFNB",
+        "v_IL18",
+        "v_IL27",
+        "v_Tbet"
+      ],
+      "function": "((v_GATA3 & ((v_IFNB & ((v_IL18 & 1) | (!v_IL18 & 0))) | (!v_IFNB & ((v_IL18 & ((v_IL27 & 1) | (!v_IL27 & ((v_Tbet & 1) | (!v_Tbet & 0))))) | (!v_IL18 & 0))))) | (!v_GATA3 & ((v_IL18 & 1) | (!v_IL18 & 0))))"
+    },
+    {
+      "node": "v_IL17",
+      "support": [
+        "v_RORgt"
+      ],
+      "function": "v_RORgt"
+    },
+    {
+      "node": "v_IL6",
+      "support": [
+        "v_RORgt"
+      ],
+      "function": "v_RORgt"
+    },
+    {
+      "node": "v_TGFBR",
+      "support": [
+        "v_Foxp3"
+      ],
+      "function": "v_Foxp3"
+    },
+    {
+      "node": "v_JAK3",
+      "support": [
+        "v_RORgt"
+      ],
+      "function": "v_RORgt"
+    }
+  ],
+  "seconds": 1.1277372000040486
+}

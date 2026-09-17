@@ -1,0 +1,1469 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "012",
+  "name": "T-CELL-RECEPTOR-SIGNALING",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 101,
+  "after": {
+    "nodes": 10,
+    "n_nodes": 10,
+    "inputs": 7,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_cd4": "+",
+      "v_pag": "+",
+      "v_shp1": "+",
+      "v_lckr_input": "+",
+      "v_unknown_input": "+",
+      "v_zap70": "-",
+      "v_tcrlig_input": "-"
+    },
+    "positive_edges": 9,
+    "negative_edges": 7,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 16,
+    "max_indegree": 7,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_tcrlig_input": {
+        "v_pag": "-",
+        "v_zap70": "+"
+      },
+      "v_unknown_input": {
+        "v_pag": "+",
+        "v_shp1": "+",
+        "v_zap70": "-"
+      },
+      "v_zap70": {
+        "v_pag": "+",
+        "v_zap70": "-"
+      }
+    },
+    "local": {
+      "v_pag": {
+        "signs": {
+          "v_cd4": "+",
+          "v_lckr_input": "+",
+          "v_pag": "-",
+          "v_shp1": "-",
+          "v_tcrlig_input": "-",
+          "v_unknown_input": "+",
+          "v_zap70": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_shp1": {
+        "signs": {
+          "v_cd4": "+",
+          "v_lckr_input": "+",
+          "v_pag": "-",
+          "v_shp1": "-",
+          "v_unknown_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_zap70": {
+        "signs": {
+          "v_lckr_input": "+",
+          "v_tcrlig_input": "+",
+          "v_unknown_input": "-",
+          "v_zap70": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 10,
+    "n_nodes": 10,
+    "inputs": 7,
+    "internal_nodes": 3,
+    "nonconstant_rules": 10,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 10,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_cd4": "+",
+      "v_pag": "+",
+      "v_shp1": "+",
+      "v_lckr_input": "+",
+      "v_unknown_input": "+",
+      "v_zap70": "-",
+      "v_tcrlig_input": "-",
+      "v_cd28_input": "+",
+      "v_unknown_input2": "+",
+      "v_unknown_input3": "+"
+    },
+    "positive_edges": 16,
+    "negative_edges": 7,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 23,
+    "max_indegree": 7,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MIN": 1,
+      "MIN_MAX": 7
+    },
+    "conflicts": {
+      "v_tcrlig_input": {
+        "v_pag": "-",
+        "v_zap70": "+",
+        "v_tcrlig_input": "+"
+      },
+      "v_unknown_input": {
+        "v_pag": "+",
+        "v_shp1": "+",
+        "v_zap70": "-",
+        "v_unknown_input": "+"
+      },
+      "v_zap70": {
+        "v_pag": "+",
+        "v_zap70": "-"
+      }
+    },
+    "local": {
+      "v_pag": {
+        "signs": {
+          "v_cd4": "+",
+          "v_lckr_input": "+",
+          "v_pag": "-",
+          "v_shp1": "-",
+          "v_tcrlig_input": "-",
+          "v_unknown_input": "+",
+          "v_zap70": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_shp1": {
+        "signs": {
+          "v_cd4": "+",
+          "v_lckr_input": "+",
+          "v_pag": "-",
+          "v_shp1": "-",
+          "v_unknown_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_zap70": {
+        "signs": {
+          "v_lckr_input": "+",
+          "v_tcrlig_input": "+",
+          "v_unknown_input": "-",
+          "v_zap70": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cd28_input": {
+        "signs": {
+          "v_cd28_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_cd4": {
+        "signs": {
+          "v_cd4": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_lckr_input": {
+        "signs": {
+          "v_lckr_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_tcrlig_input": {
+        "signs": {
+          "v_tcrlig_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_unknown_input": {
+        "signs": {
+          "v_unknown_input": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_unknown_input2": {
+        "signs": {
+          "v_unknown_input2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_unknown_input3": {
+        "signs": {
+          "v_unknown_input3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 104,
+    "examples": [
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 1,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 0,
+        "v_lckr_input": 1,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 1,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 0,
+        "v_zap70": 1
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 1,
+        "v_unknown_input2": 0,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 1,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 1,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 0,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 0,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 1,
+        "v_cd4": 1,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 0,
+        "v_unknown_input": 1,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      },
+      {
+        "v_cd28_input": 0,
+        "v_cd4": 0,
+        "v_lckr_input": 0,
+        "v_pag": 0,
+        "v_shp1": 0,
+        "v_tcrlig_input": 1,
+        "v_unknown_input": 1,
+        "v_unknown_input2": 1,
+        "v_unknown_input3": 1,
+        "v_zap70": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_pag": "!(((v_cd4 & ((v_lckr_input & ((v_pag & 1) | (!v_pag & ((v_shp1 & 1) | (!v_shp1 & !(((v_tcrlig_input & ((v_unknown_input & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_unknown_input & 0))) | (!v_tcrlig_input & ((v_unknown_input & 1) | (!v_unknown_input & 0)))))))))) | (!v_lckr_input & 1))) | (!v_cd4 & 1)))",
+    "v_shp1": "v_cd4 & v_lckr_input & !v_pag & !v_shp1 & v_unknown_input",
+    "v_zap70": "!(((v_lckr_input & ((v_tcrlig_input & ((v_unknown_input & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_unknown_input & 0))) | (!v_tcrlig_input & 1))) | (!v_lckr_input & 1)))",
+    "v_cd28_input": "v_cd28_input",
+    "v_cd4": "v_cd4",
+    "v_lckr_input": "v_lckr_input",
+    "v_tcrlig_input": "v_tcrlig_input",
+    "v_unknown_input": "v_unknown_input",
+    "v_unknown_input2": "v_unknown_input2",
+    "v_unknown_input3": "v_unknown_input3"
+  },
+  "steps": [
+    {
+      "node": "v_Dummy",
+      "support": [
+        "v_ccblp2",
+        "v_itk",
+        "v_plcgb",
+        "v_slp76",
+        "v_vav1",
+        "v_zap70"
+      ],
+      "function": "!v_ccblp2 & v_itk & v_plcgb & v_slp76 & v_vav1 & v_zap70"
+    },
+    {
+      "node": "v_abl",
+      "support": [
+        "v_fyn",
+        "v_lckp1"
+      ],
+      "function": "v_fyn | v_lckp1"
+    },
+    {
+      "node": "v_akap79",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_ap1",
+      "support": [
+        "v_fos",
+        "v_jun"
+      ],
+      "function": "v_fos & v_jun"
+    },
+    {
+      "node": "v_bad",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "!v_pkb"
+    },
+    {
+      "node": "v_bcat",
+      "support": [
+        "v_gsk3"
+      ],
+      "function": "!v_gsk3"
+    },
+    {
+      "node": "v_bcl10",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_bclxl",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "v_pkb"
+    },
+    {
+      "node": "v_ca",
+      "support": [
+        "v_ip3"
+      ],
+      "function": "v_ip3"
+    },
+    {
+      "node": "v_cabin1",
+      "support": [
+        "v_camk4"
+      ],
+      "function": "!v_camk4"
+    },
+    {
+      "node": "v_calcin",
+      "support": [
+        "v_calpr1",
+        "v_cam",
+        "v_camk4",
+        "v_unknown_input2"
+      ],
+      "function": "!v_calpr1 & v_cam & v_camk4 & !v_unknown_input2"
+    },
+    {
+      "node": "v_calpr1",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_cam",
+      "support": [
+        "v_ip3"
+      ],
+      "function": "v_ip3"
+    },
+    {
+      "node": "v_camk2",
+      "support": [
+        "v_ip3"
+      ],
+      "function": "v_ip3"
+    },
+    {
+      "node": "v_camk4",
+      "support": [
+        "v_ip3"
+      ],
+      "function": "v_ip3"
+    },
+    {
+      "node": "v_card11",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_card11a",
+      "support": [
+        "v_malt1",
+        "v_unknown_input",
+        "v_unknown_input2"
+      ],
+      "function": "v_malt1 & v_unknown_input & v_unknown_input2"
+    },
+    {
+      "node": "v_cblb",
+      "support": [
+        "v_cd28"
+      ],
+      "function": "!v_cd28"
+    },
+    {
+      "node": "v_ccblp1",
+      "support": [
+        "v_ccblr",
+        "v_zap70"
+      ],
+      "function": "v_ccblr & v_zap70"
+    },
+    {
+      "node": "v_ccblp2",
+      "support": [
+        "v_ccblr",
+        "v_fyn"
+      ],
+      "function": "v_ccblr & v_fyn"
+    },
+    {
+      "node": "v_ccblr",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_cd28",
+      "support": [
+        "v_cd28_input"
+      ],
+      "function": "v_cd28_input"
+    },
+    {
+      "node": "v_cd45",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_cdc42",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_cre",
+      "support": [
+        "v_creb"
+      ],
+      "function": "v_creb"
+    },
+    {
+      "node": "v_creb",
+      "support": [
+        "v_rsk"
+      ],
+      "function": "v_rsk"
+    },
+    {
+      "node": "v_csk",
+      "support": [
+        "v_pag"
+      ],
+      "function": "v_pag"
+    },
+    {
+      "node": "v_cyc1",
+      "support": [
+        "v_gsk3"
+      ],
+      "function": "!v_gsk3"
+    },
+    {
+      "node": "v_dag",
+      "support": [
+        "v_dgk",
+        "v_plcga"
+      ],
+      "function": "!v_dgk & v_plcga"
+    },
+    {
+      "node": "v_dgk",
+      "support": [
+        "v_tcrb"
+      ],
+      "function": "v_tcrb"
+    },
+    {
+      "node": "v_erk",
+      "support": [
+        "v_mek"
+      ],
+      "function": "v_mek"
+    },
+    {
+      "node": "v_fkhr",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "!v_pkb"
+    },
+    {
+      "node": "v_fos",
+      "support": [
+        "v_mek"
+      ],
+      "function": "v_mek"
+    },
+    {
+      "node": "v_fyn",
+      "support": [
+        "v_lckp1",
+        "v_lckr",
+        "v_tcrb",
+        "v_unknown_input"
+      ],
+      "function": "((v_lckp1 & ((v_lckr & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & 0))))) | (!v_lckr & ((v_unknown_input & 1) | (!v_unknown_input & 0))))) | (!v_lckp1 & ((v_lckr & ((v_tcrb & 1) | (!v_tcrb & 0))) | (!v_lckr & 0))))"
+    },
+    {
+      "node": "v_gab2",
+      "support": [
+        "v_gads",
+        "v_grb2",
+        "v_lat",
+        "v_zap70"
+      ],
+      "function": "((v_gads & ((v_lat & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_lat & 0))) | (!v_gads & ((v_grb2 & ((v_lat & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_lat & 0))) | (!v_grb2 & 0))))"
+    },
+    {
+      "node": "v_gadd45",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_gads",
+      "support": [
+        "v_lat"
+      ],
+      "function": "v_lat"
+    },
+    {
+      "node": "v_gap",
+      "support": [
+        "v_unknown_input3"
+      ],
+      "function": "v_unknown_input3"
+    },
+    {
+      "node": "v_grb2",
+      "support": [
+        "v_lat"
+      ],
+      "function": "v_lat"
+    },
+    {
+      "node": "v_gsk3",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "!v_pkb"
+    },
+    {
+      "node": "v_hpk1",
+      "support": [
+        "v_lat"
+      ],
+      "function": "v_lat"
+    },
+    {
+      "node": "v_ikb",
+      "support": [
+        "v_ikkab"
+      ],
+      "function": "!v_ikkab"
+    },
+    {
+      "node": "v_ikkab",
+      "support": [
+        "v_ikkg",
+        "v_ip3"
+      ],
+      "function": "v_ikkg & v_ip3"
+    },
+    {
+      "node": "v_ikkg",
+      "support": [
+        "v_malt1",
+        "v_pkcth",
+        "v_unknown_input",
+        "v_unknown_input2"
+      ],
+      "function": "v_malt1 & v_pkcth & v_unknown_input & v_unknown_input2"
+    },
+    {
+      "node": "v_ip3",
+      "support": [
+        "v_plcga"
+      ],
+      "function": "v_plcga"
+    },
+    {
+      "node": "v_itk",
+      "support": [
+        "v_pip3",
+        "v_slp76",
+        "v_zap70"
+      ],
+      "function": "v_pip3 & v_slp76 & v_zap70"
+    },
+    {
+      "node": "v_jnk",
+      "support": [
+        "v_mekk1",
+        "v_mkk4"
+      ],
+      "function": "v_mekk1 | v_mkk4"
+    },
+    {
+      "node": "v_jun",
+      "support": [
+        "v_mekk1",
+        "v_mkk4"
+      ],
+      "function": "v_mekk1 | v_mkk4"
+    },
+    {
+      "node": "v_lat",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_lckp1",
+      "support": [
+        "v_cd4",
+        "v_lckr",
+        "v_pag",
+        "v_shp1",
+        "v_unknown_input"
+      ],
+      "function": "v_cd4 & v_lckr & !v_pag & !v_shp1 & v_unknown_input"
+    },
+    {
+      "node": "v_lckp2",
+      "support": [
+        "v_lckr",
+        "v_tcrb"
+      ],
+      "function": "v_lckr & v_tcrb"
+    },
+    {
+      "node": "v_lckr",
+      "support": [
+        "v_lckr_input"
+      ],
+      "function": "v_lckr_input"
+    },
+    {
+      "node": "v_malt1",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_mek",
+      "support": [
+        "v_raf"
+      ],
+      "function": "v_raf"
+    },
+    {
+      "node": "v_mekk1",
+      "support": [
+        "v_rac1p2",
+        "v_unknown_input2",
+        "v_zap70"
+      ],
+      "function": "v_rac1p2 | v_unknown_input2 | v_zap70"
+    },
+    {
+      "node": "v_mkk4",
+      "support": [
+        "v_mlk3",
+        "v_rac1p2",
+        "v_unknown_input2",
+        "v_zap70"
+      ],
+      "function": "v_mlk3 | v_rac1p2 | v_unknown_input2 | v_zap70"
+    },
+    {
+      "node": "v_mlk3",
+      "support": [
+        "v_rac1p1",
+        "v_zap70"
+      ],
+      "function": "v_rac1p1 | v_zap70"
+    },
+    {
+      "node": "v_nfat",
+      "support": [
+        "v_plcga",
+        "v_unknown_input2"
+      ],
+      "function": "v_plcga & !v_unknown_input2"
+    },
+    {
+      "node": "v_nfkb",
+      "support": [
+        "v_pkcth",
+        "v_plcga",
+        "v_unknown_input",
+        "v_unknown_input2"
+      ],
+      "function": "v_pkcth & v_plcga & v_unknown_input & v_unknown_input2"
+    },
+    {
+      "node": "v_p21c",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "!v_pkb"
+    },
+    {
+      "node": "v_p27k",
+      "support": [
+        "v_pkb"
+      ],
+      "function": "!v_pkb"
+    },
+    {
+      "node": "v_p38",
+      "support": [
+        "v_unknown_input",
+        "v_zap70"
+      ],
+      "function": "!v_unknown_input & v_zap70"
+    },
+    {
+      "node": "v_p70s",
+      "support": [
+        "v_pdk1"
+      ],
+      "function": "v_pdk1"
+    },
+    {
+      "node": "v_pdk1",
+      "support": [
+        "v_pip3"
+      ],
+      "function": "v_pip3"
+    },
+    {
+      "node": "v_pi3k",
+      "support": [
+        "v_cd28_input",
+        "v_lckr_input",
+        "v_tcrb",
+        "v_xx"
+      ],
+      "function": "((v_cd28_input & ((v_lckr_input & ((v_tcrb & 1) | (!v_tcrb & ((v_xx & 1) | (!v_xx & 0))))) | (!v_lckr_input & ((v_xx & 1) | (!v_xx & 0))))) | (!v_cd28_input & 0))"
+    },
+    {
+      "node": "v_pip3",
+      "support": [
+        "v_cd28_input",
+        "v_lckr_input",
+        "v_pten",
+        "v_ship1",
+        "v_tcrb",
+        "v_xx"
+      ],
+      "function": "!(((v_cd28_input & ((v_lckr_input & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_tcrb & 1) | (!v_tcrb & ((v_xx & 1) | (!v_xx & 0)))))))))) | (!v_lckr_input & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_xx & 1) | (!v_xx & 0)))))))))) | (!v_cd28_input & 1)))"
+    },
+    {
+      "node": "v_pkb",
+      "support": [
+        "v_cd28_input",
+        "v_lckr_input",
+        "v_pten",
+        "v_ship1",
+        "v_tcrb",
+        "v_xx"
+      ],
+      "function": "!(((v_cd28_input & ((v_lckr_input & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_tcrb & 1) | (!v_tcrb & ((v_xx & 1) | (!v_xx & 0)))))))))) | (!v_lckr_input & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_xx & 1) | (!v_xx & 0)))))))))) | (!v_cd28_input & 1)))"
+    },
+    {
+      "node": "v_pkcth",
+      "support": [
+        "v_cd28_input",
+        "v_plcga",
+        "v_pten",
+        "v_ship1",
+        "v_tcrb",
+        "v_vav1",
+        "v_xx"
+      ],
+      "function": "v_cd28_input & v_plcga & !v_pten & !v_ship1 & !v_tcrb & v_vav1 & v_xx"
+    },
+    {
+      "node": "v_plcga",
+      "support": [
+        "v_cd28_input",
+        "v_cd4",
+        "v_lckr_input",
+        "v_pag",
+        "v_plcgb",
+        "v_pten",
+        "v_ship1",
+        "v_shp1",
+        "v_slp76",
+        "v_tcrb",
+        "v_unknown_input",
+        "v_vav1",
+        "v_xx",
+        "v_zap70"
+      ],
+      "function": "!(((v_cd28_input & ((v_cd4 & ((v_lckr_input & ((v_pag & ((v_plcgb & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & !(((v_vav1 & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_vav1 & 0)))))) | (!v_tcrb & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))) | (!v_slp76 & 1))))))) | (!v_plcgb & 1))) | (!v_pag & ((v_plcgb & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & ((v_shp1 & ((v_slp76 & ((v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & !(((v_vav1 & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_vav1 & 0)))))) | (!v_tcrb & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))) | (!v_slp76 & 1))) | (!v_shp1 & ((v_slp76 & ((v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & !(((v_vav1 & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_vav1 & 0)))))) | (!v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))) | (!v_slp76 & 1))))))))) | (!v_plcgb & 1))))) | (!v_lckr_input & ((v_plcgb & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_slp76 & ((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0))) | (!v_slp76 & 0)))))))) | (!v_plcgb & 1))))) | (!v_cd4 & ((v_lckr_input & ((v_plcgb & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & !(((v_vav1 & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_vav1 & 0)))))) | (!v_tcrb & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))) | (!v_slp76 & 1))))))) | (!v_plcgb & 1))) | (!v_lckr_input & ((v_plcgb & ((v_pten & 1) | (!v_pten & ((v_ship1 & 1) | (!v_ship1 & !(((v_slp76 & ((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0))) | (!v_slp76 & 0)))))))) | (!v_plcgb & 1))))))) | (!v_cd28_input & 1)))"
+    },
+    {
+      "node": "v_plcgb",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_pten",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_rac1p1",
+      "support": [
+        "v_rac1r",
+        "v_vav1"
+      ],
+      "function": "v_rac1r & v_vav1"
+    },
+    {
+      "node": "v_rac1p2",
+      "support": [
+        "v_rac1r",
+        "v_vav3"
+      ],
+      "function": "v_rac1r & v_vav3"
+    },
+    {
+      "node": "v_rac1r",
+      "support": [
+        "v_unknown_input"
+      ],
+      "function": "v_unknown_input"
+    },
+    {
+      "node": "v_raf",
+      "support": [
+        "v_ras"
+      ],
+      "function": "v_ras"
+    },
+    {
+      "node": "v_ras",
+      "support": [
+        "v_rasgrp",
+        "v_sos",
+        "v_unknown_input3"
+      ],
+      "function": "v_rasgrp & v_sos & !v_unknown_input3"
+    },
+    {
+      "node": "v_rasgrp",
+      "support": [
+        "v_cd28_input",
+        "v_cd4",
+        "v_lckr_input",
+        "v_pag",
+        "v_ship1",
+        "v_shp1",
+        "v_slp76",
+        "v_tcrb",
+        "v_unknown_input",
+        "v_unknown_input2",
+        "v_vav1",
+        "v_xx",
+        "v_zap70"
+      ],
+      "function": "!(((v_cd28_input & ((v_cd4 & ((v_lckr_input & ((v_pag & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))) | (!v_slp76 & 1))))) | (!v_pag & ((v_ship1 & 1) | (!v_ship1 & ((v_shp1 & ((v_slp76 & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))) | (!v_slp76 & 1))) | (!v_shp1 & ((v_slp76 & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & ((v_unknown_input2 & 1) | (!v_unknown_input2 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))) | (!v_slp76 & 1))))))))) | (!v_lckr_input & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))) | (!v_slp76 & 1))))))) | (!v_cd4 & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))) | (!v_slp76 & 1))))))) | (!v_cd28_input & 1)))"
+    },
+    {
+      "node": "v_rlk",
+      "support": [
+        "v_cd4",
+        "v_lckr_input",
+        "v_pag",
+        "v_shp1",
+        "v_unknown_input"
+      ],
+      "function": "v_cd4 & v_lckr_input & !v_pag & !v_shp1 & v_unknown_input"
+    },
+    {
+      "node": "v_rsk",
+      "support": [
+        "v_cd28_input",
+        "v_cd4",
+        "v_lckr_input",
+        "v_pag",
+        "v_ship1",
+        "v_shp1",
+        "v_slp76",
+        "v_sos",
+        "v_tcrb",
+        "v_unknown_input",
+        "v_unknown_input2",
+        "v_unknown_input3",
+        "v_vav1",
+        "v_xx",
+        "v_zap70"
+      ],
+      "function": "!(((v_cd28_input & ((v_cd4 & ((v_lckr_input & ((v_pag & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_sos & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_unknown_input3 & 1) | (!v_unknown_input3 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))) | (!v_sos & 1))) | (!v_slp76 & 1))))) | (!v_pag & ((v_ship1 & 1) | (!v_ship1 & ((v_shp1 & ((v_slp76 & ((v_sos & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_unknown_input3 & 1) | (!v_unknown_input3 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))) | (!v_sos & 1))) | (!v_slp76 & 1))) | (!v_shp1 & ((v_slp76 & ((v_sos & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input & 1) | (!v_unknown_input & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_unknown_input3 & 1) | (!v_unknown_input3 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))))) | (!v_sos & 1))) | (!v_slp76 & 1))))))))) | (!v_lckr_input & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_sos & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_unknown_input3 & 1) | (!v_unknown_input3 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))) | (!v_sos & 1))) | (!v_slp76 & 1))))))) | (!v_cd4 & ((v_ship1 & 1) | (!v_ship1 & ((v_slp76 & ((v_sos & ((v_tcrb & 1) | (!v_tcrb & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_unknown_input3 & 1) | (!v_unknown_input3 & !(((v_vav1 & ((v_xx & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_xx & 0))) | (!v_vav1 & 0)))))))))) | (!v_sos & 1))) | (!v_slp76 & 1))))))) | (!v_cd28_input & 1)))"
+    },
+    {
+      "node": "v_sh3bp2",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_ship1",
+      "support": [
+        "v_unknown_input2"
+      ],
+      "function": "v_unknown_input2"
+    },
+    {
+      "node": "v_shp2",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_slp76",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_sos",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_sre",
+      "support": [
+        "v_unknown_input",
+        "v_unknown_input2",
+        "v_vav3"
+      ],
+      "function": "((v_unknown_input & ((v_unknown_input2 & 1) | (!v_unknown_input2 & ((v_vav3 & 1) | (!v_vav3 & 0))))) | (!v_unknown_input & ((v_unknown_input2 & 1) | (!v_unknown_input2 & 0))))"
+    },
+    {
+      "node": "v_tcrb",
+      "support": [
+        "v_tcrlig",
+        "v_unknown_input",
+        "v_zap70"
+      ],
+      "function": "!(((v_tcrlig & ((v_unknown_input & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_unknown_input & 0))) | (!v_tcrlig & 1)))"
+    },
+    {
+      "node": "v_tcrlig",
+      "support": [
+        "v_tcrlig_input"
+      ],
+      "function": "v_tcrlig_input"
+    },
+    {
+      "node": "v_tcrp",
+      "support": [
+        "v_lckr_input",
+        "v_tcrlig_input",
+        "v_unknown_input",
+        "v_zap70"
+      ],
+      "function": "!(((v_lckr_input & ((v_tcrlig_input & ((v_unknown_input & ((v_zap70 & 1) | (!v_zap70 & 0))) | (!v_unknown_input & 0))) | (!v_tcrlig_input & 1))) | (!v_lckr_input & 1)))"
+    },
+    {
+      "node": "v_vav1",
+      "support": [
+        "v_xx",
+        "v_zap70"
+      ],
+      "function": "v_xx | v_zap70"
+    },
+    {
+      "node": "v_vav3",
+      "support": [
+        "v_zap70"
+      ],
+      "function": "v_zap70"
+    },
+    {
+      "node": "v_xx",
+      "support": [
+        "v_cd28_input"
+      ],
+      "function": "v_cd28_input"
+    }
+  ],
+  "seconds": 0.8567345999181271
+}

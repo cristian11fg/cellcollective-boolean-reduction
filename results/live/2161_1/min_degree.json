@@ -1,0 +1,854 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2161_1",
+  "name": "Guard Cell Abscisic Acid Signaling",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 44,
+  "after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 4,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_ABA": "+",
+      "v_GPA1": "+",
+      "v_Depolar": "+",
+      "v_Ca2_c": "+",
+      "v_ABH1": "-",
+      "v_ERA1": "-",
+      "v_GCR1": "-"
+    },
+    "positive_edges": 6,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 12,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MAX": 1
+    },
+    "conflicts": {
+      "v_Ca2_c": {
+        "v_Depolar": "+",
+        "v_Ca2_c": "-"
+      }
+    },
+    "local": {
+      "v_GPA1": {
+        "signs": {
+          "v_ABA": "+",
+          "v_GCR1": "-",
+          "v_GPA1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Depolar": {
+        "signs": {
+          "v_ABA": "+",
+          "v_Ca2_c": "+",
+          "v_Depolar": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Ca2_c": {
+        "signs": {
+          "v_ABA": "+",
+          "v_ABH1": "-",
+          "v_Ca2_c": "-",
+          "v_Depolar": "-",
+          "v_ERA1": "-",
+          "v_GPA1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 7,
+    "n_nodes": 7,
+    "inputs": 4,
+    "internal_nodes": 3,
+    "nonconstant_rules": 7,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_ABA": "+",
+      "v_GPA1": "+",
+      "v_Depolar": "+",
+      "v_Ca2_c": "+",
+      "v_ABH1": "-",
+      "v_ERA1": "-",
+      "v_GCR1": "-"
+    },
+    "positive_edges": 10,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 16,
+    "max_indegree": 6,
+    "local_family_counts": {
+      "UNATE_OTHER": 2,
+      "MAX": 1,
+      "MIN_MAX": 4
+    },
+    "conflicts": {
+      "v_GCR1": {
+        "v_GPA1": "-",
+        "v_GCR1": "+"
+      },
+      "v_Ca2_c": {
+        "v_Depolar": "+",
+        "v_Ca2_c": "-"
+      },
+      "v_ABH1": {
+        "v_Ca2_c": "-",
+        "v_ABH1": "+"
+      },
+      "v_ERA1": {
+        "v_Ca2_c": "-",
+        "v_ERA1": "+"
+      }
+    },
+    "local": {
+      "v_GPA1": {
+        "signs": {
+          "v_ABA": "+",
+          "v_GCR1": "-",
+          "v_GPA1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Depolar": {
+        "signs": {
+          "v_ABA": "+",
+          "v_Ca2_c": "+",
+          "v_Depolar": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Ca2_c": {
+        "signs": {
+          "v_ABA": "+",
+          "v_ABH1": "-",
+          "v_Ca2_c": "-",
+          "v_Depolar": "-",
+          "v_ERA1": "-",
+          "v_GPA1": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_ABA": {
+        "signs": {
+          "v_ABA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ERA1": {
+        "signs": {
+          "v_ERA1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ABH1": {
+        "signs": {
+          "v_ABH1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GCR1": {
+        "signs": {
+          "v_GCR1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 16,
+    "examples": [
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 0,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 0,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 1,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 1,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 1,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 0,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 0,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 0,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 1,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 0,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 0,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 0,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 1,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 1,
+        "v_GPA1": 1
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 0,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 0,
+        "v_GCR1": 1,
+        "v_GPA1": 0
+      },
+      {
+        "v_ABA": 1,
+        "v_ABH1": 1,
+        "v_Ca2_c": 0,
+        "v_Depolar": 1,
+        "v_ERA1": 1,
+        "v_GCR1": 1,
+        "v_GPA1": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_GPA1": "((v_ABA & ((v_GPA1 & 1) | (!v_GPA1 & 0))) | (!v_ABA & !(((v_GCR1 & 1) | (!v_GCR1 & !(((v_GPA1 & 1) | (!v_GPA1 & 0))))))))",
+    "v_Depolar": "v_ABA | v_Ca2_c | !v_Depolar",
+    "v_Ca2_c": "!(((v_ABA & ((v_ABH1 & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & !(((v_ERA1 & ((v_GPA1 & 1) | (!v_GPA1 & 0))) | (!v_ERA1 & 1)))))))) | (!v_ABH1 & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & 0))))))) | (!v_ABA & ((v_ABH1 & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & ((v_ERA1 & 1) | (!v_ERA1 & 0))))))) | (!v_ABH1 & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & 0)))))))))",
+    "v_ABA": "v_ABA",
+    "v_ERA1": "v_ERA1",
+    "v_ABH1": "v_ABH1",
+    "v_GCR1": "v_GCR1"
+  },
+  "steps": [
+    {
+      "node": "v_ROP10",
+      "support": [
+        "v_ERA1"
+      ],
+      "function": "v_ERA1"
+    },
+    {
+      "node": "v_ADPRc",
+      "support": [
+        "v_NO"
+      ],
+      "function": "v_NO"
+    },
+    {
+      "node": "v_AGB1",
+      "support": [
+        "v_GPA1"
+      ],
+      "function": "v_GPA1"
+    },
+    {
+      "node": "v_Ca2_ATPase",
+      "support": [
+        "v_Ca2_c"
+      ],
+      "function": "v_Ca2_c"
+    },
+    {
+      "node": "v_GC",
+      "support": [
+        "v_NO"
+      ],
+      "function": "v_NO"
+    },
+    {
+      "node": "v_InsP3",
+      "support": [
+        "v_PLC"
+      ],
+      "function": "v_PLC"
+    },
+    {
+      "node": "v_InsP6",
+      "support": [
+        "v_InsPK"
+      ],
+      "function": "v_InsPK"
+    },
+    {
+      "node": "v_InsPK",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "v_ABA"
+    },
+    {
+      "node": "v_KEV",
+      "support": [
+        "v_Ca2_c"
+      ],
+      "function": "v_Ca2_c"
+    },
+    {
+      "node": "v_NIA12",
+      "support": [
+        "v_RCN1"
+      ],
+      "function": "v_RCN1"
+    },
+    {
+      "node": "v_NOS",
+      "support": [
+        "v_Ca2_c"
+      ],
+      "function": "v_Ca2_c"
+    },
+    {
+      "node": "v_OST1",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "v_ABA"
+    },
+    {
+      "node": "v_PEPC",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "!v_ABA"
+    },
+    {
+      "node": "v_PLD",
+      "support": [
+        "v_GPA1"
+      ],
+      "function": "v_GPA1"
+    },
+    {
+      "node": "v_RCN1",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "v_ABA"
+    },
+    {
+      "node": "v_ROP2",
+      "support": [
+        "v_PA"
+      ],
+      "function": "v_PA"
+    },
+    {
+      "node": "v_S1P",
+      "support": [
+        "v_SphK"
+      ],
+      "function": "v_SphK"
+    },
+    {
+      "node": "v_SphK",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "v_ABA"
+    },
+    {
+      "node": "v_cADPR",
+      "support": [
+        "v_NO"
+      ],
+      "function": "v_NO"
+    },
+    {
+      "node": "v_cGMP",
+      "support": [
+        "v_NO"
+      ],
+      "function": "v_NO"
+    },
+    {
+      "node": "v_Actin",
+      "support": [
+        "v_Ca2_c",
+        "v_RAC1"
+      ],
+      "function": "v_Ca2_c | !v_RAC1"
+    },
+    {
+      "node": "v_Malate",
+      "support": [
+        "v_ABA",
+        "v_AnionEM"
+      ],
+      "function": "!v_ABA & !v_AnionEM"
+    },
+    {
+      "node": "v_PA",
+      "support": [
+        "v_GPA1"
+      ],
+      "function": "v_GPA1"
+    },
+    {
+      "node": "v_PLC",
+      "support": [
+        "v_ABA",
+        "v_Ca2_c"
+      ],
+      "function": "v_ABA & v_Ca2_c"
+    },
+    {
+      "node": "v_RAC1",
+      "support": [
+        "v_ABA",
+        "v_ABI1"
+      ],
+      "function": "!v_ABA & !v_ABI1"
+    },
+    {
+      "node": "v_CIS",
+      "support": [
+        "v_ABA",
+        "v_Ca2_c",
+        "v_NO"
+      ],
+      "function": "((v_ABA & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_NO & 1) | (!v_NO & 0))))) | (!v_ABA & ((v_NO & 1) | (!v_NO & 0))))"
+    },
+    {
+      "node": "v_HTPase",
+      "support": [
+        "v_Ca2_c",
+        "v_ROS",
+        "v_pH"
+      ],
+      "function": "!v_Ca2_c & !v_ROS & !v_pH"
+    },
+    {
+      "node": "v_KAP",
+      "support": [
+        "v_Ca2_c",
+        "v_Depolar",
+        "v_pH"
+      ],
+      "function": "!(((v_Ca2_c & ((v_Depolar & ((v_pH & 1) | (!v_pH & 0))) | (!v_Depolar & 1))) | (!v_Ca2_c & !(((v_Depolar & 1) | (!v_Depolar & 0))))))"
+    },
+    {
+      "node": "v_NO",
+      "support": [
+        "v_ABA",
+        "v_Ca2_c"
+      ],
+      "function": "v_ABA & v_Ca2_c"
+    },
+    {
+      "node": "v_AnionEM",
+      "support": [
+        "v_ABI1",
+        "v_Ca2_c",
+        "v_pH"
+      ],
+      "function": "((v_ABI1 & ((v_Ca2_c & ((v_pH & 1) | (!v_pH & 0))) | (!v_Ca2_c & 0))) | (!v_ABI1 & ((v_Ca2_c & 1) | (!v_Ca2_c & ((v_pH & 1) | (!v_pH & 0))))))"
+    },
+    {
+      "node": "v_ABI1",
+      "support": [
+        "v_GPA1",
+        "v_ROS",
+        "v_pH"
+      ],
+      "function": "!v_GPA1 & !v_ROS & v_pH"
+    },
+    {
+      "node": "v_Atrboh",
+      "support": [
+        "v_ABA",
+        "v_GPA1",
+        "v_pH"
+      ],
+      "function": "v_ABA & v_GPA1 & v_pH"
+    },
+    {
+      "node": "v_CaIM",
+      "support": [
+        "v_ABH1",
+        "v_Depolar",
+        "v_ERA1",
+        "v_ROS"
+      ],
+      "function": "!(((v_ABH1 & ((v_Depolar & 1) | (!v_Depolar & !(((v_ERA1 & ((v_ROS & 1) | (!v_ROS & 0))) | (!v_ERA1 & 1)))))) | (!v_ABH1 & ((v_Depolar & 1) | (!v_Depolar & 0)))))"
+    },
+    {
+      "node": "v_pH",
+      "support": [
+        "v_ABA"
+      ],
+      "function": "v_ABA"
+    },
+    {
+      "node": "v_KOUT",
+      "support": [
+        "v_Depolar"
+      ],
+      "function": "v_Depolar"
+    },
+    {
+      "node": "v_Closure",
+      "support": [
+        "v_ABA",
+        "v_Ca2_c",
+        "v_Depolar",
+        "v_GPA1",
+        "v_ROS"
+      ],
+      "function": "((v_ABA & ((v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & 0))) | (!v_Ca2_c & ((v_Depolar & ((v_GPA1 & 1) | (!v_GPA1 & ((v_ROS & 1) | (!v_ROS & 0))))) | (!v_Depolar & 0))))) | (!v_ABA & ((v_Ca2_c & ((v_Depolar & 1) | (!v_Depolar & 0))) | (!v_Ca2_c & 0))))"
+    },
+    {
+      "node": "v_ROS",
+      "support": [
+        "v_ABA",
+        "v_GPA1"
+      ],
+      "function": "v_ABA & v_GPA1"
+    }
+  ],
+  "seconds": 0.10346530005335808
+}

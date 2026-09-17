@@ -1,0 +1,2744 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "039",
+  "name": "HIV-1-INTERACTIONS-WITH-T-CELL-SIGNALING",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 138,
+  "after": {
+    "nodes": 23,
+    "n_nodes": 23,
+    "inputs": 14,
+    "internal_nodes": 9,
+    "nonconstant_rules": 9,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 9,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD45": "+",
+      "v_PAG": "+",
+      "v_PTPN6_SHP1": "+",
+      "v_Src": "+",
+      "v_TCR": "+",
+      "v_gp120": "+",
+      "v_DLGH1": "+",
+      "v_PIP3": "+",
+      "v_nef": "+",
+      "v_vpr": "+",
+      "v_gp41": "-",
+      "v_tat": "+",
+      "v_IKBNFKB": "+",
+      "v_vpu": "+",
+      "v_Chemokine": "+",
+      "v_GRKL": "+",
+      "v_ICOS": "+",
+      "v_antigen": "+",
+      "v_PDCD1_PD1": "+"
+    },
+    "positive_edges": 62,
+    "negative_edges": 19,
+    "non_unate_edges": 5,
+    "has_multi_input_rule": true,
+    "edges": 86,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 5,
+      "NON_UNATE": 1,
+      "MAX": 3
+    },
+    "conflicts": {
+      "v_CD45": {
+        "v_PAG": "+",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_Src": "+",
+        "v_TCR": "+",
+        "v_gp120": "+"
+      },
+      "v_DLGH1": {
+        "v_PAG": "-",
+        "v_PIP3": "-",
+        "v_PTPN6_SHP1": "-",
+        "v_Src": "-",
+        "v_TCR": "+",
+        "v_gp120": "+",
+        "v_nef": "-",
+        "v_tat": "-",
+        "v_vpr": "-"
+      },
+      "v_PAG": {
+        "v_PAG": "-",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "-",
+        "v_Src": "-"
+      },
+      "v_nef": {
+        "v_PAG": "+",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_Src": "+",
+        "v_gp120": "-",
+        "v_nef": "+",
+        "v_tat": "+",
+        "v_vpr": "+"
+      },
+      "v_gp41": {
+        "v_PIP3": "mixed",
+        "v_Src": "+",
+        "v_gp120": "-",
+        "v_nef": "+",
+        "v_vpr": "+"
+      },
+      "v_vpr": {
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_gp120": "-",
+        "v_nef": "-",
+        "v_vpr": "-"
+      }
+    },
+    "local": {
+      "v_PAG": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "-",
+          "v_PAG": "-",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_nef": "+",
+          "v_tat": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_CD45": "mixed",
+          "v_Chemokine": "+",
+          "v_DLGH1": "-",
+          "v_GRKL": "+",
+          "v_ICOS": "+",
+          "v_PAG": "mixed",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "mixed",
+          "v_nef": "mixed",
+          "v_tat": "+",
+          "v_vpr": "mixed"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PTPN6_SHP1": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "-",
+          "v_PAG": "-",
+          "v_PDCD1_PD1": "+",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Src": {
+        "signs": {
+          "v_CD45": "+",
+          "v_Chemokine": "+",
+          "v_DLGH1": "-",
+          "v_GRKL": "+",
+          "v_PAG": "-",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TCR": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "+",
+          "v_TCR": "+",
+          "v_antigen": "+",
+          "v_gp120": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_gp120": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "-",
+          "v_nef": "-",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_nef": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_PIP3": "+",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_tat": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_IKBNFKB": "+",
+          "v_PIP3": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpu": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vpr": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_PIP3": "+",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 23,
+    "n_nodes": 23,
+    "inputs": 14,
+    "internal_nodes": 9,
+    "nonconstant_rules": 23,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 23,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD45": "+",
+      "v_PAG": "+",
+      "v_PTPN6_SHP1": "+",
+      "v_Src": "+",
+      "v_TCR": "+",
+      "v_gp120": "+",
+      "v_DLGH1": "+",
+      "v_PIP3": "+",
+      "v_nef": "+",
+      "v_vpr": "+",
+      "v_gp41": "-",
+      "v_tat": "+",
+      "v_IKBNFKB": "+",
+      "v_vpu": "+",
+      "v_Chemokine": "+",
+      "v_GRKL": "+",
+      "v_ICOS": "+",
+      "v_antigen": "+",
+      "v_PDCD1_PD1": "+",
+      "v_BCAR1": "+",
+      "v_CRKL": "+",
+      "v_GADD45": "+",
+      "v_RASA": "+"
+    },
+    "positive_edges": 76,
+    "negative_edges": 19,
+    "non_unate_edges": 5,
+    "has_multi_input_rule": true,
+    "edges": 100,
+    "max_indegree": 15,
+    "local_family_counts": {
+      "UNATE_OTHER": 5,
+      "NON_UNATE": 1,
+      "MAX": 3,
+      "MIN_MAX": 14
+    },
+    "conflicts": {
+      "v_CD45": {
+        "v_PAG": "+",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_Src": "+",
+        "v_TCR": "+",
+        "v_gp120": "+",
+        "v_CD45": "+"
+      },
+      "v_DLGH1": {
+        "v_PAG": "-",
+        "v_PIP3": "-",
+        "v_PTPN6_SHP1": "-",
+        "v_Src": "-",
+        "v_TCR": "+",
+        "v_gp120": "+",
+        "v_nef": "-",
+        "v_tat": "-",
+        "v_vpr": "-",
+        "v_DLGH1": "+"
+      },
+      "v_PAG": {
+        "v_PAG": "-",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "-",
+        "v_Src": "-"
+      },
+      "v_nef": {
+        "v_PAG": "+",
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_Src": "+",
+        "v_gp120": "-",
+        "v_nef": "+",
+        "v_tat": "+",
+        "v_vpr": "+"
+      },
+      "v_gp41": {
+        "v_PIP3": "mixed",
+        "v_Src": "+",
+        "v_gp120": "-",
+        "v_nef": "+",
+        "v_vpr": "+",
+        "v_gp41": "+"
+      },
+      "v_vpr": {
+        "v_PIP3": "mixed",
+        "v_PTPN6_SHP1": "+",
+        "v_gp120": "-",
+        "v_nef": "-",
+        "v_vpr": "-"
+      }
+    },
+    "local": {
+      "v_PAG": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "-",
+          "v_PAG": "-",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_nef": "+",
+          "v_tat": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_CD45": "mixed",
+          "v_Chemokine": "+",
+          "v_DLGH1": "-",
+          "v_GRKL": "+",
+          "v_ICOS": "+",
+          "v_PAG": "mixed",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "mixed",
+          "v_nef": "mixed",
+          "v_tat": "+",
+          "v_vpr": "mixed"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PTPN6_SHP1": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "-",
+          "v_PAG": "-",
+          "v_PDCD1_PD1": "+",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Src": {
+        "signs": {
+          "v_CD45": "+",
+          "v_Chemokine": "+",
+          "v_DLGH1": "-",
+          "v_GRKL": "+",
+          "v_PAG": "-",
+          "v_PIP3": "+",
+          "v_PTPN6_SHP1": "-",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TCR": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "+",
+          "v_TCR": "+",
+          "v_antigen": "+",
+          "v_gp120": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_gp120": {
+        "signs": {
+          "v_CD45": "+",
+          "v_DLGH1": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "-",
+          "v_nef": "-",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_nef": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_PIP3": "+",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_tat": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_IKBNFKB": "+",
+          "v_PIP3": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpu": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_vpr": {
+        "signs": {
+          "v_DLGH1": "-",
+          "v_PIP3": "+",
+          "v_Src": "+",
+          "v_TCR": "+",
+          "v_gp120": "+",
+          "v_gp41": "+",
+          "v_nef": "+",
+          "v_tat": "+",
+          "v_vpr": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BCAR1": {
+        "signs": {
+          "v_BCAR1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CD45": {
+        "signs": {
+          "v_CD45": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CRKL": {
+        "signs": {
+          "v_CRKL": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Chemokine": {
+        "signs": {
+          "v_Chemokine": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DLGH1": {
+        "signs": {
+          "v_DLGH1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GADD45": {
+        "signs": {
+          "v_GADD45": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GRKL": {
+        "signs": {
+          "v_GRKL": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ICOS": {
+        "signs": {
+          "v_ICOS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IKBNFKB": {
+        "signs": {
+          "v_IKBNFKB": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PDCD1_PD1": {
+        "signs": {
+          "v_PDCD1_PD1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_RASA": {
+        "signs": {
+          "v_RASA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_antigen": {
+        "signs": {
+          "v_antigen": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_gp41": {
+        "signs": {
+          "v_gp41": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_vpu": {
+        "signs": {
+          "v_vpu": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 1,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 1,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 1,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 0,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 1,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 1,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 0
+      },
+      {
+        "v_BCAR1": 1,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 1
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 0,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 0,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 1
+      },
+      {
+        "v_BCAR1": 0,
+        "v_CD45": 0,
+        "v_CRKL": 1,
+        "v_Chemokine": 0,
+        "v_DLGH1": 0,
+        "v_GADD45": 0,
+        "v_GRKL": 0,
+        "v_ICOS": 0,
+        "v_IKBNFKB": 0,
+        "v_PAG": 0,
+        "v_PDCD1_PD1": 0,
+        "v_PIP3": 1,
+        "v_PTPN6_SHP1": 1,
+        "v_RASA": 1,
+        "v_Src": 1,
+        "v_TCR": 0,
+        "v_antigen": 0,
+        "v_gp120": 0,
+        "v_gp41": 0,
+        "v_nef": 1,
+        "v_tat": 1,
+        "v_vpr": 1,
+        "v_vpu": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_PAG": "((v_CD45 & ((v_DLGH1 & ((v_PAG & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & 1))) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))))) | (!v_DLGH1 & 1))) | (!v_CD45 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))",
+    "v_PIP3": "((v_CD45 & ((v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_ICOS & ((v_PAG & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))))) | (!v_PIP3 & 0))))) | (!v_ICOS & ((v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_tat & 1) | (!v_tat & 0))) | (!v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & 0))) | (!v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))))))))) | (!v_PIP3 & 0))))))))) | (!v_DLGH1 & ((v_PIP3 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_ICOS & ((v_PAG & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))))) | (!v_PIP3 & 0))))) | (!v_ICOS & ((v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & 0))) | (!v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))))))))) | (!v_PIP3 & 0))))))) | (!v_GRKL & ((v_ICOS & ((v_PAG & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))))) | (!v_PIP3 & 0))))) | (!v_ICOS & ((v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_tat & 1) | (!v_tat & 0))) | (!v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & 0))) | (!v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))))))))) | (!v_PIP3 & 0))))))))) | (!v_DLGH1 & ((v_PIP3 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))) | (!v_PIP3 & 0))))))) | (!v_CD45 & ((v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_GRKL & ((v_ICOS & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_ICOS & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))) | (!v_DLGH1 & ((v_PIP3 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_ICOS & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_ICOS & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_ICOS & ((v_PIP3 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))) | (!v_PIP3 & 0))) | (!v_ICOS & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_PTPN6_SHP1 & ((v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))) | (!v_DLGH1 & ((v_PIP3 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))))))) | (!v_PIP3 & 0))))))))",
+    "v_PTPN6_SHP1": "((v_CD45 & ((v_DLGH1 & ((v_PAG & ((v_PDCD1_PD1 & 1) | (!v_PDCD1_PD1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_PAG & ((v_PDCD1_PD1 & 1) | (!v_PDCD1_PD1 & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_PTPN6_SHP1 & 1))) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))))))))) | (!v_DLGH1 & 1))) | (!v_CD45 & ((v_DLGH1 & ((v_PDCD1_PD1 & 1) | (!v_PDCD1_PD1 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_DLGH1 & 1))))",
+    "v_Src": "((v_CD45 & ((v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PAG & ((v_PIP3 & 1) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PAG & ((v_PIP3 & 1) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))))) | (!v_GRKL & ((v_PAG & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & 1))) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))))))) | (!v_DLGH1 & 1))) | (!v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PTPN6_SHP1 & 1))) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))))) | (!v_GRKL & ((v_PAG & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & 1))) | (!v_PIP3 & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))))))) | (!v_DLGH1 & 1))))) | (!v_CD45 & ((v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))) | (!v_GRKL & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))) | (!v_DLGH1 & ((v_GRKL & 1) | (!v_GRKL & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))))) | (!v_Chemokine & ((v_DLGH1 & ((v_GRKL & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & 0))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))) | (!v_GRKL & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))) | (!v_DLGH1 & ((v_GRKL & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & 0))))))))) | (!v_GRKL & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))))))))",
+    "v_TCR": "v_CD45 | v_DLGH1 | v_TCR | v_antigen | v_gp120",
+    "v_gp120": "((v_CD45 & 1) | (!v_CD45 & ((v_DLGH1 & 1) | (!v_DLGH1 & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))))))))",
+    "v_nef": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_gp41 | v_nef | v_tat | !v_vpr",
+    "v_tat": "((v_DLGH1 & ((v_IKBNFKB & ((v_PIP3 & 1) | (!v_PIP3 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpu & 1) | (!v_vpu & 0))))))))) | (!v_IKBNFKB & ((v_PIP3 & 1) | (!v_PIP3 & ((v_nef & 1) | (!v_nef & ((v_vpu & 1) | (!v_vpu & 0))))))))) | (!v_DLGH1 & 1))",
+    "v_vpr": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_gp41 | v_nef | v_tat | !v_vpr",
+    "v_BCAR1": "v_BCAR1",
+    "v_CD45": "v_CD45",
+    "v_CRKL": "v_CRKL",
+    "v_Chemokine": "v_Chemokine",
+    "v_DLGH1": "v_DLGH1",
+    "v_GADD45": "v_GADD45",
+    "v_GRKL": "v_GRKL",
+    "v_ICOS": "v_ICOS",
+    "v_IKBNFKB": "v_IKBNFKB",
+    "v_PDCD1_PD1": "v_PDCD1_PD1",
+    "v_RASA": "v_RASA",
+    "v_antigen": "v_antigen",
+    "v_gp41": "v_gp41",
+    "v_vpu": "v_vpu"
+  },
+  "steps": [
+    {
+      "node": "v_ABL",
+      "support": [
+        "v_FYN",
+        "v_LCK"
+      ],
+      "function": "v_FYN | v_LCK"
+    },
+    {
+      "node": "v_AC",
+      "support": [
+        "v_gp41"
+      ],
+      "function": "v_gp41"
+    },
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_PDPK1",
+        "v_PIP3"
+      ],
+      "function": "v_PDPK1 | v_PIP3"
+    },
+    {
+      "node": "v_API",
+      "support": [
+        "v_FOS",
+        "v_JUN"
+      ],
+      "function": "v_FOS & v_JUN"
+    },
+    {
+      "node": "v_BAD",
+      "support": [],
+      "function": "0"
+    },
+    {
+      "node": "v_BCL2L1",
+      "support": [],
+      "function": "1"
+    },
+    {
+      "node": "v_B_arrestin",
+      "support": [
+        "v_protease"
+      ],
+      "function": "v_protease"
+    },
+    {
+      "node": "v_CARMA1BCL10MALT1",
+      "support": [
+        "v_PKCth"
+      ],
+      "function": "v_PKCth"
+    },
+    {
+      "node": "v_CBL",
+      "support": [
+        "v_PTEN",
+        "v_ZAP70"
+      ],
+      "function": "v_PTEN | v_ZAP70"
+    },
+    {
+      "node": "v_CBLB",
+      "support": [
+        "v_CTLA4",
+        "v_LCK",
+        "v_ZAP70",
+        "v_nef"
+      ],
+      "function": "((v_CTLA4 & 1) | (!v_CTLA4 & ((v_LCK & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_nef & 1) | (!v_nef & 0))))) | (!v_LCK & ((v_ZAP70 & 1) | (!v_ZAP70 & 0))))))"
+    },
+    {
+      "node": "v_CCR5_CXCR4",
+      "support": [
+        "v_Chemokine",
+        "v_gp120",
+        "v_gp41"
+      ],
+      "function": "v_Chemokine | v_gp120 | v_gp41"
+    },
+    {
+      "node": "v_CD28",
+      "support": [
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "!v_gp41 & !v_nef & !v_vpr"
+    },
+    {
+      "node": "v_CD4",
+      "support": [
+        "v_gp160",
+        "v_vif"
+      ],
+      "function": "v_gp160 | v_vif"
+    },
+    {
+      "node": "v_CDC42",
+      "support": [
+        "v_RAP",
+        "v_VAV1"
+      ],
+      "function": "v_RAP | v_VAV1"
+    },
+    {
+      "node": "v_CDKN1A_p21",
+      "support": [
+        "v_gp120",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "v_gp120 | v_tat | v_vpr"
+    },
+    {
+      "node": "v_CREB",
+      "support": [
+        "v_RPS6KA1_RSK"
+      ],
+      "function": "v_RPS6KA1_RSK"
+    },
+    {
+      "node": "v_CRK",
+      "support": [
+        "v_ZAP70"
+      ],
+      "function": "v_ZAP70"
+    },
+    {
+      "node": "v_CSK",
+      "support": [
+        "v_PAG"
+      ],
+      "function": "v_PAG"
+    },
+    {
+      "node": "v_CTLA4",
+      "support": [
+        "v_vpr"
+      ],
+      "function": "v_vpr"
+    },
+    {
+      "node": "v_CTNNB1_bcat",
+      "support": [
+        "v_GSK3",
+        "v_vpu"
+      ],
+      "function": "!v_GSK3 & !v_vpu"
+    },
+    {
+      "node": "v_CYC1",
+      "support": [
+        "v_GSK3"
+      ],
+      "function": "!v_GSK3"
+    },
+    {
+      "node": "v_Ca2",
+      "support": [
+        "v_IP3"
+      ],
+      "function": "v_IP3"
+    },
+    {
+      "node": "v_CaN",
+      "support": [
+        "v_Cam"
+      ],
+      "function": "v_Cam"
+    },
+    {
+      "node": "v_Cam",
+      "support": [
+        "v_IP3"
+      ],
+      "function": "v_IP3"
+    },
+    {
+      "node": "v_Ccblp",
+      "support": [
+        "v_FYN"
+      ],
+      "function": "v_FYN"
+    },
+    {
+      "node": "v_DAG",
+      "support": [
+        "v_PIP2",
+        "v_PLCB",
+        "v_PLCy1"
+      ],
+      "function": "((v_PIP2 & ((v_PLCB & 1) | (!v_PLCB & ((v_PLCy1 & 1) | (!v_PLCy1 & 0))))) | (!v_PIP2 & 0))"
+    },
+    {
+      "node": "v_DGK",
+      "support": [
+        "v_TCR"
+      ],
+      "function": "v_TCR"
+    },
+    {
+      "node": "v_DNA",
+      "support": [
+        "v_NFAT",
+        "v_NFKB",
+        "v_STAT"
+      ],
+      "function": "v_NFAT | v_NFKB | v_STAT"
+    },
+    {
+      "node": "v_DOCK2_CRK_ELMO1",
+      "support": [
+        "v_Src",
+        "v_nef"
+      ],
+      "function": "v_Src | v_nef"
+    },
+    {
+      "node": "v_FOS",
+      "support": [
+        "v_MAPK1_3_Erk"
+      ],
+      "function": "v_MAPK1_3_Erk"
+    },
+    {
+      "node": "v_FOXO3",
+      "support": [
+        "v_PDPK1",
+        "v_PIP3"
+      ],
+      "function": "!v_PDPK1 & !v_PIP3"
+    },
+    {
+      "node": "v_FYN",
+      "support": [
+        "v_CD45",
+        "v_LCK",
+        "v_TCR",
+        "v_gp120"
+      ],
+      "function": "((v_CD45 & ((v_LCK & 1) | (!v_LCK & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_CD45 & ((v_LCK & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_LCK & ((v_gp120 & 1) | (!v_gp120 & 0))))))"
+    },
+    {
+      "node": "v_GAB2",
+      "support": [
+        "v_GRAP2_GADS",
+        "v_GRB2",
+        "v_LAT",
+        "v_ZAP70"
+      ],
+      "function": "((v_GRAP2_GADS & ((v_LAT & ((v_ZAP70 & 1) | (!v_ZAP70 & 0))) | (!v_LAT & 0))) | (!v_GRAP2_GADS & ((v_GRB2 & ((v_LAT & ((v_ZAP70 & 1) | (!v_ZAP70 & 0))) | (!v_LAT & 0))) | (!v_GRB2 & 0))))"
+    },
+    {
+      "node": "v_GRAP2_GADS",
+      "support": [
+        "v_LAT",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_LAT & 1) | (!v_LAT & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))"
+    },
+    {
+      "node": "v_GRB2",
+      "support": [
+        "v_LAT",
+        "v_SHC",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_LAT & 1) | (!v_LAT & ((v_SHC & 1) | (!v_SHC & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))))"
+    },
+    {
+      "node": "v_GRK",
+      "support": [
+        "v_GRKL"
+      ],
+      "function": "v_GRKL"
+    },
+    {
+      "node": "v_GSK3",
+      "support": [
+        "v_PDPK1",
+        "v_PIP3"
+      ],
+      "function": "!v_PDPK1 & !v_PIP3"
+    },
+    {
+      "node": "v_Gai",
+      "support": [
+        "v_GaiGby"
+      ],
+      "function": "v_GaiGby"
+    },
+    {
+      "node": "v_GaiGby",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_gp120",
+        "v_gp41",
+        "v_protease"
+      ],
+      "function": "!(((v_Chemokine & ((v_GRKL & ((v_protease & 1) | (!v_protease & 0))) | (!v_GRKL & 1))) | (!v_Chemokine & ((v_GRKL & ((v_gp120 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp120 & ((v_gp41 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp41 & 1))))) | (!v_GRKL & 1)))))"
+    },
+    {
+      "node": "v_Gby",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_gp120",
+        "v_gp41",
+        "v_protease"
+      ],
+      "function": "!(((v_Chemokine & ((v_GRKL & ((v_protease & 1) | (!v_protease & 0))) | (!v_GRKL & 1))) | (!v_Chemokine & ((v_GRKL & ((v_gp120 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp120 & ((v_gp41 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp41 & 1))))) | (!v_GRKL & 1)))))"
+    },
+    {
+      "node": "v_IKB",
+      "support": [
+        "v_IKBNFKB",
+        "v_Ikkb_Ikky_Ikka",
+        "v_vpu"
+      ],
+      "function": "((v_IKBNFKB & ((v_Ikkb_Ikky_Ikka & 1) | (!v_Ikkb_Ikky_Ikka & ((v_vpu & 1) | (!v_vpu & 0))))) | (!v_IKBNFKB & ((v_vpu & 1) | (!v_vpu & 0))))"
+    },
+    {
+      "node": "v_IP3",
+      "support": [
+        "v_PIP2",
+        "v_PLCB",
+        "v_PLCy1",
+        "v_nef"
+      ],
+      "function": "((v_PIP2 & ((v_PLCB & 1) | (!v_PLCB & ((v_PLCy1 & 1) | (!v_PLCy1 & ((v_nef & 1) | (!v_nef & 0))))))) | (!v_PIP2 & ((v_nef & 1) | (!v_nef & 0))))"
+    },
+    {
+      "node": "v_ITK",
+      "support": [
+        "v_LCK",
+        "v_LCP2_SLP76",
+        "v_PIP3",
+        "v_ZAP70",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_LCK & ((v_LCP2_SLP76 & ((v_PIP3 & ((v_ZAP70 & 1) | (!v_ZAP70 & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_PIP3 & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_LCP2_SLP76 & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))) | (!v_LCK & ((v_LCP2_SLP76 & ((v_PIP3 & ((v_ZAP70 & 1) | (!v_ZAP70 & 0))) | (!v_PIP3 & 0))) | (!v_LCP2_SLP76 & 0))))"
+    },
+    {
+      "node": "v_Ikkb_Ikky_Ikka",
+      "support": [
+        "v_MAP3K14_NIK",
+        "v_MAP3K7_TAK1",
+        "v_PKCth",
+        "v_nef"
+      ],
+      "function": "((v_MAP3K14_NIK & 1) | (!v_MAP3K14_NIK & ((v_MAP3K7_TAK1 & ((v_PKCth & 1) | (!v_PKCth & ((v_nef & 1) | (!v_nef & 0))))) | (!v_MAP3K7_TAK1 & ((v_nef & 1) | (!v_nef & 0))))))"
+    },
+    {
+      "node": "v_JAK3",
+      "support": [
+        "v_Chemokine",
+        "v_gp120",
+        "v_gp41"
+      ],
+      "function": "v_Chemokine | v_gp120 | v_gp41"
+    },
+    {
+      "node": "v_JUN",
+      "support": [
+        "v_MAPK8_JNK"
+      ],
+      "function": "v_MAPK8_JNK"
+    },
+    {
+      "node": "v_LAT",
+      "support": [
+        "v_LCK",
+        "v_ZAP70",
+        "v_gp120"
+      ],
+      "function": "((v_LCK & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_LCK & ((v_ZAP70 & 1) | (!v_ZAP70 & 0))))"
+    },
+    {
+      "node": "v_LCK",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_gp120",
+        "v_gp160",
+        "v_tat",
+        "v_vif"
+      ],
+      "function": "((v_CD45 & ((v_PAG & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & 0))))))))))))) | (!v_CD45 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))))"
+    },
+    {
+      "node": "v_LCP2_SLP76",
+      "support": [
+        "v_ZAP70",
+        "v_gp120"
+      ],
+      "function": "v_ZAP70 | v_gp120"
+    },
+    {
+      "node": "v_MAP2K1_2_MEK1_2",
+      "support": [
+        "v_RAF"
+      ],
+      "function": "v_RAF"
+    },
+    {
+      "node": "v_MAP2K4_Mkk4",
+      "support": [
+        "v_MAP3K1_Mekk1",
+        "v_MAP3K1_Mlk3",
+        "v_MAP3K7_TAK1"
+      ],
+      "function": "v_MAP3K1_Mekk1 | v_MAP3K1_Mlk3 | v_MAP3K7_TAK1"
+    },
+    {
+      "node": "v_MAP2K7_MKK7",
+      "support": [
+        "v_MAP3K7_TAK1"
+      ],
+      "function": "v_MAP3K7_TAK1"
+    },
+    {
+      "node": "v_MAP3K14_NIK",
+      "support": [
+        "v_MAP3K8_COT",
+        "v_tat"
+      ],
+      "function": "v_MAP3K8_COT | v_tat"
+    },
+    {
+      "node": "v_MAP3K1_Mekk1",
+      "support": [
+        "v_MAP4K1_Hpk1",
+        "v_RAC",
+        "v_RAP",
+        "v_VAV1"
+      ],
+      "function": "v_MAP4K1_Hpk1 | v_RAC | v_RAP | v_VAV1"
+    },
+    {
+      "node": "v_MAP3K1_Mlk3",
+      "support": [
+        "v_MAP4K1_Hpk1",
+        "v_RAC",
+        "v_RAP",
+        "v_VAV1"
+      ],
+      "function": "v_MAP4K1_Hpk1 | v_RAC | v_RAP | v_VAV1"
+    },
+    {
+      "node": "v_MAP3K7_TAK1",
+      "support": [
+        "v_MAP4K1_Hpk1",
+        "v_PKCth",
+        "v_gp41"
+      ],
+      "function": "v_MAP4K1_Hpk1 | v_PKCth | v_gp41"
+    },
+    {
+      "node": "v_MAP3K8_COT",
+      "support": [
+        "v_PDPK1",
+        "v_PIP3"
+      ],
+      "function": "v_PDPK1 | v_PIP3"
+    },
+    {
+      "node": "v_MAP4K1_Hpk1",
+      "support": [
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & !(((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))))"
+    },
+    {
+      "node": "v_MAPK14_p38",
+      "support": [
+        "v_DLGH1",
+        "v_ZAP70"
+      ],
+      "function": "v_DLGH1 | v_ZAP70"
+    },
+    {
+      "node": "v_MAPK1_3_Erk",
+      "support": [
+        "v_PRKCZ",
+        "v_RAF"
+      ],
+      "function": "v_PRKCZ | v_RAF"
+    },
+    {
+      "node": "v_MAPK8_JNK",
+      "support": [
+        "v_PKCth",
+        "v_RAC",
+        "v_RAP",
+        "v_VAV1",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_PKCth & 1) | (!v_PKCth & ((v_RAC & 1) | (!v_RAC & ((v_RAP & 1) | (!v_RAP & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & 1) | (!v_gp41 & !(((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))))))))))))"
+    },
+    {
+      "node": "v_NCF1",
+      "support": [
+        "v_PKCB_D"
+      ],
+      "function": "v_PKCB_D"
+    },
+    {
+      "node": "v_NCK",
+      "support": [
+        "v_TCR"
+      ],
+      "function": "v_TCR"
+    },
+    {
+      "node": "v_NFAT",
+      "support": [
+        "v_PIP2",
+        "v_PLCB",
+        "v_PLCy1",
+        "v_PXN",
+        "v_nef"
+      ],
+      "function": "((v_PIP2 & ((v_PLCB & 1) | (!v_PLCB & ((v_PLCy1 & 1) | (!v_PLCy1 & ((v_PXN & 1) | (!v_PXN & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_PIP2 & ((v_PXN & 1) | (!v_PXN & ((v_nef & 1) | (!v_nef & 0))))))"
+    },
+    {
+      "node": "v_NFKB",
+      "support": [
+        "v_IKBNFKB",
+        "v_PDPK1",
+        "v_PIP3",
+        "v_PKCth",
+        "v_nef",
+        "v_protease",
+        "v_tat"
+      ],
+      "function": "((v_IKBNFKB & ((v_PDPK1 & 1) | (!v_PDPK1 & ((v_PIP3 & 1) | (!v_PIP3 & ((v_PKCth & 1) | (!v_PKCth & ((v_nef & 1) | (!v_nef & ((v_protease & 1) | (!v_protease & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_IKBNFKB & 0))"
+    },
+    {
+      "node": "v_NOX4",
+      "support": [
+        "v_PKCB_D"
+      ],
+      "function": "v_PKCB_D"
+    },
+    {
+      "node": "v_PAK",
+      "support": [
+        "v_RAC",
+        "v_RAP",
+        "v_TCR",
+        "v_VAV1",
+        "v_nef"
+      ],
+      "function": "((v_RAC & ((v_RAP & 1) | (!v_RAP & ((v_TCR & 1) | (!v_TCR & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_RAC & ((v_TCR & 1) | (!v_TCR & ((v_nef & 1) | (!v_nef & 0))))))"
+    },
+    {
+      "node": "v_PDPK1",
+      "support": [
+        "v_PIP3"
+      ],
+      "function": "v_PIP3"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_CD45",
+        "v_Chemokine",
+        "v_GRKL",
+        "v_ICOS",
+        "v_PAG",
+        "v_PTEN",
+        "v_PTPN11_SHP2",
+        "v_PTPN6_SHP1",
+        "v_Src",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_protease",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_PIP2",
+      "support": [
+        "v_PIP3",
+        "v_PTEN"
+      ],
+      "function": "v_PIP3 & v_PTEN"
+    },
+    {
+      "node": "v_PKA",
+      "support": [
+        "v_cAMP"
+      ],
+      "function": "v_cAMP"
+    },
+    {
+      "node": "v_PKCB_D",
+      "support": [
+        "v_PIP3",
+        "v_PLCB",
+        "v_PLCy1",
+        "v_PTEN",
+        "v_VAV1",
+        "v_VAV3",
+        "v_gp160"
+      ],
+      "function": "((v_PIP3 & ((v_PLCB & ((v_PTEN & ((v_VAV1 & 1) | (!v_VAV1 & ((v_VAV3 & 1) | (!v_VAV3 & ((v_gp160 & 1) | (!v_gp160 & 0))))))) | (!v_PTEN & ((v_gp160 & 1) | (!v_gp160 & 0))))) | (!v_PLCB & ((v_PLCy1 & ((v_PTEN & ((v_VAV1 & 1) | (!v_VAV1 & ((v_VAV3 & 1) | (!v_VAV3 & ((v_gp160 & 1) | (!v_gp160 & 0))))))) | (!v_PTEN & ((v_gp160 & 1) | (!v_gp160 & 0))))) | (!v_PLCy1 & ((v_gp160 & 1) | (!v_gp160 & 0))))))) | (!v_PIP3 & ((v_gp160 & 1) | (!v_gp160 & 0))))"
+    },
+    {
+      "node": "v_PKCth",
+      "support": [
+        "v_PIP3",
+        "v_gp160"
+      ],
+      "function": "v_PIP3 | v_gp160"
+    },
+    {
+      "node": "v_PLCB",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_gp120",
+        "v_gp41",
+        "v_protease",
+        "v_tat"
+      ],
+      "function": "((v_Chemokine & ((v_GRKL & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_GRKL & ((v_tat & 1) | (!v_tat & 0))))) | (!v_Chemokine & ((v_GRKL & ((v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_GRKL & ((v_tat & 1) | (!v_tat & 0))))))"
+    },
+    {
+      "node": "v_PLCy1",
+      "support": [
+        "v_ZAP70",
+        "v_gp120",
+        "v_tat"
+      ],
+      "function": "v_ZAP70 | v_gp120 | v_tat"
+    },
+    {
+      "node": "v_PPP2R4_PP2A",
+      "support": [
+        "v_vpr"
+      ],
+      "function": "v_vpr"
+    },
+    {
+      "node": "v_PRKCZ",
+      "support": [
+        "v_PIP3",
+        "v_gp160"
+      ],
+      "function": "v_PIP3 | v_gp160"
+    },
+    {
+      "node": "v_PRKCZPar3Tiam1",
+      "support": [
+        "v_RAP",
+        "v_VAV1"
+      ],
+      "function": "v_RAP | v_VAV1"
+    },
+    {
+      "node": "v_PTEN",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_RHOA",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_nef",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "((v_CD45 & ((v_PAG & ((v_RHOA & 1) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_RHOA & 1) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))) | (!v_PTPN6_SHP1 & ((v_RHOA & 1) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_nef & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))))))) | (!v_CD45 & ((v_RHOA & 1) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))"
+    },
+    {
+      "node": "v_PTK2",
+      "support": [
+        "v_Src",
+        "v_gp120",
+        "v_gp160",
+        "v_tat",
+        "v_vif"
+      ],
+      "function": "((v_Src & 1) | (!v_Src & ((v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))"
+    },
+    {
+      "node": "v_PTK2B_Pyk2",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_gp160",
+        "v_tat",
+        "v_vif"
+      ],
+      "function": "((v_CD45 & ((v_PAG & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PTPN6_SHP1 & ((v_Src & 1) | (!v_Src & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & 0))))))))))))))) | (!v_CD45 & ((v_Src & 1) | (!v_Src & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))"
+    },
+    {
+      "node": "v_PTPN11_SHP2",
+      "support": [
+        "v_PDCD1_PD1",
+        "v_ZAP70",
+        "v_vpr"
+      ],
+      "function": "v_PDCD1_PD1 | v_ZAP70 | v_vpr"
+    },
+    {
+      "node": "v_PXN",
+      "support": [
+        "v_PIP3",
+        "v_RAC",
+        "v_RAP",
+        "v_Src",
+        "v_VAV1",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_PIP3 & 1) | (!v_PIP3 & ((v_RAC & 1) | (!v_RAC & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_gp41 & 1) | (!v_gp41 & !(((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0)))))))))))))))))))))))"
+    },
+    {
+      "node": "v_P_REX1",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PIP3",
+        "v_gp120",
+        "v_gp41",
+        "v_protease"
+      ],
+      "function": "!(((v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_protease & 1) | (!v_protease & 0))) | (!v_PIP3 & 1))) | (!v_GRKL & 1))) | (!v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_gp120 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp120 & ((v_gp41 & ((v_protease & 1) | (!v_protease & 0))) | (!v_gp41 & 1))))) | (!v_PIP3 & 1))) | (!v_GRKL & 1)))))"
+    },
+    {
+      "node": "v_RAC",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PIP3",
+        "v_RAP",
+        "v_Src",
+        "v_VAV1",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_protease"
+      ],
+      "function": "((v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & !(((v_protease & 1) | (!v_protease & 0)))))))))))) | (!v_PIP3 & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))) | (!v_GRKL & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))) | (!v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_gp120 & ((v_nef & 1) | (!v_nef & !(((v_protease & 1) | (!v_protease & 0)))))) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & !(((v_protease & 1) | (!v_protease & 0)))))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & 0))))))))))))) | (!v_PIP3 & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))) | (!v_GRKL & ((v_RAP & 1) | (!v_RAP & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))))"
+    },
+    {
+      "node": "v_RAF",
+      "support": [
+        "v_RAS",
+        "v_gp120",
+        "v_gp160",
+        "v_nef",
+        "v_vif"
+      ],
+      "function": "((v_RAS & 1) | (!v_RAS & ((v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & ((v_vif & 1) | (!v_vif & 0))))))) | (!v_gp120 & ((v_nef & 1) | (!v_nef & 0))))))"
+    },
+    {
+      "node": "v_RAP",
+      "support": [
+        "v_RASGRP2"
+      ],
+      "function": "v_RASGRP2"
+    },
+    {
+      "node": "v_RAS",
+      "support": [
+        "v_RASGRP1",
+        "v_SHC",
+        "v_SOS",
+        "v_ZAP70",
+        "v_gp120"
+      ],
+      "function": "((v_RASGRP1 & 1) | (!v_RASGRP1 & ((v_SHC & ((v_SOS & 1) | (!v_SOS & 0))) | (!v_SHC & ((v_SOS & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_SOS & 0))))))"
+    },
+    {
+      "node": "v_RASGRP1",
+      "support": [
+        "v_CD45",
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PAG",
+        "v_PIP3",
+        "v_PTPN6_SHP1",
+        "v_RHOA",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_protease",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "((v_CD45 & ((v_Chemokine & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))) | (!v_CD45 & ((v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PIP3 & 0))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & 0))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))))"
+    },
+    {
+      "node": "v_RASGRP2",
+      "support": [
+        "v_CD45",
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PAG",
+        "v_PIP3",
+        "v_PTPN6_SHP1",
+        "v_RHOA",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_protease",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "((v_CD45 & ((v_Chemokine & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_GRKL & ((v_PAG & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & 0))) | (!v_PAG & ((v_PIP3 & ((v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PTPN6_SHP1 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))))) | (!v_PIP3 & 0))))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))) | (!v_CD45 & ((v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp160 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))))))))) | (!v_PIP3 & 0))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))) | (!v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & ((v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp160 & ((v_gp41 & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & 0))) | (!v_GRKL & ((v_PIP3 & ((v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_RHOA & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_tat & 1) | (!v_tat & 0))))))))) | (!v_PIP3 & 0))))))))"
+    },
+    {
+      "node": "v_RHOA",
+      "support": [
+        "v_VAV1"
+      ],
+      "function": "v_VAV1"
+    },
+    {
+      "node": "v_ROCK",
+      "support": [
+        "v_VAV1"
+      ],
+      "function": "v_VAV1"
+    },
+    {
+      "node": "v_RPS6KA1_RSK",
+      "support": [
+        "v_PIP3",
+        "v_SHC",
+        "v_SOS",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_nef",
+        "v_vif"
+      ],
+      "function": "((v_PIP3 & 1) | (!v_PIP3 & ((v_SHC & ((v_SOS & 1) | (!v_SOS & ((v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & ((v_vif & 1) | (!v_vif & 0))))))) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_SHC & ((v_SOS & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_SOS & ((v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & ((v_vif & 1) | (!v_vif & 0))))))) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_nef & 1) | (!v_nef & 0))))))))))))"
+    },
+    {
+      "node": "v_Rik",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "!(((v_CD45 & ((v_PAG & ((v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & ((v_vpr & 1) | (!v_vpr & 0))) | (!v_tat & 1))))))))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & ((v_vpr & 1) | (!v_vpr & 0))) | (!v_tat & 1))))))))))) | (!v_PTPN6_SHP1 & ((v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & ((v_vpr & 1) | (!v_vpr & 0))) | (!v_tat & ((v_vif & ((v_vpr & 1) | (!v_vpr & 0))) | (!v_vif & 1))))))))))))))))) | (!v_CD45 & ((v_gp120 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp160 & ((v_gp41 & 1) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & ((v_vpr & 1) | (!v_vpr & 0))) | (!v_tat & 1)))))))))))))"
+    },
+    {
+      "node": "v_SH3BP2",
+      "support": [
+        "v_ZAP70"
+      ],
+      "function": "v_ZAP70"
+    },
+    {
+      "node": "v_SHC",
+      "support": [
+        "v_Src",
+        "v_TCR",
+        "v_tat"
+      ],
+      "function": "v_Src | v_TCR | v_tat"
+    },
+    {
+      "node": "v_SIT1",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_gp120",
+        "v_gp160",
+        "v_tat",
+        "v_vif"
+      ],
+      "function": "((v_CD45 & ((v_PAG & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_PTPN6_SHP1 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & 0))))))))))))) | (!v_CD45 & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))))"
+    },
+    {
+      "node": "v_SOS",
+      "support": [
+        "v_CD45",
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PAG",
+        "v_PIP3",
+        "v_PTPN6_SHP1",
+        "v_Src",
+        "v_TCR",
+        "v_VAV1",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp160",
+        "v_gp41",
+        "v_nef",
+        "v_protease",
+        "v_tat",
+        "v_vif",
+        "v_vpr"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_STAT",
+      "support": [
+        "v_Chemokine",
+        "v_gp120",
+        "v_gp41",
+        "v_tat"
+      ],
+      "function": "v_Chemokine | v_gp120 | v_gp41 | v_tat"
+    },
+    {
+      "node": "v_Sre",
+      "support": [
+        "v_Chemokine",
+        "v_GRKL",
+        "v_PIP3",
+        "v_Src",
+        "v_VAV1",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_protease",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "((v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))) | (!v_protease & 1))))) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_GRKL & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))) | (!v_Chemokine & ((v_GRKL & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))) | (!v_protease & 1))))) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_protease & ((v_tat & 1) | (!v_tat & 0))) | (!v_protease & 1))))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))) | (!v_GRKL & ((v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp120 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))))))))))) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_VAV1 & 1) | (!v_VAV1 & ((v_nef & 1) | (!v_nef & 0))))))))))))"
+    },
+    {
+      "node": "v_VAV1",
+      "support": [
+        "v_ZAP70",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp41 & ((v_nef & 1) | (!v_nef & 0))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & !(((v_vpr & 1) | (!v_vpr & 0)))))))))"
+    },
+    {
+      "node": "v_VAV3",
+      "support": [
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_vpr"
+      ],
+      "function": "((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & 0))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & !(((v_vpr & 1) | (!v_vpr & 0)))))))) | (!v_gp120 & ((v_nef & 1) | (!v_nef & 0))))))"
+    },
+    {
+      "node": "v_WASP",
+      "support": [
+        "v_PIP3",
+        "v_TCR",
+        "v_ZAP70",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "((v_PIP3 & ((v_TCR & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & ((v_vpr & 1) | (!v_vpr & 0))))))) | (!v_gp41 & 1))) | (!v_gp120 & 0))))) | (!v_TCR & 0))) | (!v_PIP3 & ((v_TCR & ((v_ZAP70 & 1) | (!v_ZAP70 & ((v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & 0))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & !(((v_vpr & 1) | (!v_vpr & 0)))))))) | (!v_gp120 & 0))))) | (!v_TCR & 0))))"
+    },
+    {
+      "node": "v_ZAP70",
+      "support": [
+        "v_CD45",
+        "v_PAG",
+        "v_PTPN6_SHP1",
+        "v_TCR",
+        "v_gp120",
+        "v_gp160",
+        "v_tat",
+        "v_vif"
+      ],
+      "function": "((v_CD45 & ((v_PAG & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_PAG & ((v_PTPN6_SHP1 & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))) | (!v_PTPN6_SHP1 & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & ((v_vif & 1) | (!v_vif & 0))))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))))) | (!v_CD45 & ((v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp160 & 1) | (!v_gp160 & ((v_tat & 1) | (!v_tat & 0))))))) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & 0))))))"
+    },
+    {
+      "node": "v_cAMP",
+      "support": [
+        "v_gp41",
+        "v_matrix"
+      ],
+      "function": "v_gp41 | v_matrix"
+    },
+    {
+      "node": "v_capsid",
+      "support": [
+        "v_Chemokine",
+        "v_gp120",
+        "v_gp41",
+        "v_matrix",
+        "v_tat"
+      ],
+      "function": "v_Chemokine | v_gp120 | v_gp41 | v_matrix | v_tat"
+    },
+    {
+      "node": "v_gp160",
+      "support": [
+        "v_DLGH1"
+      ],
+      "function": "!v_DLGH1"
+    },
+    {
+      "node": "v_in",
+      "support": [
+        "v_gp120",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "!v_gp120 & !v_tat & !v_vpr"
+    },
+    {
+      "node": "v_matrix",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "((v_DLGH1 & ((v_PIP3 & 1) | (!v_PIP3 & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_gp120 & 1) | (!v_gp120 & ((v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & 0))))) | (!v_gp41 & ((v_nef & 1) | (!v_nef & ((v_tat & 1) | (!v_tat & !(((v_vpr & 1) | (!v_vpr & 0)))))))))))))))))) | (!v_DLGH1 & 1))"
+    },
+    {
+      "node": "v_nucleocapsid",
+      "support": [
+        "v_DLGH1"
+      ],
+      "function": "v_DLGH1"
+    },
+    {
+      "node": "v_p6",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_nef",
+        "v_tat"
+      ],
+      "function": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_nef | v_tat"
+    },
+    {
+      "node": "v_protease",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3"
+      ],
+      "function": "v_DLGH1 & !v_PIP3"
+    },
+    {
+      "node": "v_rev",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_nef",
+        "v_tat"
+      ],
+      "function": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_nef | v_tat"
+    },
+    {
+      "node": "v_rt",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_gp41",
+        "v_nef",
+        "v_tat",
+        "v_vpr"
+      ],
+      "function": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_gp41 | v_nef | v_tat | !v_vpr"
+    },
+    {
+      "node": "v_vif",
+      "support": [
+        "v_DLGH1",
+        "v_PIP3",
+        "v_Src",
+        "v_TCR",
+        "v_gp120",
+        "v_nef",
+        "v_tat"
+      ],
+      "function": "!v_DLGH1 | v_PIP3 | v_Src | v_TCR | v_gp120 | v_nef | v_tat"
+    }
+  ],
+  "seconds": 1.4426562000298873
+}

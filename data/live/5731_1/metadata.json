@@ -1,0 +1,80 @@
+{
+  "id": "5731_1",
+  "name": "Metabolic Interactions in the Gut Microbiome",
+  "input-names": [
+    "v_Coprobacillus"
+  ],
+  "variable-names": [
+    "v_Enterobacteriaceae",
+    "v_Akkermansia_",
+    "v_Clostridium_difficile",
+    "v_Lachnospiraceae_other_",
+    "v_Other",
+    "v_Clindamycin_",
+    "v_Mollicutes",
+    "v_Blautia",
+    "v_Barnesiella",
+    "v_Lachnospiraceae",
+    "v_Enterococcus"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "Clostridium_difficile": "v_Clostridium_difficile",
+    "Enterobacteriaceae": "v_Enterobacteriaceae",
+    "Enterococcus": "v_Enterococcus",
+    "Coprobacillus": "v_Coprobacillus",
+    "Akkermansia ": "v_Akkermansia_",
+    "Other": "v_Other",
+    "Mollicutes": "v_Mollicutes",
+    "Blautia": "v_Blautia",
+    "Lachnospiraceae_other ": "v_Lachnospiraceae_other_",
+    "Clindamycin ": "v_Clindamycin_",
+    "Barnesiella": "v_Barnesiella",
+    "Lachnospiraceae": "v_Lachnospiraceae"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 12,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 5731,
+    "name": "Metabolic Interactions in the Gut Microbiome",
+    "description": "We present a novel methodology to construct a Boolean dynamic model from time series metagenomic information and integrate this modeling with genome-scale metabolic network reconstructions to identify metabolic underpinnings for microbial interactions. We apply this in the context of a critical health issue: clindamycin antibiotic treatment and opportunistic Clostridium difficile infection. Our model recapitulates known dynamics of clindamycin antibiotic treatment and C. difficile infection and predicts therapeutic probiotic interventions to suppress C. difficile infection. Genome-scale metabolic network reconstructions reveal metabolic differences between community members and are used to explore the role of metabolism in the observed microbial interactions. In vitro experimental data validate a key result of our computational model, that B. intestinihominis can in fact slow C. difficile growth.",
+    "tags": "clindamycin,  Clostridium difficile, infection, probiotic interventions",
+    "userId": 1822,
+    "author": "S Steinway et al. ",
+    "creationDate": "Fri, 23 Dec 2016 21:22:20 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Mon, 10 Apr 2017 16:11:19 GMT",
+    "components": 12,
+    "interactions": 30,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 1822,
+        "creationDate": "Fri, 23 Dec 2016 21:22:20 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": 277,
+    "content": null
+  },
+  "source_hash": "-1654488353",
+  "version": "1"
+}

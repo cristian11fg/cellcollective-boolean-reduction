@@ -1,0 +1,1031 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "071",
+  "name": "CASTRATION-RESISTANT-PROSTATE-CANCER",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 42,
+  "after": {
+    "nodes": 14,
+    "n_nodes": 14,
+    "inputs": 14,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "all_rules_after": {
+    "nodes": 14,
+    "n_nodes": 14,
+    "inputs": 14,
+    "internal_nodes": 0,
+    "nonconstant_rules": 14,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 14,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_AZD5363": "+",
+      "v_AZD6244": "+",
+      "v_Androgens": "+",
+      "v_BKM120": "+",
+      "v_Cixutumumab": "+",
+      "v_EGF": "+",
+      "v_Enzalutamide": "+",
+      "v_HBEGF": "+",
+      "v_IGF": "+",
+      "v_Lapatinib": "+",
+      "v_NKX3_1": "+",
+      "v_NRG1": "+",
+      "v_PTEN": "+",
+      "v_Temsirolimus": "+"
+    },
+    "positive_edges": 14,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 14,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 14
+    },
+    "conflicts": {},
+    "local": {
+      "v_AZD5363": {
+        "signs": {
+          "v_AZD5363": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_AZD6244": {
+        "signs": {
+          "v_AZD6244": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Androgens": {
+        "signs": {
+          "v_Androgens": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_BKM120": {
+        "signs": {
+          "v_BKM120": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Cixutumumab": {
+        "signs": {
+          "v_Cixutumumab": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_EGF": {
+        "signs": {
+          "v_EGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Enzalutamide": {
+        "signs": {
+          "v_Enzalutamide": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HBEGF": {
+        "signs": {
+          "v_HBEGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IGF": {
+        "signs": {
+          "v_IGF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Lapatinib": {
+        "signs": {
+          "v_Lapatinib": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NKX3_1": {
+        "signs": {
+          "v_NKX3_1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NRG1": {
+        "signs": {
+          "v_NRG1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PTEN": {
+        "signs": {
+          "v_PTEN": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Temsirolimus": {
+        "signs": {
+          "v_Temsirolimus": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 1,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 0,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 1,
+        "v_Androgens": 1,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 1,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 0,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 1
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 1,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 1
+      },
+      {
+        "v_AZD5363": 0,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 1,
+        "v_HBEGF": 0,
+        "v_IGF": 1,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      },
+      {
+        "v_AZD5363": 1,
+        "v_AZD6244": 0,
+        "v_Androgens": 0,
+        "v_BKM120": 0,
+        "v_Cixutumumab": 0,
+        "v_EGF": 0,
+        "v_Enzalutamide": 0,
+        "v_HBEGF": 0,
+        "v_IGF": 1,
+        "v_Lapatinib": 0,
+        "v_NKX3_1": 0,
+        "v_NRG1": 0,
+        "v_PTEN": 0,
+        "v_Temsirolimus": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_AZD5363": "v_AZD5363",
+    "v_AZD6244": "v_AZD6244",
+    "v_Androgens": "v_Androgens",
+    "v_BKM120": "v_BKM120",
+    "v_Cixutumumab": "v_Cixutumumab",
+    "v_EGF": "v_EGF",
+    "v_Enzalutamide": "v_Enzalutamide",
+    "v_HBEGF": "v_HBEGF",
+    "v_IGF": "v_IGF",
+    "v_Lapatinib": "v_Lapatinib",
+    "v_NKX3_1": "v_NKX3_1",
+    "v_NRG1": "v_NRG1",
+    "v_PTEN": "v_PTEN",
+    "v_Temsirolimus": "v_Temsirolimus"
+  },
+  "steps": [
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_NKX3_1",
+        "v_PDPK1",
+        "v_PTEN"
+      ],
+      "function": "!v_NKX3_1 | v_PDPK1 | !v_PTEN"
+    },
+    {
+      "node": "v_AR_AR",
+      "support": [
+        "v_AR_HSP",
+        "v_NKX3_1",
+        "v_PDPK1",
+        "v_PTEN"
+      ],
+      "function": "v_AR_HSP | !v_NKX3_1 | v_PDPK1 | !v_PTEN"
+    },
+    {
+      "node": "v_AR_HSP",
+      "support": [
+        "v_Androgens"
+      ],
+      "function": "v_Androgens"
+    },
+    {
+      "node": "v_BAD",
+      "support": [
+        "v_NKX3_1",
+        "v_PDPK1",
+        "v_PTEN",
+        "v_RP6SKB1"
+      ],
+      "function": "v_NKX3_1 & !v_PDPK1 & v_PTEN & !v_RP6SKB1"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_NKX3_1",
+        "v_PDPK1",
+        "v_PTEN",
+        "v_RP6SKB1"
+      ],
+      "function": "!v_NKX3_1 | v_PDPK1 | !v_PTEN | v_RP6SKB1"
+    },
+    {
+      "node": "v_CDK2_Cyclin_E",
+      "support": [
+        "v_p21"
+      ],
+      "function": "!v_p21"
+    },
+    {
+      "node": "v_EFGR",
+      "support": [
+        "v_EGF",
+        "v_HBEGF"
+      ],
+      "function": "v_EGF | v_HBEGF"
+    },
+    {
+      "node": "v_EGFR_ERBB2",
+      "support": [
+        "v_EGF"
+      ],
+      "function": "v_EGF"
+    },
+    {
+      "node": "v_ERBB2_3",
+      "support": [
+        "v_NRG1"
+      ],
+      "function": "v_NRG1"
+    },
+    {
+      "node": "v_ERK1_2",
+      "support": [
+        "v_AZD6244",
+        "v_MEK1"
+      ],
+      "function": "!v_AZD6244 & v_MEK1"
+    },
+    {
+      "node": "v_GRB2_SOS",
+      "support": [
+        "v_EGF",
+        "v_HBEGF",
+        "v_IGFR1A_B",
+        "v_Lapatinib",
+        "v_NRG1"
+      ],
+      "function": "((v_EGF & ((v_IGFR1A_B & 1) | (!v_IGFR1A_B & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_EGF & ((v_HBEGF & ((v_IGFR1A_B & 1) | (!v_IGFR1A_B & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_HBEGF & ((v_IGFR1A_B & 1) | (!v_IGFR1A_B & !(((v_Lapatinib & 1) | (!v_Lapatinib & !(((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))"
+    },
+    {
+      "node": "v_IGFR1A_B",
+      "support": [
+        "v_IGF"
+      ],
+      "function": "v_IGF"
+    },
+    {
+      "node": "v_IRS1",
+      "support": [
+        "v_Cixutumumab",
+        "v_IGF"
+      ],
+      "function": "!v_Cixutumumab & v_IGF"
+    },
+    {
+      "node": "v_MEK1",
+      "support": [
+        "v_Raf"
+      ],
+      "function": "v_Raf"
+    },
+    {
+      "node": "v_PDPK1",
+      "support": [
+        "v_PIP3"
+      ],
+      "function": "v_PIP3"
+    },
+    {
+      "node": "v_PIK3CA",
+      "support": [
+        "v_Cixutumumab",
+        "v_IGF",
+        "v_NRG1",
+        "v_Ras"
+      ],
+      "function": "((v_Cixutumumab & ((v_NRG1 & 1) | (!v_NRG1 & ((v_Ras & 1) | (!v_Ras & 0))))) | (!v_Cixutumumab & ((v_IGF & 1) | (!v_IGF & ((v_NRG1 & 1) | (!v_NRG1 & ((v_Ras & 1) | (!v_Ras & 0))))))))"
+    },
+    {
+      "node": "v_PIP3",
+      "support": [
+        "v_Cixutumumab",
+        "v_IGF",
+        "v_NRG1",
+        "v_PTEN",
+        "v_Ras"
+      ],
+      "function": "!(((v_Cixutumumab & ((v_NRG1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NRG1 & ((v_PTEN & 1) | (!v_PTEN & !(((v_Ras & 1) | (!v_Ras & 0)))))))) | (!v_Cixutumumab & ((v_IGF & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_IGF & ((v_NRG1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NRG1 & ((v_PTEN & 1) | (!v_PTEN & !(((v_Ras & 1) | (!v_Ras & 0))))))))))))"
+    },
+    {
+      "node": "v_PSA",
+      "support": [
+        "v_Androgens",
+        "v_Enzalutamide",
+        "v_NKX3_1",
+        "v_PTEN"
+      ],
+      "function": "!(((v_Androgens & ((v_Enzalutamide & 1) | (!v_Enzalutamide & 0))) | (!v_Androgens & ((v_Enzalutamide & 1) | (!v_Enzalutamide & ((v_NKX3_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NKX3_1 & 0)))))))"
+    },
+    {
+      "node": "v_RHEB",
+      "support": [
+        "v_TSC_1_2"
+      ],
+      "function": "!v_TSC_1_2"
+    },
+    {
+      "node": "v_RP6SKB1",
+      "support": [
+        "v_AZD6244",
+        "v_Cixutumumab",
+        "v_IGF",
+        "v_NRG1",
+        "v_PTEN",
+        "v_Raf",
+        "v_Ras",
+        "v_Temsirolimus",
+        "v_mTOR"
+      ],
+      "function": "!(((v_AZD6244 & ((v_Cixutumumab & ((v_NRG1 & ((v_PTEN & ((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))) | (!v_PTEN & 0))) | (!v_NRG1 & ((v_PTEN & ((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))) | (!v_PTEN & !(((v_Ras & 1) | (!v_Ras & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))))))))))) | (!v_Cixutumumab & ((v_IGF & ((v_PTEN & ((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))) | (!v_PTEN & 0))) | (!v_IGF & ((v_NRG1 & ((v_PTEN & ((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))) | (!v_PTEN & 0))) | (!v_NRG1 & ((v_PTEN & ((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))) | (!v_PTEN & !(((v_Ras & 1) | (!v_Ras & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0)))))))))))))))))) | (!v_AZD6244 & !(((v_Cixutumumab & ((v_NRG1 & ((v_PTEN & ((v_Raf & 1) | (!v_Raf & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))) | (!v_PTEN & 1))) | (!v_NRG1 & ((v_PTEN & ((v_Raf & 1) | (!v_Raf & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))) | (!v_PTEN & ((v_Raf & 1) | (!v_Raf & ((v_Ras & 1) | (!v_Ras & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))))))))) | (!v_Cixutumumab & ((v_IGF & ((v_PTEN & ((v_Raf & 1) | (!v_Raf & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))) | (!v_PTEN & 1))) | (!v_IGF & ((v_NRG1 & ((v_PTEN & ((v_Raf & 1) | (!v_Raf & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))) | (!v_PTEN & 1))) | (!v_NRG1 & ((v_PTEN & ((v_Raf & 1) | (!v_Raf & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))) | (!v_PTEN & ((v_Raf & 1) | (!v_Raf & ((v_Ras & 1) | (!v_Ras & !(((v_Temsirolimus & 1) | (!v_Temsirolimus & !(((v_mTOR & 1) | (!v_mTOR & 0))))))))))))))))))))))"
+    },
+    {
+      "node": "v_Raf",
+      "support": [
+        "v_BKM120",
+        "v_Cixutumumab",
+        "v_IGF",
+        "v_NRG1",
+        "v_Ras"
+      ],
+      "function": "((v_BKM120 & ((v_Ras & 1) | (!v_Ras & 0))) | (!v_BKM120 & ((v_Cixutumumab & ((v_NRG1 & 1) | (!v_NRG1 & ((v_Ras & 1) | (!v_Ras & 0))))) | (!v_Cixutumumab & ((v_IGF & 1) | (!v_IGF & ((v_NRG1 & 1) | (!v_NRG1 & ((v_Ras & 1) | (!v_Ras & 0))))))))))"
+    },
+    {
+      "node": "v_Ras",
+      "support": [
+        "v_EGF",
+        "v_HBEGF",
+        "v_IGF",
+        "v_Lapatinib",
+        "v_NRG1"
+      ],
+      "function": "((v_EGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_EGF & ((v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & !(((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))"
+    },
+    {
+      "node": "v_SP1",
+      "support": [
+        "v_AZD6244",
+        "v_BKM120",
+        "v_EGF",
+        "v_HBEGF",
+        "v_IGF",
+        "v_Lapatinib",
+        "v_NRG1"
+      ],
+      "function": "!(((v_AZD6244 & 1) | (!v_AZD6244 & !(((v_BKM120 & ((v_EGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_EGF & ((v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & !(((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))) | (!v_BKM120 & ((v_EGF & ((v_IGF & 1) | (!v_IGF & ((v_Lapatinib & ((v_NRG1 & 1) | (!v_NRG1 & 0))) | (!v_Lapatinib & 1))))) | (!v_EGF & ((v_HBEGF & ((v_IGF & 1) | (!v_IGF & ((v_Lapatinib & ((v_NRG1 & 1) | (!v_NRG1 & 0))) | (!v_Lapatinib & 1))))) | (!v_HBEGF & ((v_IGF & 1) | (!v_IGF & ((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))))"
+    },
+    {
+      "node": "v_SRF___ELK1",
+      "support": [
+        "v_AZD6244",
+        "v_BKM120",
+        "v_EGF",
+        "v_HBEGF",
+        "v_IGF",
+        "v_Lapatinib",
+        "v_NRG1"
+      ],
+      "function": "!(((v_AZD6244 & 1) | (!v_AZD6244 & !(((v_BKM120 & ((v_EGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_EGF & ((v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & 0)))))) | (!v_HBEGF & ((v_IGF & 1) | (!v_IGF & !(((v_Lapatinib & 1) | (!v_Lapatinib & !(((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))) | (!v_BKM120 & ((v_EGF & ((v_IGF & 1) | (!v_IGF & ((v_Lapatinib & ((v_NRG1 & 1) | (!v_NRG1 & 0))) | (!v_Lapatinib & 1))))) | (!v_EGF & ((v_HBEGF & ((v_IGF & 1) | (!v_IGF & ((v_Lapatinib & ((v_NRG1 & 1) | (!v_NRG1 & 0))) | (!v_Lapatinib & 1))))) | (!v_HBEGF & ((v_IGF & 1) | (!v_IGF & ((v_NRG1 & 1) | (!v_NRG1 & 0))))))))))))))"
+    },
+    {
+      "node": "v_TMPRSS2",
+      "support": [
+        "v_Androgens",
+        "v_Enzalutamide",
+        "v_NKX3_1",
+        "v_PTEN"
+      ],
+      "function": "!(((v_Androgens & ((v_Enzalutamide & 1) | (!v_Enzalutamide & 0))) | (!v_Androgens & ((v_Enzalutamide & 1) | (!v_Enzalutamide & ((v_NKX3_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NKX3_1 & 0)))))))"
+    },
+    {
+      "node": "v_TSC_1_2",
+      "support": [
+        "v_AZD5363",
+        "v_NKX3_1",
+        "v_PTEN"
+      ],
+      "function": "((v_AZD5363 & 1) | (!v_AZD5363 & ((v_NKX3_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NKX3_1 & 0))))"
+    },
+    {
+      "node": "v_mTOR",
+      "support": [
+        "v_AZD5363",
+        "v_NKX3_1",
+        "v_PTEN"
+      ],
+      "function": "!(((v_AZD5363 & 1) | (!v_AZD5363 & ((v_NKX3_1 & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_NKX3_1 & 0)))))"
+    },
+    {
+      "node": "v_p21",
+      "support": [
+        "v_NKX3_1",
+        "v_PTEN"
+      ],
+      "function": "v_NKX3_1 & v_PTEN"
+    }
+  ],
+  "seconds": 0.7082319000037387
+}

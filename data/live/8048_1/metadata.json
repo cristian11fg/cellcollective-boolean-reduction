@@ -1,0 +1,221 @@
+{
+  "id": "8048_1",
+  "name": "Treatment of Castration-Resistant Prostate Cancer",
+  "input-names": [
+    "v_Androgens",
+    "v_NRG1",
+    "v_IGF",
+    "v_PTEN",
+    "v_HBEGF",
+    "v_NKX3_1",
+    "v_Temsirolimus",
+    "v_AZD6244",
+    "v_EGF",
+    "v_Enzalutamide",
+    "v_BKM120",
+    "v_Lapatinib",
+    "v_Cixutumumab",
+    "v_AZD5363"
+  ],
+  "variable-names": [
+    "v_BAD",
+    "v_RP6SKB1",
+    "v_Raf",
+    "v_RHEB",
+    "v_p21",
+    "v_AKT",
+    "v_CDK2_Cyclin_E",
+    "v_EFGR",
+    "v_SRF___ELK1",
+    "v_PSA",
+    "v_Ras",
+    "v_ERBB2_3",
+    "v_AR_HSP",
+    "v_MEK1",
+    "v_PIK3CA",
+    "v_mTOR",
+    "v_AR_AR",
+    "v_TSC_1_2",
+    "v_GRB2_SOS",
+    "v_PIP3",
+    "v_TMPRSS2",
+    "v_BCL2",
+    "v_EGFR_ERBB2",
+    "v_PDPK1",
+    "v_SP1",
+    "v_IGFR1A_B",
+    "v_IRS1",
+    "v_ERK1_2"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "PIP3": "v_PIP3",
+    "PTEN": "v_PTEN",
+    "Androgens": "v_Androgens",
+    "EFGR": "v_EFGR",
+    "GRB2/SOS": "v_GRB2_SOS",
+    "IGF": "v_IGF",
+    "MEK1": "v_MEK1",
+    "EGFR/ERBB2": "v_EGFR_ERBB2",
+    "IRS1": "v_IRS1",
+    "BKM120": "v_BKM120",
+    "PIK3CA": "v_PIK3CA",
+    "ERK1/2": "v_ERK1_2",
+    "Cixutumumab": "v_Cixutumumab",
+    "AZD6244": "v_AZD6244",
+    "BCL2": "v_BCL2",
+    "Raf": "v_Raf",
+    "SRF - ELK1": "v_SRF___ELK1",
+    "Enzalutamide": "v_Enzalutamide",
+    "AZD5363": "v_AZD5363",
+    "p21": "v_p21",
+    "TSC 1/2": "v_TSC_1_2",
+    "AR/HSP": "v_AR_HSP",
+    "Ras": "v_Ras",
+    "EGF": "v_EGF",
+    "mTOR": "v_mTOR",
+    "HBEGF": "v_HBEGF",
+    "PSA": "v_PSA",
+    "NKX3.1": "v_NKX3_1",
+    "NRG1": "v_NRG1",
+    "IGFR1A/B": "v_IGFR1A_B",
+    "TMPRSS2": "v_TMPRSS2",
+    "RHEB": "v_RHEB",
+    "PDPK1": "v_PDPK1",
+    "BAD": "v_BAD",
+    "ERBB2/3": "v_ERBB2_3",
+    "AKT": "v_AKT",
+    "CDK2-Cyclin E": "v_CDK2_Cyclin_E",
+    "AR/AR": "v_AR_AR",
+    "RP6SKB1": "v_RP6SKB1",
+    "Temsirolimus": "v_Temsirolimus",
+    "Lapatinib": "v_Lapatinib",
+    "SP1": "v_SP1"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 42,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 8048,
+    "name": "Treatment of Castration-Resistant Prostate Cancer",
+    "description": "Background:  Prostate cancer is one of the most prevalent cancers in males in the United States and amongst the leading causes of cancer related deaths. A particularly virulent form of this disease is castration-resistant prostate cancer (CRPC), where patients no longer respond to medical or surgical castration. CRPC is a complex, multifaceted and heterogeneous malady with limited standard treatment options.Results:  The growth and progression of prostate cancer is a complicated process that involves multiple pathways. The signaling network comprising the integral constituents of the signature pathways involved in the development and progression of prostate cancer is modeled as a combinatorial circuit. The failures in the gene regulatory network that lead to cancer are abstracted as faults in the equivalent circuit and the Boolean circuit model is then used to design therapies tailored to counteract the effect of each molecular abnormality and to propose potentially efficacious combinatorial therapy regimens. Furthermore, stochastic computational modeling is utilized to identify potentially vulnerable components in the network that may serve as viable candidates for drug development. Conclusion:  The results presented herein can aid in the design of scientifically well-grounded targeted therapies that can be employed for the treatment of prostate cancer patients.",
+    "tags": "Prostate cancer, Gene regulatory networks, Boolean modeling, Combination therapy, Stochastic logic, Vulnerability assessment",
+    "userId": 2150,
+    "author": "Arshad OA and Datta A.",
+    "creationDate": "Wed, 31 May 2017 11:51:08 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Tue, 18 Jul 2017 13:53:43 GMT",
+    "components": 42,
+    "interactions": 51,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 2150,
+        "creationDate": "Wed, 31 May 2017 11:51:08 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": {
+      "[model]VERSION[0021].Layout[Analysis]AnalysisGraphView.model": {
+        "left": 0.3310901467505241,
+        "top": 0,
+        "width": 0.5389098532494759,
+        "height": 1
+      },
+      "[model]VERSION[0021].Layout[Simulation]SimulationGraphView.model": {
+        "left": 0.67,
+        "top": 0,
+        "width": 0.32857449088960333,
+        "height": 1
+      },
+      "[model]VERSION[0021].Layout[Simulation].model": {
+        "views": {
+          "SimulationInternalComponentsView": 0,
+          "SimulationNetAbsoluteView": 1,
+          "SimulationExternalComponentsView": 2,
+          "SimulationControlView": 3,
+          "SimulationGraphView": 4
+        }
+      },
+      "[model]VERSION[0021].application.model": {
+        "favorites": [
+          "Model",
+          "Simulation",
+          "Analysis",
+          "Network Analysis",
+          "Knowledge Base",
+          "Description"
+        ],
+        "section": [
+          "Shared with Me"
+        ],
+        "layout": "Model",
+        "layouts": {
+          "": {}
+        }
+      },
+      "[model]VERSION[0021].Layout[Analysis].model": {
+        "views": {
+          "ExperimentsView": 0,
+          "ExperimentInternalComponentsView": 1,
+          "AnalysisComponentsView": 2,
+          "ExperimentView": 3,
+          "AnalysisGraphView": 4,
+          "ExperimentExternalComponentsView": 5
+        }
+      },
+      "[model]VERSION[0021].Layout[Description][research].model": {
+        "views": {
+          "DescriptionView": 0,
+          "ReferencesView": 1
+        }
+      },
+      "[model]VERSION[0021].Layout[Knowledge Base].model": {
+        "views": {
+          "PagesView": 0,
+          "PageView": 1,
+          "ReferenceGraphView": 2
+        }
+      },
+      "[model]VERSION[0021].Layout[Topology].model": {
+        "views": {
+          "ConnectivityView": 0,
+          "InDegreeView": 1,
+          "OutDegreeView": 2,
+          "ClosenessView": 3,
+          "TopologyView": 4
+        }
+      },
+      "[model]VERSION[0021].Layout[Model].model": {
+        "views": {
+          "LoggerView": 0,
+          "InternalComponentsView": 1,
+          "ExternalComponentsView": 2,
+          "RegulationCenterView(Biologic)": 3,
+          "PageView": 5,
+          "ModelGraphView": 6
+        }
+      }
+    },
+    "initialStateId": null,
+    "layoutId": 5844,
+    "content": null
+  },
+  "source_hash": "-1357122753",
+  "version": "1"
+}

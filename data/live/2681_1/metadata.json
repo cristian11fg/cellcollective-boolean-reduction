@@ -1,0 +1,73 @@
+{
+  "id": "2681_1",
+  "name": "Cell Cycle Transcription by Coupled CDK and Network Oscillators",
+  "input-names": [],
+  "variable-names": [
+    "v_SFF",
+    "v_MBF",
+    "v_YHP1",
+    "v_YOX1",
+    "v_HCM1",
+    "v_CLN3",
+    "v_ACE2",
+    "v_SBF",
+    "v_SWI5"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "MBF": "v_MBF",
+    "HCM1": "v_HCM1",
+    "SWI5": "v_SWI5",
+    "YHP1": "v_YHP1",
+    "YOX1": "v_YOX1",
+    "SFF": "v_SFF",
+    "CLN3": "v_CLN3",
+    "ACE2": "v_ACE2",
+    "SBF": "v_SBF"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 9,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 2681,
+    "name": "Cell Cycle Transcription by Coupled CDK and Network Oscillators",
+    "description": "A significant fraction of the Saccharomyces cerevisiae genome is transcribed periodically during the cell division cycle, indicating that properly timed gene expression is important for regulating cell-cycle events. Genomic analyses of the localization and expression dynamics of transcription factors suggest that a network of sequentially expressed transcription factors could control the temporal programme of transcription during the cell cycle3. However, directed studies interrogating small numbers of genes indicate that their periodic transcription is governed by the activity of cyclin-dependent kinases (CDKs)4. To determine the extent to which the global cell-cycle transcription programme is controlled by cyclin\u2013CDK complexes, we examined genome-wide transcription dynamics in budding yeast mutant cells that do not express S-phase and mitotic cyclins. Here we show that a significant fraction of periodic genes are aberrantly expressed in the cyclin mutant. Although cells lacking cyclins are blocked at the G1/S border, nearly 70% of periodic genes continued to be expressed periodically and on schedule. Our findings reveal that although CDKs have a function in the regulation of cell-cycle transcription, they are not solely responsible for establishing the global periodic transcription programme. We propose that periodic transcription is an emergent property of a transcription factor network that can function as a cell-cycle oscillator independently of, and in tandem with, the CDK oscillator.",
+    "tags": "",
+    "userId": 686,
+    "author": "DA Orlando et. al.",
+    "creationDate": "Thu, 05 Feb 2015 09:45:30 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": null,
+    "components": 9,
+    "interactions": 19,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": 170,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 686,
+        "creationDate": "Thu, 05 Feb 2015 09:45:30 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "233631033",
+  "version": "1"
+}

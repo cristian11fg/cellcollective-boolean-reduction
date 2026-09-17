@@ -1,0 +1,19 @@
+{
+"level_of_var": {"v_Akkermansia_": 0, "v_Barnesiella": 1, "v_Blautia": 2, "v_Clindamycin_": 3, "v_Clostridium_difficile": 4, "v_Coprobacillus": 5, "v_Enterobacteriaceae": 6, "v_Enterococcus": 7, "v_Lachnospiraceae": 8, "v_Lachnospiraceae_other_": 9, "v_Mollicutes": 10, "v_Other": 11},
+"roots": {"final:v_Enterobacteriaceae": 2, "final:v_Clostridium_difficile": 49, "final:v_Lachnospiraceae_other_": -18, "final:v_Other": -18, "final:v_Clindamycin_": 8, "final:v_Mollicutes": 21, "final:v_Lachnospiraceae": -18, "final:v_Coprobacillus": 3, "step:0:v_Enterococcus": 47, "step:1:v_Akkermansia_": 3, "step:2:v_Barnesiella": -18, "step:3:v_Blautia": 1},
+"2": [6, "F", "T"],
+"14": [11, "F", "T"],
+"16": [9, 14, "T"],
+"17": [8, 16, "T"],
+"48": [4, "T", 17],
+"4": [4, "F", "T"],
+"49": [3, -48, 4],
+"18": [3, -17, "T"],
+"8": [3, "F", "T"],
+"21": [10, "F", "T"],
+"3": [5, "F", "T"],
+"33": [6, 21, "T"],
+"45": [5, "T", 33],
+"46": [4, 45, "T"],
+"47": [2, 46, "T"]
+}

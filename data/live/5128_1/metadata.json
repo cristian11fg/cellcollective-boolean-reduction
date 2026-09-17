@@ -1,0 +1,82 @@
+{
+  "id": "5128_1",
+  "name": "Lac Operon",
+  "input-names": [
+    "v_Le",
+    "v_Ge",
+    "v_Lem"
+  ],
+  "variable-names": [
+    "v_L",
+    "v_Am",
+    "v_Lm",
+    "v_M",
+    "v_A",
+    "v_C",
+    "v_P",
+    "v_R",
+    "v_B",
+    "v_Rm"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "Le": "v_Le",
+    "L": "v_L",
+    "Am": "v_Am",
+    "P": "v_P",
+    "B": "v_B",
+    "M": "v_M",
+    "C": "v_C",
+    "Rm": "v_Rm",
+    "Lm": "v_Lm",
+    "R": "v_R",
+    "Ge": "v_Ge",
+    "Lem": "v_Lem",
+    "A": "v_A"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 13,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 5128,
+    "name": "Lac Operon",
+    "description": "Our model includes the two main glucose control mechanisms of catabolite repression and inducer exclusion. We show that this Boolean model is capable of predicting the ON and OFF steady states and bistability. Further, we present a reduced model which shows that lac mRNA and lactose form the core of the lac operon, and that this reduced model exhibits the same dynamics.",
+    "tags": "bistability, lac operon, E. coli",
+    "userId": 70,
+    "author": "Veliz-Cuba A and Stingler B.",
+    "creationDate": "Tue, 08 Nov 2016 10:38:26 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Tue, 06 Dec 2016 12:28:14 GMT",
+    "components": 13,
+    "interactions": 22,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": null,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": null,
+        "userId": 70,
+        "creationDate": "Tue, 08 Nov 2016 10:38:26 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": null,
+    "initialStateId": null,
+    "layoutId": null,
+    "content": null
+  },
+  "source_hash": "340007577",
+  "version": "1"
+}

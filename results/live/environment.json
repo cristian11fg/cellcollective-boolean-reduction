@@ -1,0 +1,366 @@
+{
+  "python": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+  "source_commit": null,
+  "packages": {
+    "dd": "0.6.0",
+    "z3-solver": "5.1.0.0"
+  },
+  "policies": [
+    "first",
+    "min_degree",
+    "min_growth",
+    "random"
+  ],
+  "seed": 42,
+  "seconds_per_model_limit": 240,
+  "min_growth_definition": "sum of estimated essential support size changes; not the pilot trial-table cost",
+  "outcomes": [
+    {
+      "id": "295579_1",
+      "returncode": 0
+    },
+    {
+      "id": "295578_1",
+      "returncode": 0
+    },
+    {
+      "id": "295577_1",
+      "returncode": 0
+    },
+    {
+      "id": "295576_1",
+      "returncode": 0
+    },
+    {
+      "id": "295575_1",
+      "returncode": 0
+    },
+    {
+      "id": "295574_1",
+      "returncode": 0
+    },
+    {
+      "id": "49567_1",
+      "returncode": 0
+    },
+    {
+      "id": "49566_1",
+      "returncode": 0
+    },
+    {
+      "id": "241389_1",
+      "returncode": 0
+    },
+    {
+      "id": "91515_1",
+      "returncode": 0
+    },
+    {
+      "id": "2738_1",
+      "returncode": 0
+    },
+    {
+      "id": "2171_1",
+      "returncode": 0
+    },
+    {
+      "id": "36604_1",
+      "returncode": 0
+    },
+    {
+      "id": "36604_2",
+      "returncode": 0
+    },
+    {
+      "id": "2202_1",
+      "returncode": 0
+    },
+    {
+      "id": "1607_1",
+      "returncode": 0
+    },
+    {
+      "id": "2407_1",
+      "returncode": 0
+    },
+    {
+      "id": "7916_1",
+      "returncode": 0
+    },
+    {
+      "id": "2135_1",
+      "returncode": 0
+    },
+    {
+      "id": "2309_1",
+      "returncode": 0
+    },
+    {
+      "id": "6678_1",
+      "returncode": 0
+    },
+    {
+      "id": "8558_1",
+      "returncode": 1
+    },
+    {
+      "id": "11863_1",
+      "returncode": 0
+    },
+    {
+      "id": "4850_1",
+      "returncode": 0
+    },
+    {
+      "id": "4932_1",
+      "returncode": 0
+    },
+    {
+      "id": "3511_1",
+      "returncode": 0
+    },
+    {
+      "id": "2329_1",
+      "returncode": 0
+    },
+    {
+      "id": "4837_1",
+      "returncode": 0
+    },
+    {
+      "id": "2215_1",
+      "returncode": 0
+    },
+    {
+      "id": "8186_1",
+      "returncode": 0
+    },
+    {
+      "id": "8080_1",
+      "returncode": 0
+    },
+    {
+      "id": "7984_1",
+      "returncode": 0
+    },
+    {
+      "id": "8227_1",
+      "returncode": 0
+    },
+    {
+      "id": "2136_1",
+      "returncode": 0
+    },
+    {
+      "id": "2341_1",
+      "returncode": 0
+    },
+    {
+      "id": "2396_1",
+      "returncode": 0
+    },
+    {
+      "id": "2161_1",
+      "returncode": 0
+    },
+    {
+      "id": "6885_1",
+      "returncode": 0
+    },
+    {
+      "id": "8048_1",
+      "returncode": 0
+    },
+    {
+      "id": "3509_1",
+      "returncode": 0
+    },
+    {
+      "id": "3512_1",
+      "returncode": 0
+    },
+    {
+      "id": "1969_1",
+      "returncode": 0
+    },
+    {
+      "id": "7926_1",
+      "returncode": 0
+    },
+    {
+      "id": "2314_1",
+      "returncode": 0
+    },
+    {
+      "id": "2214_1",
+      "returncode": 0
+    },
+    {
+      "id": "5884_1",
+      "returncode": 0
+    },
+    {
+      "id": "5731_1",
+      "returncode": 0
+    },
+    {
+      "id": "4942_1",
+      "returncode": 0
+    },
+    {
+      "id": "4783_1",
+      "returncode": 0
+    },
+    {
+      "id": "4775_1",
+      "returncode": 0
+    },
+    {
+      "id": "5025_1",
+      "returncode": 0
+    },
+    {
+      "id": "4706_1",
+      "returncode": 0
+    },
+    {
+      "id": "4779_1",
+      "returncode": 0
+    },
+    {
+      "id": "4790_1",
+      "returncode": 0
+    },
+    {
+      "id": "4705_1",
+      "returncode": 0
+    },
+    {
+      "id": "4601_1",
+      "returncode": 0
+    },
+    {
+      "id": "5128_1",
+      "returncode": 0
+    },
+    {
+      "id": "2423_1",
+      "returncode": 0
+    },
+    {
+      "id": "2394_1",
+      "returncode": 0
+    },
+    {
+      "id": "2901_1",
+      "returncode": 0
+    },
+    {
+      "id": "2172_1",
+      "returncode": 0
+    },
+    {
+      "id": "1778_1",
+      "returncode": 0
+    },
+    {
+      "id": "2035_1",
+      "returncode": 0
+    },
+    {
+      "id": "2084_1",
+      "returncode": 0
+    },
+    {
+      "id": "2404_1",
+      "returncode": 0
+    },
+    {
+      "id": "2663_1",
+      "returncode": 0
+    },
+    {
+      "id": "2667_1",
+      "returncode": 0
+    },
+    {
+      "id": "2668_1",
+      "returncode": 0
+    },
+    {
+      "id": "2669_1",
+      "returncode": 0
+    },
+    {
+      "id": "2681_1",
+      "returncode": 0
+    },
+    {
+      "id": "2691_1",
+      "returncode": 0
+    },
+    {
+      "id": "2697_1",
+      "returncode": 0
+    },
+    {
+      "id": "2698_1",
+      "returncode": 0
+    },
+    {
+      "id": "2699_1",
+      "returncode": 0
+    },
+    {
+      "id": "2700_1",
+      "returncode": 0
+    },
+    {
+      "id": "2701_1",
+      "returncode": 0
+    },
+    {
+      "id": "2703_1",
+      "returncode": 0
+    },
+    {
+      "id": "3481_1",
+      "returncode": 0
+    },
+    {
+      "id": "3491_1",
+      "returncode": 0
+    },
+    {
+      "id": "3492_1",
+      "returncode": 0
+    },
+    {
+      "id": "3493_1",
+      "returncode": 0
+    },
+    {
+      "id": "3506_1",
+      "returncode": 0
+    },
+    {
+      "id": "3510_1",
+      "returncode": 0
+    },
+    {
+      "id": "3521_1",
+      "returncode": 0
+    }
+  ],
+  "code_sha256": {
+    "src/ccreduce/__init__.py": "5fc3d62d6d08c519afe44c17c7a5a06113331a785b99b7d4740fc9230ffaad1e",
+    "src/ccreduce/boolean.py": "4f181f044be98b67f5b52991735af61c08a88b840072586b59ac553012062a9b",
+    "src/ccreduce/fixed_points.py": "4db413e956bc92107586c499b373d9977a2e71366278da25f59ede4ec71aca26",
+    "src/ccreduce/metrics.py": "8df7b9e94d8a4a15c7a017298a6ba937d201fbad67c6c45d64a953c14d29f7d6",
+    "src/ccreduce/parser.py": "099e85fb773471461d76100f0a81113518539eda2b14d849b4933a838295efff",
+    "src/ccreduce/reduction.py": "39855e683fd36e8c21b0a99ee6cc74b07a14a29327a5e0d886befe6094a4d1e4",
+    "src/ccreduce/sbml.py": "febfbdfb788e9191182a7de6d7bb5641bb0a0d9e9e0cbf322f5bf519f0a90654",
+    "src/ccreduce/structure.py": "0a55e3108196c68ee6d5b71de3b284426943fbc3426b4c4ef8de8aa5723e4de9",
+    "src/ccreduce/symbolic.py": "86ce131b8b0db6058da034f4676a986aadf2e25c5727f844cf328933b8267047"
+  }
+}

@@ -1,0 +1,3867 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "050",
+  "name": "CD4-T-CELL-SIGNALING",
+  "policy": "random",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 188,
+  "after": {
+    "nodes": 41,
+    "n_nodes": 41,
+    "inputs": 34,
+    "internal_nodes": 7,
+    "nonconstant_rules": 7,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_APC": "+",
+      "v_FOXP3": "+",
+      "v_RORGT": "+",
+      "v_STAT3": "+",
+      "v_STAT5_HIGH": "+",
+      "v_CGC": "+",
+      "v_GATA3": "-",
+      "v_TBET": "+",
+      "v_proliferation": "+",
+      "v_IL2RB": "+",
+      "v_IL2_e": "+",
+      "v_GP130": "+",
+      "v_IFNB_e": "+",
+      "v_IFNGR1": "+",
+      "v_IFNGR2": "+",
+      "v_IFNG_e": "+",
+      "v_IL12_e": "+",
+      "v_IL27RA": "+",
+      "v_IL27_e": "+",
+      "v_IL4_e": "-",
+      "v_IL10RA": "+",
+      "v_IL10RB": "+",
+      "v_IL10_e": "+",
+      "v_IL21_e": "+",
+      "v_IL23_e": "+",
+      "v_IL6RA": "+",
+      "v_IL6_e": "+",
+      "v_TGFB_e": "+"
+    },
+    "positive_edges": 49,
+    "negative_edges": 20,
+    "non_unate_edges": 3,
+    "has_multi_input_rule": true,
+    "edges": 72,
+    "max_indegree": 18,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 4,
+      "MAX": 1
+    },
+    "conflicts": {
+      "v_CGC": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT3": "+",
+        "v_STAT5_HIGH": "+",
+        "v_TBET": "-"
+      },
+      "v_FOXP3": {
+        "v_FOXP3": "+",
+        "v_RORGT": "+",
+        "v_STAT5_HIGH": "-",
+        "v_TBET": "-"
+      },
+      "v_GATA3": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT3": "+",
+        "v_STAT5_HIGH": "mixed",
+        "v_TBET": "-"
+      },
+      "v_GP130": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+"
+      },
+      "v_IFNB_e": {
+        "v_FOXP3": "-",
+        "v_TBET": "+"
+      },
+      "v_IFNGR1": {
+        "v_FOXP3": "-",
+        "v_TBET": "+"
+      },
+      "v_IFNGR2": {
+        "v_FOXP3": "-",
+        "v_TBET": "+"
+      },
+      "v_IFNG_e": {
+        "v_FOXP3": "-",
+        "v_TBET": "+"
+      },
+      "v_IL12_e": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+"
+      },
+      "v_IL27RA": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+"
+      },
+      "v_IL27_e": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+"
+      },
+      "v_IL4_e": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT5_HIGH": "mixed",
+        "v_TBET": "-"
+      },
+      "v_RORGT": {
+        "v_FOXP3": "-",
+        "v_RORGT": "+",
+        "v_STAT3": "+"
+      },
+      "v_STAT3": {
+        "v_FOXP3": "mixed",
+        "v_RORGT": "+",
+        "v_STAT3": "+",
+        "v_TBET": "-"
+      },
+      "v_STAT5_HIGH": {
+        "v_FOXP3": "-",
+        "v_GATA3": "-",
+        "v_STAT5_HIGH": "+",
+        "v_TBET": "+",
+        "v_proliferation": "+"
+      },
+      "v_TBET": {
+        "v_FOXP3": "-",
+        "v_GATA3": "-",
+        "v_STAT5_HIGH": "-",
+        "v_TBET": "+"
+      }
+    },
+    "local": {
+      "v_FOXP3": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_FOXP3": "+",
+          "v_GATA3": "+",
+          "v_GP130": "-",
+          "v_IFNB_e": "-",
+          "v_IFNGR1": "-",
+          "v_IFNGR2": "-",
+          "v_IFNG_e": "-",
+          "v_IL12_e": "-",
+          "v_IL27RA": "-",
+          "v_IL27_e": "-",
+          "v_IL4_e": "+",
+          "v_RORGT": "-",
+          "v_STAT3": "mixed",
+          "v_STAT5_HIGH": "-",
+          "v_TBET": "-",
+          "v_TGFB_e": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GATA3": {
+        "signs": {
+          "v_CGC": "+",
+          "v_GATA3": "+",
+          "v_IL4_e": "+",
+          "v_STAT5_HIGH": "-",
+          "v_TBET": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RORGT": {
+        "signs": {
+          "v_APC": "+",
+          "v_FOXP3": "+",
+          "v_RORGT": "+",
+          "v_STAT3": "+",
+          "v_TGFB_e": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STAT3": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_GATA3": "+",
+          "v_GP130": "+",
+          "v_IL10RA": "+",
+          "v_IL10RB": "+",
+          "v_IL10_e": "+",
+          "v_IL12_e": "+",
+          "v_IL21_e": "+",
+          "v_IL23_e": "+",
+          "v_IL27RA": "+",
+          "v_IL27_e": "+",
+          "v_IL6RA": "+",
+          "v_IL6_e": "+",
+          "v_RORGT": "+",
+          "v_STAT3": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STAT5_HIGH": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_FOXP3": "-",
+          "v_GATA3": "mixed",
+          "v_IL2RB": "+",
+          "v_IL2_e": "+",
+          "v_IL4_e": "mixed",
+          "v_STAT5_HIGH": "+",
+          "v_TBET": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TBET": {
+        "signs": {
+          "v_CGC": "-",
+          "v_FOXP3": "-",
+          "v_GATA3": "-",
+          "v_GP130": "+",
+          "v_IFNB_e": "+",
+          "v_IFNGR1": "+",
+          "v_IFNGR2": "+",
+          "v_IFNG_e": "+",
+          "v_IL12_e": "+",
+          "v_IL27RA": "+",
+          "v_IL27_e": "+",
+          "v_IL4_e": "-",
+          "v_STAT3": "-",
+          "v_STAT5_HIGH": "+",
+          "v_TBET": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_proliferation": {
+        "signs": {
+          "v_STAT5_HIGH": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 41,
+    "n_nodes": 41,
+    "inputs": 34,
+    "internal_nodes": 7,
+    "nonconstant_rules": 41,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 41,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_APC": "+",
+      "v_FOXP3": "+",
+      "v_RORGT": "+",
+      "v_STAT3": "+",
+      "v_STAT5_HIGH": "+",
+      "v_CGC": "+",
+      "v_GATA3": "-",
+      "v_TBET": "+",
+      "v_proliferation": "+",
+      "v_IL2RB": "+",
+      "v_IL2_e": "+",
+      "v_GP130": "+",
+      "v_IFNB_e": "+",
+      "v_IFNGR1": "+",
+      "v_IFNGR2": "+",
+      "v_IFNG_e": "+",
+      "v_IL12_e": "+",
+      "v_IL27RA": "+",
+      "v_IL27_e": "+",
+      "v_IL4_e": "-",
+      "v_IL10RA": "+",
+      "v_IL10RB": "+",
+      "v_IL10_e": "+",
+      "v_IL21_e": "+",
+      "v_IL23_e": "+",
+      "v_IL6RA": "+",
+      "v_IL6_e": "+",
+      "v_TGFB_e": "+",
+      "v_B7": "+",
+      "v_CAV1_ACTIVATOR": "+",
+      "v_ECM": "+",
+      "v_GalphaS_L": "+",
+      "v_Galpha_QL": "+",
+      "v_Galpha_iL": "+",
+      "v_IL15RA": "+",
+      "v_IL15_e": "+",
+      "v_IL18_e": "+",
+      "v_IL22_e": "+",
+      "v_IL9_e": "+",
+      "v_MHC_II": "+",
+      "v_alpha_13L": "+"
+    },
+    "positive_edges": 83,
+    "negative_edges": 20,
+    "non_unate_edges": 3,
+    "has_multi_input_rule": true,
+    "edges": 106,
+    "max_indegree": 18,
+    "local_family_counts": {
+      "NON_UNATE": 2,
+      "UNATE_OTHER": 4,
+      "MAX": 1,
+      "MIN_MAX": 34
+    },
+    "conflicts": {
+      "v_CGC": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT3": "+",
+        "v_STAT5_HIGH": "+",
+        "v_TBET": "-",
+        "v_CGC": "+"
+      },
+      "v_FOXP3": {
+        "v_FOXP3": "+",
+        "v_RORGT": "+",
+        "v_STAT5_HIGH": "-",
+        "v_TBET": "-"
+      },
+      "v_GATA3": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT3": "+",
+        "v_STAT5_HIGH": "mixed",
+        "v_TBET": "-"
+      },
+      "v_GP130": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+",
+        "v_GP130": "+"
+      },
+      "v_IFNB_e": {
+        "v_FOXP3": "-",
+        "v_TBET": "+",
+        "v_IFNB_e": "+"
+      },
+      "v_IFNGR1": {
+        "v_FOXP3": "-",
+        "v_TBET": "+",
+        "v_IFNGR1": "+"
+      },
+      "v_IFNGR2": {
+        "v_FOXP3": "-",
+        "v_TBET": "+",
+        "v_IFNGR2": "+"
+      },
+      "v_IFNG_e": {
+        "v_FOXP3": "-",
+        "v_TBET": "+",
+        "v_IFNG_e": "+"
+      },
+      "v_IL12_e": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+",
+        "v_IL12_e": "+"
+      },
+      "v_IL27RA": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+",
+        "v_IL27RA": "+"
+      },
+      "v_IL27_e": {
+        "v_FOXP3": "-",
+        "v_STAT3": "+",
+        "v_TBET": "+",
+        "v_IL27_e": "+"
+      },
+      "v_IL4_e": {
+        "v_FOXP3": "+",
+        "v_GATA3": "+",
+        "v_STAT5_HIGH": "mixed",
+        "v_TBET": "-",
+        "v_IL4_e": "+"
+      },
+      "v_RORGT": {
+        "v_FOXP3": "-",
+        "v_RORGT": "+",
+        "v_STAT3": "+"
+      },
+      "v_STAT3": {
+        "v_FOXP3": "mixed",
+        "v_RORGT": "+",
+        "v_STAT3": "+",
+        "v_TBET": "-"
+      },
+      "v_STAT5_HIGH": {
+        "v_FOXP3": "-",
+        "v_GATA3": "-",
+        "v_STAT5_HIGH": "+",
+        "v_TBET": "+",
+        "v_proliferation": "+"
+      },
+      "v_TBET": {
+        "v_FOXP3": "-",
+        "v_GATA3": "-",
+        "v_STAT5_HIGH": "-",
+        "v_TBET": "+"
+      }
+    },
+    "local": {
+      "v_FOXP3": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_FOXP3": "+",
+          "v_GATA3": "+",
+          "v_GP130": "-",
+          "v_IFNB_e": "-",
+          "v_IFNGR1": "-",
+          "v_IFNGR2": "-",
+          "v_IFNG_e": "-",
+          "v_IL12_e": "-",
+          "v_IL27RA": "-",
+          "v_IL27_e": "-",
+          "v_IL4_e": "+",
+          "v_RORGT": "-",
+          "v_STAT3": "mixed",
+          "v_STAT5_HIGH": "-",
+          "v_TBET": "-",
+          "v_TGFB_e": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_GATA3": {
+        "signs": {
+          "v_CGC": "+",
+          "v_GATA3": "+",
+          "v_IL4_e": "+",
+          "v_STAT5_HIGH": "-",
+          "v_TBET": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_RORGT": {
+        "signs": {
+          "v_APC": "+",
+          "v_FOXP3": "+",
+          "v_RORGT": "+",
+          "v_STAT3": "+",
+          "v_TGFB_e": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STAT3": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_GATA3": "+",
+          "v_GP130": "+",
+          "v_IL10RA": "+",
+          "v_IL10RB": "+",
+          "v_IL10_e": "+",
+          "v_IL12_e": "+",
+          "v_IL21_e": "+",
+          "v_IL23_e": "+",
+          "v_IL27RA": "+",
+          "v_IL27_e": "+",
+          "v_IL6RA": "+",
+          "v_IL6_e": "+",
+          "v_RORGT": "+",
+          "v_STAT3": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STAT5_HIGH": {
+        "signs": {
+          "v_APC": "+",
+          "v_CGC": "+",
+          "v_FOXP3": "-",
+          "v_GATA3": "mixed",
+          "v_IL2RB": "+",
+          "v_IL2_e": "+",
+          "v_IL4_e": "mixed",
+          "v_STAT5_HIGH": "+",
+          "v_TBET": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TBET": {
+        "signs": {
+          "v_CGC": "-",
+          "v_FOXP3": "-",
+          "v_GATA3": "-",
+          "v_GP130": "+",
+          "v_IFNB_e": "+",
+          "v_IFNGR1": "+",
+          "v_IFNGR2": "+",
+          "v_IFNG_e": "+",
+          "v_IL12_e": "+",
+          "v_IL27RA": "+",
+          "v_IL27_e": "+",
+          "v_IL4_e": "-",
+          "v_STAT3": "-",
+          "v_STAT5_HIGH": "+",
+          "v_TBET": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_proliferation": {
+        "signs": {
+          "v_STAT5_HIGH": "+",
+          "v_proliferation": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_APC": {
+        "signs": {
+          "v_APC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_B7": {
+        "signs": {
+          "v_B7": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CAV1_ACTIVATOR": {
+        "signs": {
+          "v_CAV1_ACTIVATOR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CGC": {
+        "signs": {
+          "v_CGC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_ECM": {
+        "signs": {
+          "v_ECM": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GP130": {
+        "signs": {
+          "v_GP130": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_GalphaS_L": {
+        "signs": {
+          "v_GalphaS_L": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Galpha_QL": {
+        "signs": {
+          "v_Galpha_QL": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Galpha_iL": {
+        "signs": {
+          "v_Galpha_iL": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNB_e": {
+        "signs": {
+          "v_IFNB_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNGR1": {
+        "signs": {
+          "v_IFNGR1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNGR2": {
+        "signs": {
+          "v_IFNGR2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IFNG_e": {
+        "signs": {
+          "v_IFNG_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL10RA": {
+        "signs": {
+          "v_IL10RA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL10RB": {
+        "signs": {
+          "v_IL10RB": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL10_e": {
+        "signs": {
+          "v_IL10_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL12_e": {
+        "signs": {
+          "v_IL12_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL15RA": {
+        "signs": {
+          "v_IL15RA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL15_e": {
+        "signs": {
+          "v_IL15_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL18_e": {
+        "signs": {
+          "v_IL18_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL21_e": {
+        "signs": {
+          "v_IL21_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL22_e": {
+        "signs": {
+          "v_IL22_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL23_e": {
+        "signs": {
+          "v_IL23_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL27RA": {
+        "signs": {
+          "v_IL27RA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL27_e": {
+        "signs": {
+          "v_IL27_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL2RB": {
+        "signs": {
+          "v_IL2RB": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL2_e": {
+        "signs": {
+          "v_IL2_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4_e": {
+        "signs": {
+          "v_IL4_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL6RA": {
+        "signs": {
+          "v_IL6RA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL6_e": {
+        "signs": {
+          "v_IL6_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL9_e": {
+        "signs": {
+          "v_IL9_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_MHC_II": {
+        "signs": {
+          "v_MHC_II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TGFB_e": {
+        "signs": {
+          "v_TGFB_e": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_alpha_13L": {
+        "signs": {
+          "v_alpha_13L": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 0,
+        "v_IFNGR2": 0,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 1,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 1,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 1,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 1,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 0,
+        "v_IFNGR2": 0,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 0,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 0,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 0,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 0,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 1,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 1,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 0,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 1,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 1,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 0,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 1,
+        "v_IFNGR2": 1,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 1,
+        "v_IL2_e": 1,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 1,
+        "v_proliferation": 0
+      },
+      {
+        "v_APC": 0,
+        "v_B7": 0,
+        "v_CAV1_ACTIVATOR": 0,
+        "v_CGC": 1,
+        "v_ECM": 0,
+        "v_FOXP3": 0,
+        "v_GATA3": 0,
+        "v_GP130": 0,
+        "v_GalphaS_L": 1,
+        "v_Galpha_QL": 0,
+        "v_Galpha_iL": 0,
+        "v_IFNB_e": 0,
+        "v_IFNGR1": 0,
+        "v_IFNGR2": 0,
+        "v_IFNG_e": 0,
+        "v_IL10RA": 1,
+        "v_IL10RB": 1,
+        "v_IL10_e": 0,
+        "v_IL12_e": 0,
+        "v_IL15RA": 0,
+        "v_IL15_e": 0,
+        "v_IL18_e": 0,
+        "v_IL21_e": 0,
+        "v_IL22_e": 0,
+        "v_IL23_e": 0,
+        "v_IL27RA": 0,
+        "v_IL27_e": 0,
+        "v_IL2RB": 0,
+        "v_IL2_e": 0,
+        "v_IL4_e": 0,
+        "v_IL6RA": 0,
+        "v_IL6_e": 0,
+        "v_IL9_e": 0,
+        "v_MHC_II": 0,
+        "v_RORGT": 0,
+        "v_STAT3": 0,
+        "v_STAT5_HIGH": 0,
+        "v_TBET": 1,
+        "v_TGFB_e": 0,
+        "v_alpha_13L": 1,
+        "v_proliferation": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_FOXP3": "[see BDD artifact]",
+    "v_GATA3": "((v_CGC & ((v_GATA3 & 1) | (!v_GATA3 & !(((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL4_e & 1)))))) | (!v_CGC & ((v_GATA3 & 1) | (!v_GATA3 & 0))))",
+    "v_RORGT": "((v_APC & ((v_FOXP3 & ((v_RORGT & ((v_STAT3 & 1) | (!v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & ((v_proliferation & 1) | (!v_proliferation & 0))))))) | (!v_RORGT & ((v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & ((v_proliferation & 1) | (!v_proliferation & 0))))) | (!v_STAT3 & 0))))) | (!v_FOXP3 & ((v_RORGT & ((v_STAT3 & 1) | (!v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & 0))))) | (!v_RORGT & ((v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & 0))) | (!v_STAT3 & 0))))))) | (!v_APC & ((v_RORGT & ((v_STAT3 & 1) | (!v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & 0))))) | (!v_RORGT & ((v_STAT3 & ((v_TGFB_e & 1) | (!v_TGFB_e & 0))) | (!v_STAT3 & 0))))))",
+    "v_STAT3": "[see BDD artifact]",
+    "v_STAT5_HIGH": "((v_APC & ((v_CGC & ((v_FOXP3 & ((v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))))) | (!v_IL2RB & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))))) | (!v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 0))))) | (!v_IL2RB & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 0))))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))))) | (!v_IL2RB & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))))) | (!v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & !(((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 0))))))))) | (!v_CGC & 0))) | (!v_APC & ((v_CGC & ((v_GATA3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_GATA3 & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 0))))) | (!v_CGC & 0))))",
+    "v_TBET": "!(((v_CGC & ((v_FOXP3 & ((v_GATA3 & 1) | (!v_GATA3 & !(((v_GP130 & ((v_IFNB_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNG_e & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR2 & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR1 & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_GP130 & ((v_IFNB_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNG_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR2 & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR1 & ((v_TBET & 1) | (!v_TBET & 0)))))))))))) | (!v_FOXP3 & ((v_GATA3 & 1) | (!v_GATA3 & !(((v_GP130 & ((v_IFNB_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNG_e & ((v_IL12_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL12_e & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_IFNGR2 & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR1 & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_GP130 & ((v_IFNB_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IFNG_e & ((v_IL12_e & ((v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IL4_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))))) | (!v_IL12_e & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR2 & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR1 & ((v_TBET & 1) | (!v_TBET & 0)))))))))))))) | (!v_CGC & ((v_FOXP3 & ((v_GATA3 & 1) | (!v_GATA3 & !(((v_GP130 & ((v_IFNB_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNG_e & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR2 & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR1 & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_GP130 & ((v_IFNB_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNG_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR2 & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR1 & ((v_TBET & 1) | (!v_TBET & 0)))))))))))) | (!v_FOXP3 & ((v_GATA3 & 1) | (!v_GATA3 & !(((v_GP130 & ((v_IFNB_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNG_e & ((v_IL12_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL12_e & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_IFNGR2 & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR1 & ((v_IL27RA & ((v_IL27_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL27_e & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IL27RA & ((v_TBET & 1) | (!v_TBET & 0))))))))) | (!v_GP130 & ((v_IFNB_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNB_e & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IFNG_e & ((v_IL12_e & ((v_STAT3 & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT3 & 1))) | (!v_IL12_e & ((v_TBET & 1) | (!v_TBET & 0))))))) | (!v_IFNGR2 & ((v_TBET & 1) | (!v_TBET & 0))))) | (!v_IFNGR1 & ((v_TBET & 1) | (!v_TBET & 0))))))))))))))))",
+    "v_proliferation": "v_STAT5_HIGH | v_proliferation",
+    "v_APC": "v_APC",
+    "v_B7": "v_B7",
+    "v_CAV1_ACTIVATOR": "v_CAV1_ACTIVATOR",
+    "v_CGC": "v_CGC",
+    "v_ECM": "v_ECM",
+    "v_GP130": "v_GP130",
+    "v_GalphaS_L": "v_GalphaS_L",
+    "v_Galpha_QL": "v_Galpha_QL",
+    "v_Galpha_iL": "v_Galpha_iL",
+    "v_IFNB_e": "v_IFNB_e",
+    "v_IFNGR1": "v_IFNGR1",
+    "v_IFNGR2": "v_IFNGR2",
+    "v_IFNG_e": "v_IFNG_e",
+    "v_IL10RA": "v_IL10RA",
+    "v_IL10RB": "v_IL10RB",
+    "v_IL10_e": "v_IL10_e",
+    "v_IL12_e": "v_IL12_e",
+    "v_IL15RA": "v_IL15RA",
+    "v_IL15_e": "v_IL15_e",
+    "v_IL18_e": "v_IL18_e",
+    "v_IL21_e": "v_IL21_e",
+    "v_IL22_e": "v_IL22_e",
+    "v_IL23_e": "v_IL23_e",
+    "v_IL27RA": "v_IL27RA",
+    "v_IL27_e": "v_IL27_e",
+    "v_IL2RB": "v_IL2RB",
+    "v_IL2_e": "v_IL2_e",
+    "v_IL4_e": "v_IL4_e",
+    "v_IL6RA": "v_IL6RA",
+    "v_IL6_e": "v_IL6_e",
+    "v_IL9_e": "v_IL9_e",
+    "v_MHC_II": "v_MHC_II",
+    "v_TGFB_e": "v_TGFB_e",
+    "v_alpha_13L": "v_alpha_13L"
+  },
+  "steps": [
+    {
+      "node": "v_FYN",
+      "support": [
+        "v_CAV1_scaffold",
+        "v_CD3",
+        "v_TCR"
+      ],
+      "function": "((v_CAV1_scaffold & 1) | (!v_CAV1_scaffold & ((v_CD3 & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_CD3 & 0))))"
+    },
+    {
+      "node": "v_Bcl10_Carma1_MALTI",
+      "support": [
+        "v_BCL10_Malt1",
+        "v_CARMA1"
+      ],
+      "function": "v_BCL10_Malt1 & v_CARMA1"
+    },
+    {
+      "node": "v_IL4R_HIGH",
+      "support": [
+        "v_CGC",
+        "v_IL4",
+        "v_IL4RA_HIGH",
+        "v_IL4_e"
+      ],
+      "function": "((v_CGC & ((v_IL4 & ((v_IL4RA_HIGH & 1) | (!v_IL4RA_HIGH & 0))) | (!v_IL4 & ((v_IL4RA_HIGH & ((v_IL4_e & 1) | (!v_IL4_e & 0))) | (!v_IL4RA_HIGH & 0))))) | (!v_CGC & 0))"
+    },
+    {
+      "node": "v_IL27R",
+      "support": [
+        "v_GP130",
+        "v_IL27RA",
+        "v_IL27_e"
+      ],
+      "function": "v_GP130 & v_IL27RA & v_IL27_e"
+    },
+    {
+      "node": "v_IL21R",
+      "support": [
+        "v_CGC",
+        "v_GP130",
+        "v_IL21",
+        "v_IL21_e"
+      ],
+      "function": "((v_CGC & ((v_GP130 & ((v_IL21 & 1) | (!v_IL21 & ((v_IL21_e & 1) | (!v_IL21_e & 0))))) | (!v_GP130 & 0))) | (!v_CGC & 0))"
+    },
+    {
+      "node": "v_Gads",
+      "support": [
+        "v_LAT"
+      ],
+      "function": "v_LAT"
+    },
+    {
+      "node": "v_FAK_Tyr397",
+      "support": [
+        "v_Bintegrin"
+      ],
+      "function": "v_Bintegrin"
+    },
+    {
+      "node": "v_adenyl_cyclase",
+      "support": [
+        "v_GalphaS_R"
+      ],
+      "function": "v_GalphaS_R"
+    },
+    {
+      "node": "v_EPAC",
+      "support": [
+        "v_cAMP"
+      ],
+      "function": "v_cAMP"
+    },
+    {
+      "node": "v_ROCK",
+      "support": [
+        "v_RhoA"
+      ],
+      "function": "v_RhoA"
+    },
+    {
+      "node": "v_CARMA1",
+      "support": [
+        "v_CD26",
+        "v_PKC"
+      ],
+      "function": "v_CD26 | v_PKC"
+    },
+    {
+      "node": "v_C3G",
+      "support": [
+        "v_Crk"
+      ],
+      "function": "v_Crk"
+    },
+    {
+      "node": "v_F_Actin",
+      "support": [
+        "v_Arp2_3",
+        "v_G_Actin"
+      ],
+      "function": "v_Arp2_3 & v_G_Actin"
+    },
+    {
+      "node": "v_IL2R",
+      "support": [
+        "v_CGC",
+        "v_IL2",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e"
+      ],
+      "function": "!(((v_CGC & ((v_IL2 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & 1) | (!v_IL2RB & 0)))))) | (!v_IL2 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))))) | (!v_CGC & 1)))"
+    },
+    {
+      "node": "v_IL4RA",
+      "support": [
+        "v_STAT5_HIGH"
+      ],
+      "function": "!v_STAT5_HIGH"
+    },
+    {
+      "node": "v_Vav",
+      "support": [
+        "v_SLP_76"
+      ],
+      "function": "v_SLP_76"
+    },
+    {
+      "node": "v_Bintegrin",
+      "support": [
+        "v_ECM",
+        "v_TCR"
+      ],
+      "function": "v_ECM | v_TCR"
+    },
+    {
+      "node": "v_IL22",
+      "support": [
+        "v_STAT1",
+        "v_STAT3",
+        "v_STAT4",
+        "v_STAT5"
+      ],
+      "function": "v_STAT1 | v_STAT3 | v_STAT4 | v_STAT5"
+    },
+    {
+      "node": "v_SLP_76",
+      "support": [
+        "v_LAT",
+        "v_ZAP_70"
+      ],
+      "function": "v_LAT | v_ZAP_70"
+    },
+    {
+      "node": "v_IL4R",
+      "support": [
+        "v_CGC",
+        "v_IL4",
+        "v_IL4_e",
+        "v_STAT5_HIGH"
+      ],
+      "function": "!(((v_CGC & ((v_IL4 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4 & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 1))))) | (!v_CGC & 1)))"
+    },
+    {
+      "node": "v_STAT6",
+      "support": [
+        "v_CGC",
+        "v_IL4",
+        "v_IL4_e",
+        "v_STAT5_HIGH"
+      ],
+      "function": "!(((v_CGC & ((v_IL4 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4 & ((v_IL4_e & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_IL4_e & 1))))) | (!v_CGC & 1)))"
+    },
+    {
+      "node": "v_LIMK",
+      "support": [
+        "v_PAK",
+        "v_RhoA"
+      ],
+      "function": "v_PAK | v_RhoA"
+    },
+    {
+      "node": "v_AP1",
+      "support": [
+        "v_ERK",
+        "v_JNK",
+        "v_STAT4"
+      ],
+      "function": "v_ERK | v_JNK | v_STAT4"
+    },
+    {
+      "node": "v_RIAM",
+      "support": [
+        "v_Rap1"
+      ],
+      "function": "v_Rap1"
+    },
+    {
+      "node": "v_SMAD3",
+      "support": [
+        "v_TGFBR"
+      ],
+      "function": "v_TGFBR"
+    },
+    {
+      "node": "v_FAK_576_577",
+      "support": [
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "((v_ECM & ((v_Src & 1) | (!v_Src & 0))) | (!v_ECM & ((v_Src & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_Src & 0))))"
+    },
+    {
+      "node": "v_PKC",
+      "support": [
+        "v_DAG"
+      ],
+      "function": "v_DAG"
+    },
+    {
+      "node": "v_IL4RA_HIGH",
+      "support": [
+        "v_STAT5_HIGH"
+      ],
+      "function": "v_STAT5_HIGH"
+    },
+    {
+      "node": "v_IL15R",
+      "support": [
+        "v_CGC",
+        "v_IL15RA",
+        "v_IL15_e",
+        "v_IL2RB"
+      ],
+      "function": "v_CGC & v_IL15RA & v_IL15_e & v_IL2RB"
+    },
+    {
+      "node": "v_IFNG",
+      "support": [
+        "v_ATF2",
+        "v_FOXP3",
+        "v_HLX",
+        "v_NFAT",
+        "v_RUNX3",
+        "v_STAT3",
+        "v_STAT4",
+        "v_TBET",
+        "v_proliferation"
+      ],
+      "function": "!(((v_ATF2 & ((v_FOXP3 & 1) | (!v_FOXP3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))))) | (!v_ATF2 & ((v_FOXP3 & 1) | (!v_FOXP3 & ((v_HLX & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_HLX & ((v_NFAT & ((v_RUNX3 & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT4 & 1) | (!v_STAT4 & ((v_TBET & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TBET & 0)))))))) | (!v_RUNX3 & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT4 & 1) | (!v_STAT4 & 0)))))))) | (!v_NFAT & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT4 & 1) | (!v_STAT4 & 0))))))))))))))"
+    },
+    {
+      "node": "v_ERM",
+      "support": [
+        "v_STAT4"
+      ],
+      "function": "v_STAT4"
+    },
+    {
+      "node": "v_GalphaS_R",
+      "support": [
+        "v_GalphaS_L"
+      ],
+      "function": "v_GalphaS_L"
+    },
+    {
+      "node": "v_SOCS3",
+      "support": [
+        "v_STAT3"
+      ],
+      "function": "v_STAT3"
+    },
+    {
+      "node": "v_IL21",
+      "support": [
+        "v_NFAT",
+        "v_STAT3",
+        "v_proliferation"
+      ],
+      "function": "v_NFAT & v_STAT3 & v_proliferation"
+    },
+    {
+      "node": "v_Cdc42",
+      "support": [
+        "v_Crk",
+        "v_RhoGEF"
+      ],
+      "function": "v_Crk | v_RhoGEF"
+    },
+    {
+      "node": "v_Calcineurin",
+      "support": [
+        "v_Ca2_"
+      ],
+      "function": "v_Ca2_"
+    },
+    {
+      "node": "v_IL9R",
+      "support": [
+        "v_IL9_e",
+        "v_JAK3"
+      ],
+      "function": "v_IL9_e | v_JAK3"
+    },
+    {
+      "node": "v_Cofilin",
+      "support": [
+        "v_PAK",
+        "v_RhoA"
+      ],
+      "function": "!v_PAK & !v_RhoA"
+    },
+    {
+      "node": "v_IL4",
+      "support": [
+        "v_FOXP3",
+        "v_GATA3",
+        "v_IRF1",
+        "v_IRF4",
+        "v_NFAT",
+        "v_RUNX3",
+        "v_TBET",
+        "v_proliferation"
+      ],
+      "function": "((v_FOXP3 & ((v_IRF4 & 1) | (!v_IRF4 & 0))) | (!v_FOXP3 & ((v_GATA3 & ((v_IRF1 & ((v_IRF4 & 1) | (!v_IRF4 & 0))) | (!v_IRF1 & ((v_IRF4 & 1) | (!v_IRF4 & !(((v_NFAT & ((v_RUNX3 & ((v_TBET & 1) | (!v_TBET & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_RUNX3 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_NFAT & 1)))))))) | (!v_GATA3 & ((v_IRF4 & 1) | (!v_IRF4 & 0))))))"
+    },
+    {
+      "node": "v_IL6R",
+      "support": [
+        "v_GP130",
+        "v_IL6RA",
+        "v_IL6_e"
+      ],
+      "function": "v_GP130 & v_IL6RA & v_IL6_e"
+    },
+    {
+      "node": "v_PLCg",
+      "support": [
+        "v_ITK",
+        "v_LAT",
+        "v_ZAP_70"
+      ],
+      "function": "v_ITK | v_LAT | v_ZAP_70"
+    },
+    {
+      "node": "v_IL10R",
+      "support": [
+        "v_IL10",
+        "v_IL10RA",
+        "v_IL10RB",
+        "v_IL10_e"
+      ],
+      "function": "((v_IL10 & ((v_IL10RA & ((v_IL10RB & 1) | (!v_IL10RB & 0))) | (!v_IL10RA & 0))) | (!v_IL10 & ((v_IL10RA & ((v_IL10RB & ((v_IL10_e & 1) | (!v_IL10_e & 0))) | (!v_IL10RB & 0))) | (!v_IL10RA & 0))))"
+    },
+    {
+      "node": "v_rac1",
+      "support": [
+        "v_Crk",
+        "v_LAT",
+        "v_NOS2A",
+        "v_Paxillin",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "((v_Crk & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_Paxillin & 1) | (!v_Paxillin & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))) | (!v_Crk & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))"
+    },
+    {
+      "node": "v_CAV1_scaffold",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "v_CAV1_ACTIVATOR | v_ECM | v_Src | v_TCR"
+    },
+    {
+      "node": "v_TAK1",
+      "support": [
+        "v_TRAF6"
+      ],
+      "function": "v_TRAF6"
+    },
+    {
+      "node": "v_MEK6",
+      "support": [
+        "v_MEKK4"
+      ],
+      "function": "v_MEKK4"
+    },
+    {
+      "node": "v_PAK",
+      "support": [
+        "v_Crk",
+        "v_LAT",
+        "v_NOS2A",
+        "v_Nck",
+        "v_RhoGEF",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "v_Crk | v_LAT | v_NOS2A | v_Nck | v_RhoGEF | v_ZAP_70 | v_was"
+    },
+    {
+      "node": "v_GAB2",
+      "support": [
+        "v_Grb2",
+        "v_Shc1"
+      ],
+      "function": "v_Grb2 & v_Shc1"
+    },
+    {
+      "node": "v_JAK1",
+      "support": [
+        "v_CGC",
+        "v_IL2",
+        "v_IL22R",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL9_e",
+        "v_JAK3",
+        "v_STAT3"
+      ],
+      "function": "!(((v_CGC & ((v_IL2 & ((v_IL22R & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL22R & ((v_IL2RA & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1))))) | (!v_IL2RA & ((v_IL2RB & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL2RB & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1))))))))))) | (!v_IL2 & ((v_IL22R & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL22R & ((v_IL2RA & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1))))) | (!v_IL2RA & ((v_IL2RB & ((v_IL2_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL2_e & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1))))))) | (!v_IL2RB & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1))))))))))))) | (!v_CGC & ((v_IL22R & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL22R & ((v_IL9_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL9_e & ((v_JAK3 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_JAK3 & 1)))))))))"
+    },
+    {
+      "node": "v_Cas",
+      "support": [
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "((v_ECM & ((v_Src & 1) | (!v_Src & 0))) | (!v_ECM & ((v_Src & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_Src & 0))))"
+    },
+    {
+      "node": "v_Paxillin",
+      "support": [
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "((v_ECM & ((v_Src & 1) | (!v_Src & 0))) | (!v_ECM & ((v_Src & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_Src & 0))))"
+    },
+    {
+      "node": "v_IL23R",
+      "support": [
+        "v_GP130",
+        "v_IL12RB1",
+        "v_IL23",
+        "v_IL23_e",
+        "v_RORGT",
+        "v_STAT3"
+      ],
+      "function": "((v_GP130 & ((v_IL12RB1 & ((v_IL23 & ((v_RORGT & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_RORGT & 0))) | (!v_IL23 & ((v_IL23_e & ((v_RORGT & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_RORGT & 0))) | (!v_IL23_e & 0))))) | (!v_IL12RB1 & 0))) | (!v_GP130 & 0))"
+    },
+    {
+      "node": "v_STAT4",
+      "support": [
+        "v_GATA3",
+        "v_JAK2",
+        "v_P38",
+        "v_Tyk2"
+      ],
+      "function": "!(((v_GATA3 & 1) | (!v_GATA3 & !(((v_JAK2 & 1) | (!v_JAK2 & ((v_P38 & ((v_Tyk2 & 1) | (!v_Tyk2 & 0))) | (!v_P38 & 0))))))))"
+    },
+    {
+      "node": "v_STAT1",
+      "support": [
+        "v_GP130",
+        "v_IFNBR",
+        "v_IFNGR",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_SOCS1"
+      ],
+      "function": "!(((v_GP130 & ((v_IFNBR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNBR & ((v_IFNGR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNGR & ((v_IL27RA & ((v_IL27_e & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IL27_e & 1))) | (!v_IL27RA & 1))))))) | (!v_GP130 & ((v_IFNBR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNBR & ((v_IFNGR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNGR & 1)))))))"
+    },
+    {
+      "node": "v_JAK2",
+      "support": [
+        "v_IL12RB1",
+        "v_IL12RB2"
+      ],
+      "function": "v_IL12RB1 & v_IL12RB2"
+    },
+    {
+      "node": "v_Ras",
+      "support": [
+        "v_RASgrp",
+        "v_Sos"
+      ],
+      "function": "v_RASgrp | v_Sos"
+    },
+    {
+      "node": "v_ICOS",
+      "support": [
+        "v_APC"
+      ],
+      "function": "v_APC"
+    },
+    {
+      "node": "v_CD4",
+      "support": [
+        "v_CD3",
+        "v_MHC_II",
+        "v_TCR"
+      ],
+      "function": "v_CD3 & v_MHC_II & v_TCR"
+    },
+    {
+      "node": "v_CD26",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "v_CAV1_ACTIVATOR | v_ECM | v_Src | v_TCR"
+    },
+    {
+      "node": "v_WAVE_2",
+      "support": [
+        "v_Crk",
+        "v_ECM",
+        "v_IRSp53",
+        "v_LAT",
+        "v_NOS2A",
+        "v_Src",
+        "v_TCR",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "((v_Crk & ((v_ECM & ((v_IRSp53 & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_Src & 1) | (!v_Src & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))) | (!v_IRSp53 & 0))) | (!v_ECM & ((v_IRSp53 & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_Src & ((v_TCR & 1) | (!v_TCR & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))) | (!v_Src & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))) | (!v_IRSp53 & 0))))) | (!v_Crk & ((v_IRSp53 & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))) | (!v_IRSp53 & 0))))"
+    },
+    {
+      "node": "v_IL17",
+      "support": [
+        "v_CGC",
+        "v_FOXP3",
+        "v_GP130",
+        "v_IFNBR",
+        "v_IFNGR",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_IL4_e",
+        "v_IRF4",
+        "v_NFAT",
+        "v_NFKB",
+        "v_RORGT",
+        "v_SOCS1",
+        "v_STAT3",
+        "v_STAT5",
+        "v_STAT5_HIGH",
+        "v_proliferation"
+      ],
+      "function": "!(((v_CGC & ((v_FOXP3 & ((v_GP130 & ((v_IFNBR & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))) | (!v_IFNBR & ((v_IFNGR & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))) | (!v_IFNGR & ((v_IL27RA & ((v_IL27_e & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))) | (!v_IL27_e & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))))) | (!v_IL27RA & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))))))))) | (!v_GP130 & ((v_IFNBR & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))) | (!v_IFNBR & ((v_IFNGR & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))) | (!v_IFNGR & ((v_IL4_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL4_e & ((v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_STAT5_HIGH & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT5_HIGH & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IRF4 & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))))))))) | (!v_FOXP3 & !(((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_RORGT & 0))) | (!v_NFKB & 0))) | (!v_NFAT & 0)))))) | (!v_CGC & ((v_FOXP3 & ((v_GP130 & ((v_IFNBR & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IFNBR & ((v_IFNGR & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IFNGR & ((v_IL27RA & ((v_IL27_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IL27_e & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))) | (!v_IL27RA & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))))) | (!v_GP130 & ((v_IFNBR & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IFNBR & ((v_IFNGR & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_SOCS1 & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_SOCS1 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))) | (!v_IFNGR & ((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_STAT5 & 1) | (!v_STAT5 & !(((v_proliferation & 1) | (!v_proliferation & 0)))))) | (!v_STAT3 & 1))) | (!v_RORGT & 1))) | (!v_NFKB & 1))) | (!v_NFAT & 1))))))))) | (!v_FOXP3 & !(((v_NFAT & ((v_NFKB & ((v_RORGT & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_RORGT & 0))) | (!v_NFKB & 0))) | (!v_NFAT & 0))))))))"
+    },
+    {
+      "node": "v_IRF1",
+      "support": [
+        "v_GP130",
+        "v_IFNBR",
+        "v_IFNGR",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_SOCS1"
+      ],
+      "function": "!(((v_GP130 & ((v_IFNBR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNBR & ((v_IFNGR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNGR & ((v_IL27RA & ((v_IL27_e & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IL27_e & 1))) | (!v_IL27RA & 1))))))) | (!v_GP130 & ((v_IFNBR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNBR & ((v_IFNGR & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IFNGR & 1)))))))"
+    },
+    {
+      "node": "v_Dec2",
+      "support": [
+        "v_GATA3"
+      ],
+      "function": "v_GATA3"
+    },
+    {
+      "node": "v_IL2",
+      "support": [
+        "v_CGC",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_GP130",
+        "v_IFNBR",
+        "v_IFNGR",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_IL4_e",
+        "v_IRF4",
+        "v_NFAT",
+        "v_NFKB",
+        "v_RUNX3",
+        "v_SOCS1",
+        "v_STAT5",
+        "v_STAT5_HIGH",
+        "v_TBET",
+        "v_proliferation"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_GADD45G",
+      "support": [
+        "v_CD3",
+        "v_IL12_e"
+      ],
+      "function": "v_CD3 | v_IL12_e"
+    },
+    {
+      "node": "v_NFAT",
+      "support": [
+        "v_CD28",
+        "v_Ca2_",
+        "v_GSK_3b",
+        "v_P38",
+        "v_TCR"
+      ],
+      "function": "((v_CD28 & ((v_Ca2_ & ((v_GSK_3b & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_GSK_3b & ((v_P38 & 1) | (!v_P38 & ((v_TCR & 1) | (!v_TCR & 0))))))) | (!v_Ca2_ & ((v_TCR & 1) | (!v_TCR & 0))))) | (!v_CD28 & !(((v_Ca2_ & ((v_GSK_3b & 1) | (!v_GSK_3b & !(((v_P38 & 1) | (!v_P38 & 0)))))) | (!v_Ca2_ & 1)))))"
+    },
+    {
+      "node": "v_IRSp53",
+      "support": [
+        "v_Crk",
+        "v_ECM",
+        "v_LAT",
+        "v_NOS2A",
+        "v_Src",
+        "v_TCR",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "((v_Crk & ((v_ECM & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_Src & 1) | (!v_Src & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))) | (!v_ECM & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_Src & ((v_TCR & 1) | (!v_TCR & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))) | (!v_Src & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))))) | (!v_Crk & ((v_LAT & 1) | (!v_LAT & ((v_NOS2A & 1) | (!v_NOS2A & ((v_ZAP_70 & 1) | (!v_ZAP_70 & ((v_was & 1) | (!v_was & 0))))))))))"
+    },
+    {
+      "node": "v_Profilin",
+      "support": [
+        "v_Rap1"
+      ],
+      "function": "v_Rap1"
+    },
+    {
+      "node": "v_MLC",
+      "support": [
+        "v_RhoA"
+      ],
+      "function": "v_RhoA"
+    },
+    {
+      "node": "v_IFNBR",
+      "support": [
+        "v_IFNB_e"
+      ],
+      "function": "v_IFNB_e"
+    },
+    {
+      "node": "v_NOS2A",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_Src",
+        "v_TCR"
+      ],
+      "function": "v_CAV1_ACTIVATOR | v_ECM | v_Src | v_TCR"
+    },
+    {
+      "node": "v_NFKB",
+      "support": [
+        "v_FOXP3",
+        "v_IKB"
+      ],
+      "function": "!v_FOXP3 & !v_IKB"
+    },
+    {
+      "node": "v_IL18R1",
+      "support": [
+        "v_IL18_e"
+      ],
+      "function": "v_IL18_e"
+    },
+    {
+      "node": "v_ITK",
+      "support": [
+        "v_LAT",
+        "v_ZAP_70"
+      ],
+      "function": "v_LAT | v_ZAP_70"
+    },
+    {
+      "node": "v_DAG",
+      "support": [
+        "v_LAT",
+        "v_PLCb",
+        "v_ZAP_70"
+      ],
+      "function": "v_LAT | v_PLCb | v_ZAP_70"
+    },
+    {
+      "node": "v_IKKcomplex",
+      "support": [
+        "v_BCL10_Malt1",
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_LAT",
+        "v_NIK",
+        "v_PLCb",
+        "v_Src",
+        "v_TCR",
+        "v_ZAP_70"
+      ],
+      "function": "((v_BCL10_Malt1 & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_ECM & 1) | (!v_ECM & ((v_LAT & 1) | (!v_LAT & ((v_NIK & 1) | (!v_NIK & ((v_PLCb & 1) | (!v_PLCb & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_ZAP_70 & 1) | (!v_ZAP_70 & 0))))))))))))))))) | (!v_BCL10_Malt1 & ((v_NIK & 1) | (!v_NIK & ((v_TCR & 1) | (!v_TCR & 0))))))"
+    },
+    {
+      "node": "v_cAMP",
+      "support": [
+        "v_GalphaS_L"
+      ],
+      "function": "v_GalphaS_L"
+    },
+    {
+      "node": "v_ITAMS",
+      "support": [
+        "v_Lck"
+      ],
+      "function": "v_Lck"
+    },
+    {
+      "node": "v_IKB",
+      "support": [
+        "v_BCL10_Malt1",
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_LAT",
+        "v_NIK",
+        "v_PLCb",
+        "v_Src",
+        "v_TCR",
+        "v_ZAP_70"
+      ],
+      "function": "!(((v_BCL10_Malt1 & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_ECM & 1) | (!v_ECM & ((v_LAT & 1) | (!v_LAT & ((v_NIK & 1) | (!v_NIK & ((v_PLCb & 1) | (!v_PLCb & ((v_Src & 1) | (!v_Src & ((v_TCR & 1) | (!v_TCR & ((v_ZAP_70 & 1) | (!v_ZAP_70 & 0))))))))))))))))) | (!v_BCL10_Malt1 & ((v_NIK & 1) | (!v_NIK & ((v_TCR & 1) | (!v_TCR & 0)))))))"
+    },
+    {
+      "node": "v_Src",
+      "support": [
+        "v_ECM",
+        "v_TCR"
+      ],
+      "function": "v_ECM | v_TCR"
+    },
+    {
+      "node": "v_RAF1",
+      "support": [
+        "v_RASgrp",
+        "v_Sos"
+      ],
+      "function": "v_RASgrp | v_Sos"
+    },
+    {
+      "node": "v_MEK1_2",
+      "support": [
+        "v_BRAF",
+        "v_CAV1_ACTIVATOR",
+        "v_Crk",
+        "v_ECM",
+        "v_LAT",
+        "v_Nck",
+        "v_RASgrp",
+        "v_RhoGEF",
+        "v_Sos",
+        "v_TCR",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "v_BRAF | v_CAV1_ACTIVATOR | v_Crk | v_ECM | v_LAT | v_Nck | v_RASgrp | v_RhoGEF | v_Sos | v_TCR | v_ZAP_70 | v_was"
+    },
+    {
+      "node": "v_IRAK1",
+      "support": [
+        "v_IL18_e"
+      ],
+      "function": "v_IL18_e"
+    },
+    {
+      "node": "v_PIP3_345",
+      "support": [
+        "v_PI3K"
+      ],
+      "function": "v_PI3K"
+    },
+    {
+      "node": "v_IL10",
+      "support": [
+        "v_CD28",
+        "v_Ca2_",
+        "v_GATA3",
+        "v_GSK_3b",
+        "v_P38",
+        "v_STAT3",
+        "v_TCR",
+        "v_proliferation"
+      ],
+      "function": "((v_CD28 & ((v_Ca2_ & ((v_GATA3 & ((v_GSK_3b & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_GSK_3b & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))))))) | (!v_GATA3 & ((v_GSK_3b & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))) | (!v_GSK_3b & ((v_P38 & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_P38 & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))))))))) | (!v_Ca2_ & ((v_GATA3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_GATA3 & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))))))) | (!v_CD28 & !(((v_Ca2_ & ((v_GATA3 & ((v_GSK_3b & 1) | (!v_GSK_3b & !(((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0)))))) | (!v_GATA3 & ((v_GSK_3b & 1) | (!v_GSK_3b & !(((v_P38 & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_P38 & 0)))))))) | (!v_Ca2_ & 1)))))"
+    },
+    {
+      "node": "v_Sos",
+      "support": [
+        "v_Grb2"
+      ],
+      "function": "v_Grb2"
+    },
+    {
+      "node": "v_SHP2",
+      "support": [
+        "v_Grb2",
+        "v_IL2RB",
+        "v_Shc1"
+      ],
+      "function": "((v_Grb2 & ((v_IL2RB & 1) | (!v_IL2RB & ((v_Shc1 & 1) | (!v_Shc1 & 0))))) | (!v_Grb2 & ((v_IL2RB & 1) | (!v_IL2RB & 0))))"
+    },
+    {
+      "node": "v_STAT5",
+      "support": [
+        "v_BCL10_Malt1",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_CGC",
+        "v_Ca2_",
+        "v_ECM",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_GP130",
+        "v_GSK_3b",
+        "v_IFNB_e",
+        "v_IFNGR",
+        "v_IL15RA",
+        "v_IL15_e",
+        "v_IL22R",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_IL9_e",
+        "v_IRF4",
+        "v_JAK3",
+        "v_LAT",
+        "v_Lck",
+        "v_NIK",
+        "v_P38",
+        "v_PLCb",
+        "v_RUNX3",
+        "v_SOCS1",
+        "v_STAT3",
+        "v_STAT5_HIGH",
+        "v_SYK",
+        "v_TBET",
+        "v_TCR",
+        "v_ZAP_70",
+        "v_proliferation"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_BCL10_Malt1",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_LAT",
+        "v_PLCb",
+        "v_TCR",
+        "v_ZAP_70"
+      ],
+      "function": "v_CAV1_ACTIVATOR | v_ECM | v_LAT | v_PLCb | v_TCR | v_ZAP_70"
+    },
+    {
+      "node": "v_Galpha_Q",
+      "support": [
+        "v_Galpha_QL"
+      ],
+      "function": "v_Galpha_QL"
+    },
+    {
+      "node": "v_Tyk2",
+      "support": [
+        "v_IL12RB1",
+        "v_IL12RB2"
+      ],
+      "function": "v_IL12RB1 & v_IL12RB2"
+    },
+    {
+      "node": "v_Arp2_3",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_ECM",
+        "v_LAT",
+        "v_N_WASP",
+        "v_TCR",
+        "v_ZAP_70",
+        "v_was"
+      ],
+      "function": "v_CAV1_ACTIVATOR | v_ECM | v_LAT | v_N_WASP | v_TCR | v_ZAP_70 | v_was"
+    },
+    {
+      "node": "v_ZAP_70",
+      "support": [
+        "v_CD3",
+        "v_Lck"
+      ],
+      "function": "v_CD3 & v_Lck"
+    },
+    {
+      "node": "v_IL23",
+      "support": [
+        "v_CD28",
+        "v_Ca2_",
+        "v_GSK_3b",
+        "v_P38",
+        "v_STAT3",
+        "v_TCR",
+        "v_proliferation"
+      ],
+      "function": "((v_CD28 & ((v_Ca2_ & ((v_GSK_3b & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))) | (!v_GSK_3b & ((v_P38 & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_P38 & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))))))) | (!v_Ca2_ & ((v_STAT3 & ((v_TCR & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_TCR & 0))) | (!v_STAT3 & 0))))) | (!v_CD28 & !(((v_Ca2_ & ((v_GSK_3b & 1) | (!v_GSK_3b & !(((v_P38 & ((v_STAT3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_STAT3 & 0))) | (!v_P38 & 0)))))) | (!v_Ca2_ & 1)))))"
+    },
+    {
+      "node": "v_LAT",
+      "support": [
+        "v_CD3",
+        "v_Lck"
+      ],
+      "function": "v_CD3 & v_Lck"
+    },
+    {
+      "node": "v_IL12RB1",
+      "support": [
+        "v_GP130",
+        "v_IFNB_e",
+        "v_IFNGR",
+        "v_IL12_e",
+        "v_IL27RA",
+        "v_IL27_e",
+        "v_SOCS1"
+      ],
+      "function": "((v_GP130 & ((v_IFNB_e & ((v_IL12_e & 1) | (!v_IL12_e & !(((v_SOCS1 & 1) | (!v_SOCS1 & 0)))))) | (!v_IFNB_e & ((v_IFNGR & ((v_IL12_e & 1) | (!v_IL12_e & !(((v_SOCS1 & 1) | (!v_SOCS1 & 0)))))) | (!v_IFNGR & ((v_IL12_e & 1) | (!v_IL12_e & !(((v_IL27RA & ((v_IL27_e & ((v_SOCS1 & 1) | (!v_SOCS1 & 0))) | (!v_IL27_e & 1))) | (!v_IL27RA & 1)))))))))) | (!v_GP130 & ((v_IFNB_e & ((v_IL12_e & 1) | (!v_IL12_e & !(((v_SOCS1 & 1) | (!v_SOCS1 & 0)))))) | (!v_IFNB_e & ((v_IFNGR & ((v_IL12_e & 1) | (!v_IL12_e & !(((v_SOCS1 & 1) | (!v_SOCS1 & 0)))))) | (!v_IFNGR & ((v_IL12_e & 1) | (!v_IL12_e & 0))))))))"
+    },
+    {
+      "node": "v_CD3",
+      "support": [
+        "v_TCR"
+      ],
+      "function": "v_TCR"
+    },
+    {
+      "node": "v_Grb2",
+      "support": [
+        "v_Lck",
+        "v_Shc1",
+        "v_TCR"
+      ],
+      "function": "((v_Lck & ((v_Shc1 & 1) | (!v_Shc1 & ((v_TCR & 1) | (!v_TCR & 0))))) | (!v_Lck & ((v_Shc1 & 1) | (!v_Shc1 & 0))))"
+    },
+    {
+      "node": "v_Rap1",
+      "support": [
+        "v_Crk",
+        "v_GalphaS_L",
+        "v_PKA"
+      ],
+      "function": "v_Crk | v_GalphaS_L | v_PKA"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_Crk",
+        "v_ECM",
+        "v_MEK4",
+        "v_MKK7",
+        "v_TCR",
+        "v_was"
+      ],
+      "function": "((v_CAV1_ACTIVATOR & ((v_Crk & 1) | (!v_Crk & ((v_MEK4 & 1) | (!v_MEK4 & ((v_MKK7 & 1) | (!v_MKK7 & 0))))))) | (!v_CAV1_ACTIVATOR & ((v_Crk & ((v_ECM & 1) | (!v_ECM & ((v_MEK4 & 1) | (!v_MEK4 & ((v_MKK7 & 1) | (!v_MKK7 & ((v_TCR & 1) | (!v_TCR & ((v_was & 1) | (!v_was & 0))))))))))) | (!v_Crk & ((v_MEK4 & 1) | (!v_MEK4 & ((v_MKK7 & 1) | (!v_MKK7 & 0))))))))"
+    },
+    {
+      "node": "v_HLX",
+      "support": [
+        "v_TBET"
+      ],
+      "function": "v_TBET"
+    },
+    {
+      "node": "v_TRAF6",
+      "support": [
+        "v_IL18_e"
+      ],
+      "function": "v_IL18_e"
+    },
+    {
+      "node": "v_PLCb",
+      "support": [
+        "v_Galpha_QL"
+      ],
+      "function": "v_Galpha_QL"
+    },
+    {
+      "node": "v_N_WASP",
+      "support": [
+        "v_Crk",
+        "v_Lck",
+        "v_Nck",
+        "v_RhoGEF",
+        "v_TCR"
+      ],
+      "function": "((v_Crk & 1) | (!v_Crk & ((v_Lck & ((v_Nck & ((v_RhoGEF & 1) | (!v_RhoGEF & ((v_TCR & 1) | (!v_TCR & 0))))) | (!v_Nck & ((v_RhoGEF & 1) | (!v_RhoGEF & 0))))) | (!v_Lck & ((v_RhoGEF & 1) | (!v_RhoGEF & 0))))))"
+    },
+    {
+      "node": "v_PKA",
+      "support": [
+        "v_GalphaS_L"
+      ],
+      "function": "v_GalphaS_L"
+    },
+    {
+      "node": "v_GSK_3b",
+      "support": [
+        "v_AKT"
+      ],
+      "function": "!v_AKT"
+    },
+    {
+      "node": "v_IRF4",
+      "support": [
+        "v_GATA3"
+      ],
+      "function": "v_GATA3"
+    },
+    {
+      "node": "v_GFI1",
+      "support": [
+        "v_CGC",
+        "v_GATA3",
+        "v_IL4_e",
+        "v_STAT5_HIGH",
+        "v_TCR"
+      ],
+      "function": "((v_CGC & ((v_GATA3 & ((v_STAT5_HIGH & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_STAT5_HIGH & 1))) | (!v_GATA3 & ((v_IL4_e & ((v_STAT5_HIGH & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TCR & 1) | (!v_TCR & 0))))))) | (!v_CGC & ((v_TCR & 1) | (!v_TCR & 0))))"
+    },
+    {
+      "node": "v_JAK3",
+      "support": [
+        "v_AKT",
+        "v_CAV1_ACTIVATOR",
+        "v_CGC",
+        "v_Ca2_",
+        "v_ECM",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_Galpha_QL",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_NIK",
+        "v_P38",
+        "v_STAT5_HIGH",
+        "v_TBET",
+        "v_TCR"
+      ],
+      "function": "!(((v_AKT & ((v_CAV1_ACTIVATOR & ((v_CGC & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_CGC & 1))) | (!v_CAV1_ACTIVATOR & ((v_CGC & ((v_Ca2_ & ((v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_P38 & ((v_STAT5_HIGH & ((v_TBET & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_P38 & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1)))))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_P38 & ((v_STAT5_HIGH & ((v_TBET & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_P38 & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1))))))) | (!v_IL4_e & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & ((v_P38 & ((v_TBET & ((v_TCR & 1) | (!v_TCR & 0))) | (!v_TBET & 0))) | (!v_P38 & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0))))))))))))))) | (!v_IL2RB & 0)))))))))))))) | (!v_Ca2_ & ((v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1)))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1))))) | (!v_IL4_e & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0))))))))))))) | (!v_IL2RB & 0)))))))))))))))) | (!v_CGC & 1))))) | (!v_AKT & ((v_CAV1_ACTIVATOR & ((v_CGC & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_CGC & 1))) | (!v_CAV1_ACTIVATOR & ((v_CGC & ((v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1)))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0)))))) | (!v_STAT5_HIGH & 1))))) | (!v_IL4_e & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & ((v_TBET & 1) | (!v_TBET & !(((v_TCR & 1) | (!v_TCR & 0))))))))))))) | (!v_IL2RB & 0)))))))))))))) | (!v_CGC & 1)))))))"
+    },
+    {
+      "node": "v_was",
+      "support": [
+        "v_ECM",
+        "v_TCR"
+      ],
+      "function": "v_ECM | v_TCR"
+    },
+    {
+      "node": "v_TGFBR",
+      "support": [
+        "v_TGFB",
+        "v_TGFB_e"
+      ],
+      "function": "v_TGFB | v_TGFB_e"
+    },
+    {
+      "node": "v_MEK3",
+      "support": [
+        "v_MEKK4"
+      ],
+      "function": "v_MEKK4"
+    },
+    {
+      "node": "v_RhoGEF",
+      "support": [
+        "v_ECM",
+        "v_Galpha12_13R",
+        "v_TCR"
+      ],
+      "function": "v_ECM | v_Galpha12_13R | v_TCR"
+    },
+    {
+      "node": "v_RUNX3",
+      "support": [
+        "v_GATA3",
+        "v_TBET"
+      ],
+      "function": "!v_GATA3 & v_TBET"
+    },
+    {
+      "node": "v_IL12RB2",
+      "support": [
+        "v_IL12_e"
+      ],
+      "function": "v_IL12_e"
+    },
+    {
+      "node": "v_GADD45B",
+      "support": [
+        "v_IL12_e",
+        "v_TCR"
+      ],
+      "function": "v_IL12_e & v_TCR"
+    },
+    {
+      "node": "v_Ca2_",
+      "support": [
+        "v_IP3"
+      ],
+      "function": "v_IP3"
+    },
+    {
+      "node": "v_MKK7",
+      "support": [
+        "v_IL18_e"
+      ],
+      "function": "v_IL18_e"
+    },
+    {
+      "node": "v_MEKK4",
+      "support": [
+        "v_IL12_e",
+        "v_TCR"
+      ],
+      "function": "v_IL12_e & v_TCR"
+    },
+    {
+      "node": "v_BRAF",
+      "support": [
+        "v_Crk",
+        "v_GalphaS_L"
+      ],
+      "function": "v_Crk | v_GalphaS_L"
+    },
+    {
+      "node": "v_TCR",
+      "support": [
+        "v_APC",
+        "v_CD28"
+      ],
+      "function": "v_APC & v_CD28"
+    },
+    {
+      "node": "v_ATF2",
+      "support": [
+        "v_P38"
+      ],
+      "function": "v_P38"
+    },
+    {
+      "node": "v_ERK",
+      "support": [
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_Crk",
+        "v_ECM",
+        "v_Galpha12_13R",
+        "v_GalphaS_L",
+        "v_Nck",
+        "v_RASgrp",
+        "v_Shc1"
+      ],
+      "function": "((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_Crk & 1) | (!v_Crk & ((v_ECM & 1) | (!v_ECM & ((v_Galpha12_13R & 1) | (!v_Galpha12_13R & ((v_GalphaS_L & 1) | (!v_GalphaS_L & ((v_Nck & 1) | (!v_Nck & ((v_RASgrp & 1) | (!v_RASgrp & ((v_Shc1 & 1) | (!v_Shc1 & 0))))))))))))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_Crk & 1) | (!v_Crk & ((v_ECM & 1) | (!v_ECM & ((v_Galpha12_13R & 1) | (!v_Galpha12_13R & ((v_GalphaS_L & 1) | (!v_GalphaS_L & ((v_Nck & 1) | (!v_Nck & ((v_RASgrp & 1) | (!v_RASgrp & ((v_Shc1 & 1) | (!v_Shc1 & 0))))))))))))))))))"
+    },
+    {
+      "node": "v_Galpha12_13R",
+      "support": [
+        "v_alpha_13L"
+      ],
+      "function": "v_alpha_13L"
+    },
+    {
+      "node": "v_Shc1",
+      "support": [
+        "v_AKT",
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_CGC",
+        "v_ECM",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_Galpha_QL",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_IP3",
+        "v_NIK",
+        "v_P38",
+        "v_STAT5_HIGH",
+        "v_TBET"
+      ],
+      "function": "((v_AKT & ((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_CGC & ((v_ECM & 1) | (!v_ECM & !(((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1)))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1))))) | (!v_IL4_e & ((v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & !(((v_P38 & 1) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & 1)))))))))) | (!v_IL2RB & 0))))))))))))))) | (!v_CGC & ((v_ECM & 1) | (!v_ECM & 0))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CGC & ((v_ECM & 1) | (!v_ECM & !(((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1)))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1))))) | (!v_IL4_e & ((v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & !(((v_P38 & 1) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & 1)))))))))) | (!v_IL2RB & 0))))))))))))))) | (!v_CGC & ((v_ECM & 1) | (!v_ECM & 0))))))))) | (!v_AKT & ((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_CGC & ((v_ECM & 1) | (!v_ECM & !(((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1)))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1))) | (!v_IL4_e & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & 1)))))))) | (!v_IL2RB & 0))))))))))))))) | (!v_CGC & ((v_ECM & 1) | (!v_ECM & 0))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CGC & ((v_ECM & 1) | (!v_ECM & !(((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1)))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1))) | (!v_IL4_e & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & 1)))))))) | (!v_IL2RB & 0))))))))))))))) | (!v_CGC & ((v_ECM & 1) | (!v_ECM & 0))))))))))"
+    },
+    {
+      "node": "v_IFNGR",
+      "support": [
+        "v_FOXP3",
+        "v_GATA3",
+        "v_IFNGR1",
+        "v_IFNGR2",
+        "v_IFNG_e",
+        "v_IL12_e",
+        "v_P38",
+        "v_STAT3",
+        "v_TBET"
+      ],
+      "function": "((v_FOXP3 & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & 1) | (!v_IFNG_e & 0))) | (!v_IFNGR2 & 0))) | (!v_IFNGR1 & 0))) | (!v_FOXP3 & ((v_GATA3 & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & 1) | (!v_IFNG_e & !(((v_P38 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_P38 & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_TBET & 1) | (!v_TBET & 0))))))))))) | (!v_IFNGR2 & 0))) | (!v_IFNGR1 & 0))) | (!v_GATA3 & ((v_IFNGR1 & ((v_IFNGR2 & ((v_IFNG_e & 1) | (!v_IFNG_e & !(((v_IL12_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_IL12_e & ((v_P38 & ((v_STAT3 & 1) | (!v_STAT3 & 0))) | (!v_P38 & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_TBET & 1) | (!v_TBET & 0))))))))))))) | (!v_IFNGR2 & 0))) | (!v_IFNGR1 & 0))))))"
+    },
+    {
+      "node": "v_PDK1",
+      "support": [
+        "v_PI3K"
+      ],
+      "function": "v_PI3K"
+    },
+    {
+      "node": "v_Crk",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_ECM"
+      ],
+      "function": "((v_APC & ((v_CD28 & 1) | (!v_CD28 & ((v_ECM & 1) | (!v_ECM & 0))))) | (!v_APC & ((v_ECM & 1) | (!v_ECM & 0))))"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_ECM",
+        "v_IL2RB",
+        "v_RASgrp"
+      ],
+      "function": "((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_ECM & 1) | (!v_ECM & ((v_IL2RB & 1) | (!v_IL2RB & ((v_RASgrp & 1) | (!v_RASgrp & 0))))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_ECM & 1) | (!v_ECM & ((v_IL2RB & 1) | (!v_IL2RB & ((v_RASgrp & 1) | (!v_RASgrp & 0))))))))))"
+    },
+    {
+      "node": "v_RASgrp",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_Galpha_QL",
+        "v_Lck"
+      ],
+      "function": "((v_APC & ((v_CD28 & ((v_Galpha_QL & 1) | (!v_Galpha_QL & ((v_Lck & 1) | (!v_Lck & 0))))) | (!v_CD28 & ((v_Galpha_QL & 1) | (!v_Galpha_QL & 0))))) | (!v_APC & ((v_Galpha_QL & 1) | (!v_Galpha_QL & 0))))"
+    },
+    {
+      "node": "v_SYK",
+      "support": [
+        "v_AKT",
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_CGC",
+        "v_ECM",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_Galpha_QL",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_IP3",
+        "v_NIK",
+        "v_P38",
+        "v_STAT5_HIGH",
+        "v_TBET"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_MEK4",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_IL12_e"
+      ],
+      "function": "v_APC & v_CD28 & v_IL12_e"
+    },
+    {
+      "node": "v_IL22R",
+      "support": [
+        "v_IL22_e"
+      ],
+      "function": "v_IL22_e"
+    },
+    {
+      "node": "v_Nck",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_Lck"
+      ],
+      "function": "v_APC & v_CD28 & v_Lck"
+    },
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_ECM",
+        "v_Galpha_QL",
+        "v_IL2RB"
+      ],
+      "function": "((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_ECM & 1) | (!v_ECM & ((v_Galpha_QL & 1) | (!v_Galpha_QL & ((v_IL2RB & 1) | (!v_IL2RB & 0))))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_ECM & 1) | (!v_ECM & ((v_Galpha_QL & 1) | (!v_Galpha_QL & ((v_IL2RB & 1) | (!v_IL2RB & 0))))))))))"
+    },
+    {
+      "node": "v_TGFB",
+      "support": [
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_ECM",
+        "v_FOXP3",
+        "v_Galpha_QL",
+        "v_IL2RB",
+        "v_IP3",
+        "v_P38",
+        "v_proliferation"
+      ],
+      "function": "((v_APC & ((v_CAV1_ACTIVATOR & ((v_CD28 & ((v_FOXP3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_FOXP3 & 0))) | (!v_CD28 & ((v_FOXP3 & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_FOXP3 & 0))))) | (!v_CAV1_ACTIVATOR & ((v_CD28 & ((v_FOXP3 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_FOXP3 & 0))) | (!v_CD28 & ((v_ECM & ((v_FOXP3 & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_FOXP3 & 0))) | (!v_ECM & ((v_FOXP3 & ((v_Galpha_QL & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_Galpha_QL & ((v_IL2RB & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_IL2RB & 0))))) | (!v_FOXP3 & 0))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & ((v_FOXP3 & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_FOXP3 & 0))) | (!v_CAV1_ACTIVATOR & ((v_ECM & ((v_FOXP3 & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_FOXP3 & 0))) | (!v_ECM & ((v_FOXP3 & ((v_Galpha_QL & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_Galpha_QL & ((v_IL2RB & ((v_IP3 & ((v_P38 & ((v_proliferation & 1) | (!v_proliferation & 0))) | (!v_P38 & 0))) | (!v_IP3 & 0))) | (!v_IL2RB & 0))))) | (!v_FOXP3 & 0))))))))"
+    },
+    {
+      "node": "v_G_Actin",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_ECM",
+        "v_GalphaS_L"
+      ],
+      "function": "((v_APC & ((v_CD28 & 1) | (!v_CD28 & ((v_ECM & 1) | (!v_ECM & ((v_GalphaS_L & 1) | (!v_GalphaS_L & 0))))))) | (!v_APC & ((v_ECM & 1) | (!v_ECM & ((v_GalphaS_L & 1) | (!v_GalphaS_L & 0))))))"
+    },
+    {
+      "node": "v_SOCS1",
+      "support": [
+        "v_CGC",
+        "v_GATA3",
+        "v_IL4_e",
+        "v_STAT3",
+        "v_STAT5_HIGH"
+      ],
+      "function": "((v_CGC & ((v_GATA3 & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0)))))) | (!v_GATA3 & ((v_IL4_e & ((v_STAT3 & 1) | (!v_STAT3 & !(((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0)))))) | (!v_IL4_e & ((v_STAT3 & 1) | (!v_STAT3 & 0))))))) | (!v_CGC & ((v_STAT3 & 1) | (!v_STAT3 & 0))))"
+    },
+    {
+      "node": "v_Lck",
+      "support": [
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_CGC",
+        "v_ECM",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_Galpha_QL",
+        "v_IL2RA",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_IP3",
+        "v_NIK",
+        "v_P38",
+        "v_STAT5_HIGH",
+        "v_TBET"
+      ],
+      "function": "((v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & !(((v_CGC & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_CGC & 1)))))) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & !(((v_CGC & ((v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_GATA3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))))))) | (!v_ECM & ((v_FOXP3 & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0)))))) | (!v_FOXP3 & ((v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1)))))))) | (!v_IL2RB & 0)))))))) | (!v_GATA3 & ((v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0)))))) | (!v_Galpha_QL & ((v_IL2RA & 1) | (!v_IL2RA & !(((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & !(((v_P38 & ((v_STAT5_HIGH & 1) | (!v_STAT5_HIGH & 0))) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_NIK & 1))))) | (!v_IL4_e & ((v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & !(((v_P38 & 1) | (!v_P38 & 0)))))) | (!v_IP3 & ((v_NIK & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_NIK & 1)))))))))) | (!v_IL2RB & 0)))))))))))))) | (!v_CGC & 1)))))))"
+    },
+    {
+      "node": "v_RhoA",
+      "support": [
+        "v_APC",
+        "v_CAV1_ACTIVATOR",
+        "v_CD28",
+        "v_ECM",
+        "v_alpha_13L"
+      ],
+      "function": "((v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_CD28 & 1) | (!v_CD28 & ((v_ECM & 1) | (!v_ECM & ((v_alpha_13L & 1) | (!v_alpha_13L & 0))))))))) | (!v_APC & ((v_CAV1_ACTIVATOR & 1) | (!v_CAV1_ACTIVATOR & ((v_ECM & 1) | (!v_ECM & ((v_alpha_13L & 1) | (!v_alpha_13L & 0))))))))"
+    },
+    {
+      "node": "v_P38",
+      "support": [
+        "v_APC",
+        "v_CD28",
+        "v_IL12_e"
+      ],
+      "function": "v_APC & v_CD28 & v_IL12_e"
+    },
+    {
+      "node": "v_IL2RA",
+      "support": [
+        "v_APC",
+        "v_CD28"
+      ],
+      "function": "v_APC & v_CD28"
+    },
+    {
+      "node": "v_CD28",
+      "support": [
+        "v_APC",
+        "v_B7"
+      ],
+      "function": "v_APC | v_B7"
+    },
+    {
+      "node": "v_IP3",
+      "support": [
+        "v_APC"
+      ],
+      "function": "v_APC"
+    },
+    {
+      "node": "v_IL2R_HIGH",
+      "support": [
+        "v_APC",
+        "v_CGC",
+        "v_FOXP3",
+        "v_GATA3",
+        "v_IL2RB",
+        "v_IL2_e",
+        "v_IL4_e",
+        "v_STAT5_HIGH",
+        "v_TBET"
+      ],
+      "function": "((v_APC & ((v_CGC & ((v_FOXP3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & 0))) | (!v_IL2RB & 0))) | (!v_FOXP3 & ((v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1)))))) | (!v_IL2RB & 0))) | (!v_GATA3 & ((v_IL2RB & ((v_IL2_e & 1) | (!v_IL2_e & !(((v_IL4_e & ((v_STAT5_HIGH & ((v_TBET & 1) | (!v_TBET & 0))) | (!v_STAT5_HIGH & 1))) | (!v_IL4_e & ((v_TBET & 1) | (!v_TBET & 0)))))))) | (!v_IL2RB & 0))))))) | (!v_CGC & 0))) | (!v_APC & 0))"
+    },
+    {
+      "node": "v_Galpha_iR",
+      "support": [
+        "v_Galpha_iL"
+      ],
+      "function": "v_Galpha_iL"
+    },
+    {
+      "node": "v_NIK",
+      "support": [
+        "v_IL18_e"
+      ],
+      "function": "v_IL18_e"
+    }
+  ],
+  "seconds": 4.060996700078249
+}

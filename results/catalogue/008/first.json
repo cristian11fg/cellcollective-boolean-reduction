@@ -1,0 +1,974 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "008",
+  "name": "DEATH-RECEPTOR-SIGNALING",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 28,
+  "after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 3,
+    "internal_nodes": 5,
+    "nonconstant_rules": 5,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 5,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FADD": "+",
+      "v_apoptosome": "+",
+      "v_FASL": "+",
+      "v_ROS": "-",
+      "v_TNF": "+",
+      "v_XIAP": "-",
+      "v_cFLIP": "-",
+      "v_cIAP": "-"
+    },
+    "positive_edges": 18,
+    "negative_edges": 8,
+    "non_unate_edges": 11,
+    "has_multi_input_rule": true,
+    "edges": 37,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "NON_UNATE": 4,
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {
+      "v_FADD": {
+        "v_ROS": "mixed",
+        "v_XIAP": "mixed",
+        "v_apoptosome": "+",
+        "v_cFLIP": "mixed",
+        "v_cIAP": "mixed"
+      },
+      "v_FASL": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "mixed"
+      },
+      "v_ROS": {
+        "v_ROS": "+",
+        "v_apoptosome": "-",
+        "v_cIAP": "-"
+      },
+      "v_TNF": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "mixed"
+      },
+      "v_XIAP": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "-",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      },
+      "v_apoptosome": {
+        "v_ROS": "mixed",
+        "v_XIAP": "-",
+        "v_apoptosome": "+",
+        "v_cFLIP": "-",
+        "v_cIAP": "-"
+      },
+      "v_cFLIP": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "-",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      },
+      "v_cIAP": {
+        "v_ROS": "-",
+        "v_XIAP": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      }
+    },
+    "local": {
+      "v_ROS": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "mixed",
+          "v_ROS": "+",
+          "v_TNF": "mixed",
+          "v_XIAP": "mixed",
+          "v_apoptosome": "mixed",
+          "v_cFLIP": "mixed",
+          "v_cIAP": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_XIAP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "+",
+          "v_TNF": "+",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_apoptosome": {
+        "signs": {
+          "v_FADD": "+",
+          "v_FASL": "+",
+          "v_ROS": "-",
+          "v_TNF": "+",
+          "v_XIAP": "-",
+          "v_apoptosome": "+",
+          "v_cFLIP": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cFLIP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "+",
+          "v_TNF": "+",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cIAP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "mixed",
+          "v_ROS": "-",
+          "v_TNF": "mixed",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 3,
+    "internal_nodes": 5,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FADD": "+",
+      "v_apoptosome": "+",
+      "v_FASL": "+",
+      "v_ROS": "-",
+      "v_TNF": "+",
+      "v_XIAP": "-",
+      "v_cFLIP": "-",
+      "v_cIAP": "-"
+    },
+    "positive_edges": 21,
+    "negative_edges": 8,
+    "non_unate_edges": 11,
+    "has_multi_input_rule": true,
+    "edges": 40,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "NON_UNATE": 4,
+      "UNATE_OTHER": 1,
+      "MIN_MAX": 3
+    },
+    "conflicts": {
+      "v_FADD": {
+        "v_ROS": "mixed",
+        "v_XIAP": "mixed",
+        "v_apoptosome": "+",
+        "v_cFLIP": "mixed",
+        "v_cIAP": "mixed",
+        "v_FADD": "+"
+      },
+      "v_FASL": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "mixed",
+        "v_FASL": "+"
+      },
+      "v_ROS": {
+        "v_ROS": "+",
+        "v_apoptosome": "-",
+        "v_cIAP": "-"
+      },
+      "v_TNF": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "mixed",
+        "v_TNF": "+"
+      },
+      "v_XIAP": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "-",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      },
+      "v_apoptosome": {
+        "v_ROS": "mixed",
+        "v_XIAP": "-",
+        "v_apoptosome": "+",
+        "v_cFLIP": "-",
+        "v_cIAP": "-"
+      },
+      "v_cFLIP": {
+        "v_ROS": "mixed",
+        "v_XIAP": "+",
+        "v_apoptosome": "-",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      },
+      "v_cIAP": {
+        "v_ROS": "-",
+        "v_XIAP": "+",
+        "v_cFLIP": "+",
+        "v_cIAP": "+"
+      }
+    },
+    "local": {
+      "v_ROS": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "mixed",
+          "v_ROS": "+",
+          "v_TNF": "mixed",
+          "v_XIAP": "mixed",
+          "v_apoptosome": "mixed",
+          "v_cFLIP": "mixed",
+          "v_cIAP": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_XIAP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "+",
+          "v_TNF": "+",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_apoptosome": {
+        "signs": {
+          "v_FADD": "+",
+          "v_FASL": "+",
+          "v_ROS": "-",
+          "v_TNF": "+",
+          "v_XIAP": "-",
+          "v_apoptosome": "+",
+          "v_cFLIP": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cFLIP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "+",
+          "v_TNF": "+",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_cIAP": {
+        "signs": {
+          "v_FADD": "mixed",
+          "v_FASL": "mixed",
+          "v_ROS": "-",
+          "v_TNF": "mixed",
+          "v_XIAP": "+",
+          "v_apoptosome": "-",
+          "v_cFLIP": "+",
+          "v_cIAP": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FADD": {
+        "signs": {
+          "v_FADD": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_FASL": {
+        "signs": {
+          "v_FASL": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNF": {
+        "signs": {
+          "v_TNF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 27,
+    "examples": [
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 1,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 1,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 1,
+        "v_TNF": 1,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 1,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 1,
+        "v_XIAP": 0,
+        "v_apoptosome": 1,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 1,
+        "v_TNF": 1,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 1,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 1,
+        "v_XIAP": 0,
+        "v_apoptosome": 1,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 1
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 1,
+        "v_XIAP": 1,
+        "v_apoptosome": 0,
+        "v_cFLIP": 1,
+        "v_cIAP": 1
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 1,
+        "v_XIAP": 1,
+        "v_apoptosome": 0,
+        "v_cFLIP": 1,
+        "v_cIAP": 1
+      },
+      {
+        "v_FADD": 1,
+        "v_FASL": 0,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 1
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 1,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 0,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      },
+      {
+        "v_FADD": 0,
+        "v_FASL": 1,
+        "v_ROS": 0,
+        "v_TNF": 0,
+        "v_XIAP": 0,
+        "v_apoptosome": 1,
+        "v_cFLIP": 0,
+        "v_cIAP": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_ROS": "!(((v_FADD & ((v_FASL & ((v_ROS & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_ROS & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 1))) | (!v_XIAP & !(((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 1))))))))))) | (!v_FASL & ((v_ROS & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNF & 0))) | (!v_ROS & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 1))) | (!v_XIAP & !(((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 1))))))))) | (!v_TNF & 1))))))) | (!v_FADD & ((v_ROS & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 0))) | (!v_ROS & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 1)))))))",
+    "v_XIAP": "((v_FADD & ((v_FASL & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_FASL & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNF & 0))))) | (!v_FADD & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 0))))",
+    "v_apoptosome": "!(((v_FADD & ((v_FASL & ((v_ROS & 1) | (!v_ROS & ((v_XIAP & 1) | (!v_XIAP & ((v_cFLIP & 1) | (!v_cFLIP & 0))))))) | (!v_FASL & ((v_ROS & 1) | (!v_ROS & ((v_TNF & ((v_XIAP & 1) | (!v_XIAP & ((v_cFLIP & 1) | (!v_cFLIP & 0))))) | (!v_TNF & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1))))))))))) | (!v_FADD & ((v_ROS & 1) | (!v_ROS & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1)))))))))",
+    "v_cFLIP": "((v_FADD & ((v_FASL & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_FASL & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNF & 0))))) | (!v_FADD & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 0))))",
+    "v_cIAP": "((v_FADD & ((v_FASL & ((v_ROS & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_ROS & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))) | (!v_FASL & ((v_ROS & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNF & 0))) | (!v_ROS & ((v_TNF & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_apoptosome & ((v_cIAP & 1) | (!v_cIAP & 0))))))))))))) | (!v_FADD & ((v_ROS & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 0))) | (!v_ROS & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_apoptosome & ((v_cIAP & 1) | (!v_cIAP & 0))))))))))",
+    "v_FADD": "v_FADD",
+    "v_FASL": "v_FASL",
+    "v_TNF": "v_TNF"
+  },
+  "steps": [
+    {
+      "node": "v_ATP",
+      "support": [
+        "v_MPT"
+      ],
+      "function": "!v_MPT"
+    },
+    {
+      "node": "v_BAX",
+      "support": [
+        "v_BCL2",
+        "v_CASP8"
+      ],
+      "function": "!v_BCL2 & v_CASP8"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_NFkB"
+      ],
+      "function": "v_NFkB"
+    },
+    {
+      "node": "v_CASP3",
+      "support": [
+        "v_XIAP",
+        "v_apoptosome"
+      ],
+      "function": "!v_XIAP & v_apoptosome"
+    },
+    {
+      "node": "v_CASP8",
+      "support": [
+        "v_DISC_FAS",
+        "v_DISC_TNF",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP"
+      ],
+      "function": "!(((v_DISC_FAS & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_DISC_FAS & ((v_DISC_TNF & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_DISC_TNF & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1)))))))))"
+    },
+    {
+      "node": "v_Cyt_c",
+      "support": [
+        "v_MOMP"
+      ],
+      "function": "v_MOMP"
+    },
+    {
+      "node": "v_DISC_FAS",
+      "support": [
+        "v_FADD",
+        "v_FASL"
+      ],
+      "function": "v_FADD & v_FASL"
+    },
+    {
+      "node": "v_DISC_TNF",
+      "support": [
+        "v_FADD",
+        "v_TNFR"
+      ],
+      "function": "v_FADD & v_TNFR"
+    },
+    {
+      "node": "v_IKK",
+      "support": [
+        "v_RIP1ub"
+      ],
+      "function": "v_RIP1ub"
+    },
+    {
+      "node": "v_MOMP",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_MPT",
+        "v_NFkB",
+        "v_TNFR",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP"
+      ],
+      "function": "((v_FADD & ((v_FASL & ((v_MPT & 1) | (!v_MPT & !(((v_NFkB & 1) | (!v_NFkB & ((v_cFLIP & 1) | (!v_cFLIP & 0)))))))) | (!v_FASL & ((v_MPT & 1) | (!v_MPT & !(((v_NFkB & 1) | (!v_NFkB & ((v_TNFR & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_TNFR & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1)))))))))))))) | (!v_FADD & ((v_MPT & 1) | (!v_MPT & !(((v_NFkB & 1) | (!v_NFkB & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1)))))))))))"
+    },
+    {
+      "node": "v_MPT",
+      "support": [
+        "v_NFkB",
+        "v_ROS"
+      ],
+      "function": "!v_NFkB & v_ROS"
+    },
+    {
+      "node": "v_NFkB",
+      "support": [
+        "v_RIP1ub",
+        "v_XIAP",
+        "v_apoptosome"
+      ],
+      "function": "((v_RIP1ub & ((v_XIAP & 1) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & 0)))))) | (!v_RIP1ub & 0))"
+    },
+    {
+      "node": "v_NonACD",
+      "support": [
+        "v_RIP1ub",
+        "v_ROS",
+        "v_XIAP",
+        "v_apoptosome"
+      ],
+      "function": "!(((v_RIP1ub & ((v_ROS & ((v_XIAP & 1) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & 0)))))) | (!v_ROS & 1))) | (!v_RIP1ub & !(((v_ROS & 1) | (!v_ROS & 0))))))"
+    },
+    {
+      "node": "v_RIP1",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_TNFR",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP"
+      ],
+      "function": "((v_FADD & ((v_FASL & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_FASL & ((v_TNFR & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_TNFR & 0))))) | (!v_FADD & ((v_TNFR & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1))))) | (!v_TNFR & 0))))"
+    },
+    {
+      "node": "v_RIP1k",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_TNFR",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP"
+      ],
+      "function": "((v_FADD & ((v_FASL & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_FASL & ((v_TNFR & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_TNFR & 0))))) | (!v_FADD & ((v_TNFR & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1))))) | (!v_TNFR & 0))))"
+    },
+    {
+      "node": "v_RIP1ub",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_TNFR",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP",
+        "v_cIAP"
+      ],
+      "function": "((v_FADD & ((v_FASL & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_FASL & ((v_TNFR & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_TNFR & 0))))) | (!v_FADD & ((v_TNFR & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_apoptosome & ((v_cIAP & 1) | (!v_cIAP & 0))))))) | (!v_TNFR & 0))))"
+    },
+    {
+      "node": "v_SMAC",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_ROS",
+        "v_TNFR",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP",
+        "v_cIAP"
+      ],
+      "function": "!(((v_FADD & ((v_FASL & ((v_ROS & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_ROS & ((v_cFLIP & 1) | (!v_cFLIP & 0))))) | (!v_FASL & ((v_ROS & ((v_TNFR & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNFR & 0))) | (!v_ROS & ((v_TNFR & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_TNFR & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1))))))))))) | (!v_FADD & ((v_ROS & ((v_TNFR & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNFR & 0))) | (!v_ROS & ((v_XIAP & 1) | (!v_XIAP & ((v_apoptosome & ((v_cFLIP & 1) | (!v_cFLIP & 0))) | (!v_apoptosome & 1)))))))))"
+    },
+    {
+      "node": "v_TNFR",
+      "support": [
+        "v_TNF"
+      ],
+      "function": "v_TNF"
+    },
+    {
+      "node": "v_apoptosis",
+      "support": [
+        "v_XIAP",
+        "v_apoptosome"
+      ],
+      "function": "!v_XIAP & v_apoptosome"
+    },
+    {
+      "node": "v_survival",
+      "support": [
+        "v_FADD",
+        "v_FASL",
+        "v_TNF",
+        "v_XIAP",
+        "v_apoptosome",
+        "v_cFLIP",
+        "v_cIAP"
+      ],
+      "function": "((v_FADD & ((v_FASL & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_FASL & ((v_TNF & ((v_XIAP & ((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cFLIP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_cFLIP & 0))))))))) | (!v_TNF & 0))))) | (!v_FADD & ((v_TNF & ((v_XIAP & ((v_cIAP & 1) | (!v_cIAP & 0))) | (!v_XIAP & !(((v_apoptosome & 1) | (!v_apoptosome & !(((v_cIAP & 1) | (!v_cIAP & 0))))))))) | (!v_TNF & 0))))"
+    }
+  ],
+  "seconds": 0.4661264999303967
+}

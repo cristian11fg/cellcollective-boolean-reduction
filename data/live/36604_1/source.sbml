@@ -1,0 +1,4304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" layout:required="false" level="3" qual:required="true" version="1" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1">
+  <model id="M36604" metaid="_4b4f07aa-f066-4bd3-8d30-36e70b20b14e" name="Signaling Pathway for Butanol Production in Clostridium beijerinckii NRRL B-598">
+    <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:vCard="http://www.w3.org/2001/vcard-rdf/3.0#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_4b4f07aa-f066-4bd3-8d30-36e70b20b14e">
+	<dc:creator>
+	<rdf:Bag>
+	<rdf:li rdf:parseType="Resource">
+	<vCard:N rdf:parseType="Resource">
+	<vCard:Family>Musilová</vCard:Family>
+	<vCard:Given>Jana</vCard:Given>
+	</vCard:N>
+	<vCard:EMAIL>xmusil57@vutbr.cz</vCard:EMAIL>
+	<vCard:ORG rdf:parseType="Resource">
+	<vCard:Orgname>Brno University of Technology</vCard:Orgname>
+	</vCard:ORG>
+	</rdf:li>
+	</rdf:Bag>
+	</dc:creator>
+	<dcterms:created rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-05T03:04:48Z</dcterms:W3CDTF>
+	</dcterms:created>
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-27T13:35:44Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29843608"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+      <layout:listOfLayouts xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <layout:layout layout:name="MyL">
+        <layout:listOfAdditionalGraphicalObjects>
+          <layout:generalGlyph layout:id="S_24_glyph" layout:reference="S_24">
+            <layout:boundingBox>
+              <layout:position layout:x="0.32487534176340416" layout:y="-0.5440252329072993" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_28_glyph" layout:reference="S_28">
+            <layout:boundingBox>
+              <layout:position layout:x="0.46613309290206384" layout:y="-0.5019470764017085" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_38_glyph" layout:reference="S_38">
+            <layout:boundingBox>
+              <layout:position layout:x="0.48110068779444476" layout:y="-0.5381130764399622" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_35_glyph" layout:reference="S_35">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5109553492373708" layout:y="-0.5570959181811181" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_19_glyph" layout:reference="S_19">
+            <layout:boundingBox>
+              <layout:position layout:x="0.33489184973307984" layout:y="-0.5561417772026622" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_61_glyph" layout:reference="S_61">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5112368878517828" layout:y="-0.5677665971699625" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_10_glyph" layout:reference="S_10">
+            <layout:boundingBox>
+              <layout:position layout:x="0.39259327177046144" layout:y="-0.5485296387316149" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_48_glyph" layout:reference="S_48">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4080006711731624" layout:y="-0.5091457530037826" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_56_glyph" layout:reference="S_56">
+            <layout:boundingBox>
+              <layout:position layout:x="0.43061118682479027" layout:y="-0.522458395263814" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_36_glyph" layout:reference="S_36">
+            <layout:boundingBox>
+              <layout:position layout:x="0.32516145188025963" layout:y="-0.5482918991263978" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_22_glyph" layout:reference="S_22">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3130963196134453" layout:y="-0.5575608479363411" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_20_glyph" layout:reference="S_20">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3089265625568814" layout:y="-0.5521171860814514" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_49_glyph" layout:reference="S_49">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3596365486555084" layout:y="-0.5489630817362869" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_25_glyph" layout:reference="S_25">
+            <layout:boundingBox>
+              <layout:position layout:x="0.403403076952166" layout:y="-0.5485296387316149" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_11_glyph" layout:reference="S_11">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5057273481719513" layout:y="-0.5745960151732593" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_62_glyph" layout:reference="S_62">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3100706077180958" layout:y="-0.535050521205058" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_26_glyph" layout:reference="S_26">
+            <layout:boundingBox>
+              <layout:position layout:x="0.30949858513748857" layout:y="-0.5419654630084243" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_9_glyph" layout:reference="S_9">
+            <layout:boundingBox>
+              <layout:position layout:x="0.30949858513748857" layout:y="-0.5469677613342637" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_8_glyph" layout:reference="S_8">
+            <layout:boundingBox>
+              <layout:position layout:x="0.37730135224512323" layout:y="-0.5485296387316149" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_14_glyph" layout:reference="S_14">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5195714832899376" layout:y="-0.571805365482733" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_60_glyph" layout:reference="S_60">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4251231975889583" layout:y="-0.5042151447593265" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_3_glyph" layout:reference="S_3">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5160042993343363" layout:y="-0.5082828965610028" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_57_glyph" layout:reference="S_57">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5006379294740066" layout:y="-0.5172812566071351" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_5_glyph" layout:reference="S_5">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4721003854476803" layout:y="-0.5287449207754956" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_13_glyph" layout:reference="S_13">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5001988903351402" layout:y="-0.5506861274633252" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_45_glyph" layout:reference="S_45">
+            <layout:boundingBox>
+              <layout:position layout:x="0.47473462028087965" layout:y="-0.5489604145777656" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_29_glyph" layout:reference="S_29">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4159033756727605" layout:y="-0.5392224632949648" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_54_glyph" layout:reference="S_54">
+            <layout:boundingBox>
+              <layout:position layout:x="0.45841191170424544" layout:y="-0.5605473439522375" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_12_glyph" layout:reference="S_12">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5201751711535687" layout:y="-0.5513024534938823" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_27_glyph" layout:reference="S_27">
+            <layout:boundingBox>
+              <layout:position layout:x="0.38034120542456906" layout:y="-0.4974355584231993" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_34_glyph" layout:reference="S_34">
+            <layout:boundingBox>
+              <layout:position layout:x="0.33823301152594604" layout:y="-0.5040265466115678" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_21_glyph" layout:reference="S_21">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3506647884145072" layout:y="-0.5082914225144183" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_42_glyph" layout:reference="S_42">
+            <layout:boundingBox>
+              <layout:position layout:x="0.33434808124827065" layout:y="-0.511393150443764" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_16_glyph" layout:reference="S_16">
+            <layout:boundingBox>
+              <layout:position layout:x="0.41500384348862945" layout:y="-0.5484212779804468" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_1_glyph" layout:reference="S_1">
+            <layout:boundingBox>
+              <layout:position layout:x="0.32217529971155445" layout:y="-0.5135255883951892" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_39_glyph" layout:reference="S_39">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3422353988508132" layout:y="-0.5488547209851189" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_64_glyph" layout:reference="S_64">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5056674694159005" layout:y="-0.5309714394860883" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_33_glyph" layout:reference="S_33">
+            <layout:boundingBox>
+              <layout:position layout:x="0.445347609018689" layout:y="-0.548014775882315" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_23_glyph" layout:reference="S_23">
+            <layout:boundingBox>
+              <layout:position layout:x="0.429737946974471" layout:y="-0.5483723283941239" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_44_glyph" layout:reference="S_44">
+            <layout:boundingBox>
+              <layout:position layout:x="0.49471090109930815" layout:y="-0.5564795921505612" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_37_glyph" layout:reference="S_37">
+            <layout:boundingBox>
+              <layout:position layout:x="0.31229458591972475" layout:y="-0.5645806188863824" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_66_glyph" layout:reference="S_66">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4995403316268403" layout:y="-0.560424078746126" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_58_glyph" layout:reference="S_58">
+            <layout:boundingBox>
+              <layout:position layout:x="0.49602801851590783" layout:y="-0.5529049011733305" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_31_glyph" layout:reference="S_31">
+            <layout:boundingBox>
+              <layout:position layout:x="0.41116564769137" layout:y="-0.559179254306166" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_53_glyph" layout:reference="S_53">
+            <layout:boundingBox>
+              <layout:position layout:x="0.45918812493174777" layout:y="-0.5481339600529179" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_4_glyph" layout:reference="S_4">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3720971938915778" layout:y="-0.5677894191282137" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_43_glyph" layout:reference="S_43">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3797114456145963" layout:y="-0.5836601345827976" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_65_glyph" layout:reference="S_65">
+            <layout:boundingBox>
+              <layout:position layout:x="0.40431828256915436" layout:y="-0.5833959814841901" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_47_glyph" layout:reference="S_47">
+            <layout:boundingBox>
+              <layout:position layout:x="0.49602801851590783" layout:y="-0.5280053295388272" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_55_glyph" layout:reference="S_55">
+            <layout:boundingBox>
+              <layout:position layout:x="0.42446463888065844" layout:y="-0.4964494367743081" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_30_glyph" layout:reference="S_30">
+            <layout:boundingBox>
+              <layout:position layout:x="0.40756163203429585" layout:y="-0.4918886241481862" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_50_glyph" layout:reference="S_50">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4246841584500917" layout:y="-0.5162951349582439" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_41_glyph" layout:reference="S_41">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5140286232094369" layout:y="-0.5220885996454798" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_2_glyph" layout:reference="S_2">
+            <layout:boundingBox>
+              <layout:position layout:x="0.48746675530800987" layout:y="-0.5488371493716542" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_17_glyph" layout:reference="S_17">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5180619612783411" layout:y="-0.5385992264046792" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_40_glyph" layout:reference="S_40">
+            <layout:boundingBox>
+              <layout:position layout:x="0.5208677469047405" layout:y="-0.5462326876362642" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_46_glyph" layout:reference="S_46">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4027523122637041" layout:y="-0.5676660037342971" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_32_glyph" layout:reference="S_32">
+            <layout:boundingBox>
+              <layout:position layout:x="0.38742475307764096" layout:y="-0.5676660037342971" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_51_glyph" layout:reference="S_51">
+            <layout:boundingBox>
+              <layout:position layout:x="0.38266958536821877" layout:y="-0.5059194897781105" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_15_glyph" layout:reference="S_15">
+            <layout:boundingBox>
+              <layout:position layout:x="0.4394709067899516" layout:y="-0.5751757146374388" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_63_glyph" layout:reference="S_63">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3457305755344923" layout:y="-0.5839250479739378" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_18_glyph" layout:reference="S_18">
+            <layout:boundingBox>
+              <layout:position layout:x="0.40402534403398105" layout:y="-0.5780568824357396" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_7_glyph" layout:reference="S_7">
+            <layout:boundingBox>
+              <layout:position layout:x="0.3441074154596029" layout:y="-0.5668402558289247" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_52_glyph" layout:reference="S_52">
+            <layout:boundingBox>
+              <layout:position layout:x="0.34309412871793254" layout:y="-0.575363140671464" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_59_glyph" layout:reference="S_59">
+            <layout:boundingBox>
+              <layout:position layout:x="0.35891280961729133" layout:y="-0.5668726211435993" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+          <layout:generalGlyph layout:id="S_6_glyph" layout:reference="S_6">
+            <layout:boundingBox>
+              <layout:position layout:x="0.42028318184190605" layout:y="-0.5678597131657109" layout:z="0"/>
+            </layout:boundingBox>
+          </layout:generalGlyph>
+        </layout:listOfAdditionalGraphicalObjects>
+      </layout:layout>
+    </layout:listOfLayouts>
+    <qual:listOfQualitativeSpecies xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1">
+      <qual:qualitativeSpecies metaid="c12eb487-d890-492f-9f14-cf712bd2ffd6" qual:compartment="extracellular" qual:constant="true" qual:id="S_7" qual:name="sigA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">σ factor; family sigma 70; GenBank locus tag in reference sequence NZ_CP011966.2: X276_22455</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#c12eb487-d890-492f-9f14-cf712bd2ffd6">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-08T04:46:15Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28194137"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_5f910091-ac6d-462c-961a-7d9445b88c32" qual:compartment="extracellular" qual:constant="true" qual:id="S_11" qual:name="glucose">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_5f910091-ac6d-462c-961a-7d9445b88c32">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T03:48:38Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_2f41ed3d-a977-421d-8301-3c9d43882dbd" qual:compartment="extracellular" qual:constant="true" qual:id="S_14" qual:name="PTS">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">PTS converts carbohydrates into phosphoesters; containing genes: ptsI, ptsH, hprK, manIIAB, manIIC (X276_23240, X276_02985), manIID (X276_23235, X276_02990), manIIB, manIIA</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_2f41ed3d-a977-421d-8301-3c9d43882dbd">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-19T04:17:04Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="e05a3c00-0ceb-4cae-94d3-f6eaa0ffd9a9" qual:compartment="extracellular" qual:constant="true" qual:id="S_15" qual:name="spoIIE">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#e05a3c00-0ceb-4cae-94d3-f6eaa0ffd9a9">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_811f39fa-33de-4525-a93c-14181d2b83e5" qual:compartment="extracellular" qual:constant="true" qual:id="S_30" qual:name="NAD(P)H">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_811f39fa-33de-4525-a93c-14181d2b83e5">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="ce313477-c68b-47e1-bd39-2eb791b93a41" qual:compartment="extracellular" qual:constant="true" qual:id="S_34" qual:name="NADH">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#ce313477-c68b-47e1-bd39-2eb791b93a41">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-20T05:59:29Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_41cd21e0-2315-46e0-b072-07f6ff488542" qual:compartment="extracellular" qual:constant="true" qual:id="S_37" qual:name="phosphorylation">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_41cd21e0-2315-46e0-b072-07f6ff488542">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T03:04:13Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_0dc62840-ca0d-45b0-8d9f-d0abbbe8c5cc" qual:compartment="cytosol" qual:constant="true" qual:id="S_1" qual:initialLevel="0" qual:maxLevel="1" qual:name="Rnf">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">complex of genes: X276_14415, 14410, 14405, 14400, 14395, 14390, 14385</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_0dc62840-ca0d-45b0-8d9f-d0abbbe8c5cc">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_5c011fba-3887-4b52-8c0b-f20ff24eece1" qual:compartment="cytosol" qual:constant="true" qual:id="S_2" qual:initialLevel="0" qual:maxLevel="1" qual:name="pfk">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">6-phosphofructokinase; X276_01370</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_5c011fba-3887-4b52-8c0b-f20ff24eece1">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_26684ae2-8b04-4839-879c-68acc916d464" qual:compartment="cytosol" qual:constant="false" qual:id="S_3" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetone">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_26684ae2-8b04-4839-879c-68acc916d464">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-08T04:46:15Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29843608"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="ac10a2cd-9448-47aa-b0a2-c8d50bcaa928" qual:compartment="cytosol" qual:constant="false" qual:id="S_4" qual:initialLevel="0" qual:maxLevel="1" qual:name="sigF">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">sporulation sigma factor SigF; GenBank locus tag in reference sequence NZ_CP011966.2: X276_22650</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#ac10a2cd-9448-47aa-b0a2-c8d50bcaa928">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:24229082"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_8f8238f0-6e05-444f-9a92-188f8351c97b" qual:compartment="cytosol" qual:constant="false" qual:id="S_5" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetaldehyde">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_8f8238f0-6e05-444f-9a92-188f8351c97b">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-20T05:59:29Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="be642ed9-b22d-40bf-89bc-55f7ad923cd4" qual:compartment="cytosol" qual:constant="false" qual:id="S_6" qual:initialLevel="0" qual:maxLevel="1" qual:name="sigK">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">GenBank locus tag in reference sequence NZ_CP011966.2: X276_20950</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#be642ed9-b22d-40bf-89bc-55f7ad923cd4">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:38:42Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28194137"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="e7d8047a-b305-460d-a6b5-c880606bf4c8" qual:compartment="cytosol" qual:constant="false" qual:id="S_8" qual:initialLevel="0" qual:maxLevel="1" qual:name="hbd">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">3-hydroxybutyryl-CoA dehydrogenase; K00074; KEGG: Cbei_0325</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#e7d8047a-b305-460d-a6b5-c880606bf4c8">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_984ce70b-8cc1-4346-bdac-52aea30f5ce1" qual:compartment="cytosol" qual:constant="false" qual:id="S_9" qual:initialLevel="0" qual:maxLevel="1" qual:name="ctfA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">CoA transferase subunit A; part of the sol operon; KEGG: Cbei_3833, Cbei_2654</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_984ce70b-8cc1-4346-bdac-52aea30f5ce1">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-05T10:57:00Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_892b12d4-d07f-4c4d-963b-f8c971e4c499" qual:compartment="cytosol" qual:constant="false" qual:id="S_10" qual:initialLevel="0" qual:maxLevel="1" qual:name="crt">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">enoyl-CoA hydratase; K01715; KEGG: Cbei_0322</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_892b12d4-d07f-4c4d-963b-f8c971e4c499">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_9eae60c3-f317-4233-b830-8b379b0c3ed8" qual:compartment="cytosol" qual:constant="false" qual:id="S_12" qual:initialLevel="0" qual:maxLevel="1" qual:name="lactate">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Lactate production occurs only when ferredoxin and hydrogenase level is reduced</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9eae60c3-f317-4233-b830-8b379b0c3ed8">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-18T04:25:37Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:3540574"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="c2f6f6ae-551f-4f83-ba0a-f89a74d0c8a2" qual:compartment="cytosol" qual:constant="false" qual:id="S_13" qual:initialLevel="0" qual:maxLevel="1" qual:name="pyk">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">pyruvate kinase; X276_01375</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#c2f6f6ae-551f-4f83-ba0a-f89a74d0c8a2">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_7d3a08af-055c-4cb9-a10d-2f309bcbd397" qual:compartment="cytosol" qual:constant="false" qual:id="S_16" qual:initialLevel="0" qual:maxLevel="1" qual:name="ack">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">acetate kinase; X276_20705; Cbei_1165</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_7d3a08af-055c-4cb9-a10d-2f309bcbd397">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_9c4bb2ae-2c67-4b77-b0f8-52faa3dd2aa7" qual:compartment="cytosol" qual:constant="false" qual:id="S_17" qual:initialLevel="0" qual:maxLevel="1" qual:name="butyrate">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">n-butanoate    https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&amp;object=PWY-6594</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9c4bb2ae-2c67-4b77-b0f8-52faa3dd2aa7">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T10:10:45Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:24229082"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_437c9834-011c-4d4f-b12a-173441d58ef6" qual:compartment="cytosol" qual:constant="false" qual:id="S_18" qual:initialLevel="0" qual:maxLevel="1" qual:name="spoIIA+p">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">phosphorylaion spoIIA by spoIIAB</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_437c9834-011c-4d4f-b12a-173441d58ef6">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_86ec8379-ce92-492f-b109-43815f246803" qual:compartment="cytosol" qual:constant="false" qual:id="S_19" qual:initialLevel="0" qual:maxLevel="1" qual:name="spo0A+p">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">phosphorylated sporulation stage 0 transcription factor.</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_86ec8379-ce92-492f-b109-43815f246803">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:17:19Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28194137"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="cfaddb35-3c7b-4d8d-a892-a07c2392ab7b" qual:compartment="cytosol" qual:constant="false" qual:id="S_20" qual:initialLevel="0" qual:maxLevel="1" qual:name="ald">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">aldehyde dehydrogenase, butanol (solvent) producer; part of the sol operon. GenBank locus tag in reference sequence NZ_CP011966.2: X276_RS20360; KEGG: Cbei_3832; key enzyme in the formation of butyraldehyde from butyryl-CoA; corresponding to adhE1 in C. acetobutylicum</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#cfaddb35-3c7b-4d8d-a892-a07c2392ab7b">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:38:42Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_67b40a60-1d58-4cf9-ab1c-6b5f744b02ca" qual:compartment="cytosol" qual:constant="false" qual:id="S_21" qual:initialLevel="0" qual:maxLevel="1" qual:name="EtfAB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">electron-transferring flavoprotein complex</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_67b40a60-1d58-4cf9-ab1c-6b5f744b02ca">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_68786288-77a6-4e94-abbc-c66dceebca3a" qual:compartment="cytosol" qual:constant="false" qual:id="S_22" qual:initialLevel="0" qual:maxLevel="1" qual:name="spo0A">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">sporulation stage 0 transcription factor. GenBank locus tag in reference sequence NZ_CP011966.2: X276_RS08400</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_68786288-77a6-4e94-abbc-c66dceebca3a">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T03:04:13Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="f9260054-11bf-447f-ba64-58fb3a150013" qual:compartment="cytosol" qual:constant="false" qual:id="S_23" qual:initialLevel="0" qual:maxLevel="1" qual:name="pta">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Phosphate acetyltransferase; X276_20710; Cbei_1164</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#f9260054-11bf-447f-ba64-58fb3a150013">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_20e37274-7ab3-4174-9c54-f01316838bd0" qual:compartment="cytosol" qual:constant="false" qual:id="S_24" qual:initialLevel="0" qual:maxLevel="1" qual:name="adhB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">alcohol dehydrogenase B; KEGG: Cbei_1722</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_20e37274-7ab3-4174-9c54-f01316838bd0">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-05T10:57:00Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_7d43f11c-ed98-4704-b944-4353d5bdcc05" qual:compartment="cytosol" qual:constant="false" qual:id="S_25" qual:initialLevel="0" qual:maxLevel="1" qual:name="bcd">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">butyryl-CoA dehydrogenase; K00248 ; KEGG: Cbei_0322</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_7d43f11c-ed98-4704-b944-4353d5bdcc05">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_9b11e04a-4a50-44da-a1e8-95e43427b5cc" qual:compartment="cytosol" qual:constant="false" qual:id="S_26" qual:initialLevel="0" qual:maxLevel="1" qual:name="ctfB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">scoB; CoA transferase subunit B; part of the sol operon; K01029; KEGG: Cbei_3834, Cbei_2653</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9b11e04a-4a50-44da-a1e8-95e43427b5cc">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-08T09:58:53Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_5ebce586-60e5-4634-babe-14290700e1d6" qual:compartment="cytosol" qual:constant="false" qual:id="S_27" qual:initialLevel="0" qual:maxLevel="1" qual:name="butyric acid">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_5ebce586-60e5-4634-babe-14290700e1d6">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:27966599"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="c951c53d-b4a9-466e-af99-d4770dc46e89" qual:compartment="cytosol" qual:constant="false" qual:id="S_28" qual:initialLevel="0" qual:maxLevel="1" qual:name="ethanol">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#c951c53d-b4a9-466e-af99-d4770dc46e89">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-08T04:46:15Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29843608"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_7efeb665-3edc-4e9b-b704-ac3cec5f8caf" qual:compartment="cytosol" qual:constant="false" qual:id="S_29" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetoacetyl-CoA">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_7efeb665-3edc-4e9b-b704-ac3cec5f8caf">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T09:53:16Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_1ec8c3c0-64c1-49ca-9add-cbecba759161" qual:compartment="cytosol" qual:constant="false" qual:id="S_31" qual:initialLevel="0" qual:maxLevel="1" qual:name="sporulation">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_1ec8c3c0-64c1-49ca-9add-cbecba759161">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_3f5bc3ca-1b6a-4fc9-9709-eb117e275141" qual:compartment="cytosol" qual:constant="false" qual:id="S_32" qual:initialLevel="0" qual:maxLevel="1" qual:name="sigE">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">sporulation sigma factor SigE</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_3f5bc3ca-1b6a-4fc9-9709-eb117e275141">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:17:19Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:24229082"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_65b2e16c-3c29-4e64-b52c-14becb984855" qual:compartment="cytosol" qual:constant="false" qual:id="S_33" qual:initialLevel="0" qual:maxLevel="1" qual:name="ptb">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">phosphate butyryltransferase; GenBank locus tag in reference sequence NZ_CP011966.2: X276_25645; Cbei_4899</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_65b2e16c-3c29-4e64-b52c-14becb984855">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_95a75c89-9412-4361-8151-d16cd88b8dc5" qual:compartment="cytosol" qual:constant="false" qual:id="S_35" qual:initialLevel="0" qual:maxLevel="1" qual:name="pyruvate">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Pyruvate is the product of glucose. Solvents (ABE) inhibit glucose uptake (due to the restriction of CellCollective inhibition of pyruvate instead of glucose)</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_95a75c89-9412-4361-8151-d16cd88b8dc5">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-18T04:25:37Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_9d71e605-90cf-464b-af15-a1b7a7a88121" qual:compartment="cytosol" qual:constant="false" qual:id="S_36" qual:initialLevel="0" qual:maxLevel="1" qual:name="adhA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">alcohol dehydrogenase A; KEGG: Cbei_2181</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9d71e605-90cf-464b-af15-a1b7a7a88121">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-05T10:57:00Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_40cb4b48-f2dc-4912-9fed-2a73e82a7a90" qual:compartment="cytosol" qual:constant="false" qual:id="S_38" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetyl-CoA">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_40cb4b48-f2dc-4912-9fed-2a73e82a7a90">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T09:53:16Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_16a0336f-4d08-4c59-9b79-807685a9c65b" qual:compartment="cytosol" qual:constant="false" qual:id="S_39" qual:initialLevel="0" qual:maxLevel="1" qual:name="bdhAB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">butanol dehydrogenase; K00100  Source: https://www.genome.jp/kegg-bin/show_pathway?org_name=cbe&amp;mapno=00650&amp;mapscale=1.0&amp;show_description=hide</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_16a0336f-4d08-4c59-9b79-807685a9c65b">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-08T11:09:08Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_9bdae2a9-9dce-4408-bdea-2bd44757b7c5" qual:compartment="cytosol" qual:constant="false" qual:id="S_40" qual:initialLevel="0" qual:maxLevel="1" qual:name="lactic acid">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_9bdae2a9-9dce-4408-bdea-2bd44757b7c5">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29843608"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:3540574"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="e6cca889-10cf-4df7-a01f-ad58b19b2a9b" qual:compartment="cytosol" qual:constant="false" qual:id="S_41" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetic acid">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#e6cca889-10cf-4df7-a01f-ad58b19b2a9b">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:27966599"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="ba9a45e0-2e8d-44ed-9160-e302b84c4fa6" qual:compartment="cytosol" qual:constant="false" qual:id="S_42" qual:initialLevel="0" qual:maxLevel="1" qual:name="ferredoxin">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#ba9a45e0-2e8d-44ed-9160-e302b84c4fa6">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-18T04:25:37Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_790a7460-9cc0-4d11-af19-280dea849ab2" qual:compartment="cytosol" qual:constant="false" qual:id="S_43" qual:initialLevel="0" qual:maxLevel="1" qual:name="spoIIAB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">anti-sigma F factor; Cbei_0813; GenBank locus tag in reference sequence NZ_CP011966.2: X276_22655</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_790a7460-9cc0-4d11-af19-280dea849ab2">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28194137"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:24229082"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="c0c3e5dc-c414-4f42-9612-35cf8b3050f0" qual:compartment="cytosol" qual:constant="true" qual:id="S_44" qual:initialLevel="0" qual:maxLevel="1" qual:name="gap-pgk-tpi-pgm- X276_23705-eno">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Genes for the enzymes involved in the subsequent C-3 part of glycolysis</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#c0c3e5dc-c414-4f42-9612-35cf8b3050f0">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="a76a5096-612a-4428-9003-814df4c412e3" qual:compartment="cytosol" qual:constant="true" qual:id="S_45" qual:initialLevel="0" qual:maxLevel="1" qual:name="pfo">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">pyruvate:ferredoxin (flavodoxin) oxidoreductase; GenBank locus tag in reference sequence NZ_CP011966.2: X276_03990; KEGG: Cbei_4318 (99% identity)</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#a76a5096-612a-4428-9003-814df4c412e3">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-09T07:14:03Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_830b18ca-1e65-444a-9e66-f0e0e4fec277" qual:compartment="cytosol" qual:constant="false" qual:id="S_46" qual:initialLevel="0" qual:maxLevel="1" qual:name="sigG">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">GenBank locus tag in reference sequence NZ_CP011966.2: X276_20920</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_830b18ca-1e65-444a-9e66-f0e0e4fec277">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:17:19Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="fef81660-ffdb-460f-89a6-350720d8762a" qual:compartment="cytosol" qual:constant="false" qual:id="S_47" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetyl-p">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#fef81660-ffdb-460f-89a6-350720d8762a">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T09:35:28Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:27966599"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="d7893ac9-905d-407a-9722-42225a6ecf5d" qual:compartment="cytosol" qual:constant="false" qual:id="S_48" qual:initialLevel="0" qual:maxLevel="1" qual:name="butyryl-CoA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">butanoyl-CoA</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#d7893ac9-905d-407a-9722-42225a6ecf5d">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T04:38:42Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:27966599"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="b6a8643f-46d2-4d68-8c8d-a57a4b8baf0e" qual:compartment="cytosol" qual:constant="false" qual:id="S_49" qual:initialLevel="0" qual:maxLevel="1" qual:name="thlA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">thiolase, acetyl-CoA acetyltransferase; K00626; KEGG: Cbei_0411</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#b6a8643f-46d2-4d68-8c8d-a57a4b8baf0e">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-08T06:12:18Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_5f132fe2-d93c-4cca-914b-0cc07de3da55" qual:compartment="cytosol" qual:constant="false" qual:id="S_50" qual:initialLevel="0" qual:maxLevel="1" qual:name="crotonoyl-CoA">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_5f132fe2-d93c-4cca-914b-0cc07de3da55">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_1046d872-b209-4a58-bae5-6dd905024af2" qual:compartment="cytosol" qual:constant="false" qual:id="S_51" qual:initialLevel="0" qual:maxLevel="1" qual:name="butyryl-p">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Butyryl phosphate</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_1046d872-b209-4a58-bae5-6dd905024af2">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T09:35:28Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:27966599"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_1c8d7eec-1b52-48ff-b506-0740b049d198" qual:compartment="cytosol" qual:constant="false" qual:id="S_52" qual:initialLevel="0" qual:maxLevel="1" qual:name="AbrB">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">GenBank locus tag in reference sequence NZ_CP011966.2: X276_01205</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_1c8d7eec-1b52-48ff-b506-0740b049d198">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_78259ec7-e225-4194-85c6-0c8d8bcaa1de" qual:compartment="cytosol" qual:constant="false" qual:id="S_53" qual:initialLevel="0" qual:maxLevel="1" qual:name="buk1">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Butyrate (acid) producer. GenBank locus tag in reference sequence NZ_CP011966.2: X276_RS01200; KEGG: Cbei_0204, Cbei_4006, Cbei_4609</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_78259ec7-e225-4194-85c6-0c8d8bcaa1de">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:15028679"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_620fcd65-187f-42cb-9c72-4e4b637d2647" qual:compartment="cytosol" qual:constant="false" qual:id="S_54" qual:initialLevel="0" qual:maxLevel="1" qual:name="cell membrane">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">It seemed that butanol could disrupt fluidity and function of the cell membrane. Destroyed cell membrane causes cell death</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_620fcd65-187f-42cb-9c72-4e4b637d2647">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-08T04:46:15Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:3540574"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:24229082"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_340702ca-3f1d-4f58-b93a-0790b5b6c5d9" qual:compartment="cytosol" qual:constant="false" qual:id="S_55" qual:initialLevel="0" qual:maxLevel="1" qual:name="butanol">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_340702ca-3f1d-4f58-b93a-0790b5b6c5d9">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T12:32:26Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28990140"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29843608"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_59bd6813-0e9d-4a3c-a920-c0d932e470bc" qual:compartment="cytosol" qual:constant="false" qual:id="S_56" qual:initialLevel="0" qual:maxLevel="1" qual:name="3-hydroxybutyryl-CoA">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_59bd6813-0e9d-4a3c-a920-c0d932e470bc">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="af015995-1566-4a89-be82-7fed9659c395" qual:compartment="cytosol" qual:constant="false" qual:id="S_57" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetoacetate">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#af015995-1566-4a89-be82-7fed9659c395">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-07T14:57:02Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="fe87c63b-ca42-4ed9-a124-ee3cdeeb0698" qual:compartment="cytosol" qual:constant="true" qual:id="S_58" qual:initialLevel="0" qual:maxLevel="1" qual:name="pgi">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Gene encodes a member of the glucose phosphate isomerase protein family. X276_25070</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#fe87c63b-ca42-4ed9-a124-ee3cdeeb0698">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T02:28:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="da3a0e18-d782-457e-9418-fd278368f37f" qual:compartment="cytosol" qual:constant="false" qual:id="S_59" qual:initialLevel="0" qual:maxLevel="1" qual:name="sigH">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#da3a0e18-d782-457e-9418-fd278368f37f">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T03:48:38Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="bcb5703e-4540-4b80-a755-276949c52d8f" qual:compartment="cytosol" qual:constant="false" qual:id="S_60" qual:initialLevel="0" qual:maxLevel="1" qual:name="butanal">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">Butyralaldehyde</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#bcb5703e-4540-4b80-a755-276949c52d8f">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-20T05:59:29Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25182496"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_0fb7950f-f52a-4372-8ec2-f27e3741ebec" qual:compartment="cytosol" qual:constant="false" qual:id="S_61" qual:initialLevel="0" qual:maxLevel="1" qual:name="glucose + PTS">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_0fb7950f-f52a-4372-8ec2-f27e3741ebec">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T03:11:06Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:29477757"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="eae1cde0-e4a6-44d5-889c-b27bb19d155e" qual:compartment="cytosol" qual:constant="false" qual:id="S_62" qual:initialLevel="0" qual:maxLevel="1" qual:name="adc">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">acetoacetate decarboxylase; part of the sol operon; KEGG: Cbei_3835</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#eae1cde0-e4a6-44d5-889c-b27bb19d155e">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-05T10:57:00Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_6704cbf3-c70c-43a8-b230-5b6ff87330b4" qual:compartment="cytosol" qual:constant="false" qual:id="S_63" qual:initialLevel="0" qual:maxLevel="1" qual:name="spoIIAB+p">
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_6704cbf3-c70c-43a8-b230-5b6ff87330b4">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-04T06:55:31Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_627b198a-23a6-4cd2-adaa-a4a4d40083a0" qual:compartment="cytosol" qual:constant="false" qual:id="S_64" qual:initialLevel="0" qual:maxLevel="1" qual:name="acetate">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">https://biocyc.org/META/NEW-IMAGE?type=PATHWAY&amp;object=PWY-6594</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_627b198a-23a6-4cd2-adaa-a4a4d40083a0">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-21T10:10:45Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:22102576"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:3540574"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_909df47c-263d-4071-a1d1-b37be254cedc" qual:compartment="cytosol" qual:constant="false" qual:id="S_65" qual:initialLevel="0" qual:maxLevel="1" qual:name="spoIIAA">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">GenBank locus tag in reference sequence NZ_CP011966.2: X276_22660</p><p key="P_description_1" contentType="Description">spoIIAA is dephophorylated by SPOIIAB -> unfunction; spoIIE phosphorylates spoIIAA and spoIIAA inactivated spoIIAB</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_909df47c-263d-4071-a1d1-b37be254cedc">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-03-07T02:40:14Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:28194137"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:25631287"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+      <qual:qualitativeSpecies metaid="_0d6a55ad-7e7e-41c3-bef2-ee9d7d756cd8" qual:compartment="cytosol" qual:constant="true" qual:id="S_66" qual:initialLevel="0" qual:maxLevel="1" qual:name="fba">
+        <notes>
+          <body xmlns="http://www.w3.org/1999/xhtml">
+            <p key="P_description_0" contentType="Description">fructose bisphosphate aldolase; X276_17335 and X276_11155; KEGG: Cbei_1903</p></body>
+        </notes>
+        <annotation>
+	<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:bqbiol="http://biomodels.net/biology-qualifiers/">
+	<rdf:Description rdf:about="#_0d6a55ad-7e7e-41c3-bef2-ee9d7d756cd8">
+	<dcterms:modified rdf:parseType="Resource">
+	<dcterms:W3CDTF>2019-02-11T04:13:23Z</dcterms:W3CDTF>
+	</dcterms:modified>
+	<bqbiol:isDescribedBy>
+	<rdf:Bag>
+	<rdf:li rdf:resource="urn:miriam:pubmed:30718562"/>
+	</rdf:Bag>
+	</bqbiol:isDescribedBy>
+	</rdf:Description>
+	</rdf:RDF>
+	</annotation>
+            </qual:qualitativeSpecies>
+    </qual:listOfQualitativeSpecies>
+    <qual:listOfTransitions xmlns:qual="http://www.sbml.org/sbml/level3/version1/qual/version1">
+      <qual:transition qual:id="tr_S_3">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_3_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_3_in_S_62" qual:qualitativeSpecies="S_62" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_3_in_S_57" qual:qualitativeSpecies="S_57" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_3" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_62 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_31 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_57 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_31 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_4">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_4_in_S_43" qual:qualitativeSpecies="S_43" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_4_in_S_15" qual:qualitativeSpecies="S_15" qual:sign="dual" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_4_in_S_59" qual:qualitativeSpecies="S_59" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_4" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_59 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_43 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_15 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_15 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_43 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_15 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_5">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_5_in_S_38" qual:qualitativeSpecies="S_38" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_5_in_S_20" qual:qualitativeSpecies="S_20" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_5" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <ci> S_20 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_38 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_6">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_6_in_S_46" qual:qualitativeSpecies="S_46" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_6" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_46 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_8">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_8_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_8_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_8" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_9">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_9_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_9" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_10">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_10_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_10_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_10" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_12">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_12_in_S_42" qual:qualitativeSpecies="S_42" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_12_in_S_35" qual:qualitativeSpecies="S_35" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_12" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <eq/>
+                  <ci> S_35 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <eq/>
+                    <ci> S_42 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_13">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_13_in_S_2" qual:qualitativeSpecies="S_2" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_13" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_2 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_16">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_16_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_16_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_16" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_17">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_17_in_S_33" qual:qualitativeSpecies="S_33" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_17_in_S_53" qual:qualitativeSpecies="S_53" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_17_in_S_61" qual:qualitativeSpecies="S_61" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_17_in_S_17" qual:qualitativeSpecies="S_17" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_17" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_61 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <eq/>
+                        <ci> S_17 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_33 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <eq/>
+                        <ci> S_17 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_53 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_17 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_18">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_18_in_S_65" qual:qualitativeSpecies="S_65" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_18_in_S_43" qual:qualitativeSpecies="S_43" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_18" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <eq/>
+                  <ci> S_43 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_65 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_19">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_19_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_19_in_S_22" qual:qualitativeSpecies="S_22" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_19_in_S_7" qual:qualitativeSpecies="S_7" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_19_in_S_37" qual:qualitativeSpecies="S_37" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_19" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_37 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_22 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_7 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <and/>
+                        <apply>
+                          <eq/>
+                          <ci> S_22 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <eq/>
+                          <ci> S_37 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_22 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_37 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_31 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_20">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_20_in_S_6" qual:qualitativeSpecies="S_6" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_20_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_20" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <ci> S_19 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_6 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_21">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_21_in_S_34" qual:qualitativeSpecies="S_34" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_21" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_34 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_22">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_22_in_S_6" qual:qualitativeSpecies="S_6" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_22_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_22" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <ci> S_19 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_6 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_23">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_23_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_23_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_23" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_24">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_24_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_24" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_25">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_25_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_25_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_25" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_26">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_26_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_26" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_27">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_27_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_27_in_S_17" qual:qualitativeSpecies="S_17" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_27_in_S_51" qual:qualitativeSpecies="S_51" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_27" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_51 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_17 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_28">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_28_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_28_in_S_36" qual:qualitativeSpecies="S_36" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_28_in_S_5" qual:qualitativeSpecies="S_5" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_28_in_S_20" qual:qualitativeSpecies="S_20" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_28_in_S_24" qual:qualitativeSpecies="S_24" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_28" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_36 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <or/>
+                        <apply>
+                          <eq/>
+                          <ci> S_31 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <eq/>
+                          <ci> S_20 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_24 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <or/>
+                        <apply>
+                          <eq/>
+                          <ci> S_31 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <eq/>
+                          <ci> S_20 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_5 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_20 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_29">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_29_in_S_8" qual:qualitativeSpecies="S_8" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_29_in_S_38" qual:qualitativeSpecies="S_38" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_29_in_S_26" qual:qualitativeSpecies="S_26" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_29_in_S_49" qual:qualitativeSpecies="S_49" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_29" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <eq/>
+                      <ci> S_26 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_49 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_38 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_8 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_31">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_31_in_S_6" qual:qualitativeSpecies="S_6" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_46" qual:qualitativeSpecies="S_46" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_32" qual:qualitativeSpecies="S_32" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_54" qual:qualitativeSpecies="S_54" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_7" qual:qualitativeSpecies="S_7" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_31_in_S_59" qual:qualitativeSpecies="S_59" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_31" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <and/>
+                        <apply>
+                          <eq/>
+                          <ci> S_46 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <and/>
+                          <apply>
+                            <not/>
+                            <apply>
+                              <eq/>
+                              <ci> S_54 </ci>
+                              <cn type="integer"> 1 </cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <eq/>
+                            <ci> S_7 </ci>
+                            <cn type="integer"> 1 </cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <and/>
+                        <apply>
+                          <eq/>
+                          <ci> S_32 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <and/>
+                          <apply>
+                            <not/>
+                            <apply>
+                              <eq/>
+                              <ci> S_54 </ci>
+                              <cn type="integer"> 1 </cn>
+                            </apply>
+                          </apply>
+                          <apply>
+                            <eq/>
+                            <ci> S_7 </ci>
+                            <cn type="integer"> 1 </cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_19 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_54 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_6 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_54 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_7 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_59 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_54 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_32">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_32_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_32_in_S_4" qual:qualitativeSpecies="S_4" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_32" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <ci> S_4 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_19 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_33">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_33_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_33_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_33" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_35">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_35_in_S_13" qual:qualitativeSpecies="S_13" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_35_in_S_61" qual:qualitativeSpecies="S_61" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_35_in_S_66" qual:qualitativeSpecies="S_66" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_35_in_S_58" qual:qualitativeSpecies="S_58" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_35_in_S_44" qual:qualitativeSpecies="S_44" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_35" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <eq/>
+                        <ci> S_66 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_13 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_58 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_61 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_44 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_36">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_36_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_36" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_38">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_38_in_S_29" qual:qualitativeSpecies="S_29" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_38_in_S_35" qual:qualitativeSpecies="S_35" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_38_in_S_45" qual:qualitativeSpecies="S_45" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_38_in_S_49" qual:qualitativeSpecies="S_49" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_38_in_S_64" qual:qualitativeSpecies="S_64" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_38" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_64 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_29 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_35 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_45 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_49 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_39">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_39_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_39" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_40">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_40_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_40_in_S_12" qual:qualitativeSpecies="S_12" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_40" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <eq/>
+                  <ci> S_12 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_41">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_41_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_41_in_S_47" qual:qualitativeSpecies="S_47" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_41_in_S_64" qual:qualitativeSpecies="S_64" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_41" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_47 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_64 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_42">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_42_in_S_1" qual:qualitativeSpecies="S_1" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_42_in_S_21" qual:qualitativeSpecies="S_21" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_42" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_1 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_43">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_43_in_S_65" qual:qualitativeSpecies="S_65" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_43_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_43_in_S_15" qual:qualitativeSpecies="S_15" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_43_in_S_59" qual:qualitativeSpecies="S_59" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_43" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <and/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_59 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <not/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_65 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_15 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_46">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_46_in_S_32" qual:qualitativeSpecies="S_32" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_46" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_32 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_47">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_47_in_S_38" qual:qualitativeSpecies="S_38" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_47" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_38 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_48">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_48_in_S_29" qual:qualitativeSpecies="S_29" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_48_in_S_50" qual:qualitativeSpecies="S_50" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_48_in_S_17" qual:qualitativeSpecies="S_17" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_48_in_S_25" qual:qualitativeSpecies="S_25" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_48_in_S_20" qual:qualitativeSpecies="S_20" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_48_in_S_21" qual:qualitativeSpecies="S_21" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_48" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <eq/>
+                        <ci> S_50 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_20 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_25 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_17 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_29 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_21 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_49">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_49_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_49_in_S_48" qual:qualitativeSpecies="S_48" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_49" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_50">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_50_in_S_56" qual:qualitativeSpecies="S_56" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_50_in_S_42" qual:qualitativeSpecies="S_42" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_50_in_S_10" qual:qualitativeSpecies="S_10" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_50" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_42 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_10 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_56 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_51">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_51_in_S_48" qual:qualitativeSpecies="S_48" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_51" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_48 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_52">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_52_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_52" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <eq/>
+                  <ci> S_19 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_53">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_53_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_53_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_53" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <not/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_31 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_54">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_54_in_S_17" qual:qualitativeSpecies="S_17" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_54_in_S_28" qual:qualitativeSpecies="S_28" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_54_in_S_11" qual:qualitativeSpecies="S_11" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_54_in_S_55" qual:qualitativeSpecies="S_55" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_54_in_S_3" qual:qualitativeSpecies="S_3" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_54" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_17 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <eq/>
+                        <ci> S_3 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_28 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_11 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <or/>
+                        <apply>
+                          <eq/>
+                          <ci> S_3 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <eq/>
+                          <ci> S_55 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_28 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_55">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_55_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_55_in_S_36" qual:qualitativeSpecies="S_36" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_55_in_S_60" qual:qualitativeSpecies="S_60" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_55_in_S_30" qual:qualitativeSpecies="S_30" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_55_in_S_39" qual:qualitativeSpecies="S_39" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_55_in_S_24" qual:qualitativeSpecies="S_24" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_55" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <or/>
+                    <apply>
+                      <or/>
+                      <apply>
+                        <and/>
+                        <apply>
+                          <eq/>
+                          <ci> S_36 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <not/>
+                          <apply>
+                            <eq/>
+                            <ci> S_31 </ci>
+                            <cn type="integer"> 1 </cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                      <apply>
+                        <and/>
+                        <apply>
+                          <eq/>
+                          <ci> S_24 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                        <apply>
+                          <not/>
+                          <apply>
+                            <eq/>
+                            <ci> S_31 </ci>
+                            <cn type="integer"> 1 </cn>
+                          </apply>
+                        </apply>
+                      </apply>
+                    </apply>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_30 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_31 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_60 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <not/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_39 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <eq/>
+                      <ci> S_31 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_56">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_56_in_S_29" qual:qualitativeSpecies="S_29" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_56_in_S_10" qual:qualitativeSpecies="S_10" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_56_in_S_8" qual:qualitativeSpecies="S_8" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_56" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_10 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_8 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_29 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_57">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_57_in_S_29" qual:qualitativeSpecies="S_29" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_57_in_S_9" qual:qualitativeSpecies="S_9" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_57_in_S_26" qual:qualitativeSpecies="S_26" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_57" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_29 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_26 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_9 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_59">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_59_in_S_52" qual:qualitativeSpecies="S_52" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_59_in_S_7" qual:qualitativeSpecies="S_7" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_59" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_7 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_60">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_60_in_S_39" qual:qualitativeSpecies="S_39" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_60_in_S_20" qual:qualitativeSpecies="S_20" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_60_in_S_48" qual:qualitativeSpecies="S_48" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_60" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_48 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_20 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <eq/>
+                  <ci> S_39 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_61">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_61_in_S_14" qual:qualitativeSpecies="S_14" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_61_in_S_31" qual:qualitativeSpecies="S_31" qual:sign="negative" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_61_in_S_11" qual:qualitativeSpecies="S_11" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_61_in_S_54" qual:qualitativeSpecies="S_54" qual:sign="dual" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_61" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_14 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_11 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_54 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_54 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_11 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_14 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <eq/>
+                        <ci> S_54 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                    </apply>
+                  </apply>
+                  <apply>
+                    <not/>
+                    <apply>
+                      <and/>
+                      <apply>
+                        <eq/>
+                        <ci> S_31 </ci>
+                        <cn type="integer"> 1 </cn>
+                      </apply>
+                      <apply>
+                        <not/>
+                        <apply>
+                          <eq/>
+                          <ci> S_54 </ci>
+                          <cn type="integer"> 1 </cn>
+                        </apply>
+                      </apply>
+                    </apply>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_62">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_62_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_62" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <eq/>
+                <ci> S_19 </ci>
+                <cn type="integer"> 1 </cn>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_63">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_63_in_S_43" qual:qualitativeSpecies="S_43" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_63_in_S_37" qual:qualitativeSpecies="S_37" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_63" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_43 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_37 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_37 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_43 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_64">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_64_in_S_16" qual:qualitativeSpecies="S_16" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_64_in_S_23" qual:qualitativeSpecies="S_23" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_64_in_S_61" qual:qualitativeSpecies="S_61" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_64_in_S_3" qual:qualitativeSpecies="S_3" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_64" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <or/>
+                  <apply>
+                    <eq/>
+                    <ci> S_16 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <and/>
+                    <apply>
+                      <eq/>
+                      <ci> S_23 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                    <apply>
+                      <eq/>
+                      <ci> S_3 </ci>
+                      <cn type="integer"> 1 </cn>
+                    </apply>
+                  </apply>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_61 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_3 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+      <qual:transition qual:id="tr_S_65">
+        <qual:listOfInputs>
+          <qual:input qual:id="tr_S_65_in_S_19" qual:qualitativeSpecies="S_19" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_65_in_S_15" qual:qualitativeSpecies="S_15" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+          <qual:input qual:id="tr_S_65_in_S_59" qual:qualitativeSpecies="S_59" qual:sign="positive" qual:thresholdLevel="1" qual:transitionEffect="none"/>
+        </qual:listOfInputs>
+        <qual:listOfOutputs>
+          <qual:output qual:qualitativeSpecies="S_65" qual:transitionEffect="assignmentLevel"/>
+        </qual:listOfOutputs>
+        <qual:listOfFunctionTerms>
+          <qual:defaultTerm qual:resultLevel="0">
+          </qual:defaultTerm>
+          <qual:functionTerm qual:resultLevel="1">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">            
+              <apply>
+                <or/>
+                <apply>
+                  <eq/>
+                  <ci> S_15 </ci>
+                  <cn type="integer"> 1 </cn>
+                </apply>
+                <apply>
+                  <and/>
+                  <apply>
+                    <eq/>
+                    <ci> S_19 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                  <apply>
+                    <eq/>
+                    <ci> S_59 </ci>
+                    <cn type="integer"> 1 </cn>
+                  </apply>
+                </apply>
+              </apply>
+            </math>
+                    </qual:functionTerm>
+        </qual:listOfFunctionTerms>
+      </qual:transition>
+    </qual:listOfTransitions>
+    <listOfCompartments>
+      <compartment constant="true" id="extracellular" name="extracellular"/>
+      <compartment constant="true" id="cytosol" name="cytosol"/>
+    </listOfCompartments>
+  </model>
+</sbml>

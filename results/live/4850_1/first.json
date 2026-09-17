@@ -1,0 +1,1304 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "4850_1",
+  "name": " Bortezomib Responses in U266 Human Myeloma Cells",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 67,
+  "after": {
+    "nodes": 10,
+    "n_nodes": 10,
+    "inputs": 5,
+    "internal_nodes": 5,
+    "nonconstant_rules": 5,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 5,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FasL": "+",
+      "v_p53": "+",
+      "v_STRESS": "+",
+      "v_pSTAT3": "-",
+      "v_Bort": "+",
+      "v_PIP3": "-",
+      "v_SHP1": "+",
+      "v_TNFA": "-",
+      "v_TNFAR": "-",
+      "v_X": "-"
+    },
+    "positive_edges": 18,
+    "negative_edges": 7,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 25,
+    "max_indegree": 10,
+    "local_family_counts": {
+      "UNATE_OTHER": 4,
+      "MIN": 1
+    },
+    "conflicts": {
+      "v_FasL": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      },
+      "v_PIP3": {
+        "v_p53": "-",
+        "v_STRESS": "-",
+        "v_PIP3": "+",
+        "v_pSTAT3": "+"
+      },
+      "v_STRESS": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      },
+      "v_p53": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_PIP3": "-",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      }
+    },
+    "local": {
+      "v_p53": {
+        "signs": {
+          "v_FasL": "+",
+          "v_PIP3": "-",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STRESS": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "+",
+          "v_PIP3": "-",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_PIP3": "+",
+          "v_p53": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pSTAT3": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "-",
+          "v_PIP3": "+",
+          "v_SHP1": "-",
+          "v_STRESS": "-",
+          "v_TNFA": "+",
+          "v_TNFAR": "+",
+          "v_X": "+",
+          "v_p53": "-",
+          "v_pSTAT3": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FasL": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "+",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 10,
+    "n_nodes": 10,
+    "inputs": 5,
+    "internal_nodes": 5,
+    "nonconstant_rules": 10,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 10,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_FasL": "+",
+      "v_p53": "+",
+      "v_STRESS": "+",
+      "v_pSTAT3": "-",
+      "v_Bort": "+",
+      "v_PIP3": "-",
+      "v_SHP1": "+",
+      "v_TNFA": "-",
+      "v_TNFAR": "-",
+      "v_X": "-"
+    },
+    "positive_edges": 23,
+    "negative_edges": 7,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 30,
+    "max_indegree": 10,
+    "local_family_counts": {
+      "UNATE_OTHER": 4,
+      "MIN": 1,
+      "MIN_MAX": 5
+    },
+    "conflicts": {
+      "v_FasL": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      },
+      "v_PIP3": {
+        "v_p53": "-",
+        "v_STRESS": "-",
+        "v_PIP3": "+",
+        "v_pSTAT3": "+"
+      },
+      "v_STRESS": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      },
+      "v_p53": {
+        "v_p53": "+",
+        "v_STRESS": "+",
+        "v_PIP3": "-",
+        "v_pSTAT3": "-",
+        "v_FasL": "+"
+      },
+      "v_SHP1": {
+        "v_pSTAT3": "-",
+        "v_SHP1": "+"
+      }
+    },
+    "local": {
+      "v_p53": {
+        "signs": {
+          "v_FasL": "+",
+          "v_PIP3": "-",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_STRESS": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "+",
+          "v_PIP3": "-",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIP3": {
+        "signs": {
+          "v_PIP3": "+",
+          "v_p53": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_pSTAT3": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "-",
+          "v_PIP3": "+",
+          "v_SHP1": "-",
+          "v_STRESS": "-",
+          "v_TNFA": "+",
+          "v_TNFAR": "+",
+          "v_X": "+",
+          "v_p53": "-",
+          "v_pSTAT3": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_FasL": {
+        "signs": {
+          "v_Bort": "+",
+          "v_FasL": "+",
+          "v_STRESS": "+",
+          "v_p53": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bort": {
+        "signs": {
+          "v_Bort": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNFAR": {
+        "signs": {
+          "v_TNFAR": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_SHP1": {
+        "signs": {
+          "v_SHP1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_X": {
+        "signs": {
+          "v_X": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TNFA": {
+        "signs": {
+          "v_TNFA": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 83,
+    "examples": [
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 1,
+        "v_SHP1": 0,
+        "v_STRESS": 0,
+        "v_TNFA": 0,
+        "v_TNFAR": 0,
+        "v_X": 0,
+        "v_p53": 0,
+        "v_pSTAT3": 1
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 0,
+        "v_TNFA": 0,
+        "v_TNFAR": 0,
+        "v_X": 0,
+        "v_p53": 0,
+        "v_pSTAT3": 1
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 0,
+        "v_TNFA": 0,
+        "v_TNFAR": 1,
+        "v_X": 0,
+        "v_p53": 0,
+        "v_pSTAT3": 1
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 0,
+        "v_TNFA": 1,
+        "v_TNFAR": 0,
+        "v_X": 1,
+        "v_p53": 0,
+        "v_pSTAT3": 1
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 0,
+        "v_TNFA": 1,
+        "v_TNFAR": 0,
+        "v_X": 0,
+        "v_p53": 0,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 0,
+        "v_TNFA": 0,
+        "v_TNFAR": 0,
+        "v_X": 1,
+        "v_p53": 0,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 0,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 0,
+        "v_TNFA": 1,
+        "v_TNFAR": 0,
+        "v_X": 1,
+        "v_p53": 0,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 1,
+        "v_TNFA": 1,
+        "v_TNFAR": 0,
+        "v_X": 1,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 1,
+        "v_TNFA": 0,
+        "v_TNFAR": 1,
+        "v_X": 0,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 1,
+        "v_TNFA": 0,
+        "v_TNFAR": 1,
+        "v_X": 1,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 1,
+        "v_TNFA": 0,
+        "v_TNFAR": 1,
+        "v_X": 0,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 1,
+        "v_TNFA": 1,
+        "v_TNFAR": 1,
+        "v_X": 0,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 0,
+        "v_STRESS": 1,
+        "v_TNFA": 1,
+        "v_TNFAR": 1,
+        "v_X": 1,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 1,
+        "v_TNFA": 1,
+        "v_TNFAR": 1,
+        "v_X": 0,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 1,
+        "v_TNFA": 0,
+        "v_TNFAR": 1,
+        "v_X": 1,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      },
+      {
+        "v_Bort": 0,
+        "v_FasL": 1,
+        "v_PIP3": 0,
+        "v_SHP1": 1,
+        "v_STRESS": 1,
+        "v_TNFA": 1,
+        "v_TNFAR": 1,
+        "v_X": 1,
+        "v_p53": 1,
+        "v_pSTAT3": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_p53": "((v_FasL & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))))))",
+    "v_STRESS": "((v_Bort & 1) | (!v_Bort & ((v_FasL & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))))))))",
+    "v_PIP3": "v_PIP3 & !v_p53",
+    "v_pSTAT3": "!(((v_Bort & ((v_FasL & ((v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & 0))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & 0))) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_STRESS & 1) | (!v_STRESS & ((v_TNFAR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TNFAR & ((v_X & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_X & ((v_p53 & 1) | (!v_p53 & !(((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))))))))))))) | (!v_Bort & ((v_FasL & ((v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & 0))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & 0))) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_STRESS & 1) | (!v_STRESS & ((v_TNFA & ((v_TNFAR & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_TNFAR & ((v_X & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_X & ((v_p53 & 1) | (!v_p53 & !(((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))))) | (!v_TNFA & ((v_X & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_X & ((v_p53 & 1) | (!v_p53 & !(((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))))))))))))))",
+    "v_FasL": "((v_Bort & ((v_FasL & 1) | (!v_FasL & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))))) | (!v_Bort & ((v_FasL & 1) | (!v_FasL & ((v_p53 & 1) | (!v_p53 & 0))))))",
+    "v_Bort": "v_Bort",
+    "v_TNFAR": "v_TNFAR",
+    "v_SHP1": "v_SHP1",
+    "v_X": "v_X",
+    "v_TNFA": "v_TNFA"
+  },
+  "steps": [
+    {
+      "node": "v_AKT",
+      "support": [
+        "v_PIP3"
+      ],
+      "function": "v_PIP3"
+    },
+    {
+      "node": "v_ATM",
+      "support": [
+        "v_Cas3",
+        "v_DNAdam"
+      ],
+      "function": "v_Cas3 | v_DNAdam"
+    },
+    {
+      "node": "v_Apo",
+      "support": [
+        "v_Cl_PARP"
+      ],
+      "function": "v_Cl_PARP"
+    },
+    {
+      "node": "v_BAD",
+      "support": [
+        "v_PIP3"
+      ],
+      "function": "!v_PIP3"
+    },
+    {
+      "node": "v_BAX",
+      "support": [
+        "v_BCL2",
+        "v_BID",
+        "v_Bclxl",
+        "v_p53"
+      ],
+      "function": "!(((v_BCL2 & 1) | (!v_BCL2 & ((v_BID & ((v_Bclxl & 1) | (!v_Bclxl & 0))) | (!v_BID & ((v_Bclxl & 1) | (!v_Bclxl & !(((v_p53 & 1) | (!v_p53 & 0))))))))))"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_PIP3",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "!(((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1)))"
+    },
+    {
+      "node": "v_BID",
+      "support": [
+        "v_Bclxl",
+        "v_Cas8",
+        "v_Fas",
+        "v_PIP3",
+        "v_STRESS",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "!(((v_Bclxl & 1) | (!v_Bclxl & !(((v_Cas8 & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1))) | (!v_Cas8 & ((v_Fas & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1))) | (!v_Fas & ((v_PIP3 & ((v_STRESS & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))))))))))))"
+    },
+    {
+      "node": "v_Bclxl",
+      "support": [
+        "v_PIP3",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "!(((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1)))"
+    },
+    {
+      "node": "v_CDK2",
+      "support": [
+        "v_CYCE",
+        "v_p21"
+      ],
+      "function": "v_CYCE & !v_p21"
+    },
+    {
+      "node": "v_CDK4",
+      "support": [
+        "v_CYCD",
+        "v_p21",
+        "v_p27"
+      ],
+      "function": "v_CYCD & !v_p21 & !v_p27"
+    },
+    {
+      "node": "v_CDK6",
+      "support": [
+        "v_CYCD"
+      ],
+      "function": "v_CYCD"
+    },
+    {
+      "node": "v_CIAP",
+      "support": [
+        "v_TNFAR"
+      ],
+      "function": "v_TNFAR"
+    },
+    {
+      "node": "v_CYCD",
+      "support": [
+        "v_ERK",
+        "v_MYC",
+        "v_PIP3"
+      ],
+      "function": "v_ERK | v_MYC | v_PIP3"
+    },
+    {
+      "node": "v_CYCE",
+      "support": [
+        "v_MYC"
+      ],
+      "function": "v_MYC"
+    },
+    {
+      "node": "v_Cas3",
+      "support": [
+        "v_Cas8",
+        "v_Cas9",
+        "v_XIAP"
+      ],
+      "function": "!(((v_Cas8 & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_Cas8 & ((v_Cas9 & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_Cas9 & 1)))))"
+    },
+    {
+      "node": "v_Cas8",
+      "support": [
+        "v_FLIP",
+        "v_Fas",
+        "v_FasL"
+      ],
+      "function": "!v_FLIP & v_Fas & v_FasL"
+    },
+    {
+      "node": "v_Cas9",
+      "support": [
+        "v_Cytc",
+        "v_PIP3",
+        "v_XIAP"
+      ],
+      "function": "v_Cytc & !v_PIP3 & !v_XIAP"
+    },
+    {
+      "node": "v_Cl_PARP",
+      "support": [
+        "v_Cytc",
+        "v_FLIP",
+        "v_Fas",
+        "v_FasL",
+        "v_PIP3",
+        "v_XIAP"
+      ],
+      "function": "!(((v_Cytc & ((v_FLIP & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))) | (!v_FLIP & ((v_Fas & ((v_FasL & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))))) | (!v_Fas & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))))))) | (!v_Cytc & ((v_FLIP & 1) | (!v_FLIP & ((v_Fas & ((v_FasL & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_FasL & 1))) | (!v_Fas & 1)))))))"
+    },
+    {
+      "node": "v_Cytc",
+      "support": [
+        "v_MITO"
+      ],
+      "function": "v_MITO"
+    },
+    {
+      "node": "v_DNAPK",
+      "support": [
+        "v_DNAdam",
+        "v_FLIP",
+        "v_Fas",
+        "v_FasL",
+        "v_MITO",
+        "v_PIP3",
+        "v_XIAP"
+      ],
+      "function": "((v_DNAdam & 1) | (!v_DNAdam & !(((v_FLIP & ((v_MITO & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))) | (!v_MITO & 1))) | (!v_FLIP & ((v_Fas & ((v_FasL & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_FasL & ((v_MITO & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))) | (!v_MITO & 1))))) | (!v_Fas & ((v_MITO & ((v_PIP3 & 1) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))) | (!v_MITO & 1)))))))))"
+    },
+    {
+      "node": "v_DNAdam",
+      "support": [
+        "v_FLIP",
+        "v_Fas",
+        "v_FasL",
+        "v_MITO",
+        "v_PIP3",
+        "v_STRESS",
+        "v_XIAP"
+      ],
+      "function": "((v_FLIP & ((v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & 0)))))))) | (!v_MITO & ((v_STRESS & 1) | (!v_STRESS & 0))))) | (!v_FLIP & ((v_Fas & ((v_FasL & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & 0)))))) | (!v_FasL & ((v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & 0)))))))) | (!v_MITO & ((v_STRESS & 1) | (!v_STRESS & 0))))))) | (!v_Fas & ((v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & 0)))))))) | (!v_MITO & ((v_STRESS & 1) | (!v_STRESS & 0))))))))"
+    },
+    {
+      "node": "v_ERK",
+      "support": [
+        "v_MAPK"
+      ],
+      "function": "v_MAPK"
+    },
+    {
+      "node": "v_FLIP",
+      "support": [
+        "v_pNFKB"
+      ],
+      "function": "v_pNFKB"
+    },
+    {
+      "node": "v_Fas",
+      "support": [
+        "v_FasL",
+        "v_p53"
+      ],
+      "function": "v_FasL | v_p53"
+    },
+    {
+      "node": "v_GROWTH",
+      "support": [
+        "v_pRB"
+      ],
+      "function": "v_pRB"
+    },
+    {
+      "node": "v_IKK",
+      "support": [
+        "v_NIK",
+        "v_PIP3",
+        "v_RIP"
+      ],
+      "function": "((v_NIK & ((v_PIP3 & 1) | (!v_PIP3 & ((v_RIP & 1) | (!v_RIP & 0))))) | (!v_NIK & ((v_PIP3 & 1) | (!v_PIP3 & 0))))"
+    },
+    {
+      "node": "v_IL6",
+      "support": [
+        "v_pNFKB"
+      ],
+      "function": "v_pNFKB"
+    },
+    {
+      "node": "v_JAK1",
+      "support": [
+        "v_gp130",
+        "v_pNFKB"
+      ],
+      "function": "v_gp130 & v_pNFKB"
+    },
+    {
+      "node": "v_JAK2",
+      "support": [
+        "v_SHP1",
+        "v_gp130",
+        "v_pNFKB"
+      ],
+      "function": "!v_SHP1 & v_gp130 & v_pNFKB"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_MKK4",
+        "v_Prot"
+      ],
+      "function": "v_MKK4 & !v_Prot"
+    },
+    {
+      "node": "v_MAPK",
+      "support": [
+        "v_MEK1"
+      ],
+      "function": "v_MEK1"
+    },
+    {
+      "node": "v_MDM",
+      "support": [
+        "v_FasL",
+        "v_MITO",
+        "v_PIP3",
+        "v_STRESS",
+        "v_XIAP",
+        "v_p53",
+        "v_pNFKB"
+      ],
+      "function": "!(((v_FasL & ((v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & ((v_pNFKB & 1) | (!v_pNFKB & 0)))))))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_XIAP & 0)))))))) | (!v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & 1) | (!v_XIAP & ((v_pNFKB & 1) | (!v_pNFKB & 0)))))))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_XIAP & ((v_p53 & ((v_pNFKB & 1) | (!v_pNFKB & 0))) | (!v_p53 & 0)))))))))))) | (!v_FasL & ((v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_XIAP & ((v_p53 & 1) | (!v_p53 & 0))) | (!v_XIAP & 0)))))))) | (!v_MITO & ((v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & 0))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & !(((v_p53 & 1) | (!v_p53 & 0))))))))))))"
+    },
+    {
+      "node": "v_MEK1",
+      "support": [
+        "v_RAF"
+      ],
+      "function": "v_RAF"
+    },
+    {
+      "node": "v_MEKK",
+      "support": [
+        "v_RAF"
+      ],
+      "function": "v_RAF"
+    },
+    {
+      "node": "v_MEKK2",
+      "support": [
+        "v_RAC"
+      ],
+      "function": "v_RAC"
+    },
+    {
+      "node": "v_MITO",
+      "support": [
+        "v_FasL",
+        "v_PIP3",
+        "v_STRESS",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "((v_FasL & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_STRESS & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))))))"
+    },
+    {
+      "node": "v_MKK4",
+      "support": [
+        "v_RAC"
+      ],
+      "function": "v_RAC"
+    },
+    {
+      "node": "v_MYC",
+      "support": [
+        "v_RAF",
+        "v_pSTAT3"
+      ],
+      "function": "v_RAF | v_pSTAT3"
+    },
+    {
+      "node": "v_NIK",
+      "support": [
+        "v_TRAF3"
+      ],
+      "function": "!v_TRAF3"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_gp130",
+        "v_pNFKB"
+      ],
+      "function": "v_gp130 & v_pNFKB"
+    },
+    {
+      "node": "v_PTEN",
+      "support": [
+        "v_p53"
+      ],
+      "function": "v_p53"
+    },
+    {
+      "node": "v_Prot",
+      "support": [
+        "v_Bort"
+      ],
+      "function": "!v_Bort"
+    },
+    {
+      "node": "v_RAC",
+      "support": [
+        "v_STRESS"
+      ],
+      "function": "v_STRESS"
+    },
+    {
+      "node": "v_RAF",
+      "support": [
+        "v_RAS"
+      ],
+      "function": "v_RAS"
+    },
+    {
+      "node": "v_RAS",
+      "support": [
+        "v_SHP1",
+        "v_gp130",
+        "v_pNFKB"
+      ],
+      "function": "((v_SHP1 & 1) | (!v_SHP1 & ((v_gp130 & ((v_pNFKB & 1) | (!v_pNFKB & 0))) | (!v_gp130 & 0))))"
+    },
+    {
+      "node": "v_RIP",
+      "support": [
+        "v_Bort",
+        "v_TNFA",
+        "v_TNFAR"
+      ],
+      "function": "((v_Bort & 1) | (!v_Bort & ((v_TNFA & ((v_TNFAR & 1) | (!v_TNFAR & 0))) | (!v_TNFA & 0))))"
+    },
+    {
+      "node": "v_STAT3",
+      "support": [
+        "v_FasL",
+        "v_PIP3",
+        "v_STRESS",
+        "v_XIAP",
+        "v_p53",
+        "v_pNFKB"
+      ],
+      "function": "((v_FasL & ((v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & ((v_pNFKB & 1) | (!v_pNFKB & 0))))) | (!v_PIP3 & ((v_XIAP & 1) | (!v_XIAP & 0))))) | (!v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_STRESS & ((v_XIAP & 1) | (!v_XIAP & 0))) | (!v_STRESS & ((v_XIAP & 1) | (!v_XIAP & !(((v_p53 & 1) | (!v_p53 & 0)))))))))))"
+    },
+    {
+      "node": "v_Smac",
+      "support": [
+        "v_FasL",
+        "v_PIP3",
+        "v_STRESS",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "((v_FasL & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_STRESS & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0))))))))"
+    },
+    {
+      "node": "v_TRAF3",
+      "support": [
+        "v_TNFAR"
+      ],
+      "function": "!v_TNFAR"
+    },
+    {
+      "node": "v_XIAP",
+      "support": [
+        "v_FasL",
+        "v_PIP3",
+        "v_STRESS",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "!(((v_FasL & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & 1))) | (!v_FasL & ((v_PIP3 & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0)))))))) | (!v_PIP3 & ((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & !(((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))))))))"
+    },
+    {
+      "node": "v_cJun",
+      "support": [
+        "v_Bort",
+        "v_STRESS"
+      ],
+      "function": "v_Bort & v_STRESS"
+    },
+    {
+      "node": "v_gp130",
+      "support": [
+        "v_FasL",
+        "v_PIP3",
+        "v_STRESS",
+        "v_p53",
+        "v_pNFKB",
+        "v_pSTAT3"
+      ],
+      "function": "((v_FasL & ((v_PIP3 & ((v_p53 & ((v_pNFKB & 1) | (!v_pNFKB & 0))) | (!v_p53 & ((v_pNFKB & 1) | (!v_pNFKB & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))) | (!v_PIP3 & 0))) | (!v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & !(((v_STRESS & 1) | (!v_STRESS & ((v_p53 & 1) | (!v_p53 & 0)))))))))"
+    },
+    {
+      "node": "v_p21",
+      "support": [
+        "v_PIP3",
+        "v_SHP1",
+        "v_p53",
+        "v_pSTAT3"
+      ],
+      "function": "!v_PIP3 & !v_SHP1 & v_p53 & !v_pSTAT3"
+    },
+    {
+      "node": "v_p27",
+      "support": [
+        "v_PIP3",
+        "v_SHP1",
+        "v_p53",
+        "v_pSTAT3"
+      ],
+      "function": "!v_PIP3 & !v_SHP1 & v_p53 & !v_pSTAT3"
+    },
+    {
+      "node": "v_pIKB",
+      "support": [
+        "v_Bort",
+        "v_PIP3",
+        "v_TNFA",
+        "v_TNFAR"
+      ],
+      "function": "((v_Bort & ((v_PIP3 & 1) | (!v_PIP3 & ((v_TNFAR & 1) | (!v_TNFAR & 0))))) | (!v_Bort & ((v_PIP3 & 1) | (!v_PIP3 & ((v_TNFA & ((v_TNFAR & 1) | (!v_TNFAR & 0))) | (!v_TNFA & 0))))))"
+    },
+    {
+      "node": "v_pNFKB",
+      "support": [
+        "v_Bort",
+        "v_PIP3",
+        "v_TNFA",
+        "v_TNFAR",
+        "v_X",
+        "v_pSTAT3"
+      ],
+      "function": "((v_Bort & ((v_PIP3 & 1) | (!v_PIP3 & ((v_TNFAR & 1) | (!v_TNFAR & ((v_X & 1) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))) | (!v_Bort & ((v_PIP3 & 1) | (!v_PIP3 & ((v_TNFA & ((v_TNFAR & 1) | (!v_TNFAR & ((v_X & 1) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))) | (!v_TNFA & ((v_X & 1) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))))"
+    },
+    {
+      "node": "v_pRB",
+      "support": [
+        "v_Bort",
+        "v_FasL",
+        "v_PIP3",
+        "v_SHP1",
+        "v_STRESS",
+        "v_TNFA",
+        "v_TNFAR",
+        "v_X",
+        "v_p53",
+        "v_pSTAT3"
+      ],
+      "function": "((v_Bort & ((v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))) | (!v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_STRESS & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_STRESS & ((v_TNFAR & ((v_p53 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_p53 & 1))) | (!v_TNFAR & ((v_X & ((v_p53 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_p53 & 1))) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))))))))) | (!v_Bort & ((v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))) | (!v_FasL & ((v_PIP3 & 1) | (!v_PIP3 & ((v_SHP1 & 1) | (!v_SHP1 & ((v_STRESS & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_STRESS & ((v_TNFA & ((v_TNFAR & ((v_p53 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_p53 & 1))) | (!v_TNFAR & ((v_X & ((v_p53 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_p53 & 1))) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))) | (!v_TNFA & ((v_X & ((v_p53 & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))) | (!v_p53 & 1))) | (!v_X & ((v_pSTAT3 & 1) | (!v_pSTAT3 & 0))))))))))))))))"
+    }
+  ],
+  "seconds": 0.4611632999731228
+}

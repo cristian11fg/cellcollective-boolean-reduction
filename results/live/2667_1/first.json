@@ -1,0 +1,602 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2667_1",
+  "name": "VEGF Pathway of Drosophila Signaling Pathway",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 18,
+  "after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 8,
+    "internal_nodes": 0,
+    "nonconstant_rules": 0,
+    "constant_rules": 0,
+    "vacuous": true,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 0,
+    "is_monotone": false,
+    "switchable_to_monotone": true,
+    "switching_witness": {},
+    "positive_edges": 0,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 0,
+    "max_indegree": 0,
+    "local_family_counts": {},
+    "conflicts": {},
+    "local": {}
+  },
+  "all_rules_after": {
+    "nodes": 8,
+    "n_nodes": 8,
+    "inputs": 8,
+    "internal_nodes": 0,
+    "nonconstant_rules": 8,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 8,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Src42": "+",
+      "v_Sty": "+",
+      "v_CNK": "+",
+      "v_msk": "+",
+      "v_Pvf1": "+",
+      "v_Ksr": "+",
+      "v_Pvf2": "+",
+      "v_Pvf3": "+"
+    },
+    "positive_edges": 8,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 8,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 8
+    },
+    "conflicts": {},
+    "local": {
+      "v_Src42": {
+        "signs": {
+          "v_Src42": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Sty": {
+        "signs": {
+          "v_Sty": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CNK": {
+        "signs": {
+          "v_CNK": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_msk": {
+        "signs": {
+          "v_msk": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Pvf1": {
+        "signs": {
+          "v_Pvf1": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Ksr": {
+        "signs": {
+          "v_Ksr": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Pvf2": {
+        "signs": {
+          "v_Pvf2": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Pvf3": {
+        "signs": {
+          "v_Pvf3": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 256,
+    "examples": [
+      {
+        "v_CNK": 0,
+        "v_Ksr": 0,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 0,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 0,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 0,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 1,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 0,
+        "v_Ksr": 0,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 1,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 0,
+        "v_Ksr": 0,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 0,
+        "v_Ksr": 0,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 1,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 0,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 0,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 0,
+        "v_Sty": 1,
+        "v_msk": 1
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 0,
+        "v_Src42": 1,
+        "v_Sty": 0,
+        "v_msk": 0
+      },
+      {
+        "v_CNK": 1,
+        "v_Ksr": 1,
+        "v_Pvf1": 1,
+        "v_Pvf2": 0,
+        "v_Pvf3": 1,
+        "v_Src42": 0,
+        "v_Sty": 0,
+        "v_msk": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Src42": "v_Src42",
+    "v_Sty": "v_Sty",
+    "v_CNK": "v_CNK",
+    "v_msk": "v_msk",
+    "v_Pvf1": "v_Pvf1",
+    "v_Ksr": "v_Ksr",
+    "v_Pvf2": "v_Pvf2",
+    "v_Pvf3": "v_Pvf3"
+  },
+  "steps": [
+    {
+      "node": "v_Aop",
+      "support": [
+        "v_Rl"
+      ],
+      "function": "!v_Rl"
+    },
+    {
+      "node": "v_Drk",
+      "support": [
+        "v_Pvr"
+      ],
+      "function": "v_Pvr"
+    },
+    {
+      "node": "v_Dsor1",
+      "support": [
+        "v_Raf"
+      ],
+      "function": "v_Raf"
+    },
+    {
+      "node": "v_Pnt",
+      "support": [
+        "v_Rl"
+      ],
+      "function": "v_Rl"
+    },
+    {
+      "node": "v_Pvr",
+      "support": [
+        "v_Pvf1",
+        "v_Pvf2",
+        "v_Pvf3"
+      ],
+      "function": "v_Pvf1 | v_Pvf2 | v_Pvf3"
+    },
+    {
+      "node": "v_Raf",
+      "support": [
+        "v_CNK",
+        "v_Ksr",
+        "v_Ras",
+        "v_Src42"
+      ],
+      "function": "v_CNK & v_Ksr & v_Ras & v_Src42"
+    },
+    {
+      "node": "v_Ras",
+      "support": [
+        "v_Sos",
+        "v_Sty"
+      ],
+      "function": "v_Sos & !v_Sty"
+    },
+    {
+      "node": "v_Rl",
+      "support": [
+        "v_CNK",
+        "v_Ksr",
+        "v_Sos",
+        "v_Src42",
+        "v_Sty",
+        "v_msk"
+      ],
+      "function": "v_CNK & v_Ksr & v_Sos & v_Src42 & !v_Sty & v_msk"
+    },
+    {
+      "node": "v_Sos",
+      "support": [
+        "v_Pvf1",
+        "v_Pvf2",
+        "v_Pvf3"
+      ],
+      "function": "v_Pvf1 | v_Pvf2 | v_Pvf3"
+    },
+    {
+      "node": "v_Targets",
+      "support": [
+        "v_CNK",
+        "v_Ksr",
+        "v_Pvf1",
+        "v_Pvf2",
+        "v_Pvf3",
+        "v_Src42",
+        "v_Sty",
+        "v_msk"
+      ],
+      "function": "!(((v_CNK & ((v_Ksr & ((v_Pvf1 & ((v_Src42 & ((v_Sty & 1) | (!v_Sty & !(((v_msk & 1) | (!v_msk & 0)))))) | (!v_Src42 & 1))) | (!v_Pvf1 & ((v_Pvf2 & ((v_Src42 & ((v_Sty & 1) | (!v_Sty & !(((v_msk & 1) | (!v_msk & 0)))))) | (!v_Src42 & 1))) | (!v_Pvf2 & ((v_Pvf3 & ((v_Src42 & ((v_Sty & 1) | (!v_Sty & !(((v_msk & 1) | (!v_msk & 0)))))) | (!v_Src42 & 1))) | (!v_Pvf3 & 1))))))) | (!v_Ksr & 1))) | (!v_CNK & 1)))"
+    }
+  ],
+  "seconds": 0.4955261000432074
+}

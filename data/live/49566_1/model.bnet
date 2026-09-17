@@ -1,0 +1,61 @@
+targets,factors
+v_FGFR3, ( v_FGF )
+v_HDAC4, ( v_PP2A )
+v_PPR, ( v_PTHrP )
+v_RUNX2, ( ( ( ( ( v_ERK1_2 ) & ! ( v_PKA ) ) & ! ( v_MSX2 ) ) & ! ( v_SOX9 ) ) & ! ( v_HDAC4 & ( ( ( v_SMAD3 ) ) ) ) ) | ( ( ( v_DLX5 ) & ! ( v_PKA ) ) & ! ( v_HDAC4 & ( ( ( v_SMAD3 ) ) ) ) ) | ( ( ( v_AKT ) & ! ( v_PKA ) ) & ! ( v_HDAC4 & ( ( ( v_SMAD3 ) ) ) ) )
+v_Proteoglycans, ! ( ( v_MMP13 ) )
+v_NFkB, ( v_AKT ) | ( v_FGFR1 ) | ( v_TAK1 )
+v_WNT, ! ( ( v_DKK1 ) | ( v_FRZB ) )
+v_ALK1, ( v_BMP ) | ( v_TGF_beta )
+v_GSK3beta, ! ( ( v_AKT ) | ( v_PP2A ) )
+v_JNK, ( v_TAK1 )
+v_FOXO, ( v_JNK )
+v_IGF_IR, ( v_IGFI )
+v_GLI2, ( v_IHH )
+v_ALK5, ( v_TGF_beta )
+v_AKT, ( ( v_PI3K ) & ! ( v_PP2A ) )
+v_TAK1, ( v_R_inflam )
+v_FGFR1, ( v_FGF )
+v_Destruction_complex, ( ( ( v_PP2A ) & ! ( v_ERK1_2 ) ) & ! ( v_DSH ) )
+v_ATF2, ( v_SMAD3 & ( ( ( v_P38 ) ) ) ) | ( v_P38 & ( ( ( v_SMAD3 ) ) ) ) | ( v_P38 )
+v_STAT1, ( ( v_FGFR1 ) & ! ( v_SMAD_complex ) ) | ( ( v_R_inflam & ( ( ( ! v_FGFR3 ) ) ) ) & ! ( v_SMAD_complex ) ) | ( ( v_IGF_IR ) & ! ( v_SMAD_complex ) ) | ( v_FGFR3 )
+v_PI3K, ( v_R_inflam ) | ( v_RAS ) | ( v_IGF_IR )
+v_ERK1_2, ( v_TAK1 ) | ( v_RAS )
+v_RAS, ( v_BMP ) | ( v_FGFR1 ) | ( v_WNT ) | ( v_FGFR3 )
+v_P38, ( v_TGF_beta ) | ( v_TAK1 ) | ( v_BMP )
+v_PKA, ( v_PPR ) | ( v_IGFI )
+v_ATF4, ( v_ERK1_2 ) | ( v_PKA )
+v_LEF_TCF, ( v_B_catenin )
+v_SMAD3, ( ( ( ( v_ALK5 ) & ! ( v_ERK1_2 ) ) & ! ( v_SMAD7 ) ) & ! ( v_CCND1 ) )
+v_ELK_1, ( v_ERK1_2 ) | ( v_JNK )
+v_Frizzled_LRP5_6, ( v_WNT )
+v_DLX5, ( v_SMAD_complex ) | ( v_P38 )
+v_BMP, ! ( ( v_GREM1 ) )
+v_DSH, ( v_Frizzled_LRP5_6 )
+v_MSX2, ! ( ( v_DLX5 ) )
+v_R_Smad, ( ( v_ALK1 ) & ! ( v_SMAD7 ) )
+v_PP2A, ( v_PKA )
+v_SOX9, ( ( ( v_SMAD3 ) & ! ( v_B_catenin ) ) & ! ( v_RUNX2 ) ) | ( ( v_PKA ) & ! ( v_B_catenin ) )
+v_R_inflam, ( v_Infl__cytokines )
+v_SMAD_complex, ( v_R_Smad )
+v_B_catenin, ! ( ( v_Destruction_complex ) )
+v_COL_II, ! ( ( v_MMP13 ) )
+v_IkBa, ! ( ( v_TAK1 ) )
+v_CCND1, ! ( ( v_STAT1 ) | ( v_GSK3beta ) )
+v_MEF2C, ( ( v_P38 ) & ! ( v_HDAC4 ) ) | ( ( v_SMAD_complex ) & ! ( v_HDAC4 ) )
+v_FRZB, 0
+v_DKK1, 0
+v_COL_X, 0
+v_PTHrP, 0
+v_Infl__cytokines, 0
+v_SMAD7, 0
+v_IGFI, 0
+v_FGF, 0
+v_SOCS, 0
+v_MMP13, 0
+v_GREM1, 0
+v_HIF_2a, 0
+v_IHH, 0
+v_d_EF1, 0
+v_NKX3_2, 0
+v_TGF_beta, 0

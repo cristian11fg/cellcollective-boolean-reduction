@@ -1,0 +1,288 @@
+{
+  "id": "6678_1",
+  "name": "CD4+ T cell Differentiation",
+  "input-names": [
+    "v_TGFb",
+    "v_IL27",
+    "v_IL18",
+    "v_TCR",
+    "v_IL4_e",
+    "v_IL6_e",
+    "v_IL12",
+    "v_IL23",
+    "v_IFNg_e"
+  ],
+  "variable-names": [
+    "v_IL21R",
+    "v_IRAK",
+    "v_TGFbR",
+    "v_IL18R",
+    "v_IL6",
+    "v_SOCS1",
+    "v_IL6R",
+    "v_IFNgR",
+    "v_IL2R",
+    "v_Jak1",
+    "v_NFkB",
+    "v_GATA3",
+    "v_IL12R",
+    "v_IL4",
+    "v_IL21",
+    "v_Foxp3",
+    "v_IL4R",
+    "v_Tbet",
+    "v_NFAT",
+    "v_IL2",
+    "v_IFNg",
+    "v_STAT4",
+    "v_STAT5",
+    "v_IL23R",
+    "v_STAT3",
+    "v_IL17",
+    "v_RORgt",
+    "v_STAT1",
+    "v_STAT6"
+  ],
+  "output-names": [],
+  "original_name_to_bnet": {
+    "IL4R": "v_IL4R",
+    "GATA3": "v_GATA3",
+    "Jak1": "v_Jak1",
+    "IL17": "v_IL17",
+    "IFNgR": "v_IFNgR",
+    "IL23": "v_IL23",
+    "IFNg_e": "v_IFNg_e",
+    "IL4": "v_IL4",
+    "RORgt": "v_RORgt",
+    "IL6_e": "v_IL6_e",
+    "IL21": "v_IL21",
+    "STAT3": "v_STAT3",
+    "SOCS1": "v_SOCS1",
+    "STAT6": "v_STAT6",
+    "Tbet": "v_Tbet",
+    "TGFb": "v_TGFb",
+    "IL6R": "v_IL6R",
+    "IL12R": "v_IL12R",
+    "IL2R": "v_IL2R",
+    "TCR": "v_TCR",
+    "IRAK": "v_IRAK",
+    "NFkB": "v_NFkB",
+    "STAT1": "v_STAT1",
+    "IL2": "v_IL2",
+    "IL27": "v_IL27",
+    "STAT4": "v_STAT4",
+    "IL21R": "v_IL21R",
+    "IL12": "v_IL12",
+    "NFAT": "v_NFAT",
+    "IL4_e": "v_IL4_e",
+    "IL6": "v_IL6",
+    "IL18": "v_IL18",
+    "Foxp3": "v_Foxp3",
+    "IL23R": "v_IL23R",
+    "IL18R": "v_IL18R",
+    "IFNg": "v_IFNg",
+    "STAT5": "v_STAT5",
+    "TGFbR": "v_TGFbR"
+  },
+  "sbml_fixed_components": {},
+  "catalogue_component_count": 38,
+  "sbml_component_count": null,
+  "source_model": {
+    "id": 6678,
+    "name": "CD4+ T cell Differentiation",
+    "description": "The model includes 38 components and 96 biochemical interactions that regulate the differentiation process of major T cell subtypes, i.e., Th1, Th2, Th17 and iTreg cells. Individual components of the model represent lineage-specifying transcription factors (Tbet, GATA3, ROR\u03b3t, and Foxp3), STAT proteins, cytokines, their receptors, and other signaling molecules. The extracellular environment is represented in the model by eight cytokines and a (generic) TCR ligand known to play a role in T cell differentiation. PMID: 22871178",
+    "tags": "T helper cell, differentiation",
+    "userId": 775,
+    "author": null,
+    "creationDate": "Thu, 16 Feb 2017 12:52:40 GMT",
+    "biologicUpdateDate": "2020-06-26T00:41:46.469Z",
+    "knowledgeBaseUpdateDate": "Thu, 12 Apr 2018 14:19:55 GMT",
+    "components": 38,
+    "interactions": 96,
+    "published": true,
+    "isShared": false,
+    "isWorkspace": false,
+    "cited": null,
+    "type": "research",
+    "originId": 5939,
+    "modelComments": null,
+    "referencesBase": null,
+    "courses": null,
+    "modelType": "boolean",
+    "modelVersionMap": {
+      "1": {
+        "version": 1,
+        "name": null,
+        "description": "CD4+ T cell differentiation.",
+        "userId": 775,
+        "creationDate": "Thu, 16 Feb 2017 12:52:40 GMT",
+        "selected": true,
+        "updatedAt": "2020-06-26T00:41:46.469Z"
+      }
+    },
+    "selectedVersion": "1",
+    "survey": null,
+    "workspaceLayout": {
+      "[model]VERSION[0021].Layout[Simulation]SimulationInternalComponentsView.model": {
+        "left": 0,
+        "top": 0.8015873015873016,
+        "width": 0.27,
+        "height": 0.1984126984126984
+      },
+      "[model]VERSION[0021].Layout[Analysis]ExperimentInternalComponentsView.model": {
+        "left": 0.19,
+        "top": 0.6521588888720045,
+        "width": 0.2605022156573117,
+        "height": 0.3387995198079232
+      },
+      "[model]VERSION[0021].Layout[Simulation].model": {
+        "views": {
+          "SimulationGraphView": 0,
+          "SimulationNetAbsoluteView": 1,
+          "SimulationExternalComponentsView": 2,
+          "SimulationInternalComponentsView": 3,
+          "SimulationControlView": 4
+        }
+      },
+      "[model]VERSION[0021].Layout[Model]ExternalComponentsView.model": {
+        "left": 0.34964845862628446,
+        "top": 0.6575283446712018,
+        "width": 0.15,
+        "height": 0.33
+      },
+      "[model]VERSION[0021].Layout[Simulation]SimulationNetAbsoluteView.model": {
+        "left": 0.2895511087074093,
+        "top": 0,
+        "width": 0.7104488912925907,
+        "height": 1
+      },
+      "[model]VERSION[0021].Layout[Model]ModelGraphView.model": {
+        "left": 0,
+        "top": 0,
+        "width": 0.33926144756277704,
+        "height": 1
+      },
+      "[model]VERSION[0021].application.model": {
+        "favorites": [
+          "Model",
+          "Simulation",
+          "Analysis",
+          "Network Analysis",
+          "Knowledge Base",
+          "Description"
+        ],
+        "section": [
+          "Published Models"
+        ],
+        "layout": "Model",
+        "layouts": {
+          "": {}
+        }
+      },
+      "[model]VERSION[0021].Layout[Description][research]PublishingView.model": {
+        "left": 0.4,
+        "top": 0.25,
+        "width": 0.5212703101920235,
+        "height": 0.7281746031746033
+      },
+      "[model]VERSION[0021].Layout[Sharing].model": {
+        "views": {
+          "LinksView": 0,
+          "PublishingView": 1,
+          "ExperimentsPublishingView": 2,
+          "SharingView": 3
+        }
+      },
+      "[model]VERSION[0021].Layout[Analysis].model": {
+        "views": {
+          "AnalysisGraphView": 0,
+          "ExperimentExternalComponentsView": 1,
+          "AnalysisComponentsView": 2,
+          "ExperimentsView": 3,
+          "ExperimentView": 4,
+          "ExperimentInternalComponentsView": 5
+        }
+      },
+      "[model]VERSION[0021].Layout[Model]RegulationCenterView(Biologic).model": {
+        "left": 0.5072201189832342,
+        "top": 0,
+        "width": 0.49277988101676595,
+        "height": 0.5
+      },
+      "[model]VERSION[0021].Layout[Simulation]SimulationExternalComponentsView.model": {
+        "left": 0,
+        "top": 0.3,
+        "width": 0.27,
+        "height": 0.6182539682539683
+      },
+      "[model]VERSION[0021].Layout[Analysis]ExperimentView.model": {
+        "left": 0,
+        "top": 0.6473417721518986,
+        "width": 0.19202363367799113,
+        "height": 0.3526582278481014
+      },
+      "[model]VERSION[0021].Layout[Simulation]SimulationControlView.model": {
+        "left": 0,
+        "top": 0,
+        "width": 0.27,
+        "height": 0.3317460317460317
+      },
+      "[model]VERSION[0021].Layout[Model]PageView.model": {
+        "left": 0.5120531757754802,
+        "top": 0.4927667269439421,
+        "width": 0.48794682422451985,
+        "height": 0.5
+      },
+      "[model]VERSION[0021].Layout[Description][research].model": {
+        "views": {
+          "PublishingView": 0,
+          "DescriptionView": 1,
+          "ReferencesView": 2
+        }
+      },
+      "[model]VERSION[0021].Layout[Feedback Loops].model": {
+        "views": {
+          "ModelGraphView": 0,
+          "FeedbackLoopTableView": 1,
+          "FeedbackLoopGraphView": 2
+        }
+      },
+      "[model]VERSION[0021].Layout[Model]InternalComponentsView.model": {
+        "left": 0.3474851270957274,
+        "top": 0,
+        "width": 0.15,
+        "height": 0.67
+      },
+      "[model]VERSION[0021].Layout[Knowledge Base].model": {
+        "views": {
+          "PagesView": 0,
+          "ReferenceGraphView": 1,
+          "PageView": 2
+        }
+      },
+      "[model]VERSION[0021].Layout[Topology].model": {
+        "views": {
+          "ConnectivityView": 0,
+          "InDegreeView": 1,
+          "OutDegreeView": 2,
+          "ClosenessView": 3,
+          "TopologyView": 4
+        }
+      },
+      "[model]VERSION[0021].Layout[Model].model": {
+        "views": {
+          "InternalComponentsView": 0,
+          "ExternalComponentsView": 1,
+          "RegulationCenterView(Biologic)": 2,
+          "ModelGraphView": 3,
+          "PageView": 4
+        }
+      }
+    },
+    "initialStateId": null,
+    "layoutId": 1825,
+    "content": null
+  },
+  "source_hash": "238267143",
+  "version": "1"
+}

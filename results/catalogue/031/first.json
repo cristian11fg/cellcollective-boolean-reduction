@@ -1,0 +1,340 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "031",
+  "name": "CELL-CYCLE-TRANSCRIPTION",
+  "policy": "first",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 9,
+  "after": {
+    "nodes": 3,
+    "n_nodes": 3,
+    "inputs": 0,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": false,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": true,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_SFF": "+",
+      "v_YHP1": "+",
+      "v_YOX1": "+"
+    },
+    "positive_edges": 3,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 9,
+    "max_indegree": 3,
+    "local_family_counts": {
+      "MIN": 3
+    },
+    "conflicts": {},
+    "local": {
+      "v_SFF": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_YHP1": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_YOX1": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 3,
+    "n_nodes": 3,
+    "inputs": 0,
+    "internal_nodes": 3,
+    "nonconstant_rules": 3,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": false,
+    "MIN_MAX": true,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": true,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 3,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_SFF": "+",
+      "v_YHP1": "+",
+      "v_YOX1": "+"
+    },
+    "positive_edges": 3,
+    "negative_edges": 6,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 9,
+    "max_indegree": 3,
+    "local_family_counts": {
+      "MIN": 3
+    },
+    "conflicts": {},
+    "local": {
+      "v_SFF": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_YHP1": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_YOX1": {
+        "signs": {
+          "v_SFF": "+",
+          "v_YHP1": "-",
+          "v_YOX1": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 1,
+    "examples": [
+      {
+        "v_SFF": 0,
+        "v_YHP1": 0,
+        "v_YOX1": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_SFF": "v_SFF & !v_YHP1 & !v_YOX1",
+    "v_YHP1": "v_SFF & !v_YHP1 & !v_YOX1",
+    "v_YOX1": "v_SFF & !v_YHP1 & !v_YOX1"
+  },
+  "steps": [
+    {
+      "node": "v_ACE2",
+      "support": [
+        "v_SFF"
+      ],
+      "function": "v_SFF"
+    },
+    {
+      "node": "v_CLN3",
+      "support": [
+        "v_SFF",
+        "v_SWI5",
+        "v_YHP1",
+        "v_YOX1"
+      ],
+      "function": "v_SFF & v_SWI5 & !v_YHP1 & !v_YOX1"
+    },
+    {
+      "node": "v_HCM1",
+      "support": [
+        "v_MBF",
+        "v_SBF"
+      ],
+      "function": "v_MBF & v_SBF"
+    },
+    {
+      "node": "v_MBF",
+      "support": [
+        "v_SFF",
+        "v_SWI5",
+        "v_YHP1",
+        "v_YOX1"
+      ],
+      "function": "v_SFF & v_SWI5 & !v_YHP1 & !v_YOX1"
+    },
+    {
+      "node": "v_SBF",
+      "support": [
+        "v_SFF",
+        "v_SWI5",
+        "v_YHP1",
+        "v_YOX1"
+      ],
+      "function": "v_SFF & v_SWI5 & !v_YHP1 & !v_YOX1"
+    },
+    {
+      "node": "v_SWI5",
+      "support": [
+        "v_SFF"
+      ],
+      "function": "v_SFF"
+    }
+  ],
+  "seconds": 0.13347849994897842
+}

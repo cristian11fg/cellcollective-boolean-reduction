@@ -1,0 +1,4349 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "91515_1",
+  "name": "Immune System Model",
+  "policy": "min_growth",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 164,
+  "after": {
+    "nodes": 34,
+    "n_nodes": 34,
+    "inputs": 13,
+    "internal_nodes": 21,
+    "nonconstant_rules": 21,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 21,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Cell_Dendritic_Healthy": "+",
+      "v_Cell_Dendritic_PF": "+",
+      "v_Cell_CD4_Naive": "+",
+      "v_Cell_Macrophage_Leishmania": "-",
+      "v_Cell_Epithelial_CandidaAlbicans": "-",
+      "v_IgG": "+",
+      "v_Cell_Epithelial_IAV": "-",
+      "v_PV_EBOV": "+",
+      "v_IL10": "+",
+      "v_Cell_Epithelial_helminth": "-",
+      "v_PV_HIV": "-",
+      "v_Cell_Th2_Helminth": "-",
+      "v_Cell_Th1_PF": "-",
+      "v_HealthyState": "+",
+      "v_Fungi_CandidaAlbicans": "+",
+      "v_Promastigotes_Leishmania": "+",
+      "v_IL12": "+",
+      "v_Rep_Mtb": "-",
+      "v_Cell_Macrophage_Healthy": "-",
+      "v_Merozoites_PF": "+",
+      "v_Sporozoites_PF": "-",
+      "v_erythrocyte_set": "-",
+      "v_PV_IAV": "+",
+      "v_Cell_B_Healthy": "-",
+      "v_Cell_B_PF": "-",
+      "v_Bacterium_Mtb": "-",
+      "v_Virus_EBOV": "+",
+      "v_Virus_HIV": "+",
+      "v_Virus_IAV": "+",
+      "v_Cell_Keratinocytes_HPV": "+",
+      "v_Virus_HPV": "+",
+      "v_epithelial_set": "+",
+      "v_Larvae_Helminth": "-",
+      "v_paramPV": "-"
+    },
+    "positive_edges": 124,
+    "negative_edges": 128,
+    "non_unate_edges": 23,
+    "has_multi_input_rule": true,
+    "edges": 275,
+    "max_indegree": 25,
+    "local_family_counts": {
+      "UNATE_OTHER": 11,
+      "NON_UNATE": 10
+    },
+    "conflicts": {
+      "v_Cell_Dendritic_Healthy": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "mixed",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_Cell_Dendritic_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_Cell_Th1_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_Cell_Th1_PF": "mixed",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_HealthyState": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "mixed",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_EBOV": "-",
+        "v_IL10": "mixed",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+",
+        "v_Cell_Macrophage_Healthy": "+",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_IL12": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "-",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_Merozoites_PF": {
+        "v_Cell_Dendritic_PF": "-",
+        "v_Merozoites_PF": "mixed",
+        "v_IL12": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_Sporozoites_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Merozoites_PF": "+",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Macrophage_Healthy": "+"
+      },
+      "v_erythrocyte_set": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Merozoites_PF": "+",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Macrophage_Healthy": "+"
+      },
+      "v_Bacterium_Mtb": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Cell_CD4_Naive": {
+        "v_Cell_CD4_Naive": "mixed",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "mixed",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "+",
+        "v_PV_IAV": "mixed",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_Cell_Epithelial_CandidaAlbicans": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_Cell_Epithelial_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "mixed"
+      },
+      "v_Cell_Keratinocytes_HPV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Keratinocytes_HPV": "+",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Cell_Macrophage_Healthy": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "+",
+        "v_IgG": "-",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_EBOV": "-",
+        "v_IL10": "+",
+        "v_PV_HIV": "+",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "-",
+        "v_Cell_Macrophage_Healthy": "+"
+      },
+      "v_Fungi_CandidaAlbicans": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_IL10": {
+        "v_Cell_CD4_Naive": "-",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Keratinocytes_HPV": "+",
+        "v_IL12": "-",
+        "v_IgG": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "-",
+        "v_Cell_Epithelial_helminth": "+",
+        "v_PV_HIV": "+",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_IgG": {
+        "v_Cell_CD4_Naive": "-",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "-",
+        "v_IgG": "-",
+        "v_PV_EBOV": "-",
+        "v_IL10": "-",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "mixed",
+        "v_PV_IAV": "-"
+      },
+      "v_PV_EBOV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_PV_HIV": {
+        "v_Cell_CD4_Naive": "-",
+        "v_IL12": "mixed",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "+",
+        "v_PV_IAV": "-",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_PV_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_Promastigotes_Leishmania": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_IL12": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Macrophage_Healthy": "-",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_Rep_Mtb": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_Virus_EBOV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Virus_HIV": {
+        "v_Cell_CD4_Naive": "mixed",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Virus_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Cell_Macrophage_Leishmania": {
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IgG": "-",
+        "v_PV_EBOV": "-",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-"
+      },
+      "v_Cell_Epithelial_helminth": {
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_Cell_Th2_Helminth": "+"
+      },
+      "v_Cell_B_PF": {
+        "v_Merozoites_PF": "-",
+        "v_IgG": "+",
+        "v_Cell_B_PF": "+"
+      },
+      "v_Cell_B_Healthy": {
+        "v_IgG": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "-"
+      },
+      "v_Cell_Th2_Helminth": {
+        "v_IgG": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_Cell_Th2_Helminth": "-"
+      }
+    },
+    "local": {
+      "v_Cell_Dendritic_PF": {
+        "signs": {
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_HealthyState": "+",
+          "v_IL12": "+",
+          "v_Merozoites_PF": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_CD4_Naive": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "+",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "-",
+          "v_PV_IAV": "+",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "mixed",
+          "v_Virus_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Macrophage_Leishmania": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "-",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "+",
+          "v_PV_EBOV": "-",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Keratinocytes_HPV": {
+        "signs": {
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_IL10": "+",
+          "v_Virus_HPV": "+",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_CandidaAlbicans": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "-",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Merozoites_PF": {
+        "signs": {
+          "v_Cell_B_PF": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "mixed",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "mixed",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_Cell_B_PF": "+",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Epithelial_helminth": "+",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th2_Helminth": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_IAV": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "+",
+          "v_Virus_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_IAV": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_HealthyState": "-",
+          "v_IL12": "-",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "+",
+          "v_Virus_IAV": "+",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Th1_PF": {
+        "signs": {
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "mixed",
+          "v_HealthyState": "+",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_Merozoites_PF": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_EBOV": {
+        "signs": {
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_HealthyState": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_Virus_EBOV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Macrophage_Leishmania": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Cell_Th2_Helminth": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "+",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_IAV": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_helminth": {
+        "signs": {
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Th2_Helminth": "-",
+          "v_IL10": "+",
+          "v_IgG": "-",
+          "v_Larvae_Helminth": "+",
+          "v_PV_IAV": "-",
+          "v_Virus_IAV": "-",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_HIV": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "mixed",
+          "v_IL10": "+",
+          "v_IL12": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "mixed",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "mixed",
+          "v_Virus_IAV": "-",
+          "v_paramPV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Rep_Mtb": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Macrophage_Healthy": "mixed",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "mixed",
+          "v_IL10": "+",
+          "v_IL12": "-",
+          "v_IgG": "+",
+          "v_Merozoites_PF": "+",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "mixed",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-",
+          "v_Virus_IAV": "-",
+          "v_erythrocyte_set": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_B_Healthy": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_HealthyState": "+",
+          "v_Merozoites_PF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_B_PF": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_Cell_B_PF": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Merozoites_PF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Th2_Helminth": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "+",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Cell_Th2_Helminth": "-",
+          "v_HealthyState": "-",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "mixed",
+          "v_Larvae_Helminth": "+",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-",
+          "v_Virus_IAV": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_IAV": {
+        "signs": {
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Epithelial_IAV": "mixed",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_HealthyState": "+",
+          "v_IL10": "+",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_PV_HIV": "-",
+          "v_PV_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Macrophage_Healthy": {
+        "signs": {
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_HealthyState": "+",
+          "v_Merozoites_PF": "-",
+          "v_PV_HIV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Dendritic_Healthy": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "+",
+          "v_Promastigotes_Leishmania": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 34,
+    "n_nodes": 34,
+    "inputs": 13,
+    "internal_nodes": 21,
+    "nonconstant_rules": 34,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 34,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_Cell_Dendritic_Healthy": "+",
+      "v_Cell_Dendritic_PF": "+",
+      "v_Cell_CD4_Naive": "+",
+      "v_Cell_Macrophage_Leishmania": "-",
+      "v_Cell_Epithelial_CandidaAlbicans": "-",
+      "v_IgG": "+",
+      "v_Cell_Epithelial_IAV": "-",
+      "v_PV_EBOV": "+",
+      "v_IL10": "+",
+      "v_Cell_Epithelial_helminth": "-",
+      "v_PV_HIV": "-",
+      "v_Cell_Th2_Helminth": "-",
+      "v_Cell_Th1_PF": "-",
+      "v_HealthyState": "+",
+      "v_Fungi_CandidaAlbicans": "+",
+      "v_Promastigotes_Leishmania": "+",
+      "v_IL12": "+",
+      "v_Rep_Mtb": "-",
+      "v_Cell_Macrophage_Healthy": "-",
+      "v_Merozoites_PF": "+",
+      "v_Sporozoites_PF": "-",
+      "v_erythrocyte_set": "-",
+      "v_PV_IAV": "+",
+      "v_Cell_B_Healthy": "-",
+      "v_Cell_B_PF": "-",
+      "v_Bacterium_Mtb": "-",
+      "v_Virus_EBOV": "+",
+      "v_Virus_HIV": "+",
+      "v_Virus_IAV": "+",
+      "v_Cell_Keratinocytes_HPV": "+",
+      "v_Virus_HPV": "+",
+      "v_epithelial_set": "+",
+      "v_Larvae_Helminth": "-",
+      "v_paramPV": "-"
+    },
+    "positive_edges": 137,
+    "negative_edges": 128,
+    "non_unate_edges": 23,
+    "has_multi_input_rule": true,
+    "edges": 288,
+    "max_indegree": 25,
+    "local_family_counts": {
+      "UNATE_OTHER": 11,
+      "NON_UNATE": 10,
+      "MIN_MAX": 13
+    },
+    "conflicts": {
+      "v_Cell_Dendritic_Healthy": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "mixed",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_Cell_Dendritic_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "+"
+      },
+      "v_Cell_Th1_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_Cell_Th1_PF": "mixed",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_HealthyState": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "mixed",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_EBOV": "-",
+        "v_IL10": "mixed",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+",
+        "v_Cell_Macrophage_Healthy": "+",
+        "v_Cell_Dendritic_Healthy": "+",
+        "v_HealthyState": "+"
+      },
+      "v_IL12": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "-",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_Merozoites_PF": {
+        "v_Cell_Dendritic_PF": "-",
+        "v_Merozoites_PF": "mixed",
+        "v_IL12": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_Sporozoites_PF": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Merozoites_PF": "+",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Macrophage_Healthy": "+",
+        "v_Sporozoites_PF": "+"
+      },
+      "v_erythrocyte_set": {
+        "v_Cell_Dendritic_PF": "+",
+        "v_Merozoites_PF": "+",
+        "v_IL12": "+",
+        "v_Cell_Th1_PF": "+",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Macrophage_Healthy": "+",
+        "v_erythrocyte_set": "+"
+      },
+      "v_Bacterium_Mtb": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Bacterium_Mtb": "+"
+      },
+      "v_Cell_CD4_Naive": {
+        "v_Cell_CD4_Naive": "mixed",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IL12": "mixed",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "mixed",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "+",
+        "v_PV_IAV": "mixed",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_Cell_Epithelial_CandidaAlbicans": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Dendritic_Healthy": "-"
+      },
+      "v_Cell_Epithelial_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "mixed"
+      },
+      "v_Cell_Keratinocytes_HPV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Keratinocytes_HPV": "+",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_Cell_Macrophage_Healthy": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "+",
+        "v_IgG": "-",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Th1_PF": "+",
+        "v_PV_EBOV": "-",
+        "v_IL10": "+",
+        "v_PV_HIV": "+",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "-",
+        "v_Cell_Macrophage_Healthy": "+"
+      },
+      "v_Fungi_CandidaAlbicans": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Epithelial_CandidaAlbicans": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Dendritic_Healthy": "+",
+        "v_Fungi_CandidaAlbicans": "+"
+      },
+      "v_IL10": {
+        "v_Cell_CD4_Naive": "-",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_Cell_Keratinocytes_HPV": "+",
+        "v_IL12": "-",
+        "v_IgG": "-",
+        "v_Cell_Th1_PF": "-",
+        "v_IL10": "-",
+        "v_Cell_Epithelial_helminth": "+",
+        "v_PV_HIV": "+",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_IgG": {
+        "v_Cell_CD4_Naive": "-",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_Merozoites_PF": "-",
+        "v_IL12": "-",
+        "v_IgG": "-",
+        "v_PV_EBOV": "-",
+        "v_IL10": "-",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "mixed",
+        "v_PV_IAV": "-"
+      },
+      "v_PV_EBOV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-"
+      },
+      "v_PV_HIV": {
+        "v_Cell_CD4_Naive": "-",
+        "v_IL12": "mixed",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "mixed",
+        "v_Cell_Th2_Helminth": "+",
+        "v_PV_IAV": "-",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_PV_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "+"
+      },
+      "v_Promastigotes_Leishmania": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "+",
+        "v_IL12": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Macrophage_Healthy": "-",
+        "v_Cell_Dendritic_Healthy": "+",
+        "v_Promastigotes_Leishmania": "+"
+      },
+      "v_Rep_Mtb": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Cell_Macrophage_Healthy": "-"
+      },
+      "v_Virus_EBOV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_EBOV": "+",
+        "v_IL10": "+",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Virus_EBOV": "+"
+      },
+      "v_Virus_HIV": {
+        "v_Cell_CD4_Naive": "mixed",
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IL12": "+",
+        "v_IgG": "+",
+        "v_PV_HIV": "mixed",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Virus_HIV": "+"
+      },
+      "v_Virus_IAV": {
+        "v_Cell_CD4_Naive": "+",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Rep_Mtb": "-",
+        "v_Cell_Th2_Helminth": "-",
+        "v_Virus_IAV": "+"
+      },
+      "v_Cell_Macrophage_Leishmania": {
+        "v_Cell_Macrophage_Leishmania": "-",
+        "v_IgG": "-",
+        "v_PV_EBOV": "-",
+        "v_IL10": "+",
+        "v_Rep_Mtb": "-"
+      },
+      "v_Cell_Epithelial_helminth": {
+        "v_Cell_Epithelial_CandidaAlbicans": "-",
+        "v_IgG": "+",
+        "v_Cell_Epithelial_IAV": "-",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_Cell_Th2_Helminth": "+"
+      },
+      "v_Cell_B_PF": {
+        "v_Merozoites_PF": "-",
+        "v_IgG": "+",
+        "v_Cell_B_PF": "+"
+      },
+      "v_Cell_B_Healthy": {
+        "v_IgG": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_PV_HIV": "-",
+        "v_Cell_B_Healthy": "+",
+        "v_Cell_B_PF": "+",
+        "v_Cell_Th2_Helminth": "-",
+        "v_PV_IAV": "-"
+      },
+      "v_Cell_Th2_Helminth": {
+        "v_IgG": "+",
+        "v_IL10": "+",
+        "v_Cell_Epithelial_helminth": "-",
+        "v_Cell_Th2_Helminth": "-"
+      }
+    },
+    "local": {
+      "v_Cell_Dendritic_PF": {
+        "signs": {
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_HealthyState": "+",
+          "v_IL12": "+",
+          "v_Merozoites_PF": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_CD4_Naive": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "+",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "-",
+          "v_PV_IAV": "+",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "mixed",
+          "v_Virus_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Macrophage_Leishmania": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "-",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "+",
+          "v_PV_EBOV": "-",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Keratinocytes_HPV": {
+        "signs": {
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_IL10": "+",
+          "v_Virus_HPV": "+",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_CandidaAlbicans": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "-",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Merozoites_PF": {
+        "signs": {
+          "v_Cell_B_PF": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "mixed",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "mixed",
+          "v_Promastigotes_Leishmania": "+",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_Cell_B_PF": "+",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Epithelial_helminth": "+",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th2_Helminth": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_IAV": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_HIV": "+",
+          "v_Virus_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_IAV": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_HealthyState": "-",
+          "v_IL12": "-",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "+",
+          "v_Virus_IAV": "+",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Th1_PF": {
+        "signs": {
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "mixed",
+          "v_HealthyState": "+",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_Merozoites_PF": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_EBOV": {
+        "signs": {
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_HealthyState": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "+",
+          "v_Virus_EBOV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Epithelial_IAV": "+",
+          "v_Cell_Keratinocytes_HPV": "+",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Macrophage_Leishmania": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Cell_Th2_Helminth": "+",
+          "v_HealthyState": "mixed",
+          "v_IL10": "-",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_Merozoites_PF": "-",
+          "v_PV_EBOV": "+",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "+",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "+",
+          "v_Virus_EBOV": "+",
+          "v_Virus_IAV": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Epithelial_helminth": {
+        "signs": {
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "-",
+          "v_Cell_Th2_Helminth": "-",
+          "v_IL10": "+",
+          "v_IgG": "-",
+          "v_Larvae_Helminth": "+",
+          "v_PV_IAV": "-",
+          "v_Virus_IAV": "-",
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_HIV": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "mixed",
+          "v_IL10": "+",
+          "v_IL12": "-",
+          "v_IgG": "-",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "mixed",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "mixed",
+          "v_Virus_IAV": "-",
+          "v_paramPV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Rep_Mtb": {
+        "signs": {
+          "v_Bacterium_Mtb": "+",
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Macrophage_Healthy": "mixed",
+          "v_Cell_Macrophage_Leishmania": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "-",
+          "v_HealthyState": "mixed",
+          "v_IL10": "+",
+          "v_IL12": "-",
+          "v_IgG": "+",
+          "v_Merozoites_PF": "+",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "mixed",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "+",
+          "v_Sporozoites_PF": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-",
+          "v_Virus_IAV": "-",
+          "v_erythrocyte_set": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_B_Healthy": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_HealthyState": "+",
+          "v_Merozoites_PF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_B_PF": {
+        "signs": {
+          "v_Cell_B_Healthy": "+",
+          "v_Cell_B_PF": "+",
+          "v_Cell_Th1_PF": "+",
+          "v_Merozoites_PF": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Th2_Helminth": {
+        "signs": {
+          "v_Bacterium_Mtb": "-",
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "+",
+          "v_Cell_Dendritic_Healthy": "-",
+          "v_Cell_Dendritic_PF": "-",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Epithelial_IAV": "-",
+          "v_Cell_Epithelial_helminth": "+",
+          "v_Cell_Keratinocytes_HPV": "-",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Cell_Th2_Helminth": "-",
+          "v_HealthyState": "-",
+          "v_IL10": "-",
+          "v_IL12": "-",
+          "v_IgG": "mixed",
+          "v_Larvae_Helminth": "+",
+          "v_PV_EBOV": "-",
+          "v_PV_HIV": "+",
+          "v_PV_IAV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Virus_EBOV": "-",
+          "v_Virus_HIV": "-",
+          "v_Virus_IAV": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PV_IAV": {
+        "signs": {
+          "v_Cell_B_Healthy": "-",
+          "v_Cell_CD4_Naive": "mixed",
+          "v_Cell_Dendritic_Healthy": "mixed",
+          "v_Cell_Epithelial_IAV": "mixed",
+          "v_Cell_Macrophage_Healthy": "-",
+          "v_HealthyState": "+",
+          "v_IL10": "+",
+          "v_IL12": "+",
+          "v_IgG": "-",
+          "v_PV_HIV": "-",
+          "v_PV_IAV": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Macrophage_Healthy": {
+        "signs": {
+          "v_Cell_Macrophage_Healthy": "+",
+          "v_HealthyState": "+",
+          "v_Merozoites_PF": "-",
+          "v_PV_HIV": "-",
+          "v_Promastigotes_Leishmania": "-",
+          "v_Rep_Mtb": "-",
+          "v_Sporozoites_PF": "+",
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cell_Dendritic_Healthy": {
+        "signs": {
+          "v_Cell_CD4_Naive": "-",
+          "v_Cell_Dendritic_Healthy": "+",
+          "v_Cell_Dendritic_PF": "+",
+          "v_Cell_Epithelial_CandidaAlbicans": "-",
+          "v_Cell_Th1_PF": "-",
+          "v_Fungi_CandidaAlbicans": "+",
+          "v_HealthyState": "+",
+          "v_Promastigotes_Leishmania": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Fungi_CandidaAlbicans": {
+        "signs": {
+          "v_Fungi_CandidaAlbicans": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_epithelial_set": {
+        "signs": {
+          "v_epithelial_set": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Virus_HPV": {
+        "signs": {
+          "v_Virus_HPV": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Bacterium_Mtb": {
+        "signs": {
+          "v_Bacterium_Mtb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_HealthyState": {
+        "signs": {
+          "v_HealthyState": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_paramPV": {
+        "signs": {
+          "v_paramPV": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_erythrocyte_set": {
+        "signs": {
+          "v_erythrocyte_set": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Sporozoites_PF": {
+        "signs": {
+          "v_Sporozoites_PF": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Virus_HIV": {
+        "signs": {
+          "v_Virus_HIV": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Virus_IAV": {
+        "signs": {
+          "v_Virus_IAV": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Virus_EBOV": {
+        "signs": {
+          "v_Virus_EBOV": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Larvae_Helminth": {
+        "signs": {
+          "v_Larvae_Helminth": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Promastigotes_Leishmania": {
+        "signs": {
+          "v_Promastigotes_Leishmania": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": false,
+    "lower_bound": 257,
+    "reason": "enumeration_limit",
+    "examples": [
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 0,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 0,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 1,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 1,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 1,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 1,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 1,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 1,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 0,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 0,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 0,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 0,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 0,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 1,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 0,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 1,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 0,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 1,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 0,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      },
+      {
+        "v_Bacterium_Mtb": 0,
+        "v_Cell_B_Healthy": 0,
+        "v_Cell_B_PF": 0,
+        "v_Cell_CD4_Naive": 0,
+        "v_Cell_Dendritic_Healthy": 0,
+        "v_Cell_Dendritic_PF": 0,
+        "v_Cell_Epithelial_CandidaAlbicans": 0,
+        "v_Cell_Epithelial_IAV": 0,
+        "v_Cell_Epithelial_helminth": 0,
+        "v_Cell_Keratinocytes_HPV": 1,
+        "v_Cell_Macrophage_Healthy": 0,
+        "v_Cell_Macrophage_Leishmania": 0,
+        "v_Cell_Th1_PF": 0,
+        "v_Cell_Th2_Helminth": 0,
+        "v_Fungi_CandidaAlbicans": 0,
+        "v_HealthyState": 0,
+        "v_IL10": 1,
+        "v_IL12": 0,
+        "v_IgG": 0,
+        "v_Larvae_Helminth": 0,
+        "v_Merozoites_PF": 0,
+        "v_PV_EBOV": 0,
+        "v_PV_HIV": 0,
+        "v_PV_IAV": 0,
+        "v_Promastigotes_Leishmania": 1,
+        "v_Rep_Mtb": 1,
+        "v_Sporozoites_PF": 0,
+        "v_Virus_EBOV": 1,
+        "v_Virus_HIV": 0,
+        "v_Virus_HPV": 1,
+        "v_Virus_IAV": 1,
+        "v_epithelial_set": 0,
+        "v_erythrocyte_set": 0,
+        "v_paramPV": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Cell_Dendritic_PF": "((v_Cell_Dendritic_Healthy & ((v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & !(((v_Merozoites_PF & 1) | (!v_Merozoites_PF & !(((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))))))))) | (!v_HealthyState & !(((v_Merozoites_PF & 1) | (!v_Merozoites_PF & !(((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))))))))))) | (!v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_Merozoites_PF & 1) | (!v_Merozoites_PF & !(((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))))))))))) | (!v_Cell_Dendritic_Healthy & 0))",
+    "v_Cell_CD4_Naive": "[see BDD artifact]",
+    "v_Cell_Macrophage_Leishmania": "!(((v_Bacterium_Mtb & 1) | (!v_Bacterium_Mtb & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_Fungi_CandidaAlbicans & 1) | (!v_Fungi_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IL12 & 1) | (!v_IL12 & ((v_IgG & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))))) | (!v_Promastigotes_Leishmania & 1))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))))))) | (!v_Promastigotes_Leishmania & 1))))))))))))))))))) | (!v_Cell_Macrophage_Healthy & 1))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IL12 & 1) | (!v_IL12 & ((v_IgG & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))))) | (!v_Promastigotes_Leishmania & 1))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))))))) | (!v_Promastigotes_Leishmania & 1))))))))))))))))) | (!v_Cell_Macrophage_Healthy & 1))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IgG & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))) | (!v_Promastigotes_Leishmania & 1))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0))))) | (!v_Promastigotes_Leishmania & 1))))))))))))))) | (!v_Cell_Macrophage_Healthy & 1))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IgG & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))) | (!v_Promastigotes_Leishmania & 1))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0))))) | (!v_Promastigotes_Leishmania & 1))))))))))))))) | (!v_Cell_Macrophage_Healthy & 1)))))))",
+    "v_Cell_Keratinocytes_HPV": "((v_Cell_Keratinocytes_HPV & ((v_IL10 & 1) | (!v_IL10 & ((v_Virus_HPV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_HPV & 0))))) | (!v_Cell_Keratinocytes_HPV & ((v_Virus_HPV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_HPV & 0))))",
+    "v_Cell_Epithelial_CandidaAlbicans": "!(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_CandidaAlbicans & 1) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_Fungi_CandidaAlbicans & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Fungi_CandidaAlbicans & 0)))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_Fungi_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_epithelial_set & 1) | (!v_epithelial_set & 0)))))) | (!v_Fungi_CandidaAlbicans & 1))))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_Fungi_CandidaAlbicans & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Fungi_CandidaAlbicans & 0)))))))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_Fungi_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_epithelial_set & 1) | (!v_epithelial_set & 0)))))) | (!v_Fungi_CandidaAlbicans & 1))))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_Fungi_CandidaAlbicans & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Fungi_CandidaAlbicans & 0))))))))))))",
+    "v_Merozoites_PF": "!(((v_Cell_B_PF & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & ((v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & !(((v_Merozoites_PF & 1) | (!v_Merozoites_PF & 0)))))) | (!v_Cell_Macrophage_Healthy & ((v_IgG & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & !(((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0)))))) | (!v_IgG & !(((v_Merozoites_PF & 1) | (!v_Merozoites_PF & ((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0)))))))))))) | (!v_Cell_B_PF & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & !(((v_Cell_Macrophage_Healthy & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & 0))) | (!v_Cell_Macrophage_Healthy & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & ((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))))))))))))",
+    "v_IL12": "[see BDD artifact]",
+    "v_IgG": "((v_Cell_B_Healthy & ((v_Cell_B_PF & 1) | (!v_Cell_B_PF & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & 1) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_IL10 & ((v_IgG & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))))))))))))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_HealthyState & ((v_IL10 & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_IL10 & ((v_IgG & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))))))))))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & 0))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & 1) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL10 & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))) | (!v_IL10 & ((v_IgG & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))))))))))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))) | (!v_HealthyState & ((v_IL10 & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))) | (!v_IL10 & ((v_IgG & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))) | (!v_IgG & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))))))))))))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & 0))))))))))) | (!v_Cell_B_Healthy & ((v_Cell_B_PF & 1) | (!v_Cell_B_PF & !(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Epithelial_IAV & ((v_IL10 & 1) | (!v_IL10 & !(((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0)))))))))) | (!v_Cell_Dendritic_Healthy & 1))) | (!v_Cell_CD4_Naive & 1)))))))",
+    "v_Cell_Epithelial_IAV": "!(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))))) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & !(((v_PV_HIV & ((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0))))) | (!v_PV_HIV & 0)))))) | (!v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & !(((v_HealthyState & ((v_PV_HIV & ((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0))))) | (!v_PV_HIV & 0))) | (!v_HealthyState & ((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0)))))))))))) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & !(((v_PV_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_PV_IAV & ((v_Virus_IAV & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Virus_IAV & 0))))))))))))))",
+    "v_Cell_Th1_PF": "!(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_IL12 & 1) | (!v_IL12 & 0)))))) | (!v_Cell_Dendritic_PF & ((v_Cell_Macrophage_Healthy & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_IL12 & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & !(((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0)))))) | (!v_IL12 & 1))))) | (!v_Cell_Macrophage_Healthy & 1))))) | (!v_Cell_CD4_Naive & ((v_Cell_Dendritic_PF & ((v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))) | (!v_HealthyState & 0)))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & !(((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))) | (!v_HealthyState & 0)))))) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Th1_PF & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Th1_PF & !(((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))) | (!v_HealthyState & 0)))))))))) | (!v_Cell_Dendritic_PF & ((v_Cell_Epithelial_CandidaAlbicans & 1) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Th1_PF & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Th1_PF & 1)))))))))))",
+    "v_PV_EBOV": "!(((v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_HealthyState & 1) | (!v_HealthyState & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0)))))))))))))) | (!v_Cell_Dendritic_Healthy & 1)))",
+    "v_IL10": "[see BDD artifact]",
+    "v_Cell_Epithelial_helminth": "!(((v_Cell_B_Healthy & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_IL10 & ((v_IgG & 1) | (!v_IgG & !(((v_Larvae_Helminth & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Larvae_Helminth & 0)))))) | (!v_IL10 & 1))))))) | (!v_Cell_Epithelial_IAV & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_IL10 & ((v_IgG & 1) | (!v_IgG & !(((v_Larvae_Helminth & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Larvae_Helminth & 0)))))) | (!v_IL10 & ((v_IgG & 1) | (!v_IgG & ((v_Larvae_Helminth & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & !(((v_epithelial_set & 1) | (!v_epithelial_set & 0)))))))) | (!v_Larvae_Helminth & 1))))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_IgG & 1) | (!v_IgG & !(((v_Larvae_Helminth & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Larvae_Helminth & 0)))))))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_IgG & 1) | (!v_IgG & !(((v_Larvae_Helminth & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Larvae_Helminth & 0)))))))))))) | (!v_Cell_B_Healthy & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_IgG & 1) | (!v_IgG & !(((v_Larvae_Helminth & ((v_epithelial_set & 1) | (!v_epithelial_set & 0))) | (!v_Larvae_Helminth & 0))))))))))))",
+    "v_PV_HIV": "[see BDD artifact]",
+    "v_Rep_Mtb": "[see BDD artifact]",
+    "v_Cell_B_Healthy": "((v_Cell_B_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & 0))))) | (!v_Cell_B_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & 0))))",
+    "v_Cell_B_PF": "((v_Cell_B_Healthy & ((v_Cell_B_PF & 1) | (!v_Cell_B_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_Merozoites_PF & 1) | (!v_Merozoites_PF & 0))))))) | (!v_Cell_B_Healthy & 0))",
+    "v_Cell_Th2_Helminth": "[see BDD artifact]",
+    "v_PV_IAV": "!(((v_Cell_B_Healthy & ((v_Cell_Dendritic_Healthy & 1) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & 0))))) | (!v_Cell_Epithelial_IAV & ((v_IgG & 1) | (!v_IgG & !(((v_PV_IAV & 1) | (!v_PV_IAV & 0)))))))))) | (!v_Cell_B_Healthy & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Macrophage_Healthy & ((v_HealthyState & ((v_IL10 & ((v_IL12 & ((v_IgG & 1) | (!v_IgG & 0))) | (!v_IL12 & ((v_IgG & 1) | (!v_IgG & ((v_PV_HIV & 1) | (!v_PV_HIV & 0))))))) | (!v_IL10 & 1))) | (!v_HealthyState & ((v_IL10 & ((v_IL12 & ((v_IgG & 1) | (!v_IgG & 0))) | (!v_IL12 & 1))) | (!v_IL10 & 1))))) | (!v_Cell_Macrophage_Healthy & ((v_IL10 & ((v_IgG & 1) | (!v_IgG & 0))) | (!v_IL10 & 1))))) | (!v_Cell_Epithelial_IAV & ((v_IL10 & ((v_IgG & 1) | (!v_IgG & !(((v_PV_IAV & 1) | (!v_PV_IAV & 0)))))) | (!v_IL10 & 1))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & 0))))) | (!v_Cell_Epithelial_IAV & ((v_IgG & 1) | (!v_IgG & !(((v_PV_IAV & 1) | (!v_PV_IAV & 0)))))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Macrophage_Healthy & ((v_HealthyState & ((v_IgG & 1) | (!v_IgG & ((v_PV_HIV & 1) | (!v_PV_HIV & 0))))) | (!v_HealthyState & 1))) | (!v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & 0))))) | (!v_Cell_Epithelial_IAV & ((v_IgG & 1) | (!v_IgG & !(((v_PV_IAV & 1) | (!v_PV_IAV & 0)))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & 0))))) | (!v_Cell_Epithelial_IAV & ((v_IgG & 1) | (!v_IgG & !(((v_PV_IAV & 1) | (!v_PV_IAV & 0))))))))))))))",
+    "v_Cell_Macrophage_Healthy": "((v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_Merozoites_PF & ((v_PV_HIV & 1) | (!v_PV_HIV & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))))))) | (!v_Merozoites_PF & !(((v_PV_HIV & ((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))) | (!v_PV_HIV & ((v_Promastigotes_Leishmania & ((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))) | (!v_Promastigotes_Leishmania & ((v_Rep_Mtb & ((v_Sporozoites_PF & ((v_erythrocyte_set & 1) | (!v_erythrocyte_set & 0))) | (!v_Sporozoites_PF & 0))) | (!v_Rep_Mtb & 1))))))))))))) | (!v_Cell_Macrophage_Healthy & ((v_HealthyState & 1) | (!v_HealthyState & 0))))",
+    "v_Cell_Dendritic_Healthy": "((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & ((v_Cell_Epithelial_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Th1_PF & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))) | (!v_Cell_Th1_PF & ((v_Fungi_CandidaAlbicans & 1) | (!v_Fungi_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & ((v_HealthyState & 1) | (!v_HealthyState & 0))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))) | (!v_Cell_Th1_PF & ((v_Fungi_CandidaAlbicans & 1) | (!v_Fungi_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))))))))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Dendritic_PF & 1) | (!v_Cell_Dendritic_PF & ((v_HealthyState & 1) | (!v_HealthyState & 0))))))))",
+    "v_Fungi_CandidaAlbicans": "v_Fungi_CandidaAlbicans",
+    "v_epithelial_set": "v_epithelial_set",
+    "v_Virus_HPV": "v_Virus_HPV",
+    "v_Bacterium_Mtb": "v_Bacterium_Mtb",
+    "v_HealthyState": "v_HealthyState",
+    "v_paramPV": "v_paramPV",
+    "v_erythrocyte_set": "v_erythrocyte_set",
+    "v_Sporozoites_PF": "v_Sporozoites_PF",
+    "v_Virus_HIV": "v_Virus_HIV",
+    "v_Virus_IAV": "v_Virus_IAV",
+    "v_Virus_EBOV": "v_Virus_EBOV",
+    "v_Larvae_Helminth": "v_Larvae_Helminth",
+    "v_Promastigotes_Leishmania": "v_Promastigotes_Leishmania"
+  },
+  "steps": [
+    {
+      "node": "v_Param_HealthyState1",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState2",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Adult_Helminth",
+      "support": [
+        "v_Cell_Th2_Helminth",
+        "v_IgE",
+        "v_IgG",
+        "v_Larvae_Helminth"
+      ],
+      "function": "!v_Cell_Th2_Helminth & !v_IgE & !v_IgG & v_Larvae_Helminth"
+    },
+    {
+      "node": "v_Apoptosis_Neutrophil_Mtb",
+      "support": [
+        "v_Cell_Neutrophil_Mtb",
+        "v_TNFa"
+      ],
+      "function": "v_Cell_Neutrophil_Mtb & v_TNFa"
+    },
+    {
+      "node": "v_Apoptotic_Epithelial_IAV",
+      "support": [
+        "v_Cell_Epithelial_IAV"
+      ],
+      "function": "v_Cell_Epithelial_IAV"
+    },
+    {
+      "node": "v_Cell_Basophil_Healthy",
+      "support": [
+        "v_Param_HealthyState11"
+      ],
+      "function": "v_Param_HealthyState11"
+    },
+    {
+      "node": "v_Cell_CD8_Leishmania",
+      "support": [
+        "v_Amastgotes_Leishmania",
+        "v_Cell_CD8_Naive"
+      ],
+      "function": "v_Amastgotes_Leishmania & v_Cell_CD8_Naive"
+    },
+    {
+      "node": "v_Cell_Endothelial_Healthy",
+      "support": [
+        "v_Param_HealthyState11"
+      ],
+      "function": "v_Param_HealthyState11"
+    },
+    {
+      "node": "v_Cell_Eosinophil_Healthy",
+      "support": [
+        "v_Param_HealthyState9"
+      ],
+      "function": "v_Param_HealthyState9"
+    },
+    {
+      "node": "v_Cell_Erythrocyte_Healthy",
+      "support": [
+        "v_Merozoites_PF",
+        "v_erythrocyte_set"
+      ],
+      "function": "!v_Merozoites_PF & v_erythrocyte_set"
+    },
+    {
+      "node": "v_Cell_Hepatocytes_Healthy",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Cell_ILC2_Healthy",
+      "support": [
+        "v_Param_HealthyState5"
+      ],
+      "function": "v_Param_HealthyState5"
+    },
+    {
+      "node": "v_Cell_Keratinocytes_Healthy",
+      "support": [
+        "v_epithelial_set"
+      ],
+      "function": "v_epithelial_set"
+    },
+    {
+      "node": "v_Cell_LC_HIV",
+      "support": [
+        "v_Cell_LC_Healthy",
+        "v_Virus_HIV"
+      ],
+      "function": "v_Cell_LC_Healthy & v_Virus_HIV"
+    },
+    {
+      "node": "v_Cell_LC_Healthy",
+      "support": [
+        "v_Param_HealthyState11"
+      ],
+      "function": "v_Param_HealthyState11"
+    },
+    {
+      "node": "v_Cell_Macrophage_CandidaAlbicans",
+      "support": [
+        "v_Cell_Macrophage_Healthy",
+        "v_Fungi_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Macrophage_Healthy & v_Fungi_CandidaAlbicans"
+    },
+    {
+      "node": "v_Cell_Macrophage_Helminth",
+      "support": [
+        "v_Cell_Macrophage_Healthy",
+        "v_IgE",
+        "v_Larvae_Helminth"
+      ],
+      "function": "v_Cell_Macrophage_Healthy & !v_IgE & v_Larvae_Helminth"
+    },
+    {
+      "node": "v_Cell_Mast",
+      "support": [
+        "v_IL33",
+        "v_IL6"
+      ],
+      "function": "v_IL33 | v_IL6"
+    },
+    {
+      "node": "v_Cell_Mast_Healthy",
+      "support": [
+        "v_Param_HealthyState11"
+      ],
+      "function": "v_Param_HealthyState11"
+    },
+    {
+      "node": "v_Cell_NKT_Resting",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Cell_NK_HIV",
+      "support": [
+        "v_Cell_CD8_HIV",
+        "v_Cell_NK_Healthy",
+        "v_IL12",
+        "v_IL15",
+        "v_IL18"
+      ],
+      "function": "v_Cell_CD8_HIV & v_Cell_NK_Healthy & v_IL12 & v_IL15 & v_IL18"
+    },
+    {
+      "node": "v_Cell_NK_Healthy",
+      "support": [
+        "v_Param_HealthyState5"
+      ],
+      "function": "v_Param_HealthyState5"
+    },
+    {
+      "node": "v_Cell_Neutrophil_Healthy",
+      "support": [
+        "v_Param_HealthyState6"
+      ],
+      "function": "v_Param_HealthyState6"
+    },
+    {
+      "node": "v_Cell_Th17_IAV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_PV_IAV"
+      ],
+      "function": "v_Cell_CD4_Naive & v_PV_IAV"
+    },
+    {
+      "node": "v_Cell_Treg_PF",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Th1_PF"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Th1_PF"
+    },
+    {
+      "node": "v_Cell_Treg_HIV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_pDendritic_HIV"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_pDendritic_HIV"
+    },
+    {
+      "node": "v_Cell_cDendritic",
+      "support": [
+        "v_Param_HealthyState7"
+      ],
+      "function": "v_Param_HealthyState7"
+    },
+    {
+      "node": "v_Cell_monocytes_leishmania",
+      "support": [
+        "v_Cell_Monocytes_Healthy",
+        "v_Promastigotes_Leishmania"
+      ],
+      "function": "v_Cell_Monocytes_Healthy & v_Promastigotes_Leishmania"
+    },
+    {
+      "node": "v_Cell_pDendritic",
+      "support": [
+        "v_Param_HealthyState7"
+      ],
+      "function": "v_Param_HealthyState7"
+    },
+    {
+      "node": "v_Cell_pKeratinocytes",
+      "support": [
+        "v_Virus_HPV",
+        "v_epithelial_set"
+      ],
+      "function": "v_Virus_HPV & v_epithelial_set"
+    },
+    {
+      "node": "v_GM_CSF",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Epithelial_CandidaAlbicans"
+    },
+    {
+      "node": "v_G_CSF",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Epithelial_CandidaAlbicans"
+    },
+    {
+      "node": "v_IL15",
+      "support": [
+        "v_Cell_CD8_HIV",
+        "v_IL10",
+        "v_Param_HealthyState7"
+      ],
+      "function": "v_Cell_CD8_HIV & !v_IL10 & v_Param_HealthyState7"
+    },
+    {
+      "node": "v_IL17A",
+      "support": [
+        "v_Cell_Th17_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Th17_CandidaAlbicans"
+    },
+    {
+      "node": "v_IL17F",
+      "support": [
+        "v_Cell_Th17_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Th17_CandidaAlbicans"
+    },
+    {
+      "node": "v_IL2",
+      "support": [
+        "v_Cell_Th1_IAV",
+        "v_Cell_Th1_PF"
+      ],
+      "function": "v_Cell_Th1_IAV | v_Cell_Th1_PF"
+    },
+    {
+      "node": "v_IL21",
+      "support": [
+        "v_Cell_Th17_CandidaAlbicans",
+        "v_IL6"
+      ],
+      "function": "v_Cell_Th17_CandidaAlbicans | v_IL6"
+    },
+    {
+      "node": "v_IL22",
+      "support": [
+        "v_Cell_Th17_CandidaAlbicans",
+        "v_Cell_Th1_PF"
+      ],
+      "function": "v_Cell_Th17_CandidaAlbicans | v_Cell_Th1_PF"
+    },
+    {
+      "node": "v_IL23",
+      "support": [
+        "v_Cell_Macrophage_Mtb"
+      ],
+      "function": "v_Cell_Macrophage_Mtb"
+    },
+    {
+      "node": "v_IgE",
+      "support": [
+        "v_Cell_B_Helminth"
+      ],
+      "function": "v_Cell_B_Helminth"
+    },
+    {
+      "node": "v_MIP1a",
+      "support": [
+        "v_Cell_Macrophage_EBOV"
+      ],
+      "function": "v_Cell_Macrophage_EBOV"
+    },
+    {
+      "node": "v_M_CSF",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Epithelial_CandidaAlbicans"
+    },
+    {
+      "node": "v_NO",
+      "support": [
+        "v_Cell_Macrophage_Leishmania",
+        "v_Cell_Macrophage_PF",
+        "v_Cell_Neutrophil_Leishmania",
+        "v_Cell_Th1_Leishmania",
+        "v_Cell_Th1_PF",
+        "v_IFNg"
+      ],
+      "function": "((v_Cell_Macrophage_Leishmania & ((v_Cell_Macrophage_PF & ((v_Cell_Neutrophil_Leishmania & 1) | (!v_Cell_Neutrophil_Leishmania & ((v_Cell_Th1_Leishmania & 1) | (!v_Cell_Th1_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_IFNg & 1) | (!v_IFNg & 0))))))))) | (!v_Cell_Macrophage_PF & ((v_Cell_Neutrophil_Leishmania & 1) | (!v_Cell_Neutrophil_Leishmania & ((v_Cell_Th1_Leishmania & 1) | (!v_Cell_Th1_Leishmania & 0))))))) | (!v_Cell_Macrophage_Leishmania & ((v_Cell_Macrophage_PF & ((v_Cell_Neutrophil_Leishmania & 1) | (!v_Cell_Neutrophil_Leishmania & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_IFNg & 1) | (!v_IFNg & 0))))))) | (!v_Cell_Macrophage_PF & ((v_Cell_Neutrophil_Leishmania & 1) | (!v_Cell_Neutrophil_Leishmania & 0))))))"
+    },
+    {
+      "node": "v_O2",
+      "support": [
+        "v_Cell_Macrophage_PF",
+        "v_IFNg"
+      ],
+      "function": "v_Cell_Macrophage_PF & v_IFNg"
+    },
+    {
+      "node": "v_Organ_Failure_EBOV",
+      "support": [
+        "v_Cell_Hepatocytes_EBOV"
+      ],
+      "function": "v_Cell_Hepatocytes_EBOV"
+    },
+    {
+      "node": "v_PAF",
+      "support": [
+        "v_Cell_Neutrophil_Leishmania"
+      ],
+      "function": "v_Cell_Neutrophil_Leishmania"
+    },
+    {
+      "node": "v_PV_HPV",
+      "support": [
+        "v_Cell_CD8_HPV",
+        "v_Cell_Keratinocytes_HPV"
+      ],
+      "function": "!v_Cell_CD8_HPV & v_Cell_Keratinocytes_HPV"
+    },
+    {
+      "node": "v_Param_HealthyState10",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState3",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState4",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState5",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState6",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState7",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState8",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Param_HealthyState9",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Cell_Monocytes_Healthy",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "v_HealthyState"
+    },
+    {
+      "node": "v_Cell_Neutrophil_Leishmania",
+      "support": [
+        "v_HealthyState",
+        "v_Promastigotes_Leishmania"
+      ],
+      "function": "v_HealthyState & v_Promastigotes_Leishmania"
+    },
+    {
+      "node": "v_Param_HealthyState11",
+      "support": [
+        "v_HealthyState"
+      ],
+      "function": "!v_HealthyState"
+    },
+    {
+      "node": "v_Vascular_Leakage_EBOV",
+      "support": [
+        "v_Cell_CD8_EBOV",
+        "v_Cell_Macrophage_EBOV",
+        "v_Cell_Monocytes_EBOV",
+        "v_Cell_Th1_EBOV",
+        "v_IFNg",
+        "v_IL6",
+        "v_IL8",
+        "v_TNFa"
+      ],
+      "function": "((v_Cell_CD8_EBOV & ((v_Cell_Macrophage_EBOV & ((v_IFNg & 1) | (!v_IFNg & ((v_IL6 & 1) | (!v_IL6 & ((v_IL8 & 1) | (!v_IL8 & ((v_TNFa & 1) | (!v_TNFa & 0))))))))) | (!v_Cell_Macrophage_EBOV & ((v_Cell_Monocytes_EBOV & ((v_IFNg & 1) | (!v_IFNg & ((v_IL6 & 1) | (!v_IL6 & ((v_IL8 & 1) | (!v_IL8 & ((v_TNFa & 1) | (!v_TNFa & 0))))))))) | (!v_Cell_Monocytes_EBOV & ((v_IFNg & 1) | (!v_IFNg & 0))))))) | (!v_Cell_CD8_EBOV & ((v_Cell_Macrophage_EBOV & ((v_IFNg & 1) | (!v_IFNg & ((v_IL6 & 1) | (!v_IL6 & ((v_IL8 & 1) | (!v_IL8 & ((v_TNFa & 1) | (!v_TNFa & 0))))))))) | (!v_Cell_Macrophage_EBOV & ((v_Cell_Monocytes_EBOV & ((v_IFNg & 1) | (!v_IFNg & ((v_IL6 & 1) | (!v_IL6 & ((v_IL8 & 1) | (!v_IL8 & ((v_TNFa & 1) | (!v_TNFa & 0))))))))) | (!v_Cell_Monocytes_EBOV & ((v_Cell_Th1_EBOV & ((v_IFNg & 1) | (!v_IFNg & 0))) | (!v_Cell_Th1_EBOV & 0))))))))"
+    },
+    {
+      "node": "v_IL6",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Epithelial_IAV",
+        "v_Cell_Macrophage_EBOV",
+        "v_Cell_Macrophage_IAV",
+        "v_Cell_Macrophage_Leishmania",
+        "v_Cell_Macrophage_Mtb",
+        "v_Cell_Monocytes_EBOV"
+      ],
+      "function": "v_Cell_Epithelial_CandidaAlbicans | v_Cell_Epithelial_IAV | v_Cell_Macrophage_EBOV | v_Cell_Macrophage_IAV | v_Cell_Macrophage_Leishmania | v_Cell_Macrophage_Mtb | v_Cell_Monocytes_EBOV"
+    },
+    {
+      "node": "v_Apoptosis_Macrophage_Mtb",
+      "support": [
+        "v_Cell_Macrophage_Mtb",
+        "v_TNFa"
+      ],
+      "function": "v_Cell_Macrophage_Mtb & v_TNFa"
+    },
+    {
+      "node": "v_Cell_CD8_HPV",
+      "support": [
+        "v_Cell_CD8_Naive",
+        "v_Cell_LC_HPV"
+      ],
+      "function": "v_Cell_CD8_Naive & v_Cell_LC_HPV"
+    },
+    {
+      "node": "v_Cell_CD8_PF",
+      "support": [
+        "v_Cell_CD8_Naive",
+        "v_Cell_Dendritic_PF"
+      ],
+      "function": "v_Cell_CD8_Naive & v_Cell_Dendritic_PF"
+    },
+    {
+      "node": "v_Cell_Th1_HPV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_LC_HPV"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_LC_HPV"
+    },
+    {
+      "node": "v_Cell_CD4_HIV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_HIV"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_HIV"
+    },
+    {
+      "node": "v_Cell_CD8_Mtb",
+      "support": [
+        "v_Cell_Dendritic_Mtb",
+        "v_Cell_Macrophage_Mtb",
+        "v_Cell_Neutrophil_Mtb"
+      ],
+      "function": "v_Cell_Dendritic_Mtb | v_Cell_Macrophage_Mtb | v_Cell_Neutrophil_Mtb"
+    },
+    {
+      "node": "v_Cell_Dendritic_CandidaAlbicans",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Epithelial_CandidaAlbicans"
+      ],
+      "function": "v_Cell_Dendritic_Healthy & v_Cell_Epithelial_CandidaAlbicans"
+    },
+    {
+      "node": "v_Cell_Dendritic_Helminth",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth"
+      ],
+      "function": "v_Cell_Endothelial_Helminth | v_Cell_Epithelial_helminth"
+    },
+    {
+      "node": "v_Cell_Eosinophil_Helminth",
+      "support": [
+        "v_HealthyState",
+        "v_IL5"
+      ],
+      "function": "v_HealthyState & v_IL5"
+    },
+    {
+      "node": "v_Cell_NKT_Helminth",
+      "support": [
+        "v_HealthyState",
+        "v_Larvae_Helminth"
+      ],
+      "function": "v_HealthyState & v_Larvae_Helminth"
+    },
+    {
+      "node": "v_IL5",
+      "support": [
+        "v_Cell_ILC2_Helminth",
+        "v_Cell_Th2_Helminth",
+        "v_Cell_Th2_IAV"
+      ],
+      "function": "v_Cell_ILC2_Helminth | v_Cell_Th2_Helminth | v_Cell_Th2_IAV"
+    },
+    {
+      "node": "v_Cell_Basophil_Helminth",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth",
+        "v_HealthyState"
+      ],
+      "function": "!(((v_Cell_Endothelial_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Endothelial_Helminth & ((v_Cell_Epithelial_helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Epithelial_helminth & 1)))))"
+    },
+    {
+      "node": "v_Cell_Hepatocytes_EBOV",
+      "support": [
+        "v_HealthyState",
+        "v_PV_EBOV"
+      ],
+      "function": "v_HealthyState & v_PV_EBOV"
+    },
+    {
+      "node": "v_Cell_LC_HPV",
+      "support": [
+        "v_Cell_Keratinocytes_HPV",
+        "v_HealthyState"
+      ],
+      "function": "v_Cell_Keratinocytes_HPV & !v_HealthyState"
+    },
+    {
+      "node": "v_Cell_NK_HPV",
+      "support": [
+        "v_Cell_Keratinocytes_HPV",
+        "v_HealthyState"
+      ],
+      "function": "v_Cell_Keratinocytes_HPV & v_HealthyState"
+    },
+    {
+      "node": "v_Cell_NK_Leishmania",
+      "support": [
+        "v_HealthyState",
+        "v_Promastigotes_Leishmania"
+      ],
+      "function": "v_HealthyState & v_Promastigotes_Leishmania"
+    },
+    {
+      "node": "v_Cell_Macrophage_HIV",
+      "support": [
+        "v_Cell_Macrophage_Healthy",
+        "v_PV_HIV",
+        "v_Virus_HIV"
+      ],
+      "function": "((v_Cell_Macrophage_Healthy & ((v_PV_HIV & 1) | (!v_PV_HIV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))))) | (!v_Cell_Macrophage_Healthy & 0))"
+    },
+    {
+      "node": "v_Cell_NK_IAV",
+      "support": [
+        "v_Cell_Epithelial_IAV",
+        "v_HealthyState"
+      ],
+      "function": "v_Cell_Epithelial_IAV & v_HealthyState"
+    },
+    {
+      "node": "v_Cell_Th1_EBOV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_EBOV",
+        "v_IL12"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_EBOV & v_IL12"
+    },
+    {
+      "node": "v_Cell_Th1_Leishmania",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Leishmania",
+        "v_IL12"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_Leishmania & v_IL12"
+    },
+    {
+      "node": "v_Cell_CD8_EBOV",
+      "support": [
+        "v_Cell_CD8_Naive",
+        "v_Cell_Dendritic_EBOV",
+        "v_IL10"
+      ],
+      "function": "v_Cell_CD8_Naive & v_Cell_Dendritic_EBOV & !v_IL10"
+    },
+    {
+      "node": "v_Cell_Treg_IAV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Th1_IAV",
+        "v_Cell_Th2_IAV"
+      ],
+      "function": "((v_Cell_CD4_Naive & ((v_Cell_Th1_IAV & 1) | (!v_Cell_Th1_IAV & ((v_Cell_Th2_IAV & 1) | (!v_Cell_Th2_IAV & 0))))) | (!v_Cell_CD4_Naive & 0))"
+    },
+    {
+      "node": "v_IFNa",
+      "support": [
+        "v_Cell_CD8_HIV",
+        "v_Cell_pDendritic_HIV",
+        "v_HealthyState"
+      ],
+      "function": "((v_Cell_CD8_HIV & ((v_Cell_pDendritic_HIV & 1) | (!v_Cell_pDendritic_HIV & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_CD8_HIV & ((v_Cell_pDendritic_HIV & 1) | (!v_Cell_pDendritic_HIV & 0))))"
+    },
+    {
+      "node": "v_IFNb",
+      "support": [
+        "v_Cell_CD8_HIV",
+        "v_Cell_pDendritic_HIV",
+        "v_HealthyState"
+      ],
+      "function": "((v_Cell_CD8_HIV & ((v_Cell_pDendritic_HIV & 1) | (!v_Cell_pDendritic_HIV & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_CD8_HIV & ((v_Cell_pDendritic_HIV & 1) | (!v_Cell_pDendritic_HIV & 0))))"
+    },
+    {
+      "node": "v_Cell_pDendritic_HIV",
+      "support": [
+        "v_HealthyState",
+        "v_PV_HIV"
+      ],
+      "function": "v_HealthyState & v_PV_HIV"
+    },
+    {
+      "node": "v_IL25",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth"
+      ],
+      "function": "v_Cell_Endothelial_Helminth | v_Cell_Epithelial_helminth"
+    },
+    {
+      "node": "v_IL33",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth"
+      ],
+      "function": "v_Cell_Endothelial_Helminth | v_Cell_Epithelial_helminth"
+    },
+    {
+      "node": "v_Cell_ILC2_Helminth",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth",
+        "v_HealthyState"
+      ],
+      "function": "((v_Cell_Endothelial_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Endothelial_Helminth & ((v_Cell_Epithelial_helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Epithelial_helminth & 0))))"
+    },
+    {
+      "node": "v_iNOS",
+      "support": [
+        "v_Cell_Macrophage_Leishmania",
+        "v_IFNg"
+      ],
+      "function": "v_Cell_Macrophage_Leishmania & v_IFNg"
+    },
+    {
+      "node": "v_Amastgotes_Leishmania",
+      "support": [
+        "v_Cell_Dendritic_Leishmania",
+        "v_Cell_Macrophage_Leishmania",
+        "v_IFNg"
+      ],
+      "function": "!(((v_Cell_Dendritic_Leishmania & ((v_IFNg & 1) | (!v_IFNg & 0))) | (!v_Cell_Dendritic_Leishmania & ((v_Cell_Macrophage_Leishmania & ((v_IFNg & 1) | (!v_IFNg & 0))) | (!v_Cell_Macrophage_Leishmania & 1)))))"
+    },
+    {
+      "node": "v_ROS",
+      "support": [
+        "v_Cell_Macrophage_Leishmania",
+        "v_HealthyState",
+        "v_IFNg",
+        "v_Promastigotes_Leishmania"
+      ],
+      "function": "((v_Cell_Macrophage_Leishmania & 1) | (!v_Cell_Macrophage_Leishmania & ((v_HealthyState & ((v_IFNg & 1) | (!v_IFNg & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))))) | (!v_HealthyState & ((v_IFNg & 1) | (!v_IFNg & 0))))))"
+    },
+    {
+      "node": "v_Cell_Dendritic_Leishmania",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_HealthyState",
+        "v_Promastigotes_Leishmania"
+      ],
+      "function": "((v_Cell_Dendritic_Healthy & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))) | (!v_Cell_Dendritic_Healthy & ((v_HealthyState & ((v_Promastigotes_Leishmania & 1) | (!v_Promastigotes_Leishmania & 0))) | (!v_HealthyState & 0))))"
+    },
+    {
+      "node": "v_Cell_CD8_Naive",
+      "support": [
+        "v_HealthyState",
+        "v_PV_HIV"
+      ],
+      "function": "v_HealthyState & !v_PV_HIV"
+    },
+    {
+      "node": "v_Cell_Dendritic_HIV",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_Virus_HIV"
+      ],
+      "function": "v_Cell_Dendritic_Healthy & v_Virus_HIV"
+    },
+    {
+      "node": "v_Cell_Neutrophil_Mtb",
+      "support": [
+        "v_Bacterium_Mtb",
+        "v_HealthyState",
+        "v_Rep_Mtb"
+      ],
+      "function": "((v_Bacterium_Mtb & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Bacterium_Mtb & ((v_HealthyState & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))) | (!v_HealthyState & 0))))"
+    },
+    {
+      "node": "v_Cell_Th1_IAV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_IAV",
+        "v_IL12"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_IAV & v_IL12"
+    },
+    {
+      "node": "v_DaughterCells_CandidaAlbicans",
+      "support": [
+        "v_Cell_Th17_CandidaAlbicans",
+        "v_Cell_Th1_PF",
+        "v_Fungi_CandidaAlbicans"
+      ],
+      "function": "!v_Cell_Th17_CandidaAlbicans & !v_Cell_Th1_PF & v_Fungi_CandidaAlbicans"
+    },
+    {
+      "node": "v_IL1",
+      "support": [
+        "v_Cell_Dendritic_Mtb",
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Macrophage_EBOV",
+        "v_Cell_Macrophage_Mtb"
+      ],
+      "function": "v_Cell_Dendritic_Mtb | v_Cell_Epithelial_CandidaAlbicans | v_Cell_Macrophage_EBOV | v_Cell_Macrophage_Mtb"
+    },
+    {
+      "node": "v_Cell_Neutrophil_CandidaAlbicans",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Th17_CandidaAlbicans",
+        "v_HealthyState",
+        "v_IL8"
+      ],
+      "function": "((v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Th17_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Th17_CandidaAlbicans & ((v_HealthyState & ((v_IL8 & 1) | (!v_IL8 & 0))) | (!v_HealthyState & 0))))) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Th17_CandidaAlbicans & ((v_HealthyState & 1) | (!v_HealthyState & 0))) | (!v_Cell_Th17_CandidaAlbicans & 0))))"
+    },
+    {
+      "node": "v_Cell_Th17_CandidaAlbicans",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Epithelial_CandidaAlbicans"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_Healthy & v_Cell_Epithelial_CandidaAlbicans"
+    },
+    {
+      "node": "v_IL18",
+      "support": [
+        "v_Cell_CD8_HIV",
+        "v_Cell_Macrophage_Mtb",
+        "v_HealthyState",
+        "v_IL10"
+      ],
+      "function": "((v_Cell_CD8_HIV & ((v_Cell_Macrophage_Mtb & 1) | (!v_Cell_Macrophage_Mtb & !(((v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_HealthyState & 1)))))) | (!v_Cell_CD8_HIV & ((v_Cell_Macrophage_Mtb & 1) | (!v_Cell_Macrophage_Mtb & 0))))"
+    },
+    {
+      "node": "v_IL27",
+      "support": [
+        "v_Cell_Macrophage_Mtb",
+        "v_Cell_Th1_PF"
+      ],
+      "function": "v_Cell_Macrophage_Mtb | v_Cell_Th1_PF"
+    },
+    {
+      "node": "v_IL8",
+      "support": [
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Epithelial_IAV",
+        "v_Cell_Macrophage_EBOV",
+        "v_Cell_Monocytes_EBOV"
+      ],
+      "function": "v_Cell_Epithelial_CandidaAlbicans | v_Cell_Epithelial_IAV | v_Cell_Macrophage_EBOV | v_Cell_Monocytes_EBOV"
+    },
+    {
+      "node": "v_IgA",
+      "support": [
+        "v_Cell_B_HIV",
+        "v_Cell_B_IAV"
+      ],
+      "function": "v_Cell_B_HIV | v_Cell_B_IAV"
+    },
+    {
+      "node": "v_TGFB",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Keratinocytes_HPV",
+        "v_Cell_Th1_PF"
+      ],
+      "function": "((v_Cell_CD4_Naive & ((v_Cell_Epithelial_CandidaAlbicans & 1) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & 0))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Epithelial_CandidaAlbicans & 1) | (!v_Cell_Epithelial_CandidaAlbicans & ((v_Cell_Keratinocytes_HPV & 1) | (!v_Cell_Keratinocytes_HPV & 0))))))"
+    },
+    {
+      "node": "v_Cell_B_EBOV",
+      "support": [
+        "v_Cell_B_Healthy",
+        "v_Cell_Dendritic_EBOV",
+        "v_IL10",
+        "v_TNFa"
+      ],
+      "function": "v_Cell_B_Healthy & v_Cell_Dendritic_EBOV & !v_IL10 & !v_TNFa"
+    },
+    {
+      "node": "v_Cell_CD4_HIV_infected",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_IFNg",
+        "v_PV_HIV",
+        "v_Virus_HIV"
+      ],
+      "function": "!(((v_Cell_CD4_Naive & ((v_IFNg & 1) | (!v_IFNg & !(((v_PV_HIV & 1) | (!v_PV_HIV & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0)))))))) | (!v_Cell_CD4_Naive & 1)))"
+    },
+    {
+      "node": "v_Cell_CD8_HIV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_HealthyState",
+        "v_PV_HIV",
+        "v_Virus_HIV"
+      ],
+      "function": "!(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_HealthyState & ((v_PV_HIV & 1) | (!v_PV_HIV & !(((v_Virus_HIV & 1) | (!v_Virus_HIV & 0)))))) | (!v_HealthyState & !(((v_Virus_HIV & 1) | (!v_Virus_HIV & 0)))))) | (!v_Cell_Dendritic_Healthy & 1))) | (!v_Cell_CD4_Naive & 1)))"
+    },
+    {
+      "node": "v_Cell_Epithelial_Healthy",
+      "support": [
+        "v_Cell_Epithelial_helminth",
+        "v_epithelial_set"
+      ],
+      "function": "!v_Cell_Epithelial_helminth & v_epithelial_set"
+    },
+    {
+      "node": "v_Cell_Macrophage_PF",
+      "support": [
+        "v_Cell_Erythrocyte_PF",
+        "v_Cell_Macrophage_Healthy"
+      ],
+      "function": "v_Cell_Erythrocyte_PF & v_Cell_Macrophage_Healthy"
+    },
+    {
+      "node": "v_Cell_Macrophage_IAV",
+      "support": [
+        "v_Cell_CD8_IAV",
+        "v_Cell_Epithelial_IAV",
+        "v_Cell_Macrophage_Healthy"
+      ],
+      "function": "!v_Cell_CD8_IAV & v_Cell_Epithelial_IAV & v_Cell_Macrophage_Healthy"
+    },
+    {
+      "node": "v_Cell_NK_PF",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_PF",
+        "v_Cell_Th1_PF",
+        "v_HealthyState",
+        "v_IL10",
+        "v_IL12"
+      ],
+      "function": "!(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Th1_PF & !(((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))) | (!v_HealthyState & 0)))))) | (!v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Th1_PF & 1))))) | (!v_Cell_CD4_Naive & !(((v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & ((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))) | (!v_HealthyState & 0))))) | (!v_Cell_Dendritic_PF & ((v_Cell_Th1_PF & 1) | (!v_Cell_Th1_PF & 0))))))))"
+    },
+    {
+      "node": "v_Cell_Dendritic_Mtb",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Macrophage_Mtb",
+        "v_Rep_Mtb",
+        "v_TNFa"
+      ],
+      "function": "((v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Mtb & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_TNFa & 1) | (!v_TNFa & 0))))) | (!v_Cell_Macrophage_Mtb & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))))) | (!v_Cell_Dendritic_Healthy & 0))"
+    },
+    {
+      "node": "v_IL13",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth",
+        "v_Cell_Th2_Helminth",
+        "v_Cell_Th2_IAV",
+        "v_HealthyState"
+      ],
+      "function": "((v_Cell_Endothelial_Helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_Cell_Th2_IAV & 1) | (!v_Cell_Th2_IAV & ((v_HealthyState & 1) | (!v_HealthyState & 0))))))) | (!v_Cell_Endothelial_Helminth & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_Cell_Th2_IAV & 1) | (!v_Cell_Th2_IAV & ((v_HealthyState & 1) | (!v_HealthyState & 0))))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_Cell_Th2_IAV & 1) | (!v_Cell_Th2_IAV & 0))))))))"
+    },
+    {
+      "node": "v_IL4",
+      "support": [
+        "v_Cell_Endothelial_Helminth",
+        "v_Cell_Epithelial_helminth",
+        "v_Cell_Th2_Helminth",
+        "v_Cell_Th2_IAV",
+        "v_HealthyState",
+        "v_Larvae_Helminth"
+      ],
+      "function": "((v_Cell_Endothelial_Helminth & 1) | (!v_Cell_Endothelial_Helminth & ((v_Cell_Epithelial_helminth & 1) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_Cell_Th2_IAV & 1) | (!v_Cell_Th2_IAV & ((v_HealthyState & ((v_Larvae_Helminth & 1) | (!v_Larvae_Helminth & 0))) | (!v_HealthyState & 0))))))))))"
+    },
+    {
+      "node": "v_Cell_Th2_IAV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_IAV",
+        "v_IL10"
+      ],
+      "function": "v_Cell_CD4_Naive & v_Cell_Dendritic_IAV & !v_IL10"
+    },
+    {
+      "node": "v_Cell_Macrophage_Mtb",
+      "support": [
+        "v_Bacterium_Mtb",
+        "v_Cell_Macrophage_Healthy",
+        "v_Rep_Mtb"
+      ],
+      "function": "((v_Bacterium_Mtb & ((v_Cell_Macrophage_Healthy & 1) | (!v_Cell_Macrophage_Healthy & 0))) | (!v_Bacterium_Mtb & ((v_Cell_Macrophage_Healthy & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))) | (!v_Cell_Macrophage_Healthy & 0))))"
+    },
+    {
+      "node": "v_Cell_Monocytes_EBOV",
+      "support": [
+        "v_HealthyState",
+        "v_PV_EBOV",
+        "v_Virus_EBOV"
+      ],
+      "function": "((v_HealthyState & ((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0))))) | (!v_HealthyState & 0))"
+    },
+    {
+      "node": "v_Cell_Dendritic_EBOV",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_IgG",
+        "v_PV_EBOV",
+        "v_Virus_EBOV"
+      ],
+      "function": "!(((v_Cell_Dendritic_Healthy & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0)))))))) | (!v_Cell_Dendritic_Healthy & 1)))"
+    },
+    {
+      "node": "v_Cell_Macrophage_EBOV",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Macrophage_Healthy",
+        "v_HealthyState",
+        "v_IL10",
+        "v_IgG",
+        "v_PV_EBOV",
+        "v_PV_HIV",
+        "v_Virus_EBOV"
+      ],
+      "function": "!(((v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Healthy & ((v_HealthyState & ((v_IL10 & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0)))))))) | (!v_IL10 & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & ((v_PV_HIV & 1) | (!v_PV_HIV & 0))) | (!v_PV_EBOV & ((v_PV_HIV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0))) | (!v_PV_HIV & 0)))))))))) | (!v_HealthyState & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0)))))))))) | (!v_Cell_Macrophage_Healthy & 1))) | (!v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Healthy & ((v_IgG & 1) | (!v_IgG & !(((v_PV_EBOV & 1) | (!v_PV_EBOV & ((v_Virus_EBOV & 1) | (!v_Virus_EBOV & 0)))))))) | (!v_Cell_Macrophage_Healthy & 1)))))"
+    },
+    {
+      "node": "v_Cell_Th1_Mtb",
+      "support": [
+        "v_Bacterium_Mtb",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Macrophage_Healthy",
+        "v_Cell_Th1_PF",
+        "v_HealthyState",
+        "v_IL10",
+        "v_IL12",
+        "v_PV_HIV",
+        "v_Rep_Mtb",
+        "v_TNFa",
+        "v_Virus_HIV"
+      ],
+      "function": "!(((v_Bacterium_Mtb & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Healthy & ((v_IL10 & 1) | (!v_IL10 & !(((v_IL12 & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & ((v_TNFa & 1) | (!v_TNFa & 0))))) | (!v_IL12 & 0)))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Th1_PF & ((v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IL12 & ((v_PV_HIV & 1) | (!v_PV_HIV & !(((v_Rep_Mtb & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))) | (!v_Rep_Mtb & 0)))))) | (!v_IL12 & 1))))) | (!v_HealthyState & 1))) | (!v_Cell_Th1_PF & 1))))) | (!v_Cell_Dendritic_Healthy & 1))) | (!v_Cell_CD4_Naive & 1))) | (!v_Bacterium_Mtb & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_Healthy & ((v_Cell_Macrophage_Healthy & ((v_IL10 & 1) | (!v_IL10 & !(((v_IL12 & ((v_Rep_Mtb & 1) | (!v_Rep_Mtb & 0))) | (!v_IL12 & 0)))))) | (!v_Cell_Macrophage_Healthy & ((v_Cell_Th1_PF & ((v_HealthyState & ((v_IL10 & 1) | (!v_IL10 & ((v_IL12 & ((v_PV_HIV & 1) | (!v_PV_HIV & !(((v_Rep_Mtb & ((v_Virus_HIV & 1) | (!v_Virus_HIV & 0))) | (!v_Rep_Mtb & 0)))))) | (!v_IL12 & 1))))) | (!v_HealthyState & 1))) | (!v_Cell_Th1_PF & 1))))) | (!v_Cell_Dendritic_Healthy & 1))) | (!v_Cell_CD4_Naive & 1)))))"
+    },
+    {
+      "node": "v_Cell_B_HIV",
+      "support": [
+        "v_Cell_B_Healthy",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_IFNg",
+        "v_Virus_HIV"
+      ],
+      "function": "v_Cell_B_Healthy & v_Cell_CD4_Naive & v_Cell_Dendritic_Healthy & v_IFNg & v_Virus_HIV"
+    },
+    {
+      "node": "v_Cell_B_IAV",
+      "support": [
+        "v_Cell_B_Healthy",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_IAV",
+        "v_IL10"
+      ],
+      "function": "((v_Cell_B_Healthy & ((v_Cell_Dendritic_IAV & 1) | (!v_Cell_Dendritic_IAV & 0))) | (!v_Cell_B_Healthy & !(((v_Cell_CD4_Naive & ((v_Cell_Dendritic_IAV & ((v_IL10 & 1) | (!v_IL10 & 0))) | (!v_Cell_Dendritic_IAV & 1))) | (!v_Cell_CD4_Naive & 1)))))"
+    },
+    {
+      "node": "v_Cell_Endothelial_Helminth",
+      "support": [
+        "v_Cell_B_Helminth",
+        "v_Cell_Th2_Helminth",
+        "v_HealthyState",
+        "v_IgG",
+        "v_Larvae_Helminth"
+      ],
+      "function": "!v_Cell_B_Helminth & !v_Cell_Th2_Helminth & !v_HealthyState & !v_IgG & v_Larvae_Helminth"
+    },
+    {
+      "node": "v_Cell_B_Helminth",
+      "support": [
+        "v_Cell_B_Healthy",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_IAV",
+        "v_Cell_Epithelial_helminth",
+        "v_Cell_Th2_Helminth",
+        "v_HealthyState",
+        "v_IL10"
+      ],
+      "function": "((v_Cell_B_Healthy & ((v_Cell_CD4_Naive & ((v_Cell_Dendritic_IAV & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & !(((v_IL10 & 1) | (!v_IL10 & 0)))))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & !(((v_IL10 & 1) | (!v_IL10 & 0)))))))) | (!v_Cell_Dendritic_IAV & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & 0))))))) | (!v_Cell_CD4_Naive & ((v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & ((v_HealthyState & 1) | (!v_HealthyState & 0))))) | (!v_Cell_Epithelial_helminth & ((v_Cell_Th2_Helminth & 1) | (!v_Cell_Th2_Helminth & 0))))))) | (!v_Cell_B_Healthy & 0))"
+    },
+    {
+      "node": "v_Cell_CD8_IAV",
+      "support": [
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_IAV",
+        "v_HealthyState",
+        "v_IL12",
+        "v_PV_HIV"
+      ],
+      "function": "((v_Cell_CD4_Naive & ((v_Cell_Dendritic_IAV & ((v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & !(((v_PV_HIV & 1) | (!v_PV_HIV & 0)))))) | (!v_HealthyState & ((v_IL12 & 1) | (!v_IL12 & 0))))) | (!v_Cell_Dendritic_IAV & 0))) | (!v_Cell_CD4_Naive & !(((v_Cell_Dendritic_IAV & ((v_HealthyState & ((v_PV_HIV & 1) | (!v_PV_HIV & 0))) | (!v_HealthyState & 1))) | (!v_Cell_Dendritic_IAV & 1)))))"
+    },
+    {
+      "node": "v_Cell_Erythrocyte_PF",
+      "support": [
+        "v_Merozoites_PF",
+        "v_Sporozoites_PF",
+        "v_erythrocyte_set"
+      ],
+      "function": "!v_Merozoites_PF & v_Sporozoites_PF & v_erythrocyte_set"
+    },
+    {
+      "node": "v_Cell_Dendritic_IAV",
+      "support": [
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Epithelial_IAV",
+        "v_PV_IAV",
+        "v_Virus_IAV"
+      ],
+      "function": "((v_Cell_Dendritic_Healthy & ((v_Cell_Epithelial_IAV & 1) | (!v_Cell_Epithelial_IAV & ((v_PV_IAV & 1) | (!v_PV_IAV & ((v_Virus_IAV & 1) | (!v_Virus_IAV & 0))))))) | (!v_Cell_Dendritic_Healthy & 0))"
+    },
+    {
+      "node": "v_TNFa",
+      "support": [
+        "v_Bacterium_Mtb",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Epithelial_IAV",
+        "v_Cell_Macrophage_Healthy",
+        "v_Cell_Macrophage_Leishmania",
+        "v_HealthyState",
+        "v_IL10",
+        "v_IL12",
+        "v_IgG",
+        "v_Merozoites_PF",
+        "v_PV_EBOV",
+        "v_PV_HIV",
+        "v_Rep_Mtb",
+        "v_Sporozoites_PF",
+        "v_Virus_EBOV",
+        "v_erythrocyte_set"
+      ],
+      "function": "[see BDD artifact]"
+    },
+    {
+      "node": "v_IFNg",
+      "support": [
+        "v_Bacterium_Mtb",
+        "v_Cell_CD4_Naive",
+        "v_Cell_Dendritic_Healthy",
+        "v_Cell_Dendritic_PF",
+        "v_Cell_Epithelial_CandidaAlbicans",
+        "v_Cell_Epithelial_IAV",
+        "v_Cell_Keratinocytes_HPV",
+        "v_Cell_Macrophage_Healthy",
+        "v_Cell_Th1_PF",
+        "v_Fungi_CandidaAlbicans",
+        "v_HealthyState",
+        "v_IL10",
+        "v_IL12",
+        "v_IgG",
+        "v_PV_EBOV",
+        "v_PV_HIV",
+        "v_PV_IAV",
+        "v_Promastigotes_Leishmania",
+        "v_Rep_Mtb",
+        "v_Virus_EBOV",
+        "v_Virus_HIV",
+        "v_Virus_IAV"
+      ],
+      "function": "[see BDD artifact]"
+    }
+  ],
+  "seconds": 4.437822900013998
+}

@@ -1,0 +1,570 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "2691_1",
+  "name": "T-Cell Signaling 2006",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 40,
+  "after": {
+    "nodes": 4,
+    "n_nodes": 4,
+    "inputs": 3,
+    "internal_nodes": 1,
+    "nonconstant_rules": 1,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 1,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD45": "+",
+      "v_Fyn": "+",
+      "v_CD8": "+",
+      "v_TCRlig": "+"
+    },
+    "positive_edges": 3,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 4,
+    "max_indegree": 4,
+    "local_family_counts": {
+      "UNATE_OTHER": 1
+    },
+    "conflicts": {},
+    "local": {
+      "v_Fyn": {
+        "signs": {
+          "v_CD45": "+",
+          "v_CD8": "+",
+          "v_Fyn": "-",
+          "v_TCRlig": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 4,
+    "n_nodes": 4,
+    "inputs": 3,
+    "internal_nodes": 1,
+    "nonconstant_rules": 4,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 4,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_CD45": "+",
+      "v_Fyn": "+",
+      "v_CD8": "+",
+      "v_TCRlig": "+"
+    },
+    "positive_edges": 6,
+    "negative_edges": 1,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 7,
+    "max_indegree": 4,
+    "local_family_counts": {
+      "UNATE_OTHER": 1,
+      "MIN_MAX": 3
+    },
+    "conflicts": {},
+    "local": {
+      "v_Fyn": {
+        "signs": {
+          "v_CD45": "+",
+          "v_CD8": "+",
+          "v_Fyn": "-",
+          "v_TCRlig": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TCRlig": {
+        "signs": {
+          "v_TCRlig": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CD8": {
+        "signs": {
+          "v_CD8": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_CD45": {
+        "signs": {
+          "v_CD45": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 7,
+    "examples": [
+      {
+        "v_CD45": 1,
+        "v_CD8": 0,
+        "v_Fyn": 1,
+        "v_TCRlig": 1
+      },
+      {
+        "v_CD45": 1,
+        "v_CD8": 1,
+        "v_Fyn": 1,
+        "v_TCRlig": 1
+      },
+      {
+        "v_CD45": 0,
+        "v_CD8": 1,
+        "v_Fyn": 0,
+        "v_TCRlig": 0
+      },
+      {
+        "v_CD45": 0,
+        "v_CD8": 0,
+        "v_Fyn": 0,
+        "v_TCRlig": 1
+      },
+      {
+        "v_CD45": 0,
+        "v_CD8": 1,
+        "v_Fyn": 0,
+        "v_TCRlig": 1
+      },
+      {
+        "v_CD45": 0,
+        "v_CD8": 0,
+        "v_Fyn": 0,
+        "v_TCRlig": 0
+      },
+      {
+        "v_CD45": 1,
+        "v_CD8": 0,
+        "v_Fyn": 0,
+        "v_TCRlig": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_Fyn": "((v_CD45 & ((v_CD8 & ((v_Fyn & ((v_TCRlig & 1) | (!v_TCRlig & 0))) | (!v_Fyn & 1))) | (!v_CD8 & ((v_TCRlig & 1) | (!v_TCRlig & 0))))) | (!v_CD45 & 0))",
+    "v_TCRlig": "v_TCRlig",
+    "v_CD8": "v_CD8",
+    "v_CD45": "v_CD45"
+  },
+  "steps": [
+    {
+      "node": "v_CRE",
+      "support": [
+        "v_CREB"
+      ],
+      "function": "v_CREB"
+    },
+    {
+      "node": "v_CREB",
+      "support": [
+        "v_Rsk"
+      ],
+      "function": "v_Rsk"
+    },
+    {
+      "node": "v_NFAT",
+      "support": [
+        "v_Calcin"
+      ],
+      "function": "v_Calcin"
+    },
+    {
+      "node": "v_Calcin",
+      "support": [
+        "v_Ca"
+      ],
+      "function": "v_Ca"
+    },
+    {
+      "node": "v_Ca",
+      "support": [
+        "v_IP3"
+      ],
+      "function": "v_IP3"
+    },
+    {
+      "node": "v_IP3",
+      "support": [
+        "v_PLCg_act"
+      ],
+      "function": "v_PLCg_act"
+    },
+    {
+      "node": "v_Nfkb",
+      "support": [
+        "v_IkB"
+      ],
+      "function": "!v_IkB"
+    },
+    {
+      "node": "v_IkB",
+      "support": [
+        "v_IKKbeta"
+      ],
+      "function": "!v_IKKbeta"
+    },
+    {
+      "node": "v_IKKbeta",
+      "support": [
+        "v_PKCth"
+      ],
+      "function": "v_PKCth"
+    },
+    {
+      "node": "v_Rsk",
+      "support": [
+        "v_ERK"
+      ],
+      "function": "v_ERK"
+    },
+    {
+      "node": "v_AP1",
+      "support": [
+        "v_Fos",
+        "v_Jun"
+      ],
+      "function": "v_Fos & v_Jun"
+    },
+    {
+      "node": "v_Fos",
+      "support": [
+        "v_ERK"
+      ],
+      "function": "v_ERK"
+    },
+    {
+      "node": "v_ERK",
+      "support": [
+        "v_MEK"
+      ],
+      "function": "v_MEK"
+    },
+    {
+      "node": "v_Jun",
+      "support": [
+        "v_JNK"
+      ],
+      "function": "v_JNK"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_SEK"
+      ],
+      "function": "v_SEK"
+    },
+    {
+      "node": "v_MEK",
+      "support": [
+        "v_Raf"
+      ],
+      "function": "v_Raf"
+    },
+    {
+      "node": "v_Raf",
+      "support": [
+        "v_Ras"
+      ],
+      "function": "v_Ras"
+    },
+    {
+      "node": "v_SEK",
+      "support": [
+        "v_PKCth"
+      ],
+      "function": "v_PKCth"
+    },
+    {
+      "node": "v_Gads",
+      "support": [
+        "v_LAT"
+      ],
+      "function": "v_LAT"
+    },
+    {
+      "node": "v_Grb2Sos",
+      "support": [
+        "v_LAT"
+      ],
+      "function": "v_LAT"
+    },
+    {
+      "node": "v_PAGCsk",
+      "support": [
+        "v_Fyn"
+      ],
+      "function": "v_Fyn"
+    },
+    {
+      "node": "v_PKCth",
+      "support": [
+        "v_DAG"
+      ],
+      "function": "v_DAG"
+    },
+    {
+      "node": "v_DAG",
+      "support": [
+        "v_PLCg_act"
+      ],
+      "function": "v_PLCg_act"
+    },
+    {
+      "node": "v_PLCg_bind",
+      "support": [
+        "v_LAT"
+      ],
+      "function": "v_LAT"
+    },
+    {
+      "node": "v_Ras",
+      "support": [
+        "v_LAT",
+        "v_RasGRP1"
+      ],
+      "function": "v_LAT | v_RasGRP1"
+    },
+    {
+      "node": "v_RasGRP1",
+      "support": [
+        "v_PLCg_act"
+      ],
+      "function": "v_PLCg_act"
+    },
+    {
+      "node": "v_Rlk",
+      "support": [
+        "v_Lck"
+      ],
+      "function": "v_Lck"
+    },
+    {
+      "node": "v_TCRphos",
+      "support": [
+        "v_Fyn"
+      ],
+      "function": "v_Fyn"
+    },
+    {
+      "node": "v_Itk",
+      "support": [
+        "v_SLP76",
+        "v_ZAP70"
+      ],
+      "function": "v_SLP76 & v_ZAP70"
+    },
+    {
+      "node": "v_SLP76",
+      "support": [
+        "v_LAT"
+      ],
+      "function": "v_LAT"
+    },
+    {
+      "node": "v_LAT",
+      "support": [
+        "v_ZAP70"
+      ],
+      "function": "v_ZAP70"
+    },
+    {
+      "node": "v_PLCg_act",
+      "support": [
+        "v_ZAP70"
+      ],
+      "function": "v_ZAP70"
+    },
+    {
+      "node": "v_TCRbind",
+      "support": [
+        "v_TCRlig",
+        "v_cCbl"
+      ],
+      "function": "v_TCRlig & !v_cCbl"
+    },
+    {
+      "node": "v_cCbl",
+      "support": [
+        "v_ZAP70"
+      ],
+      "function": "v_ZAP70"
+    },
+    {
+      "node": "v_Lck",
+      "support": [
+        "v_CD45",
+        "v_CD8",
+        "v_Fyn"
+      ],
+      "function": "v_CD45 & v_CD8 & !v_Fyn"
+    },
+    {
+      "node": "v_ZAP70",
+      "support": [],
+      "function": "0"
+    }
+  ],
+  "seconds": 0.07872190000489354
+}

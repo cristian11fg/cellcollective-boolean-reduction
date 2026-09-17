@@ -1,0 +1,234 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "007",
+  "name": "CORTICAL-AREA-DEVELOPMENT",
+  "policy": "min_degree",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 5,
+  "after": {
+    "nodes": 1,
+    "n_nodes": 1,
+    "inputs": 0,
+    "internal_nodes": 1,
+    "nonconstant_rules": 1,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 1,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Fgf8": "+"
+    },
+    "positive_edges": 1,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 1,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 1
+    },
+    "conflicts": {},
+    "local": {
+      "v_Fgf8": {
+        "signs": {
+          "v_Fgf8": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 1,
+    "n_nodes": 1,
+    "inputs": 0,
+    "internal_nodes": 1,
+    "nonconstant_rules": 1,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": true,
+    "out_uniform_nonvacuous": true,
+    "locally_unate": true,
+    "MIN": true,
+    "MAX": true,
+    "MIN_MAX": true,
+    "is_conjunctive": true,
+    "is_disjunctive": true,
+    "is_AND_NOT": true,
+    "is_OR_NOT": true,
+    "is_AND_OR_NOT": true,
+    "is_AND_OR": true,
+    "is_AND_OR_NAND_NOR": true,
+    "AND_OR_NOT_out_uniform": true,
+    "AND_OR_NAND_NOR": true,
+    "AND_OR_NAND_NOR_out_uniform": true,
+    "homogeneous_MIN": true,
+    "homogeneous_MAX": true,
+    "signed_operator_homogeneous_AND": true,
+    "signed_operator_homogeneous_OR": true,
+    "signed_operator_homogeneous": "AND",
+    "homogeneous_gate": true,
+    "common_gates": [
+      "AND",
+      "COPY",
+      "OR"
+    ],
+    "positive_AND": true,
+    "positive_OR": true,
+    "affine": true,
+    "reciprocal_support": true,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 1,
+    "is_monotone": true,
+    "switchable_to_monotone": true,
+    "switching_witness": {
+      "v_Fgf8": "+"
+    },
+    "positive_edges": 1,
+    "negative_edges": 0,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": false,
+    "edges": 1,
+    "max_indegree": 1,
+    "local_family_counts": {
+      "MIN_MAX": 1
+    },
+    "conflicts": {},
+    "local": {
+      "v_Fgf8": {
+        "signs": {
+          "v_Fgf8": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 2,
+    "examples": [
+      {
+        "v_Fgf8": 0
+      },
+      {
+        "v_Fgf8": 1
+      }
+    ]
+  },
+  "rules": {
+    "v_Fgf8": "v_Fgf8"
+  },
+  "steps": [
+    {
+      "node": "v_Coup_fti",
+      "support": [
+        "v_Fgf8",
+        "v_Sp8"
+      ],
+      "function": "!v_Fgf8 & !v_Sp8"
+    },
+    {
+      "node": "v_Pax6",
+      "support": [
+        "v_Emx2",
+        "v_Sp8"
+      ],
+      "function": "!v_Emx2 & v_Sp8"
+    },
+    {
+      "node": "v_Emx2",
+      "support": [
+        "v_Fgf8",
+        "v_Sp8"
+      ],
+      "function": "!v_Fgf8 & !v_Sp8"
+    },
+    {
+      "node": "v_Sp8",
+      "support": [
+        "v_Fgf8"
+      ],
+      "function": "v_Fgf8"
+    }
+  ],
+  "seconds": 0.04370989999733865
+}

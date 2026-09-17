@@ -1,0 +1,2901 @@
+{
+  "id": "046",
+  "name": "B-BRONCHISEPTICA-AND-T-RETORTAEFORMIS",
+  "source": {
+    "id": "046",
+    "name": "B-BRONCHISEPTICA-AND-T-RETORTAEFORMIS",
+    "repository_directory": "models/[id-046]__[var-52]__[in-1]__[B-BRONCHISEPTICA-AND-T-RETORTAEFORMIS]",
+    "cellcollective_urls": [
+      "https://research.cellcollective.org/?dashboard=true#module/3509:1/b-bronchiseptica-and-t-retortaeformis-coinfection/1"
+    ],
+    "files": [
+      {
+        "name": "metadata.json",
+        "sha256": "fbe983f8b5c960d1f472ef1f7bde27e80e79983250e7f505565f64470e44c4c5"
+      },
+      {
+        "name": "model.bnet",
+        "sha256": "a75bfcb251ebd2dfcc81f140473f2e673c2ff12307507743ab55002182f9dd67"
+      }
+    ]
+  },
+  "classification": {
+    "nodes": 53,
+    "n_nodes": 53,
+    "inputs": 1,
+    "internal_nodes": 52,
+    "nonconstant_rules": 52,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 6,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AD": "+",
+      "v_EC_TRetortaeformis": "+",
+      "v_NE_TRetortaeformis": "+",
+      "v_PIC": "+",
+      "v_IS": "+",
+      "v_IgG": "+",
+      "v_MPI_Bacterium": "-",
+      "v_AP": "-",
+      "v_IFNg_Bacterium": "-",
+      "v_IL10I_Bacterium": "-",
+      "v_Bb": "-",
+      "v_AgAb_Bacterium": "-",
+      "v_Cb": "-",
+      "v_DCI_Bacterium": "-",
+      "v_EC_Bacterium": "-",
+      "v_IgA_Bacterium": "-",
+      "v_Oag": "-",
+      "v_PH": "-",
+      "v_TTSSI": "-",
+      "v_IgG_Bacterium": "+",
+      "v_DP": "-",
+      "v_TTSSII": "-",
+      "v_TrII": "-",
+      "v_T0": "-",
+      "v_DCII_Bacterium": "-",
+      "v_TrI_Bacterium": "-",
+      "v_IL12II": "-",
+      "v_IL4II": "-",
+      "v_Th1II_Bacterium": "-",
+      "v_Th2II_Bacterium": "-",
+      "v_Th2I_Bacterium": "-",
+      "v_IL13": "-",
+      "v_EL2": "-",
+      "v_IgE": "-",
+      "v_Th2I_TRetortaeformis": "-",
+      "v_EL": "-",
+      "v_TEL": "-",
+      "v_IL10I": "-",
+      "v_Th2II_TRetortaeformis": "-",
+      "v_DCII_TRetortaeformis": "-",
+      "v_IL5": "-",
+      "v_DCI_TRetortaeformis": "-",
+      "v_Th1II_TRetortaeformis": "-",
+      "v_Th1I_TRetortaeformis": "-",
+      "v_IFNgI": "-",
+      "v_IFNgII": "-",
+      "v_BC_TRetortaeformis": "-",
+      "v_IgA_TRetortaeformis": "-",
+      "v_Th1I_Bacterium": "-",
+      "v_IL4I": "-",
+      "v_BC_Bacterium": "-",
+      "v_NE_Bacterium": "-",
+      "v_TNE": "-"
+    },
+    "positive_edges": 117,
+    "negative_edges": 18,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 135,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "UNATE_OTHER": 16,
+      "MAX": 11,
+      "MIN": 11,
+      "MIN_MAX": 14
+    },
+    "conflicts": {
+      "v_MPI_Bacterium": {
+        "v_AD": "-",
+        "v_AP": "+",
+        "v_IFNg_Bacterium": "+",
+        "v_IL10I_Bacterium": "+"
+      },
+      "v_NE_TRetortaeformis": {
+        "v_AD": "-",
+        "v_TNE": "+"
+      },
+      "v_IgG_Bacterium": {
+        "v_AP": "+",
+        "v_AgAb_Bacterium": "+",
+        "v_Cb": "+",
+        "v_IgG_Bacterium": "+",
+        "v_TTSSI": "-"
+      },
+      "v_IgA_Bacterium": {
+        "v_AgAb_Bacterium": "+",
+        "v_IgA_Bacterium": "+",
+        "v_TTSSI": "-"
+      },
+      "v_EL2": {
+        "v_EL": "-",
+        "v_IL13": "+",
+        "v_IL4II": "+",
+        "v_IL5": "+",
+        "v_TEL": "+"
+      },
+      "v_IFNgI": {
+        "v_IFNgII": "+",
+        "v_IL4II": "-",
+        "v_NE_TRetortaeformis": "+"
+      },
+      "v_IL10I_Bacterium": {
+        "v_IFNg_Bacterium": "-",
+        "v_IL10I": "+"
+      },
+      "v_IL4II": {
+        "v_IL12II": "-",
+        "v_IL4I": "+",
+        "v_IgE": "+"
+      },
+      "v_IL12II": {
+        "v_IL4II": "-",
+        "v_Th1II_Bacterium": "+",
+        "v_Th1II_TRetortaeformis": "+",
+        "v_Th2II_Bacterium": "-",
+        "v_Th2II_TRetortaeformis": "-"
+      }
+    },
+    "local": {
+      "v_AD": {
+        "signs": {
+          "v_AD": "+",
+          "v_IS": "+",
+          "v_IgG": "+",
+          "v_MPI_Bacterium": "-",
+          "v_NE_TRetortaeformis": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AP": {
+        "signs": {
+          "v_AgAb_Bacterium": "+",
+          "v_Bb": "+",
+          "v_Cb": "+",
+          "v_IgG_Bacterium": "+",
+          "v_MPI_Bacterium": "+",
+          "v_Th1I_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AgAb_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_PH": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cb": {
+        "signs": {
+          "v_AgAb_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgG_Bacterium": "+",
+          "v_Oag": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCII_Bacterium": {
+        "signs": {
+          "v_DCI_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DCII_TRetortaeformis": {
+        "signs": {
+          "v_DCI_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DCI_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCI_TRetortaeformis": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DP": {
+        "signs": {
+          "v_NE_Bacterium": "+",
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EC_Bacterium": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_EC_TRetortaeformis": {
+        "signs": {
+          "v_AD": "+",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EL": {
+        "signs": {
+          "v_EL2": "-",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EL2": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgI": {
+        "signs": {
+          "v_DCI_TRetortaeformis": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_Th1I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgII": {
+        "signs": {
+          "v_IFNgI": "+",
+          "v_IFNg_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNg_Bacterium": {
+        "signs": {
+          "v_DCI_Bacterium": "+",
+          "v_IL10I_Bacterium": "-",
+          "v_IL4I": "-",
+          "v_MPI_Bacterium": "+",
+          "v_Th1I_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I": {
+        "signs": {
+          "v_IL10I_Bacterium": "+",
+          "v_Th2I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I_Bacterium": {
+        "signs": {
+          "v_MPI_Bacterium": "+",
+          "v_TTSSI": "+",
+          "v_Th2I_Bacterium": "+",
+          "v_TrI_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12II": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL13": {
+        "signs": {
+          "v_EL": "+",
+          "v_EL2": "+",
+          "v_IS": "+",
+          "v_Th2I_Bacterium": "+",
+          "v_Th2I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4I": {
+        "signs": {
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+",
+          "v_EL2": "+",
+          "v_IFNgI": "-",
+          "v_IL12II": "-",
+          "v_T0": "+",
+          "v_Th2II_Bacterium": "+",
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL5": {
+        "signs": {
+          "v_EL2": "+",
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgE": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IL13": "+",
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IgG_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MPI_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NE_Bacterium": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NE_TRetortaeformis": {
+        "signs": {
+          "v_AD": "+",
+          "v_IFNgI": "+",
+          "v_IL10I": "-",
+          "v_IL4I": "-",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Oag": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PH": {
+        "signs": {
+          "v_AP": "+",
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AD": "+",
+          "v_AP": "+",
+          "v_EC_Bacterium": "+",
+          "v_EC_TRetortaeformis": "+",
+          "v_IL10I": "-",
+          "v_IgA_TRetortaeformis": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_T0": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TEL": {
+        "signs": {
+          "v_EL": "+",
+          "v_EL2": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TNE": {
+        "signs": {
+          "v_NE_Bacterium": "+",
+          "v_NE_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "-",
+          "v_IgG_Bacterium": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSII": {
+        "signs": {
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1II_Bacterium": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1II_TRetortaeformis": {
+        "signs": {
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1I_Bacterium": {
+        "signs": {
+          "v_Th1II_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1I_TRetortaeformis": {
+        "signs": {
+          "v_Th1II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2II_Bacterium": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2II_TRetortaeformis": {
+        "signs": {
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2I_Bacterium": {
+        "signs": {
+          "v_Th2II_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2I_TRetortaeformis": {
+        "signs": {
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TrII": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_T0": "+",
+          "v_TTSSII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrI_Bacterium": {
+        "signs": {
+          "v_TrII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_classification": {
+    "nodes": 53,
+    "n_nodes": 53,
+    "inputs": 1,
+    "internal_nodes": 52,
+    "nonconstant_rules": 53,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": true,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": false,
+    "all_self_loop": false,
+    "self_loop_count": 7,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AD": "+",
+      "v_EC_TRetortaeformis": "+",
+      "v_NE_TRetortaeformis": "+",
+      "v_PIC": "+",
+      "v_IS": "+",
+      "v_IgG": "+",
+      "v_MPI_Bacterium": "-",
+      "v_AP": "-",
+      "v_IFNg_Bacterium": "-",
+      "v_IL10I_Bacterium": "-",
+      "v_Bb": "-",
+      "v_AgAb_Bacterium": "-",
+      "v_Cb": "-",
+      "v_DCI_Bacterium": "-",
+      "v_EC_Bacterium": "-",
+      "v_IgA_Bacterium": "-",
+      "v_Oag": "-",
+      "v_PH": "-",
+      "v_TTSSI": "-",
+      "v_IgG_Bacterium": "+",
+      "v_DP": "-",
+      "v_TTSSII": "-",
+      "v_TrII": "-",
+      "v_T0": "-",
+      "v_DCII_Bacterium": "-",
+      "v_TrI_Bacterium": "-",
+      "v_IL12II": "-",
+      "v_IL4II": "-",
+      "v_Th1II_Bacterium": "-",
+      "v_Th2II_Bacterium": "-",
+      "v_Th2I_Bacterium": "-",
+      "v_IL13": "-",
+      "v_EL2": "-",
+      "v_IgE": "-",
+      "v_Th2I_TRetortaeformis": "-",
+      "v_EL": "-",
+      "v_TEL": "-",
+      "v_IL10I": "-",
+      "v_Th2II_TRetortaeformis": "-",
+      "v_DCII_TRetortaeformis": "-",
+      "v_IL5": "-",
+      "v_DCI_TRetortaeformis": "-",
+      "v_Th1II_TRetortaeformis": "-",
+      "v_Th1I_TRetortaeformis": "-",
+      "v_IFNgI": "-",
+      "v_IFNgII": "-",
+      "v_BC_TRetortaeformis": "-",
+      "v_IgA_TRetortaeformis": "-",
+      "v_Th1I_Bacterium": "-",
+      "v_IL4I": "-",
+      "v_BC_Bacterium": "-",
+      "v_NE_Bacterium": "-",
+      "v_TNE": "-"
+    },
+    "positive_edges": 118,
+    "negative_edges": 18,
+    "non_unate_edges": 0,
+    "has_multi_input_rule": true,
+    "edges": 136,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "UNATE_OTHER": 16,
+      "MAX": 11,
+      "MIN": 11,
+      "MIN_MAX": 15
+    },
+    "conflicts": {
+      "v_MPI_Bacterium": {
+        "v_AD": "-",
+        "v_AP": "+",
+        "v_IFNg_Bacterium": "+",
+        "v_IL10I_Bacterium": "+"
+      },
+      "v_NE_TRetortaeformis": {
+        "v_AD": "-",
+        "v_TNE": "+"
+      },
+      "v_IgG_Bacterium": {
+        "v_AP": "+",
+        "v_AgAb_Bacterium": "+",
+        "v_Cb": "+",
+        "v_IgG_Bacterium": "+",
+        "v_TTSSI": "-"
+      },
+      "v_IgA_Bacterium": {
+        "v_AgAb_Bacterium": "+",
+        "v_IgA_Bacterium": "+",
+        "v_TTSSI": "-"
+      },
+      "v_EL2": {
+        "v_EL": "-",
+        "v_IL13": "+",
+        "v_IL4II": "+",
+        "v_IL5": "+",
+        "v_TEL": "+"
+      },
+      "v_IFNgI": {
+        "v_IFNgII": "+",
+        "v_IL4II": "-",
+        "v_NE_TRetortaeformis": "+"
+      },
+      "v_IL10I_Bacterium": {
+        "v_IFNg_Bacterium": "-",
+        "v_IL10I": "+"
+      },
+      "v_IL4II": {
+        "v_IL12II": "-",
+        "v_IL4I": "+",
+        "v_IgE": "+"
+      },
+      "v_IL12II": {
+        "v_IL4II": "-",
+        "v_Th1II_Bacterium": "+",
+        "v_Th1II_TRetortaeformis": "+",
+        "v_Th2II_Bacterium": "-",
+        "v_Th2II_TRetortaeformis": "-"
+      }
+    },
+    "local": {
+      "v_AD": {
+        "signs": {
+          "v_AD": "+",
+          "v_IS": "+",
+          "v_IgG": "+",
+          "v_MPI_Bacterium": "-",
+          "v_NE_TRetortaeformis": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AP": {
+        "signs": {
+          "v_AgAb_Bacterium": "+",
+          "v_Bb": "+",
+          "v_Cb": "+",
+          "v_IgG_Bacterium": "+",
+          "v_MPI_Bacterium": "+",
+          "v_Th1I_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_AgAb_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_BC_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Bb": {
+        "signs": {
+          "v_Bb": "+",
+          "v_PH": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Cb": {
+        "signs": {
+          "v_AgAb_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgG_Bacterium": "+",
+          "v_Oag": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCII_Bacterium": {
+        "signs": {
+          "v_DCI_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DCII_TRetortaeformis": {
+        "signs": {
+          "v_DCI_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DCI_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_DCI_TRetortaeformis": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_DP": {
+        "signs": {
+          "v_NE_Bacterium": "+",
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EC_Bacterium": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_EC_TRetortaeformis": {
+        "signs": {
+          "v_AD": "+",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EL": {
+        "signs": {
+          "v_EL2": "-",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_EL2": {
+        "signs": {
+          "v_IL13": "+",
+          "v_IL5": "+",
+          "v_IgE": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgI": {
+        "signs": {
+          "v_DCI_TRetortaeformis": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_Th1I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNgII": {
+        "signs": {
+          "v_IFNgI": "+",
+          "v_IFNg_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNg_Bacterium": {
+        "signs": {
+          "v_DCI_Bacterium": "+",
+          "v_IL10I_Bacterium": "-",
+          "v_IL4I": "-",
+          "v_MPI_Bacterium": "+",
+          "v_Th1I_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I": {
+        "signs": {
+          "v_IL10I_Bacterium": "+",
+          "v_Th2I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL10I_Bacterium": {
+        "signs": {
+          "v_MPI_Bacterium": "+",
+          "v_TTSSI": "+",
+          "v_Th2I_Bacterium": "+",
+          "v_TrI_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL12II": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL4II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL13": {
+        "signs": {
+          "v_EL": "+",
+          "v_EL2": "+",
+          "v_IS": "+",
+          "v_Th2I_Bacterium": "+",
+          "v_Th2I_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL4I": {
+        "signs": {
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IL4II": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+",
+          "v_EL2": "+",
+          "v_IFNgI": "-",
+          "v_IL12II": "-",
+          "v_T0": "+",
+          "v_Th2II_Bacterium": "+",
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IL5": {
+        "signs": {
+          "v_EL2": "+",
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgA_TRetortaeformis": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgE": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+",
+          "v_IL13": "+",
+          "v_IL4II": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IgG": {
+        "signs": {
+          "v_BC_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IgG_Bacterium": {
+        "signs": {
+          "v_BC_Bacterium": "+",
+          "v_IgG_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MPI_Bacterium": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IFNg_Bacterium": "+",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_NE_Bacterium": {
+        "signs": {
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_NE_TRetortaeformis": {
+        "signs": {
+          "v_AD": "+",
+          "v_IFNgI": "+",
+          "v_IL10I": "-",
+          "v_IL4I": "-",
+          "v_PIC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Oag": {
+        "signs": {
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_PH": {
+        "signs": {
+          "v_AP": "+",
+          "v_Bb": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_PIC": {
+        "signs": {
+          "v_AD": "+",
+          "v_AP": "+",
+          "v_EC_Bacterium": "+",
+          "v_EC_TRetortaeformis": "+",
+          "v_IL10I": "-",
+          "v_IgA_TRetortaeformis": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_T0": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_DCII_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TEL": {
+        "signs": {
+          "v_EL": "+",
+          "v_EL2": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TNE": {
+        "signs": {
+          "v_NE_Bacterium": "+",
+          "v_NE_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "OR"
+        ],
+        "affine": false,
+        "AND": false,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": true,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSI": {
+        "signs": {
+          "v_Bb": "+",
+          "v_IgA_Bacterium": "-",
+          "v_IgG_Bacterium": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TTSSII": {
+        "signs": {
+          "v_TTSSI": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1II_Bacterium": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1II_TRetortaeformis": {
+        "signs": {
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL12II": "+",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th1I_Bacterium": {
+        "signs": {
+          "v_Th1II_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th1I_TRetortaeformis": {
+        "signs": {
+          "v_Th1II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2II_Bacterium": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2II_TRetortaeformis": {
+        "signs": {
+          "v_DCII_TRetortaeformis": "+",
+          "v_IL12II": "-",
+          "v_T0": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_Th2I_Bacterium": {
+        "signs": {
+          "v_Th2II_Bacterium": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_Th2I_TRetortaeformis": {
+        "signs": {
+          "v_Th2II_TRetortaeformis": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_TrII": {
+        "signs": {
+          "v_DCII_Bacterium": "+",
+          "v_T0": "+",
+          "v_TTSSII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [
+          "AND"
+        ],
+        "affine": false,
+        "AND": true,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TrI_Bacterium": {
+        "signs": {
+          "v_TrII": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      },
+      "v_IS": {
+        "signs": {
+          "v_IS": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  }
+}

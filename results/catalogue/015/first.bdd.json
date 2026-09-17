@@ -1,0 +1,20 @@
+{
+"level_of_var": {"v_Adenylate_cyclase": 0, "v_COMT": 1, "v_Calcineurin": 2, "v_Calcium": 3, "v_DARPP32": 4, "v_Dopamine": 5, "v_Dopamine_Receptor_1": 6, "v_Dopamine_Receptor_2": 7, "v_Exocytosis": 8, "v_Glutamate": 9, "v_Glutamate_Receptor": 10, "v_Packaging_Proteins": 11, "v_Phospholipase_C": 12, "v_Protein_Kinase_A": 13, "v_Protein_Phosphatase_1": 14, "v_Tryosine_hydroxylase": 15},
+"roots": {"final:v_Dopamine": -24, "final:v_Glutamate": 17, "final:v_Tryosine_hydroxylase": 13, "step:0:v_Adenylate_cyclase": -4, "step:1:v_COMT": 5, "step:2:v_Calcineurin": 6, "step:3:v_Calcium": 9, "step:4:v_DARPP32": -27, "step:5:v_Dopamine_Receptor_1": 5, "step:6:v_Dopamine_Receptor_2": 5, "step:7:v_Exocytosis": 16, "step:8:v_Glutamate_Receptor": -21, "step:9:v_Packaging_Proteins": -21, "step:10:v_Phospholipase_C": 5, "step:11:v_Protein_Kinase_A": -1, "step:12:v_Protein_Phosphatase_1": 1},
+"13": [15, "F", "T"],
+"24": [5, -13, "T"],
+"17": [9, "F", "T"],
+"3": [7, "F", "T"],
+"4": [6, "T", 3],
+"5": [5, "F", "T"],
+"6": [3, "F", "T"],
+"7": [12, "F", "T"],
+"9": [10, 7, "T"],
+"10": [13, "F", "T"],
+"26": [12, -10, "T"],
+"27": [10, 26, "T"],
+"16": [11, "F", "T"],
+"19": [14, "F", "T"],
+"20": [13, "T", 19],
+"21": [9, "T", 20]
+}

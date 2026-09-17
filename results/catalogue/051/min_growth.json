@@ -1,0 +1,1325 @@
+{
+  "algorithm_version": "0.3-taxonomy",
+  "id": "051",
+  "name": "COLITIS-ASSOCIATED-COLON-CANCER",
+  "policy": "min_growth",
+  "seed": 42,
+  "status": "complete",
+  "before_nodes": 70,
+  "after": {
+    "nodes": 11,
+    "n_nodes": 11,
+    "inputs": 1,
+    "internal_nodes": 10,
+    "nonconstant_rules": 10,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 10,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AKT": "+",
+      "v_CASP3": "-",
+      "v_CERAMIDE": "-",
+      "v_JAK": "+",
+      "v_MAC": "+",
+      "v_P53": "-",
+      "v_TGFR": "-",
+      "v_TH2": "+",
+      "v_TREG": "-",
+      "v_IFNG": "+"
+    },
+    "positive_edges": 22,
+    "negative_edges": 22,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 46,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "UNATE_OTHER": 6,
+      "NON_UNATE": 2,
+      "MIN": 2
+    },
+    "conflicts": {
+      "v_AKT": {
+        "v_AKT": "+",
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_JAK": "+",
+        "v_MAC": "+",
+        "v_P53": "-",
+        "v_TGFR": "-",
+        "v_TH2": "+",
+        "v_TREG": "-"
+      },
+      "v_CASP3": {
+        "v_AKT": "-",
+        "v_CASP3": "+"
+      },
+      "v_CERAMIDE": {
+        "v_AKT": "-",
+        "v_CASP3": "+",
+        "v_CERAMIDE": "-",
+        "v_P53": "+"
+      },
+      "v_MAC": {
+        "v_AKT": "+",
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_JAK": "+",
+        "v_MAC": "+",
+        "v_P53": "+",
+        "v_TGFR": "-",
+        "v_TH2": "+",
+        "v_TREG": "-"
+      },
+      "v_IFNG": {
+        "v_CASP3": "+",
+        "v_CERAMIDE": "+",
+        "v_IFNG": "+",
+        "v_MAC": "+",
+        "v_TH2": "-"
+      },
+      "v_P53": {
+        "v_CASP3": "mixed",
+        "v_CERAMIDE": "+",
+        "v_P53": "mixed"
+      },
+      "v_TREG": {
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_IFNG": "-",
+        "v_MAC": "-",
+        "v_TGFR": "+",
+        "v_TH2": "-",
+        "v_TREG": "+"
+      },
+      "v_TH2": {
+        "v_MAC": "-",
+        "v_TH2": "+",
+        "v_TREG": "+"
+      },
+      "v_TGFR": {
+        "v_P53": "+",
+        "v_TGFR": "-"
+      }
+    },
+    "local": {
+      "v_AKT": {
+        "signs": {
+          "v_AKT": "+",
+          "v_CASP3": "-",
+          "v_CERAMIDE": "-",
+          "v_MAC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CASP3": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CASP3": "+",
+          "v_CERAMIDE": "+",
+          "v_IFNG": "+",
+          "v_JAK": "-",
+          "v_MAC": "-",
+          "v_P53": "mixed",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CERAMIDE": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CERAMIDE": "-",
+          "v_IFNG": "+",
+          "v_MAC": "-",
+          "v_P53": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNG": {
+        "signs": {
+          "v_IFNG": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_JAK": {
+        "signs": {
+          "v_AKT": "+",
+          "v_JAK": "-",
+          "v_MAC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MAC": {
+        "signs": {
+          "v_AKT": "+",
+          "v_IFNG": "+",
+          "v_MAC": "+",
+          "v_TH2": "-",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P53": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CERAMIDE": "+",
+          "v_MAC": "+",
+          "v_P53": "mixed",
+          "v_TGFR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TGFR": {
+        "signs": {
+          "v_AKT": "-",
+          "v_MAC": "-",
+          "v_TGFR": "-",
+          "v_TREG": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TH2": {
+        "signs": {
+          "v_AKT": "+",
+          "v_IFNG": "-",
+          "v_MAC": "+",
+          "v_TH2": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TREG": {
+        "signs": {
+          "v_AKT": "-",
+          "v_MAC": "-",
+          "v_TH2": "+",
+          "v_TREG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      }
+    }
+  },
+  "all_rules_after": {
+    "nodes": 11,
+    "n_nodes": 11,
+    "inputs": 1,
+    "internal_nodes": 10,
+    "nonconstant_rules": 11,
+    "constant_rules": 0,
+    "vacuous": false,
+    "out_uniform": false,
+    "out_uniform_nonvacuous": false,
+    "locally_unate": false,
+    "MIN": false,
+    "MAX": false,
+    "MIN_MAX": false,
+    "is_conjunctive": false,
+    "is_disjunctive": false,
+    "is_AND_NOT": false,
+    "is_OR_NOT": false,
+    "is_AND_OR_NOT": false,
+    "is_AND_OR": false,
+    "is_AND_OR_NAND_NOR": false,
+    "AND_OR_NOT_out_uniform": false,
+    "AND_OR_NAND_NOR": false,
+    "AND_OR_NAND_NOR_out_uniform": false,
+    "homogeneous_MIN": false,
+    "homogeneous_MAX": false,
+    "signed_operator_homogeneous_AND": false,
+    "signed_operator_homogeneous_OR": false,
+    "signed_operator_homogeneous": null,
+    "homogeneous_gate": false,
+    "common_gates": [],
+    "positive_AND": false,
+    "positive_OR": false,
+    "affine": false,
+    "reciprocal_support": false,
+    "all_internal_self_regulated": true,
+    "all_self_loop": true,
+    "self_loop_count": 11,
+    "is_monotone": false,
+    "switchable_to_monotone": false,
+    "switching_witness": {
+      "v_AKT": "+",
+      "v_CASP3": "-",
+      "v_CERAMIDE": "-",
+      "v_JAK": "+",
+      "v_MAC": "+",
+      "v_P53": "-",
+      "v_TGFR": "-",
+      "v_TH2": "+",
+      "v_TREG": "-",
+      "v_IFNG": "+",
+      "v_APC": "+"
+    },
+    "positive_edges": 23,
+    "negative_edges": 22,
+    "non_unate_edges": 2,
+    "has_multi_input_rule": true,
+    "edges": 47,
+    "max_indegree": 8,
+    "local_family_counts": {
+      "UNATE_OTHER": 6,
+      "NON_UNATE": 2,
+      "MIN": 2,
+      "MIN_MAX": 1
+    },
+    "conflicts": {
+      "v_AKT": {
+        "v_AKT": "+",
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_JAK": "+",
+        "v_MAC": "+",
+        "v_P53": "-",
+        "v_TGFR": "-",
+        "v_TH2": "+",
+        "v_TREG": "-"
+      },
+      "v_CASP3": {
+        "v_AKT": "-",
+        "v_CASP3": "+"
+      },
+      "v_CERAMIDE": {
+        "v_AKT": "-",
+        "v_CASP3": "+",
+        "v_CERAMIDE": "-",
+        "v_P53": "+"
+      },
+      "v_MAC": {
+        "v_AKT": "+",
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_JAK": "+",
+        "v_MAC": "+",
+        "v_P53": "+",
+        "v_TGFR": "-",
+        "v_TH2": "+",
+        "v_TREG": "-"
+      },
+      "v_IFNG": {
+        "v_CASP3": "+",
+        "v_CERAMIDE": "+",
+        "v_IFNG": "+",
+        "v_MAC": "+",
+        "v_TH2": "-"
+      },
+      "v_P53": {
+        "v_CASP3": "mixed",
+        "v_CERAMIDE": "+",
+        "v_P53": "mixed"
+      },
+      "v_TREG": {
+        "v_CASP3": "-",
+        "v_CERAMIDE": "-",
+        "v_IFNG": "-",
+        "v_MAC": "-",
+        "v_TGFR": "+",
+        "v_TH2": "-",
+        "v_TREG": "+"
+      },
+      "v_TH2": {
+        "v_MAC": "-",
+        "v_TH2": "+",
+        "v_TREG": "+"
+      },
+      "v_TGFR": {
+        "v_P53": "+",
+        "v_TGFR": "-"
+      }
+    },
+    "local": {
+      "v_AKT": {
+        "signs": {
+          "v_AKT": "+",
+          "v_CASP3": "-",
+          "v_CERAMIDE": "-",
+          "v_MAC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CASP3": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CASP3": "+",
+          "v_CERAMIDE": "+",
+          "v_IFNG": "+",
+          "v_JAK": "-",
+          "v_MAC": "-",
+          "v_P53": "mixed",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_CERAMIDE": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CERAMIDE": "-",
+          "v_IFNG": "+",
+          "v_MAC": "-",
+          "v_P53": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_IFNG": {
+        "signs": {
+          "v_IFNG": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_JAK": {
+        "signs": {
+          "v_AKT": "+",
+          "v_JAK": "-",
+          "v_MAC": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_MAC": {
+        "signs": {
+          "v_AKT": "+",
+          "v_IFNG": "+",
+          "v_MAC": "+",
+          "v_TH2": "-",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_P53": {
+        "signs": {
+          "v_AKT": "-",
+          "v_CERAMIDE": "+",
+          "v_MAC": "+",
+          "v_P53": "mixed",
+          "v_TGFR": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": false,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TGFR": {
+        "signs": {
+          "v_AKT": "-",
+          "v_MAC": "-",
+          "v_TGFR": "-",
+          "v_TREG": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TH2": {
+        "signs": {
+          "v_AKT": "+",
+          "v_IFNG": "-",
+          "v_MAC": "+",
+          "v_TH2": "+",
+          "v_TREG": "-"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_TREG": {
+        "signs": {
+          "v_AKT": "-",
+          "v_MAC": "-",
+          "v_TH2": "+",
+          "v_TREG": "+"
+        },
+        "constant": false,
+        "MIN": false,
+        "MAX": false,
+        "unate": true,
+        "gates": [],
+        "affine": false,
+        "AND": false,
+        "OR": false,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": false,
+        "OR_NOT": false,
+        "XOR": false,
+        "XNOR": false,
+        "COPY": false,
+        "NOT": false
+      },
+      "v_APC": {
+        "signs": {
+          "v_APC": "+"
+        },
+        "constant": false,
+        "MIN": true,
+        "MAX": true,
+        "unate": true,
+        "gates": [
+          "AND",
+          "OR",
+          "COPY"
+        ],
+        "affine": true,
+        "AND": true,
+        "OR": true,
+        "NAND": false,
+        "NOR": false,
+        "AND_NOT": true,
+        "OR_NOT": true,
+        "XOR": true,
+        "XNOR": false,
+        "COPY": true,
+        "NOT": false
+      }
+    }
+  },
+  "certificate": {
+    "status": "unsat",
+    "bijection_verified": true,
+    "method": "Independent Z3 equivalence of original fixed-point equations and reduced equations plus triangular reconstruction trace",
+    "reason_unknown": null
+  },
+  "fixed_points": {
+    "exact": true,
+    "count": 2,
+    "examples": [
+      {
+        "v_AKT": 0,
+        "v_APC": 0,
+        "v_CASP3": 0,
+        "v_CERAMIDE": 0,
+        "v_IFNG": 0,
+        "v_JAK": 0,
+        "v_MAC": 0,
+        "v_P53": 0,
+        "v_TGFR": 0,
+        "v_TH2": 0,
+        "v_TREG": 0
+      },
+      {
+        "v_AKT": 0,
+        "v_APC": 1,
+        "v_CASP3": 0,
+        "v_CERAMIDE": 0,
+        "v_IFNG": 0,
+        "v_JAK": 0,
+        "v_MAC": 0,
+        "v_P53": 0,
+        "v_TGFR": 0,
+        "v_TH2": 0,
+        "v_TREG": 0
+      }
+    ]
+  },
+  "rules": {
+    "v_AKT": "!(((v_AKT & ((v_CASP3 & 1) | (!v_CASP3 & 0))) | (!v_AKT & ((v_CASP3 & 1) | (!v_CASP3 & ((v_CERAMIDE & 1) | (!v_CERAMIDE & !(((v_MAC & 1) | (!v_MAC & 0))))))))))",
+    "v_CASP3": "((v_AKT & ((v_CASP3 & ((v_CERAMIDE & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_CERAMIDE & 0))) | (!v_CASP3 & 0))) | (!v_AKT & ((v_CASP3 & ((v_CERAMIDE & 1) | (!v_CERAMIDE & !(((v_IFNG & ((v_JAK & ((v_MAC & 1) | (!v_MAC & ((v_P53 & ((v_TREG & 1) | (!v_TREG & 0))) | (!v_P53 & 1))))) | (!v_JAK & ((v_MAC & 1) | (!v_MAC & ((v_TREG & 1) | (!v_TREG & 0))))))) | (!v_IFNG & 1)))))) | (!v_CASP3 & !(((v_CERAMIDE & ((v_MAC & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_MAC & 0))) | (!v_CERAMIDE & ((v_IFNG & ((v_JAK & ((v_MAC & 1) | (!v_MAC & ((v_P53 & ((v_TREG & 1) | (!v_TREG & 0))) | (!v_P53 & 1))))) | (!v_JAK & ((v_MAC & 1) | (!v_MAC & ((v_TREG & 1) | (!v_TREG & 0))))))) | (!v_IFNG & 1)))))))))",
+    "v_CERAMIDE": "!(((v_AKT & 1) | (!v_AKT & ((v_CERAMIDE & 1) | (!v_CERAMIDE & ((v_IFNG & ((v_MAC & 1) | (!v_MAC & !(((v_P53 & 1) | (!v_P53 & !(((v_TREG & 1) | (!v_TREG & 0))))))))) | (!v_IFNG & ((v_MAC & 1) | (!v_MAC & !(((v_P53 & 1) | (!v_P53 & 0))))))))))))",
+    "v_IFNG": "v_IFNG & !v_TREG",
+    "v_JAK": "!(((v_AKT & ((v_JAK & 1) | (!v_JAK & 0))) | (!v_AKT & ((v_JAK & 1) | (!v_JAK & !(((v_MAC & 1) | (!v_MAC & 0))))))))",
+    "v_MAC": "!(((v_AKT & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_AKT & ((v_IFNG & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_IFNG & ((v_MAC & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_MAC & 1)))))))",
+    "v_P53": "!(((v_AKT & ((v_CERAMIDE & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_CERAMIDE & ((v_MAC & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_MAC & ((v_P53 & 1) | (!v_P53 & !(((v_TGFR & 1) | (!v_TGFR & 0)))))))))) | (!v_AKT & !(((v_CERAMIDE & 1) | (!v_CERAMIDE & ((v_MAC & 1) | (!v_MAC & ((v_P53 & 1) | (!v_P53 & ((v_TGFR & 1) | (!v_TGFR & 0))))))))))))",
+    "v_TGFR": "!v_AKT & !v_MAC & !v_TGFR & v_TREG",
+    "v_TH2": "!(((v_AKT & ((v_IFNG & 1) | (!v_IFNG & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_AKT & ((v_IFNG & 1) | (!v_IFNG & ((v_MAC & ((v_TREG & 1) | (!v_TREG & 0))) | (!v_MAC & ((v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))) | (!v_TH2 & 1)))))))))",
+    "v_TREG": "!(((v_AKT & 1) | (!v_AKT & ((v_MAC & 1) | (!v_MAC & !(((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))))))))",
+    "v_APC": "v_APC"
+  },
+  "steps": [
+    {
+      "node": "v_ATM",
+      "support": [
+        "v_ROS"
+      ],
+      "function": "v_ROS"
+    },
+    {
+      "node": "v_Apoptosis",
+      "support": [
+        "v_CASP3"
+      ],
+      "function": "v_CASP3"
+    },
+    {
+      "node": "v_BCATENIN",
+      "support": [
+        "v_APC",
+        "v_GSK3B"
+      ],
+      "function": "!v_APC | !v_GSK3B"
+    },
+    {
+      "node": "v_CCL2",
+      "support": [
+        "v_NFKB"
+      ],
+      "function": "v_NFKB"
+    },
+    {
+      "node": "v_CFLIP",
+      "support": [
+        "v_NFKB"
+      ],
+      "function": "v_NFKB"
+    },
+    {
+      "node": "v_CYCLIND1",
+      "support": [
+        "v_GSK3B"
+      ],
+      "function": "!v_GSK3B"
+    },
+    {
+      "node": "v_CYTC",
+      "support": [
+        "v_MOMP"
+      ],
+      "function": "v_MOMP"
+    },
+    {
+      "node": "v_EP2",
+      "support": [
+        "v_PGE2"
+      ],
+      "function": "v_PGE2"
+    },
+    {
+      "node": "v_ERK",
+      "support": [
+        "v_MEK"
+      ],
+      "function": "v_MEK"
+    },
+    {
+      "node": "v_FAS",
+      "support": [
+        "v_CTL"
+      ],
+      "function": "v_CTL"
+    },
+    {
+      "node": "v_FOS",
+      "support": [
+        "v_MEK"
+      ],
+      "function": "v_MEK"
+    },
+    {
+      "node": "v_GP130",
+      "support": [
+        "v_IL6"
+      ],
+      "function": "v_IL6"
+    },
+    {
+      "node": "v_IKB",
+      "support": [
+        "v_IKK"
+      ],
+      "function": "!v_IKK"
+    },
+    {
+      "node": "v_NFKB",
+      "support": [
+        "v_IKK"
+      ],
+      "function": "v_IKK"
+    },
+    {
+      "node": "v_PGE2",
+      "support": [
+        "v_COX2"
+      ],
+      "function": "v_COX2"
+    },
+    {
+      "node": "v_Proliferation",
+      "support": [
+        "v_CASP3",
+        "v_GSK3B",
+        "v_MEK",
+        "v_P21"
+      ],
+      "function": "!v_CASP3 & !v_GSK3B & v_MEK & !v_P21"
+    },
+    {
+      "node": "v_S1P",
+      "support": [
+        "v_SPHK1"
+      ],
+      "function": "v_SPHK1"
+    },
+    {
+      "node": "v_SMAC",
+      "support": [
+        "v_MOMP"
+      ],
+      "function": "v_MOMP"
+    },
+    {
+      "node": "v_SOCS",
+      "support": [
+        "v_STAT3"
+      ],
+      "function": "v_STAT3"
+    },
+    {
+      "node": "v_STAT3",
+      "support": [
+        "v_JAK"
+      ],
+      "function": "v_JAK"
+    },
+    {
+      "node": "v_TGFB",
+      "support": [
+        "v_TREG"
+      ],
+      "function": "v_TREG"
+    },
+    {
+      "node": "v_TNFA",
+      "support": [
+        "v_MAC"
+      ],
+      "function": "v_MAC"
+    },
+    {
+      "node": "v_TNFR",
+      "support": [
+        "v_MAC"
+      ],
+      "function": "v_MAC"
+    },
+    {
+      "node": "v_ASK1",
+      "support": [
+        "v_P21",
+        "v_ROS"
+      ],
+      "function": "!v_P21 & v_ROS"
+    },
+    {
+      "node": "v_CASP9",
+      "support": [
+        "v_IAP",
+        "v_MOMP",
+        "v_P21"
+      ],
+      "function": "!v_IAP & v_MOMP & !v_P21"
+    },
+    {
+      "node": "v_IAP",
+      "support": [
+        "v_IKK",
+        "v_JAK",
+        "v_MOMP"
+      ],
+      "function": "!(((v_IKK & ((v_MOMP & 1) | (!v_MOMP & 0))) | (!v_IKK & ((v_JAK & ((v_MOMP & 1) | (!v_MOMP & 0))) | (!v_JAK & 1)))))"
+    },
+    {
+      "node": "v_IL12",
+      "support": [
+        "v_DC",
+        "v_MAC"
+      ],
+      "function": "v_DC | v_MAC"
+    },
+    {
+      "node": "v_IL4",
+      "support": [
+        "v_DC",
+        "v_TH2"
+      ],
+      "function": "v_DC | v_TH2"
+    },
+    {
+      "node": "v_MEK",
+      "support": [
+        "v_RAF",
+        "v_ROS"
+      ],
+      "function": "v_RAF | v_ROS"
+    },
+    {
+      "node": "v_RAF",
+      "support": [
+        "v_CERAMIDE",
+        "v_RAS"
+      ],
+      "function": "v_CERAMIDE | v_RAS"
+    },
+    {
+      "node": "v_RAS",
+      "support": [
+        "v_COX2",
+        "v_IL6"
+      ],
+      "function": "v_COX2 | v_IL6"
+    },
+    {
+      "node": "v_SMAD7",
+      "support": [
+        "v_IKK",
+        "v_SMAD"
+      ],
+      "function": "v_IKK | v_SMAD"
+    },
+    {
+      "node": "v_SMASE",
+      "support": [
+        "v_FADD_",
+        "v_P53"
+      ],
+      "function": "v_FADD_ | v_P53"
+    },
+    {
+      "node": "v_SOD",
+      "support": [
+        "v_IKK",
+        "v_JAK"
+      ],
+      "function": "v_IKK | v_JAK"
+    },
+    {
+      "node": "v_TBID",
+      "support": [
+        "v_BCL2",
+        "v_CASP8"
+      ],
+      "function": "!v_BCL2 & v_CASP8"
+    },
+    {
+      "node": "v_BAX",
+      "support": [
+        "v_AKT",
+        "v_BCL2",
+        "v_CASP8",
+        "v_P53",
+        "v_PP2A"
+      ],
+      "function": "!(((v_AKT & 1) | (!v_AKT & !(((v_BCL2 & ((v_P53 & ((v_PP2A & 1) | (!v_PP2A & 0))) | (!v_P53 & 0))) | (!v_BCL2 & ((v_CASP8 & ((v_PP2A & 1) | (!v_PP2A & 0))) | (!v_CASP8 & ((v_P53 & ((v_PP2A & 1) | (!v_PP2A & 0))) | (!v_P53 & 0))))))))))"
+    },
+    {
+      "node": "v_BCL2",
+      "support": [
+        "v_IKK",
+        "v_JAK",
+        "v_P53",
+        "v_PP2A"
+      ],
+      "function": "!(((v_IKK & ((v_P53 & 1) | (!v_P53 & ((v_PP2A & 1) | (!v_PP2A & 0))))) | (!v_IKK & ((v_JAK & ((v_P53 & 1) | (!v_P53 & ((v_PP2A & 1) | (!v_PP2A & 0))))) | (!v_JAK & 1)))))"
+    },
+    {
+      "node": "v_PP2A",
+      "support": [
+        "v_AKT",
+        "v_CERAMIDE"
+      ],
+      "function": "!v_AKT & v_CERAMIDE"
+    },
+    {
+      "node": "v_CASP8",
+      "support": [
+        "v_FADD_",
+        "v_IKK",
+        "v_P21"
+      ],
+      "function": "v_FADD_ & !v_IKK & !v_P21"
+    },
+    {
+      "node": "v_COX2",
+      "support": [
+        "v_MAC",
+        "v_SPHK1"
+      ],
+      "function": "v_MAC & v_SPHK1"
+    },
+    {
+      "node": "v_CTL",
+      "support": [
+        "v_IFNG",
+        "v_TREG"
+      ],
+      "function": "v_IFNG & !v_TREG"
+    },
+    {
+      "node": "v_IL10",
+      "support": [
+        "v_TH2",
+        "v_TREG"
+      ],
+      "function": "v_TH2 | v_TREG"
+    },
+    {
+      "node": "v_JUN",
+      "support": [
+        "v_GSK3B",
+        "v_JNK"
+      ],
+      "function": "!v_GSK3B & v_JNK"
+    },
+    {
+      "node": "v_MDM2",
+      "support": [
+        "v_AKT",
+        "v_GSK3B",
+        "v_P53",
+        "v_ROS"
+      ],
+      "function": "v_AKT & !v_GSK3B & v_P53 & !v_ROS"
+    },
+    {
+      "node": "v_MEKK1",
+      "support": [
+        "v_CERAMIDE",
+        "v_MAC",
+        "v_TGFR"
+      ],
+      "function": "v_CERAMIDE | v_MAC | v_TGFR"
+    },
+    {
+      "node": "v_MOMP",
+      "support": [
+        "v_AKT",
+        "v_CERAMIDE",
+        "v_FADD_",
+        "v_IKK",
+        "v_JAK",
+        "v_P21",
+        "v_P53"
+      ],
+      "function": "((v_AKT & ((v_CERAMIDE & ((v_IKK & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_IKK & ((v_JAK & ((v_P53 & 1) | (!v_P53 & 0))) | (!v_JAK & 1))))) | (!v_CERAMIDE & !(((v_FADD_ & ((v_IKK & 1) | (!v_IKK & ((v_JAK & ((v_P21 & 1) | (!v_P21 & !(((v_P53 & 1) | (!v_P53 & 0)))))) | (!v_JAK & ((v_P21 & 1) | (!v_P21 & 0))))))) | (!v_FADD_ & 1)))))) | (!v_AKT & ((v_CERAMIDE & 1) | (!v_CERAMIDE & !(((v_FADD_ & ((v_IKK & 1) | (!v_IKK & ((v_JAK & ((v_P21 & 1) | (!v_P21 & !(((v_P53 & 1) | (!v_P53 & 0)))))) | (!v_JAK & ((v_P21 & 1) | (!v_P21 & 0))))))) | (!v_FADD_ & 1)))))))"
+    },
+    {
+      "node": "v_TH1",
+      "support": [
+        "v_DC",
+        "v_IFNG",
+        "v_MAC",
+        "v_TH2",
+        "v_TREG"
+      ],
+      "function": "!(((v_DC & 1) | (!v_DC & ((v_IFNG & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_IFNG & ((v_MAC & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_MAC & 1)))))))"
+    },
+    {
+      "node": "v_DC",
+      "support": [
+        "v_IKK",
+        "v_MAC",
+        "v_TH2",
+        "v_TREG"
+      ],
+      "function": "!(((v_IKK & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_IKK & ((v_MAC & ((v_TH2 & 1) | (!v_TH2 & ((v_TREG & 1) | (!v_TREG & 0))))) | (!v_MAC & 1)))))"
+    },
+    {
+      "node": "v_IL6",
+      "support": [
+        "v_IKK",
+        "v_MAC"
+      ],
+      "function": "v_IKK | v_MAC"
+    },
+    {
+      "node": "v_PI3K",
+      "support": [
+        "v_IKK",
+        "v_MAC",
+        "v_PTEN"
+      ],
+      "function": "!(((v_IKK & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_IKK & ((v_MAC & ((v_PTEN & 1) | (!v_PTEN & 0))) | (!v_MAC & 1)))))"
+    },
+    {
+      "node": "v_PTEN",
+      "support": [
+        "v_GSK3B",
+        "v_IKK",
+        "v_JNK",
+        "v_P53"
+      ],
+      "function": "!(((v_GSK3B & ((v_IKK & 1) | (!v_IKK & !(((v_P53 & 1) | (!v_P53 & 0)))))) | (!v_GSK3B & ((v_IKK & 1) | (!v_IKK & ((v_JNK & 1) | (!v_JNK & !(((v_P53 & 1) | (!v_P53 & 0))))))))))"
+    },
+    {
+      "node": "v_ROS",
+      "support": [
+        "v_IKK",
+        "v_JAK",
+        "v_MAC"
+      ],
+      "function": "!v_IKK & !v_JAK & v_MAC"
+    },
+    {
+      "node": "v_JNK",
+      "support": [
+        "v_CERAMIDE",
+        "v_MAC",
+        "v_TGFR"
+      ],
+      "function": "v_CERAMIDE | v_MAC | v_TGFR"
+    },
+    {
+      "node": "v_SMAD",
+      "support": [
+        "v_GSK3B",
+        "v_TGFR"
+      ],
+      "function": "v_GSK3B & v_TGFR"
+    },
+    {
+      "node": "v_P21",
+      "support": [
+        "v_CASP3",
+        "v_GSK3B",
+        "v_P53"
+      ],
+      "function": "!v_CASP3 & !v_GSK3B & v_P53"
+    },
+    {
+      "node": "v_GSK3B",
+      "support": [
+        "v_AKT",
+        "v_MAC",
+        "v_SPHK1"
+      ],
+      "function": "!(((v_AKT & 1) | (!v_AKT & ((v_MAC & ((v_SPHK1 & 1) | (!v_SPHK1 & 0))) | (!v_MAC & 0)))))"
+    },
+    {
+      "node": "v_SPHK1",
+      "support": [
+        "v_CERAMIDE",
+        "v_IKK",
+        "v_MAC"
+      ],
+      "function": "v_CERAMIDE | v_IKK | v_MAC"
+    },
+    {
+      "node": "v_IKK",
+      "support": [
+        "v_AKT",
+        "v_MAC"
+      ],
+      "function": "v_AKT | v_MAC"
+    },
+    {
+      "node": "v_FADD_",
+      "support": [
+        "v_IFNG",
+        "v_MAC",
+        "v_TREG"
+      ],
+      "function": "((v_IFNG & ((v_MAC & 1) | (!v_MAC & !(((v_TREG & 1) | (!v_TREG & 0)))))) | (!v_IFNG & ((v_MAC & 1) | (!v_MAC & 0))))"
+    }
+  ],
+  "seconds": 0.24742929998319596
+}
